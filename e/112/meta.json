@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2010\u201d \u2014 sketchgen entry 112, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/112/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a sophisticated, looping background of abstract geometric elements. These shapes\u2014composed of semi-transparent, interconnected polygons and glowing linear grids\u2014drift and pulsate in a continuous, mesmerizing rhythm. The overall effect suggests complex data flowing through a digital network. Colors cycle through rich blues, deep purples, and accents of electric cyan, giving the illusion of deep depth and perpetual motion. The visualization is entirely self-contained, slowly shifting its complexity and arrangement without any user input. When text or a graphic overlay is introduced (such as a news headline), the closest polygonal structures briefly intensify their glow and slow their rotation, momentarily framing and enhancing the informational content.",
+  "completion_tokens": 977,
+  "created_utc": "2026-09-14T20:07:56Z",
+  "entry_id": 112,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 977,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1253,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 85.927
+    }
+  ],
+  "job_id": 113,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 112
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 2010",
+  "prompt_tokens": 1253,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/112/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/112",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, self-contained digital network visualization using WebGL rendering. It features interconnected semi-transparent polygons that drift and pulse in synchronized motion, forming a complex geometric tapestry with glowing linear grids. The color palette shifts through deep blues and purples, punctuated by electric cyan accents, evoking the sensation of data flowing through a vast digital infrastructure. The system responds dynamically to the passage of time, continuously evolving its complexity without user input. When informational overlays are introduced, nearby polygonal structures intensify their glow and slow rotation to frame the content, creating a subtle yet compelling visual hierarchy.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.927
+}
