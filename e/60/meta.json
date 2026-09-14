@@ -1,0 +1,121 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 60, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/60/ Licensed CC BY 4.0.",
+  "brief": "The viewing experience is defined by a monumental pathway of massive, rusted steel plates, displaying deep tones of ochre, charcoal, and burnt sienna. The forms suggest an endless, continuous arc, compelling the viewer\u2019s gaze to follow a cyclical flow. As one proceeds, the pathway maintains its sweeping grandeur until it suddenly executes a violent, acute shift in curvature, arresting the sense of momentum and forcing a momentary reorientation. The geometry itself dictates the movement, framing the viewer's progress through the cool, enveloping liminal space.",
+  "completion_tokens": 1923,
+  "created_utc": "2026-09-14T17:00:28Z",
+  "entry_id": 60,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 552,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(drag)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1162,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 27.9
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 815,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.7012/255, 56122 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1291,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 39.968
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 556,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0079/255, 421 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1281,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 29.074
+    }
+  ],
+  "job_id": 61,
+  "last_error": "gate exit 1: assertions failed: no_motion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "revise and build this as a model in 3D with webGL",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 60
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: revise and build this as a model in 3D with webGL",
+  "prompt_tokens": 3734,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/60/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/60",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch presents a contemplative visualization of a monumental pathway composed of rusted steel plates, rendered in a continuous arc that suggests both grandeur and transition. Using the WEBGL renderer, it creates a static yet subtly shifting composition where each plate is carefully positioned along a curved trajectory, with depth and color modulation to evoke the aged textures of industrial steel. The viewer's gaze follows an implied flow that suddenly shifts direction at a dramatic point \u2014 not through animation but through geometric arrangement and tonal contrast \u2014 creating a moment of reorientation within the visual experience. The composition remains motionless except for a slow, imperceptible rotation that maintains its stillness while allowing subtle variation in perspective over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.942
+}
