@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 89, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/89/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, deep space cosmic landscape featuring a blend of stars and nebulae. The background is characterized by deep indigo undertones, creating the void between brilliant celestial objects. Visible within this darkness are wispy, glowing filaments of deep cyan and vibrant magenta, representing nebulae. The entire scene exhibits a slow, constant drift and twinkling, giving the impression of infinite depth and stellar motion. The arrangement of colors and the subtle motion are purely visual, requiring no interaction to observe.",
+  "completion_tokens": 2190,
+  "created_utc": "2026-09-14T18:49:30Z",
+  "entry_id": 89,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 645,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1140,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 68.726
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 758,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1226,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 37.74
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 787,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1226,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 31.362
+    }
+  ],
+  "job_id": 90,
+  "last_error": "gate exit 1: assertions failed: uses(webgl)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cosmic landscape, and this time emphasizing nebulae filaments of deep cyan and magenta",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 89
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same celestial tapestry, and this time having deep indigo undertones in the dark space between the stars\n\nRevise: revise this version but try to pass the critic, it's got potential\n\nRevise: the same cosmic landscape, and this time emphasizing nebulae filaments of deep cyan and magenta",
+  "prompt_tokens": 3592,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/89/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/89",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates an immersive cosmic landscape using only 2D p5.js rendering. It simulates deep space by layering animated stars and nebula filaments against a deep indigo background. The technique uses multiple layers of particles with varying sizes, opacities, and speeds to create depth and motion, while subtle color shifts in the nebula elements produce a glowing, ethereal effect. The scene continuously evolves without user interaction, giving the impression of infinite cosmic drift and twinkling stellar motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 137.828
+}
