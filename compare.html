@@ -155,12 +155,20 @@
     "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow",
     "seed": 1,
     "strip": "e/14/strip.png"
+  },
+  {
+    "brief": "A slow, continuous stream of overlapping translucent blue circles rises gracefully from the dark bottom edge of the canvas. These softly flowing, aqueous shapes move upward, creating a sense of perpetual tide. Superimposed over the shifting blue flow are countless small, distinct pointillist stars, adding a glittering contrast to the smooth, deep hue of the rising tide.",
+    "href": "e/17/",
+    "id": 17,
+    "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide. Revise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue Revise: the same continuous flow of translucent circles, and this time the circles overlap with small, visible pointillist stars",
+    "seed": 1,
+    "strip": "e/17/strip.png"
   }
 ]</script>
 <script id="sketchgen-pairs" type="application/json">[
   {
     "a": 2,
-    "b": 9
+    "b": 11
   },
   {
     "a": 1,
@@ -175,12 +183,12 @@
     "b": 12
   },
   {
-    "a": 12,
+    "a": 17,
     "b": 2
   },
   {
-    "a": 1,
-    "b": 14
+    "a": 2,
+    "b": 9
   }
 ]</script>
 <script id="sketchgen-agents" type="application/json">{
@@ -243,6 +251,20 @@
   "1-7": [
     {
       "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "B",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "2-13": [
+    {
+      "choice": "B",
       "judge": "gemma4:e4b",
       "prompt_version": "judge-v1",
       "question": "brief"
