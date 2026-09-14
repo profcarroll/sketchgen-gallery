@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccreate a liminal space in 3D as a massive indoor pool of water. Revis\u2026\u201d \u2014 sketchgen entry 129, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/129/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an immense, indoor aquatic landscape viewed from above. The focus is the expansive surface of the water and the deep, reflective floor below. As the surface ripples, the interplay of overhead light and liquid movement causes dramatic, vividly defined shadows to play, shifting and deepening across the pool floor in continuous, rhythmic patterns. The scene is a study in dynamic light and liquid geometry.",
+  "completion_tokens": 1413,
+  "created_utc": "2026-09-14T21:26:08Z",
+  "entry_id": 129,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 838,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1199,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 79.227
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 575,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1291,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 30.676
+    }
+  ],
+  "job_id": 130,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast pool of water, and this time the rippling water causes deeper, more vivid shadows to play across the floor.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 129
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a liminal space in 3D as a massive indoor pool of water.\n\nRevise: the object is too dark against the background so change the lightiing or some other way to make it legible\n\nRevise: the same vast pool of water, and this time the rippling water causes deeper, more vivid shadows to play across the floor.",
+  "prompt_tokens": 2490,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/129/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/129",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive underwater scene viewed from above, simulating the dynamic interplay of light and water. Using WebGL rendering, it generates a vast pool surface with rippling waves that cast shifting shadows across the reflective floor. The continuous animation demonstrates how light interacts with liquid geometry, creating a rhythmic pattern of highlights and deepening shadows that evolve over time without any user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.903
+}
