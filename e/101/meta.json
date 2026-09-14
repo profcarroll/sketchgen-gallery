@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw the Earth in 3D floating in space engulfed by a swarm of orbitin\u2026\u201d \u2014 sketchgen entry 101, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/101/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep blue and black cosmic expanse populated by a richly colored Earth model, suspended in the void. Hundreds of tiny, bright dots represent orbiting satellites, giving the scene a profound sense of depth and movement. The entire scene is dynamic, with the Earth appearing to slowly rotate and the satellites perpetually orbiting around the planet, creating a sense of cosmic scale and motion.",
+  "completion_tokens": 563,
+  "created_utc": "2026-09-14T19:35:08Z",
+  "entry_id": 101,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 563,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1197,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 65.589
+    }
+  ],
+  "job_id": 102,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 101
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw the Earth in 3D floating in space engulfed by a swarm of orbiting satellites",
+  "prompt_tokens": 1197,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/101/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/101",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a cosmic scene with a slowly rotating Earth suspended in deep space. Hundreds of satellites orbit the planet in randomized paths, creating a sense of motion and depth. The entire composition uses WebGL for 3D rendering to achieve a true sense of scale and spatial immersion. The Earth's surface features subtle color variations to simulate continents and oceans, while the satellite trails emphasize the continuous orbital activity around our planet.",
+  "submitted_by": "profcarroll",
+  "wall_s": 65.589
+}
