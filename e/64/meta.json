@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 64, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/64/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a boundless deep indigo expanse, simulating the vast emptiness of space. Countless points of light drift across the backdrop, performing constant, ethereal twinkles. These twinkling stars are underpinned by the soft, luminous blur of the Milky Way\u2019s cosmic river. Occasionally, the scene is punctuated by sudden, brilliant bursts of color, simulating the momentary flare of a supernova. The overall composition shifts and drifts, providing a dynamic sense of immense cosmic depth and continuous, mesmerizing motion.",
+  "completion_tokens": 973,
+  "created_utc": "2026-09-14T17:13:19Z",
+  "entry_id": 64,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 973,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1147,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 77.411
+    }
+  ],
+  "job_id": 65,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "revise this version but try to pass the critic, it's got potential",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 64
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same celestial tapestry, and this time having deep indigo undertones in the dark space between the stars\n\nRevise: revise this version but try to pass the critic, it's got potential",
+  "prompt_tokens": 1147,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/64/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/64",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a cosmic landscape that simulates the vastness of space through a deep indigo backdrop populated by twinkling stars and subtle Milky Way glows. The composition uses layered rendering techniques to create depth, with stars moving at different speeds and sizes to suggest distance. Sudden color bursts represent supernova flares that punctuate the otherwise serene cosmos. The entire scene evolves autonomously without user input, creating an immersive, ever-changing celestial environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.411
+}
