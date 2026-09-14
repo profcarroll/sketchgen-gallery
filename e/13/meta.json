@@ -1,0 +1,113 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 13, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/13/ Licensed CC BY 4.0.",
+  "brief": "A canvas filled with interlocking hexagons organizes into a vibrant, rotating grid. The geometry shifts constantly, creating mesmerizing, flowing patterns marked by softening visual transitions. The color scheme utilizes a vivid 1980s palette\u2014think saturated neons and deep pastels\u2014to animate the structure. The viewer interacts only by observing the continuous, rhythmic transformation of the shapes, which are accompanied by a subtle, looping soundtrack.",
+  "completion_tokens": 2063,
+  "created_utc": "2026-09-14T09:13:18Z",
+  "entry_id": 13,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 601,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1100,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 60.994
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 770,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] [object Arguments]is not a valid color representation.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1303,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 39.072
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 692,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1308,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 33.425
+    }
+  ],
+  "job_id": 13,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack",
+  "prompt_tokens": 3711,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/13/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/13",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, ever-shifting grid of interlocking hexagons that pulse and flow across the screen. Each hexagon gently oscillates in position and rotation while cycling through a vibrant 1980s-inspired color palette of magentas, cyans, yellows, greens, and oranges. The animation is generated entirely algorithmically without any external input, relying on time-based trigonometric functions to create continuous motion. The soft transitions and organic flow give the impression of living, breathing geometry that transforms rhythmically over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.491
+}
