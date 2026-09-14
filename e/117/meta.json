@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 117, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/117/ Licensed CC BY 4.0.",
+  "brief": "A vast, immersive environment dominated by monumental pathways constructed from deeply rusted steel. The viewer moves through a continually shifting, enveloping space, experiencing the material texture of the oxidized metal walls. The path maintains an endless, powerful flow until it reaches a dramatic terminus. Here, the walkway abruptly shifts perpendicular to its original trajectory, culminating in a sheer vertical buttress. This geometrical interruption forces the viewer to alter their gait, stepping up and over the structure to continue through the space.",
+  "completion_tokens": 1983,
+  "created_utc": "2026-09-14T20:29:17Z",
+  "entry_id": 117,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 697,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.4481/255, 252305 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1135,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 68.201
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 715,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 8.2053/255, 419263 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1255,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 36.723
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 571,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0841/255, 14043 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1255,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 30.41
+    }
+  ],
+  "job_id": 118,
+  "last_error": "gate exit 1: assertions failed: no_motion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same massive pathways of deeply rusted steel, and this time the perpendicular shift incorporates a sheer vertical buttress that requires the viewer to step up and over it.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 117
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same massive pathways of deeply rusted steel, and this time the perpendicular shift incorporates a sheer vertical buttress that requires the viewer to step up and over it.",
+  "prompt_tokens": 3645,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/117/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/117",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch presents an immersive, rusted steel pathway that extends into a vast, geometric space. Through the use of WebGL rendering and careful manipulation of color and form, it evokes the texture and atmosphere of oxidized metal. The composition features repeated steel beams that recede into the distance, creating a sense of endless movement and architectural grandeur. A dramatic perpendicular buttress interrupts the path at its terminus, forcing the viewer's perspective to shift and creating a moment of geometric tension. The work maintains stillness to emphasize the contemplative nature of the environment, focusing on material texture and spatial immersion rather than motion or change.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.334
+}
