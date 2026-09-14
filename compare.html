@@ -83,22 +83,58 @@
     "prompt": "concentric circles in fluorescent colors pulse with elastic easing",
     "seed": 1,
     "strip": "e/4/strip.png"
+  },
+  {
+    "brief": "The canvas displays a pattern of nested, circular rings that expand outward from a central point. These rings are continuously changing their appearance, pulsing through vivid, fluorescent colors. The color properties of these rings are not static; instead, both their saturation and their opacity fluctuate rhythmically over time, creating a shimmering, evolving glow. The entire pattern animates autonomously, changing constantly without requiring any user interaction.",
+    "href": "e/5/",
+    "id": 5,
+    "prompt": "concentric circles in fluorescent colors pulse with elastic easing Revise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time",
+    "seed": 1,
+    "strip": "e/5/strip.png"
   }
 ]</script>
 <script id="sketchgen-pairs" type="application/json">[
   {
     "a": 2,
-    "b": 4
+    "b": 5
   },
   {
     "a": 1,
-    "b": 4
+    "b": 5
   }
 ]</script>
 <script id="sketchgen-agents" type="application/json">{
   "1-2": [
     {
       "choice": "tie",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "1-4": [
+    {
+      "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "2-4": [
+    {
+      "choice": "A",
       "judge": "gemma4:e4b",
       "prompt_version": "judge-v1",
       "question": "brief"
