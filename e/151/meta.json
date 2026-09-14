@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 151, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/151/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple colored, circular shapes representing individual cells. Initially, these cells are present and appear to drift gently. The core visual element is the autonomous, rhythmic division process. Over time, cells spontaneously separate and physically replicate, with each existing cell splitting into two new cells. This process accelerates, causing the total number of distinct, colored shapes on the canvas to grow exponentially, simulating continuous biological life cycles without requiring any user input.",
+  "completion_tokens": 614,
+  "created_utc": "2026-09-14T23:03:12Z",
+  "entry_id": 151,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 614,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1182,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 70.847
+    }
+  ],
+  "job_id": 152,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "making progress, but we need to see one cell become two and then two cells become four and so on",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 151
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on",
+  "prompt_tokens": 1182,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/151/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/151",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a self-sustaining ecosystem of cells that grow and multiply autonomously. Each cell drifts gently across the canvas, gradually increasing in size before splitting into two new cells. The process repeats continuously, creating an exponential growth pattern that mimics biological reproduction without any external input. The visual result is a dynamic, ever-changing swarm of colored circles that evolve over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.847
+}
