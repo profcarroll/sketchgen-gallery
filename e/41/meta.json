@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "responds(click)",
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 41, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/41/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, dynamic nighttime cityscape harbor dominated by dozens of illuminated drone shapes. These formations move in complex flight paths across the water and over the buildings. The user interacts with the show using direct input: moving the mouse causes the drones to glide and subtly adjust their position in real-time. Clicking anywhere on the screen triggers a dramatic change, immediately cycling the entire fleet into one of several predefined, impressive formations.",
+  "completion_tokens": 1480,
+  "created_utc": "2026-09-14T15:25:02Z",
+  "entry_id": 41,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1480,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1161,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 106.192
+    }
+  ],
+  "job_id": 42,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 41
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations",
+  "prompt_tokens": 1161,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/41/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/41",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic nighttime harbor scene populated by dozens of illuminated drones that fly in complex patterns across the water and over buildings. The visualization uses p5.js's WEBGL renderer to create a three-dimensional space where drones move with fluid motion between targets. Drones are generated with random starting positions, colors, and speeds, then follow smooth trajectories that can be interrupted by user interaction. Moving the mouse causes nearby drones to respond with subtle gliding motions, while clicking triggers an immediate transformation of the entire drone fleet into one of several pre-defined impressive formations. The scene features a dark night sky, water surface, and urban buildings to ground the aerial spectacle, creating an immersive experience that demonstrates both fluid motion and responsive interaction in a single continuous animation loop.",
+  "submitted_by": "profcarroll",
+  "wall_s": 106.192
+}
