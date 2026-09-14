@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 110, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/110/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a brightly colored, scrolling environment featuring solid, blocky platforms of various shapes and colors. A primary character, represented by a distinctive sprite, traverses this world. The character moves when directional controls are utilized, allowing them to run along the ground and jump vertically between the platforms. The character maintains gravity, making their movement feel grounded and cyclical. The movement changes based on the type and duration of input provided via the mouse or keyboard, controlling the character's horizontal speed and jump height as they navigate the landscape.",
+  "completion_tokens": 909,
+  "created_utc": "2026-09-14T20:02:27Z",
+  "entry_id": 110,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 909,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1218,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 82.53
+    }
+  ],
+  "job_id": 111,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again but this time make the game playable with the mouse and or keyboard",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 110
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard",
+  "prompt_tokens": 1218,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/110/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/110",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a scrolling platformer environment where a character navigates through a world of colorful, blocky platforms. The character responds to keyboard input for movement and jumping, with gravity pulling them downward. The scene scrolls horizontally as the character moves, giving a sense of progression through the level. The visual design uses solid colors and geometric shapes to create an engaging, retro-style platformer aesthetic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 82.53
+}
