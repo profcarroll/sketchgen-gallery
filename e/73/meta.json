@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwhat does the inside of a computer look like?\u201d \u2014 sketchgen entry 73, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/73/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, abstract visualization of interconnected circuits and flowing data. A multitude of thin, glowing lines, rendered in neon shades of blue and green, crisscross the space, forming complex, pulsating lattices. Data streams manifest as small, brightly colored orbs that continually move along these glowing pathways, creating the illusion of ceaseless electrical currents. The entire composition shifts and breathes with an underlying rhythm, displaying the constant processing of information.",
+  "completion_tokens": 823,
+  "created_utc": "2026-09-14T17:47:42Z",
+  "entry_id": 73,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 823,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1128,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 70.515
+    }
+  ],
+  "job_id": 74,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 73
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "what does the inside of a computer look like?",
+  "prompt_tokens": 1128,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/73/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/73",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract visualization of interconnected digital circuits and data flow. Using p5.js's WEBGL renderer, it generates a three-dimensional space filled with glowing neon lines that form complex circuit patterns. Brightly colored orbs move along these pathways, representing data streams flowing through an invisible network. The entire composition breathes with subtle rhythmic pulses, creating the illusion of constant information processing and electrical activity. The visualization shifts and evolves on its own without user input, with the entire scene rotating slowly to reveal different aspects of the circuitry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.515
+}
