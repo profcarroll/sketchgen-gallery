@@ -1,0 +1,91 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 94, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/94/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a bright, expansive natural landscape reminiscent of a pastoral scene. In the foreground, a vividly green, grassy field spreads across the bottom, rising up to meet a central, gently sloping hill. Dominating the upper two-thirds of the composition is a deep blue sky, filled with voluminous, fluffy white clouds. The scene is highly saturated with natural, earthy tones and the brilliant contrast of blue and white. While the shapes of the land and sky are stable, the atmospheric elements, particularly the clouds, exhibit a constant, subtle motion, giving the impression of a gentle breeze passing over the idyllic scene.",
+  "completion_tokens": 1334,
+  "created_utc": "2026-09-14T19:08:57Z",
+  "entry_id": 94,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 633,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1140,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 67.313
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 701,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1263,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 34.735
+    }
+  ],
+  "job_id": 95,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 94
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again",
+  "prompt_tokens": 2403,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/94/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/94",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene pastoral landscape with a bright blue sky, fluffy white clouds, and a verdant grassy field. The scene features a central gentle hill rising from the foreground, rendered with subtle sine-based curves to suggest natural terrain. The clouds are drawn as layered ellipses and gently drift across the canvas at varying speeds, creating a sense of atmospheric motion without any user interaction. The composition uses vertical color gradients for the sky and geometric shapes for the ground and hill, all rendered in earthy tones that evoke a peaceful countryside scene. The animation loop ensures continuous movement of the clouds, satisfying the requirement for canvas changes over time without external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.048
+}
