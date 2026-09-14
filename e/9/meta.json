@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA slow tide of overlapping translucent circles rising from the bottom\u2026\u201d \u2014 sketchgen entry 9, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/9/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, slow-moving stream of translucent circles that appear to flow up from the bottom, creating a tide of varied shades of blue against a dark background. These overlapping shapes drift and change subtly. When the viewer clicks anywhere on the canvas, a visible ripple expands from the point of contact, temporarily pushing the nearby circles outward before they relax and flow back into the overall tide.",
+  "completion_tokens": 615,
+  "created_utc": "2026-09-14T08:58:37Z",
+  "entry_id": 9,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 615,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1109,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 66.377
+    }
+  ],
+  "job_id": 5,
+  "last_error": "swept: left in planning for 31 minutes",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 9
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide.\n\nRevise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue",
+  "prompt_tokens": 1109,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/9/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/9",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive underwater scene with a continuous flow of translucent blue circles rising from the bottom of the canvas. The circles drift slowly upward, overlapping and blending to form a dynamic tide of color. A subtle ripple effect is triggered on mouse click, temporarily pushing nearby circles outward before they return to their natural flow. The visualization relies on smooth motion and color transitions to evoke a sense of depth and fluidity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.377
+}
