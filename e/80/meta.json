@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 80, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/80/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deeply atmospheric, cyclical view of a futuristic cityscape. As the simulation cycles through the phases of day and night, the predominant color palette shifts, yet the environment remains wet and highly reflective. Bioluminescent flora scattered through the architecture pulses with soft, vibrant light, casting distinct, colorful projections across the slick, wet surfaces. This pulsating light triggers visible, dissipating ripples that expand across the ground and facades. The interaction is purely observational: the primary movement is the continuous, gradual transition of the atmospheric light, causing the reflections and ripples to cycle in perpetual motion.",
+  "completion_tokens": 823,
+  "created_utc": "2026-09-14T18:16:33Z",
+  "entry_id": 80,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 823,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1159,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 75.885
+    }
+  ],
+  "job_id": 81,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again with a different color pallete",
+    "critique_by": "profcarroll",
+    "generation": 6,
+    "parent_entry_id": null,
+    "root_entry_id": 80
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color pallete",
+  "prompt_tokens": 1159,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/80/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/80",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a perpetually cycling atmospheric cityscape that transitions smoothly between day and night phases. The scene features bioluminescent flora that pulse with vibrant, shifting colors, casting ripples across the reflective wet surfaces of futuristic architecture. The entire environment operates through mathematical motion without user interaction, driven by time-based color transitions and procedural generation. The WebGL renderer creates a three-dimensional space where glowing elements interact dynamically with the environment, producing an immersive, ever-changing urban landscape that feels alive with subtle, organic movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 75.885
+}
