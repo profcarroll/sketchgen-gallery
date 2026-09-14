@@ -1,0 +1,91 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccreate a simple snowboarding game with no audio. use arrow keys to na\u2026\u201d \u2014 sketchgen entry 56, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/56/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a snowboarding course through which a snowboarder navigates. The user controls the snowboarder's descent using directional arrow keys to steer the character along the terrain. Pressing the spacebar causes the snowboarder to jump, while various other keys trigger specialized tricks that change the character\u2019s animation. The environment includes visible sidewalls and a damage counter. If the player directs the snowboarder into the sidewall, the damage counter increases, leading to a game over state when the damage reaches 100%.",
+  "completion_tokens": 2752,
+  "created_utc": "2026-09-14T16:45:46Z",
+  "entry_id": 56,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1108,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1119,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 83.571
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1644,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1236,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 78.144
+    }
+  ],
+  "job_id": 57,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 56
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100%",
+  "prompt_tokens": 2355,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/56/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/56",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive snowboarding game where players control a character through a procedurally generated course using arrow keys for steering and spacebar for jumping. The environment features terrain with sidewalls that cause damage when hit, and a damage counter that leads to game over at 100 points. Special tricks can be performed with Q and W keys, changing the character's animation. The canvas updates continuously with physics-based movement, collision detection, and visual feedback, creating an engaging gameplay experience that runs autonomously once started.",
+  "submitted_by": "profcarroll",
+  "wall_s": 161.715
+}
