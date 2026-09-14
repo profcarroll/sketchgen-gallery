@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 52, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/52/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a sprawling, angular cityscape that undergoes a constant atmospheric cycle from dawn to dusk and beyond. The scene is defined by rigid architectural structures rendered with highly reflective, wet surfaces that dramatically catch and shift the changing light. As the sun cycles, the color palette shifts throughout the sky and buildings. During twilight, the atmosphere is punctuated by bioluminescent plant life that pulses with light, casting visible and distinct, shifting color projections across the damp, surrounding stone and metal structures.",
+  "completion_tokens": 998,
+  "created_utc": "2026-09-14T16:27:16Z",
+  "entry_id": 52,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 998,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1136,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 77.658
+    }
+  ],
+  "job_id": 53,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 52
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.",
+  "prompt_tokens": 1136,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/52/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/52",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-changing urban landscape that evolves through a complete atmospheric cycle. The scene features towering angular buildings with reflective, wet surfaces that respond dynamically to shifting light conditions as the sun moves across the sky. The color palette transitions smoothly from dawn's warm hues to dusk's cool tones, while bioluminescent plant life pulses gently throughout the environment, casting colorful projections onto the damp architectural structures. The entire scene operates autonomously through time-based animation, with no external input required, creating a continuous visual narrative of urban life under changing atmospheric conditions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.658
+}
