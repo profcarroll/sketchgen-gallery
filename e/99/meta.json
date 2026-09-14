@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 99, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/99/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a beautifully rendered, three-dimensional representation of the solar system. Planets orbit around a luminous central star, all observed with dynamic, changing light sources that cast realistic shadows across the orbiting celestial bodies. When the user presses the mouse down, the entire system initiates a visible, dynamic animation, causing the planets and their orbits to move and react within the light field.",
+  "completion_tokens": 2106,
+  "created_utc": "2026-09-14T19:27:57Z",
+  "entry_id": 99,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 834,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1215,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 77.499
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1272,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1331,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 60.709
+    }
+  ],
+  "job_id": 100,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "attempt again with the 3D lighting effect this time",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 99
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time",
+  "prompt_tokens": 2546,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/99/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/99",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dynamically rendered 3D solar system using p5.js's WEBGL mode. The scene features a luminous central star around which eight planets orbit at different speeds and distances. Each celestial body is rendered with distinct colors and sizes, including Saturn with its characteristic rings. The lighting changes over time to simulate realistic shadowing and illumination effects. Upon clicking the canvas, the entire system initiates a new animation mode where all celestial bodies rotate more rapidly, creating an engaging visual experience that responds dynamically to user interaction while maintaining a scientifically inspired aesthetic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 138.208
+}
