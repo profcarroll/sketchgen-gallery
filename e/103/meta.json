@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crender a volcanic eruption\u201d \u2014 sketchgen entry 103, prompted by profcaroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/103/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, powerful scene of a volcanic eruption. The ground is characterized by dark, rugged rock formations, against which fiery rivers of molten lava flow and surge. These glowing rivulets shift colors, ranging from bright yellow to deep orange, cascading down the slopes. Above the chaos, dense plumes of dark smoke and ash rise and drift, indicating the tremendous force and heat of the volcanic activity. The scene is constantly changing, simulating the continuous, explosive energy release of the volcano.",
+  "completion_tokens": 1246,
+  "created_utc": "2026-09-14T19:40:34Z",
+  "entry_id": 103,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1246,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1195,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 94.954
+    }
+  ],
+  "job_id": 104,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 103
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "render a volcanic eruption",
+  "prompt_tokens": 1195,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/103/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/103",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a dynamic volcanic eruption scene using particle systems and color transitions to depict molten lava flows and billowing ash clouds. The lava rivers shift from bright yellow to deep orange as they cascade down rocky slopes, while dense smoke plumes rise and drift above the landscape. The entire composition evolves autonomously without user input, with each frame rendering new positions and visual states for thousands of particles that collectively form the explosive energy of the volcano.",
+  "submitted_by": "profcaroll",
+  "wall_s": 94.954
+}
