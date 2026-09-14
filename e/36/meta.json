@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA slow tide of overlapping translucent circles rising from the bottom\u2026\u201d \u2014 sketchgen entry 36, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/36/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a slow, continuous tide of translucent, overlapping circles that appear to rise from the bottom of a dark background. These large, softly flowing shapes are intertwined with numerous small, visible pointillist stars. The scene features constant, subtle movement as the circles drift and flow upward. The viewer can interact with the stream by clicking anywhere on the canvas, which triggers a ripple effect that momentarily pushes the surrounding circles apart before they resume their slow, continuous movement.",
+  "completion_tokens": 742,
+  "created_utc": "2026-09-14T15:05:41Z",
+  "entry_id": 36,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 742,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1124,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 74.199
+    }
+  ],
+  "job_id": 37,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous stream of overlapping translucent circles, and this time the circles shift subtly in hue depending on their position in the stream",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 36
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide.\n\nRevise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue\n\nRevise: the same continuous flow of translucent circles, and this time the circles overlap with small, visible pointillist stars\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles reflect varying shades of luminescence\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles shift subtly in hue depending on their position in the stream",
+  "prompt_tokens": 1124,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/36/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/36",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive underwater scene with a slow, flowing tide of translucent blue-gray circles that rise from the bottom of the dark canvas. The circles drift upward at different speeds and sizes, creating a sense of depth and continuous motion. Thousands of tiny pointillist stars dot the background, providing a celestial contrast to the organic flow of the circles. The viewer can interact with this flowing tide by clicking anywhere on the canvas, which triggers a ripple effect that pushes nearby circles apart before they resume their gentle ascent. The subtle color variations and translucent layers create a dreamlike quality reminiscent of oceanic movement and cosmic space simultaneously.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.199
+}
