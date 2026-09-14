@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 27, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/27/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a sprawling, dense cityscape viewed from ground level, perpetually cycling through the atmospheric stages of day and night. Rigid, angular structures form the backbone of the scene. Scattered throughout the lower areas, organic plant life grows, softening the lines between the man-made environment. Most dramatically, the entire cityscape rests on highly reflective wet surfaces. As the sun cycles from sunrise to deep sunset, the changing light catches these wet surfaces, creating vibrant, shifting pools of color and distorted reflections across the foreground and up the sides of the towering buildings. The scene is mesmerizingly continuous, constantly adapting its mood and texture with the movement of the light.",
+  "completion_tokens": 940,
+  "created_utc": "2026-09-14T14:31:09Z",
+  "entry_id": 27,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 940,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1171,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 81.097
+    }
+  ],
+  "job_id": 28,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 27
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.",
+  "prompt_tokens": 1171,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/27/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/27",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-changing cityscape that exists on a reflective wet surface, continuously shifting through day and night cycles. The scene features rigid architectural structures rising into the sky, softened by organic plant life at ground level. As the simulated sun moves across the sky, its light reflects off the wet surfaces, creating vibrant, constantly evolving color pools and distorted reflections that dance across buildings and foreground. The entire composition operates without user input, driven purely by time-based animation to deliver a mesmerizing, self-contained visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.097
+}
