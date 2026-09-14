@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 71, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/71/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with a continuous, dynamic interplay of abstract lines and complex geometric shapes. These forms exhibit controlled, rhythmic pulsatility and undergo constant chromatic shifting, creating rippling fields of saturated color. The overall impression is one of deep, evolving three-dimensional space, suggesting sophisticated movement and depth. Abstract elements constantly shift, expanding, dissolving, and reforming into interconnected patterns that redefine the perceived environment without fail.",
+  "completion_tokens": 807,
+  "created_utc": "2026-09-14T17:39:48Z",
+  "entry_id": 71,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 807,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1202,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 72.018
+    }
+  ],
+  "job_id": 72,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again, needs more sophistiacted sense of space, form and movement",
+    "critique_by": "profcarroll",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 71
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement",
+  "prompt_tokens": 1202,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/71/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/71",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, ever-shifting landscape of interconnected geometric forms and abstract lines that pulse with rhythmic vitality. Using WebGL rendering, it generates a sense of deep, evolving three-dimensional space through continuous chromatic transitions and dynamic shape transformations. The visual field is alive with movement\u2014shapes expand, dissolve, and reform into complex patterns that suggest infinite depth and motion, all without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.018
+}
