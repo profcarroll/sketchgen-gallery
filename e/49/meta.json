@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 49, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/49/ Licensed CC BY 4.0.",
+  "brief": "The viewer encounters a monumental pathway of heavily textured steel, bathed in the diffuse light of an imagined interior space. The path appears to follow an endless, curving flow, rendered in deep, rust-toned oxidized iron. However, this continuous arc is suddenly interrupted by a jarring, acute shift in curvature, momentarily disrupting the otherwise ceaseless geometry. The experience is purely architectural and observational; the geometry defines the experience, and the visual change is the sudden, abrupt interruption of the predictable flow.",
+  "completion_tokens": 509,
+  "created_utc": "2026-09-14T16:12:21Z",
+  "entry_id": 49,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 509,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1134,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 58.041
+    }
+  ],
+  "job_id": 50,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 49
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.",
+  "prompt_tokens": 1134,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/49/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/49",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an architectural visualization of a continuous steel pathway with a sudden, disruptive interruption. Using WebGL rendering, it creates a helical structure in deep rust tones that appears to flow endlessly through space. The work captures the tension between predictable geometry and abrupt disruption \u2014 a curved path is suddenly broken by a sharp, angular shift that jolts the viewer's perception of continuous form. The composition emphasizes the visual and spatial experience of architecture, where the change in curvature becomes the defining moment rather than the flow itself. The stillness of the piece reinforces the contemplative quality of architectural observation, inviting viewers to notice how the interruption creates a new relationship between the geometric elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.041
+}
