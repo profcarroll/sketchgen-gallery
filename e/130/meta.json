@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 130, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/130/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, abstracted garden landscape characterized by richly colored, organically flowing shapes that represent various flowering plants. The visual focus is the subtle, continuous process of pollination. Movement is dynamic and cyclical, involving luminous elements that appear to drift and weave between the blossoms, visually connecting the individual plants in a gentle, rhythmic flow. The entire scene is constantly animated, portraying the biological process of life and reproduction without requiring any external input from the viewer.",
+  "completion_tokens": 872,
+  "created_utc": "2026-09-14T21:32:44Z",
+  "entry_id": 130,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 872,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1134,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 78.846
+    }
+  ],
+  "job_id": 131,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 130
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.",
+  "prompt_tokens": 1134,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/130/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/130",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an abstract garden landscape where organic, flowing shapes represent flowering plants. Luminous particles drift and weave between these blossoms in a continuous, rhythmic motion that visualizes the process of pollination. The scene animates itself without external input, showing life and reproduction through color, form, and movement. Each element contributes to a cohesive ecosystem where the boundaries between individual flowers dissolve into a harmonious flow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.846
+}
