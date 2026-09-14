@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 100, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/100/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, continuous tapestry of abstract lines and complex geometric forms. These structured shapes are in constant motion, evolving through intricate cycles of distortion. The forms do not remain rigid; instead, they exhibit localized warping and appear to tessellate, creating intricate, repeating patterns that shift across the plane. This dynamic interplay of light and interconnected geometry generates a deep and overwhelming sense of evolving, structured space.",
+  "completion_tokens": 1005,
+  "created_utc": "2026-09-14T19:32:25Z",
+  "entry_id": 100,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1005,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1202,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 79.666
+    }
+  ],
+  "job_id": 101,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 100
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions",
+  "prompt_tokens": 1202,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/100/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/100",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, ever-evolving tapestry of abstract geometric forms using WebGL rendering. The composition features a dense network of interwoven lines and evolving shapes that continuously distort and morph across the canvas. Through carefully orchestrated motion and recursive geometric patterns, it generates a sense of structured chaos \u2014 where order and disorder coexist in constant flux, creating an immersive visual experience that shifts organically over time without any external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.666
+}
