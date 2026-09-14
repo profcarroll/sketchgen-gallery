@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 78, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/78/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a vast, immersive cityscape transitioning through the cycles of day and night. The structures are wet and highly reflective, catching the dramatic, changing ambient light. Bioluminescent flora populates the gaps between buildings, emitting a soft, pulsing glow that dictates the scene's color palette. Crucially, these pulsing lights project distinct patterns onto the wet surfaces, causing visible, dissipating ripples that ripple across the architecture as the atmospheric cycles unfold. There is no required interaction; the entire environment is autonomously animated.",
+  "completion_tokens": 1034,
+  "created_utc": "2026-09-14T18:09:26Z",
+  "entry_id": 78,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1034,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1119,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 79.696
+    }
+  ],
+  "job_id": 79,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": null,
+    "root_entry_id": 78
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.",
+  "prompt_tokens": 1119,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/78/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/78",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an immersive cityscape that transitions through day and night cycles, with buildings that are wet and highly reflective. The scene is illuminated by bioluminescent flora that emit a soft, pulsing glow, which influences the overall color palette. These glowing elements project distinctive patterns onto the wet surfaces, creating visible ripples that propagate across the architecture as the atmospheric conditions change. The entire environment animates autonomously without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.696
+}
