@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstock market clip art\u201d \u2014 sketchgen entry 105, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/105/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract line graphs and dynamic shapes that simulate stock market fluctuations. Vertical lines and interconnected nodes shift rapidly in alternating hues of green and red, mapping out continuous trends of value. The overall composition pulses and shifts constantly, giving the impression of high volatility and rapid change. If the cursor is dragged across the canvas, the graph smoothly adjusts, simulating the ability to zoom in on a specific time period or segment of market data, altering the displayed scale of the fluctuation.",
+  "completion_tokens": 966,
+  "created_utc": "2026-09-14T19:46:57Z",
+  "entry_id": 105,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 966,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1126,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 76.756
+    }
+  ],
+  "job_id": 106,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 105
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "stock market clip art",
+  "prompt_tokens": 1126,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/105/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/105",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic visualization of simulated stock market fluctuations using abstract line graphs and interconnected nodes. The composition features rapidly shifting vertical lines and nodes in alternating green and red hues that pulse and move across the screen, representing market volatility. The entire system operates autonomously with no user input required, but responds to cursor drag gestures by adjusting the zoom level to simulate \"zooming in\" on specific time periods. The visual effect combines particle physics with data visualization techniques to create an impression of high-frequency market changes, where nodes connect dynamically to form trending patterns and lines trace erratic paths that mimic real-time price movements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.756
+}
