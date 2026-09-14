@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 128, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/128/ Licensed CC BY 4.0.",
+  "brief": "A continuous grid of small, interconnected squares rests on a near-black background, each square exhibiting its own slow, subtle breathing rhythm. Interacting with the canvas by clicking initiates an expanding wave that radiates outward from the point of contact. As this wave passes over the stationary squares, each square within its path flashes a burst of highly randomized, vibrant colors before returning to its steady, rhythmic pulse.",
+  "completion_tokens": 792,
+  "created_utc": "2026-09-14T21:21:15Z",
+  "entry_id": 128,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 792,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1193,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 76.589
+    }
+  ],
+  "job_id": 129,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 128
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors",
+  "prompt_tokens": 1193,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/128/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/128",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing grid of squares that pulse gently with their own breathing rhythm, set against a near-black background. Each square has its own subtle animation cycle, creating a sense of organic life across the canvas. When clicked, an expanding wave radiates outward from the center, causing affected squares to flash vivid, randomized colors before returning to their steady rhythm. The interaction and continuous motion make for a calming yet responsive visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.589
+}
