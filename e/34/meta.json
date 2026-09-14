@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it.\u201d \u2014 sketchgen entry 34, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/34/ Licensed CC BY 4.0.",
+  "brief": "The canvas features slow, constantly evolving abstract shapes and lines, mimicking the depth of space or swirling nebulas. These geometrical elements, rendered in a rich, cinematic palette of deep blues, violets, and glowing accents, continuously shift and morph across the screen. Titles or abstract text fragments slowly resolve and fade into the background, giving the appearance of a grand, evolving cinematic reveal. The composition remains dynamic, with all visual changes occurring automatically and responding subtly to ambient sound present through the microphone.",
+  "completion_tokens": 2062,
+  "created_utc": "2026-09-14T14:58:50Z",
+  "entry_id": 34,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 864,
+      "evidence": "gate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 13.000 under 440 Hz vs 13.000 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1251,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 74.638
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1198,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1409,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 58.51
+    }
+  ],
+  "job_id": 35,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 34
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.",
+  "prompt_tokens": 2660,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/34/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/34",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving cosmic landscape using WebGL rendering in p5.js. The composition features slowly morphing, glowing shapes that drift through a three-dimensional space, evoking the vastness and mystery of nebulae and deep space. Colorful spheres shift and pulse in synchronized motion, while abstract text fragments resolve and fade in the background, suggesting a grand cinematic reveal. The entire scene is rendered dynamically without any user input, with all visual changes occurring automatically over time. The sketch is designed to be responsive to ambient sound through its audio analysis capabilities, though it also functions autonomously, creating an endless, hypnotic visualization of cosmic motion and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.148
+}
