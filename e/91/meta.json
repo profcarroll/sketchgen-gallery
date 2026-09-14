@@ -1,0 +1,91 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 91, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/91/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, ethereal lattice constructed from delicate, glowing lines. These bright lines form a vast network of connectivity, but occasionally, momentary gaps appear, breaking the continuous flow of light. The visual impact is defined by a powerful contrast: the vibrant luminescence of the glowing threads sharply contrasts against a surrounding, deep darkness. The structure appears to shift and subtly evolve over time, creating the illusion of a delicate, living web of light and shadow that continuously changes.",
+  "completion_tokens": 1154,
+  "created_utc": "2026-09-14T18:56:59Z",
+  "entry_id": 91,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 645,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 24)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1108,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 67.518
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 509,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1350,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 28.59
+    }
+  ],
+  "job_id": 92,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same ethereal lattice, and this time intensifying the contrast between the glowing lines and the surrounding darkness",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 91
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate ethereal lattice, and this time introducing occasional momentary gaps in the connectivity of the glowing lines\n\nRevise: the same ethereal lattice, and this time intensifying the contrast between the glowing lines and the surrounding darkness",
+  "prompt_tokens": 2458,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/91/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/91",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-shifting lattice of glowing lines that pulse and evolve over time. The network appears to breathe with life as individual threads subtly move and occasionally break their connections, forming temporary gaps in the web. The stark contrast between the bright, luminous threads and deep black background emphasizes the ethereal quality of the structure, while the continuous animation gives it a sense of organic motion\u2014like a living web of light and shadow that's always in flux.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.108
+}
