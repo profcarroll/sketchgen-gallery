@@ -413,16 +413,24 @@
     "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle. Revise: the same grid, and this time the pulse colors are randomized upon impact",
     "seed": 1,
     "strip": "e/57/strip.png"
+  },
+  {
+    "brief": "The canvas depicts a serene, abstracted garden viewed beneath a bright blue sky. Plants grow upward from the ground over time, visually maturing from initial sprouts to bearing colorful fruit. The leaves and foliage exhibit controlled, gentle growth, suggesting a steady life cycle rather than a random bounce. As the plant structures reach maturity, the animation subtly incorporates a flowing movement, simulating the effect of a gentle wind. The entire scene is a continuous display of organic growth and subtle, atmospheric movement.",
+    "href": "e/62/",
+    "id": 62,
+    "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time Revise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit Revise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.",
+    "seed": 1,
+    "strip": "e/62/strip.png"
   }
 ]</script>
 <script id="sketchgen-pairs" type="application/json">[
   {
     "a": 20,
-    "b": 50
+    "b": 51
   },
   {
     "a": 2,
-    "b": 50
+    "b": 52
   },
   {
     "a": 51,
@@ -430,19 +438,19 @@
   },
   {
     "a": 11,
-    "b": 26
+    "b": 34
   },
   {
-    "a": 39,
+    "a": 36,
     "b": 34
   },
   {
     "a": 26,
-    "b": 50
+    "b": 48
   },
   {
-    "a": 19,
-    "b": 34
+    "a": 20,
+    "b": 21
   }
 ]</script>
 <script id="sketchgen-agents" type="application/json">{
@@ -721,6 +729,20 @@
     },
     {
       "choice": "B",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "10-20": [
+    {
+      "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "A",
       "judge": "gemma4:e4b",
       "prompt_version": "judge-v1",
       "question": "look"
