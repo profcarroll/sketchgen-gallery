@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 5, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/5/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a pattern of nested, circular rings that expand outward from a central point. These rings are continuously changing their appearance, pulsing through vivid, fluorescent colors. The color properties of these rings are not static; instead, both their saturation and their opacity fluctuate rhythmically over time, creating a shimmering, evolving glow. The entire pattern animates autonomously, changing constantly without requiring any user interaction.",
+  "completion_tokens": 432,
+  "created_utc": "2026-09-14T08:23:24Z",
+  "entry_id": 5,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 432,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1094,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 59.308
+    }
+  ],
+  "job_id": 6,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 5
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time",
+  "prompt_tokens": 1094,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/5/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/5",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing pattern of nested, expanding circular rings that pulse and shimmer with vibrant, fluorescent colors. Each ring animates independently with its own timing, creating a sense of depth and motion that draws the viewer's eye outward from the center. The rings continuously shift through hues while their saturation and opacity fluctuate rhythmically, producing an evolving glow effect. The animation is entirely self-contained, requiring no user interaction to maintain its hypnotic motion, making it a meditative display of color and form in constant flux.",
+  "submitted_by": "profcarroll",
+  "wall_s": 59.308
+}
