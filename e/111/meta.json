@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cretrogamer's paradise\u201d \u2014 sketchgen entry 111, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/111/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with a chaotic, vibrant grid of pixel art, evoking the glowing chaos of an arcade cabinet. Animated geometric shapes, rendered in neon blues, magentas, and electric greens, flash and flicker across the screen, simulating the digitized look of classic video games. These elements are constantly morphing and changing pattern, giving the impression of continuous, joyful gameplay. When the user clicks anywhere on the canvas, the active shapes react instantly, expanding outwards in a burst of color or initiating a short, localized wave of new pixel trails, simulating the 'hit' of a joystick or button press.",
+  "completion_tokens": 909,
+  "created_utc": "2026-09-14T20:05:04Z",
+  "entry_id": 111,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 909,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1157,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 81.907
+    }
+  ],
+  "job_id": 112,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise",
+  "prompt_tokens": 1157,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/111/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/111",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, ever-changing arcade grid using p5.js. It features animated geometric shapes\u2014circles, squares, and triangles\u2014in neon colors that move and bounce around the screen. The shapes continuously morph in position, direction, and rotation, creating a dynamic, chaotic visual effect reminiscent of classic video game displays. As shapes interact with each other, they generate colorful particle bursts that simulate digital fireworks. When clicked, the canvas responds with an immediate explosion of particles centered on the mouse position, providing tactile feedback to user interaction. The entire scene evolves autonomously without any input, fulfilling the requirement for continuous motion while maintaining a visually engaging and playful aesthetic typical of retro arcade experiences.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.907
+}
