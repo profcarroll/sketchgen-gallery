@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca self portrait in three point perspective\u201d \u2014 sketchgen entry 20, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/20/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a geometrically rendered self-portrait viewed through a deep, dramatic lens, utilizing three-point perspective to exaggerate depth and height. The figure is constructed from interlocking planes of color, giving the appearance of a formal, architecturally observed representation. The composition emphasizes converging lines and shifting planes to suggest a monumental presence. The final image is static, requiring no interaction to be appreciated, capturing a fixed moment in deeply receding space.",
+  "completion_tokens": 698,
+  "created_utc": "2026-09-14T09:44:24Z",
+  "entry_id": 20,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 698,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1204,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 71.378
+    }
+  ],
+  "job_id": 21,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 20
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a self portrait in three point perspective",
+  "prompt_tokens": 1204,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/20/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/20",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a geometric self-portrait rendered in three-point perspective using WebGL in p5.js. The figure is constructed from interlocking planes of color that create an architecturally observed, monumental presence. By employing converging lines and shifting planes, the composition exaggerates depth and height, creating a dramatic sense of spatial recession. The use of lighting and color variation adds subtle dimensionality while maintaining the static, formal quality of the representation. The work captures a fixed moment in deeply receding space without any motion or animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.378
+}
