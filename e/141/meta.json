@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 141, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/141/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, continuously evolving field of complex geometric shapes and abstract lines. These forms exhibit dynamic, warping distortions that tessellate across the plane. The shapes do not simply move; they pulse with controlled, periodic pulsations and ripple through the space in a precise, sine-wave-driven manner. Furthermore, the color palette is never static, instead exhibiting constant, chromatic shifting and rippling across all elements. The entire visual field evolves autonomously, presenting a constantly changing, mathematically structured abstraction.",
+  "completion_tokens": 421,
+  "created_utc": "2026-09-14T22:21:12Z",
+  "entry_id": 141,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 421,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1222,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 56.582
+    }
+  ],
+  "job_id": 142,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": null,
+    "root_entry_id": 141
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.",
+  "prompt_tokens": 1222,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/141/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/141",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, self-evolving field of geometric forms that pulse and ripple across the screen in harmonious synchronization. Using WebGL rendering, it generates a tessellated landscape of abstract shapes that warp and morph over time through sine-wave distortions. The color palette shifts continuously, creating a chromatic dance that flows seamlessly between hues. The entire composition is algorithmically driven, with no user input required \u2014 each frame builds upon the last to form an ever-changing abstraction that feels both structured and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 56.582
+}
