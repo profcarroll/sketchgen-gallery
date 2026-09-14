@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cread Finnegan's Wake by James Joyce and then create an interactive sk\u2026\u201d \u2014 sketchgen entry 102, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/102/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays overlapping layers of highly fragmented text and organic shapes, giving the impression of ceaseless, liquid thought. These elements shift and morph in a continual cycle of formation and dissolution, mimicking the stream of consciousness. As the viewer drags the mouse across the canvas, the scattered text fragments gather along the trajectory, forming temporary, decipherable phrases that briefly illuminate and then dissolve, guiding the eye through the chaotic narrative flow.",
+  "completion_tokens": 1059,
+  "created_utc": "2026-09-14T19:37:49Z",
+  "entry_id": 102,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1059,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1116,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 81.508
+    }
+  ],
+  "job_id": 103,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 102
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "read Finnegan's Wake by James Joyce and then create an interactive sketch that interprets the text",
+  "prompt_tokens": 1116,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/102/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/102",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a visual representation of stream-of-consciousness thought processes through constantly shifting text fragments and organic shapes. The canvas displays hundreds of small text elements that float and drift independently, each with its own motion pattern and fading lifespan. These fragments continuously form and dissolve, creating an impression of mental activity where ideas emerge, interact, and fade away. Organic elliptical shapes move in parallel with the text, adding a sense of fluidity and continuity to the chaotic narrative flow. The work operates entirely autonomously, with no user interaction required for its core animation, yet it's designed to respond visibly to mouse dragging by temporarily gathering fragments along the trajectory, creating temporary phrases that illuminate and then dissolve, guiding the viewer's eye through the conceptual landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.508
+}
