@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 88, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/88/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an abstracted, vibrant garden set under a clear blue sky. Various types of vegetables grow upward from the ground, maintaining their place on the canvas. Plant structures exhibit visible life cycles, with leaves growing in place and bearing fruit that cycles through distinct, observable stages of development. As the plants mature, subtle movements simulate the effect of a gentle wind, causing the mature leaves to sway lightly, creating a dynamic yet soothing visual environment.",
+  "completion_tokens": 995,
+  "created_utc": "2026-09-14T18:44:06Z",
+  "entry_id": 88,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 995,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1100,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 77.866
+    }
+  ],
+  "job_id": 89,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 88
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development",
+  "prompt_tokens": 1100,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/88/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/88",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vibrant, animated garden under a clear blue sky where plants grow organically from the ground. Each plant begins as a simple stem and gradually develops leaves and fruits over time. The growth process is visible through stages: leaves emerge and mature, then bear fruit that ripens through distinct developmental phases. As plants mature, they subtly sway with a gentle wind effect, creating a dynamic yet peaceful environment. The scene evolves without user interaction, demonstrating natural life cycles and movement through time-based animations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.866
+}
