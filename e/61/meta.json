@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 61, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/61/ Licensed CC BY 4.0.",
+  "brief": "The canvas portrays a breathtaking, deep indigo cosmic expanse. The scene is dominated by a dense tapestry of starlight, featuring the soft, swirling blur of the Milky Way stretching across the void. Tiny, individual stars twinkle with varying intensity, creating a sense of immense cosmic depth. Occasionally, a burst of intense light erupts, representing a supernova, momentarily illuminating the dark, stellar vacuum before fading back into the pervasive starlight. The entire composition shifts and glows subtly, providing a hypnotic, slow flow of celestial motion.",
+  "completion_tokens": 2737,
+  "created_utc": "2026-09-14T17:04:47Z",
+  "entry_id": 61,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 947,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1147,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 82.401
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 933,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1239,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 44.705
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 857,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1239,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 34.668
+    }
+  ],
+  "job_id": 62,
+  "last_error": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same celestial tapestry, and this time having deep indigo undertones in the dark space between the stars",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 61
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same celestial tapestry, and this time having deep indigo undertones in the dark space between the stars",
+  "prompt_tokens": 3625,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/61/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/61",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a mesmerizing cosmic scene using 2D canvas rendering to simulate the vastness of space. It features a deep indigo background with swirling Milky Way patterns, countless twinkling stars of varying brightness, and occasional supernova bursts that illuminate the darkness. The subtle motion and glowing effects create an hypnotic sense of celestial flow, with all elements shifting gently over time to evoke the slow, infinite dance of the universe.",
+  "submitted_by": "profcarroll",
+  "wall_s": 161.774
+}
