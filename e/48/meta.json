@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 48, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/48/ Licensed CC BY 4.0.",
+  "brief": "The canvas continuously displays an intricate, flowing kaleidoscope pattern confined within a hexagonal boundary. The color palette gradients smoothly from cool emerald greens to deep warm amethysts, creating a mesmerizing depth. The artwork exhibits a dynamic, cyclical motion featuring diagonal sweeps that constantly expand outward from the center. The overall design is highly complex, further enhanced by interwoven lines that intersect and segment the primary hexagonal edge, creating a unified and continuously moving visual spectacle.",
+  "completion_tokens": 894,
+  "created_utc": "2026-09-14T16:08:03Z",
+  "entry_id": 48,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 894,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1106,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 78.17
+    }
+  ],
+  "job_id": 49,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, flowing kaleidoscopic pattern, and this time the pattern will incorporate interwoven lines that intersect the primary hexagonal boundary",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 48
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same intricate, flowing patterns that mimic the rich complexity of a kaleidoscope, and this time the colors will gradient from cool emeralds to warm amethysts\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the movement will emphasize diagonal sweeps and a cyclical expansion outward from the center\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the pattern will incorporate interwoven lines that intersect the primary hexagonal boundary",
+  "prompt_tokens": 1106,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/48/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/48",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing kaleidoscope pattern that continuously evolves within a hexagonal boundary. Using p5.js's color mode and trigonometric functions, it generates flowing lines that sweep outward from the center while rotating in complex patterns. The color palette smoothly transitions from cool greens to warm amethysts through the HSB color space, creating depth and visual interest. Multiple layers of intersecting lines create intricate patterns that shift and flow over time, with each sweep of the pattern building upon the previous one to form a unified, constantly changing artwork. The motion is entirely self-generated without any user input, fulfilling the requirement for autonomous visual change.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.17
+}
