@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 25, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/25/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, flowing kaleidoscopic pattern, contained within the rigid structure of a single hexagon. The patterns are constantly in motion, creating a hypnotic illusion of forward movement. The coloring is a vivid, smooth gradient that transitions beautifully from deep, cool emerald greens to rich, warm amethyst purples. The visual experience is purely observational; the patterns continuously evolve and shift on their own, requiring no interaction from the viewer.",
+  "completion_tokens": 708,
+  "created_utc": "2026-09-14T14:21:29Z",
+  "entry_id": 25,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 708,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1103,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 66.352
+    }
+  ],
+  "job_id": 26,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, flowing patterns that mimic the rich complexity of a kaleidoscope, and this time the colors will gradient from cool emeralds to warm amethysts",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 25
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same intricate, flowing patterns that mimic the rich complexity of a kaleidoscope, and this time the colors will gradient from cool emeralds to warm amethysts",
+  "prompt_tokens": 1103,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/25/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/25",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing kaleidoscopic pattern confined within a hexagonal boundary. Using p5.js's color mode and trigonometric functions, it generates flowing, organic shapes that continuously shift and evolve. The pattern consists of multiple rotating sections, each containing nested polygons that pulse with smooth, time-based motion. The color palette transitions elegantly from deep emerald greens to rich amethyst purples through a carefully calculated hue rotation. The visual effect is achieved by drawing 12-pointed shapes that undulate in real-time, creating an illusion of forward motion within the rigid hexagonal frame. The entire composition animates autonomously without any user interaction, fulfilling the requirement for self-contained, mesmerizing visual evolution.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.352
+}
