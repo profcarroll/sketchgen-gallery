@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 127, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/127/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a three-dimensional scene where a marble rolls within a guide structure shaped like a funnel. The marble moves autonomously, following gravity and the contours of the funnel. As it rolls, it interacts with the surfaces, and the animation ensures that the marble's movement is physically realistic, reacting dynamically to corners and slopes as if rolling naturally. The scene is continuous, showing the marble's path downward until it reaches the bottom of the structure.",
+  "completion_tokens": 1083,
+  "created_utc": "2026-09-14T21:16:24Z",
+  "entry_id": 127,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1083,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1125,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 84.628
+    }
+  ],
+  "job_id": 128,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 127
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces",
+  "prompt_tokens": 1125,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/127/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/127",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a three-dimensional physics simulation of a marble rolling inside a funnel-shaped container. Using WebGL rendering, it displays a transparent funnel structure against which a red marble autonomously moves under the influence of gravity. The marble's motion is physically realistic, bouncing and sliding along the funnel's curved surfaces according to calculated collision normals. The scene continuously animates without user interaction, showing the marble's natural descent as it follows the laws of physics within the confined space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 84.628
+}
