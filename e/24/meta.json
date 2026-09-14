@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cA slow tide of overlapping translucent circles rising from the bottom\u2026\u201d \u2014 sketchgen entry 24, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/24/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dark scene featuring a continuous stream of overlapping, translucent circles that flow slowly upward like a tide. These circles incorporate varying shades of luminescence, giving them a shifting, ethereal glow. When the viewer clicks anywhere on the canvas, a visible ripple radiates outward, temporarily pushing the adjacent circles away from the point of contact. Immediately following the impact, the displaced circles gradually drift back toward the main, steady flow of the tide.",
+  "completion_tokens": 1277,
+  "created_utc": "2026-09-14T10:02:36Z",
+  "entry_id": 24,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 550,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1203,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 60.756
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 727,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1319,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 36.17
+    }
+  ],
+  "job_id": 25,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous stream of overlapping translucent circles, and this time the circles reflect varying shades of luminescence",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 24
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide.\n\nRevise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue\n\nRevise: the same continuous flow of translucent circles, and this time the circles overlap with small, visible pointillist stars\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles reflect varying shades of luminescence",
+  "prompt_tokens": 2522,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/24/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/24",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal underwater scene with a continuous stream of glowing, translucent circles that float upward like particles in a tide. The circles vary in size, color, and opacity, with each one gently swaying as it moves. When clicked, a ripple effect radiates outward from the point of contact, temporarily pushing nearby circles away before they gradually drift back into the flowing pattern. The visual effect emphasizes motion and interaction through subtle color shifts, layered transparency, and responsive physics that make the static canvas feel alive with continuous movement and dynamic response to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.926
+}
