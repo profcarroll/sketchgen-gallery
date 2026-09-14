@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 90, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/90/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a meticulously arranged still life displayed on a brown table within a small, dark, atmospheric room. The composition features a clear jug of water, a silver candelabra holding a single lit candle, and a platter laden with colorful fruit. The lighting is dramatic, designed to highlight the sculptural textures and clean lines of the objects while emphasizing the deep contrast between the lit candle and the surrounding shadows. The scene is deliberately static and silent, presenting a timeless, motionless moment of quiet observation.",
+  "completion_tokens": 1294,
+  "created_utc": "2026-09-14T18:53:54Z",
+  "entry_id": 90,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1294,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1216,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 97.286
+    }
+  ],
+  "job_id": 91,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try to recreate the original prompt more faithfully to the details in the description",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 90
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.\n\nRevise: try to recreate the original prompt more faithfully to the details in the description",
+  "prompt_tokens": 1216,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/90/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/90",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static, atmospheric still life rendered in three-dimensional space using WebGL. The composition centers on a silver candelabra with a single lit candle, a clear jug of water, and a colorful fruit platter arranged on a brown table within a dark room. The lighting emphasizes the sculptural textures and clean lines of each object, creating deep contrast between the warm glow of the flame and the surrounding shadows. The scene is deliberately motionless, frozen in time to evoke quiet observation and contemplation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.286
+}
