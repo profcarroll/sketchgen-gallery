@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 62, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/62/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a serene, abstracted garden viewed beneath a bright blue sky. Plants grow upward from the ground over time, visually maturing from initial sprouts to bearing colorful fruit. The leaves and foliage exhibit controlled, gentle growth, suggesting a steady life cycle rather than a random bounce. As the plant structures reach maturity, the animation subtly incorporates a flowing movement, simulating the effect of a gentle wind. The entire scene is a continuous display of organic growth and subtle, atmospheric movement.",
+  "completion_tokens": 830,
+  "created_utc": "2026-09-14T17:07:16Z",
+  "entry_id": 62,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 830,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1109,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 75.657
+    }
+  ],
+  "job_id": 63,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 62
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.",
+  "prompt_tokens": 1109,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/62/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/62",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an evolving garden scene where plants grow organically from the ground upwards, starting as small sprouts and gradually maturing into full plants with colorful fruit. The growth is steady and controlled rather than erratic, simulating a natural life cycle. As plants reach maturity, they begin to sway gently in a simulated breeze, adding subtle movement to the otherwise static growth process. The scene transitions from a barren landscape to a thriving garden over time, capturing the essence of organic development and atmospheric motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 75.657
+}
