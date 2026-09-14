@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 51, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/51/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vibrant, dynamic nighttime harbor scene set against a sprawling cityscape backdrop. Multiple luminous drones traverse the sky and water, leaving behind brilliant, glowing contrails that streak across the dark environment. The formations of these drones are constantly shifting, creating an illusion of choreographed aerial movement. The viewer interacts with the scene by moving the cursor across the screen, which smoothly guides and influences the drones' paths, and by clicking anywhere on the canvas, which triggers a distinct and complex shift into a new choreographed formation.",
+  "completion_tokens": 1687,
+  "created_utc": "2026-09-14T16:22:10Z",
+  "entry_id": 51,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1687,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1181,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 115.731
+    }
+  ],
+  "job_id": 52,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 51
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations\n\nRevise: the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly",
+  "prompt_tokens": 1181,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/51/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/51",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic nighttime harbor scene with luminous drones that form intricate aerial patterns. The viewer's cursor subtly influences the drones' movement, while clicking triggers dramatic reconfigurations of their formations. Using WebGL rendering for depth and visual impact, the scene features glowing contrails that trace the drones' paths against a backdrop of city lights and water reflections. The composition evolves organically through time-based animations and interactive responses.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.731
+}
