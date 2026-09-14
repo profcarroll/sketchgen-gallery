@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201calternating patterns of oscillation and homeostasis evoked with color\u2026\u201d \u2014 sketchgen entry 50, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/50/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays interconnected, fluid geometric forms that are constantly transforming. These shapes undergo complex, jagged oscillations, appearing to flow and stretch across the surface. The forms themselves are never static; they continuously morph and reconnect, revealing underlying structure through sharp, defined shifts in color. The entire display is autonomous, driven by internal rhythms of movement and light, requiring no interaction from the viewer.",
+  "completion_tokens": 765,
+  "created_utc": "2026-09-14T16:16:25Z",
+  "entry_id": 50,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 765,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1089,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 72.866
+    }
+  ],
+  "job_id": 51,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same fluid interconnected geometric forms, and this time the color shifts are more defined",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 50
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "alternating patterns of oscillation and homeostasis evoked with color and form, continuously morphing\n\nRevise: the same fluid, geometric forms, and this time the oscillations are more jagged\n\nRevise: the same fluid geometric forms, and this time the oscillations are more jagged\n\nRevise: the same fluid interconnected geometric forms, and this time the color shifts are more defined",
+  "prompt_tokens": 1089,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/50/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/50",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, autonomous visual system of interconnected geometric forms that continuously transform and evolve. Each shape is defined by its position, size, rotation, and color, all of which change over time through mathematical oscillations and noise functions. The jagged, organic edges of each form emerge from the interplay between regular polygonal geometry and perlin noise, creating an effect of fluid motion while maintaining clear geometric structure. The shapes flow across the canvas in synchronized yet independent patterns, occasionally reconfiguring their positions to create a sense of continuous reorganization. The color palette shifts gradually over time, emphasizing the rhythmic nature of the transformation without overwhelming the underlying geometric relationships. This autonomous system demonstrates how simple mathematical rules can generate complex, visually engaging behavior that evolves continuously without any external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.866
+}
