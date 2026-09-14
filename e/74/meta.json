@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 74, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/74/ Licensed CC BY 4.0.",
+  "brief": "The viewer encounters a colossal, liminal space defined by massive pathways of deeply rusted steel. These curved, monumental plates guide the movement, echoing the relentless continuity of industrial architecture. The predominant color is deep umber and oxidized orange, textured with the patina of time. The experience is structured by the body\u2019s movement through the confined passage. Suddenly, the seemingly endless sweep of the curvature arrests, shifting into a sharply perpendicular wall that forces an abrupt stop and redirects the pathway's flow, maximizing the visual and physical interruption.",
+  "completion_tokens": 703,
+  "created_utc": "2026-09-14T17:53:26Z",
+  "entry_id": 74,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 703,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1161,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 70.915
+    }
+  ],
+  "job_id": 75,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 74
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.",
+  "prompt_tokens": 1161,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/74/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/74",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, industrial environment using WebGL rendering to depict a vast rusted steel pathway. The composition features curved, monumental plates in deep umber and oxidized orange tones that guide the viewer's eye through space. A sudden perpendicular wall interrupts the flow, creating a dramatic visual and spatial shift. The scene responds to mouse movement through interactive lighting and perspective adjustments, while subtle animations simulate the passage of time and the weight of industrial architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.915
+}
