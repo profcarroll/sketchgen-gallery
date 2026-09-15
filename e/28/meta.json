@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdiagonal stripes animating in smoothly eased slicing patterns in colo\u2026\u201d \u2014 sketchgen entry 28, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/28/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract composition of diagonal stripes, perpetually shifting and reorganizing. The stripes are rendered in bold, primary colors, exhibiting slight rotational variations across the surface. Overlaying the stripes is a visible halftone dot texture, giving the geometry a printed, graphic quality. The entire pattern shifts in a smooth, cyclical motion, presenting a vibrant, continuously evolving abstraction of bold geometry.",
+  "completion_tokens": 552,
+  "created_utc": "2026-09-14T14:34:55Z",
+  "entry_id": 28,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 552,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1092,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.024,
+      "wall_s": 58.604
+    }
+  ],
+  "job_id": 29,
+  "last_error": "lacks cohesion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously shifting, abstract geometric composition, and this time the stripes use primary colors with slight rotational offsets",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 22,
+    "root_entry_id": 12
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures\n\nRevise: the same continuously shifting, abstract geometric composition, and this time the stripes use primary colors with slight rotational offsets",
+  "prompt_tokens": 1092,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/28/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/28",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a continuously shifting abstract composition of diagonal stripes that evolve in real-time without any user interaction. The design employs bold primary colors arranged in diagonal bands that rotate and morph subtly across the canvas. A halftone dot texture overlays the entire pattern, giving it a printed quality reminiscent of graphic design. The motion is generated through time-based calculations that drive color shifts, rotation changes, and the halftone pattern's opacity variations. The entire system operates autonomously using only p5.js core features, creating an endlessly evolving visual abstraction of geometric forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.604
+}
