@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 300, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/300/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, autonomous simulation of cellular replication. Initial cells, depicted as colored circles with defined membranes, spontaneously divide, increasing the number of cells over time. Each new pair of daughter cells visibly separates from the parent cell membrane, moving outward and gradually stabilizing into individual, distinct shapes. The simulation maintains a vibrant, biological feel, showing cyclical growth patterns without any required user interaction.",
+  "completion_tokens": 929,
+  "created_utc": "2026-09-15T18:15:52Z",
+  "entry_id": 300,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 929,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1504,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.164,
+      "wall_s": 82.944
+    }
+  ],
+  "job_id": 301,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time the two daughter cells must peel away from the parent cell membrane before stabilizing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 256,
+    "root_entry_id": 138
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time each cell must visibly show a central structure that shrinks before the final split\n\nRevise: the same autonomous cellular replication, and this time the two daughter cells must peel away from the parent cell membrane before stabilizing.",
+  "prompt_tokens": 1504,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/300/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/300",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a continuous, autonomous cellular replication process. Starting with a few colored cells, each cell grows until it divides into two daughter cells that move away from the parent. The simulation captures the organic rhythm of biological growth and division, with cells gradually stabilizing after splitting. The visual result is a dynamic, self-sustaining ecosystem of expanding and separating forms, rendered in a vibrant color palette that emphasizes the living quality of the system. The entire process runs without user input, driven purely by the internal physics and growth mechanics of each cell.",
+  "submitted_by": "profcarroll",
+  "wall_s": 82.944
+}
