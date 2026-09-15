@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 195, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/195/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a solitary tree standing on a gentle hill. The scene cycles through the seasons: vibrant green leaves transition to fiery reds, burnt oranges, and finally deep browns, shedding onto the ground. The ground then becomes blanketed in falling snow, coating the stark, bare trunk. As the snow melts, tiny buds appear, blossoming into flowers, until new, lush green leaves fill the canopy, signaling the beginning of the cycle anew. The entire process moves continuously, simulating the passage of time.",
+  "completion_tokens": 1530,
+  "created_utc": "2026-09-15T02:28:33Z",
+  "entry_id": 195,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1530,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2205,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 134.58
+    }
+  ],
+  "job_id": 196,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "redraw with the tree trunk connecting to the ground",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 195
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground",
+  "prompt_tokens": 2205,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/195/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/195",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the cyclical passage of seasons through a single tree standing on a gentle hill. The animation transitions smoothly between spring (vibrant green canopy), summer (lush foliage), autumn (fiery reds and oranges), and winter (bare branches blanketed in snow). During the spring transition, tiny buds bloom into flowers before new leaves grow. The scene uses color interpolation to simulate natural seasonal changes, with a particle system of leaves that respond to the current season's palette. Snowflakes gently fall during winter months, covering the ground and tree trunk while maintaining the illusion of time passing without any user interaction required.",
+  "submitted_by": "profcarroll",
+  "wall_s": 134.58
+}
