@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 303, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/303/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a constantly evolving grid of illuminated cells, simulating the rules of life. The patterns of active cells change over time, giving the appearance of slow, organic growth and decay. Visually, the overall background shifts, darkening imperceptibly with each generation cycle. Furthermore, when an active cell dies, it emits a noticeable, bright flash before disappearing. The simulation runs continuously, displaying natural, perpetual motion without requiring any mouse or keyboard input.",
+  "completion_tokens": 855,
+  "created_utc": "2026-09-15T18:35:10Z",
+  "entry_id": 303,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 855,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.9,
+      "prompt_tokens": 1516,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.358,
+      "wall_s": 79.672
+    }
+  ],
+  "job_id": 304,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cellular automaton, and this time some active cells flash brighter when they die",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 259,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die",
+  "prompt_tokens": 1516,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/303/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/303",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates Conway's Game of Life in a constantly evolving grid of illuminated cells. The patterns of active cells change over time, creating an organic appearance of growth and decay. Each cell follows the classic rules: alive cells die if they have fewer than two or more than three neighbors, and dead cells become alive if they have exactly three neighbors. When a cell dies, it emits a bright flash before disappearing, providing visual feedback for the simulation's dynamics. The background subtly darkens with each generation cycle, enhancing the sense of perpetual motion. The system runs autonomously without any user input, continuously updating the canvas to display natural, evolving patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.672
+}
