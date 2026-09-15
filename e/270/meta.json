@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 270, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/270/ Licensed CC BY 4.0.",
+  "brief": "A vibrant, chaotic grid of retro-styled pixel shapes fills the canvas. The background maintains a constant, vibrant pulsation of color and form. When the cursor moves across the canvas, the shapes react dynamically. They first visibly grow larger at the point of interaction, building up energy before scattering outward in a burst of pixelated geometry. The overall effect is a celebratory, glitching paradise of color and expanding patterns driven by the user's movement.",
+  "completion_tokens": 944,
+  "created_utc": "2026-09-15T15:18:34Z",
+  "entry_id": 270,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 944,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1533,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 87.808
+    }
+  ],
+  "job_id": 271,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 223,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path\n\nRevise: try again but make it interactive and animate\n\nRevise: the same chaotic grid of pixelated shapes, and this time the shapes should scatter outward from the cursor's path\n\nRevise: the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward",
+  "prompt_tokens": 1533,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/270/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/270",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, pulsating grid of retro-styled pixel shapes that respond dynamically to user interaction. The background maintains a constant, colorful pulse effect, while each shape gently animates and grows in response to cursor movement. When the mouse approaches a shape, it bursts outward in a pixelated explosion before returning to its normal state. The chaotic yet harmonious motion creates an immersive, glitchy paradise of color and form that evolves continuously, giving viewers a sense of playful energy and interactive exploration.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.808
+}
