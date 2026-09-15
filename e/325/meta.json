@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 325, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/325/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an otherworldly deep-sea landscape dominated by geometrically precise, crystalline pyramidal forms rising from the abyssal floor. These structures appear composed of luminous, translucent material, creating striking geometric shadows against the deep ocean colors. The water itself is characterized by constant, subtle motion, and minute sediments swirl around the bases of the pyramids. These sediments are dynamically lifted and reformed by visible, flowing deep-sea currents, creating an ever-shifting landscape of pale dust and crystalline geometry.",
+  "completion_tokens": 996,
+  "created_utc": "2026-09-15T20:52:26Z",
+  "entry_id": 325,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 996,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "prompt_tokens": 2233,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.523,
+      "wall_s": 103.125
+    }
+  ],
+  "job_id": 326,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometrically precise, crystalline pyramidal structures, and this time deep-sea currents actively lift and redistribute the accumulating sediment.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 286,
+    "root_entry_id": 96
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: the same energy gradient of the pyramidal structures, and this time the water ripples reveal underlying bioluminescence\n\nRevise: pyramids are three-dimensional triangles, re-envision this sketch\n\nRevise: the same dynamic intersection where geometrically precise, crystalline pyramidal forms ascend from the sea, and this time the bioluminescence pulsates with distinct color changes corresponding to the depth of the water.\n\nRevise: the same crystalline pyramids, and this time the pyramidal forms show subtle signs of advanced erosion and sediment accumulation at the base\n\nRevise: the same geometrically precise, crystalline pyramidal structures, and this time deep-sea currents actively lift and redistribute the accumulating sediment.",
+  "prompt_tokens": 2233,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/325/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/325",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an otherworldly deep-sea landscape where geometric pyramidal structures rise from the ocean floor. The crystalline forms are rendered with translucent materials that reflect light and cast sharp shadows against the deep blue ocean background. The scene features subtle motion through constant camera movement and animated pyramids that gently rotate and sway. Fine particles represent sediments swirling in the water, dynamically lifted by flowing currents to create an ever-shifting landscape of pale dust and crystalline geometry. The use of WEBGL rendering allows for realistic lighting effects and a three-dimensional perspective that immerses viewers in this alien underwater environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.125
+}
