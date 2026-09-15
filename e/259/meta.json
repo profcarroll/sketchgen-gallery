@@ -1,0 +1,91 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 259, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/259/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, evolving grid composed of many interconnected squares. Individual cells transition between states and colors based on complex life-and-death rules, creating dynamic, shifting patterns across the entire surface. This simulated biological activity causes the entire field of cells to move and change continuously. Over time, the background surrounding the lively grid subtly and perpetually darkens, lending a gradual sense of passage and depth to the otherwise cyclical and automatic visual spectacle.",
+  "completion_tokens": 1609,
+  "created_utc": "2026-09-15T14:15:20Z",
+  "entry_id": 259,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 652,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1513,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 74.615
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 957,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1629,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 52.311
+    }
+  ],
+  "job_id": 260,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cellular automaton, and this time the background color darkens slightly over time",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 259
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time",
+  "prompt_tokens": 3142,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/259/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/259",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic grid of interconnected cells that evolve according to complex life-like rules. Each cell transitions between active and dormant states, with connections forming and dissolving based on proximity and state. The entire field pulses with organic movement as patterns propagate across the canvas. Simultaneously, the background gradually darkens, creating a sense of temporal depth that enhances the mesmerizing, ever-shifting visual spectacle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 126.926
+}
