@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cgo on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey\u2026\u201d \u2014 sketchgen entry 157, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/157/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows abstract, shifting geometric planes and overlapping color fields, simulating the sensory overload of an unfamiliar urban corridor. Lines representing potential paths appear and dissolve based on the perceived emotional weight of the architecture. As the piece autonomously evolves, the colors and forms subtly change, mapping the mood of the environment. The viewer interacts by dragging the mouse, which pulls the focal point and distorts the surrounding shapes, mimicking the shift of attention from one architectural detail to another. A click initiates a rapid, abrupt directional shift, resetting the ambient patterns.",
+  "completion_tokens": 2001,
+  "created_utc": "2026-09-14T23:20:23Z",
+  "entry_id": 157,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1195,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] this.paths is not iterable\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1161,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.369,
+      "wall_s": 90.511
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 806,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1464,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.52,
+      "wall_s": 45.077
+    }
+  ],
+  "job_id": 158,
+  "last_error": "weak effort given rich prompt",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      161
+    ],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 157
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "go on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey through an urban landscape where participants drop their usual motives for movement and let themselves be guided by the architectural atmospheres and emotional pulls of the terrain. Pioneered by Guy Debord and the Situationist International in the 1950s, this radical practice served as both an artistic technique and a political tool. Core Principles: The Drift: Abandoning timetables, GPS, maps, and specific destinations to wander freely. Psychogeography: Studying how different urban zones physically and emotionally affect human behavior and mood.Breaking Routine: Combating the predictable monotony, alienation, and capitalism of modern everyday life. Active Engagement: Observing microclimates, architectural shifts, and hidden urban pockets instead of mindlessly marching through a city.",
+  "prompt_tokens": 2625,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/157/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/157",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive digital environment that simulates the sensory experience of navigating an unfamiliar urban corridor. Through a dynamic system of evolving geometric forms and color fields, it captures the shifting emotional weight of architectural space. The canvas displays abstract planes and overlapping color fields that continuously shift and morph, representing the overwhelming yet fascinating nature of urban environments. Interactive elements allow viewers to manipulate the focal point\u2014pulling attention through dragging gestures or initiating abrupt directional shifts with clicks. The visual system responds to both autonomous evolution and user input, creating a responsive experience where attention can be directed from one architectural detail to another, mimicking how our perception shifts in real urban spaces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.588
+}
