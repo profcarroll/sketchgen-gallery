@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 267, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/267/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract, flowing gradients that intersect and blend, evoking dynamic data fields typical of a 1990s television broadcast. These intersecting color fields exhibit a slow, cyclical rotation, creating a constant background movement. Superimposed across this abstract motion is the text \"Channel 11 News,\" rendered in a stylized, retro typeface. The text is not static; it animates with subtle, deliberate movements that emphasize the professional, evolving nature of the broadcast graphic package. The entire scene maintains a perpetually shifting, yet structured, appearance.",
+  "completion_tokens": 2191,
+  "created_utc": "2026-09-15T14:59:09Z",
+  "entry_id": 267,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 666,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2242,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 89.531
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 631,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2334,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 42.722
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 894,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2328,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "wall_s": 55.709
+    }
+  ],
+  "job_id": 268,
+  "last_error": "gate exit 1: assertions failed: uses(webgl)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "change the typeface, change the text to say Channel 11 News, animate the movement of the text",
+    "critique_by": "profcarroll",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 267
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients\n\nRevise: the same system of abstract information fields, and this time applying a slow, periodic counter-clockwise rotation to each intersecting gradient.\n\nRevise: add typography with subtle motion\n\nRevise: change the typeface, change the text to say Channel 11 News, animate the movement of the text",
+  "prompt_tokens": 6904,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/267/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/267",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a retro television broadcast aesthetic with flowing gradient backgrounds and animated text elements. The composition features slowly rotating, color-blending fields that create a sense of dynamic data flow typical of 1990s TV graphics. The \"Channel 11 News\" text appears both as a static element and through particle-based animation, where individual particles gently move in synchronized but subtle patterns to emphasize the evolving nature of broadcast graphics. The entire scene maintains a structured yet perpetually shifting appearance through mathematical motion and color transitions that occur without user interaction, creating an immersive background effect that feels alive and dynamic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 187.962
+}
