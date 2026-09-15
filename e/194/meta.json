@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 194, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/194/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, dynamic intersection where geometrically precise, crystalline pyramidal forms ascend from the sea. These structures appear as mathematically perfect three-dimensional triangles, anchored to the land but emerging into the water. The water surface itself is constantly in motion, characterized by rippling intensity. As the water movement shifts and interacts with the submerged architecture, the ripples become illuminated, revealing underlying bioluminescent light patterns that pulse and pulse with the flow and proximity of the pyramidal sculptures.",
+  "completion_tokens": 1183,
+  "created_utc": "2026-09-15T02:25:08Z",
+  "entry_id": 194,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1183,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2229,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 120.892
+    }
+  ],
+  "job_id": 195,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "pyramids are three-dimensional triangles, re-envision this sketch",
+    "critique_by": "profcarroll",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 194
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: the same energy gradient of the pyramidal structures, and this time the water ripples reveal underlying bioluminescence\n\nRevise: pyramids are three-dimensional triangles, re-envision this sketch",
+  "prompt_tokens": 2229,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/194/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/194",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dynamic underwater landscape where geometric pyramids rise from the ocean floor. The pyramids are rendered as mathematically precise triangular forms with bioluminescent highlights that pulse and shimmer. The water surface is animated with rippling waves that illuminate the submerged architecture, creating an interplay of light and form. The scene uses WEBGL rendering to achieve three-dimensional depth and movement, with camera motion that reveals the spatial relationships between the structures. The constant animation shows the fluid interaction between the static pyramidal forms and the dynamic water surface, creating a sense of both stability and motion within the underwater environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.892
+}
