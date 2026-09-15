@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 8, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/8/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays several expanding concentric rings that pulsate steadily. These rings appear in vibrant, fluorescent colors, creating a pulsing visual rhythm. Unlike previous versions, the color variation is tightly controlled, restricted entirely to a specific, limited temperature range. The rings continuously grow and contract, cycling through this contained, brilliant palette, creating a mesmerizing and self-contained optical display.",
+  "completion_tokens": 385,
+  "created_utc": "2026-09-14T08:46:43Z",
+  "entry_id": 8,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 385,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1086,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.188,
+      "wall_s": 57.774
+    }
+  ],
+  "job_id": 9,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same concentric rings, and this time limiting the color variation to a specific temperature range",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 7,
+    "root_entry_id": 4
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time\n\nRevise: the same concentric rings, and this time pulsing the fluorescent colors with a gradient sweep\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time limiting the color variation to a specific temperature range",
+  "prompt_tokens": 1086,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/8/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/8",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing optical display of pulsating concentric rings that expand and contract rhythmically. Each ring cycles through a carefully controlled color palette ranging from deep red to bright yellow, maintaining a consistent temperature range throughout the animation. The rings grow and shrink in a synchronized pattern, creating a hypnotic visual rhythm that captivates the viewer with its steady, self-contained motion. The use of sine wave timing ensures smooth, natural-looking oscillation while the limited color palette maintains visual coherence across all elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 57.774
+}
