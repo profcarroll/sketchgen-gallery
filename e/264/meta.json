@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cgo on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey\u2026\u201d \u2014 sketchgen entry 264, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/264/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an ambient, constantly shifting landscape of linear, segmented traces that map an emotional journey through an imagined city. These lines drift and weave, forming an evolving, reactive topography. As the viewer guides a movement across the surface, the tracing path becomes the central navigational element. When this path crosses three distinct forms, the entire surrounding color palette deeply saturates, intensifying the emotional resonance of the environment before gently receding back into the ambient emotional landscape.",
+  "completion_tokens": 2309,
+  "created_utc": "2026-09-15T14:46:26Z",
+  "entry_id": 264,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1090,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (2) with the end of it (2); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading '0')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (2) with the end of it (2); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2214,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.359,
+      "wall_s": 108.656
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1219,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2474,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 193.287,
+      "wall_s": 89.627
+    }
+  ],
+  "job_id": 265,
+  "last_error": "unstable",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same ambient emotional landscape, and this time the soft geometric forms are replaced by linear, segmented traces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 220,
+    "root_entry_id": 157
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "go on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey through an urban landscape where participants drop their usual motives for movement and let themselves be guided by the architectural atmospheres and emotional pulls of the terrain. Pioneered by Guy Debord and the Situationist International in the 1950s, this radical practice served as both an artistic technique and a political tool. Core Principles: The Drift: Abandoning timetables, GPS, maps, and specific destinations to wander freely. Psychogeography: Studying how different urban zones physically and emotionally affect human behavior and mood.Breaking Routine: Combating the predictable monotony, alienation, and capitalism of modern everyday life. Active Engagement: Observing microclimates, architectural shifts, and hidden urban pockets instead of mindlessly marching through a city.\n\nRevise: try again without the cliche of overlaping circles\n\nRevise: the same ambient emotional landscape, and this time the colors will deepen when the viewing path intersects three different forms.\n\nRevise: the same ambient emotional landscape, and this time the soft geometric forms are replaced by linear, segmented traces.",
+  "prompt_tokens": 4688,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/264/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/264",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an ambient, evolving landscape of interconnected linear traces that shift and flow across the canvas like an emotional topography. The work visualizes a journey through an imagined city where paths drift and weave in response to subtle environmental forces. A central navigational path\u2014following mouse movement\u2014interacts with the surrounding traces, triggering color saturation boosts when it intersects with three distinct forms. This creates moments of heightened emotional resonance that then gently recede back into the ambient palette. The system balances complexity with performance by using efficient particle-like structures and avoiding expensive operations while maintaining continuous visual motion that demonstrates both autonomous behavior and responsive interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 198.283
+}
