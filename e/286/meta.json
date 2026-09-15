@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 286, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/286/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a vast, deep-sea expanse where sharply defined, crystalline pyramidal structures emerge from the ocean floor. These geometrically precise pillars display evidence of natural decay, featuring subtle yet constant signs of advanced erosion and sediment accumulation at their bases. The overall color palette shifts between deep marine blues and the pale, mineral tones of the weathered crystal. The water surface maintains a slow, rhythmic movement, emphasizing the gradual, time-worn interaction between the living sea and the slowly degrading, magnificent architecture rising from its depths.",
+  "completion_tokens": 2367,
+  "created_utc": "2026-09-15T16:53:17Z",
+  "entry_id": 286,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1413,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 63)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 173.8 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 173.8,
+      "prompt_tokens": 2236,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 34.698,
+      "wall_s": 124.539
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 954,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 59.2,
+      "prompt_tokens": 2439,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.304,
+      "wall_s": 61.488
+    }
+  ],
+  "job_id": 287,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same crystalline pyramids, and this time the pyramidal forms show subtle signs of advanced erosion and sediment accumulation at the base",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 242,
+    "root_entry_id": 96
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: the same energy gradient of the pyramidal structures, and this time the water ripples reveal underlying bioluminescence\n\nRevise: pyramids are three-dimensional triangles, re-envision this sketch\n\nRevise: the same dynamic intersection where geometrically precise, crystalline pyramidal forms ascend from the sea, and this time the bioluminescence pulsates with distinct color changes corresponding to the depth of the water.\n\nRevise: the same crystalline pyramids, and this time the pyramidal forms show subtle signs of advanced erosion and sediment accumulation at the base",
+  "prompt_tokens": 4675,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/286/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/286",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an underwater landscape where crystalline pyramidal structures rise from the ocean floor. Using the WEBGL renderer, it creates a sense of depth and movement through careful lighting and camera positioning. The pyramids display signs of natural erosion with sediment accumulation at their bases and weathered mineral tones that shift between deep blues and pale crystal hues. The water surface features rhythmic wave motion that emphasizes the continuous interaction between the sea and these ancient architectural elements, creating an immersive scene of geological time and marine environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 186.027
+}
