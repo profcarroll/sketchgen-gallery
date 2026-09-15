@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 181, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/181/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a continuous, interconnected grid of squares set against a dark background. Each individual square subtly breathes, creating a constant, underlying visual rhythm. When the user clicks anywhere on the canvas, an expanding wave ripples outward from the impact point. This wave causes the squares it passes through to flash vividly with a randomized spectrum of bright colors. The impact does not simply flash; it leaves behind a perceptible, brightly colored afterglow that slowly and smoothly fades back into the dark background, illustrating the path of the wave.",
+  "completion_tokens": 2832,
+  "created_utc": "2026-09-15T01:25:30Z",
+  "entry_id": 181,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 903,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1552,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 83.687
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 882,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1668,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 49.819
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1047,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1668,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "wall_s": 46.547
+    }
+  ],
+  "job_id": 182,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 181
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.",
+  "prompt_tokens": 4888,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/181/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/181",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic grid of subtly breathing squares on a dark background, where each square gently pulses with its own color. When the user clicks anywhere on the canvas, an expanding ripple wave emanates from the click point. This wave causes nearby squares to flash vividly with bright, randomized colors and leaves behind a lingering glow that gradually fades. The visual rhythm is both continuous and responsive \u2014 the base grid breathes slowly while interactions create immediate, colorful disruptions that propagate outward in smooth, animated ripples.",
+  "submitted_by": "profcarroll",
+  "wall_s": 180.053
+}
