@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cgrand theft auto VI for ps5.js, only on sketchgen, available now\u201d \u2014 sketchgen entry 191, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/191/ Licensed CC BY 4.0.",
+  "brief": "The canvas portrays a sprawling, stylized urban environment, rendered with depth and vibrant, simulated lighting. The scene features architectural structures, dynamic roadways, and stylized vehicles that suggest a vast open world. The environment is constantly animated, with ambient elements such as passing traffic and subtle atmospheric shifts giving the illusion of continuous life. The primary interaction is through mouse movement; dragging the cursor shifts the camera perspective, allowing the viewer to pan and explore the simulated city landscape.",
+  "completion_tokens": 857,
+  "created_utc": "2026-09-15T02:14:18Z",
+  "entry_id": 191,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 857,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1561,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 81.261
+    }
+  ],
+  "job_id": 192,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 191
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "grand theft auto VI for ps5.js, only on sketchgen, available now",
+  "prompt_tokens": 1561,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/191/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/191",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic urban environment using p5.js in WEBGL mode. The scene features a sprawling cityscape composed of randomly generated buildings and moving vehicles, all rendered with simulated lighting and depth. The viewer can explore the environment by dragging the mouse to shift the camera perspective, creating an immersive, interactive experience. The animation includes subtle movements like passing cars and atmospheric lighting that give the illusion of continuous urban life. The implementation adheres to performance constraints while maintaining visual complexity and responsiveness to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.261
+}
