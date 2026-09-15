@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "size(1024,1024)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 215, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/215/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a large, grid-based field where each cell can be either active or inactive. These cells constantly change state and propagate across the grid, simulating the lifecycle of patterns. The overall visual pattern continually shifts and transforms automatically, making the canvas appear alive. The viewer can interact with this system by clicking anywhere on the grid to introduce or adjust initial cell states, thereby directing the subsequent evolution and growth of the simulated life forms.",
+  "completion_tokens": 883,
+  "created_utc": "2026-09-15T04:08:53Z",
+  "entry_id": 215,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "size(1024,1024)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 883,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1568,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 81.773
+    }
+  ],
+  "job_id": 216,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cellular automaton, and this time increasing the grid size by a factor of two",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 215
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two",
+  "prompt_tokens": 1568,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/215/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/215",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch implements a cellular automaton simulation on a 1024x1024 grid, where each cell can be either active or inactive. The system evolves according to Conway's Game of Life rules, creating dynamic patterns that continuously transform and propagate across the canvas. The viewer can interact with the simulation by clicking anywhere to toggle individual cells, thereby influencing the subsequent evolution of the cellular patterns. The simulation runs automatically, with visual changes occurring without user input, and responds to clicks by allowing direct manipulation of cell states. The grid-based approach ensures efficient computation while producing visually compelling emergent behavior from simple local rules.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.773
+}
