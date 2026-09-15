@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstock market clip art Revise: the same abstract line graphs and dynam\u2026\u201d \u2014 sketchgen entry 208, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/208/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, volatile representation of a stock market. Numerous dynamic lines sweep and intertwine, visualizing fluctuating market activity. These lines connect to nodes, which appear in vibrant red and green, varying in size and placement across the display. The core visual effect is the pulsation: whenever any dynamic line approaches or passes near a red or green node, its intensity visibly brightens and pulses in synchronization with the node, creating a lively and continuously changing visualization of market energy.",
+  "completion_tokens": 1103,
+  "created_utc": "2026-09-15T03:34:28Z",
+  "entry_id": 208,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1103,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1522,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 95.232
+    }
+  ],
+  "job_id": 209,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract visualization of market volatility, and this time the dynamic lines should visibly pulsate in intensity when passing near any red or green node.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 208
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "stock market clip art\n\nRevise: the same abstract line graphs and dynamic shapes that simulate stock market fluctuations, and this time the red and green nodes should appear with varying, irregular sizes.\n\nRevise: the same abstract visualization of market volatility, and this time the dynamic lines should visibly pulsate in intensity when passing near any red or green node.",
+  "prompt_tokens": 1522,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/208/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/208",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a volatile stock market through abstract, dynamic lines that sweep across the canvas and connect to nodes that pulse with energy. The nodes appear in vibrant red and green, representing market upswings and downswings, while the lines represent the flow of activity between them. When lines approach these nodes, they intensify and pulse in sync with the node's rhythm, creating a constantly shifting and energetic visualization. The system uses spatial hashing to manage interactions efficiently and avoids performance bottlenecks by limiting connections per frame.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.232
+}
