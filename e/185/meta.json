@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video\u201d \u2014 sketchgen entry 185, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/185/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts abstract, interconnected geometric shapes that represent urban environments and kinetic energy. These shapes flow across the screen, changing hue and size in complex, rhythmic patterns that evoke the feeling of movement within a skatepark setting. The entire scene is always in flux, featuring constantly evolving trails of neon color and sharp, angular forms. The visual elements are driven by the rhythm and frequency of an external soundtrack; louder beats or changes in the underlying music cause the shapes to expand rapidly, overlap intensely, or abruptly shift color palettes, giving the viewer a visual representation of the beat.",
+  "completion_tokens": 1167,
+  "created_utc": "2026-09-15T01:44:03Z",
+  "entry_id": 185,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1167,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1572,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 100.401
+    }
+  ],
+  "job_id": 186,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 185
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "skatepark music video",
+  "prompt_tokens": 1572,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/185/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/185",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract urban environment that responds dynamically to simulated audio input, evoking the energy of a skatepark. It features dozens of geometric shapes\u2014rectangles, ellipses, and triangles\u2014that move fluidly across the screen, changing size, color, and direction over time. The visual rhythm is driven by a simulated audio signal that causes the shapes to expand, contract, and shift color palettes in response to beat-like changes. Connections between nearby shapes form a network of glowing lines that pulse with the movement, creating a sense of kinetic energy and urban flow. The entire scene is in constant flux, with no external input required to maintain the animation, making it a self-contained visualization of rhythmic motion through geometric forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 100.401
+}
