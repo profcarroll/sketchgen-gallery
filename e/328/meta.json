@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 328, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/328/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, high-altitude aerial view of a vast metropolis at night. The dominant feature is a constantly flowing network of light streaks that drift across the dark backdrop. These streaks exhibit dynamic color shifts, creating pronounced contrasts of vivid light against deep shadows. The overall composition suggests movement and deep depth, with glowing paths of energy slowly weaving and evolving across the abstract cityscape without external input.",
+  "completion_tokens": 708,
+  "created_utc": "2026-09-15T21:06:17Z",
+  "entry_id": 328,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 708,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.5,
+      "prompt_tokens": 1507,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.951,
+      "wall_s": 77.436
+    }
+  ],
+  "job_id": 329,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-altitude view of a vast, illuminated cityscape, and this time the color shifts of the light streaks will have a more pronounced contrast with the dark backdrop.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 289,
+    "root_entry_id": 199
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a vast, illuminated cityscape, and this time the color shifts of the light streaks will have a more pronounced contrast with the dark backdrop.",
+  "prompt_tokens": 1507,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/328/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/328",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract nocturnal cityscape using a particle system animated by a flowing noise field. Thousands of particles move continuously across the canvas according to dynamically shifting vector directions, forming intricate light networks that weave through the dark void. Each particle's hue shifts gradually over time, creating a vibrant yet cohesive color palette that emphasizes movement and depth. The flow field, generated from Perlin noise, ensures fluid motion without abrupt changes, giving the impression of vast energy systems flowing through an urban environment. The composition suggests infinite scale and constant activity, with particles wrapping around screen edges to maintain continuous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.436
+}
