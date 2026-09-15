@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 243, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/243/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a lone, grounding tree situated on a gentle hill. The scene continuously cycles through the seasons, demonstrating the life cycle of the foliage. The leaves sequentially transition through rich colors, moving from vibrant green through shades of red and orange, eventually turning brown before scattering onto the ground. Following this seasonal change, snow descends, coating both the hill and the tree, before melting away. Life returns as buds emerge and bloom into flowers, followed by the steady re-emergence of green leaves, perpetuating the cycle indefinitely. The entire scene is governed by subtle, perpetual movement, causing the tree trunk to sway gently in an invisible breeze.",
+  "completion_tokens": 1435,
+  "created_utc": "2026-09-15T06:43:31Z",
+  "entry_id": 243,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1435,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2231,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.477,
+      "wall_s": 123.955
+    }
+  ],
+  "job_id": 244,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical depiction of the seasons, and this time the tree trunk will gently sway in a subtle breeze.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 195,
+    "root_entry_id": 193
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: the same cyclical depiction of the seasons, and this time the tree trunk will gently sway in a subtle breeze.",
+  "prompt_tokens": 2231,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/243/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/243",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a cyclical seasonal transformation of a solitary tree on a gentle hill. Through subtle animation and color transitions, it illustrates the natural progression from spring's emergence through summer's fullness, autumn's brilliant foliage, winter's snowfall, and back to spring's renewal. The viewer observes a single tree that sways gently in an invisible breeze, its branches adorned with buds that bloom into flowers during spring, while leaves transition through vibrant colors before turning brown and falling. During winter, snow descends and accumulates on both the tree and hill, then melts away, restarting the cycle. The entire scene is governed by perpetual motion and change, creating a continuous visual narrative of life's cycles without requiring any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.955
+}
