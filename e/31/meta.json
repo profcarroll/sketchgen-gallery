@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca still life of everyday objects rendered in 3D with dramatic lightin\u2026\u201d \u2014 sketchgen entry 31, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/31/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a carefully composed still life featuring everyday objects. These objects are geometrically rendered in three dimensions, allowing the viewer to appreciate their shapes and depth. The scene is illuminated by highly contrasted, dramatic lighting, which casts deep shadows and highlights specific textures, emphasizing the realism of the arrangement. The color palette is grounded and detailed, creating a sense of tangible presence. The composition remains static, presenting a fixed, representational view that does not respond to input or movement.",
+  "completion_tokens": 560,
+  "created_utc": "2026-09-14T14:47:40Z",
+  "entry_id": 31,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 560,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1129,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.935,
+      "wall_s": 61.751
+    }
+  ],
+  "job_id": 32,
+  "last_error": "prompt failed to indicate a surface to place objects upon",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 31
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a still life of everyday objects rendered in 3D with dramatic lighting effects. No motion. Two extra attempts are allowed to make it look realistic and representational.",
+  "prompt_tokens": 1129,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/31/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/31",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a carefully composed still life arrangement rendered in three-dimensional space using p5.js's WEBGL mode. The scene features everyday objects\u2014a wooden cube, glass jar, table top, lamp, small cube, and ball\u2014positioned to create depth and visual interest through geometric forms and lighting. The dramatic contrast between light and shadow enhances the sense of physical presence and texture, while the grounded color palette emphasizes realism. All elements are static and deliberately composed, creating a fixed, representational view that invites contemplation of form, space, and materiality without any motion or interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 61.751
+}
