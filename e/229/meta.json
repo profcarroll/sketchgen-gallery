@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 229, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/229/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a magnificent, wet cityscape characterized by rigid, angular structures. The scene undergoes constant atmospheric cycling, moving through the dramatic changes of day and night. Bioluminescent plant life pulses with the changing light, projecting intricate patterns onto the wet surfaces. As these vibrant light sources dissipate, they create complex fractal shapes that temporarily etch crystalline trails across the highly reflective architecture, causing the entire scene to shimmer with continuous, dynamic motion.",
+  "completion_tokens": 1183,
+  "created_utc": "2026-09-15T05:21:06Z",
+  "entry_id": 229,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1183,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2219,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 109.993
+    }
+  ],
+  "job_id": 230,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical atmospheric changes and bioluminescence, and this time the dissipating fractal patterns leave behind temporary, crystalline trails on the wet architectural surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": null,
+    "root_entry_id": 229
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color pallete\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating ripples cause temporary, visible distortions in the wet architectural reflections.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the visible distortions intensify into sharp, repeating fractal patterns.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating fractal patterns leave behind temporary, crystalline trails on the wet architectural surfaces.",
+  "prompt_tokens": 2219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/229/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/229",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a nocturnal cityscape where rigid angular architecture meets bioluminescent flora. The scene transitions through day and night cycles, with atmospheric lighting that shifts from warm to cool tones. Bioluminescent plant life pulses with rhythmic patterns, creating dynamic light sources that project onto the wet city surfaces. These luminous points leave trailing fractal patterns as they move, causing the entire architecture to shimmer and flow with continuous motion. The rendering uses WEBGL for 3D depth and lighting effects, while particle systems simulate the pulsing bioluminescence and fluid-like movement of the light trails.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.993
+}
