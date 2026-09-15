@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctraveling infinitely through atomic structure across and through mole\u2026\u201d \u2014 sketchgen entry 209, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/209/ Licensed CC BY 4.0.",
+  "brief": "The viewer is immersed in a rapid, accelerating tunnel that guides the perspective through abstract, crystalline atomic and molecular structures. The environment is dominated by swirling gradients of cool and bright colors, forming interlocking cages and distorted lattice formations that appear to pass by the viewer. The molecular structures are never static; they continuously shift, expand, and warp, creating moments of visible instability and crystalline distortion within the overall flow. This journey is designed as an accelerating, deeply immersive passage that never resolves, pulling the viewer deeper into the heart of matter.",
+  "completion_tokens": 1652,
+  "created_utc": "2026-09-15T03:39:56Z",
+  "entry_id": 209,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 798,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2234,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 90.706
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 854,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2351,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 54.584
+    }
+  ],
+  "job_id": 210,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same accelerating, immersive tunnel that guides the viewer through abstract atomic and molecular structures, and this time incorporating sudden, crystalline distortions into the molecular forms",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 209
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "traveling infinitely through atomic structure across and through molecules\n\nRevise: the same accelerating passage, and this time adding moments of visible molecular instability\n\nRevise: the same accelerating, immersive tunnel that guides the viewer through abstract atomic and molecular structures, and this time incorporating sudden, crystalline distortions into the molecular forms",
+  "prompt_tokens": 4585,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/209/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/209",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive tunnel experience by rendering a field of glowing particles that move and shift in real-time. The particles are arranged in a spherical formation and dynamically reposition themselves based on time-based mathematical functions, creating the sensation of movement through a crystalline structure. The camera accelerates through space while the entire scene rotates, enhancing the feeling of being pulled deeper into an atomic landscape. Connections between nearby particles form an intricate lattice network that distorts and shifts with the motion, representing molecular structures in constant flux. The cool color palette with bright highlights emphasizes the ethereal quality of matter itself, while the continuous animation ensures visual engagement without resolution.",
+  "submitted_by": "profcarroll",
+  "wall_s": 145.29
+}
