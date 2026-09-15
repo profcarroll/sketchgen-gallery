@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ctraveling infinitely through atomic structure across and through mole\u2026\u201d \u2014 sketchgen entry 295, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/295/ Licensed CC BY 4.0.",
+  "brief": "The viewer experiences an immersive, accelerating deep-tunnel passage through abstract molecular and atomic space. The passage is defined by flowing molecular structures occasionally interrupted by sudden, angular crystalline distortions. These distortions frequently break apart, fragmenting into glowing, loose shards that detach and float away from the main current. Enhancing the environment is varying intensities of background bioluminescence, which react dynamically with both the primary flow and the fracturing crystalline shards, illuminating the overall scene with luminous colors of deep blues, emerald greens, and brilliant glowing points.",
+  "completion_tokens": 4019,
+  "created_utc": "2026-09-15T17:50:37Z",
+  "entry_id": 295,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1122,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 119.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 119.1,
+      "prompt_tokens": 2240,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.14,
+      "wall_s": 106.922
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1639,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 467.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 467.7,
+      "prompt_tokens": 2370,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 29.921,
+      "wall_s": 96.634
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1258,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "prompt_tokens": 2358,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.162,
+      "wall_s": 75.809
+    }
+  ],
+  "job_id": 296,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same accelerating deep-tunnel passage through abstract molecular and atomic space, and this time adding varying intensities of background bioluminescence that interact with the crystalline distortions",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 251,
+    "root_entry_id": 106
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "traveling infinitely through atomic structure across and through molecules\n\nRevise: the same accelerating passage, and this time adding moments of visible molecular instability\n\nRevise: the same accelerating, immersive tunnel that guides the viewer through abstract atomic and molecular structures, and this time incorporating sudden, crystalline distortions into the molecular forms\n\nRevise: the same accelerating passage, and this time making the crystalline distortions appear to fragment into glowing, loose shards that fall away from the primary flow\n\nRevise: the same accelerating deep-tunnel passage through abstract molecular and atomic space, and this time adding varying intensities of background bioluminescence that interact with the crystalline distortions",
+  "prompt_tokens": 6968,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/295/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/295",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates an immersive journey through a dynamic molecular space, where glowing particles form flowing structures that are occasionally disrupted by crystalline distortions. As the viewer travels deeper into the scene, the speed accelerates and the environment becomes more chaotic. Crystalline formations suddenly break apart, fragmenting into glowing shards that float away from the main current. The background bioluminescence responds dynamically to this motion, intensifying and shifting hues in response to the flow and fragmentation events. The visual effect uses a combination of point clouds, geometric shapes, and color modulation to create an alien, organic environment filled with movement and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 279.365
+}
