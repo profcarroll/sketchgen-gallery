@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cshower thoughts\u201d \u2014 sketchgen entry 188, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/188/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a constantly evolving field of abstract, bioluminescent shapes\u2014spheres, arcs, and ephemeral glyphs\u2014floating in a deep, saturated gradient that mimics dappled light. These forms appear suddenly and dissipate slowly, creating a constant, meditative flicker of insight. When the viewer clicks anywhere on the canvas, the current chaotic patterns pause briefly, and a single, prominent, glowing focal thought instantly draws itself in the center, emanating ripples of color that slowly fade back into the general ambient motion.",
+  "completion_tokens": 2290,
+  "created_utc": "2026-09-15T01:59:56Z",
+  "entry_id": 188,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 936,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 1\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2230,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 101.306
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1354,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2347,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 80.275
+    }
+  ],
+  "job_id": 189,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 188
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "shower thoughts",
+  "prompt_tokens": 4577,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/188/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/188",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, bioluminescent field that pulses with subtle, organic motion. Abstract forms\u2014spheres, arcs, and glyph-like shapes\u2014float gently across the canvas in a deep, saturated gradient background reminiscent of dappled light filtering through water or forest canopy. These entities appear spontaneously and fade gradually, creating a constant, meditative rhythm of emergence and dissipation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 181.581
+}
