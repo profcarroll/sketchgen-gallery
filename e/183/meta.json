@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cgrant theft auto ported to p5.js. arrow keys control character or car\u2026\u201d \u2014 sketchgen entry 183, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/183/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized, open-world cityscape featuring characters and vehicles traveling along paved roads. The user controls the character or vehicle by pressing the arrow keys, allowing them to navigate the environment. When the spacebar is pressed, the selected character or vehicle performs an immediate, impactful attack or action, creating a visible change in the scene.",
+  "completion_tokens": 1441,
+  "created_utc": "2026-09-15T01:36:19Z",
+  "entry_id": 183,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1441,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1518,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 112.134
+    }
+  ],
+  "job_id": 184,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 183
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "grant theft auto ported to p5.js. arrow keys control character or car. spacebar to attack.",
+  "prompt_tokens": 1518,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/183/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/183",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an open-world cityscape rendered in WEBGL where the viewer controls a character navigating roads and interacting with vehicles. The environment features dynamic movement of both vehicles and characters, all wrapped around screen boundaries to simulate continuous travel. The player character can be moved using arrow keys and performs an attack action with the spacebar, which triggers a visual explosion effect that expands outward from the player's location. The entire scene is rendered with smooth camera following the player, creating a continuous cityscape experience where movement and interaction are visible across frames without user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 112.134
+}
