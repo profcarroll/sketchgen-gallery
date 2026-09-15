@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cgo on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey\u2026\u201d \u2014 sketchgen entry 220, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/220/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows an ambient emotional landscape, depicting the subtle traces and shifts encountered during an unplanned urban drift. The artwork flows with gentle, atmospheric gradients that react to the unseen journey. As the viewer's viewing path passes through specific zones, soft, geometric forms emerge and dissolve. When the viewing path intersects three distinct forms, the entire color palette deepens into a rich, immersive hue, providing a temporary sense of emotional depth that guides the perception of the ambient space.",
+  "completion_tokens": 1256,
+  "created_utc": "2026-09-15T04:34:57Z",
+  "entry_id": 220,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1256,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2239,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 119.063
+    }
+  ],
+  "job_id": 221,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same ambient emotional landscape, and this time the colors will deepen when the viewing path intersects three different forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 220
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "go on a D\u00e9rive. A d\u00e9rive (French for \"drift\") is an unplanned journey through an urban landscape where participants drop their usual motives for movement and let themselves be guided by the architectural atmospheres and emotional pulls of the terrain. Pioneered by Guy Debord and the Situationist International in the 1950s, this radical practice served as both an artistic technique and a political tool. Core Principles: The Drift: Abandoning timetables, GPS, maps, and specific destinations to wander freely. Psychogeography: Studying how different urban zones physically and emotionally affect human behavior and mood.Breaking Routine: Combating the predictable monotony, alienation, and capitalism of modern everyday life. Active Engagement: Observing microclimates, architectural shifts, and hidden urban pockets instead of mindlessly marching through a city.\n\nRevise: try again without the cliche of overlaping circles\n\nRevise: the same ambient emotional landscape, and this time the colors will deepen when the viewing path intersects three different forms.",
+  "prompt_tokens": 2239,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/220/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/220",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ambient emotional landscape that responds to the viewer's path through an urban drift. Particles flow gently across the screen like subtle traces of movement, their colors shifting with position to suggest atmosphere and depth. Three geometric forms emerge when the viewer's path intersects specific zones, creating a sense of discovery and progression. When all three forms become visible simultaneously, the entire color palette deepens into rich, immersive hues that guide perception of the ambient space. The artwork uses particle motion and form interaction to create an evolving emotional experience that changes with both time and the viewer's engagement with the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.063
+}
