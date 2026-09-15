@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation\u201d \u2014 sketchgen entry 138, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/138/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays stylized biological cells, represented by gradually changing, vibrant circular shapes. The simulation illustrates the process of cell division, beginning with a single parent cell. Over time, the cell structures display internal condensations\u2014filaments that grow and move toward the center. These filaments then pull apart, reorganizing the main structure until the original cell cleanly separates and resolves into multiple, smaller daughter cells. The colors and shapes are fluid and dynamic, representing the organized movement and complete cycle of biological replication, concluding with a stable grouping of new cells.",
+  "completion_tokens": 1125,
+  "created_utc": "2026-09-14T22:11:20Z",
+  "entry_id": 138,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1125,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1204,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.13,
+      "wall_s": 92.24
+    }
+  ],
+  "job_id": 139,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      148
+    ],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 138
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a cell division simulation",
+  "prompt_tokens": 1204,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/138/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/138",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates the process of biological cell division using dynamic, colorful circular shapes. It begins with a single parent cell that gradually condenses internally, forming filaments that grow and move toward the center. These filaments then pull apart, reorganizing the structure until the original cell cleanly splits into multiple daughter cells. The simulation captures the fluid motion and organized replication of biological systems through vibrant, evolving visuals.",
+  "submitted_by": "profcarroll",
+  "wall_s": 92.24
+}
