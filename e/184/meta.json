@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctoyko drift music video\u201d \u2014 sketchgen entry 184, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/184/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with vibrant, neon-lit geometric forms that simulate the rush of speed and urban energy. Stylized lines, streaks of primary and electric colors, and rapidly shifting polygons crisscross the frame, giving the impression of passing through a Tokyo cityscape at night. The visual display is highly rhythmic and continuous, featuring complex, synchronized movements that warp and bloom in response to the beat. The elements never stop moving, always shifting their composition to match the sonic pulses and underlying rhythm of the music.",
+  "completion_tokens": 2291,
+  "created_utc": "2026-09-15T01:41:03Z",
+  "entry_id": 184,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1348,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 49)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 13.333 under 440 Hz vs 13.333 under silence\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 125.249
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 943,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2568,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "wall_s": 64.143
+    }
+  ],
+  "job_id": 185,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 184
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "toyko drift music video",
+  "prompt_tokens": 4806,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/184/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/184",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, energetic visualization that captures the feeling of rushing through a neon-lit Tokyo cityscape at night. Using a combination of animated particles, flowing lines, and pulsing geometric shapes, it generates a continuous, rhythmic visual experience. The particles bounce around the screen with varying sizes and colors, while streaks of light move rapidly across the canvas. Geometric forms pulse and rotate in sync with the animation, creating a sense of motion and urban energy. The color palette leans heavily on electric blues, purples, and whites against a dark background, evoking the glow of city lights and neon signs. All elements move continuously without pause, creating an immersive, hypnotic effect that suggests speed and constant motion through an urban environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 189.392
+}
