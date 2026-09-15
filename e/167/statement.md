@@ -1,0 +1,1 @@
+This sketch creates a vibrant, chaotic grid of pixelated shapes that animate independently across the canvas. As the viewer moves their mouse, these shapes dynamically track the cursor's position, leaving behind glowing trails that emphasize the real-time interaction. The visual effect evokes a retro gaming atmosphere with its dense, colorful, and constantly shifting composition.
