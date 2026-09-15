@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 166, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/166/ Licensed CC BY 4.0.",
+  "brief": "A visible sprite character and a patrol enemy sprite populate a horizontal level built upon segments of ground. The player controls the character using keyboard or mouse input to move and jump between platforms. The character must maneuver and jump over, or around, the patrolling enemy sprite to continue the action. The scene continuously updates and animates the movement of both the character and the hostile enemy along the defined path.",
+  "completion_tokens": 850,
+  "created_utc": "2026-09-15T00:08:23Z",
+  "entry_id": 166,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 850,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1191,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.138,
+      "wall_s": 77.361
+    }
+  ],
+  "job_id": 167,
+  "last_error": "not playable",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "redesign into a playable version",
+    "critique_by": "profcarroll",
+    "generation": 3,
+    "parent_entry_id": 163,
+    "root_entry_id": 107
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same platformer game, and this time give the character a visible enemy sprite that patrols along the ground.\n\nRevise: redesign into a playable version",
+  "prompt_tokens": 1191,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/166/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/166",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a simple platformer scene with a player character and a patrolling enemy. The player can move left or right using arrow keys and jump with the spacebar. The enemy moves back and forth along a horizontal path, creating a dynamic challenge. The animation runs continuously without user input, showing both characters in motion, and responds visibly to a single click by changing the scene state.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.361
+}
