@@ -1,0 +1,91 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 245, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/245/ Licensed CC BY 4.0.",
+  "brief": "A group of whimsical, paper-cut ships navigate across the canvas, sailing continuously away from the viewer. The ships maintain their delicate, stylized appearance, moving with a slow, deliberate pace. As they pass, they leave behind small, semi-transparent wake trails. These trails are ephemeral, gradually dissolving and fading into the background before reaching the edges of the screen, creating a constant sense of departing passage.",
+  "completion_tokens": 1686,
+  "created_utc": "2026-09-15T06:53:01Z",
+  "entry_id": 245,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 834,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `point` hides p5's `point()` function; rename it (sketch.js line 62)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] point is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1507,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 82.403
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 852,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1748,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 50.093
+    }
+  ],
+  "job_id": 246,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 245
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails",
+  "prompt_tokens": 3255,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/245/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/245",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a whimsical fleet of paper-cut style ships navigating across a canvas. The ships move with deliberate, slow motion away from the viewer, maintaining their stylized appearance with simple geometric forms and vibrant colors. As they sail, each ship leaves behind a fading trail of semi-transparent points that gradually dissolve into the background. The continuous motion creates an ephemeral sense of passage and departure, with new ships appearing randomly to maintain the ongoing flow. The visual effect combines gentle animation with subtle color variation to evoke a dreamlike maritime scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 132.496
+}
