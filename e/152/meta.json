@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 152, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/152/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a fine, intricate lattice formed by intersecting lines. The palette is restricted to muted, earthy tones\u2014browns, tans, sienna, and deep olives\u2014giving the appearance of subtle light interacting with shadow. These lines are not static; they exhibit a highly controlled, slow movement that suggests a rhythmic, syncopated tempo. The shifting geometry appears deliberate and natural, giving the overall composition a feeling of quiet, measured rhythm. The piece is meant to be observed as a continuous, evolving pattern.",
+  "completion_tokens": 533,
+  "created_utc": "2026-09-14T23:05:46Z",
+  "entry_id": 152,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 533,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1121,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.298,
+      "wall_s": 65.48
+    }
+  ],
+  "job_id": 153,
+  "last_error": "prompt drfit",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "revist the prompt and really focus this time.",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 152
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: a remarkable outcome, but would it work with earthones and a slower tempo and sense of syncopation\n\nRevise: revist the prompt and really focus this time.",
+  "prompt_tokens": 1121,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/152/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/152",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing lattice pattern using intersecting lines that subtly shift over time. The composition employs a muted earthy color palette drawn from browns, tans, and deep olives, evoking the interplay of light and shadow in natural environments. The lines move with a deliberate, rhythmic tempo\u2014neither random nor mechanical\u2014suggesting a quiet, organic pulse. Through controlled oscillation and layered motion, the pattern evolves continuously without user input, creating an immersive visual rhythm that invites contemplation of slow, natural processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 65.48
+}
