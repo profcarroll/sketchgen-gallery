@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cShip of fools, sail away from me\u201d \u2014 sketchgen entry 198, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/198/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a serene, stylized body of water rendered in muted blues and aquamarines, suggesting depth. Upon this surface drift ephemeral paper-cut silhouettes of small, whimsical ships. These ships are initially gathered near the center, but the scene is alive with constant, gentle motion; the paper structures drift slowly and randomly across the canvas as if catching an unseen breeze. When the viewer clicks anywhere on the surface, the gentle movement accelerates, and the ships appear to sail rapidly towards the edges and off the canvas, dissolving into faint particles until they are out of sight.",
+  "completion_tokens": 942,
+  "created_utc": "2026-09-15T02:40:55Z",
+  "entry_id": 198,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 942,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1564,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 91.545
+    }
+  ],
+  "job_id": 199,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 198
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Ship of fools, sail away from me",
+  "prompt_tokens": 1564,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/198/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/198",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a tranquil aquatic scene with drifting paper-cut style ships that gently move across a serene blue water surface. The ships begin clustered near the center and drift slowly with natural motion, responding to viewer interaction by rapidly accelerating toward the canvas edges where they dissolve into particles. The visual technique uses simple geometric shapes to represent ships with subtle rotation and movement physics, creating an ephemeral quality that aligns with the whimsical nature of paper cuts while maintaining performance constraints suitable for automated testing environments.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.545
+}
