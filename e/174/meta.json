@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 174, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/174/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a side-scrolling environment featuring ground platforms and a character sprite that the player controls. A second, visible enemy sprite patrols along the ground at a predictable interval. The player controls the character to move and jump across the environment, while the character and enemy sprites move when the player provides input. Clicking or dragging the mouse allows the player to affect the character\u2019s position and movement, aiming to navigate around the patrolling enemy to achieve interaction within the playful scene.",
+  "completion_tokens": 1030,
+  "created_utc": "2026-09-15T00:52:25Z",
+  "entry_id": 174,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1030,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1558,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.328,
+      "wall_s": 88.383
+    }
+  ],
+  "job_id": 175,
+  "last_error": "not playable",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try to make it playable or start over",
+    "critique_by": "profcarroll",
+    "generation": 4,
+    "parent_entry_id": 166,
+    "root_entry_id": 107
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same platformer game, and this time give the character a visible enemy sprite that patrols along the ground.\n\nRevise: redesign into a playable version\n\nRevise: try to make it playable or start over",
+  "prompt_tokens": 1558,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/174/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/174",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a side-scrolling platformer environment where a player character navigates between grounded platforms while avoiding a patrolling enemy. The player can jump with mouse clicks and move left or right by dragging the mouse, with gravity affecting their movement. Platforms are rendered as solid rectangles, and both the player and enemy are simple colored rectangles. The scene responds dynamically to input, showing motion and interaction when the player approaches the enemy. The camera follows the player's horizontal movement, creating a scrolling effect that enhances the gameplay experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.383
+}
