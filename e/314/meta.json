@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwhat does the inside of a computer look like? Revise: the same abstra\u2026\u201d \u2014 sketchgen entry 314, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/314/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an infinite, interconnected luminous lattice of glowing pathways. Data flows continuously through this lattice, appearing as bright, moving lines of light. At key junction points, the flow periodically compresses into brilliant, intense pulses of energy. Following these powerful pulses, the energy radiates outwards, leaving behind shimmering, decaying echoes that gently shimmer and fade down the surrounding pathways, constantly refreshing the visualization with streams of light and color.",
+  "completion_tokens": 1240,
+  "created_utc": "2026-09-15T19:40:36Z",
+  "entry_id": 314,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1240,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.0,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.528,
+      "wall_s": 120.412
+    }
+  ],
+  "job_id": 315,
+  "last_error": "derivative, lacks visual interest",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous lattice of interconnected pathways, and this time the radiating pulse of compressed energy leaves behind visible, decaying echoes that briefly shimmer down the surrounding pathways.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 273,
+    "root_entry_id": 73
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "what does the inside of a computer look like?\n\nRevise: the same abstract visualization of interconnected circuits and flowing data, and this time the luminous data streams leave behind visible glowing trails.\n\nRevise: the same abstract circuitry lattice, and this time the pathways glow with varying intensities based on the volume of data flow.\n\nRevise: the same abstract luminous lattice, and this time certain junctions where multiple pathways meet intensify in glow.\n\nRevise: the same luminous lattice of interconnected pathways, and this time the data accumulating at critical junction points momentarily slows, creating visible pulses of compressed energy.\n\nRevise: the same luminous lattice of interconnected pathways, and this time the radiating pulse of compressed energy leaves behind visible, decaying echoes that briefly shimmer down the surrounding pathways.",
+  "prompt_tokens": 2215,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/314/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/314",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an infinite, interconnected lattice of glowing pathways using a particle system with spatial hashing for efficient neighbor detection. The visualization features bright, moving particles that continuously flow through the space, forming dynamic connections between nearby points. At random intervals, these connections intensify into brilliant energy pulses that radiate outward as shimmering echoes. The system uses WebGL rendering for smooth performance while maintaining thousands of particles and connections without overwhelming the frame budget. The visual effect creates a constantly evolving network of light that fills the canvas with flowing energy patterns reminiscent of neural networks or data flow visualization, where the viewer observes both the continuous motion and the periodic bursts of intense activity that propagate through the system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.412
+}
