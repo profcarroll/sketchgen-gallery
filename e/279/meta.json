@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 279, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/279/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous grid composed of small, interconnected squares set against a near-black background. Each individual square gently pulsates with its own distinct, slow rhythm, giving the grid a subtle, ambient glow. When the user clicks anywhere on the canvas, a visible wave pulse expands outward from that point. As the wave passes through the squares, it momentarily disrupts their natural breathing cycle, causing the rhythm of the affected squares to change drastically and unpredictably in localized patterns.",
+  "completion_tokens": 729,
+  "created_utc": "2026-09-15T16:09:18Z",
+  "entry_id": 279,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 729,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1539,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 77.898
+    }
+  ],
+  "job_id": 280,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "Revise: the same continuous grid of small, interconnected squares, and this time the wave pulse momentarily alters the breathing rhythm of squares in a localized, unpredictable pattern.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 233,
+    "root_entry_id": 2
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.\n\nRevise: the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.\n\nRevise: Revise: the same continuous grid of small, interconnected squares, and this time the wave pulse momentarily alters the breathing rhythm of squares in a localized, unpredictable pattern.",
+  "prompt_tokens": 1539,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/279/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/279",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ambient grid of pulsating squares on a dark background, each with its own rhythmic breathing cycle. The visual effect simulates a subtle glow that emanates from the squares and interacts dynamically with user input. When clicked, a ripple wave expands outward from the cursor location, temporarily disrupting the natural rhythm of nearby squares in unpredictable ways. The entire composition evolves continuously without external input, yet responds visibly to interaction, creating an engaging interplay between steady pattern and localized disturbance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.898
+}
