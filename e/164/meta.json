@@ -1,0 +1,94 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 164, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/164/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a continuous, chaotic grid of vibrant pixel art shapes. The overall aesthetic is retro and highly energetic. Shapes burst and flow across the grid, remaining suspended in a constant state of flux. The primary interaction is direct manipulation via the cursor: as the user drags the mouse across the surface, the vibrant shapes immediately track the pointer's movement. Furthermore, these shapes do not instantly vanish; they leave behind a brief, colour-coded trail that visibly maps the path of the movement before slowly dissipating into the grid.",
+  "completion_tokens": 1443,
+  "created_utc": "2026-09-14T23:46:15Z",
+  "entry_id": 164,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 665,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1216,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 66.962
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 778,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1332,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 41.053
+    }
+  ],
+  "job_id": 165,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 164
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path",
+  "prompt_tokens": 2548,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/164/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/164",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, chaotic grid where pixel art shapes dynamically respond to cursor movement. As you drag your mouse across the canvas, colorful bursts follow your path and leave fading trails behind them. The scene also features spontaneous, self-generated motion that continuously evolves even without interaction\u2014creating an energetic, living visual field of constantly shifting forms and colors.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.015
+}
