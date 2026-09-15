@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 59, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/59/ Licensed CC BY 4.0.",
+  "brief": "The composition utilizes a strict orthogonal grid structure, dominated by sans-serif typography rendered in black and white, accented by a single complementary primary color. Various sizes of type\u2014headlines, body copy, and geometric captions\u2014are arranged asymmetrically across the canvas to mimic a formal exhibition poster layout. The textual elements are organized using established visual hierarchy, where type size dictates importance and spatial proximity creates relationships. Upon clicking specific areas of the composition, underlying hidden text blocks subtly shift their position or change opacity, allowing the viewer to explore alternative compositional arrangements while maintaining the clean, modular aesthetic of the Swiss school.",
+  "completion_tokens": 860,
+  "created_utc": "2026-09-14T16:58:14Z",
+  "entry_id": 59,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 860,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1148,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.36,
+      "wall_s": 72.194
+    }
+  ],
+  "job_id": 58,
+  "last_error": "go back to type class",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      63
+    ],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 59
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster",
+  "prompt_tokens": 1148,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/59/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/59",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch implements a formal exhibition poster layout using a strict orthogonal grid structure. It employs sans-serif typography in black and white, with a red accent color for the interactive element. The composition arranges headlines, body copy, and geometric captions following Swiss design principles of visual hierarchy and spatial relationships. When clicked in the center area, hidden text blocks subtly shift position and become visible, allowing viewers to explore alternative compositional arrangements while maintaining the clean, modular aesthetic of the Swiss school. The work remains static until user interaction, responding visibly only when activated.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.194
+}
