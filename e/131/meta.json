@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 131, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/131/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a richly composed, stationary still life viewed in a dark, intimate space. The centerpiece is a brown table holding various objects defined by dramatic lighting and deep shadows. Dominant colors are earth tones, contrasted by the metallic gleam of silver candlesticks, the deep reds of the berries, and the various shades of green foliage. A clear jug of water and a single lit candle serve as focal points. The arrangement is purely visual, focusing entirely on the sculptural forms and the interplay of light and shadow. There are no interactive elements, and the composition remains fixed regardless of any viewer input.",
+  "completion_tokens": 1792,
+  "created_utc": "2026-09-14T21:38:49Z",
+  "entry_id": 131,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1214,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2986/255, 11837 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1239,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 7.896,
+      "wall_s": 96.775
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 578,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1357,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.223,
+      "wall_s": 31.733
+    }
+  ],
+  "job_id": 132,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric still life composition, and this time the fruit platter features only deep red berries and green leaves.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 90,
+    "root_entry_id": 81
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.\n\nRevise: try to recreate the original prompt more faithfully to the details in the description\n\nRevise: the same atmospheric still life composition, and this time the fruit platter features only deep red berries and green leaves.",
+  "prompt_tokens": 2596,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/131/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/131",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a\u9759\u8c27\u7684\u9759\u7269\u573a\u666f\uff0c\u7f6e\u4e8e\u4e00\u4e2a\u6df1\u9083\u800c\u79c1\u5bc6\u7684\u7a7a\u95f4\u4e2d\u3002\u753b\u9762\u4e2d\u5fc3\u662f\u4e00\u5f20\u68d5\u8272\u684c\u5b50\uff0c\u4e0a\u9762\u6446\u653e\u7740\u4e00\u7cfb\u5217\u96d5\u5851\u822c\u7684\u7269\u4f53\uff0c\u901a\u8fc7\u620f\u5267\u6027\u7684\u5149\u5f71\u548c\u6df1\u6c89\u7684\u9634\u5f71\u5c55\u73b0\u5176\u8d28\u611f\u4e0e\u4f53\u79ef\u3002\u6574\u4f53\u8272\u8c03\u4ee5\u5927\u5730\u8272\u7cfb\u4e3a\u4e3b\uff0c\u94f6\u8d28\u70db\u53f0\u7684\u91d1\u5c5e\u5149\u6cfd\u3001\u7ea2\u6d46\u679c\u7684\u6df1\u8273\u8272\u5f69\u4ee5\u53ca\u7eff\u53f6\u7684\u5c42\u6b21\u53d8\u5316\u5f62\u6210\u9c9c\u660e\u5bf9\u6bd4\u3002\u6c34\u58f6\u4e0e\u5355\u652f\u70b9\u71c3\u7684\u8721\u70db\u4f5c\u4e3a\u89c6\u89c9\u7126\u70b9\uff0c\u5f3a\u8c03\u4e86\u9759\u7269\u6784\u56fe\u4e2d\u7684\u5149\u6e90\u4e0e\u9634\u5f71\u5173\u7cfb\u3002\u6574\u4e2a\u753b\u9762\u4fdd\u6301\u9759\u6001\uff0c\u4e0d\u5305\u542b\u4efb\u4f55\u4ea4\u4e92\u5143\u7d20\uff0c\u65e8\u5728\u5448\u73b0\u4e00\u79cd\u6c89\u6d78\u5f0f\u7684\u89c6\u89c9\u4f53\u9a8c\u3002",
+  "submitted_by": "profcarroll",
+  "wall_s": 128.508
+}
