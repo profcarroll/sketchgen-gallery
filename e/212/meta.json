@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 212, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/212/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple brightly colored, rounded shapes representing biological cells. These shapes populate the screen and continuously increase in number through an autonomous cycle. Over time, individual cells swell and then undergo a distinct, visible separation phase, where the single mass visibly pinches and detaches into two smaller, distinct daughter cells. This replication process repeats continuously across the canvas, allowing the count of cells to grow exponentially without any input or interaction from the viewer.",
+  "completion_tokens": 804,
+  "created_utc": "2026-09-15T03:54:27Z",
+  "entry_id": 212,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 804,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1512,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 77.044
+    }
+  ],
+  "job_id": 213,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": null,
+    "root_entry_id": 212
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split",
+  "prompt_tokens": 1512,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/212/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/212",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a biological ecosystem of self-replicating cells that grow and divide autonomously. The canvas displays dozens of brightly colored, rounded shapes that continuously multiply through an automated replication cycle. Each cell ages and gradually swells before undergoing a visible separation process where it pinches in two, creating two daughter cells. This cycle repeats indefinitely, causing the population to grow exponentially without any viewer interaction. The visual effect is achieved through simple physics-based animation where cells swell and split with smooth transitions, creating an organic, living system that evolves on its own.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.044
+}
