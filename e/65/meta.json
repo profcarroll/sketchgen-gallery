@@ -27,9 +27,11 @@
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 26)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] x1 is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1110,
       "rules_file": "treatment",
       "source": "attempt-1",
+      "total_s": 1.187,
       "wall_s": 67.486
     },
     {
@@ -48,9 +50,11 @@
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 30)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1352,
       "rules_file": "treatment",
       "source": "attempt-2",
+      "total_s": 1.17,
       "wall_s": 35.389
     },
     {
@@ -69,9 +73,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1352,
       "rules_file": "treatment",
       "source": "attempt-3",
+      "total_s": 1.841,
       "wall_s": 29.338
     }
   ],

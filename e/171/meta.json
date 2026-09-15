@@ -27,9 +27,11 @@
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `hue` hides p5's `hue()` function; rename it (sketch.js line 42)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'hue' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1514,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 1.104,
       "wall_s": 75.079
     },
     {
@@ -48,9 +50,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1757,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 5.175,
       "wall_s": 42.059
     }
   ],

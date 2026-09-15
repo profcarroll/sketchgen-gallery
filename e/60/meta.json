@@ -31,9 +31,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(drag)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1162,
       "rules_file": "treatment",
       "source": "attempt-1",
+      "total_s": 1.843,
       "wall_s": 27.9
     },
     {
@@ -54,9 +56,11 @@
       "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.7012/255, 56122 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1291,
       "rules_file": "treatment",
       "source": "attempt-2",
+      "total_s": 3.248,
       "wall_s": 39.968
     },
     {
@@ -77,9 +81,11 @@
       "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0079/255, 421 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1281,
       "rules_file": "treatment",
       "source": "attempt-3",
+      "total_s": 2.27,
       "wall_s": 29.074
     }
   ],

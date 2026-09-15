@@ -27,9 +27,11 @@
       "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1112,
       "rules_file": "treatment",
       "source": "attempt-1",
+      "total_s": 1.172,
       "wall_s": 61.591
     },
     {
@@ -48,9 +50,11 @@
       "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1315,
       "rules_file": "treatment",
       "source": "attempt-2",
+      "total_s": 1.176,
       "wall_s": 34.41
     },
     {
@@ -69,9 +73,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1315,
       "rules_file": "treatment",
       "source": "attempt-3",
+      "total_s": 1.32,
       "wall_s": 30.429
     }
   ],
@@ -79,7 +85,9 @@
   "last_error": null,
   "licence": "CC BY 4.0",
   "lineage": {
-    "children": [],
+    "children": [
+      44
+    ],
     "critique": null,
     "critique_by": null,
     "generation": 1,

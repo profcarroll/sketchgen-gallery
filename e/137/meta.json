@@ -31,9 +31,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1214,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 5.248,
       "wall_s": 82.261
     },
     {
@@ -54,9 +56,11 @@
       "evidence": "gate exit 1: checks failed: console_clean, is_looping; assertions failed: responds(click), uses(webgl), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] camera.rotateY is not a function\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1306,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 1.241,
       "wall_s": 44.65
     },
     {
@@ -77,9 +81,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1433,
       "rules_file": "control",
       "source": "attempt-3",
+      "total_s": 5.519,
       "wall_s": 54.678
     }
   ],

@@ -27,9 +27,11 @@
       "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1119,
       "rules_file": "treatment",
       "source": "attempt-1",
+      "total_s": 1.223,
       "wall_s": 83.571
     },
     {
@@ -48,9 +50,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1236,
       "rules_file": "treatment",
       "source": "attempt-2",
+      "total_s": 1.235,
       "wall_s": 78.144
     }
   ],
@@ -58,7 +62,9 @@
   "last_error": null,
   "licence": "CC BY 4.0",
   "lineage": {
-    "children": [],
+    "children": [
+      85
+    ],
     "critique": null,
     "critique_by": null,
     "generation": 1,

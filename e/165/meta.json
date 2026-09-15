@@ -29,9 +29,11 @@
       "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] depth is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1240,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 1.219,
       "wall_s": 79.853
     },
     {
@@ -42,9 +44,11 @@
       "evidence": "gate did not finish and wrote no report.json: the gate did not finish within 600s",
       "exit": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1442,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": null,
       "wall_s": 42.966
     },
     {
@@ -64,9 +68,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1272,
       "rules_file": "control",
       "source": "attempt-3",
+      "total_s": 208.764,
       "wall_s": 43.679
     }
   ],

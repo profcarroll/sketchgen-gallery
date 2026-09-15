@@ -31,9 +31,11 @@
       "evidence": "gate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 13.000 under 440 Hz vs 13.000 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1251,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 31.977,
       "wall_s": 74.638
     },
     {
@@ -54,9 +56,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1409,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 32.56,
       "wall_s": 58.51
     }
   ],

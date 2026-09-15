@@ -29,9 +29,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1199,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 2.808,
       "wall_s": 79.227
     },
     {
@@ -51,9 +53,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1291,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 2.163,
       "wall_s": 30.676
     }
   ],
@@ -66,7 +70,7 @@
     "critique_by": "gemma4:e4b",
     "generation": 2,
     "parent_entry_id": 87,
-    "root_entry_id": 87
+    "root_entry_id": 83
   },
   "planner": "gemma4:e4b",
   "planner_prompt_version": "planner-v1",

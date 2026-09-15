@@ -33,9 +33,11 @@
       "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1611,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 50.954,
       "wall_s": 131.98
     },
     {
@@ -57,9 +59,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1728,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 5.264,
       "wall_s": 94.196
     },
     {
@@ -81,9 +85,11 @@
       "evidence": "gate exit 1: checks failed: console_clean, is_looping; assertions failed: motion(idle), responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (11 error lines, first 10 shown):\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n- [pageerror] Cannot access 'b' before initialization\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1733,
       "rules_file": "control",
       "source": "attempt-3",
+      "total_s": 1.289,
       "wall_s": 85.48
     },
     {
@@ -105,9 +111,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: motion(idle), responds(click), responds(drag)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1983,
       "rules_file": "control",
       "source": "attempt-4",
+      "total_s": 2.619,
       "wall_s": 75.082
     },
     {
@@ -129,9 +137,11 @@
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1834,
       "rules_file": "control",
       "source": "attempt-5",
+      "total_s": 7.081,
       "wall_s": 69.928
     }
   ],

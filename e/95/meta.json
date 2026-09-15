@@ -31,9 +31,11 @@
       "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1218,
       "rules_file": "control",
       "source": "attempt-1",
+      "total_s": 3.256,
       "wall_s": 75.339
     },
     {
@@ -54,9 +56,11 @@
       "evidence": null,
       "exit": 0,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
       "prompt_tokens": 1380,
       "rules_file": "control",
       "source": "attempt-2",
+      "total_s": 1.824,
       "wall_s": 40.942
     }
   ],
