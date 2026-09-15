@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2010 Revise: the sam\u2026\u201d \u2014 sketchgen entry 269, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/269/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, highly detailed visualization of simulated data flow through a digital network. Glowing, interconnected grids and individual tendrils propagate and interact in three dimensions, viewed with a limited depth of field. The data perpetually flows, creating dynamic motion of brilliant lines and color fields. Intersecting pathways occasionally stabilize, locking into perfect, repeating geometric tessellations before continuing their complex, energetic movement.",
+  "completion_tokens": 1632,
+  "created_utc": "2026-09-15T15:13:29Z",
+  "entry_id": 269,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1632,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1531,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 118.747
+    }
+  ],
+  "job_id": 270,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same simulated data flow, and this time the intersecting grids occasionally lock into perfect, repeating tessellations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 222,
+    "root_entry_id": 112
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 2010\n\nRevise: the same complex data flowing through a digital network, and this time the glowing grids are rendered as volumetric particle fields\n\nRevise: the same complex, flowing data, and this time the glowing grids are rendered with more defined individual tendrils and a more restricted depth of field\n\nRevise: the same simulated data flow, and this time the intersecting grids occasionally lock into perfect, repeating tessellations.",
+  "prompt_tokens": 1531,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/269/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/269",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a complex digital network data flow using WebGL rendering for 3D depth and motion. It simulates interconnected pathways of glowing particles that move dynamically through space, forming temporary geometric patterns before continuing their chaotic dance. The visualization uses a combination of particle systems, grid-based connections, and dynamic color shifts to represent the flow and interaction of data across a virtual network. The scene maintains constant motion through procedural generation and mathematical relationships, creating an immersive but computationally efficient representation of digital information movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 118.747
+}
