@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 66, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/66/ Licensed CC BY 4.0.",
+  "brief": "The composition features large, rectangular planes of color stacked vertically, evoking the emotional depth of atmospheric paintings. These translucent layers overlap subtly, creating rich, diffused gradients where colors meet. The palette is deep and contemplative. The visual movement is gentle and immersive, drawing the eye through the depth of the merging color fields. While the composition maintains a subtle, continuous glow, interacting with the canvas\u2014for instance, by clicking\u2014intensifies the diffusion. This input causes the overlapping layers to deepen, making the blended colors become richer and shifting the composition toward a more saturated, dramatic gradient.",
+  "completion_tokens": 504,
+  "created_utc": "2026-09-14T17:22:53Z",
+  "entry_id": 66,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 504,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1174,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.546,
+      "wall_s": 58.142
+    }
+  ],
+  "job_id": 67,
+  "last_error": "prompt drfit",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "The same color planes, and this time intensify the diffusion where the translucent layers overlap.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 35,
+    "root_entry_id": 35
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: The same color planes, and this time intensify the diffusion where the translucent layers overlap.",
+  "prompt_tokens": 1174,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/66/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/66",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive, contemplative composition using layered translucent rectangles that shift and blend as the viewer interacts with it. The visual depth emerges from subtle color transitions and overlapping planes, evoking the emotional resonance of atmospheric paintings. Without interaction, gentle movement occurs through time-based animation, but a single click intensifies the diffusion\u2014deepening the colors and creating more dramatic gradients. The use of WebGL ensures smooth rendering of these layered effects across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.142
+}
