@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 187, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/187/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstracted, vibrant garden landscape, characterized by lush, varied shapes and brilliant colors. The focus is on the visual phenomenon of luminous particles gathering and accumulating within the center of individual flowers. These particles display a visible, slow movement, suggesting a continuous process of life and pollination. The garden appears dynamic, with leaves and blossoms exhibiting gentle, natural shifts. The entire visual narrative unfolds autonomously, demonstrating a constant, cyclical process without requiring any direct interaction from the viewer.",
+  "completion_tokens": 1378,
+  "created_utc": "2026-09-15T01:53:56Z",
+  "entry_id": 187,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1378,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2202,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 124.443
+    }
+  ],
+  "job_id": 188,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": null,
+    "root_entry_id": 187
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.",
+  "prompt_tokens": 2202,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/187/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/187",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an autonomous garden landscape where vibrant flowers bloom with dynamic, natural movement. Each flower features a stem, leaves that sway gently, and petals that subtly shift in position over time. The key visual element is the luminous particles that gather and accumulate in the center of each flower\u2014these particles move slowly and erratically, suggesting a continuous process of pollination and life. The entire scene evolves without any user interaction, with particles being continuously generated and attracted to flower centers, creating an organic, cyclical ecosystem that feels both serene and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.443
+}
