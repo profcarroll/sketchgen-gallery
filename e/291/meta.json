@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201csupergraphics from 1984 Revise: the same neon-infused vector lines, a\u2026\u201d \u2014 sketchgen entry 291, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/291/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a structured field of glowing, neon-infused vector lines forming an intricate grid. The overall pattern is continuously alive, exhibiting a slow, rhythmic pulse that subtly expands and contracts. Within this structure, the connections between adjacent cells are dynamic, periodically intensifying and dimming in varying frequencies. Furthermore, the grid itself occasionally undergoes transient disruptions, with lines intermittently breaking and rebuilding in staggered, glitching bursts of light.",
+  "completion_tokens": 1952,
+  "created_utc": "2026-09-15T17:19:56Z",
+  "entry_id": 291,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 899,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 85)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2190,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.205,
+      "wall_s": 102.066
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1053,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.5,
+      "prompt_tokens": 2432,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.456,
+      "wall_s": 66.381
+    }
+  ],
+  "job_id": 292,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same structured field of glowing, neon-infused vector lines forming a grid, and this time the overall pattern should slowly and rhythmically pulse, subtly expanding and contracting.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 248,
+    "root_entry_id": 140
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "supergraphics from 1984\n\nRevise: the same neon-infused vector lines, and this time the grid lines should intermittently break and rebuild in staggered bursts\n\nRevise: the same structured grid, and this time the connections between adjacent cells should intermittently intensify and dim with varying frequency\n\nRevise: the same structured field of glowing, neon-infused vector lines forming a grid, and this time the overall pattern should slowly and rhythmically pulse, subtly expanding and contracting.",
+  "prompt_tokens": 4622,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/291/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/291",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a living grid of neon-infused vector lines that pulses with rhythmic energy. The pattern consists of interconnected cells where each line segment subtly fluctuates in brightness and intensity based on its neighbors' behavior. The grid exhibits both continuous pulsing\u2014where entire sections expand and contract\u2014and intermittent glitch disruptions, where connections randomly break and rebuild with bursts of light. The effect is achieved through a combination of sine wave modulation for the rhythmic pulse, Perlin noise for randomized glitch patterns, and dynamic line drawing that respects the frame budget constraints while maintaining visual complexity. Viewers observe an organic, almost breathing structure that evolves without any external input, creating an immersive display of digital life within geometric order.",
+  "submitted_by": "profcarroll",
+  "wall_s": 168.447
+}
