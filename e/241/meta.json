@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cgrand theft auto VI for ps5.js, only on sketchgen, available now Revi\u2026\u201d \u2014 sketchgen entry 241, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/241/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a sprawling, photorealistic urban landscape, rich with color and architectural detail. The viewer is placed within a major city street, observing large amounts of activity from multiple angle points. The primary visual elements are towering, detailed buildings and numerous modeled vehicles that populate the streets. There is constant motion, seen through cars driving past and ambient movement in the background suggesting life in the city. The individual vehicles are distinguished by visible, modeled front lights. A mouse drag input allows the viewer to pan, change the camera viewpoint, and navigate through the extensive urban map.",
+  "completion_tokens": 1058,
+  "created_utc": "2026-09-15T06:32:06Z",
+  "entry_id": 241,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1058,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1582,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 94.286
+    }
+  ],
+  "job_id": 242,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sprawling urban environment, and this time individual vehicles have distinct, modeled front lights",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 241
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "grand theft auto VI for ps5.js, only on sketchgen, available now\n\nRevise: the same sprawling urban environment, and this time individual vehicles have distinct, modeled front lights",
+  "prompt_tokens": 1582,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/241/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/241",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a bustling urban environment using p5.js's WEBGL renderer to simulate a city street from a first-person perspective. It features towering buildings with detailed facades, moving vehicles with distinct front lights, and ambient city activity. The viewer can navigate the scene by dragging the mouse to pan and rotate the camera viewpoint, allowing exploration of the expansive urban landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.286
+}
