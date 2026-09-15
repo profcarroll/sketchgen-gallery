@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can intricate tangle of wires and cables with animated signals pulsing\u2026\u201d \u2014 sketchgen entry 290, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/290/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, intricate network of tangled wires and cables. Luminous data streams flow constantly through this web, pulsating with rhythmic energy. The streams appear to move along all thicknesses of cable and undergo a noticeable cycle of brightness. At every major junction in the tangle, the energy signal visibly brightens and momentarily splinters into distinct secondary streams. All of these animated light patterns change continuously and autonomously on the canvas.",
+  "completion_tokens": 1569,
+  "created_utc": "2026-09-15T17:15:02Z",
+  "entry_id": 290,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1569,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 41.2,
+      "prompt_tokens": 2191,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.153,
+      "wall_s": 130.51
+    }
+  ],
+  "job_id": 291,
+  "last_error": "derivative, lacks visual interest",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous data streams, and this time make them visibly brighten and momentarily split into secondary streams at all major cable junctions.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 247,
+    "root_entry_id": 97
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an intricate tangle of wires and cables with animated signals pulsing through\n\nRevise: The same luminous data streams, and this time make the pulsing energy pulses more defined and localized along the thicker cables.\n\nRevise: the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only\n\nRevise: the same luminous data streams, and this time let the pulses move along all cable thicknesses, following an intermittent, rhythmic pattern.\n\nRevise: the same luminous data streams, and this time make them visibly brighten and momentarily split into secondary streams at all major cable junctions.",
+  "prompt_tokens": 2191,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/290/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/290",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dense, animated network of glowing data streams flowing through interconnected cables. The visualization uses a combination of geometric cables with streaming particles and central junctions that pulse with energy and split into multiple streams. The system operates entirely autonomously with no user input required - streams move continuously along cables, junctions pulse rhythmically, and new streams are generated at random intervals. The visual effect creates an organic, living network that constantly evolves while maintaining a structured, geometric framework of connections.",
+  "submitted_by": "profcarroll",
+  "wall_s": 130.51
+}
