@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 311, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/311/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a chaotic, vibrant grid of retro pixel art shapes. The colors are vivid and constantly moving in a seemingly random pattern. When the cursor enters the area, the existing shapes scatter outward from the point of interaction. Instead of dissipating, these scattered pixels temporarily organize themselves into precise, visible geometric ripple patterns that expand outward, creating momentary, structured geometry within the overall chaos.",
+  "completion_tokens": 3219,
+  "created_utc": "2026-09-15T19:24:14Z",
+  "entry_id": 311,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1516,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 33)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(drag), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1523,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.272,
+      "wall_s": 117.175
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 947,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `mouseX` hides p5's `mouseX`; rename it (sketch.js line 87)\npreflight: your variable `mouseY` hides p5's `mouseY`; rename it (sketch.js line 88)\n\ngate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] Cannot access 'mouseX' before initialization\n- [pageerror] Cannot access 'mouseX' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "prompt_tokens": 1818,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.557,
+      "wall_s": 56.086
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 756,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "prompt_tokens": 1762,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 2.601,
+      "wall_s": 45.863
+    }
+  ],
+  "job_id": 312,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant, chaotic grid of retro-styled pixel shapes, and this time the scattering pixels should temporarily organize themselves into visible, geometric ripple patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 270,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path\n\nRevise: try again but make it interactive and animate\n\nRevise: the same chaotic grid of pixelated shapes, and this time the shapes should scatter outward from the cursor's path\n\nRevise: the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward\n\nRevise: the same vibrant, chaotic grid of retro-styled pixel shapes, and this time the scattering pixels should temporarily organize themselves into visible, geometric ripple patterns.",
+  "prompt_tokens": 5103,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/311/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/311",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, chaotic grid of pixel art shapes that animate and interact with user input. The canvas begins filled with thousands of colorful, randomly sized ellipses moving independently across the screen. When the user clicks anywhere, those pixels scatter outward from the point of interaction in a ripple effect, temporarily organizing into visible geometric patterns before returning to their chaotic motion. The visualization balances complexity with performance, using efficient particle systems and avoiding expensive operations like `loadPixels()` or `get()`. The result is a dynamic, responsive visual field that feels both organic and structured, embodying the tension between chaos and order described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 219.124
+}
