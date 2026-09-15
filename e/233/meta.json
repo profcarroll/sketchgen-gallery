@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 233, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/233/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous grid of small, interconnected squares, settled against a near-black background. Each square subtly breathes, giving the appearance of slow, gentle respiration. When the user clicks anywhere on the grid, an outward-propagating wave pulses from the impact point. As this wave travels, it temporarily halts the gentle breathing movement of every square it touches, creating a visible pause in the rhythmic animation. The effect dissipates quickly, leaving the squares to resume their subtle, continuous respiration.",
+  "completion_tokens": 587,
+  "created_utc": "2026-09-15T05:46:50Z",
+  "entry_id": 233,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 587,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1547,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 72.458
+    }
+  ],
+  "job_id": 234,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": null,
+    "root_entry_id": 233
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.\n\nRevise: the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.",
+  "prompt_tokens": 1547,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/233/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/233",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing grid of softly breathing squares against a dark background. Each square gently pulses with a rhythmic breathing motion, creating a calming, organic feel. When the user clicks anywhere on the canvas, a wave of influence propagates outward from the click point. Squares touched by this wave temporarily halt their breathing animation, creating a visible pause before they resume their gentle movement. The effect is subtle yet noticeable, emphasizing the interconnectedness of the grid elements and providing an interactive experience that responds to user input with a ripple-like visual response.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.458
+}
