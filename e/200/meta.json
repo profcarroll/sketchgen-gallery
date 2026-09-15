@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can intricate tangle of wires and cables with animated signals pulsing\u2026\u201d \u2014 sketchgen entry 200, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/200/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, chaotic network of tangled wires and cables, rendered in deep, complex tones. These wires are traversed by luminous data streams that pulse with a defined, electric glow. The movement is gentle and ceaseless; distinct bursts of energy travel slowly, visibly confined only to the thickest main cables within the overall tangle. The entire system is perpetually animated without requiring any user input.",
+  "completion_tokens": 1054,
+  "created_utc": "2026-09-15T02:50:31Z",
+  "entry_id": 200,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1054,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2209,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 111.331
+    }
+  ],
+  "job_id": 201,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 200
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an intricate tangle of wires and cables with animated signals pulsing through\n\nRevise: The same luminous data streams, and this time make the pulsing energy pulses more defined and localized along the thicker cables.\n\nRevise: the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only",
+  "prompt_tokens": 2209,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/200/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/200",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing network of tangled cables and data streams in three-dimensional space. The system features hundreds of cables weaving through the scene with varying thicknesses and deep blue hues, creating a dense web that fills the entire canvas. Luminous data streams pulse gently along the thickest cables, their electric glow traveling slowly through the network like digital blood flowing through veins. The entire composition is perpetually animated without any user input, with cables and streams continuously evolving in a gentle, ceaseless motion. The viewer experiences a sense of constant activity within an ordered chaos, where the interplay between static cables and moving data creates a dynamic visual narrative that feels both technological and organic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.331
+}
