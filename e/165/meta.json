@@ -1,0 +1,108 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2010 Revise: the sam\u2026\u201d \u2014 sketchgen entry 165, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/165/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a highly detailed, dynamic visualization of complex, flowing data within a digital network structure. The environment is filled with thousands of glowing particles forming volumetric, interconnected grids and abstract tendrils of light. The dominant color scheme uses deep, dark blues offset by intense, electric cyan and aqua glows, giving the appearance of a powerful, operating mainframe. The particles constantly stream and swirl, creating a continuous, mesmerizing pattern of information exchange. The entire scene maintains a perpetual state of sophisticated motion, appearing alive and electrically charged, never resting, and conveying the overwhelming scale of global data transmission.",
+  "completion_tokens": 2429,
+  "created_utc": "2026-09-15T00:05:26Z",
+  "entry_id": 165,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 840,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] depth is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1240,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 79.853
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {},
+      "completion_tokens": 766,
+      "evidence": "gate did not finish and wrote no report.json: the gate did not finish within 600s",
+      "exit": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1442,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "wall_s": 42.966
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 823,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1272,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "wall_s": 43.679
+    }
+  ],
+  "job_id": 166,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex data flowing through a digital network, and this time the glowing grids are rendered as volumetric particle fields",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 165
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 2010\n\nRevise: the same complex data flowing through a digital network, and this time the glowing grids are rendered as volumetric particle fields",
+  "prompt_tokens": 3954,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/165/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/165",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing visualization of a digital network structure filled with thousands of glowing particles that flow and connect dynamically in three-dimensional space. The scene features a deep blue color palette punctuated by vibrant electric cyan and aqua glows, evoking the feel of a powerful mainframe system processing vast amounts of data. Particles move autonomously through the space, forming temporary connections as they approach each other, while continuous tendrils of light swirl around the environment. The entire composition is rendered using WebGL for a true 3D experience, with camera movement creating an immersive perspective that makes the data appear alive and electrically charged.",
+  "submitted_by": "profcarroll",
+  "wall_s": 166.498
+}
