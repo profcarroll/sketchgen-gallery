@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cDraw what people learn at Parsons School of Design\u201d \u2014 sketchgen entry 197, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/197/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a shifting, architectural tapestry composed of overlapping, deconstructed forms. These elements are a collage of materiality: silkscreen prints overlay rough architectural schematics, which in turn weave around glowing digital grids. Color shifts are subtle, moving from academic neutrals to saturated, expressive hues. The forms drift and reorganize slowly, representing the accumulation of diverse knowledge. Clicking anywhere on the canvas causes a 'conceptual synthesis,' where the previously separated materials instantly align and combine to form a new, stable, three-dimensional object that momentarily occupies the center before dissolving back into the ambient flow.",
+  "completion_tokens": 1308,
+  "created_utc": "2026-09-15T02:38:11Z",
+  "entry_id": 197,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1308,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2269,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 122.703
+    }
+  ],
+  "job_id": 198,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 197
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Draw what people learn at Parsons School of Design",
+  "prompt_tokens": 2269,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/197/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/197",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic architectural tapestry where abstract forms\u2014silkscreen prints, schematic lines, and digital grids\u2014overlap and shift slowly across the canvas. The visual language moves between academic neutrality and expressive saturation, suggesting an accumulation of knowledge. A click triggers a \"conceptual synthesis\" that momentarily aligns these disparate elements into a stable 3D form at the center, which then dissolves back into the ambient flow. The technique uses WebGL rendering to create depth and layering while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 122.703
+}
