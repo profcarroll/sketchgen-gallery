@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 204, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/204/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously evolving field of complex geometric shapes and abstract lines. The forms are never static, exhibiting continuous, intricate warping and tessellating distortions across the plane. These spatial distortions are highly structured, following the mathematical growth pattern dictated by the Fibonacci sequence. The colors transition and breathe subtly as the shapes warp, creating a dynamic interplay between ordered complexity and apparent depth. The entire visual experience is autonomous, maintaining a sense of perpetual, self-sustaining motion without requiring any user interaction.",
+  "completion_tokens": 851,
+  "created_utc": "2026-09-15T03:16:06Z",
+  "entry_id": 204,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 851,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1527,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.46,
+      "wall_s": 80.619
+    }
+  ],
+  "job_id": 205,
+  "last_error": "derivative",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously evolving field of complex geometric shapes and abstract lines, and this time the distortion vectors will be controlled by a Fibonacci sequence.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 141,
+    "root_entry_id": 34
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the distortion vectors will be controlled by a Fibonacci sequence.",
+  "prompt_tokens": 1527,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/204/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/204",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a continuously evolving field of geometric forms that warp and tessellate according to Fibonacci-based growth patterns. The visual system generates an intricate, self-sustaining motion using mathematical progression to structure the distortions, while subtle color transitions enhance the sense of depth and life in the composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 80.619
+}

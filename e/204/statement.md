@@ -1,0 +1,1 @@
+This sketch creates a continuously evolving field of geometric forms that warp and tessellate according to Fibonacci-based growth patterns. The visual system generates an intricate, self-sustaining motion using mathematical progression to structure the distortions, while subtle color transitions enhance the sense of depth and life in the composition.
