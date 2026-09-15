@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca self portrait in three point perspective Revise: the same geometric\u2026\u201d \u2014 sketchgen entry 32, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/32/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a geometrically structured self-portrait, rendered in three-point perspective. The composition is defined by sharp, modeled forms set against a receding backdrop. This background is composed of several planes that transition smoothly across a subtle chromatic gradient, giving the illusion of depth and shifting color. The entire scene is presented as a fixed, highly detailed representation, focusing on the interplay between rigid geometry and fluid color.",
+  "completion_tokens": 845,
+  "created_utc": "2026-09-14T14:50:45Z",
+  "entry_id": 32,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v1",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 845,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 1117,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.802,
+      "wall_s": 71.62
+    }
+  ],
+  "job_id": 33,
+  "last_error": "critic failed to enforce the brief",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometrically rendered self-portrait, and this time introduce a subtle chromatic gradient across the background planes",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 20,
+    "root_entry_id": 20
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a self portrait in three point perspective\n\nRevise: the same geometrically rendered self-portrait, and this time introduce a subtle chromatic gradient across the background planes",
+  "prompt_tokens": 1117,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/32/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/32",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a fixed, geometric self-portrait rendered in three-point perspective using WebGL mode. The composition features sharp, modeled forms representing a human head and neck constructed from basic geometric primitives like spheres, cones, and cylinders. The scene is set against a receding backdrop of multiple planes that transition smoothly across a subtle blue-to-purple-to-pink chromatic gradient, creating an illusion of depth through color shifts and layered perspective. The entire work is deliberately static, with no animation or motion, focusing on the interplay between rigid geometric construction and fluid color transitions to explore how mathematical forms can suggest organic features while maintaining architectural clarity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.62
+}
