@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201challucinate, allow unharnessed, unrestrained visual code explorations\u2026\u201d \u2014 sketchgen entry 213, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/213/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, fluid tapestry of interwoven, shifting organic shapes. Deeply saturated color gradients flow across the entire surface, creating a constant and profound illusion of moving depth. The overall scene is highly dynamic and unpredictable. When the viewer interacts by dragging the cursor across the screen, the visual flow responds immediately; the colors appear to slow and draw toward the cursor, subtly bending the perceived movement and altering the structure of the gradient lines in real-time.",
+  "completion_tokens": 956,
+  "created_utc": "2026-09-15T04:00:27Z",
+  "entry_id": 213,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 956,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1562,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 85.4
+    }
+  ],
+  "job_id": 214,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same fluid tapestry, and this time with color gradients that deepen the illusion of depth",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 213
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "hallucinate, allow unharnessed, unrestrained visual code explorations\n\nRevise: the same fluid tapestry, and this time with color gradients that deepen the illusion of depth",
+  "prompt_tokens": 1562,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/213/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/213",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, organic tapestry of interwoven shapes that flow across the screen with fluid, unpredictable movement. Using Perlin noise, each shape moves independently through space while responding to the viewer's cursor interaction\u2014slowing and bending toward the pointer when dragged. The composition uses a color palette that shifts over time, creating an immersive sense of depth and motion. The use of WEBGL renderer enables volumetric rendering with 3D spheres that appear to float within the scene, enhancing the feeling of continuous, evolving organic forms. The system evolves autonomously without user input, yet responds meaningfully to interaction, fulfilling both the autonomous motion and responsive behavior requirements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.4
+}
