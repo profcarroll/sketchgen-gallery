@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintersecting fields of light interrupted by sculptural forms\u201d \u2014 sketchgen entry 268, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/268/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts expansive, fluid fields of luminous color that glow and breathe across the surface, creating a background of continuous, soft movement. These fields are periodically fractured and interrupted by sharply defined, solid sculptural forms. These forms appear to exist in deep space, casting subtle highlights and shadows onto the surrounding light. When the viewer clicks the canvas, the intersection of the light fields and the sculptures shifts dramatically, altering the intensity of the light and causing the static forms to appear to reconfigure themselves in space.",
+  "completion_tokens": 944,
+  "created_utc": "2026-09-15T15:02:54Z",
+  "entry_id": 268,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 944,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 1571,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "wall_s": 89.049
+    }
+  ],
+  "job_id": 269,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 268
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "intersecting fields of light interrupted by sculptural forms",
+  "prompt_tokens": 1571,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/268/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/268",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-shifting environment where luminous fluid fields pulse and flow across a dark space, punctuated by solid sculptural forms that seem to exist in deep three-dimensional space. The light fields breathe with organic motion, their glow rising and falling in synchronized waves. When clicked, the viewer triggers a dramatic reconfiguration: the fields shift dramatically while the sculptures subtly adjust their positions and lighting, creating an illusion of spatial transformation. The work explores themes of fluidity versus structure, using p5's WEBGL renderer to create a sense of volumetric depth and continuous motion that responds to interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.049
+}
