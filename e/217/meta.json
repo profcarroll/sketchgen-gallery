@@ -1,0 +1,71 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 217, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/217/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a constantly updating system of abstract information fields, mimicking a 1993 broadcast graphics package. These fields are composed of overlapping, luminous gradients that structure the background, creating a sense of depth and technical elegance. The core visual movement is a subtle, perpetual clockwise rotation applied to every intersecting gradient, causing the color bands and energy fields to slowly swirl and shift. The geometry remains stable, while the color and light play continuously morph across the visible space. There are no interactive elements, and the visualization is designed to be purely observational, conveying structured data through dynamic light and color shifts.",
+  "completion_tokens": 556,
+  "created_utc": "2026-09-15T04:17:49Z",
+  "entry_id": 217,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 556,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2249,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 78.681
+    }
+  ],
+  "job_id": 218,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 217
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients",
+  "prompt_tokens": 2249,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/217/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/217",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, swirling backdrop reminiscent of early 1990s broadcast graphics. Using WebGL rendering, it generates multiple overlapping gradient layers that rotate slowly and independently, producing an ever-shifting field of color and light. Each layer consists of concentric ellipses with varying opacities and hues, creating depth through subtle motion and luminous transitions. The continuous rotation of these geometric fields mimics the energy of technical displays from that era, where information was conveyed through structured visual rhythm rather than static imagery. Viewers observe a constantly evolving pattern of color bands and energy fields, maintaining structural stability while allowing the light and color to continuously morph across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.681
+}
