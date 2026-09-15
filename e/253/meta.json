@@ -1,0 +1,69 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cshower thoughts Revise: the same bioluminescent shapes, and this time\u2026\u201d \u2014 sketchgen entry 253, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/253/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a continuous, dynamic field of bioluminescent forms that drift and interact in fluid patterns. The primary shapes glow with vibrant colors, and a key enhancement is the appearance of visible, glowing smoke trails that consistently trail behind these moving forms. The entire composition is a mesmerizing, self-contained spectacle of light and residue. The movement is always active and evolving, creating a rich sense of perpetual motion without requiring any interaction from the viewer.",
+  "completion_tokens": 1023,
+  "created_utc": "2026-09-15T13:42:15Z",
+  "entry_id": 253,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1023,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "prompt_tokens": 2191,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "wall_s": 111.621
+    }
+  ],
+  "job_id": 254,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "improve the animation framerate",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": null,
+    "root_entry_id": 253
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "shower thoughts\n\nRevise: the same bioluminescent shapes, and this time some forms have trailing, glowing smoke tails\n\nRevise: improve the animation framerate",
+  "prompt_tokens": 2191,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/253/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/253",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of bioluminescent forms that drift and interact in fluid patterns. The composition features hundreds of glowing particles that move with organic, unpredictable motion, leaving behind luminous smoke trails that fade gracefully over time. Each form pulses through a vibrant color cycle while maintaining its own unique trajectory, creating an ever-evolving tapestry of light and shadow across the canvas. The visual effect is achieved through layered drawing techniques including semi-transparent glows, particle trails, and continuous color cycling, all within strict performance constraints to ensure smooth animation without overwhelming system resources.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.621
+}
