@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 289, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/289/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, high-altitude view of a vast, illuminated cityscape. The dominant visual elements are soft, flowing streaks of colored light that drift across the dark backdrop, suggesting the kinetic energy of a sprawling metropolis. These streams of light constantly move and interact with one another. At irregular intervals, the intersecting flow of streaks momentarily stabilizes, creating sharper, angular geometric forms\u2014polygons and bursts of light\u2014that briefly overlay the smooth, liquid movement. The composition is entirely dynamic, always in motion, capturing the vibrant and evolving energy of the urban landscape.",
+  "completion_tokens": 1013,
+  "created_utc": "2026-09-15T17:09:07Z",
+  "entry_id": 289,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1013,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 1542,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.261,
+      "wall_s": 92.12
+    }
+  ],
+  "job_id": 290,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 246,
+    "root_entry_id": 199
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.",
+  "prompt_tokens": 1542,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/289/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/289",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, abstract cityscape using flowing streams of colored light that move across a dark canvas. The visual system consists of multiple continuously moving streaks (streams) that leave trails behind them, creating a sense of kinetic energy and urban flow. At irregular intervals, these streams briefly stabilize to form sharp geometric polygons that overlay the flowing motion, representing moments of stillness or intersection in the city's rhythm. The composition uses color theory with hue shifts across the spectrum to create visual variety while maintaining a cohesive dark urban aesthetic. The entire system operates without user input, relying on procedural generation and time-based animation to continuously evolve the visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 92.12
+}
