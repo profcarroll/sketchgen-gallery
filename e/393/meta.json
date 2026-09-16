@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 393, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/393/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a molecular representation of the DNA double helix, built from interconnected spheres. These spheres form a continuous backbone, accurately detailing the helical structure. The bases are represented by distinct spheres and labeled with the letters A, T, C, and G, forming complementary pairs. The entire structure is highly dynamic, exhibiting continuous motion as it winds, unwinds, and folds and unfolds in a repeating cycle, simulating the biological processes of genetic material transformation and protein synthesis.",
+  "completion_tokens": 978,
+  "created_utc": "2026-09-16T03:45:57Z",
+  "entry_id": 393,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 978,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.5,
+      "prompt_tokens": 1545,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.475,
+      "wall_s": 95.674
+    }
+  ],
+  "job_id": 394,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "make a longer strand in a double helix with accurate connection across the molecules",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": 389,
+    "root_entry_id": 387
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules",
+  "prompt_tokens": 1545,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/393/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/393",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic DNA double helix using p5.js in WEBGL mode. The structure consists of interconnected spheres forming the backbone, with base pairs labeled A, T, C, and G that form complementary pairs. The entire molecular structure continuously winds, unwinds, and folds in a repeating cycle, simulating the biological processes of genetic material transformation and protein synthesis. The animation uses real-time mathematical calculations to create the helical motion while maintaining the correct base pairing relationships. The visualization employs continuous rotation and subtle positional adjustments to demonstrate the dynamic nature of DNA structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.674
+}
