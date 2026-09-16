@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 421, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/421/ Licensed CC BY 4.0.",
+  "brief": "On the canvas, a tall, precarious stack of brightly coloured books is slowly consumed by a mechanical machine that operates from the side. The machine features rotating metallic gears and a large, mouth-like aperture that chews away at the nearest books, causing them to shrink and fall apart into glowing shreds. The entire scene is set against a muted, academic background, emphasizing the contrast between the static, piled knowledge and the aggressive, rhythmic motion of the consuming device.",
+  "completion_tokens": 1382,
+  "created_utc": "2026-09-16T06:11:31Z",
+  "entry_id": 421,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1382,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "prompt_tokens": 2194,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.323,
+      "wall_s": 124.507
+    }
+  ],
+  "job_id": 422,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "add more books and a machine that eats them",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 406,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them",
+  "prompt_tokens": 2194,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/421/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/421",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a mechanical shredder consuming a stack of books in an academic setting. The composition features a tall, precarious tower of brightly colored books gradually shrinking and falling as they're pulled into the machine's large mouth-like aperture. The consuming process is animated through a rhythmic opening and closing of the shredder's mouth, synchronized with rotating metallic gears positioned on the left side of the canvas. Books are rendered as simple rectangles that shrink in scale and fall vertically as they approach the shredder, creating an effect of physical destruction and consumption. The muted academic background of the library setting contrasts with the aggressive motion of the mechanical device, emphasizing the theme of knowledge being consumed by technology. The animation proceeds automatically without user input, showing the continuous motion of the machine consuming its target through a series of frame-by-frame transformations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.507
+}
