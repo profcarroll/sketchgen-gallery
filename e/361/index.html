@@ -42,13 +42,13 @@
   </section>
   <section class="panel">
     <h2>Judgment</h2>
-    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><text x="80.0" y="86.7" text-anchor="middle" class="c-none">no pairs</text></svg><div class="quads"><span class="q none">neither population has scored this entry on both questions</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
+    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><circle cx="110.1" cy="47.2" r="9.7" class="c-mark human" style="opacity:0.4"><title>humans: look 55th of 198 (2.13 over 1 pair) · brief 51st of 198 (2.13 over 1 pair)</title></circle></svg><div class="quads"><span class="q human">humans: looks good, on brief</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
     <div class="two">
       <div class="score">
         <p class="score-label">Humans</p>
-        <p class="score-value">no pairs yet</p>
-        
-        <p class="note">A Bradley–Terry score needs pairs; none has been judged.</p>
+        <p class="score-value">2.13 over 1 pair</p>
+        <p class="score-brief">closer to its brief: 2.13 over 1 pair</p>
+        <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
       <div class="score">
         <p class="score-label">Agents</p>
@@ -72,20 +72,51 @@
     </table>
   </section>
   <section class="panel">
-    <h2>Lineage · <span data-ledger-head>a root prompt, no children yet</span></h2>
+    <h2>Lineage · <span data-ledger-head>the root of a line <span data-ledger-deepest>2</span> generations deep</span></h2>
     <div class="ledger-panel" data-ledger="361" data-ledger-root="361">
-    <ol class="ledger"><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow blank" aria-hidden="true"></div><div class="ledger-text"><p class="ledger-meta">entry 361 · root · <span class="chip unpublished">not published</span></p></div></li></ol>
+    <ol class="ledger"><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../361/sketch/" aria-label="run entry 361" data-run-name="entry 361"><img src="../361/strip.png" loading="lazy" alt="the first frame of entry 361"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">Depict a scene from the motion picture &quot;2001: A Space Odyssey&quot;</p><p class="ledger-meta">entry 361 · root · <span class="chip person">profcarroll</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
     <hr class="ledger-rule">
-    <p class="ledger-after" data-ledger-after>No children yet.</p>
+    <p class="ledger-after" data-ledger-after>After this entry: 1 child</p>
     <div class="ledger-grid" data-ledger-tiles hidden></div>
-    <p class="ledger-plain" data-ledger-plain>No children yet.</p>
+    <p class="ledger-plain" data-ledger-plain>Children: <a href="../415/">entry 415</a>.</p>
     </div>
-    <p class="note">Click a frame to run that sketch in place; one at a time. This is the whole line so far.</p>
+    <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/361.html">The whole line from entry 361</a>.</p>
   </section>
-  <section class="panel">
-    <h2>Spawn a child from a critique</h2>
-    <p>A static page cannot start a job, and this one holds no credential that could. Ask the operator.</p>
+  <section class="panel critique-form" data-critique="361" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>Depict a scene from the motion picture &quot;2001: A Space Odyssey&quot;</p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 2 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
   </section>
   <section class="panel">
     <h2>Provenance</h2>
@@ -108,11 +139,11 @@
       <tr><th scope="row">Wall seconds</th><td>153.159</td></tr>
       <tr><th scope="row">Node shape</th><td>VM.Standard.A1.Flex 16/94</td></tr>
       <tr><th scope="row">Seed</th><td>1</td></tr>
-      <tr><th scope="row">Lineage</th><td>parent — · children none · generation 1 · critique by —</td></tr>
+      <tr><th scope="row">Lineage</th><td>parent — · children 415 · generation 1 · critique by —</td></tr>
       <tr><th scope="row">Source</th><td><a href="https://github.com/profcarroll/sketchgen-gallery/tree/main/e/361">repository</a> · <a href="sketch/sketch.js">sketch.js</a> · <a href="sketch/index.html">index.html</a> · attempts attempt-1, attempt-2</td></tr>
       <tr><th scope="row">Created (UTC)</th><td>2026-09-16T00:57:00Z</td></tr>
-      <tr><th scope="row">Published (UTC)</th><td>—</td></tr>
-      <tr><th scope="row">Publish commit</th><td>—</td></tr>
+      <tr><th scope="row">Published (UTC)</th><td>2026-09-16T01:35:07Z</td></tr>
+      <tr><th scope="row">Publish commit</th><td>eb7246fef1fdd3e554e521bb5645066b30bc53f1</td></tr>
       <tr><th scope="row">Licence</th><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
       <tr><th scope="row">Attribution</th><td>“Depict a scene from the motion picture &quot;2001: A Space Odyssey&quot;” — sketchgen entry 361, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/361/ Licensed CC BY 4.0.</td></tr>
     </table>

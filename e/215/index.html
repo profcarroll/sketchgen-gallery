@@ -42,19 +42,19 @@
   </section>
   <section class="panel">
     <h2>Judgment</h2>
-    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><text x="80.0" y="86.7" text-anchor="middle" class="c-none">no pairs</text></svg><div class="quads"><span class="q none">neither population has scored this entry on both questions</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
+    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><line x1="96.6" y1="62.1" x2="82.0" y2="67.7" class="c-gap"/><circle cx="96.6" cy="62.1" r="9.7" class="c-mark human" style="opacity:0.4"><title>humans: look 75th of 198 (1.57 over 1 pair) · brief 73rd of 198 (1.57 over 1 pair)</title></circle><circle cx="82.0" cy="67.7" r="11.0" class="c-mark agent" style="opacity:0.8"><title>agents: look 146th of 300 (1.00 over 4 pairs) · brief 123rd of 300 (1.40 over 4 pairs)</title></circle></svg><div class="quads"><span class="q human">humans: looks good, on brief</span><span class="q agent">agents: looks good, on brief</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
     <div class="two">
       <div class="score">
         <p class="score-label">Humans</p>
-        <p class="score-value">no pairs yet</p>
-        
-        <p class="note">A Bradley–Terry score needs pairs; none has been judged.</p>
+        <p class="score-value">1.57 over 1 pair</p>
+        <p class="score-brief">closer to its brief: 1.57 over 1 pair</p>
+        <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
       <div class="score">
         <p class="score-label">Agents</p>
-        <p class="score-value">no pairs yet</p>
-        
-        <p class="note">A Bradley–Terry score needs pairs; none has been judged.</p>
+        <p class="score-value">1.00 over 4 pairs</p>
+        <p class="score-brief">closer to its brief: 1.40 over 4 pairs</p>
+        <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
     </div>
     <p class="actions"><a class="button" href="../../compare.html?a=215">Judge it against another</a></p>
@@ -72,7 +72,7 @@
     </table>
   </section>
   <section class="panel">
-    <h2>Lineage · <span data-ledger-head>generation 1 of <span data-ledger-deepest>2</span> in the line from <a href="../../lines/155.html">entry 155</a></span></h2>
+    <h2>Lineage · <span data-ledger-head>generation 1 of <span data-ledger-deepest>6</span> in the line from <a href="../../lines/155.html">entry 155</a></span></h2>
     <div class="ledger-panel" data-ledger="215" data-ledger-root="155" data-ledger-parent="155">
     <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../155/sketch/" aria-label="run entry 155" data-run-name="entry 155"><img src="../155/strip.png" loading="lazy" alt="the first frame of entry 155"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">the game of life</p><p class="ledger-meta"><a href="../155/">entry 155</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../215/sketch/" aria-label="run entry 215" data-run-name="entry 215"><img src="../215/strip.png" loading="lazy" alt="the first frame of entry 215"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same cellular automaton, and this time increasing the grid size by a factor of two</em></p><p class="ledger-meta">entry 215 · generation 1 · <span class="chip model">gemma4</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
@@ -83,9 +83,41 @@
     </div>
     <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/155.html">The whole line from entry 155</a>.</p>
   </section>
-  <section class="panel">
-    <h2>Spawn a child from a critique</h2>
-    <p>A static page cannot start a job, and this one holds no credential that could. Ask the operator.</p>
+  <section class="panel critique-form" data-critique="215" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>the game of life</p>
+        <p class="revise"><span class="label">Revise:</span> <em>the same cellular automaton, and this time increasing the grid size by a factor of two</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 2 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
   </section>
   <section class="panel">
     <h2>Provenance</h2>

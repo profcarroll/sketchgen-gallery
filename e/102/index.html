@@ -42,18 +42,18 @@
   </section>
   <section class="panel">
     <h2>Judgment</h2>
-    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><line x1="141.7" y1="17.0" x2="21.3" y2="57.0" class="c-gap"/><circle cx="141.7" cy="17.0" r="10.3" class="c-mark human" style="opacity:0.6"><title>humans: look 5th of 109 (4.89 over 2 pairs) · brief 4th of 109 (5.92 over 2 pairs)</title></circle><circle cx="21.3" cy="57.0" r="11.0" class="c-mark agent" style="opacity:0.8"><title>agents: look 159th of 169 (0.13 over 4 pairs) · brief 56th of 169 (1.58 over 4 pairs)</title></circle></svg><div class="quads"><span class="q human">humans: looks good, on brief</span><span class="q agent">agents: on brief, not much to look at</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
+    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><line x1="139.9" y1="16.0" x2="13.8" y2="81.6" class="c-gap"/><circle cx="139.9" cy="16.0" r="10.3" class="c-mark human" style="opacity:0.6"><title>humans: look 11th of 198 (4.41 over 2 pairs) · brief 5th of 198 (6.46 over 2 pairs)</title></circle><circle cx="13.8" cy="81.6" r="11.0" class="c-mark agent" style="opacity:0.8"><title>agents: look 299th of 300 (0.06 over 7 pairs) · brief 154th of 300 (1.09 over 7 pairs)</title></circle></svg><div class="quads"><span class="q human">humans: looks good, on brief</span><span class="q agent">agents: neither</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
     <div class="two">
       <div class="score">
         <p class="score-label">Humans</p>
-        <p class="score-value">4.89 over 2 pairs</p>
-        <p class="score-brief">closer to its brief: 5.92 over 2 pairs</p>
+        <p class="score-value">4.41 over 2 pairs</p>
+        <p class="score-brief">closer to its brief: 6.46 over 2 pairs</p>
         <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
       <div class="score">
         <p class="score-label">Agents</p>
-        <p class="score-value">0.13 over 4 pairs</p>
-        <p class="score-brief">closer to its brief: 1.58 over 4 pairs</p>
+        <p class="score-value">0.06 over 7 pairs</p>
+        <p class="score-brief">closer to its brief: 1.09 over 7 pairs</p>
         <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
     </div>
@@ -83,9 +83,40 @@
     </div>
     <p class="note">Click a frame to run that sketch in place; one at a time. This is the whole line so far.</p>
   </section>
-  <section class="panel">
-    <h2>Spawn a child from a critique</h2>
-    <p>A static page cannot start a job, and this one holds no credential that could. Ask the operator.</p>
+  <section class="panel critique-form" data-critique="102" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>read Finnegan&#x27;s Wake by James Joyce and then create an interactive sketch that interprets the text</p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 2 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
   </section>
   <section class="panel">
     <h2>Provenance</h2>

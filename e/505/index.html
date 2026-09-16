@@ -74,7 +74,7 @@
   <section class="panel">
     <h2>Lineage · <span data-ledger-head>generation 2 of <span data-ledger-deepest>4</span> in the line from <a href="../../lines/107.html">entry 107</a></span></h2>
     <div class="ledger-panel" data-ledger="505" data-ledger-root="107" data-ledger-parent="110">
-    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../107/sketch/" aria-label="run entry 107" data-run-name="entry 107"><img src="../107/strip.png" loading="lazy" alt="the first frame of entry 107"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">design a simple platformer game</p><p class="ledger-meta"><a href="../107/">entry 107</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../110/sketch/" aria-label="run entry 110" data-run-name="entry 110"><img src="../110/strip.png" loading="lazy" alt="the first frame of entry 110"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try again but this time make the game playable with the mouse and or keyboard</em></p><p class="ledger-meta"><a href="../110/">entry 110</a> · generation 1 · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow blank" aria-hidden="true"></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.</em></p><p class="ledger-meta">entry 505 · generation 2 · <span class="chip model">gemma4</span> <span class="chip unpublished">not published</span></p></div></li></ol>
+    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../107/sketch/" aria-label="run entry 107" data-run-name="entry 107"><img src="../107/strip.png" loading="lazy" alt="the first frame of entry 107"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">design a simple platformer game</p><p class="ledger-meta"><a href="../107/">entry 107</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../110/sketch/" aria-label="run entry 110" data-run-name="entry 110"><img src="../110/strip.png" loading="lazy" alt="the first frame of entry 110"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try again but this time make the game playable with the mouse and or keyboard</em></p><p class="ledger-meta"><a href="../110/">entry 110</a> · generation 1 · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../505/sketch/" aria-label="run entry 505" data-run-name="entry 505"><img src="../505/strip.png" loading="lazy" alt="the first frame of entry 505"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.</em></p><p class="ledger-meta">entry 505 · generation 2 · <span class="chip model">gemma4</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
     <hr class="ledger-rule">
     <p class="ledger-after" data-ledger-after>No children yet.</p>
@@ -83,9 +83,42 @@
     </div>
     <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/107.html">The whole line from entry 107</a>.</p>
   </section>
-  <section class="panel">
-    <h2>Spawn a child from a critique</h2>
-    <p>A static page cannot start a job, and this one holds no credential that could. Ask the operator.</p>
+  <section class="panel critique-form" data-critique="505" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>design a simple platformer game</p>
+        <p class="revise"><span class="label">Revise:</span> <em>try again but this time make the game playable with the mouse and or keyboard</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em>the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 3 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
   </section>
   <section class="panel">
     <h2>Provenance</h2>
@@ -115,8 +148,8 @@ Revise: the same scrolling environment featuring solid, blocky platforms, and th
       <tr><th scope="row">Lineage</th><td>parent 110 · children none · generation 2 · critique by gemma4:e4b</td></tr>
       <tr><th scope="row">Source</th><td><a href="https://github.com/profcarroll/sketchgen-gallery/tree/main/e/505">repository</a> · <a href="sketch/sketch.js">sketch.js</a> · <a href="sketch/index.html">index.html</a> · attempts attempt-1</td></tr>
       <tr><th scope="row">Created (UTC)</th><td>2026-09-16T16:51:17Z</td></tr>
-      <tr><th scope="row">Published (UTC)</th><td>—</td></tr>
-      <tr><th scope="row">Publish commit</th><td>—</td></tr>
+      <tr><th scope="row">Published (UTC)</th><td>2026-09-16T17:17:05Z</td></tr>
+      <tr><th scope="row">Publish commit</th><td>60e29cc80244cb7bc03679ff34be0a4bf4dd120c</td></tr>
       <tr><th scope="row">Licence</th><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
       <tr><th scope="row">Attribution</th><td>“design a simple platformer game Revise: try again but this time make…” — sketchgen entry 505, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/505/ Licensed CC BY 4.0.</td></tr>
     </table>

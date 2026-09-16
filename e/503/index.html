@@ -74,7 +74,7 @@
   <section class="panel">
     <h2>Lineage · <span data-ledger-head>generation 2 of <span data-ledger-deepest>2</span> in the line from <a href="../../lines/81.html">entry 81</a></span></h2>
     <div class="ledger-panel" data-ledger="503" data-ledger-root="81" data-ledger-parent="90">
-    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../81/sketch/" aria-label="run entry 81" data-run-name="entry 81"><img src="../81/strip.png" loading="lazy" alt="the first frame of entry 81"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is li</p><p class="ledger-meta"><a href="../81/">entry 81</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../90/sketch/" aria-label="run entry 90" data-run-name="entry 90"><img src="../90/strip.png" loading="lazy" alt="the first frame of entry 90"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try to recreate the original prompt more faithfully to the details in the description</em></p><p class="ledger-meta"><a href="../90/">entry 90</a> · generation 1 · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow blank" aria-hidden="true"></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.</em></p><p class="ledger-meta">entry 503 · generation 2 · <span class="chip model">gemma4</span> <span class="chip unpublished">not published</span></p></div></li></ol>
+    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../81/sketch/" aria-label="run entry 81" data-run-name="entry 81"><img src="../81/strip.png" loading="lazy" alt="the first frame of entry 81"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is li</p><p class="ledger-meta"><a href="../81/">entry 81</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../90/sketch/" aria-label="run entry 90" data-run-name="entry 90"><img src="../90/strip.png" loading="lazy" alt="the first frame of entry 90"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try to recreate the original prompt more faithfully to the details in the description</em></p><p class="ledger-meta"><a href="../90/">entry 90</a> · generation 1 · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../503/sketch/" aria-label="run entry 503" data-run-name="entry 503"><img src="../503/strip.png" loading="lazy" alt="the first frame of entry 503"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.</em></p><p class="ledger-meta">entry 503 · generation 2 · <span class="chip model">gemma4</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
     <hr class="ledger-rule">
     <p class="ledger-after" data-ledger-after>No children yet.</p>
@@ -83,9 +83,42 @@
     </div>
     <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/81.html">The whole line from entry 81</a>.</p>
   </section>
-  <section class="panel">
-    <h2>Spawn a child from a critique</h2>
-    <p>A static page cannot start a job, and this one holds no credential that could. Ask the operator.</p>
+  <section class="panel critique-form" data-critique="503" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.</p>
+        <p class="revise"><span class="label">Revise:</span> <em>try to recreate the original prompt more faithfully to the details in the description</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em>the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 3 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
   </section>
   <section class="panel">
     <h2>Provenance</h2>
@@ -115,8 +148,8 @@ Revise: the same atmospheric still life on the brown table, and this time arrang
       <tr><th scope="row">Lineage</th><td>parent 90 · children none · generation 2 · critique by gemma4:e4b</td></tr>
       <tr><th scope="row">Source</th><td><a href="https://github.com/profcarroll/sketchgen-gallery/tree/main/e/503">repository</a> · <a href="sketch/sketch.js">sketch.js</a> · <a href="sketch/index.html">index.html</a> · attempts attempt-1</td></tr>
       <tr><th scope="row">Created (UTC)</th><td>2026-09-16T16:40:27Z</td></tr>
-      <tr><th scope="row">Published (UTC)</th><td>—</td></tr>
-      <tr><th scope="row">Publish commit</th><td>—</td></tr>
+      <tr><th scope="row">Published (UTC)</th><td>2026-09-16T17:17:45Z</td></tr>
+      <tr><th scope="row">Publish commit</th><td>a5b7e81d6795ff47fdb595b438b184ae551bb330</td></tr>
       <tr><th scope="row">Licence</th><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
       <tr><th scope="row">Attribution</th><td>“model a still life in 3D, no sound, no motion, no interaction. There…” — sketchgen entry 503, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/503/ Licensed CC BY 4.0.</td></tr>
     </table>
