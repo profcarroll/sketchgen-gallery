@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 431, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/431/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a cross-section of a combustion engine's core mechanisms. Multiple pistons are seen moving dynamically up and down within rigid cylinders. The engine cycle is initiated by a powerful, momentary spark explosion that pushes the piston downward. This linear downward force is mechanically transferred through rods to a connected transaxle and visible system of interlocking gears. The scene displays intense, cyclical motion, demonstrating the conversion of explosive energy into rotary motion. The visual palette consists primarily of metallic grays, blacks, and bright flashes of light to highlight the power transfer.",
+  "completion_tokens": 1252,
+  "created_utc": "2026-09-16T07:02:02Z",
+  "entry_id": 431,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1252,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "prompt_tokens": 1561,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.967,
+      "wall_s": 106.885
+    }
+  ],
+  "job_id": 432,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 422,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear",
+  "prompt_tokens": 1561,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/431/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/431",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the internal mechanics of a combustion engine using WebGL rendering for dynamic 3D motion. It depicts four pistons moving up and down within cylindrical chambers, with a spark effect triggering each piston's downward stroke. The mechanical energy transfer is illustrated through a transaxle and interlocking gears that rotate in synchronization with the pistons' motion. The metallic color palette of grays and blacks contrasts with bright yellow flashes from the spark events, emphasizing the power conversion from explosive force to rotary motion. All elements animate continuously without user input, demonstrating the cyclical nature of engine operation through the constant, self-driven movement of components.",
+  "submitted_by": "profcarroll",
+  "wall_s": 106.885
+}
