@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201clakes of data slowly draining out down river valleys into darkness Re\u2026\u201d \u2014 sketchgen entry 473, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/473/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a vast, subterranean void of deep blacks, suggesting infinite depths. Through this darkness, luminous streams of data appear, flowing like pale rivers through narrow valleys. These data trails move slowly and continuously, giving the impression of information draining away into the void. As the data progresses, it leaves behind faint, residual phosphorescent marks that drift and dissipate within the abyss. The entire scene is characterized by gentle, organic motion, creating a constant sense of deep, silent flow.",
+  "completion_tokens": 2140,
+  "created_utc": "2026-09-16T11:33:57Z",
+  "entry_id": 473,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1049,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 66)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 90)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 157.6 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 157.6,
+      "prompt_tokens": 2227,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 32.63,
+      "wall_s": 105.548
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1091,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 55.9,
+      "prompt_tokens": 2492,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.536,
+      "wall_s": 72.479
+    }
+  ],
+  "job_id": 474,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same subterranean depths, and this time the flowing data trails will leave faint, phosphorescent residual marks in the void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 426,
+    "root_entry_id": 426
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lakes of data slowly draining out down river valleys into darkness\n\nRevise: the same subterranean depths, and this time the flowing data trails will leave faint, phosphorescent residual marks in the void.",
+  "prompt_tokens": 4719,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/473/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/473",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive subterranean data flow visualization using the WEBGL renderer for depth perception. I've crafted luminous streams that move slowly through a vast dark void, with each stream composed of connected points that fade in and out as they progress. The phosphorescent trail particles drift and dissipate within the abyss, creating a sense of continuous motion and information drainage. The scene emphasizes organic flow through gentle particle movement and subtle color variations, avoiding excessive detail that would exceed performance budgets. The viewer observes an infinite depth landscape where data streams appear to drain into darkness while leaving faint residual marks that slowly fade away.",
+  "submitted_by": "profcarroll",
+  "wall_s": 178.027
+}
