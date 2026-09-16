@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201can interactive stovetop. turn the dial and blue natural gas flames ap\u2026\u201d \u2014 sketchgen entry 458, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/458/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a solid stovetop surface featuring multiple circular burners. An interactive dial is positioned on the surface, which the viewer can turn. When the dial is adjusted, vibrant natural gas flames appear emanating from the burners. The intensity and color of the flames change smoothly and continuously as the dial is turned, simulating different gas settings.",
+  "completion_tokens": 1706,
+  "created_utc": "2026-09-16T09:57:55Z",
+  "entry_id": 458,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 783,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2189,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.372,
+      "wall_s": 91.097
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 923,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2312,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.415,
+      "wall_s": 59.117
+    }
+  ],
+  "job_id": 459,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interactive stovetop surface, and this time the flames should change color with the dial setting",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 405,
+    "root_entry_id": 405
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an interactive stovetop. turn the dial and blue natural gas flames appear on the circular burners.\n\nRevise: the same interactive stovetop surface, and this time the flames should change color with the dial setting",
+  "prompt_tokens": 4501,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/458/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/458",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive stovetop interface with multiple burners and a rotatable dial. When viewers drag the dial horizontally across the canvas, it controls the intensity and color of animated gas flames that emanate from each burner. The flames are rendered as dynamic particle systems that shift through warm color gradients (from orange to yellow) as they rise, creating a realistic simulation of natural gas combustion. The interaction is responsive and visually engaging, with the dial's position directly mapping to flame behavior across the entire stovetop surface. The design uses only basic p5.js primitives for efficient rendering while maintaining visual fidelity through color animation and particle dynamics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 150.214
+}
