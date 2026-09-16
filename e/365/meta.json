@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 365, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/365/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a fixed architectural structure illuminated by a powerful, visible light source. From this source, calculated rays project outward, revealing the geometry of the space. When these energetic beams intersect the rigid planes and surfaces of the building, they compute and render dramatic shadows. These dynamic shadows are not static but constantly shift and creep across the structure's fa\u00e7ade, providing a perpetual, mathematical study of how light is intercepted and translated into deep, changing shade.",
+  "completion_tokens": 867,
+  "created_utc": "2026-09-16T01:09:45Z",
+  "entry_id": 365,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 867,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.6,
+      "prompt_tokens": 2216,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.378,
+      "wall_s": 93.831
+    }
+  ],
+  "job_id": 366,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "emphasize raycasting from the lightsource against the structure and compute the shadows",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 358,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows",
+  "prompt_tokens": 2216,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/365/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/365",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic architectural scene where light rays emanate from a powerful source and cast shifting shadows across building structures. The viewer observes a rotating 3D environment containing geometric buildings and hundreds of light rays that calculate real-time shadow projections. The continuous rotation and mathematical ray casting produce an ever-changing pattern of deep, dramatic shadows that creep and shift across the architectural fa\u00e7ade. The piece demonstrates how light interacts with solid geometry through a simplified but effective shadowing algorithm that calculates intersections between rays and building volumes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 93.831
+}
