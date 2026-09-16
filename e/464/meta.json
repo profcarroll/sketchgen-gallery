@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 464, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/464/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstracted, vibrant garden landscape under a bright blue sky. Various flowering plants exhibit rich, saturated colors, forming clusters of bloom. The central focus is the progression within the seed pods. Luminous, glowing particles accumulate inside the pods, representing the early stage of seed development. Gradually, these luminous clusters begin to visibly reorganize. The outer pods appear to harden and restructure, shifting from soft blooms into defined, solid seed casings, indicating the maturing process of the seeds within. The scene is a continuously evolving display of botanical transformation.",
+  "completion_tokens": 1864,
+  "created_utc": "2026-09-16T10:36:34Z",
+  "entry_id": 464,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1864,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.5,
+      "prompt_tokens": 2244,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.24,
+      "wall_s": 157.481
+    }
+  ],
+  "job_id": 465,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstracted, vibrant garden landscape, and this time show the pods visibly hardening and restructuring from the collected luminous particles into defined, mature seed casings.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 413,
+    "root_entry_id": 47
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the visible process of flowers maturing from bloom through to forming seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the physical peeling or shedding of petals as the blooms transition into seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the fully developed seeds accumulating and slowly dispersing from the central pods.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the luminous seed particles visibly spiraling into the central pods before they accumulate.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the pods visibly hardening and restructuring from the collected luminous particles into defined, mature seed casings.",
+  "prompt_tokens": 2244,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/464/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/464",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a botanical transformation landscape where seed pods evolve from soft, blooming flowers into solid, mature casings. The visualization uses WebGL rendering to create a volumetric garden scene with glowing particles representing developing seeds. As the animation progresses, pods transition through three stages: blooming (where particles accumulate inside), hardening (where the pod structure reorganizes and becomes more defined), and maturing (where the final seed casing solidifies). The continuous motion shows particles flowing into pods, reorganizing within them, and gradually settling into their mature positions. The scene is a metaphor for natural development and transformation, with each visual element representing different stages of botanical growth through color, form, and particle behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.481
+}
