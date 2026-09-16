@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 505, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/505/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous horizontal world featuring the character running across a series of varied, blocky solid platforms. The environment constantly scrolls past the viewer, creating the illusion of forward motion. The player controls a character that can jump and move across the textured, staggered landscape. The player utilizes keyboard and/or mouse inputs to control the character's movement and vertical trajectory, allowing them to navigate jumps and avoid falling into the void as the game scrolls perpetually towards the viewer.",
+  "completion_tokens": 895,
+  "created_utc": "2026-09-16T16:51:17Z",
+  "entry_id": 505,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 895,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 1538,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.185,
+      "wall_s": 88.686
+    }
+  ],
+  "job_id": 506,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 110,
+    "root_entry_id": 107
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.",
+  "prompt_tokens": 1538,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/505/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/505",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a scrolling platformer environment where a player character navigates across randomly generated blocky platforms. The world continuously scrolls from right to left, with the camera following the player character who can move left and right and jump. Platforms are procedurally generated as the world scrolls, maintaining a consistent visual rhythm. The player's movement is controlled via arrow keys, with gravity and collision physics applied to create a basic platforming experience. The visual design uses simple shapes with textured details to represent platforms, and the character is a basic circle that responds to user input and physics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.686
+}
