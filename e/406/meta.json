@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine\u201d \u2014 sketchgen entry 406, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/406/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vertical stack of books situated on a flat surface, approaching a large, mechanical feeder machine. The machine's mandibles rhythmically open and close, and the books are drawn to the machine's opening and disappear in a continuous process. The books that are not yet consumed remain stationary in a neat pile, while the machine itself moves horizontally across the scene, maintaining the steady pace of consumption.",
+  "completion_tokens": 969,
+  "created_utc": "2026-09-16T04:40:48Z",
+  "entry_id": 406,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 969,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2182,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.211,
+      "wall_s": 105.543
+    }
+  ],
+  "job_id": 407,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine",
+  "prompt_tokens": 2182,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/406/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/406",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a mechanical feeding machine consuming books in a continuous loop. The composition shows a stack of books resting on a floor, with a large mechanical feeder moving horizontally across the scene. The machine's mandibles rhythmically open and close as it approaches the book pile. Books are drawn to the machine's opening and disappear as they are consumed, creating an endless cycle of material consumption. The visual effect uses simple geometric shapes to represent books and the mechanical components, with smooth motion and a steady pace that suggests continuous industrial activity. The viewer observes a quiet but persistent process of transformation, where stationary objects gradually become part of a larger mechanical system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.543
+}
