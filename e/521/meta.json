@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 521, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/521/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a captivating and complex steampunk sculpture that constantly rotates. The focal point is a dynamic assembly of orbiting splines, appearing to be constructed from aged tarnished copper and deep emerald glass. These splines circle a central core, which is characterized by a glowing pool of molten bronze. The most striking element is the glass-like tracery of the splines, which acts as a prism, catching and refracting vibrant, simulated rainbow light throughout the continuously moving, mechanical display.",
+  "completion_tokens": 841,
+  "created_utc": "2026-09-16T18:40:56Z",
+  "entry_id": 521,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 841,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.8,
+      "prompt_tokens": 1551,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 9.659,
+      "wall_s": 90.426
+    }
+  ],
+  "job_id": 522,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same captivating, complex sculpture, and this time the glass-like tracery should catch simulated rainbow light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 266,
+    "root_entry_id": 162
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same captivating, complex sculpture, and this time the glass-like tracery should catch simulated rainbow light.",
+  "prompt_tokens": 1551,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/521/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/521",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a steampunk-inspired mechanical sculpture with a central glowing core and orbiting splines. The composition features a molten bronze pool at the center surrounded by eight rotating splines made of refractive glass-like tracery. Each spline orbits independently while its own internal structure continuously shifts, creating a prismatic effect that refracts vibrant rainbow hues across the rotating assembly. The entire scene rotates slowly to emphasize the continuous mechanical motion, with each element maintaining its own visual identity while contributing to an overall sense of complex, evolving machinery.",
+  "submitted_by": "profcarroll",
+  "wall_s": 90.426
+}
