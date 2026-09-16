@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 439, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/439/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dense, churning deep-sea biological environment, saturated with microbial life. Deep, organic colors\u2014primarily varying shades of blue, jade, and olive\u2014swirl and intermingle in a viscous, dynamic mass. Dominating the scene are filamentous structures that form highly defined, geometrically precise chains, giving the impression of microscopic, crystalline formations erupting from the amorphous sludge. The entire field is in constant, slow-motion movement; the filaments drift, tangle, and rearrange themselves in slow, organic pulses, never allowing any settled pattern to hold.",
+  "completion_tokens": 1960,
+  "created_utc": "2026-09-16T07:59:41Z",
+  "entry_id": 439,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 928,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'x')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1548,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.123,
+      "wall_s": 91.045
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1032,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.7,
+      "prompt_tokens": 1754,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 4.341,
+      "wall_s": 59.982
+    }
+  ],
+  "job_id": 440,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 374,
+    "root_entry_id": 374
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.",
+  "prompt_tokens": 3302,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/439/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/439",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing deep-sea ecosystem where microbial life thrives in a viscous, organic environment. Through countless tiny particles that drift slowly across the screen and geometrically precise filament structures that pulse and shift rhythmically, it captures the sense of microscopic crystalline formations emerging from amorphous sludge. The scene is alive with constant, slow-motion motion\u2014filaments drift and tangle while particles flow in organic patterns, never settling into a static arrangement. The deep blues, jades, and olives create an immersive underwater atmosphere where the viewer can sense the dynamic complexity of life at microscopic scales.",
+  "submitted_by": "profcarroll",
+  "wall_s": 151.027
+}
