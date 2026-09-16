@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201csafari landscape Revise: redraw without water safari is typically ass\u2026\u201d \u2014 sketchgen entry 386, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/386/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an expansive, deeply textured arid landscape dominated by rich terracotta earth tones and contrasted against a pale beige sky. The scene features scattered acacia trees and the foreground is etched with visible cracks and fissures. Small, ephemeral dust devils drift across the cracked ground, eventually gathering and organizing themselves into larger, swirling patterns of movement. The visualization is a continuous, self-evolving scene, offering only a static, naturalistic view without requiring any user input.",
+  "completion_tokens": 2913,
+  "created_utc": "2026-09-16T03:17:35Z",
+  "entry_id": 386,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1845,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'y')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2200,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.199,
+      "wall_s": 161.86
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1068,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "prompt_tokens": 2407,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.419,
+      "wall_s": 73.347
+    }
+  ],
+  "job_id": 387,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same arid expanse, and this time having the faint dust devils gather into larger, more organized swirling patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 340,
+    "root_entry_id": 104
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "safari landscape\n\nRevise: redraw without water safari is typically associated to arrid enviornments and the acacia tree,\n\nRevise: the same arid expanse, and this time deep terracotta earth tones replacing the dusty browns\n\nRevise: the same arid expanse, and this time fewer low scrub shapes\n\nRevise: the same arid expanse, and this time slight dust devils drifting across the terracotta ground\n\nRevise: the same arid landscape, and this time increasing the contrast between the terracotta ground and the beige sky\n\nRevise: the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures\n\nRevise: the same arid expanse, and this time having the faint dust devils gather into larger, more organized swirling patterns.",
+  "prompt_tokens": 4607,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/386/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/386",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts an arid, terracotta landscape with a pale beige sky and scattered cracks in the ground. It simulates the natural movement of dust devils that begin as small ephemeral swirls and gradually organize into larger, more coherent patterns. The visualization evolves continuously without user input, using simple particle-like elements to represent the swirling motion of wind and dust. The scene uses a limited palette of earth tones and pale sky colors to create a cohesive, naturalistic atmosphere where the viewer observes a self-evolving desert environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 235.207
+}
