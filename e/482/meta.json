@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same orbiting partic\u2026\u201d \u2014 sketchgen entry 482, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/482/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple points of light orbiting a central, stationary point. Each particle follows a continuous circular path, leaving behind a visible, fading trail that dissipates over time. The system simulates a gravitational pull, with the particles occasionally breaking away from their orbits by accelerating outward away from the center before potentially returning to their paths. The entire dynamic system runs continuously, demonstrating the forces at play with no user input required.",
+  "completion_tokens": 840,
+  "created_utc": "2026-09-16T14:26:33Z",
+  "entry_id": 482,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 840,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 36.4,
+      "prompt_tokens": 2186,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.959,
+      "wall_s": 100.92
+    }
+  ],
+  "job_id": 483,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same orbiting particle system, and this time some particles periodically accelerate outward from the central point",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 438,
+    "root_entry_id": 373
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same orbiting particle system, and this time particles leave a visible, fading trail behind their continuous path.\n\nRevise: the same orbiting particle system, and this time some particles periodically accelerate outward from the central point",
+  "prompt_tokens": 2186,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/482/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/482",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a gravitational system where multiple particles orbit a central point. Each particle follows Newtonian physics, experiencing a constant inward pull that creates stable orbits. However, at random intervals, particles break free from their orbital paths, accelerating outward before potentially returning to their trajectories. The system demonstrates the balance between gravitational attraction and kinetic energy, with each particle leaving a fading trail behind it. The visual effect is a dynamic interplay of order and chaos, where the central point acts as a gravitational anchor while individual particles exhibit unpredictable bursts of movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 100.92
+}
