@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 321, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/321/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstracted, vibrant landscape of a thriving garden, composed of saturated shapes and colors. The primary visual focus is on large, blooming flowers that gradually transform. Over time, the petals of the blooms initiate a slow, visible physical shedding or peeling process. The vibrant, outer petals detach, losing their rich color, and fall away to reveal the structural evolution underneath. This structural change culminates in the development of small, dense, seed-forming pods at the center of the original bloom, completing a cyclical journey of life and transition.",
+  "completion_tokens": 1075,
+  "created_utc": "2026-09-15T20:27:41Z",
+  "entry_id": 321,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1075,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.461,
+      "wall_s": 104.225
+    }
+  ],
+  "job_id": 322,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 281,
+    "root_entry_id": 47
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the visible process of flowers maturing from bloom through to forming seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the physical peeling or shedding of petals as the blooms transition into seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.",
+  "prompt_tokens": 2215,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/321/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/321",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the cyclical life process of garden flowers through an abstract visualization. It shows blooming flowers that gradually undergo a transformation: their vibrant outer petals slowly fade and peel away, revealing the underlying structure. As time progresses, these flowers evolve into seed-forming pods at their center, completing a full lifecycle from bloom to seed. The animation is smooth and continuous, with no external interaction required \u2014 the canvas changes on its own over time, demonstrating the natural progression of plant life through color fading, shape evolution, and structural transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 104.225
+}
