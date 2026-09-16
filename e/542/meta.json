@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cagentic ai on retro nokia n900, focus on camera\u201d \u2014 sketchgen entry 542, prompted by milindanand13, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/542/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates the viewfinder of a retro Nokia N900 camera. The screen is dominated by a pixellated, greenish view of a scene, complete with simulated camera information overlays like a flash indicator and focus box. Subtle analog static and minor flickering movement perpetually animate the background, giving the impression of a live feed. When the user clicks anywhere on the screen, the camera immediately captures the scene, displaying a moment of brief digital processing. This processing moment shifts the visual output from a raw viewfinder view to a stylized, AI-enhanced interpretation of the captured image, before smoothly resetting the viewfinder.",
+  "completion_tokens": 1549,
+  "created_utc": "2026-09-16T21:02:39Z",
+  "entry_id": 542,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1549,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "prompt_tokens": 1573,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.616,
+      "wall_s": 118.319
+    }
+  ],
+  "job_id": 543,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 542
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "agentic ai on retro nokia n900, focus on camera",
+  "prompt_tokens": 1573,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/542/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/542",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch recreates the experience of using a retro Nokia N900 camera's viewfinder, complete with simulated analog static, flickering movement, and camera effects. The interface displays a pixellated greenish scene that subtly shifts and moves to simulate a live feed, while overlaying authentic camera information like a flash indicator and focus box. When clicked, the viewfinder captures the scene and transitions through a digital processing animation before resetting to its live view state, mimicking the behavior of the original device's capture cycle.",
+  "submitted_by": "milindanand13",
+  "wall_s": 118.319
+}
