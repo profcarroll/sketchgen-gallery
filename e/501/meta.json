@@ -1,0 +1,78 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 501, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/501/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dramatic, high-contrast view of a nighttime cityscape spanning a harbor. Multiple drones navigate the sky, trailing glowing, luminous contrails. These drones are equipped with powerful searchlights that sweep across the surrounding buildings, periodically illuminating specific details. Crucially, the searchlights will focus their beams onto individual boats anchored within the harbor's dark water. The overall pattern and formation of the flying drones are fully interactive, adjusting in response to both the movement of the mouse and direct clicks on the screen.",
+  "completion_tokens": 1595,
+  "created_utc": "2026-09-16T16:30:12Z",
+  "entry_id": 501,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1595,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 66.3,
+      "prompt_tokens": 1593,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 19.386,
+      "wall_s": 119.985
+    }
+  ],
+  "job_id": 502,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, high-contrast nighttime cityscape over a harbor, and this time the searchlights will periodically highlight individual boats anchored in the water.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 76,
+    "root_entry_id": 41
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations\n\nRevise: the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly\n\nRevise: the same dynamic nighttime harbor scene, and this time the drones will illuminate the buildings with focused searchlights\n\nRevise: the same dynamic, high-contrast nighttime cityscape over a harbor, and this time the searchlights will periodically highlight individual boats anchored in the water.",
+  "prompt_tokens": 1593,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/501/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/501",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic nighttime cityscape with a harbor where autonomous drones navigate the sky, leaving luminous contrails behind them. The drones are equipped with sweeping searchlights that illuminate specific boats in the dark water below. The scene responds to mouse movement through both idle motion and direct interaction\u2014clicking changes the drones' flight paths while dragging adjusts their velocity. The entire visualization is rendered using WebGL for 3D depth and perspective, with interactive elements causing visible changes across the canvas as required by the evaluation criteria.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.985
+}
