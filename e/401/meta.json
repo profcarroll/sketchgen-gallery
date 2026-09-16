@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images\u201d \u2014 sketchgen entry 401, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/401/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, pulsating field emanating from a central point. Concentric arcs sweep rhythmically across the frame, varying in color and thickness to simulate the detection strength of different objects. The movement is continuous and cyclical, causing the entire display to gently pulse and rotate. The viewer's cursor directly influences the pattern; dragging the mouse across the canvas causes temporary, intense flares to appear, changing the density and brightness of the simulated radar echo field.",
+  "completion_tokens": 866,
+  "created_utc": "2026-09-16T04:21:58Z",
+  "entry_id": 401,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 866,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 84.2,
+      "prompt_tokens": 2239,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.923,
+      "wall_s": 103.911
+    }
+  ],
+  "job_id": 402,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 401
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "radar images",
+  "prompt_tokens": 2239,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/401/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/401",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, pulsating radar-like field that emanates from the center of the canvas. Concentric arcs sweep rhythmically across the screen, varying in color and thickness to simulate detection strength at different distances. The entire pattern gently pulses and rotates over time, creating an immersive sense of motion and energy. When the viewer drags their mouse across the canvas, temporary intense flares appear that temporarily disrupt and intensify the field's density and brightness. These interactive elements add a responsive layer to the otherwise autonomous animation, making each interaction with the canvas change the visual dynamics in real-time. The work uses WebGL rendering for efficient batched drawing of the multiple arcs and point effects, all within the frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.911
+}
