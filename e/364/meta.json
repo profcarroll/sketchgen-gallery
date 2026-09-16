@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cselling sand at the beach\u201d \u2014 sketchgen entry 364, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/364/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a calming beach scene where piles of pale yellow sand are arranged near a wooden stall. Gentle waves periodically roll in from the left, causing the sand line to subtly shift. As the viewer drags the cursor across the sand, the virtual sand responds, forming small, temporary mounds or scoops, mimicking the action of collecting material. The overall scene maintains a soft, sun-drenched palette of blues, yellows, and browns.",
+  "completion_tokens": 1083,
+  "created_utc": "2026-09-16T01:06:58Z",
+  "entry_id": 364,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1083,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.6,
+      "prompt_tokens": 2212,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.437,
+      "wall_s": 105.026
+    }
+  ],
+  "job_id": 365,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 364
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "selling sand at the beach",
+  "prompt_tokens": 2212,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/364/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/364",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene beach scene with animated waves and interactive sand. The composition features pale yellow sand piles arranged near a wooden stall under a bright sky. Gentle waves roll in from the left, creating subtle undulations in the sand line. When viewers drag their cursor across the sand, virtual particles respond by forming temporary mounds or scoops that gradually fade away. The scene uses a soft sun-drenched color palette of blues, yellows, and browns to evoke calm and warmth. The interaction is immediate and tactile, allowing users to reshape the virtual landscape with simple mouse movement while maintaining the peaceful, meditative quality of the environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.026
+}
