@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 342, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/342/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, constantly shifting visualization of data fields, typical of late 1990s network broadcast graphics. Intersecting gradients dominate the space, exhibiting complex, continuous motion. These gradients subtly rotate in a counter-clockwise direction while also gently breathing, expanding and contracting over time. Connecting lines between data particles pulse with a visible, slow rhythm. Overlaying the visualization is subtly moving, kinetic typography that complements the underlying visual data structure. The entire composition moves slowly and rhythmically, creating a sense of complex, automated data flow.",
+  "completion_tokens": 1244,
+  "created_utc": "2026-09-15T22:32:04Z",
+  "entry_id": 342,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1244,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "prompt_tokens": 2213,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.268,
+      "wall_s": 115.042
+    }
+  ],
+  "job_id": 343,
+  "last_error": "derivative",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "Revise: the same abstract, constantly shifting fields of data, and this time the intersecting gradients gently breathe, expanding and contracting slowly over time.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 307,
+    "root_entry_id": 158
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients\n\nRevise: the same system of abstract information fields, and this time applying a slow, periodic counter-clockwise rotation to each intersecting gradient.\n\nRevise: add typography with subtle motion\n\nRevise: the same abstract, ever-shifting representation of data fields, and this time the connecting lines between particles subtly pulse with a slow, visible rhythm.\n\nRevise: Revise: the same abstract, constantly shifting fields of data, and this time the intersecting gradients gently breathe, expanding and contracting slowly over time.",
+  "prompt_tokens": 2213,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/342/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/342",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a late-1990s network broadcast visualization with intersecting gradient layers that slowly rotate and breathe. The composition features a field of data particles that pulse rhythmically and connect to nearby neighbors through subtle lines. Kinetic typography floats across the screen, complementing the data flow structure. The entire visualization moves at a slow, hypnotic pace using only p5.js's core functionality\u2014no sound or external libraries. The color palette emphasizes deep purples and teals with soft transparency effects that create a layered, data-driven atmosphere typical of early digital network displays.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.042
+}
