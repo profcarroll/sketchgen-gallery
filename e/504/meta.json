@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 504, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/504/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a detailed, three-dimensional representation of the solar system. Planets, colored and illuminated to simulate a celestial depth, orbit the central sun. The entire system is connected by visible, glowing paths tracing the elliptical routes of each body. The model is continuously animated, showing the planets moving dynamically around the sun and rotating slowly in space, creating a mesmerizing, structured visual display.",
+  "completion_tokens": 939,
+  "created_utc": "2026-09-16T16:45:48Z",
+  "entry_id": 504,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 939,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.0,
+      "prompt_tokens": 1528,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.702,
+      "wall_s": 90.134
+    }
+  ],
+  "job_id": 505,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 99,
+    "root_entry_id": 95
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.",
+  "prompt_tokens": 1528,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/504/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/504",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a simplified yet visually engaging three-dimensional model of our solar system using p5.js in WEBGL mode. It features a central sun surrounded by six orbiting planets, each with unique sizes, colors, and orbital speeds. The scene rotates slowly to provide a dynamic view, with each planet following its own elliptical path around the sun. The orbits are traced as faint gray ellipses, enhancing the sense of motion and depth. Saturn is specially rendered with visible rings. The entire system animates smoothly without any user interaction, fulfilling the requirement for autonomous visual change while staying within performance constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 90.134
+}
