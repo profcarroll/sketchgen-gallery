@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccreate a simple snowboarding game with no audio. use arrow keys to na\u2026\u201d \u2014 sketchgen entry 497, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/497/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a side-scrolling snowboard course with visible, rigid sidewalls. The viewer controls a snowboarder using directional arrow keys to guide them down the course, and the spacebar allows them to jump. Pressing other keys initiates various tricks. Movement is fluid, and when the snowboarder collides with a sidewall, they visibly recoil, causing damage that is tracked and displayed. The game continues until the damage indicator reaches full capacity, triggering the end state.",
+  "completion_tokens": 2666,
+  "created_utc": "2026-09-16T16:03:12Z",
+  "entry_id": 497,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1367,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 134)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 135)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'width' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2199,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.188,
+      "wall_s": 123.345
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1299,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "prompt_tokens": 2469,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.473,
+      "wall_s": 85.632
+    }
+  ],
+  "job_id": 498,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 56,
+    "root_entry_id": 56
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100%\n\nRevise: the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.",
+  "prompt_tokens": 4668,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/497/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/497",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive snowboarding game where players control a character through a procedurally generated course filled with rigid sidewalls. The player uses arrow keys to move and jump, with the spacebar initiating jumps. The snowboarder experiences physics-based movement including gravity and momentum, while collisions with walls cause visible recoil and damage accumulation. As damage increases, the player's health bar fills until it reaches capacity, ending the game. The camera follows the snowboarder as they navigate the course, creating a dynamic side-scrolling experience. The visual design emphasizes clear feedback through color changes during impacts and a simple geometric aesthetic that works within the performance constraints of the environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 208.977
+}
