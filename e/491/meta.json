@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 491, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/491/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays concentric rings of vibrant, fluorescent colors. These rings maintain a structured arrangement that is not static. They are continually animated, first appearing to ripple outwards, suggesting a liquid motion, before expanding further into their final, larger position. The colors and intensity shift smoothly over time, creating a mesmerizing, rhythmic pattern that occupies the entire visual field without requiring any user input to observe its transformation.",
+  "completion_tokens": 612,
+  "created_utc": "2026-09-16T15:22:04Z",
+  "entry_id": 491,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 612,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "prompt_tokens": 2184,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.375,
+      "wall_s": 82.522
+    }
+  ],
+  "job_id": 492,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same concentric rings, and this time making the rings appear to ripple before expanding",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 7,
+    "root_entry_id": 4
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time\n\nRevise: the same concentric rings, and this time pulsing the fluorescent colors with a gradient sweep\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time making the rings appear to ripple before expanding",
+  "prompt_tokens": 2184,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/491/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/491",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing visual field of concentric rings that pulse and expand rhythmically. Each ring features a vibrant fluorescent color palette that shifts smoothly over time, creating an hypnotic effect. The animation consists of two interwoven motions: each ring ripples outward in a fluid, liquid-like motion, while simultaneously expanding to a larger final size. The combination of these effects produces a dynamic, ever-changing pattern that fills the entire canvas without requiring any user interaction. The rings maintain their structured arrangement throughout the animation, yet appear to flow and breathe with organic motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 82.522
+}
