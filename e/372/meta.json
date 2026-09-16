@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca periodic table of elements\u201d \u2014 sketchgen entry 372, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/372/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a structured grid, representing the organization of all known elements. Each element occupies a distinct box containing a symbol, atomic number, and general information. The overall layout is color-coded and highly organized, maintaining the familiar arrangement of groups and periods. When a viewer clicks on any individual element, the box highlights, and supplementary information or a visual detail about that specific element appears or expands within the structure. The grid remains the central, unchanging focal point, but its elements respond directly to user interaction.",
+  "completion_tokens": 6125,
+  "created_utc": "2026-09-16T02:02:56Z",
+  "entry_id": 372,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1702,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "prompt_tokens": 2223,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.313,
+      "wall_s": 139.6
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2701,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "prompt_tokens": 2387,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.528,
+      "wall_s": 168.047
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1722,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "prompt_tokens": 2387,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.597,
+      "wall_s": 91.934
+    }
+  ],
+  "job_id": 373,
+  "last_error": "gate exit 1: assertions failed: responds(click), motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 372
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a periodic table of elements",
+  "prompt_tokens": 6997,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/372/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/372",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch presents an interactive visualization of the periodic table of elements. It displays a structured grid where each element is represented by a distinct box containing its symbol, atomic number, and name, arranged according to standard chemical groupings and periods. When a viewer clicks on any element, that specific box becomes highlighted and expands to show detailed information about that element in a side panel. The design maintains the familiar organizational structure of the periodic table while enabling direct user interaction to explore individual elements. The visualization uses a clean, color-coded approach that makes both the overall structure and individual details immediately accessible.",
+  "submitted_by": "profcarroll",
+  "wall_s": 399.581
+}
