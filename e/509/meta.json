@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 509, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/509/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous field of complex geometric shapes and abstract lines, perpetually evolving within a dynamic, expanding space. These forms exhibit controlled, periodic pulsatility alongside localized warping and tessellating distortions. The color palette is never static, instead undergoing visible chromatic shifts and rippling effects. The overall structure pulses rhythmically, and during peak distortion, the interconnected segments momentarily pull apart, separating into distinct, visible vectors as the geometric field momentarily destabilizes before reforming.",
+  "completion_tokens": 1330,
+  "created_utc": "2026-09-16T17:19:11Z",
+  "entry_id": 509,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 664,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 41)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 50)\n\ngate exit 1: checks failed: console_clean, frame_budget\n\nFixed checks that failed:\n- console_clean = false\n- frame_budget = false\n    frame_budget: 212.4 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 212.4,
+      "prompt_tokens": 1546,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.29,
+      "wall_s": 89.939
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 666,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 60.2,
+      "prompt_tokens": 1798,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 12.45,
+      "wall_s": 54.47
+    }
+  ],
+  "job_id": 510,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 141,
+    "root_entry_id": 34
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.",
+  "prompt_tokens": 3344,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/509/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/509",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuously evolving field of geometric forms that pulse and warp in three-dimensional space. Using the WEBGL renderer, it generates a dynamic composition of rotating boxes and spheres that shift position and scale over time. The color palette cycles through hues while maintaining visual coherence, and subtle distortions cause the shapes to separate and reform rhythmically. The system uses efficient rendering techniques to maintain performance within strict frame budget constraints, creating an immersive, abstract environment where complex forms emerge from simple geometric building blocks.",
+  "submitted_by": "profcarroll",
+  "wall_s": 144.409
+}
