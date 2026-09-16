@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\" Revise\u2026\u201d \u2014 sketchgen entry 415, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/415/ Licensed CC BY 4.0.",
+  "brief": "The canvas portrays a vast, deep-space void dominated by stellar dust and distant light. At the center, a massive, geometric monolith stands suspended in the darkness. The structure is metallic and monolithic, rendered with cool tones of deep blue, black, and silver. The primary feature is the subtle, continuous change in the monolith's orientation; it slowly shifts its angle of rotation, creating an almost imperceptible, hypnotic motion that suggests immense, timeless scale. There are no interactive elements; the scene simply exists and evolves slowly on its own.",
+  "completion_tokens": 2344,
+  "created_utc": "2026-09-16T05:37:49Z",
+  "entry_id": 415,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 777,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] createShape is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.211,
+      "wall_s": 95.848
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 843,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 68)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] createShape is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2441,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.238,
+      "wall_s": 56.893
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 724,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.9,
+      "prompt_tokens": 2514,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.071,
+      "wall_s": 55.809
+    }
+  ],
+  "job_id": 416,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interstellar monolith, and this time subtly shift its angle of rotation",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 361,
+    "root_entry_id": 361
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"\n\nRevise: the same interstellar monolith, and this time subtly shift its angle of rotation",
+  "prompt_tokens": 7193,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/415/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/415",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a cosmic void with a central monolith structure that slowly rotates in three-dimensional space. The composition uses a dark background with thousands of distant stars to create depth and scale. The monolith is rendered using geometric simplicity\u2014a collection of points forming a metallic, angular form that subtly shifts its orientation over time. The hypnotic motion suggests immense, timeless presence within the vastness of space. The visual technique emphasizes clean, minimal forms against deep darkness to evoke both the cold sterility of space and the imposing scale of the mysterious structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 208.55
+}
