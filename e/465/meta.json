@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\" Revise\u2026\u201d \u2014 sketchgen entry 465, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/465/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a gigantic, stark black monolith suspended in deep space, slowly and subtly rotating on its axis. The background is a rich, dynamic tapestry of stellar dust\u2014rendered in vibrant deep blue and indigo hues\u2014which fills the void with visible, flowing clouds and distant constellations. The canvas continuously displays the mesmerizing interaction between the rotating geometry of the monolith and the slow, atmospheric drift of the surrounding stellar nebula. The overall impression is of vast, silent, celestial grandeur, creating a perpetual sense of cosmic motion without requiring any input from the viewer.",
+  "completion_tokens": 1527,
+  "created_utc": "2026-09-16T10:42:31Z",
+  "entry_id": 465,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 698,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 403 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 403.0,
+      "prompt_tokens": 2244,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.542,
+      "wall_s": 92.23
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 829,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 40.8,
+      "prompt_tokens": 2360,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.033,
+      "wall_s": 54.646
+    }
+  ],
+  "job_id": 466,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same monolith, and this time enhance the deep blue stellar dust to make the background feel less void-like",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 415,
+    "root_entry_id": 361
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"\n\nRevise: the same interstellar monolith, and this time subtly shift its angle of rotation\n\nRevise: the same monolith, and this time enhance the deep blue stellar dust to make the background feel less void-like",
+  "prompt_tokens": 4604,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/465/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/465",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a colossal black monolith floating in the depths of space, rotating slowly and subtly. The scene is rendered using WebGL for immersive 3D visuals, with the monolith depicted as a tall, narrow rectangular prism that gently spins on its axis. Surrounding the monolith is a rich tapestry of stellar dust\u2014generated from thousands of individual particles that flow and drift through space in a continuous, mesmerizing motion. The background is filled with vibrant deep blue and indigo hues, creating an atmospheric nebula that enhances the cosmic grandeur of the scene. The viewer observes a sense of perpetual celestial motion without any input required, capturing the awe-inspiring silence and vastness of outer space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 146.876
+}
