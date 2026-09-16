@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 418, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/418/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a structural study where a building interrupts and modulates the passing light. The core focus is the visualization of light rays cast dynamically from a source, showing precise geometric interception points where these rays hit the structure\u2019s rigid planes. As the light source moves over time, deep shadows shift and warp across the surfaces, creating an abstract interplay between computational geometry and architectural mass. The viewer observes the illuminated pathways and the complex points of intersection forming the visible shadow structures.",
+  "completion_tokens": 1578,
+  "created_utc": "2026-09-16T05:52:46Z",
+  "entry_id": 418,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1578,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "prompt_tokens": 2220,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.354,
+      "wall_s": 134.921
+    }
+  ],
+  "job_id": 419,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 365,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows\n\nRevise: the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.",
+  "prompt_tokens": 2220,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/418/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/418",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the interplay between light and architecture through dynamically cast rays that intersect with a rigid geometric structure. As the light source moves in a circular path, its rays illuminate surfaces and create complex shadow patterns that shift across the building's planes. The visualization emphasizes precise intersection points where rays meet structural elements, rendering both the pathways of light and the abstract geometry of shadow boundaries. The scene uses WebGL for 3D rendering to capture the spatial relationships between light source, structure, and projected illumination.",
+  "submitted_by": "profcarroll",
+  "wall_s": 134.921
+}
