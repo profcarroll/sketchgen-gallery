@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 444, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/444/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, dynamically evolving field of interconnected cells, resembling a life-simulation or biological field. The cells shift color and activity based on established rules of survival and birth. The background acts as an atmospheric element, rhythmically darkening and brightening in visible, pulsing cycles. When a new cell is born, it emits a soft, luminous glow that persists for two full generation cycles, softly fading away. The entire simulation runs continuously, presenting a mesmerizing and self-regulating dance of light and darkness.",
+  "completion_tokens": 1323,
+  "created_utc": "2026-09-16T08:33:20Z",
+  "entry_id": 444,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1323,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2207,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.201,
+      "wall_s": 120.364
+    }
+  ],
+  "job_id": 445,
+  "last_error": "gate failed",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamically evolving field of interconnected cells, and this time the residual glow from newly born cells persists for two generation cycles.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 384,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the residual glow from newly born cells persists for two generation cycles.",
+  "prompt_tokens": 2207,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/444/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/444",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates a living, breathing field of interconnected cells that evolve according to life-like rules. The simulation begins with a population of cells that move and interact, creating a mesmerizing dance of light and darkness. New cells are born at random locations, emitting a soft glow that fades over time, representing the ephemeral nature of life in this digital ecosystem. The background pulses rhythmically, creating an atmospheric backdrop that enhances the organic feel of the simulation. Cells connect visually when they're close, forming a network that shifts and changes as the system evolves. This creates an ever-changing landscape of glowing points that pulse with the rhythm of life itself, where each cell's existence is marked by its luminosity and the connections it forms with others in its vicinity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.364
+}
