@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca self portrait in three point perspective Revise: the same geometric\u2026\u201d \u2014 sketchgen entry 493, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/493/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a geometrically abstracted self-portrait rendered using three-point perspective, composed of interlocking, crystalline planes. The visual experience is defined by subtle, continuous shifts in the saturation and reflectivity of these planes. As the structure remains intact, sections of the geometry slowly brighten, dim, and transition across the spectrum of color, causing the illusion that the form itself is breathing or dissolving. The viewer observes the meticulous geometry and the quiet, perpetual changes in light and tone across the entire surface.",
+  "completion_tokens": 779,
+  "created_utc": "2026-09-16T15:36:38Z",
+  "entry_id": 493,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 779,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": 2230,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.158,
+      "wall_s": 93.867
+    }
+  ],
+  "job_id": 494,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometrically rendered self-portrait, and this time the interlocking planes reveal subtle shifts in color saturation and reflectivity.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 20,
+    "root_entry_id": 20
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a self portrait in three point perspective\n\nRevise: the same geometrically rendered self-portrait, and this time the interlocking planes reveal subtle shifts in color saturation and reflectivity.",
+  "prompt_tokens": 2230,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/493/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/493",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract self-portrait using three-point perspective with interlocking crystalline planes that shift through color and light. The composition consists of multiple geometric structures rotating slowly in 3D space, each maintaining its structural integrity while undergoing continuous subtle changes in saturation and brightness. The viewer observes a meditative, breathing effect where sections of the geometry gradually brighten and dim across the color spectrum, creating an illusion of dissolution and reformation. The use of WEBGL rendering allows for smooth 3D transformations and lighting effects that maintain visual coherence while staying within the performance constraints of the environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 93.867
+}
