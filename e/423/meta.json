@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cflyover: is it a motherboard or is it an aerial view of warehouses an\u2026\u201d \u2014 sketchgen entry 423, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/423/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a continuously evolving, deep-set grid structure rendered with metallic blues, burnt siennas, and industrial grays. This surface appears simultaneously like a densely packed circuit board and an expansive aerial view of structured rooftops. Geometric lines crisscross, forming a chaotic yet organized network of pathways and connections. The entire field exhibits a constant, slow, transformative movement, giving the illusion of floating through a massive, subterranean landscape or a highly populated urban expanse. The visual elements shift and warp over time, making it unclear whether the repeating patterns belong to human infrastructure or complex electrical routing.",
+  "completion_tokens": 2413,
+  "created_utc": "2026-09-16T06:19:44Z",
+  "entry_id": 423,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 908,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 46)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 797.9 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 797.9,
+      "prompt_tokens": 2248,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 33.219,
+      "wall_s": 103.443
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1505,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.6,
+      "prompt_tokens": 2435,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.869,
+      "wall_s": 104.02
+    }
+  ],
+  "job_id": 424,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 423
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "flyover: is it a motherboard or is it an aerial view of warehouses and factories",
+  "prompt_tokens": 4683,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/423/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/423",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an abstract, evolving grid structure that merges the visual language of circuit boards and urban rooftops. Using a spatial hash for neighbor lookups, it creates a dynamic network of metallic blues, burnt siennas, and industrial grays that shift and transform over time. The visual field appears to float through a subterranean or densely populated landscape, with geometric lines forming a chaotic yet organized pathway system. Particles move slowly in 3D space, connecting to nearby neighbors based on proximity, creating an ever-changing web of connections that gives the illusion of complex infrastructure or electrical routing. The constant camera movement and time-based color shifts enhance the sense of depth and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 207.463
+}
