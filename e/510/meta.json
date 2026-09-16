@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crender a volcanic eruption Revise: the same fiery rivers of molten la\u2026\u201d \u2014 sketchgen entry 510, prompted by profcaroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/510/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a chaotic, fiery landscape dominated by a violent volcanic eruption. Molten lava flows in bright, dynamic rivers of incandescent orange and yellow, spreading across the scorched earth. Surrounding this fiery core are thousands of solidified rock chunks, which are glowing deep reds and blacks. These chunks are not simple formations; they exhibit intricate, deep crystalline patterns, resembling complex, branching fractals. The entire scene is constantly shifting, with the lava rivers aggressively creeping and the crystalline structures appearing to writhe and glow, creating a perpetual, mesmerizing state of geological chaos.",
+  "completion_tokens": 998,
+  "created_utc": "2026-09-16T17:26:35Z",
+  "entry_id": 510,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 998,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.7,
+      "prompt_tokens": 1544,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.475,
+      "wall_s": 94.689
+    }
+  ],
+  "job_id": 511,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chaotic, fiery landscape centered on a violent volcanic eruption, and this time the solidified rock chunks should exhibit deep, fractal crystalline patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 144,
+    "root_entry_id": 103
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "render a volcanic eruption\n\nRevise: the same fiery rivers of molten lava, and this time they include glowing, splintered chunks of solidified rock.\n\nRevise: the same chaotic, fiery landscape centered on a violent volcanic eruption, and this time the solidified rock chunks should exhibit deep, fractal crystalline patterns.",
+  "prompt_tokens": 1544,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/510/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/510",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a chaotic volcanic landscape where molten lava flows dynamically across the canvas while solidified rock chunks with intricate crystalline patterns writhe and glow. The lava particles are thousands of individually animated ellipses that move with turbulent motion, creating flowing rivers of orange and yellow light. Meanwhile, the rock formations are complex polygonal shapes that rotate slowly and pulse with subtle animation, simulating the deep reds and blacks of solidified volcanic rock. The entire scene shifts continuously through time-based transformations, creating a mesmerizing state of geological chaos without any user interaction, fulfilling the gate's requirement for autonomous visual motion.",
+  "submitted_by": "profcaroll",
+  "wall_s": 94.689
+}
