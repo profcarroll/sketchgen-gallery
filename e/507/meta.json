@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 507, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/507/ Licensed CC BY 4.0.",
+  "brief": "The viewer experiences a deep, retro-styled perspective of a two-lane road that rushes toward them. The environment features simple side paths branching off the main asphalt. The entire scene is dynamic, giving the illusion of perpetual motion. The directional movement of the viewer\u2019s vehicle is controlled by keyboard inputs, which steer the perspective, allowing the road geometry to smoothly curve and incorporate gentle changes in alignment as the journey continues.",
+  "completion_tokens": 1313,
+  "created_utc": "2026-09-16T17:03:46Z",
+  "entry_id": 507,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1313,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "prompt_tokens": 2209,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.719,
+      "wall_s": 127.205
+    }
+  ],
+  "job_id": 508,
+  "last_error": "not playable",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same retro representation of a road rushing beneath a vehicle, and this time make the road geometry incorporate a gentle curve.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 126,
+    "root_entry_id": 55
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time make the road geometry incorporate a gentle curve.",
+  "prompt_tokens": 2209,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/507/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/507",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a retro-styled, dynamic road perspective using p5.js in WEBGL mode. Viewers experience a sense of motion as the road curves and changes direction beneath them, simulating the feeling of driving through a countryside landscape. The viewer controls steering with left/right arrow keys, which smoothly curves the perspective to create an immersive effect. The road features lane markings, roadside details, and branching side paths that give depth and a sense of continuous travel. The implementation uses a fixed number of road segments that move toward the viewer, creating an illusion of motion while maintaining performance within strict frame budget constraints. All visual elements are drawn in real-time with no external libraries, relying solely on p5.js's WEBGL capabilities to achieve the dynamic perspective effect.",
+  "submitted_by": "profcarroll",
+  "wall_s": 127.205
+}
