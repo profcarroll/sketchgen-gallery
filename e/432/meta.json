@@ -1,0 +1,319 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 10,
+  "attribution": "\u201cretro Macintosh OS 7 desktop simulator: let me move icons around a pl\u2026\u201d \u2014 sketchgen entry 432, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/432/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a flat, retro desktop environment featuring a limited color palette and several graphical elements, including static icons and window frames. The user can click on specific icons to trigger a window to appear or disappear, simulating an application state change. Furthermore, the user can physically grab and drag these icons across the desktop surface, rearranging them relative to one another. Clicking on the contained windows allows the user to interact with the fake contents, providing a visual simulation of opening or closing documents within the simulated OS environment.",
+  "completion_tokens": 17892,
+  "created_utc": "2026-09-16T07:20:47Z",
+  "entry_id": 432,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1516,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2244,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.418,
+      "wall_s": 132.135
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1776,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.434,
+      "wall_s": 114.811
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.515,
+      "wall_s": 98.909
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 1.466,
+      "wall_s": 99.36
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-5",
+      "total_s": 1.486,
+      "wall_s": 98.907
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 6,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-6",
+      "total_s": 1.483,
+      "wall_s": 98.857
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 7,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-7",
+      "total_s": 1.486,
+      "wall_s": 99.464
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 8,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-8",
+      "total_s": 1.478,
+      "wall_s": 99.968
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 9,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-9",
+      "total_s": 1.493,
+      "wall_s": 100.774
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 10,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1825,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2461,
+      "rules_file": "treatment",
+      "source": "attempt-10",
+      "total_s": 1.507,
+      "wall_s": 99.705
+    }
+  ],
+  "job_id": 433,
+  "last_error": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 432
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retro Macintosh OS 7 desktop simulator: let me move icons around a play desktop, click to open and close windows, and pretend to open documents.",
+  "prompt_tokens": 24393,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5",
+      "attempt-6",
+      "attempt-7",
+      "attempt-8",
+      "attempt-9",
+      "attempt-10"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/432/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/432",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a retro desktop environment reminiscent of early operating systems like Windows 95 or classic Mac interfaces. It features draggable icons that represent applications, each with associated windows that can be opened and closed by clicking on the icons. The interface includes a grid-patterned desktop background, window frames with title bars, and simple icon representations for different application types (folder, document, settings). Users can interact with the environment through mouse clicks to open/close windows and drag icons to rearrange them across the desktop surface. The design uses a limited color palette and geometric shapes to evoke nostalgia for classic computer interfaces while maintaining clean visual hierarchy and responsive interaction patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 1042.89
+}
