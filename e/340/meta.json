@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csafari landscape Revise: redraw without water safari is typically ass\u2026\u201d \u2014 sketchgen entry 340, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/340/ Licensed CC BY 4.0.",
+  "brief": "The view captures a sprawling, sun-baked arid expanse dominated by deep terracotta earth tones. The surface of the ground is heavily textured, displaying prominent cracks and fissures that catch the light, contrasting sharply with the smooth, beige sky above. The composition features scattered, sparsely placed low scrub shapes. The entire scene is characterized by the subtle, natural motion of faint dust devils that continually drift and dance across the reddish-brown ground, giving the landscape a sense of constant, quiet movement.",
+  "completion_tokens": 913,
+  "created_utc": "2026-09-15T22:22:20Z",
+  "entry_id": 340,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 913,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.4,
+      "prompt_tokens": 2206,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.711,
+      "wall_s": 95.738
+    }
+  ],
+  "job_id": 341,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 305,
+    "root_entry_id": 104
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "safari landscape\n\nRevise: redraw without water safari is typically associated to arrid enviornments and the acacia tree,\n\nRevise: the same arid expanse, and this time deep terracotta earth tones replacing the dusty browns\n\nRevise: the same arid expanse, and this time fewer low scrub shapes\n\nRevise: the same arid expanse, and this time slight dust devils drifting across the terracotta ground\n\nRevise: the same arid landscape, and this time increasing the contrast between the terracotta ground and the beige sky\n\nRevise: the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures",
+  "prompt_tokens": 2206,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/340/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/340",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a sun-baked arid landscape using p5.js's 2D drawing capabilities. The composition features a deep terracotta ground that dominates the lower portion of the canvas, textured with scattered points to simulate the roughness of cracked earth. Above this, a pale beige sky fills the upper region. Scattered throughout the scene are fifteen animated dust devils\u2014gentle spiraling vortices that drift slowly across the terrain, their movement giving the otherwise static landscape a sense of quiet motion and life. The ground also contains numerous cracks, rendered as thin lines at various angles, adding to the textural complexity and realism of the desert environment. All elements move autonomously without user interaction, satisfying the gate's requirement for self-contained animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.738
+}
