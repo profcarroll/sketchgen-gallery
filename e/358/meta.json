@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighting study: the building interrupts the light\u201d \u2014 sketchgen entry 358, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/358/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a minimalist, geometric representation of light beams intersecting a solid architectural facade. The composition is dominated by sharp, contrasting areas of bright light and deep shadow. These light and shadow patterns are not static; they continually shift and warp across the surface, simulating the passage of time or the movement of the sun. The viewer observes the interplay between hard-edged shadows and diffuse, luminous color as the entire arrangement undergoes slow, persistent transformation.",
+  "completion_tokens": 857,
+  "created_utc": "2026-09-16T00:42:52Z",
+  "entry_id": 358,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 857,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.6,
+      "prompt_tokens": 2219,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.778,
+      "wall_s": 98.366
+    }
+  ],
+  "job_id": 359,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lighting study: the building interrupts the light",
+  "prompt_tokens": 2219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/358/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/358",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a minimalist architectural scene where light beams intersect a solid facade through dynamic geometric forms. The composition uses a series of stepped, faceted structures that shift and rotate over time, creating sharp contrasts between light and shadow areas. Simulated sunlight moves across the canvas, casting shifting beams that warp and change color as they traverse the architectural surface. The visual effect emerges from simple geometric shapes and carefully timed animations that create an impression of volumetric light without requiring complex rendering techniques or excessive draw calls. The result is a meditative exploration of how light and shadow interact with structured architecture through continuous transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 98.366
+}
