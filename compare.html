@@ -2809,6 +2809,15 @@
     "strip": "e/267/strip.png"
   },
   {
+    "brief": "The canvas displays a structured grid, representing the organization of all known elements. Each element occupies a distinct box containing a symbol, atomic number, and general information. The overall layout is color-coded and highly organized, maintaining the familiar arrangement of groups and periods. When a viewer clicks on any individual element, the box highlights, and supplementary information or a visual detail about that specific element appears or expands within the structure. The grid remains the central, unchanging focal point, but its elements respond directly to user interaction.",
+    "href": "e/372/",
+    "id": 372,
+    "prompt": "a periodic table of elements",
+    "seed": 1,
+    "state": "failed-kept",
+    "strip": "e/372/strip.png"
+  },
+  {
     "brief": "The canvas displays several expanding concentric rings that pulsate steadily. These rings appear in vibrant, fluorescent colors, creating a pulsing visual rhythm. Unlike previous versions, the color variation is tightly controlled, restricted entirely to a specific, limited temperature range. The rings continuously grow and contract, cycling through this contained, brilliant palette, creating a mesmerizing and self-contained optical display.",
     "href": "e/8/",
     "id": 8,
@@ -3190,11 +3199,11 @@
 <script id="sketchgen-pairs" type="application/json">[
   {
     "a": 153,
-    "b": 185
+    "b": 191
   },
   {
     "a": 49,
-    "b": 208
+    "b": 212
   },
   {
     "a": 330,
@@ -3202,23 +3211,23 @@
   },
   {
     "a": 88,
-    "b": 288
+    "b": 289
   },
   {
-    "a": 112,
+    "a": 114,
     "b": 88
   },
   {
     "a": 95,
-    "b": 350
+    "b": 352
   },
   {
     "a": 275,
-    "b": 328
+    "b": 329
   },
   {
     "a": 125,
-    "b": 203
+    "b": 205
   }
 ]</script>
 <script id="sketchgen-agents" type="application/json">{
@@ -7663,6 +7672,20 @@
   "39-100": [
     {
       "choice": "tie",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "B",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "39-178": [
+    {
+      "choice": "A",
       "judge": "gemma4:e4b",
       "prompt_version": "judge-v1",
       "question": "brief"
