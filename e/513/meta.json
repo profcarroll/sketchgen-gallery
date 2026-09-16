@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 513, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/513/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a gentle hillside with a solitary tree whose seasonal cycle unfolds continuously. The tree\u2019s leaves undergo gradual color shifts, moving from vibrant green through rich reds and oranges, before eventually scattering to the ground. The setting then transitions as snow falls, blanketing the ground and coating the bare branches, only for the snow to melt. Following the melt, buds appear, blossoming into flowers, and eventually, the canopy regains its deep green foliage, repeating the cycle indefinitely. The colors shift organically across the shapes of the hill and the tree.",
+  "completion_tokens": 1975,
+  "created_utc": "2026-09-16T17:44:17Z",
+  "entry_id": 513,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1975,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2214,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.235,
+      "wall_s": 170.549
+    }
+  ],
+  "job_id": 514,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same seasonal cycle on a gentle hill, and this time show the tree shedding its green leaves and transitioning through red and orange colors.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 195,
+    "root_entry_id": 193
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: the same seasonal cycle on a gentle hill, and this time show the tree shedding its green leaves and transitioning through red and orange colors.",
+  "prompt_tokens": 2214,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/513/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/513",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts an endless seasonal cycle on a gentle hillside. A solitary tree undergoes natural transitions: from vibrant green spring foliage through rich autumn colors to bare branches, then blanketed in snow, melting to reveal buds, blossoming into flowers, and finally returning to lush green. The scene unfolds organically without user interaction, showing the passage of time through continuous color shifts and transformations. The hillside landscape responds subtly with gentle undulations, while the tree's leaves change hue and form throughout each phase of the cycle. Snow falls gently across the ground and melts away gradually, revealing new growth beneath. The viewer witnesses a complete ecological loop that repeats indefinitely, capturing the essence of nature's rhythmic progression through the year.",
+  "submitted_by": "profcarroll",
+  "wall_s": 170.549
+}
