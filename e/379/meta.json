@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 379, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/379/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a fluid visualization composed of horizontal bands of color. These bands are animated in concert, smoothly rising and falling in a rhythmic, slow sine wave pattern, mimicking the passage of tides. The overall structure is continuous and cyclical. A distinctive, darker band marks the current high-water level, appearing within the overall movement. The entire visualization undergoes slow, automatic movement, creating the impression of breath and ebb, with no user input required to observe the phenomenon.",
+  "completion_tokens": 492,
+  "created_utc": "2026-09-16T02:35:11Z",
+  "entry_id": 379,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 492,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1522,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.144,
+      "wall_s": 64.966
+    }
+  ],
+  "job_id": 380,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 379
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water",
+  "prompt_tokens": 1522,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/379/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/379",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This visualization depicts a fluid, tidal landscape composed of horizontal color bands that move in harmony with a slow sine wave rhythm. Each band represents a layer of water at different depths, shifting smoothly to mimic the ebb and flow of tides. A distinctive dark band marks the current high-water level, creating a visual anchor within the continuous motion. The entire composition breathes naturally without any external input, offering a meditative representation of fluid dynamics through pure color and movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 64.966
+}
