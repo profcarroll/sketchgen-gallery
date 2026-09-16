@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 500, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/500/ Licensed CC BY 4.0.",
+  "brief": "The viewer stands within a massive, empty, liminal chamber, facing monumental pathways constructed of deeply rusted steel. These pathways appear to flow endlessly, initially sweeping in large, smooth curves. However, the path is dramatically interrupted by an acute shift in geometry, abruptly changing its trajectory to become sharply perpendicular, maximizing the feeling of disorientation. The steel structure is richly textured by a deep rust patina, which settles into vivid, wet-looking pockets of umber, creating a sense of aged grandeur and massive scale.",
+  "completion_tokens": 2328,
+  "created_utc": "2026-09-16T16:24:13Z",
+  "entry_id": 500,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1112,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 80)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.3393/255, 35438 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.2,
+      "prompt_tokens": 2228,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.766,
+      "wall_s": 109.712
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1216,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2446,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 28.397,
+      "wall_s": 78.128
+    }
+  ],
+  "job_id": 501,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same massive pathways of deeply rusted steel, and this time the rust patina deepens into pockets of vivid, wet-looking umber.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 74,
+    "root_entry_id": 39
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same massive pathways of deeply rusted steel, and this time the rust patina deepens into pockets of vivid, wet-looking umber.",
+  "prompt_tokens": 4674,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/500/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/500",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a viewer within a vast, empty chamber where monumental steel pathways stretch into infinity. The composition captures the grandeur and disorientation of a massive architectural space through carefully constructed geometric elements. The pathways begin as smooth, sweeping curves that abruptly shift to sharply perpendicular trajectories at their midpoint, creating a sense of dramatic interruption and spatial confusion. The rusted steel structures are rendered with a rich, textured palette of deep umber tones that suggest aged grandeur and immense scale. The viewer's perspective is positioned within this space, looking along the pathways toward infinity, where the structural elements become increasingly abstract and distant, emphasizing the monumental nature of the environment through careful attention to proportion and architectural form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 187.84
+}
