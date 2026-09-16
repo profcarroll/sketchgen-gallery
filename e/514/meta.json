@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 514, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/514/ Licensed CC BY 4.0.",
+  "brief": "The sketch displays abstract information fields typical of 1993 television broadcast graphics. Geometric forms are visible, characterized by intersecting gradient layers. The color palette shifts significantly, with the outermost gradients showing a pronounced vertical transformation from green toward deep cyan. All the intersecting gradients exhibit a continuous, subtle, and slow clockwise rotation, creating a dynamic, professional, and ever-changing visual presentation on the canvas.",
+  "completion_tokens": 700,
+  "created_utc": "2026-09-16T17:50:19Z",
+  "entry_id": 514,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 700,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "prompt_tokens": 2184,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.327,
+      "wall_s": 94.626
+    }
+  ],
+  "job_id": 515,
+  "last_error": "too dark, too illegible, lacks visual interest",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract information fields, and this time the outermost gradient layers reflect a pronounced vertical gradient shift from green to deep cyan.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 217,
+    "root_entry_id": 158
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients\n\nRevise: the same abstract information fields, and this time the outermost gradient layers reflect a pronounced vertical gradient shift from green to deep cyan.",
+  "prompt_tokens": 2184,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/514/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/514",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an abstract television graphics visualization reminiscent of 1993 broadcast design. It features multiple rotating gradient layers that shift from green to deep cyan across the canvas, with each layer slowly spinning in a continuous clockwise motion. The composition uses geometric forms including intersecting circles and rectangles, arranged to create dynamic visual depth through layered transparency and color transitions. The animation is entirely self-contained, running without user interaction, with smooth, subtle movements that evoke the professional yet ever-changing aesthetic of early digital television graphics systems.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.626
+}
