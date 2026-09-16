@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdiagonal stripes animating in smoothly eased slicing patterns in colo\u2026\u201d \u2014 sketchgen entry 534, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/534/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with smoothly transitioning bands of bold, abstract geometry, arranged in diagonal stripes. These stripes shift and warp continuously, revealing a texture of visible halftone dots across the vibrant surface. The color scheme shifts through a striking, retro-inspired palette of richly saturated hues, creating a hypnotic, continuous flow of movement and color that dominates the field of view.",
+  "completion_tokens": 721,
+  "created_utc": "2026-09-16T20:15:03Z",
+  "entry_id": 534,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 721,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.0,
+      "prompt_tokens": 2175,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.112,
+      "wall_s": 89.226
+    }
+  ],
+  "job_id": 535,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try a new color pallete",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "parent_entry_id": 22,
+    "root_entry_id": 12
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures\n\nRevise: try a new color pallete",
+  "prompt_tokens": 2175,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/534/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/534",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a hypnotic, continuously shifting abstract composition using diagonal bands of vibrant color that flow and warp across the screen. The design employs a combination of procedural geometry and noise-based animation to generate smooth, organic movement patterns that shift over time without any user interaction. The retro-inspired color palette and halftone texture create a rich visual experience with depth and motion that fills the entire canvas. The technique uses precomputed stripes with individually controlled animation speeds combined with a dynamic halftone overlay to achieve both the flowing bands and the dot texture effects described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.226
+}
