@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crhododendrons\u201d \u2014 sketchgen entry 424, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/424/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a lush grouping of overlapping rhododendron blossoms. Colors, ranging from deep purples to delicate pinks, emerge in soft, clustered shapes that resemble watercolor washes. These forms drift and subtly pulsate, giving the impression of gentle breezes through a densely overgrown garden. The entire scene is constantly shifting, making the visual field appear alive. When the viewer moves the cursor across the display, the floral patterns react, deepening the hues and causing specific blooms to briefly flare with intensified color and crisp definition.",
+  "completion_tokens": 709,
+  "created_utc": "2026-09-16T06:22:47Z",
+  "entry_id": 424,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 709,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "prompt_tokens": 2231,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.912,
+      "wall_s": 88.201
+    }
+  ],
+  "job_id": 425,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 424
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "rhododendrons",
+  "prompt_tokens": 2231,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/424/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/424",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-shifting garden of rhododendron blossoms that respond to both time and user interaction. The scene features a soft watercolor palette of purples and pinks, with each blossom gently pulsing and drifting across the canvas like petals carried by a breeze. The blossoms are generated procedurally in a fixed number, ensuring performance while maintaining visual complexity. When the user moves their cursor across the canvas, the colors deepen and individual blooms flare with intensified hues, creating a responsive layer that makes the scene feel alive and interactive. The constant motion and subtle color shifts give the impression of a living garden, where each moment brings a new configuration of blooming forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.201
+}
