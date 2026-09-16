@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 528, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/528/ Licensed CC BY 4.0.",
+  "brief": "The canvas will fill with dynamic, angular geometric lines that radiate outward from a central point. These lines constantly stretch and contract, altering their thickness and shifting their hue across the visible spectrum, directly mirroring the intensity and rhythmic variations of the played music. The overall pattern remains highly energetic and flowing, representing the emotional arc of the song. Furthermore, when the user moves the mouse across the canvas, the radiating lines will dynamically shift their patterns, creating temporary, vibrant trails that react directly to the cursor's movement and slowly fade away.",
+  "completion_tokens": 784,
+  "created_utc": "2026-09-16T19:32:30Z",
+  "entry_id": 528,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 784,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 1584,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.335,
+      "wall_s": 83.396
+    }
+  ],
+  "job_id": 529,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again without circles",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 525,
+    "root_entry_id": 525
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: try again without circles",
+  "prompt_tokens": 1584,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/528/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/528",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving, responsive geometric pattern that radiates from the center of the canvas. The angular lines pulse and shift in real-time, with their thickness and color changing according to an audio input (simulated through a dummy microphone in testing). When the user moves their mouse across the screen, temporary trails appear that follow the cursor's movement before fading away. The visual rhythm mirrors the intensity and flow of music while maintaining a strong connection to physical interaction. The system uses basic trigonometric functions to generate angular patterns and modulates them with time-based oscillations to create continuous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.396
+}
