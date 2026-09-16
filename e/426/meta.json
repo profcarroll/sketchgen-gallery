@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201clakes of data slowly draining out down river valleys into darkness\u201d \u2014 sketchgen entry 426, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/426/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, deep gradient from luminous turquoise to absolute black, suggesting immense subterranean depths. Swirls and wisps of data appear as slow, liquid flows, originating from bright, upper-left areas and steadily accumulating and disappearing into the darkest void at the bottom right. The movement is predominantly directional, evoking the gravity of a draining river. The colors shift and mix as the data sinks, transitioning through vibrant blues and greens before becoming absorbed into the deep shadows. A viewer\u2019s click causes a brief, localized surge of luminescence to ripple outward, temporarily disrupting the steady flow path before the draining movement resumes its constant, slow pace.",
+  "completion_tokens": 3012,
+  "created_utc": "2026-09-16T06:31:30Z",
+  "entry_id": 426,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1027,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 392.9 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 392.9,
+      "prompt_tokens": 2254,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.493,
+      "wall_s": 106.011
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1039,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.4,
+      "prompt_tokens": 2372,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.213,
+      "wall_s": 67.029
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 946,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "prompt_tokens": 2371,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.748,
+      "wall_s": 61.809
+    }
+  ],
+  "job_id": 427,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 426
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lakes of data slowly draining out down river valleys into darkness",
+  "prompt_tokens": 6997,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/426/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/426",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive subterranean visualization where particles flow like liquid data from bright upper regions toward deep black voids at the bottom right. The movement suggests gravitational pull and fluid dynamics, with particles transitioning through vibrant blues and greens before disappearing into darkness. A subtle gradient background evokes vast underground depths while particle colors shift based on their life cycle. Clicking anywhere disrupts the steady flow with a localized surge that temporarily alters nearby particle trajectories, demonstrating how external forces can influence the continuous draining movement of the system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 234.849
+}
