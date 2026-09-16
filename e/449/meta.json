@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2013 Revise: the sam\u2026\u201d \u2014 sketchgen entry 449, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/449/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, glowing geometric data visualizations consisting of multiple intersecting planes and connecting lines. These structures are dominated by a continuously moving, directional wave of intense glow that travels across the surfaces and intersections. Overlaying the dynamic geometry are two distinct blocks of legible typography, each displaying brand messaging while slowly drifting across the screen. The entire composition maintains a constant, immersive movement, presenting a highly sophisticated and evolving visual broadcast graphic package.",
+  "completion_tokens": 2072,
+  "created_utc": "2026-09-16T09:02:56Z",
+  "entry_id": 449,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 959,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 53)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1527.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1527.7,
+      "prompt_tokens": 2214,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 95.337,
+      "wall_s": 100.919
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1113,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.0,
+      "prompt_tokens": 2406,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.734,
+      "wall_s": 72.248
+    }
+  ],
+  "job_id": 450,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing, complex geometric data visualizations composed of intersecting planes and connecting lines, and this time making the glow oscillate in a visible, directional wave pattern across the intersecting planes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 395,
+    "root_entry_id": 160
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 2013\n\nRevise: the same glowing data visualizations, and this time introducing a slow, subtle rotational change to the planes and lines\n\nRevise: the same glowing data visualizations, and this time emphasizing the intersections of the planes and lines with concentrated glows\n\nRevise: the same glowing geometric data visualizations, and this time introducing a visible, subtle periodic shift in the intensity of the glowing nodes\n\nRevise: the same glowing geometric data visualizations, and this time introducing a slow, subtle periodicity to the speed of the rotational shift\n\nRevise: the same glowing planes and connecting lines, and this time having the connection lines pulse in intensity whenever two planes pass within a critical distance\n\nRevise: add legible typography to brand the broadcast network in two seperate slowly drifting text blocks \"You're watching\" \"sketchgen TV\"\n\nRevise: the same glowing, complex geometric data visualizations composed of intersecting planes and connecting lines, and this time making the glow oscillate in a visible, directional wave pattern across the intersecting planes.",
+  "prompt_tokens": 4620,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/449/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/449",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving data visualization with intersecting geometric planes that pulse with a continuous wave of glowing light. The composition features multiple rotating surfaces filled with point clouds that animate in sync with a traveling wave effect, creating a sense of depth and motion through the 3D space. Connecting lines bridge between different planes, reinforcing the structural complexity while maintaining visual coherence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 173.167
+}
