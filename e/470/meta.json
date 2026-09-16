@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 470, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/470/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant scene featuring a tall, colorful stack of books positioned adjacent to a massive, industrialized mechanical shredder. The books are static until a motion cycle begins, causing the stack to wobble dramatically. The books start to lean outward, and visible, fracturing cracks appear along their spines and bindings. This increasingly unstable tower eventually loses balance and collapses forward into the gaping jaws of the shredder. The machine immediately activates, visibly consuming the fallen books, reducing them into strips and pulp, before restarting the process with the remaining books in the pile.",
+  "completion_tokens": 3001,
+  "created_utc": "2026-09-16T11:16:47Z",
+  "entry_id": 470,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1281,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.217,
+      "wall_s": 119.4
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1720,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "prompt_tokens": 2332,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.005,
+      "wall_s": 104.236
+    }
+  ],
+  "job_id": 471,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 421,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.",
+  "prompt_tokens": 4547,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/470/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/470",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dramatic mechanical process where a stack of colorful books begins to wobble and collapse into an industrial shredder. The scene starts with static books arranged in a tower, then triggers a motion cycle causing the entire structure to shake violently. Visible cracks form along book spines as instability builds, culminating in the tower toppling forward into the shredder's jaws. The machine activates immediately, consuming the fallen books and reducing them to pulp before restarting the process. The visual effect uses 3D rendering with realistic lighting and rotation, creating an animated sequence that captures both the destruction and mechanical operation of the shredding process without requiring any external libraries beyond p5.js.",
+  "submitted_by": "profcarroll",
+  "wall_s": 223.636
+}
