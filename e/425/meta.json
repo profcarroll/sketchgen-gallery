@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche.\u201d \u2014 sketchgen entry 425, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/425/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized, snow-draped alpine valley, painted with cool whites, deep blues, and pine greens. Peaks rise dramatically across the composition, framing a meandering river winding through the valley floor. The background air subtly shifts, giving the mountains a gentle, atmospheric drift. When the user clicks anywhere on the canvas, this peaceful scene is violently interrupted by a sudden, massive cascade of snow and debris, simulating an avalanche that sweeps through the valley until settling back into silence.",
+  "completion_tokens": 1277,
+  "created_utc": "2026-09-16T06:26:02Z",
+  "entry_id": 425,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1277,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 57.0,
+      "prompt_tokens": 2222,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.225,
+      "wall_s": 118.251
+    }
+  ],
+  "job_id": 426,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.",
+  "prompt_tokens": 2222,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/425/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/425",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene alpine valley scene with mountains, a winding river, and snow-covered peaks. The composition uses cool blues, whites, and pine greens to create an atmospheric winter landscape. The scene features subtle animated snow particles floating gently down the canvas. When clicked, the peaceful moment is shattered by an explosive avalanche that sweeps across the valley floor, sending debris cascading through the landscape before settling back into stillness. The technique uses layered drawing with gradient backgrounds, procedural mountain generation, and particle systems to create both the static environment and the dynamic avalanche effect. The viewer experiences a transition from calm serenity to dramatic chaos triggered by user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 118.251
+}
