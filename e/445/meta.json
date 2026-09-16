@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csafari landscape Revise: redraw without water safari is typically ass\u2026\u201d \u2014 sketchgen entry 445, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/445/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a sweeping arid landscape dominated by deep terracotta earth, richly textured with visible cracks and fissures. The stark, beige sky hangs above, sharply contrasting with the ground below, which is minimally populated by sparse acacia trees. Subtle dust devils drift across the expanse, sometimes gathering into larger, organized swirling patterns near the horizon line, where a pronounced distant rock formation anchors the scene. The overall feeling is one of vast, dry silence, punctuated only by the ceaseless, subtle movement of dust and the play of light across the cracked earth.",
+  "completion_tokens": 1279,
+  "created_utc": "2026-09-16T08:39:03Z",
+  "entry_id": 445,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1279,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "prompt_tokens": 2220,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.745,
+      "wall_s": 122.542
+    }
+  ],
+  "job_id": 446,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same arid landscape, and this time establishing a more pronounced, distant rock formation breaking the horizon line.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 388,
+    "root_entry_id": 104
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "safari landscape\n\nRevise: redraw without water safari is typically associated to arrid enviornments and the acacia tree,\n\nRevise: the same arid expanse, and this time deep terracotta earth tones replacing the dusty browns\n\nRevise: the same arid expanse, and this time fewer low scrub shapes\n\nRevise: the same arid expanse, and this time slight dust devils drifting across the terracotta ground\n\nRevise: the same arid landscape, and this time increasing the contrast between the terracotta ground and the beige sky\n\nRevise: the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures\n\nRevise: the same arid expanse, and this time having the faint dust devils gather into larger, more organized swirling patterns.\n\nRevise: reconsider the depiction of the sky and lack of texture on the earth\n\nRevise: the same arid landscape, and this time establishing a more pronounced, distant rock formation breaking the horizon line.",
+  "prompt_tokens": 2220,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/445/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/445",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a sweeping arid landscape with deep terracotta earth and cracked textures, under a stark beige sky. The scene features sparse acacia trees and subtle dust devils that drift across the terrain. Through careful layering of procedural elements\u2014cracked terrain, rock formations, tree placements, and animated dust particles\u2014the work captures the feeling of vast dry silence punctuated by gentle, ceaseless motion. The composition emphasizes minimalism and texture over complexity, using p5.js's drawing capabilities to create an immersive yet restrained desert environment that evolves subtly over time without user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 122.542
+}
