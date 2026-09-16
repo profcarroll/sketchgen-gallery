@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 462, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/462/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, uniform grid of small, interconnected squares that gently breathe and pulsate against a dark background. Upon clicking anywhere on the canvas, an outward-moving wave ripples across the grid. This pulse travels outward, momentarily shifting the base pulsation color of every square it passes through before the grid returns to its normal breathing rhythm.",
+  "completion_tokens": 797,
+  "created_utc": "2026-09-16T10:25:15Z",
+  "entry_id": 462,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 797,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.3,
+      "prompt_tokens": 2190,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.635,
+      "wall_s": 95.924
+    }
+  ],
+  "job_id": 463,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 411,
+    "root_entry_id": 2
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.\n\nRevise: the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.\n\nRevise: Revise: the same continuous grid of small, interconnected squares, and this time the wave pulse momentarily alters the breathing rhythm of squares in a localized, unpredictable pattern.\n\nRevise: the same continuous grid composed of small, interconnected squares, and this time the wave pulse briefly alters the base pulsation color of every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the wave pulse momentarily shifts the base pulsation color of every affected square.\n\nRevise: the same uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square",
+  "prompt_tokens": 2190,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/462/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/462",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic grid of interconnected squares that gently pulse with a breathing rhythm against a dark background. The system uses a cellular grid where each square has its own oscillating pulse that varies in intensity over time. When the user clicks anywhere on the canvas, an outward-moving ripple effect emanates from the click point, temporarily altering the base color of affected squares and creating a visual wave that travels across the entire grid. The effect is achieved through careful timing and distance calculations, where each square's brightness is modulated based on its proximity to the ripple center, producing a smooth, organic-looking animation that responds both to continuous motion and discrete user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.924
+}
