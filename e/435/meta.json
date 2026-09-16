@@ -1,0 +1,157 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 4,
+  "attribution": "\u201ca marble race game on an isometric 3D course, move the marble to the\u2026\u201d \u2014 sketchgen entry 435, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/435/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an isometric, multi-lane race course designed for a marble race. A vibrant countdown timer is prominently displayed, counting down to zero. A marble starts at the beginning of the course, and the goal is located at the finish line. The viewer guides the marble across the track by controlling its movement, aiming to keep the marble moving toward the objective before the timer expires. The environment is three-dimensional, giving the race a deep, modeled appearance.",
+  "completion_tokens": 4075,
+  "created_utc": "2026-09-16T07:38:30Z",
+  "entry_id": 435,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1008,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 37)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.0,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.79,
+      "wall_s": 103.24
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1170,
+      "evidence": "gate exit 1: assertions failed: responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.8,
+      "prompt_tokens": 2428,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.387,
+      "wall_s": 75.255
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1007,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.6,
+      "prompt_tokens": 2407,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.597,
+      "wall_s": 65.315
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 890,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "prompt_tokens": 2355,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 3.407,
+      "wall_s": 58.448
+    }
+  ],
+  "job_id": 436,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 435
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a marble race game on an isometric 3D course, move the marble to the goal before the timer runs out",
+  "prompt_tokens": 9428,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/435/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/435",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive isometric marble race course rendered in 3D using p5.js WEBGL mode. The viewer begins at the start line with a vibrant countdown timer, and must guide the marble through a winding track toward the finish line. The environment features a multi-lane racecourse with a dynamic camera that orbits the scene, creating a sense of depth and motion. The marble moves automatically forward once the race starts, while the countdown timer provides urgency. The scene includes lighting effects and a visually distinct finish line, giving the race course a modeled appearance with a clear objective for the viewer to pursue.",
+  "submitted_by": "profcarroll",
+  "wall_s": 302.258
+}
