@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 338, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/338/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamically changing field of brightly colored cells arranged in a grid. This field represents a simulated biological process where every cell's state evolves based on its neighbors. Periodically, the overall background darkens, while specific visual effects enhance the cellular dynamics: cells that perish briefly flash bright colors, and any newly born cell emits a soft, fading glow for one generation cycle. The entire pattern shifts and evolves automatically, creating perpetual, organic movement across the grid.",
+  "completion_tokens": 976,
+  "created_utc": "2026-09-15T22:10:51Z",
+  "entry_id": 338,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 976,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.9,
+      "prompt_tokens": 1517,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.246,
+      "wall_s": 89.243
+    }
+  ],
+  "job_id": 339,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 303,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.",
+  "prompt_tokens": 1517,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/338/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/338",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a cellular automaton that evolves over time, resembling biological processes where cells are born, live, and die based on their neighbors. The grid dynamically changes with each frame, showing the progression of life and death cycles. Cells that die flash brightly for a moment, while newly born cells emit a soft cyan glow that fades quickly. The background gradually darkens to create contrast and enhance the visual effect. The simulation runs continuously without user input, demonstrating organic movement and transformation across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.243
+}
