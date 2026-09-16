@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 441, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/441/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, flowing visualization of horizontal bands that simulate the movement of water. These bands rise and fall rhythmically like a breathing tide, following a sine wave motion across the view. The color gradients represent the water, with a distinct, darker band always marking the approximate level of high water. The bands' movement is cyclical, featuring a noticeable, asymmetrical compression and expansion pattern as the tide reaches its lowest points. There is no required input to observe this visualization, which is designed to shift continuously on its own.",
+  "completion_tokens": 587,
+  "created_utc": "2026-09-16T08:09:43Z",
+  "entry_id": 441,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 587,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "prompt_tokens": 1550,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.679,
+      "wall_s": 69.57
+    }
+  ],
+  "job_id": 442,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 379,
+    "root_entry_id": 379
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough",
+  "prompt_tokens": 1550,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/441/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/441",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This visualization simulates the rhythmic motion of water using horizontal bands that flow in a sine wave pattern. Each band moves independently with varying speeds and amplitudes, creating a layered, breathing effect across the canvas. The central band is highlighted with a darker color to represent high water level, while all bands continuously shift and compress as they move, giving the illusion of a natural tide. The entire scene evolves without any user input, demonstrating fluid motion through mathematical wave functions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.57
+}
