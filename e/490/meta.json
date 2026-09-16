@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 490, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/490/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a molecular model of the DNA double helix, built from distinct spheres labeled A, T, C, and G. The structure continuously writhes and transitions through states of folding, unfolding, and unwinding. Watch as complementary bases approach each other, forming temporary bonds, and observe how a section of the helix can unzip in a replication sequence.",
+  "completion_tokens": 975,
+  "created_utc": "2026-09-16T15:17:09Z",
+  "entry_id": 490,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 975,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 31.3,
+      "prompt_tokens": 1523,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.935,
+      "wall_s": 87.724
+    }
+  ],
+  "job_id": 491,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "add more detail",
+    "critique_by": "profcarroll",
+    "generation": 5,
+    "parent_entry_id": 488,
+    "root_entry_id": 387
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail",
+  "prompt_tokens": 1523,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/490/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/490",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic, three-dimensional model of the DNA double helix using p5.js's WEBGL renderer. The structure continuously writhes and twists in space, with each nucleotide base (A, T, C, G) represented as a colored sphere labeled accordingly. Complementary base pairs\u2014adenine with thymine, cytosine with guanine\u2014temporarily form bonds that appear and disappear as the helix moves through its animation cycle. The visualization captures the molecular dance of DNA replication, showing how sections of the helix can unzip and reassemble under dynamic motion, giving a sense of biological activity within an abstracted geometric space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.724
+}
