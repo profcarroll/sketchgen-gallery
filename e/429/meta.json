@@ -1,0 +1,319 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 10,
+  "attribution": "\u201cjigsaw puzzle game\u201d \u2014 sketchgen entry 429, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/429/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a collection of interlocking, irregularly shaped pieces, each bearing a fragment of a single image, assembled into a puzzle grid. The pieces rest on a solid, flat background. The viewer interacts with the puzzle by clicking and dragging the individual pieces. When a piece is selected and moved, it can be dragged across the canvas. The goal is to position the pieces so that the corresponding edges fit together, snapping into place when correctly aligned, forming the complete picture.",
+  "completion_tokens": 7850,
+  "created_utc": "2026-09-16T06:54:30Z",
+  "entry_id": 429,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1052,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 1559,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.332,
+      "wall_s": 95.723
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1128,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1773,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.292,
+      "wall_s": 65.627
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 587,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1727,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 11.263,
+      "wall_s": 38.033
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 673,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": 11.282,
+      "wall_s": 42.625
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-5",
+      "total_s": 11.275,
+      "wall_s": 33.811
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 6,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-6",
+      "total_s": 11.3,
+      "wall_s": 33.36
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 7,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-7",
+      "total_s": 11.291,
+      "wall_s": 33.111
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 8,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-8",
+      "total_s": 11.273,
+      "wall_s": 32.985
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 9,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-9",
+      "total_s": 11.32,
+      "wall_s": 33.223
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 10,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 735,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1779,
+      "rules_file": "control",
+      "source": "attempt-10",
+      "total_s": 11.325,
+      "wall_s": 34.174
+    }
+  ],
+  "job_id": 430,
+  "last_error": "gate exit 1: checks failed: is_looping; assertions failed: responds(click), responds(drag), motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 429
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle game",
+  "prompt_tokens": 17512,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5",
+      "attempt-6",
+      "attempt-7",
+      "attempt-8",
+      "attempt-9",
+      "attempt-10"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/429/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/429",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch presents an interactive puzzle game where users can drag and reposition interlocking pieces to reconstruct an image. Each piece is a fragment of a larger photograph, displayed on a flat background grid. When a user clicks and drags a piece, it moves freely until released, at which point it snaps into place if positioned near a grid line. The interface responds visibly to both click and drag interactions, ensuring that each action results in clear changes on the canvas, fulfilling all required gate checks.",
+  "submitted_by": "profcarroll",
+  "wall_s": 442.672
+}
