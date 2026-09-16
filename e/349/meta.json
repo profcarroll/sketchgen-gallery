@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 349, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/349/ Licensed CC BY 4.0.",
+  "brief": "A brightly colored marble is shown rolling through a deep, sculpted container. The viewer observes the marble following a curved, downward path starting in a narrow funnel, transitioning to a steep, angled slope, and finally widening out into a shallow basin at the base. The marble's movement is governed by realistic physics, causing it to roll naturally and bounce slightly as it navigates the varied contours and surfaces of the channel until it comes to rest in the collecting basin.",
+  "completion_tokens": 1736,
+  "created_utc": "2026-09-15T23:17:12Z",
+  "entry_id": 349,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 842,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.5,
+      "prompt_tokens": 1541,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 10.913,
+      "wall_s": 79.445
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 894,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.1,
+      "prompt_tokens": 1657,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 6.54,
+      "wall_s": 50.112
+    }
+  ],
+  "job_id": 350,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 319,
+    "root_entry_id": 127
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope gradually curves inward toward the exit.\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope widens and flattens into a collecting basin at the exit.\n\nRevise: The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.",
+  "prompt_tokens": 3198,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/349/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/349",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a marble rolling through a sculpted container with physics-based movement. The viewer observes the marble following a curved path starting in a narrow funnel, transitioning to a steep angled slope, and finally widening into a shallow basin at the base. The animation demonstrates realistic gravity, bouncing, and friction as the marble navigates the varying surfaces of the channel until it comes to rest in the collecting basin. The scene is rendered using WebGL for 3D effects with lighting and shading that enhance the volumetric appearance of the marble and container geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 129.557
+}
