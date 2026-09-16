@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 525, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/525/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays flowing, translucent ribbons of color that pulse and reshape in response to the incoming sound. These ribbons begin as calm, deep blue washes when the music is soft, representing introspection. As the tempo and intensity of the music build, the shapes become more fragmented and bright, transforming into streaks of gold and vivid orange. The overall movement is organic and continuous, allowing complex, interwoven patterns to emerge and dissipate, visually translating the emotional peaks and sonic architecture of the piece.",
+  "completion_tokens": 1060,
+  "created_utc": "2026-09-16T19:19:48Z",
+  "entry_id": 525,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1060,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "prompt_tokens": 1559,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.654,
+      "wall_s": 96.867
+    }
+  ],
+  "job_id": 526,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 525
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane",
+  "prompt_tokens": 1559,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/525/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/525",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a visual representation of sound dynamics through flowing, translucent ribbons that shift color and behavior based on simulated audio intensity. Under low audio conditions, the ribbons appear as calm, deep blue washes with slow movement. As the simulated audio level increases, they transform into bright, fragmented streaks of gold and orange with more erratic motion. The ribbons continuously evolve in shape and hue without any external input, demonstrating how visual elements can respond organically to dynamic input while maintaining an aesthetic that reflects emotional and sonic architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.867
+}
