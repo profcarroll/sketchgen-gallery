@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\"\u201d \u2014 sketchgen entry 361, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/361/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with the deep, velvety blues and blacks of interstellar space. Brilliant pinpricks of white light form a slow, distant star field that shifts and drifts across the view. Dominating the foreground are sleek, geometrically perfect structures, such as the mysterious monolith, which hover with majestic, barely perceptible drifts. The entire scene is characterized by an overwhelming sense of depth and scale, with faint, passing nebulae that shift colors, suggesting unseen forces at work. The overall movement is continuous and hypnotic, requiring no input to observe its grand, silent ballet.",
+  "completion_tokens": 2009,
+  "created_utc": "2026-09-16T00:57:00Z",
+  "entry_id": 361,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1040,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 85)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 96)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 106)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 401.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 401.7,
+      "prompt_tokens": 1572,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 25.43,
+      "wall_s": 94.471
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 969,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.4,
+      "prompt_tokens": 1888,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 9.303,
+      "wall_s": 58.688
+    }
+  ],
+  "job_id": 362,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 361
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"",
+  "prompt_tokens": 3460,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/361/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/361",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a cosmic scene of interstellar space with a dynamic starfield, floating geometric monoliths, and shifting nebulae. The composition uses WebGL rendering to create depth through parallax movement of stars, slowly rotating structures, and volumetric nebulae that shift colors over time. The visual rhythm is hypnotic and continuous, requiring no user input to maintain its mesmerizing motion. The entire scene evolves organically within the constraints of a fixed frame budget, with all geometry precomputed and optimized for performance in a headless environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 153.159
+}
