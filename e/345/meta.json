@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 345, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/345/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a vibrant, chaotic field of retro-styled pixel shapes that constantly shift and glow. When the viewer interacts by dragging the cursor across the canvas, the established shapes react by scattering outward along the cursor\u2019s path. These scattering pixels momentarily form intricate, glowing, geometric lattices, displaying structured patterns before gracefully fading back into the background's random, vibrant chaos.",
+  "completion_tokens": 2342,
+  "created_utc": "2026-09-15T22:55:18Z",
+  "entry_id": 345,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1186,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 102)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 218 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 218.0,
+      "prompt_tokens": 1518,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 7.95,
+      "wall_s": 99.13
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1156,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": 1704,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.04,
+      "wall_s": 66.099
+    }
+  ],
+  "job_id": 346,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chaotic, vibrant grid of retro pixel art shapes, and this time the scattered pixels should temporarily organize themselves into visible, structured lattices that glow faintly before fading back into the random motion.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 311,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path\n\nRevise: try again but make it interactive and animate\n\nRevise: the same chaotic grid of pixelated shapes, and this time the shapes should scatter outward from the cursor's path\n\nRevise: the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward\n\nRevise: the same vibrant, chaotic grid of retro-styled pixel shapes, and this time the scattering pixels should temporarily organize themselves into visible, geometric ripple patterns.\n\nRevise: the same chaotic, vibrant grid of retro pixel art shapes, and this time the scattered pixels should temporarily organize themselves into visible, structured lattices that glow faintly before fading back into the random motion.",
+  "prompt_tokens": 3222,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/345/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/345",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, glowing particle field with retro aesthetics that responds to user interaction. The particles move autonomously in a chaotic pattern, forming temporary geometric connections as they approach each other. When the user drags their cursor across the canvas, it triggers a scattering effect\u2014particles burst outward along the cursor's path and form intricate lattices before fading back into the background. The visual experience combines organic motion with structured patterns, creating an immersive, interactive environment where the viewer can influence the chaotic system through direct manipulation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 165.229
+}
