@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 475, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/475/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a deep, viscous environment teeming with life. Thousands of filamentous microbes create highly defined, crystalline chains that interweave across the frame. The overall mass churns continuously, giving the illusion of a profound, dynamic current. The color palette is strictly governed by cool tones\u2014mauves and grays\u2014accented by flashes of iridescent silver. The structures are complex and fractal, constantly shifting and reconnecting without ever forming recognizable, simple geometric shapes, maintaining the dense, organic chaos of a primordial life source.",
+  "completion_tokens": 2239,
+  "created_utc": "2026-09-16T13:45:08Z",
+  "entry_id": 475,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1099,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 154.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 154.3,
+      "prompt_tokens": 1537,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 25.613,
+      "wall_s": 104.428
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1140,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 36.4,
+      "prompt_tokens": 1667,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 6.928,
+      "wall_s": 70.314
+    }
+  ],
+  "job_id": 476,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 439,
+    "root_entry_id": 374
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.",
+  "prompt_tokens": 3204,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/475/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/475",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dynamic, viscous environment filled with thousands of filamentous microbes that form intricate, crystalline chains. Using a spatial grid optimization to manage connections between particles, the visualization avoids performance issues while maintaining the complexity described in the brief. The color palette uses cool tones of mauve and gray accented by iridescent silver, creating an organic yet structured appearance. The continuous motion and shifting patterns simulate a living current, with each microbe subtly moving and reconnecting to others within its proximity. The overall effect conveys a sense of primordial life in constant flux, where the structures are never simple but always interconnected in complex, fractal-like arrangements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.742
+}
