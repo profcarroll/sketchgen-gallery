@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cgrand theft auto VI for ps5.js, only on sketchgen, available now Revi\u2026\u201d \u2014 sketchgen entry 517, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/517/ Licensed CC BY 4.0.",
+  "brief": "The canvas immerses the viewer in a sprawling, photorealistic urban environment, detailed with complex architecture, highly detailed street fixtures, and signage. Vehicles populate the streets, each distinguished by modeled, luminous front lights. The scene is characterized by constant, dynamic movement as traffic flows through the dense cityscape. The overall visual experience is a three-dimensional simulation that shifts and changes autonomously, allowing viewers to observe the detailed life of a modern metropolitan area.",
+  "completion_tokens": 2445,
+  "created_utc": "2026-09-16T18:13:32Z",
+  "entry_id": 517,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1234,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 71)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 98)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 102)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 114)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 119)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 143.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 143.3,
+      "prompt_tokens": 2218,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.847,
+      "wall_s": 121.066
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1211,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.8,
+      "prompt_tokens": 2735,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.64,
+      "wall_s": 88.837
+    }
+  ],
+  "job_id": 518,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sprawling, photorealistic urban landscape, and this time inclusion of highly detailed street fixtures such as signage and streetlights",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 241,
+    "root_entry_id": 191
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "grand theft auto VI for ps5.js, only on sketchgen, available now\n\nRevise: the same sprawling urban environment, and this time individual vehicles have distinct, modeled front lights\n\nRevise: the same sprawling, photorealistic urban landscape, and this time inclusion of highly detailed street fixtures such as signage and streetlights",
+  "prompt_tokens": 4953,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/517/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/517",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, animated urban environment using p5.js in WEBGL mode. The scene features a sprawling cityscape with detailed buildings of varying heights and window patterns, streetlights that emit gentle illumination, and a fleet of vehicles that move autonomously through the streets. The camera slowly orbits the scene, providing a dynamic perspective that reveals the continuous flow of urban life. The vehicles are distinguished by their luminous front lights, creating a sense of movement and activity throughout the environment. The entire scene is rendered efficiently within the frame budget constraints, using batched drawing operations to maintain performance while creating an engaging, photorealistic representation of modern metropolitan activity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 209.903
+}
