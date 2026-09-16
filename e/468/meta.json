@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cpunctuated equilibrium Revise: try again, no circles, and render the\u2026\u201d \u2014 sketchgen entry 468, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/468/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an intricate, dynamic network of sharp, angular fragments forming a metastable geometric structure. This system appears to hover near a state of crystalline equilibrium, filled with muted, orderly color gradients. When the system is suddenly disrupted, the connection points shatter violently, sending numerous hyper-sharp fragments scattering in a chaotic, luminous burst. As the chaos peaks, the fragments decelerate rapidly and begin to reorganize, drawing themselves back together to seek a new state of geometric balance. The viewer's clicking finger serves as the catalyst, initiating the dramatic, fracturing collapse that precedes the inevitable reformation.",
+  "completion_tokens": 2597,
+  "created_utc": "2026-09-16T11:03:20Z",
+  "entry_id": 468,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1172,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "prompt_tokens": 1570,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.189,
+      "wall_s": 98.411
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1425,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "prompt_tokens": 1686,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.665,
+      "wall_s": 79.743
+    }
+  ],
+  "job_id": 469,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "The same angular system of equilibrium, and this time increase the number and sharpness of the fragments created during the collapse.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 419,
+    "root_entry_id": 359
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "punctuated equilibrium\n\nRevise: try again, no circles, and render the concept of punctuation juxtaposed against the return to equilibrium\n\nRevise: the same geometric arrangement, and this time use more angular and sharper edges during the collapse.\n\nRevise: The same angular system of equilibrium, and this time increase the number and sharpness of the fragments created during the collapse.",
+  "prompt_tokens": 3256,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/468/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/468",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic geometric network of interconnected fragments that respond to user interaction. The system begins in a stable, crystalline arrangement where fragments gently oscillate in place while maintaining connections to nearby neighbors. When clicked, the entire structure violently shatters into chaotic motion, with fragments scattering outward in sharp, luminous bursts. After reaching peak chaos, the fragments gradually decelerate and begin reorganizing themselves back toward a new equilibrium state. The visual effect captures the tension between order and disorder, showing how disruption can lead to reformation while maintaining the underlying structural principles that govern the system's behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 178.154
+}
