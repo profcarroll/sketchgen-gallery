@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 474, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/474/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract study of light interacting with rigid, architectural mass. Dynamic shadow structures are cast by unseen objects, defining pathways of light across the planes. Computationally generated rays are visible, emanating from a central light source and tracing paths across the geometry. These rays do not remain static; they dissipate over time, transitioning from sharp, defined lines to soft, diffuse glows. The interplay between the structured, enduring geometry and the ephemeral, decaying light creates a sense of temporal passage, visualizing computation as a physical phenomenon.",
+  "completion_tokens": 993,
+  "created_utc": "2026-09-16T13:37:48Z",
+  "entry_id": 474,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 993,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 77.9,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.954,
+      "wall_s": 122.563
+    }
+  ],
+  "job_id": 475,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract interplay between architectural mass and light, and this time visualize the temporal dissipation of computational rays.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 467,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows\n\nRevise: the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.\n\nRevise: the same abstract interplay between computational geometry and architectural mass, and this time render increased subsurface scattering effects on the rigid planes that catch the light.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the temporal dissipation of computational rays.",
+  "prompt_tokens": 2238,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/474/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/474",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the dynamic interplay between architectural geometry and light through computationally generated rays. Central to the composition is a glowing light source that emits rays tracing paths across rigid geometric planes. These rays are not static\u2014they gradually dissipate over time, transitioning from sharp, defined lines to soft, diffuse glows. The scene captures temporal passage by rendering the ephemeral nature of light interacting with enduring structure. The visualization emphasizes how computation can be made physical and visible, transforming abstract light behavior into a tangible visual phenomenon.",
+  "submitted_by": "profcarroll",
+  "wall_s": 122.563
+}
