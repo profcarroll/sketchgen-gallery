@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 498, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/498/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a boundless deep indigo expanse populated by distant stars and nebulae. Wispy lanes of cosmic dust drift slowly across the dark void, weaving through the vast background. The stars appear to twinkle and shimmer, while the glowing dust lanes gradually drift and evolve across the frame, creating a sense of immense depth and perpetual celestial motion. The entire scene remains purely observational, presenting a dynamic, beautiful window into deep space that changes subtly and continuously without any required user interaction.",
+  "completion_tokens": 2226,
+  "created_utc": "2026-09-16T16:10:57Z",
+  "entry_id": 498,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1020,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 98)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 159.6 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 159.6,
+      "prompt_tokens": 2225,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 34.521,
+      "wall_s": 105.272
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1206,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.2,
+      "prompt_tokens": 2428,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.492,
+      "wall_s": 78.015
+    }
+  ],
+  "job_id": 499,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same celestial tapestry, and this time revealing faint, wispy cosmic dust lanes weaving through the deep indigo expanse",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 64,
+    "root_entry_id": 10
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same celestial tapestry, and this time having deep indigo undertones in the dark space between the stars\n\nRevise: revise this version but try to pass the critic, it's got potential\n\nRevise: the same celestial tapestry, and this time revealing faint, wispy cosmic dust lanes weaving through the deep indigo expanse",
+  "prompt_tokens": 4653,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/498/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/498",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive deep space scene using p5.js in WEBGL mode. It depicts a boundless cosmic expanse with thousands of distant stars that twinkle and shimmer with subtle, randomized pulsing effects. The composition features wispy lanes of cosmic dust that drift slowly through the void, evolving and morphing as they move across the frame. The technique uses batched point rendering for stars and quad-based geometry for the dust lanes, creating a sense of infinite depth and perpetual celestial motion. The entire scene is purely observational, with no user interaction required\u2014constantly shifting patterns emerge from simple mathematical functions that simulate the slow, elegant movement of matter through the cosmos.",
+  "submitted_by": "profcarroll",
+  "wall_s": 183.287
+}
