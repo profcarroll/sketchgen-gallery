@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 459, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/459/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep-sea abyssal landscape dominated by geometrically precise, ascending crystalline pyramidal structures. These towers emit a vibrant, pulsating bioluminescence that reveals the deep ocean's depths. Powerful, unseen deep-sea currents actively flow across the scene, gathering and organizing luminescent crystalline residue that drifts from the structures and the abyssal floor. The current shapes the residue into visible, highly structured streams, mapping the flow across the dark seafloor. Occasionally, these vibrant streams stabilize, precipitating into luminous, fixed tendril-like formations, creating a dynamic, crystalline tapestry of light and flow.",
+  "completion_tokens": 4395,
+  "created_utc": "2026-09-16T10:07:29Z",
+  "entry_id": 459,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1492,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 118)\n\ngate exit 1: checks failed: console_clean, is_looping; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] rotateZ() is only supported in WEBGL mode. If you'd like to use 3D graphics and WebGL, see  https://p5js.org/examples/form-3d-primitives.html for more information.\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2258,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.368,
+      "wall_s": 134.972
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1669,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 118)\n\ngate exit 1: checks failed: console_clean, is_looping; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] rotateZ() is only supported in WEBGL mode. If you'd like to use 3D graphics and WebGL, see  https://p5js.org/examples/form-3d-primitives.html for more information.\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2602,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.236,
+      "wall_s": 108.604
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1234,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 79)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.2,
+      "prompt_tokens": 2540,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.061,
+      "wall_s": 78.894
+    }
+  ],
+  "job_id": 460,
+  "last_error": "gate exit 1: assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deep-sea current organizing luminescent residue streams, and this time the structured residue occasionally precipitates into fixed, luminous tendrils on the abyssal floor.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 407,
+    "root_entry_id": 96
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: the same energy gradient of the pyramidal structures, and this time the water ripples reveal underlying bioluminescence\n\nRevise: pyramids are three-dimensional triangles, re-envision this sketch\n\nRevise: the same dynamic intersection where geometrically precise, crystalline pyramidal forms ascend from the sea, and this time the bioluminescence pulsates with distinct color changes corresponding to the depth of the water.\n\nRevise: the same crystalline pyramids, and this time the pyramidal forms show subtle signs of advanced erosion and sediment accumulation at the base\n\nRevise: the same geometrically precise, crystalline pyramidal structures, and this time deep-sea currents actively lift and redistribute the accumulating sediment.\n\nRevise: the same geometrically precise, crystalline pyramidal forms, and this time the deep-sea currents cause the translucent material to shed visible, luminescent crystalline residue that drifts across the abyssal floor.\n\nRevise: the same luminescent residue that drifts across the abyssal floor, and this time the deep-sea current organizes the particles into visible, structured streams.\n\nRevise: the same deep-sea current organizing luminescent residue streams, and this time the structured residue occasionally precipitates into fixed, luminous tendrils on the abyssal floor.",
+  "prompt_tokens": 7400,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/459/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/459",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch depicts an otherworldly abyssal landscape where geometric pyramidal structures rise from the ocean depths, emitting vibrant bioluminescent light. The scene captures the dynamic interplay between these crystalline towers and the unseen deep-sea currents that shape luminous particle streams. Through constant motion and color shifts, the viewer experiences a constantly evolving tapestry of light and flow, with particles organizing into temporary tendril-like formations before dissolving back into the current. The use of WEBGL rendering allows for smooth 3D movement and complex lighting effects that give the impression of depth and volumetric presence in this alien underwater realm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 322.47
+}
