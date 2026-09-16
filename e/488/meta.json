@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 488, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/488/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a rotating three-dimensional molecular model of a DNA double helix. The structure is composed of labeled spheres representing the nitrogenous bases: Adenine, Thymine, Cytosine, and Guanine. The helix is constantly animated, allowing the viewer to observe the bases interacting. Key complementary base pairs\u2014such as A with T, and C with G\u2014will be shown moving toward each other. When the bases align correctly, temporary, visible bonds will dynamically form and break, illustrating the process of hydrogen bonding. No user input is required to observe this molecular simulation.",
+  "completion_tokens": 1160,
+  "created_utc": "2026-09-16T15:08:22Z",
+  "entry_id": 488,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1160,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.4,
+      "prompt_tokens": 1569,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.912,
+      "wall_s": 98.857
+    }
+  ],
+  "job_id": 489,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 447,
+    "root_entry_id": 387
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.",
+  "prompt_tokens": 1569,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/488/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/488",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a three-dimensional animated DNA double helix using p5.js's WEBGL renderer. The structure consists of labeled spheres representing nitrogenous bases (A, T, C, G) arranged in a helical pattern with complementary base pairing logic. As the helix rotates, bases from opposite strands approach each other and temporarily form hydrogen bonds when properly aligned. These dynamic bonds are visualized as connecting lines that fade out over time, simulating molecular interactions. The animation runs continuously without user input, demonstrating how genetic information is encoded through base-pairing rules in a visually engaging way.",
+  "submitted_by": "profcarroll",
+  "wall_s": 98.857
+}
