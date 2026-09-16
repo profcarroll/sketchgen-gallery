@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can intricate tangle of wires and cables with animated signals pulsing\u2026\u201d \u2014 sketchgen entry 518, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/518/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, dense, and complex network composed of numerous wires and cables. Through this web, luminous data streams constantly pulse and flow. The dominant elements are the dark cables and the bright, pulsating lines of energy. The defining visual feature is the clear, distinct separation of these luminous streams, especially where they pass through the intersections of the cables, allowing the viewer to trace their individual paths as they pulse through the network. The scene is purely observational, relying only on the continuous animated movement of the data streams.",
+  "completion_tokens": 756,
+  "created_utc": "2026-09-16T18:19:48Z",
+  "entry_id": 518,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 756,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.6,
+      "prompt_tokens": 2209,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.782,
+      "wall_s": 113.111
+    }
+  ],
+  "job_id": 519,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, dense network of wires and cables, and this time ensure the luminous data streams maintain a distinct, visible separation as they pulse through the intersections.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 247,
+    "root_entry_id": 97
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an intricate tangle of wires and cables with animated signals pulsing through\n\nRevise: The same luminous data streams, and this time make the pulsing energy pulses more defined and localized along the thicker cables.\n\nRevise: the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only\n\nRevise: the same luminous data streams, and this time let the pulses move along all cable thicknesses, following an intermittent, rhythmic pattern.\n\nRevise: the same intricate, dense network of wires and cables, and this time ensure the luminous data streams maintain a distinct, visible separation as they pulse through the intersections.",
+  "prompt_tokens": 2209,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/518/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/518",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dense network of dark cables that form a complex web across the canvas. Within this framework, luminous data streams pulse and flow continuously, each with its own color, speed, and path. The visual design emphasizes clear separation between individual streams, especially where they intersect the cables, allowing viewers to trace distinct paths of energy moving through the system. The animation relies entirely on procedural movement and timing, creating an organic yet structured flow that fills the entire canvas with dynamic activity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 113.111
+}
