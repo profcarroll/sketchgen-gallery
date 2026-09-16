@@ -3574,6 +3574,15 @@
     "strip": "e/491/strip.png"
   },
   {
+    "brief": "The canvas displays a side-scrolling snowboard course with visible, rigid sidewalls. The viewer controls a snowboarder using directional arrow keys to guide them down the course, and the spacebar allows them to jump. Pressing other keys initiates various tricks. Movement is fluid, and when the snowboarder collides with a sidewall, they visibly recoil, causing damage that is tracked and displayed. The game continues until the damage indicator reaches full capacity, triggering the end state.",
+    "href": "e/497/",
+    "id": 497,
+    "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100% Revise: the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.",
+    "seed": 1,
+    "state": "published",
+    "strip": "e/497/strip.png"
+  },
+  {
     "brief": "The canvas depicts a boundless deep indigo expanse populated by distant stars and nebulae. Wispy lanes of cosmic dust drift slowly across the dark void, weaving through the vast background. The stars appear to twinkle and shimmer, while the glowing dust lanes gradually drift and evolve across the frame, creating a sense of immense depth and perpetual celestial motion. The entire scene remains purely observational, presenting a dynamic, beautiful window into deep space that changes subtly and continuously without any required user interaction.",
     "href": "e/498/",
     "id": 498,
@@ -4270,35 +4279,35 @@
 <script id="sketchgen-pairs" type="application/json">[
   {
     "a": 223,
-    "b": 470
+    "b": 335
   },
   {
     "a": 72,
-    "b": 399
+    "b": 379
   },
   {
-    "a": 303,
+    "a": 288,
     "b": 27
   },
   {
     "a": 128,
-    "b": 411
+    "b": 350
   },
   {
-    "a": 477,
+    "a": 397,
     "b": 127
   },
   {
     "a": 139,
-    "b": 390
+    "b": 322
   },
   {
-    "a": 451,
-    "b": 42
+    "a": 479,
+    "b": 509
   },
   {
     "a": 181,
-    "b": 330
+    "b": 228
   }
 ]</script>
 <script id="sketchgen-agents" type="application/json">{
@@ -7517,6 +7526,20 @@
     },
     {
       "choice": "A",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "look"
+    }
+  ],
+  "179-395": [
+    {
+      "choice": "B",
+      "judge": "gemma4:e4b",
+      "prompt_version": "judge-v1",
+      "question": "brief"
+    },
+    {
+      "choice": "B",
       "judge": "gemma4:e4b",
       "prompt_version": "judge-v1",
       "question": "look"
