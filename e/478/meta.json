@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crhododendrons Revise: try again but don't use circles Revise: the sam\u2026\u201d \u2014 sketchgen entry 478, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/478/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a lush, shifting tapestry of natural forms, dominated by the structure of rhododendrons. The visual movement is continuous and organic, creating a breathing, ever-changing field of growth. Color is heightened through a dramatic tension between rich, saturated jewel tones and delicate, airy soft pastels. These contrasts define the petal clusters and leaf edges, creating depth and vibrance across the composition. The entire scene remains suspended in a state of evocative natural motion, drawing the viewer into its deepening color and subtle, petal-like shifts.",
+  "completion_tokens": 2490,
+  "created_utc": "2026-09-16T14:02:58Z",
+  "entry_id": 478,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1009,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 85)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 203.9 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 203.9,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.738,
+      "wall_s": 109.274
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1481,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.3,
+      "prompt_tokens": 2402,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.963,
+      "wall_s": 98.803
+    }
+  ],
+  "job_id": 479,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same breathing tapestry of natural forms, and this time increase the contrast between jewel tones and soft pastels",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 434,
+    "root_entry_id": 424
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "rhododendrons\n\nRevise: try again but don't use circles\n\nRevise: the same breathing tapestry of natural forms, and this time increase the contrast between jewel tones and soft pastels",
+  "prompt_tokens": 4617,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/478/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/478",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an organic, evolving tapestry of color and motion that evokes the natural growth patterns of rhododendrons. Through a system of interconnected particles with spring-like forces, it simulates the gentle, breathing movement of flower clusters and leafy structures. The visual language balances rich jewel tones against soft pastels, creating depth and vibrance as particles subtly shift in hue, size, and opacity over time. The composition pulses with life, drawing viewers into a dynamic field where individual elements maintain their identity while contributing to a larger, flowing form\u2014capturing the essence of natural motion through algorithmic expression.",
+  "submitted_by": "profcarroll",
+  "wall_s": 208.077
+}
