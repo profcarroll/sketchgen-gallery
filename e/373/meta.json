@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca demonstration of centripetal force\u201d \u2014 sketchgen entry 373, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/373/ Licensed CC BY 4.0.",
+  "brief": "Small, colored particles orbit a central point, continuously tracing circular paths around it. These particles are constantly accelerating, demonstrating the invisible force pulling them inward. The simulation maintains constant, fluid motion unless the viewer interacts with it. Clicking anywhere on the canvas will define a new central point, immediately re-orbiting the particles around this new location. Furthermore, dragging the mouse will dynamically adjust the overall radius of the orbit, allowing the user to visually change the perceived strength of the centripetal force.",
+  "completion_tokens": 734,
+  "created_utc": "2026-09-16T02:06:06Z",
+  "entry_id": 373,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 734,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "prompt_tokens": 2240,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.828,
+      "wall_s": 88.484
+    }
+  ],
+  "job_id": 374,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 373
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a demonstration of centripetal force",
+  "prompt_tokens": 2240,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/373/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/373",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic system of colored particles that orbit around a central point with physics-driven motion. The particles continuously accelerate toward the center, simulating gravitational or centripetal force, while maintaining fluid, unpredictable trajectories due to random perturbations. When clicked, the center of attraction shifts instantly to the new location, causing all particles to immediately re-orbit around it. By dragging vertically across the canvas, users can dynamically adjust the orbital radius, effectively changing the perceived strength of the centripetal force\u2014making orbits tighter or looser. The visual effect is a mesmerizing dance of motion that responds directly to user input while maintaining an underlying natural physics simulation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.484
+}
