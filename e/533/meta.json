@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cillustrate a loudspeaker magnet producing sound waves\u201d \u2014 sketchgen entry 533, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/533/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a dynamic visualization showing a central magnet vibrating rapidly. Originating from this magnet, a set of expanding, cyclical rings emanates outwards, representing sound waves. These waves appear as expanding, vibrating bands of colour that grow larger and diminish in intensity as they spread across the screen. The animation is continuous, illustrating the physics of energy propagation from the core source to the edges of the view.",
+  "completion_tokens": 349,
+  "created_utc": "2026-09-16T20:12:22Z",
+  "entry_id": 533,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 349,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1506,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.128,
+      "wall_s": 58.223
+    }
+  ],
+  "job_id": 534,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 533
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate a loudspeaker magnet producing sound waves",
+  "prompt_tokens": 1506,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/533/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/533",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes sound wave propagation from a central source using expanding, vibrating rings. A magnet at the center generates new rings every few frames, which grow outward while fading in transparency. The rings use a hue-based color scheme that shifts over time, creating a dynamic and continuous visualization of energy spreading from a single point. The animation demonstrates wave physics through simple geometric expansion, with each ring representing a moment in time as the wave travels outward across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.223
+}
