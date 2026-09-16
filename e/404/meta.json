@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside an operating printing press\u201d \u2014 sketchgen entry 404, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/404/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a three-dimensional, immersive view deep inside a massive, intricate operating printing press. The viewer observes polished metal, gears, and belts in shades of deep charcoal, brass, and industrial beige. Continuous motion emanates from the machinery: rollers rotate, gears interlock, and sheets of paper are fed through the press at a relentless pace, leaving visible streaks of ink. The printed material and moving components create complex shapes and rhythmic color changes. While the press operates constantly, a single click from the viewer momentarily pauses the mechanism or shifts the camera's focus to a specific, detailed component like the type-setting plate, before resuming the frantic, rhythmic movement of the print cycle.",
+  "completion_tokens": 1392,
+  "created_utc": "2026-09-16T04:35:15Z",
+  "entry_id": 404,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1392,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.1,
+      "prompt_tokens": 1609,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 9.52,
+      "wall_s": 113.986
+    }
+  ],
+  "job_id": 405,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 404
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside an operating printing press",
+  "prompt_tokens": 1609,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/404/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/404",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, animated view of a massive printing press in three-dimensional space. Using p5.js's WEBGL renderer, it depicts the intricate machinery of gears, rollers, and paper sheets in motion, with detailed textures and lighting effects that give a sense of industrial scale and mechanical rhythm. The scene continuously evolves with rotating components and moving papers, while a single click toggles between an active animation state and a paused focus mode, allowing viewers to examine the press's details more closely.",
+  "submitted_by": "profcarroll",
+  "wall_s": 113.986
+}
