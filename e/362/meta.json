@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse\u201d \u2014 sketchgen entry 362, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/362/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the stylized, muscular shape of a horse captured mid-gallop. The figure is rendered in bold, flowing shapes and vibrant colors that suggest speed and powerful momentum. The animation is continuous, showing the horse traversing the scene rhythmically with a powerful, cyclical motion. This kinetic scene is self-contained, requiring no viewer input to maintain its energetic movement and visual spectacle.",
+  "completion_tokens": 552,
+  "created_utc": "2026-09-16T00:59:17Z",
+  "entry_id": 362,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 552,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1503,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.108,
+      "wall_s": 70.111
+    }
+  ],
+  "job_id": 363,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a galloping horse",
+  "prompt_tokens": 1503,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/362/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/362",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a stylized, muscular horse in mid-gallop using simplified geometric shapes and vibrant colors to suggest speed and momentum. The animation is self-contained, with the horse moving rhythmically across the canvas through continuous position and rotation changes. The motion appears natural due to sinusoidal oscillations in both translation and rotation, creating a cyclical galloping effect that maintains visual interest without requiring any user input or complex interactions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.111
+}
