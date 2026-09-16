@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 477, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/477/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a dynamic, cross-sectional view of a combustion engine's core mechanisms. Pistons move rhythmically within their cylinders, connected to visible rods. The continuous motion is powered by an internal, cyclical event: a simulated spark explosion pushing the pistons downward. This linear motion translates through connecting rods to turn a visible transaxle and connected gearing system, demonstrating the mechanical power transfer. The system runs in a constant, repeating cycle, showcasing the interplay between mechanical parts.",
+  "completion_tokens": 1096,
+  "created_utc": "2026-09-16T13:55:36Z",
+  "entry_id": 477,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1096,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.6,
+      "prompt_tokens": 1545,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.466,
+      "wall_s": 95.728
+    }
+  ],
+  "job_id": 478,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 431,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible",
+  "prompt_tokens": 1545,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/477/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/477",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dynamic, cross-sectional view of a combustion engine's core mechanisms in motion. It features four pistons moving rhythmically within their cylinders, connected to visible connecting rods that transfer linear motion to a rotating crankshaft. The system simulates an internal spark explosion that pushes pistons downward, demonstrating how this mechanical power translates through the connecting rods to turn the transaxle and connected gearing system. The engine runs in a constant, repeating cycle showing the interplay between mechanical parts in real-time. The visualization uses WEBGL rendering to create a 3D perspective of the mechanical components while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.728
+}
