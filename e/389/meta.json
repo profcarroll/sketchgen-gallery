@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 389, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/389/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a three-dimensional representation of the DNA double helix. The structure is composed of labeled spheres, colored distinctly for Adenine (A), Thymine (T), Cytosine (C), and Guanine (G). These spheres are arranged into two intertwined strands that can continuously wind and unwind, simulating the fundamental process of genetic information management. The viewer can physically interact with the model by dragging the mouse, rotating the entire double helix and allowing a closer examination of the colored spheres and their interactions as the strands temporarily unfold and reform.",
+  "completion_tokens": 580,
+  "created_utc": "2026-09-16T03:27:46Z",
+  "entry_id": 389,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 580,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.3,
+      "prompt_tokens": 1582,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.798,
+      "wall_s": 71.649
+    }
+  ],
+  "job_id": 390,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again and focusing more on modeling the double helix structure",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 387,
+    "root_entry_id": 387
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure",
+  "prompt_tokens": 1582,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/389/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/389",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a three-dimensional visualization of a DNA double helix using p5.js's WEBGL renderer. The structure consists of two intertwined strands made of colored spheres representing the four nucleotide bases (Adenine, Thymine, Cytosine, and Guanine), each assigned a distinct color. The helix continuously rotates to show its three-dimensional form, with the viewer able to interact by dragging the mouse to rotate the entire structure. The animation simulates the dynamic nature of DNA, where the strands can appear to unfold and reform as they spin, offering an educational yet visually engaging representation of genetic architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.649
+}
