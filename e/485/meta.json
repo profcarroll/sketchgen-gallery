@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cvibecode something for after hours Revise: the same nebulous shapes,\u2026\u201d \u2014 sketchgen entry 485, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/485/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays vast, deeply colored nebulous structures, transitioning across a gradient from midnight blue to deep violet. The primary shapes are composed of densely flowing lines and cloud structures that perpetually shimmer and pulse in overall opacity. Embedded within the densest cores are small, intensely glowing pinpoints of light. These lights cast intricate, colored reflections across the surrounding gas, and this colored light is constantly affected by transient, subtle rippling patterns, intensifying and deepening with the pulse of the embedded light sources.",
+  "completion_tokens": 3384,
+  "created_utc": "2026-09-16T14:46:51Z",
+  "entry_id": 485,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1106,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `createGraphics()` is called inside `draw()`, so this sketch allocates it again on every frame; do it once in `setup()` and keep the result in a variable (sketch.js line 77)\n\ngate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.4,
+      "prompt_tokens": 2227,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.387,
+      "wall_s": 111.294
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1232,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.7,
+      "prompt_tokens": 2378,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.753,
+      "wall_s": 89.721
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1046,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.8,
+      "prompt_tokens": 2313,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.606,
+      "wall_s": 65.919
+    }
+  ],
+  "job_id": 486,
+  "last_error": "gate exit 1: assertions failed: uses(webgl)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same nebulous cloud structures, and this time having the colored reflections cast subtle, transient rippling patterns across the nearby gas.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 443,
+    "root_entry_id": 154
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "vibecode something for after hours\n\nRevise: the same nebulous shapes, and this time a gradient shift from midnight blue to deep violet as the ambient background color.\n\nRevise: the same nebulous shapes, and this time increasing the density of the flowing lines within the cores of the shapes\n\nRevise: the same nebulous shapes, and this time incorporating subtle, pulsing shifts in opacity within the main cloud structures\n\nRevise: the same nebulous cloud structures, and this time introducing small, glowing pinpoints of light embedded within the denser cores\n\nRevise: the same nebulous cloud structures, and this time having the glowing pinpoints of light cast faint, colored reflections across the nearby gas.\n\nRevise: the same nebulous cloud structures, and this time causing the colored reflections to deepen and intensify with the pulsing of the embedded light.\n\nRevise: the same nebulous cloud structures, and this time having the colored reflections cast subtle, transient rippling patterns across the nearby gas.",
+  "prompt_tokens": 6918,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/485/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/485",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates an immersive cosmic nebula visualization using flowing particle systems that transition through a deep midnight blue to violet gradient. The composition features densely packed particles that move organically across the canvas, creating flowing lines and cloud-like structures that shimmer and pulse with varying opacity. Embedded within these nebulous forms are intense glowing pinpoints that act as light sources, casting intricate colored reflections across the surrounding gas. The visual effect is achieved through careful manipulation of particle movement, pulsing transparency, and subtle ripple patterns that respond to the intensity of the light sources, creating a dynamic, ever-changing cosmic landscape that feels both vast and intimate.",
+  "submitted_by": "profcarroll",
+  "wall_s": 266.934
+}
