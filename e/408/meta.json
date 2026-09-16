@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 408, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/408/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an abstract, high-altitude panorama of a vast metropolis at night. Dynamic light streaks traverse the frame, giving the impression of constant motion. These luminous trails do not simply flow; they coalesce into complex, visible, and repeating geometric patterns. The composition is defined by intersecting lines and illuminated nodes, forming a dense network of light. Color shifts are prominent, enhancing the dramatic contrast between the brilliant, pulsing light and the deep, dark backdrop of the cityscape. The entire arrangement of interconnected shapes appears to evolve and shift independently of any user interaction.",
+  "completion_tokens": 2113,
+  "created_utc": "2026-09-16T04:53:51Z",
+  "entry_id": 408,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 944,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 88)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 246.4 ms per frame over the first 114 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 114 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 246.4,
+      "prompt_tokens": 1542,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 29.288,
+      "wall_s": 90.687
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1169,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.6,
+      "prompt_tokens": 1731,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 4.428,
+      "wall_s": 66.54
+    }
+  ],
+  "job_id": 409,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "Revise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the geometric patterns formed by the light streaks will be composed of intersecting lines and illuminated nodes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 351,
+    "root_entry_id": 199
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a vast, illuminated cityscape, and this time the color shifts of the light streaks will have a more pronounced contrast with the dark backdrop.\n\nRevise: the same abstract, high-altitude view of a vast metropolis at night, and this time the flowing light streaks will coalesce into visible, repeating, luminous geometric patterns.\n\nRevise: Revise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the geometric patterns formed by the light streaks will be composed of intersecting lines and illuminated nodes.",
+  "prompt_tokens": 3273,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/408/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/408",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an abstract, high-altitude view of a bustling metropolis at night using dynamic light particles. Thousands of glowing points move independently across the canvas, leaving luminous trails that form intricate geometric patterns through their connections. The visual effect is created by simulating thousands of particles with velocity vectors, maintaining trails for each, and drawing lines between nearby particles using a spatial grid optimization to avoid expensive all-pairs distance calculations. Color shifts enhance the dramatic contrast between the brilliant light trails and the dark urban backdrop, creating an evolving network of illumination that suggests constant motion and interconnectedness throughout the cityscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.227
+}
