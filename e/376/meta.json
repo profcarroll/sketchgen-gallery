@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca periodic table of elements Revise: excellent progress, try to compl\u2026\u201d \u2014 sketchgen entry 376, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/376/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a structured grid of individual, colored boxes, each representing a unique chemical element. These boxes are organized into repeating rows and columns, forming a comprehensive chart. When the viewer interacts with a box by clicking on it, the element expands slightly and its background color shifts, revealing detailed information, such as its atomic symbol and group. The entire periodic table arrangement remains fixed in place but exhibits a gentle, subtle animation, giving the chart a subtle, ambient movement as if it is breathing slowly.",
+  "completion_tokens": 3110,
+  "created_utc": "2026-09-16T02:23:18Z",
+  "entry_id": 376,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1690,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `mouseX` hides p5's `mouseX`; rename it (sketch.js line 114)\npreflight: your variable `mouseY` hides p5's `mouseY`; rename it (sketch.js line 115)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] mouseXP is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "prompt_tokens": 2221,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.591,
+      "wall_s": 140.499
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1420,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "prompt_tokens": 2392,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.515,
+      "wall_s": 87.187
+    }
+  ],
+  "job_id": 377,
+  "last_error": "regression, did not follow critique",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "excellent progress, try to complete the rest of the table as you started it",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 372,
+    "root_entry_id": 372
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a periodic table of elements\n\nRevise: excellent progress, try to complete the rest of the table as you started it",
+  "prompt_tokens": 4613,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/376/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/376",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents an interactive periodic table visualization where chemical elements are arranged in a structured grid. Each element is represented by a colored box displaying its atomic symbol and number. The entire chart gently animates with a subtle breathing effect, creating an ambient, living quality to the display. When a viewer clicks on any element, it slightly expands and its background color shifts to highlight the selection, revealing detailed information about that specific element. The design maintains a clean, organized layout while providing engaging interactivity through hover effects and click responses. The animation remains subtle and continuous without requiring user input, creating an environment where viewers can explore the periodic table at their own pace.",
+  "submitted_by": "profcarroll",
+  "wall_s": 227.686
+}
