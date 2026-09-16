@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cRender a perspective from within New Babylon, the visionary, speculat\u2026\u201d \u2014 sketchgen entry 391, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/391/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, continuously shifting perspective into a massive, artificial underground architecture. You are enveloped by branching tunnels formed from modular, temporary-feeling structures. Shapes are geometric and rectilinear, rendered in muted industrial tones that occasionally bleed into vibrant, speculative colors. The view suggests endless exploration, with passing light sources defining the narrow paths. As the viewer drags the cursor, the entire network shifts and expands, revealing new passages, architectural junctions, and the iterative evolution of the makeshift tunnel system around you.",
+  "completion_tokens": 2098,
+  "created_utc": "2026-09-16T03:38:46Z",
+  "entry_id": 391,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 922,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 71)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.7,
+      "prompt_tokens": 2249,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.244,
+      "wall_s": 103.02
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1176,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.8,
+      "prompt_tokens": 2439,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 12.995,
+      "wall_s": 79.187
+    }
+  ],
+  "job_id": 392,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "iterate into a network of makeshift branching tunnels",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 156,
+    "root_entry_id": 156
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Render a perspective from within New Babylon, the visionary, speculative architectural project developed by Dutch artist and Situationist Constant Nieuwenhuys between 1956 and 1974\n\nRevise: iterate into a network of makeshift branching tunnels",
+  "prompt_tokens": 4688,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/391/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/391",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, shifting underground environment where viewers navigate through a network of geometric tunnels. The architecture is composed of modular, rectilinear structures rendered in muted industrial tones that occasionally shift to vibrant speculative colors. As the viewer drags their cursor, the entire tunnel system responds by shifting and expanding, revealing new passages and architectural junctions. The scene features dynamic lighting from ambient sources that define narrow paths through the network, while subtle particle effects float through the air, suggesting movement and life within this artificial space. The visual effect suggests endless exploration with a constantly evolving perspective into an expansive, makeshift tunnel system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 182.207
+}
