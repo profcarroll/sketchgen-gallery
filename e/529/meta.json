@@ -1,0 +1,120 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 529, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/529/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, abstract field of interconnected data visualized by constantly shifting gradients. These fields flow and undulate with a visible serpentine motion, flowing across the screen while subtly counteracting any systematic rotation. The visual data is organized into interconnected particles and lines that gently pulse with a visible rhythm. Complementing the abstract background is sophisticated typography, which appears embedded within the field and exhibits its own subtle, programmed movement. The overall aesthetic is complex, colorful, and systematic, suggesting the live representation of vast, shifting informational structures.",
+  "completion_tokens": 3475,
+  "created_utc": "2026-09-16T19:41:53Z",
+  "entry_id": 529,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1283,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 91)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [error] Error: Unsupported OpenType signature /* c     at Cr (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:349711)     at https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:352717     at r.onload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:348718) https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2210,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.031,
+      "wall_s": 122.543
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1079,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 108)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 257.7 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 257.7,
+      "prompt_tokens": 2582,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.355,
+      "wall_s": 76.256
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1113,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 74.1,
+      "prompt_tokens": 2398,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 13.116,
+      "wall_s": 73.299
+    }
+  ],
+  "job_id": 530,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, constantly shifting fields of data, and this time the intersecting gradients introduce a slow, visible serpentine flow that counteracts the systematic rotation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 307,
+    "root_entry_id": 158
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients\n\nRevise: the same system of abstract information fields, and this time applying a slow, periodic counter-clockwise rotation to each intersecting gradient.\n\nRevise: add typography with subtle motion\n\nRevise: the same abstract, ever-shifting representation of data fields, and this time the connecting lines between particles subtly pulse with a slow, visible rhythm.\n\nRevise: the same abstract, constantly shifting fields of data, and this time the intersecting gradients introduce a slow, visible serpentine flow that counteracts the systematic rotation.",
+  "prompt_tokens": 7190,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/529/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/529",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract data visualization field where thousands of interconnected particles flow and undulate in a constantly shifting gradient landscape. The system uses Perlin noise to generate organic motion patterns that create a sense of living information structures moving across the canvas. Particles pulse gently with subtle color variations and connect to nearby neighbors through thin lines, forming a complex web of relationships. Embedded typography appears within this field, subtly integrated into the data flow. The overall effect suggests a vast, dynamic informational ecosystem where patterns emerge and dissolve, creating an immersive experience that balances complexity with visual coherence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 272.098
+}
