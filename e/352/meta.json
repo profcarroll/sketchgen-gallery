@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201csupergraphics from 1984 Revise: the same neon-infused vector lines, a\u2026\u201d \u2014 sketchgen entry 352, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/352/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with an intricate, glowing vector grid defined by neon lines. This structured field pulses slowly, subtly expanding and contracting in a rhythmic cycle. The connections between the intersecting lines intermittently pulse, intensifying and dimming in staggered bursts. These bursts coalesce into complex, geometrically defined fractal patterns that carve temporary, glowing negative spaces within the highly detailed structure. The overall visual field remains a mesmerizing, self-contained, glowing architectural symphony of light.",
+  "completion_tokens": 1810,
+  "created_utc": "2026-09-15T23:35:00Z",
+  "entry_id": 352,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 998,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] gridSize is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2198,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.174,
+      "wall_s": 104.324
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 812,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.6,
+      "prompt_tokens": 2400,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.099,
+      "wall_s": 53.192
+    }
+  ],
+  "job_id": 353,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly detailed, neon-infused vector grid, and this time the coalescing fractal patterns should carve temporary negative spaces within the structured lines.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 329,
+    "root_entry_id": 140
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "supergraphics from 1984\n\nRevise: the same neon-infused vector lines, and this time the grid lines should intermittently break and rebuild in staggered bursts\n\nRevise: the same structured grid, and this time the connections between adjacent cells should intermittently intensify and dim with varying frequency\n\nRevise: the same structured field of glowing, neon-infused vector lines forming a grid, and this time the overall pattern should slowly and rhythmically pulse, subtly expanding and contracting.\n\nRevise: the same structured field of glowing, neon-infused vector lines forming an intricate grid, and this time the glitch bursts should coalesce into geometrically defined fractal patterns.\n\nRevise: the same highly detailed, neon-infused vector grid, and this time the coalescing fractal patterns should carve temporary negative spaces within the structured lines.",
+  "prompt_tokens": 4598,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/352/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/352",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an intricate glowing vector grid that pulses with a slow, rhythmic heartbeat. The grid consists of interconnected neon lines that subtly expand and contract over time, forming an architectural symphony of light. The pulsing effect is achieved through sine wave modulation that varies the opacity and intensity of connections between grid points. Staggered bursts of light create temporary fractal patterns that carve negative spaces within the structure, producing a mesmerizing interplay between order and chaos. The visual field remains self-contained and mesmerizing without requiring complex particle systems or excessive computational overhead.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.516
+}
