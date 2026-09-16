@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 456, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/456/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, twilight cornfield, dominated by rows of tall, swaying yellow-green stalks. Suspended low above the ground is a glowing, disc-shaped UFO, emanating soft, otherworldly light. As the UFO hovers, its powerful exhaust plumes glow a vivid, distinct cyan, casting brilliant, pulsating light onto the surrounding crops and wet earth. The scene is entirely self-contained, showing the gravitational and luminous effect of the vehicle's landing process, making the glowing plumes and the disc itself the primary source of visual drama and light.",
+  "completion_tokens": 2656,
+  "created_utc": "2026-09-16T09:48:04Z",
+  "entry_id": 456,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1550,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: the run passed its 90 s wall ceiling over the first 30 frames of the 120-frame idle window (11173.8 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11173.8,
+      "prompt_tokens": 2218,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 336.482,
+      "wall_s": 136.793
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1106,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "prompt_tokens": 2348,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.655,
+      "wall_s": 68.698
+    }
+  ],
+  "job_id": 457,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 402,
+    "root_entry_id": 402
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan",
+  "prompt_tokens": 4566,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/456/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/456",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a twilight cornfield scene with a hovering UFO and its glowing exhaust plumes. The composition features swaying corn stalks that move gently in the breeze, creating a sense of natural motion within the otherwise still landscape. The UFO hovers low above the ground, emitting vibrant cyan exhaust particles that pulse and glow as they rise from beneath it. The scene uses color and light to create an otherworldly atmosphere, with the UFO's soft illumination casting gentle radiance onto the crops and earth below. The entire effect is self-contained within a single canvas, showing how the vehicle's presence transforms the environment through its gravitational and luminous influence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 205.491
+}
