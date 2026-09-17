@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cinteractive rhythm sequencer with audio\u201d \u2014 sketchgen entry 428, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/428/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic grid of colored cells that represent timing and musical patterns. When the user clicks, a rhythmic sequence of shapes and colors illuminates across the grid, allowing the user to trigger and manipulate beats visually. Furthermore, the entire grid responds dynamically to external audio sources; the colors and overall pulsing intensity shift in time with the recorded sound, creating a live visual feedback loop between the microphone and the screen.",
+  "completion_tokens": 3178,
+  "created_utc": "2026-09-16T06:44:24Z",
+  "entry_id": 428,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": false
+      },
+      "completion_tokens": 965,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 67)\n\ngate exit 1: checks failed: console_clean, frame_advancing, sound_lib_ok; assertions failed: motion(idle), responds(click), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- sound_lib_ok = false\n    served from http://sketch.localhost/ by a page.route() handler reading the sketch directory from disk; no socket was opened, and the origin is potentially trustworthy so p5.sound's AudioWorklet loads\n    audio_context_running is null: the source references the p5.sound API but getAudioContext() does not exist, so the addon is not loaded\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 0.000 under 440 Hz vs 0.000 under silence\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] p5.AudioIn is not a constructor\n- [pageerror] Cannot read properties of undefined (reading 'start')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- audio_context_running is null: the source references the p5.sound API but getAudioContext() does not exist, so the addon is not loaded\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.744,
+      "wall_s": 102.783
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 948,
+      "evidence": "gate exit 1: assertions failed: motion(idle), responds(click), responds(audio)\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(click): no canvas snapshots to compare\n- responds(audio): the silent reference run produced no canvas to compare with\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n- audio_context_running is null: the source references the p5.sound API but getAudioContext() does not exist, so the addon is not loaded\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2748,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 25.224,
+      "wall_s": 71.325
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": false
+      },
+      "completion_tokens": 1265,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing, sound_lib_ok; assertions failed: motion(idle), responds(click), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- sound_lib_ok = false\n    served from http://sketch.localhost/ by a page.route() handler reading the sketch directory from disk; no socket was opened, and the origin is potentially trustworthy so p5.sound's AudioWorklet loads\n    audio_context_running is null: the source references the p5.sound API but getAudioContext() does not exist, so the addon is not loaded\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 0.000 under 440 Hz vs 0.000 under silence\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] p5.AudioIn is not a constructor\n- [pageerror] Cannot read properties of undefined (reading 'start')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- audio_context_running is null: the source references the p5.sound API but getAudioContext() does not exist, so the addon is not loaded\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2355,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.749,
+      "wall_s": 81.97
+    }
+  ],
+  "job_id": 429,
+  "last_error": "gate exit 1: checks failed: console_clean, frame_advancing, sound_lib_ok; assertions failed: motion(idle), responds(click), responds(audio)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 428
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "interactive rhythm sequencer with audio",
+  "prompt_tokens": 7341,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/428/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/428",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic visual representation of musical timing and rhythm through an interactive grid of colored cells. Each cell's hue, saturation, and brightness respond to live audio input from the microphone, creating a real-time color palette that pulses with the bass frequencies. When users click anywhere on the canvas, a rhythmic sequence illuminates across the grid, triggering visual beats that propagate through the system. The entire grid continuously reacts to audio patterns, with the intensity of the color shifts and pulsing effects directly tied to the volume and frequency content of the recorded sound. This creates an immersive feedback loop where users can both trigger and observe musical patterns as they manifest visually on screen.",
+  "submitted_by": "profcarroll",
+  "wall_s": 256.078
+}
