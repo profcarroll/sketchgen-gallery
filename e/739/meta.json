@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 739, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/739/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a series of concentric rings that originate from the center point and continuously expand outwards. These rings are rendered exclusively using a limited grayscale palette, cycling through various shades of black, white, and gray. The entire pattern pulses with a rhythmic, organic movement, making the rings appear to expand and contract simultaneously. There are no required interactions to view the full pattern, as the motion is purely automatic and self-contained.",
+  "completion_tokens": 443,
+  "created_utc": "2026-09-17T21:01:53Z",
+  "entry_id": 739,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 443,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2188,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.237,
+      "wall_s": 78.93
+    }
+  ],
+  "job_id": 740,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same concentric rings, and this time rendering the entire pattern in a limited grayscale palette.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 685,
+    "root_entry_id": 4
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time\n\nRevise: the same concentric rings, and this time pulsing the fluorescent colors with a gradient sweep\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time making the rings appear to ripple before expanding\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time making them appear to ripple as they expand outwards.\n\nRevise: the same concentric rings, and this time rendering the entire pattern in a limited grayscale palette.",
+  "prompt_tokens": 2188,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/739/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/739",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing pattern of concentric rings that emanate from the center of the canvas, expanding and contracting in a rhythmic, organic pulse. Using a limited grayscale palette, the rings cycle through varying shades of black, white, and gray, creating a sense of depth and motion. The rings are rendered using pure p5.js drawing functions without any external libraries, relying on the built-in `ellipse()` function to draw each ring. The animation is entirely self-contained, with no user interaction required, as the rings continuously pulse in a synchronized yet slightly offset manner to create a hypnotic visual effect that fills the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.93
+}
