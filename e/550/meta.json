@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 550, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/550/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, dynamically shifting lattice of interconnected, glowing cells simulating a biological life cycle. The entire field pulses slowly and visibly, rhythmically darkening and brightening as a wave of energy washes over it. Cells are never static; they flash brightly when they expire and radiate a soft, residual glow when they are born. Furthermore, every genesis event is marked by thin, luminous connection lines that appear briefly. This sophisticated system evolves constantly, maintaining a rich tapestry of glowing forms without needing any direct user input.",
+  "completion_tokens": 699,
+  "created_utc": "2026-09-16T23:12:51Z",
+  "entry_id": 550,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 699,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.6,
+      "prompt_tokens": 2210,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.508,
+      "wall_s": 89.153
+    }
+  ],
+  "job_id": 551,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 384,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.",
+  "prompt_tokens": 2210,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/550/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/550",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a living lattice of glowing cells that simulate a biological life cycle. Each cell pulses with its own rhythm, growing bright when born and fading as it ages, while a gentle wave effect subtly darkens and brightens the entire field. The system evolves autonomously without any user input, with new cells constantly being born in a natural, organic pattern. The visual effect captures the essence of a dynamic biological ecosystem where life cycles intersect and overlap, creating an ever-shifting tapestry of light and shadow that pulses with its own internal rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.153
+}
