@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same pulsating field of concentric arcs, and\u2026\u201d \u2014 sketchgen entry 642, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/642/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a radial array of nested, glowing arcs originating from the center. This field is constantly in motion, pulsating rhythmically from the core outward. With each pulsation phase, the colors of the arcs smoothly cycle through the entire visible spectrum, creating a continuous wash of hue. The entire pattern is self-contained, but the outermost rings are highlighted by a noticeable, growing delay and a heightened amplitude during their pulse. The resulting effect is a mesmerizing, continuous wave of light and color emanating from the center.",
+  "completion_tokens": 500,
+  "created_utc": "2026-09-17T10:06:11Z",
+  "entry_id": 642,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 500,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 1530,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.311,
+      "wall_s": 65.551
+    }
+  ],
+  "job_id": 643,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, self-contained pattern of concentric arcs, and this time the outermost arcs must pulse with greater amplitude and a more visible delay.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 551,
+    "root_entry_id": 401
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "radar images\n\nRevise: the same pulsating field of concentric arcs, and this time the ring colors must cycle smoothly through the spectrum during each pulsation phase.\n\nRevise: the same dynamic, self-contained pattern of concentric arcs, and this time the outermost arcs must pulse with greater amplitude and a more visible delay.",
+  "prompt_tokens": 1530,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/642/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/642",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing radial field of nested, glowing arcs that pulse rhythmically from the center outward. The arcs continuously shift through the visible spectrum, creating a wash of color that emanates from the core. Each pulse phase is synchronized across all rings, but the outermost arcs exhibit a noticeable delay and heightened amplitude, producing a wave-like visual effect. The animation runs autonomously without any user input, relying entirely on time-based transformations to generate the continuous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 65.551
+}
