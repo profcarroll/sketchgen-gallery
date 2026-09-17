@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 582, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/582/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a detailed, dynamic, cross-sectional cutaway of a running combustion engine. The scene features mechanical components, including pistons moving up and down within cylinders, connected by visible rods, which operate a transaxle and gearing system. The core action is cyclical: a simulated spark explosion drives the pistons downward, causing the gears to turn. Simultaneously, the intake and exhaust cycles are visualized by brightly colored, flowing fluids that visibly move into the intake ports and exiting the exhaust ports, demonstrating the continuous internal combustion process.",
+  "completion_tokens": 1461,
+  "created_utc": "2026-09-17T02:46:51Z",
+  "entry_id": 582,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1461,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 58.2,
+      "prompt_tokens": 1559,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 14.002,
+      "wall_s": 115.775
+    }
+  ],
+  "job_id": 583,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 477,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.",
+  "prompt_tokens": 1559,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/582/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/582",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dynamic cross-sectional view of a combustion engine's internal mechanics. It visualizes the cyclical motion of pistons within cylinders, connected by connecting rods to a rotating crankshaft, all driven by simulated spark ignition. Brightly colored fluid flows illustrate the intake and exhaust processes, showing how gases move through ports during each stroke. The scene is rendered in 3D using WEBGL for depth perception and mechanical accuracy, with continuous animation that captures the rhythm of engine operation without user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.775
+}
