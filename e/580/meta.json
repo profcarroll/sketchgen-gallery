@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 580, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/580/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, shifting interplay between solid architectural mass and luminous energy. Dynamic rays of light emanate from a source, casting ever-changing shadows across rigid planar surfaces. As the computation runs, the light pathways are visualized, culminating in brilliant, crystalline clusters that map the precise points where the computational rays strike the building's geometry. The scene is constantly evolving, offering a mesmerizing study of where light meets form.",
+  "completion_tokens": 3206,
+  "created_utc": "2026-09-17T02:34:01Z",
+  "entry_id": 580,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1040,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 57)\npreflight: `point()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(POINTS)` with `vertex()` per point (sketch.js line 82)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 101)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] [object Arguments]is not a valid color representation.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2216,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.828,
+      "wall_s": 112.114
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1004,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] [object Arguments]is not a valid color representation.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2615,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.569,
+      "wall_s": 71.357
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1162,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 73.5,
+      "prompt_tokens": 2424,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 16.094,
+      "wall_s": 74.638
+    }
+  ],
+  "job_id": 581,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract interplay between architectural mass and light, and this time visualize the crystallized points of ray impact where the computation meets the rigid geometry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 474,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows\n\nRevise: the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.\n\nRevise: the same abstract interplay between computational geometry and architectural mass, and this time render increased subsurface scattering effects on the rigid planes that catch the light.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the temporal dissipation of computational rays.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the crystallized points of ray impact where the computation meets the rigid geometry.",
+  "prompt_tokens": 7255,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/580/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/580",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the dynamic interplay between solid architectural forms and luminous energy through a constantly shifting environment of light rays and geometric planes. The scene features a collection of abstract building surfaces that subtly animate in space, while thousands of rays emanate from a central light source, casting and re-casting their paths across these forms. Where the rays intersect with the architectural geometry, crystalline clusters form\u2014representing the precise points where light meets structure. The visualization creates an ever-changing dance of illumination and shadow, revealing how light interacts with form in a mesmerizing, abstract representation of architectural lighting dynamics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 258.109
+}
