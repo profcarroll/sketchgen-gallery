@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cwork with glitches, base the illustration off of the image when donal\u2026\u201d \u2014 sketchgen entry 706, prompted by Grossi-thisisforyou, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/706/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply populated field of figures rendered in a style of visceral fragmentation. These subjects appear to be decomposing, not through smoke or dust, but by cleaving along stark geometric fault lines. These pathways are thick and flowing, stained with rich, oxidized crimson and deep, viscous bruise-purple, tracing the body\u2019s structural failure. The shapes themselves are constantly shifting and vibrating, undergoing a slow, traumatic dissolution. While the base image remains intact, the entire scene subtly writhes and expands independently of any input, allowing the viewer to observe the perpetual process of emotional decay.",
+  "completion_tokens": 2230,
+  "created_utc": "2026-09-17T17:12:52Z",
+  "entry_id": 706,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1080,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 77)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2221,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.183,
+      "wall_s": 112.894
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1150,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.5,
+      "prompt_tokens": 2463,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.754,
+      "wall_s": 73.963
+    }
+  ],
+  "job_id": 707,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same field of deeply fractured figures, and this time the geometric fault lines should appear less electric, instead tracing thick, flowing pathways of oxidized crimson and viscous bruise-purple.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 632,
+    "root_entry_id": 541
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "work with glitches, base the illustration off of the image when donald sutherland in Don't Look Now finds his dead child, take francis bacons way of painting as another source of inspiration\n\nRevise: the same canvas displaying the emotional aftermath of trauma, and this time the figures should fracture and decompose along sharply visible geometric fault lines.\n\nRevise: the same field of deeply fractured figures, and this time the geometric fault lines should appear less electric, instead tracing thick, flowing pathways of oxidized crimson and viscous bruise-purple.",
+  "prompt_tokens": 4684,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/706/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/706",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a visceral field of geometrically fragmented forms undergoing slow, organic decay. The composition consists of thousands of small, rotating spheres that gradually shift and dissolve toward the center of the scene, while thick, flowing crimson fault lines propagate across the canvas in unpredictable patterns. The visual effect captures the essence of emotional breakdown through stark, mechanical cleavages against a backdrop of organic motion\u2014each fragment pulsing with its own rhythm of dissolution. The palette emphasizes rich reds and deep purples to convey a sense of trauma and transformation, creating an unsettling yet mesmerizing representation of internal collapse.",
+  "submitted_by": "Grossi-thisisforyou",
+  "wall_s": 186.857
+}
