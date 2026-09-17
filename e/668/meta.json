@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 668, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/668/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, swirling biological medium, appearing viscous and deep. Suspended within this environment are numerous filaments that have aggregated into distinct, glowing spherical clusters. The palette consists of cool mauves, various shades of gray, and luminous iridescent silver. These clusters are constantly pulsing and drifting, giving the impression of life deep beneath the surface. The entire field appears highly dynamic, and moving the mouse cursor through the scene causes the clusters nearest the pointer to react, pulsing faster and sending visible ripples through the surrounding fluid mass.",
+  "completion_tokens": 2054,
+  "created_utc": "2026-09-17T13:01:44Z",
+  "entry_id": 668,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2054,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.7,
+      "prompt_tokens": 1556,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.046,
+      "wall_s": 146.307
+    }
+  ],
+  "job_id": 669,
+  "last_error": "prompt drift",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deep, viscous mass, depicting a dynamic biological environment teeming with life, and this time the filamentous microbes aggregate into pulsing, spherical clusters.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 581,
+    "root_entry_id": 374
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.\n\nRevise: the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.\n\nRevise: the same deep, viscous mass, depicting a dynamic biological environment teeming with life, and this time the filamentous microbes aggregate into pulsing, spherical clusters.",
+  "prompt_tokens": 1556,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/668/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/668",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, living environment beneath a viscous biological medium. The scene features thousands of delicate filaments that meander and grow organically through the fluid background, while glowing spherical clusters drift slowly through the depths. These clusters pulse rhythmically with their own internal life, responding to mouse proximity by accelerating their pulse and sending ripples through the surrounding medium. The color palette draws from cool mauves, grays, and iridescent silver hues to evoke a deep, mysterious underwater world where life stirs just beneath the surface. The entire composition moves continuously without external input, with each element maintaining its own subtle motion while reacting to the cursor's presence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 146.307
+}
