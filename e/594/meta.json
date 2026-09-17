@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cerecting a skyscraper Revise: the same vertical, three-dimensional ci\u2026\u201d \u2014 sketchgen entry 594, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/594/ Licensed CC BY 4.0.",
+  "brief": "A three-dimensional view of a continuous, rising cityscape dominates the canvas. The structure is built from uniform, stacked rectangular segments, giving the illusion of industrial concrete architecture growing upwards. The entire composition is rendered in shades of gray and deep slate. When the user clicks anywhere on the canvas, a new segment is instantly erected at the apex of the structure. This new segment precisely matches the width and height of the segment immediately below it, reinforcing the vertical consistency and stability of the overall form.",
+  "completion_tokens": 471,
+  "created_utc": "2026-09-17T04:15:10Z",
+  "entry_id": 594,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 471,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.4,
+      "prompt_tokens": 2241,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.192,
+      "wall_s": 81.523
+    }
+  ],
+  "job_id": 595,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 363,
+    "root_entry_id": 363
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "erecting a skyscraper\n\nRevise: the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.",
+  "prompt_tokens": 2241,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/594/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/594",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an architectural composition that grows vertically from a base platform, constructed entirely from uniform rectangular prisms in varying shades of gray. The structure appears to rise endlessly through stacked segments, each matching the dimensions of its predecessor, creating a sense of industrial continuity and vertical stability. When clicked, the canvas responds by adding another segment atop the existing formation, maintaining perfect alignment and scale. The rendering uses WebGL for 3D depth and perspective, with shading that subtly darkens toward the base to emphasize the structure's verticality. The scene remains static otherwise, allowing viewers to contemplate the growing form without animation or motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.523
+}
