@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 547, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/547/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an evolving ecosystem simulating the growth of a colorful, amorphous substance, like a slime mold, across a solid substrate. The growth manifests as brightly colored, rounded blobs connected by delicate, fine filaments that weave across the surface. The entire scene is rendered with a realistic depth and interplay of light and shadow, giving the structure a tangible, three-dimensional quality. The formation is continuously animated, showing the slow, biological spreading and interconnection of the material over time without requiring any user input.",
+  "completion_tokens": 1166,
+  "created_utc": "2026-09-16T22:55:54Z",
+  "entry_id": 547,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1166,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "prompt_tokens": 1553,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.291,
+      "wall_s": 100.476
+    }
+  ],
+  "job_id": 548,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same amorphous, colorful growth resembling a slime mold, and this time with fine, filamentous structures connecting the individual blobs to the substrate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 360,
+    "root_entry_id": 360
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same amorphous, colorful growth resembling a slime mold, and this time with fine, filamentous structures connecting the individual blobs to the substrate.",
+  "prompt_tokens": 1553,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/547/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/547",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates an evolving ecosystem of amorphous, glowing blobs that spread and connect across a 3D space. The blobs\u2014represented as spheres with dynamic movement and color\u2014slowly drift and interact with each other through delicate filamentary connections. The scene uses WebGL rendering for depth perception and subtle animation, creating a mesmerizing effect reminiscent of slime mold or biological growth patterns. Each blob moves independently within physical constraints, and the connections between them dynamically form based on proximity, forming an ever-shifting network across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 100.476
+}
