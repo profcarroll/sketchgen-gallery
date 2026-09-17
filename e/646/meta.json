@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cintersecting fields of light interrupted by sculptural forms Revise:\u2026\u201d \u2014 sketchgen entry 646, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/646/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts expansive, luminous fields of light through which massive, sculptural forms intersect. These forms appear to float, dynamically interrupting the radiance of the surrounding light. The color palette is highly mutable, shifting dramatically across the piece, evolving between cool aquamarine tones and deep electric indigo and violet hues. The material composition of the sculptures is also fluid, presenting as alternating elements of highly polished obsidian and translucent, crystalline quartz, sometimes emphasizing sharper, geometric edges in their crystalline structure.",
+  "completion_tokens": 1899,
+  "created_utc": "2026-09-17T10:41:47Z",
+  "entry_id": 646,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 887,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 61)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 65)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 76)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 234.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 234.7,
+      "prompt_tokens": 1552,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 16.539,
+      "wall_s": 88.849
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1012,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 78.9,
+      "prompt_tokens": 1867,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 17.057,
+      "wall_s": 61.751
+    }
+  ],
+  "job_id": 647,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous field, and this time the color palette shifts to a deep, electric indigo and violet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 557,
+    "root_entry_id": 268
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "intersecting fields of light interrupted by sculptural forms\n\nRevise: the same luminous field, and this time the colors shift to a cooler, aquamarine palette.\n\nRevise: the same luminous fields, and this time the forms are rendered in polished obsidian material\n\nRevise: the same luminous field, and this time the sculptural forms are rendered in frosted crystalline quartz\n\nRevise: the same luminous field, and this time the frosted crystalline quartz forms are given sharper, more crystalline edges\n\nRevise: the same luminous field, and this time the sculptural forms are rendered in polished obsidian material\n\nRevise: the same luminous field, and this time the color palette shifts to a deep, electric indigo and violet.",
+  "prompt_tokens": 3419,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/646/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/646",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving space where luminous fields of light interact with sculptural forms that float and shift in three-dimensional space. The piece explores the interplay between transparency and opacity through alternating materials\u2014obsidian blackness and crystalline translucence\u2014that dynamically transform as they rotate. Particles form a dense, ever-shifting light field that pulses with color variations, while geometric forms like spheres and boxes move independently, creating an atmosphere of floating, weightless architecture. The color palette shifts from deep indigo to aquamarine tones, evoking both the mystery of space and the intensity of light itself.",
+  "submitted_by": "profcarroll",
+  "wall_s": 150.6
+}
