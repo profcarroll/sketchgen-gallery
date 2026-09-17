@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 735, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/735/ Licensed CC BY 4.0.",
+  "brief": "A complex, rotating kinetic sculpture dominates the canvas, appearing to be constructed from ornate, oxidized metals and mechanical brass. At its core, a swirling molten bronze glow acts as the centerpiece. Around this core, several ornate splines continuously orbit and interact, appearing meticulously crafted and steampunk in style. The metallic surfaces of the orbiting splines catch and reflect the intense, vivid light emanating from the viscous, glowing molten bronze core, creating dramatic highlights and shadows throughout the continuously moving mechanism.",
+  "completion_tokens": 918,
+  "created_utc": "2026-09-17T20:34:37Z",
+  "entry_id": 735,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 918,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.0,
+      "prompt_tokens": 1554,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.175,
+      "wall_s": 85.988
+    }
+  ],
+  "job_id": 736,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, rotating steampunk kinetic sculpture, and this time the orbiting splines should appear to catch and reflect the intense glow of the molten core.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 677,
+    "root_entry_id": 162
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same orbiting splines, and this time the splines should appear made of oxidized copper and sea glass\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze glow should appear thicker and more viscous.\n\nRevise: the same complex, rotating kinetic sculpture, and this time the molten bronze core should glow with distinct, visible internal currents of liquid fire.\n\nRevise: the same complex, rotating steampunk kinetic sculpture, and this time the orbiting splines should appear to catch and reflect the intense glow of the molten core.",
+  "prompt_tokens": 1554,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/735/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/735",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a steampunk-inspired kinetic sculpture centered around a glowing molten bronze core that emits intense light. Surrounding this core, eight ornate splines orbit in intricate patterns, their metallic surfaces catching and reflecting the vibrant glow. Each spline is composed of smooth, curved segments that twist and rotate continuously, creating an effect of mechanical motion and craftsmanship. The piece uses WebGL rendering to achieve rich lighting effects and dynamic movement without requiring external libraries or complex particle systems, all within the strict performance constraints of the evaluation environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.988
+}
