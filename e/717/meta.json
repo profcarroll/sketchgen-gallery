@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 717, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/717/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a brightly lit, complex, geometrically designed channel constructed from continuous, sharply angled metal walls. A single, polished marble is situated at the top of the structure. Driven by gravity and the channel's geometry, the marble rolls continuously downward. Its movement is dynamic, forced to make constant, visible lateral deviations as it navigates abrupt curves and intersecting ridges. The marble's journey concludes as it rolls into a widening, deep collecting basin at the channel's exit, where its motion finally slows to a natural stop.",
+  "completion_tokens": 855,
+  "created_utc": "2026-09-17T18:31:09Z",
+  "entry_id": 717,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 855,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.5,
+      "prompt_tokens": 1557,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.829,
+      "wall_s": 88.168
+    }
+  ],
+  "job_id": 718,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, geometrically designed channel, and this time the random crystalline barriers are replaced by continuous, sharply angled metal walls.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "parent_entry_id": 654,
+    "root_entry_id": 127
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope gradually curves inward toward the exit.\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope widens and flattens into a collecting basin at the exit.\n\nRevise: The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.\n\nRevise: the same funnel-shaped channel, and this time the shallow basin widens and deepens significantly at the exit.\n\nRevise: the same complex, funnel-shaped channel, and this time the initial slope features abrupt shifts in curvature and requires a momentary pause.\n\nRevise: the same complex, solid, funnel-shaped channel, and this time the structure incorporates small, alternating intersecting ridges and troughs forcing the marble into constant, minute course corrections.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs force the marble into sudden, visible lateral deviations.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs are replaced by randomly sized, asymmetrical crystalline barriers.\n\nRevise: the same complex, geometrically designed channel, and this time the random crystalline barriers are replaced by continuous, sharply angled metal walls.",
+  "prompt_tokens": 1557,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/717/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/717",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, geometric marble run using p5.js in WEBGL mode. The scene features a complex channel constructed from layered, angular metal walls that guide a polished marble downward through gravity-driven motion. The marble's path is not straight \u2014 it makes lateral deviations as it navigates the sharp curves and intersecting ridges of the channel. As it approaches the bottom, the marble enters a widening collecting basin where its motion gradually slows to a natural stop. The entire scene is rendered with lighting effects that emphasize the metallic geometry and the marble's movement, creating an engaging visual representation of physics in action.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.168
+}
