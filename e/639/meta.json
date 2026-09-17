@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse Revise: the same stylized horse, and this time the\u2026\u201d \u2014 sketchgen entry 639, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/639/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized depiction of a horse captured in the act of galloping. The rendering emphasizes fluid, sweeping curves, particularly in the body and limbs, moving away from angular or geometric forms. The motion is continuous and rhythmic, depicting the full cycle of the gallop. A defining feature is the pronounced, clear extension of the front legs during the zenith of the stride. The horse remains perpetually in motion, autonomously completing its gallop sequence without requiring any user interaction or external input.",
+  "completion_tokens": 840,
+  "created_utc": "2026-09-17T09:47:41Z",
+  "entry_id": 639,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 840,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1527,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.116,
+      "wall_s": 85.58
+    }
+  ],
+  "job_id": 640,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized depiction of a horse, and this time the front legs should exhibit a clearer, more pronounced extension during the gallop stride.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 548,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a galloping horse\n\nRevise: the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.\n\nRevise: the same stylized depiction of a horse, and this time the front legs should exhibit a clearer, more pronounced extension during the gallop stride.",
+  "prompt_tokens": 1527,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/639/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/639",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a stylized galloping horse using fluid, sweeping curves that emphasize motion and rhythm. The horse's body and limbs are drawn with smooth B\u00e9zier paths to simulate the continuous flow of movement, avoiding sharp angles or geometric forms. The animation is self-contained, looping seamlessly through a full gallop cycle without user input, with each frame advancing the horse's pose in a natural progression.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.58
+}
