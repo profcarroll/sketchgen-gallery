@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cerecting a skyscraper\u201d \u2014 sketchgen entry 363, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/363/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vertical, three-dimensional cityscape defined by geometric forms of concrete and steel. The structure begins as a foundational base, ready to grow upwards. To erect the skyscraper, the viewer must click anywhere on the canvas. Each click raises the current structure by placing the next segment, incrementally increasing the building\u2019s height and defining its overall profile. The pattern and scale of the skyscraper adjust with every input, making the building process observable as a slow, deliberate ascent against the canvas background.",
+  "completion_tokens": 2326,
+  "created_utc": "2026-09-16T01:04:02Z",
+  "entry_id": 363,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 641,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 35)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "prompt_tokens": 2247,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.694,
+      "wall_s": 83.657
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 763,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 45)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] depth is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2437,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.965,
+      "wall_s": 53.664
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 922,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 46)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "prompt_tokens": 2569,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.764,
+      "wall_s": 63.312
+    }
+  ],
+  "job_id": 364,
+  "last_error": "gate exit 1: assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 363
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "erecting a skyscraper",
+  "prompt_tokens": 7253,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/363/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/363",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a vertical, three-dimensional cityscape constructed from geometric forms of concrete and steel. The viewer begins with a foundational base and can click anywhere on the canvas to incrementally build a skyscraper by adding new segments. Each click triggers the placement of a new building segment above the previous one, creating a slow, deliberate ascent against the canvas background. The structure grows upward through a series of stacked boxes, each with randomized dimensions, creating an evolving urban skyline. The visual design uses a muted color palette to emphasize the geometric forms and employs perspective grid lines to anchor the three-dimensional space, making the building process observable as a continuous, methodical growth.",
+  "submitted_by": "profcarroll",
+  "wall_s": 200.633
+}
