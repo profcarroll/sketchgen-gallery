@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 612, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/612/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a continuously scrolling, horizontal landscape featuring a character running from left to right. The ground is composed of varied, solid, blocky platforms of multiple colors, creating a varied and organic terrain. Above the platforms, environmental obstacles are placed, requiring the character to jump over gaps or crouch to duck under low barriers. The character moves constantly across the world, while the user controls the movement using keyboard inputs to navigate the challenging platforming environment.",
+  "completion_tokens": 1156,
+  "created_utc": "2026-09-17T06:42:33Z",
+  "entry_id": 612,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1156,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1535,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.165,
+      "wall_s": 95.987
+    }
+  ],
+  "job_id": 613,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous horizontal world featuring the character running across varied, blocky solid platforms, and this time incorporate environmental obstacles that require the character to jump over or duck under.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 505,
+    "root_entry_id": 107
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.\n\nRevise: the same continuous horizontal world featuring the character running across varied, blocky solid platforms, and this time incorporate environmental obstacles that require the character to jump over or duck under.",
+  "prompt_tokens": 1535,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/612/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/612",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents an endless running platformer environment where a character continuously moves from left to right. The world features varied, colorful platforms of differing sizes and heights that create organic terrain. Environmental obstacles\u2014some requiring jumps over gaps and others needing to duck under low barriers\u2014are placed above the platforms. The viewer controls the character's movement using keyboard inputs: spacebar initiates a jump while holding down arrow key causes crouching. The canvas displays visual changes in real-time, with the world scrolling horizontally as the character advances, responding dynamically to user input through motion and click interactions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.987
+}
