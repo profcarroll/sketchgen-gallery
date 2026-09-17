@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 535, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/535/ Licensed CC BY 4.0.",
+  "brief": "A monumental pathway of deeply rusted steel dominates the view, defining a vast, industrial, and liminal space. The massive forms are textured with a rich, vivid rust patina, gathering in pockets of wet-looking umber that emphasize the immense scale. The path appears to flow indefinitely until it encounters a dramatic interruption: a sudden, sharp shift of curvature that turns abruptly and perpendicularly, maximizing the spatial break. The camera draws the viewer into this constructed environment, making the geometry overwhelming and the material weight of the steel immediately palpable. The experience is fixed and purely observational.",
+  "completion_tokens": 1195,
+  "created_utc": "2026-09-16T20:18:27Z",
+  "entry_id": 535,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1195,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2240,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.928,
+      "wall_s": 114.454
+    }
+  ],
+  "job_id": 536,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "now bring the camera into the sculpture to emphasize scale",
+    "critique_by": "profcarroll",
+    "generation": 4,
+    "parent_entry_id": 500,
+    "root_entry_id": 39
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same massive pathways of deeply rusted steel, and this time the rust patina deepens into pockets of vivid, wet-looking umber.\n\nRevise: now bring the camera into the sculpture to emphasize scale",
+  "prompt_tokens": 2240,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/535/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/535",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a monumental steel pathway with deeply rusted textures that dominates the viewer's field of vision. Through careful use of geometric forms and strategic color placement, I've created an industrial space that conveys both massive scale and material weight. The pathway appears to flow infinitely before abruptly terminating in a perpendicular steel wall that creates a dramatic spatial interruption. Using WebGL rendering with carefully batched shapes, I've achieved the overwhelming presence of steel construction while maintaining visual coherence through the consistent application of rust patina effects that emphasize the material's aged state. The composition draws the viewer into this constructed environment, making them feel the weight and scale of the industrial form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.454
+}
