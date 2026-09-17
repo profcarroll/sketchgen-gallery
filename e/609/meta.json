@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 609, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/609/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a dramatic, high-contrast nighttime cityscape viewed from across a busy harbor. Sleek drones navigate the space, casting light across the water and the surrounding buildings. The scene remains static until the user moves their mouse cursor. When the cursor hovers over specific regions of the harbor or city, the drones instantly execute complex, geometric maneuvers, forming temporary, structured arrangements before dispersing back into flight paths.",
+  "completion_tokens": 3761,
+  "created_utc": "2026-09-17T06:20:34Z",
+  "entry_id": 609,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1326,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 74)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 118)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 10.3663/255, 113406 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "prompt_tokens": 1550,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.98,
+      "wall_s": 106.827
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1322,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 69)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 111)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2706/255, 1508 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.4,
+      "prompt_tokens": 1770,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 10.369,
+      "wall_s": 77.102
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1113,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 60)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 90)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 17.0070/255, 480000 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.3,
+      "prompt_tokens": 1767,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 9.713,
+      "wall_s": 65.953
+    }
+  ],
+  "job_id": 610,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dramatic nighttime cityscape over a harbor, and this time the drones will arrange themselves into complex, momentary geometric formations when the mouse hovers over specific areas.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 501,
+    "root_entry_id": 41
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations\n\nRevise: the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly\n\nRevise: the same dynamic nighttime harbor scene, and this time the drones will illuminate the buildings with focused searchlights\n\nRevise: the same dynamic, high-contrast nighttime cityscape over a harbor, and this time the searchlights will periodically highlight individual boats anchored in the water.\n\nRevise: the same dramatic nighttime cityscape over a harbor, and this time the drones will arrange themselves into complex, momentary geometric formations when the mouse hovers over specific areas.",
+  "prompt_tokens": 5087,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/609/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/609",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a static nighttime cityscape with sleek drones navigating between towering buildings and across a dark harbor. The scene is deliberately motionless until a viewer moves their mouse over specific regions of the harbor or city, triggering complex geometric formations in which the drones temporarily arrange themselves into structured patterns before dispersing back into flight. The visual design emphasizes high contrast, volumetric lighting effects, and clean architectural forms to evoke a futuristic urban environment viewed from across the water.",
+  "submitted_by": "profcarroll",
+  "wall_s": 249.882
+}
