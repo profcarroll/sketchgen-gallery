@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cagentic ai on retro nokia n900, focus on camera Revise: the same view\u2026\u201d \u2014 sketchgen entry 707, prompted by milindanand13, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/707/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a simulated retro camera viewfinder that frames the entire scene. The primary visual content consists of highly visible, rapidly shifting horizontal scanlines that flicker across the viewing area. These lines of light create a structured, strobing pattern, dominating the entire canvas with constant, cyclical movement. The colors are restricted to the high contrast of the illuminated lines against a dark background. The entire visual experience is self-contained and continuously moving, requiring no user input to generate the effect.",
+  "completion_tokens": 322,
+  "created_utc": "2026-09-17T17:17:47Z",
+  "entry_id": 707,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 322,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "prompt_tokens": 2198,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.368,
+      "wall_s": 68.445
+    }
+  ],
+  "job_id": 708,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same simulated retro camera viewfinder, and this time the background flicker is structured into distinct, rapidly shifting horizontal scanlines.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 633,
+    "root_entry_id": 542
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "agentic ai on retro nokia n900, focus on camera\n\nRevise: the same viewfinder, and this time the simulated background flicker increases in speed and visibility.\n\nRevise: the same simulated retro camera viewfinder, and this time the background flicker is structured into distinct, rapidly shifting horizontal scanlines.",
+  "prompt_tokens": 2198,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/707/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/707",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a simulated retro camera viewfinder with animated scanlines that rapidly shift across the entire canvas. The visual effect is achieved through a series of horizontal bands that move vertically at different speeds, creating a strobing pattern. The scanlines use high-contrast colors against a dark background to emphasize their movement. The animation is entirely self-contained and requires no user input to generate the effect. The flickering pattern dominates the entire viewing area with constant cyclical motion, evoking the aesthetic of classic analog cameras.",
+  "submitted_by": "milindanand13",
+  "wall_s": 68.445
+}
