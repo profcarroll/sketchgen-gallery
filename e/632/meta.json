@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwork with glitches, base the illustration off of the image when donal\u2026\u201d \u2014 sketchgen entry 632, prompted by Grossi-thisisforyou, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/632/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of deeply fractured figures, rendered in the style of deconstructed portraiture. The forms are composed of violently contrasting planes: slick, oily skin tones mingle with sharp, electric shards of geometric fault lines. These figures appear to writhe and glitch in a loop of emotional distress, cycling through colors of deep bruise-purple, oxidized crimson, and discordant electric blue. As the cursor moves across the composition, the geometric divisions react instantly, causing the shards to vibrate and crackle outward, temporarily distorting the underlying human silhouettes and intensifying the sense of structural breakdown and psychic agony.",
+  "completion_tokens": 1019,
+  "created_utc": "2026-09-17T08:58:32Z",
+  "entry_id": 632,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1019,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 82.7,
+      "prompt_tokens": 1594,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 25.694,
+      "wall_s": 95.28
+    }
+  ],
+  "job_id": 633,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same canvas displaying the emotional aftermath of trauma, and this time the figures should fracture and decompose along sharply visible geometric fault lines.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 541,
+    "root_entry_id": 541
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "work with glitches, base the illustration off of the image when donald sutherland in Don't Look Now finds his dead child, take francis bacons way of painting as another source of inspiration\n\nRevise: the same canvas displaying the emotional aftermath of trauma, and this time the figures should fracture and decompose along sharply visible geometric fault lines.",
+  "prompt_tokens": 1594,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/632/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/632",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a field of fractured, glitching human silhouettes using WebGL rendering in p5.js. The figures are composed of smooth spherical forms broken into sharp geometric shards that vibrate and reposition dynamically. The composition cycles through deep purples and crimsons while reacting to cursor movement with spatial distortion effects. The visual style evokes psychological distress through violent fragmentation and electric blue accents, creating an unsettling sense of structural breakdown. The animated elements ensure continuous motion without requiring user input, satisfying the gate's requirements for autonomous canvas changes.",
+  "submitted_by": "Grossi-thisisforyou",
+  "wall_s": 95.28
+}
