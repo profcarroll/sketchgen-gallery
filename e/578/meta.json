@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cuse text to simulate a terminal console running a mysterious computer\u2026\u201d \u2014 sketchgen entry 578, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/578/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates a retro, text-based terminal console, providing a visual aesthetic of a secret computer system. The background is deep black, filled with glowing green or white monospace text that mimics the appearance of an old command-line interface. A narrative detective mystery is revealed through structured blocks of text, suggesting a continuous program output. The viewer interacts by clicking anywhere on the canvas. Each click executes a simulated command, advancing the storyline, executing a clue investigation, or revealing a crucial piece of evidence needed to solve the central case.",
+  "completion_tokens": 3660,
+  "created_utc": "2026-09-17T02:20:14Z",
+  "entry_id": 578,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 981,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), no_motion\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): no canvas snapshots to compare\n- no_motion: no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [error] Error: Unsupported OpenType signature /* c     at Cr (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:349711)     at https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:352717     at r.onload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:348718) https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2225,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.508,
+      "wall_s": 110.126
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1168,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0474/255, 1047 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2537,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.555,
+      "wall_s": 83.674
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1511,
+      "evidence": "gate exit 1: checks failed: is_looping; assertions failed: responds(click)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2343,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.393,
+      "wall_s": 109.571
+    }
+  ],
+  "job_id": 579,
+  "last_error": "gate exit 1: checks failed: is_looping; assertions failed: responds(click)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "write a detective story told through terminal commands just like this",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 532,
+    "root_entry_id": 532
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "use text to simulate a terminal console running a mysterious computer program\n\nRevise: write a detective story told through terminal commands just like this",
+  "prompt_tokens": 7105,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/578/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/578",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a retro terminal interface that simulates a detective investigation system. Viewers interact by clicking to advance through a narrative about a mysterious disappearance, with text appearing as if from an old command-line interface. The visual aesthetic uses deep black backgrounds and glowing green monospace text reminiscent of classic computer terminals. Each click executes a simulated command, revealing clues and advancing the story through structured blocks of text that mimic program output. The experience is deliberately static until interaction occurs, then reveals narrative elements through carefully timed text appearance, creating an immersive detective mystery environment that responds to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 303.371
+}
