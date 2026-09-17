@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 565, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/565/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, high-altitude panorama of a sprawling metropolis at night. The scene is defined by sweeping, luminous light streaks that gather and pulsate, coalescing into striking geometric patterns. These patterns function as an illuminated skeleton, emphasizing perfect orthogonal intersections and defining precise axes of underlying architectural structure. The overall effect is a highly structured, glowing grid that continually subtly shifts and pulses across the dark, nocturnal backdrop, suggesting the underlying systematic order of the city below.",
+  "completion_tokens": 2379,
+  "created_utc": "2026-09-17T00:54:05Z",
+  "entry_id": 565,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 799,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 35)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] x is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1523,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.477,
+      "wall_s": 80.366
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 730,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 47)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1763,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.308,
+      "wall_s": 46.563
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 850,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.7,
+      "prompt_tokens": 1764,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 2.655,
+      "wall_s": 52.527
+    }
+  ],
+  "job_id": 566,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-altitude panorama of a vast, nocturnal metropolis, and this time the coalescing lines will emphasize orthogonal intersections, defining precise axes of structure.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 460,
+    "root_entry_id": 199
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a vast, illuminated cityscape, and this time the color shifts of the light streaks will have a more pronounced contrast with the dark backdrop.\n\nRevise: the same abstract, high-altitude view of a vast metropolis at night, and this time the flowing light streaks will coalesce into visible, repeating, luminous geometric patterns.\n\nRevise: Revise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the geometric patterns formed by the light streaks will be composed of intersecting lines and illuminated nodes.\n\nRevise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the luminous geometric patterns will coalesce into visible, pulsating grids tracing the underlying architectural skeleton.\n\nRevise: the same abstract, high-altitude panorama of a vast, nocturnal metropolis, and this time the coalescing lines will emphasize orthogonal intersections, defining precise axes of structure.",
+  "prompt_tokens": 5050,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/565/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/565",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an abstract nocturnal cityscape using luminous light streaks that pulse and flow across a dark canvas. The composition features a structured grid system that defines orthogonal axes of architectural order, while thousands of glowing particles move in coordinated patterns to suggest urban energy. The visual effect combines geometric precision with organic motion, creating a sense of both systematic structure and dynamic life beneath the surface of a sprawling metropolis at night.",
+  "submitted_by": "profcarroll",
+  "wall_s": 179.456
+}
