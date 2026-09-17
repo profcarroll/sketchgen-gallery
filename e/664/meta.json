@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 664, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/664/ Licensed CC BY 4.0.",
+  "brief": "The scene displays an atmospheric winter landscape defined by snow-draped alpine peaks and muted, cold colors. The foreground features specific rock formations partially covered in undisturbed fresh snow. The overall canvas remains still until the user clicks. Upon clicking, the sketch simulates an avalanche, causing dynamic debris to scatter across the foreground. This movement and impact momentarily alter the composition by scattering fresh snow and rock fragments across the established structures.",
+  "completion_tokens": 1220,
+  "created_utc": "2026-09-17T12:37:40Z",
+  "entry_id": 664,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1220,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.0,
+      "prompt_tokens": 2204,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.007,
+      "wall_s": 119.204
+    }
+  ],
+  "job_id": 665,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 577,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.",
+  "prompt_tokens": 2204,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/664/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/664",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene winter landscape featuring snow-draped alpine peaks and rocky formations rendered in muted, cold tones. The composition remains still until the viewer clicks the center of the canvas, triggering an avalanche effect that scatters debris and fresh snow across the scene. The simulation uses particle physics to create realistic movement dynamics, with gravity pulling avalanche fragments downward while scattering surrounding snow particles. The technique employs a combination of geometric shapes for terrain elements and individual particles for snow effects, all rendered in a single pass without complex interactions or loops that would exceed performance constraints. The viewer witnesses a dramatic transformation of the otherwise static winter scene, with the avalanche's impact momentarily disrupting the peaceful composition before returning to stillness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.204
+}
