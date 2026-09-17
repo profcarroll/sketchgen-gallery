@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 619, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/619/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a captivating, multi-component steampunk sculpture built around a rotating cube. Delicate splines of tarnished copper and deep emerald glass trace elliptical orbits around the central core. At the center, a sphere glows with the appearance of molten bronze, casting warmth onto the structure. The glass tracery is highly detailed, featuring visible internal glowing seams that simulate captured rainbow light, giving the entire, perpetually moving assembly a complex, ethereal luminosity.",
+  "completion_tokens": 1081,
+  "created_utc": "2026-09-17T07:32:01Z",
+  "entry_id": 619,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1081,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.6,
+      "prompt_tokens": 2224,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.19,
+      "wall_s": 107.755
+    }
+  ],
+  "job_id": 620,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same captivating and complex steampunk sculpture, and this time the deep emerald glass tracery should have visible internal glowing seams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 521,
+    "root_entry_id": 162
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same captivating, complex sculpture, and this time the glass-like tracery should catch simulated rainbow light.\n\nRevise: the same captivating and complex steampunk sculpture, and this time the deep emerald glass tracery should have visible internal glowing seams.",
+  "prompt_tokens": 2224,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/619/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/619",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a steampunk sculpture centered around a rotating cube, featuring intricate glass tracery and copper splines that trace elliptical orbits. The composition captures the ethereal luminosity of a perpetually moving assembly with glowing elements at its core. Using WEBGL rendering, it creates depth through layered geometric forms, with detailed internal seams in the glass components and animated copper splines that pulse gently in three-dimensional space. The visual effect combines warm bronze glows with cool emerald tones to evoke a sense of mechanical artistry and captured light within an otherwise dark environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 107.755
+}
