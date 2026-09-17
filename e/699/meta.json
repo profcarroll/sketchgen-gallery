@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctwo flocks that avoid each other\u201d \u2014 sketchgen entry 699, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/699/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays two separate, fluid streams of colored particles, each forming a distinct, cohesive flock. These particle groups exhibit natural, synchronized movement, appearing to flow and shift across the entire canvas area. The central dynamic of the sketch is the avoidance mechanism: as the two flocks drift into proximity, they actively and visibly diverge, bending their collective paths to maintain a constant spatial separation without ever overlapping. The animation is continuous and perpetual, presenting a mesmerizing, choreographed dance of repulsion.",
+  "completion_tokens": 1376,
+  "created_utc": "2026-09-17T16:35:12Z",
+  "entry_id": 699,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1376,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "prompt_tokens": 2201,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.227,
+      "wall_s": 130.955
+    }
+  ],
+  "job_id": 700,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 699
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "two flocks that avoid each other",
+  "prompt_tokens": 2201,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/699/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/699",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates two distinct fluid flocks of colored particles that move independently across the canvas while maintaining a natural flocking behavior. Each flock follows separation, alignment, and cohesion rules to create organic group movement patterns. As the flocks approach each other, they actively avoid overlap through repulsive forces, creating a mesmerizing choreography of avoidance. The visual effect emphasizes continuous motion with smooth transitions, where particles flow together in cohesive groups before diverging when proximity is detected. The implementation uses a fixed particle count and optimized spatial checks to maintain performance while achieving the fluid, dynamic behavior described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 130.955
+}
