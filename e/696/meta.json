@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 696, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/696/ Licensed CC BY 4.0.",
+  "brief": "A towering cityscape dominates the scene, featuring rigid, wet architectural structures under continuous atmospheric cycles of day and night. Bioluminescent plant life pulsates with the twilight, casting colored projections onto the wet surfaces. These pulsing lights create radiating ripples that intensify, manifesting as visible, repeating fractal patterns. The dissipation of these patterns deposits temporary crystalline trails, which eventually score the rigid structures permanently. These crystalline scores react with pooled liquid, generating visible metallic deposits. Finally, these metallic deposits charge the liquid, causing it to emit a secondary, visible luminescence, which results in the liquid visibly stratifying into distinct layers.",
+  "completion_tokens": 3138,
+  "created_utc": "2026-09-17T16:12:14Z",
+  "entry_id": 696,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1615,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 55)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 67)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 99)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 129)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 159)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 178)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 299 ms per frame over the first 84 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 84 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 299.0,
+      "prompt_tokens": 2259,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 41.668,
+      "wall_s": 142.262
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1523,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 87.5,
+      "prompt_tokens": 2761,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.691,
+      "wall_s": 104.718
+    }
+  ],
+  "job_id": 697,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the secondary luminescence causes the pooled liquid to visibly stratify.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 621,
+    "root_entry_id": 11
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color pallete\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating ripples cause temporary, visible distortions in the wet architectural reflections.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the visible distortions intensify into sharp, repeating fractal patterns.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating fractal patterns leave behind temporary, crystalline trails on the wet architectural surfaces.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the crystalline trails permanently score the rigid angular structures.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the crystalline scoring reacts with the pooled liquid to generate visible, metallic deposits.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the generated metallic deposits charge the pooled liquid, causing it to emit a visible, secondary luminescence.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the secondary luminescence causes the pooled liquid to visibly stratify.",
+  "prompt_tokens": 5020,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/696/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/696",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a futuristic cityscape undergoing continuous atmospheric cycles of day and night. Towering wet architectural structures dominate the scene, while bioluminescent plant life pulsates with twilight energy. These glowing elements cast radiating ripples that form fractal patterns, which then deposit crystalline trails onto the rigid surfaces. The crystalline scores interact with pooled liquid, generating metallic deposits that charge the liquid and cause it to stratify into distinct luminescent layers. The piece captures the dynamic interplay between organic bioluminescence and mechanical architecture through a continuous loop of glowing particles, ripples, trails, and layered liquids.",
+  "submitted_by": "profcarroll",
+  "wall_s": 246.98
+}
