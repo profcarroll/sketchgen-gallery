@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 581, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/581/ Licensed CC BY 4.0.",
+  "brief": "The canvas renders a deep, viscous mass, depicting a dynamic biological environment teeming with life. Suspended within this dense, flowing medium are filamentous microbes that have formed clear, repeating lattice geometries. These sharp, crystalline structures organize themselves throughout the liquid slurry, creating a highly structured and complex visual field. The entire scene is characterized by a continuous, slow flow, giving the viewer the impression of massive depth and constant, restless movement deep within the biological material.",
+  "completion_tokens": 827,
+  "created_utc": "2026-09-17T02:39:27Z",
+  "entry_id": 581,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 827,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.4,
+      "prompt_tokens": 1520,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.158,
+      "wall_s": 84.987
+    }
+  ],
+  "job_id": 582,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 475,
+    "root_entry_id": 374
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.\n\nRevise: the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.",
+  "prompt_tokens": 1520,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/581/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/581",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a viscous biological environment where filamentous microbes move through a dynamic flow field. The scene shows thousands of tiny organisms suspended in a deep, flowing medium that exhibits continuous, slow motion. The microbes are influenced by a time-varying vector field that creates the impression of massive depth and constant movement. The visualization uses a grid-based flow field to simulate the complex, structured flow of a biological slurry while maintaining performance within strict frame budget constraints. Each microbe responds to the surrounding flow forces and moves continuously across the canvas without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 84.987
+}
