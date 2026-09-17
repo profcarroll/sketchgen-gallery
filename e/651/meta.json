@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can interactive stovetop. turn the dial and blue natural gas flames ap\u2026\u201d \u2014 sketchgen entry 651, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/651/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a circular stovetop surface resting on a countertop. Visible across the counter, the areas surrounding active burners cast intricate and fluctuating heat patterns. These patterns appear as shimmering, colorful distortions that spread outwards from the glowing burner zones. The visibility, intensity, and specific color of these heat patterns change based on which burners are active, creating a dynamic, luminous wash that suggests intense temperature variation across the counter surface.",
+  "completion_tokens": 1120,
+  "created_utc": "2026-09-17T11:11:29Z",
+  "entry_id": 651,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1120,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.1,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.218,
+      "wall_s": 110.375
+    }
+  ],
+  "job_id": 652,
+  "last_error": "prompt drift",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same circular stovetop surface, and this time the active burners should cast visible heat patterns onto the surrounding countertop.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 563,
+    "root_entry_id": 405
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an interactive stovetop. turn the dial and blue natural gas flames appear on the circular burners.\n\nRevise: the same interactive stovetop surface, and this time the flames should change color with the dial setting\n\nRevise: the same interactive stovetop surface, and this time the metal surrounding the burners should glow red when the flames are running.\n\nRevise: the same circular stovetop surface, and this time the active burners should cast visible heat patterns onto the surrounding countertop.",
+  "prompt_tokens": 2238,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/651/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/651",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic stovetop visualization with realistic heat effects. The circular countertop features four glowing burners that activate heat patterns when the mouse moves near them. These patterns appear as shimmering, colorful distortions that spread outward from active burner zones, with colors shifting based on which burners are active. The technique uses perlin noise to simulate fluid-like movement of the heat waves, creating an organic, living effect across the counter surface. The viewer sees a luminous wash of color that suggests intense temperature variation and realistic thermal dynamics, with the patterns responding both to burner activation and subtle mouse interactions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 110.375
+}
