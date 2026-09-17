@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cuse text to simulate a terminal console running a mysterious computer\u2026\u201d \u2014 sketchgen entry 665, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/665/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a retro, text-based terminal console simulating a cryptic computer program. The text is displayed against a dark background, emitting a subtle amber glow. A detective story unfolds in a monospace format, presenting system messages, narrative fragments, and clues. The user interacts by typing commands into an active input prompt at the bottom of the screen. Each command entered and executed by the user advances the mystery, revealing the next segment of the detective story and influencing the immediate text displayed in the console.",
+  "completion_tokens": 1549,
+  "created_utc": "2026-09-17T12:43:47Z",
+  "entry_id": 665,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1549,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2219,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.232,
+      "wall_s": 132.825
+    }
+  ],
+  "job_id": 666,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same canvas simulates a retro, text-based terminal console, and this time the text should glow a subtle amber color instead of green.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 578,
+    "root_entry_id": 532
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "use text to simulate a terminal console running a mysterious computer program\n\nRevise: write a detective story told through terminal commands just like this\n\nRevise: the same canvas simulates a retro, text-based terminal console, and this time the text should glow a subtle amber color instead of green.",
+  "prompt_tokens": 2219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/665/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/665",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a retro terminal interface that simulates a detective story unfolding through cryptic computer program messages. It features a dark background with amber text glowing subtly, displaying narrative fragments and system messages in a monospace font. The user interacts by clicking to enter commands at the bottom of the screen, which advance the mystery by revealing new segments of the detective story. The interface maintains a still appearance until user interaction triggers visual changes across the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 132.825
+}
