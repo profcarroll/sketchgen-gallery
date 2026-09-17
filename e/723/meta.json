@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 723, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/723/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a cold, atmospheric winter alpine scene characterized by muted blues, whites, and cool grays. The background features massive, snow-draped mountain peaks, while the foreground consists of sharply rendered rock formations. These rocks are interspersed with visible snow drifts, suggesting a recent natural event. The viewer interacts with the scene by clicking; this action triggers an avalanche, causing debris to scatter and deposit fresh snow drifts that settle around and over the existing foreground rock structures.",
+  "completion_tokens": 1345,
+  "created_utc": "2026-09-17T19:13:22Z",
+  "entry_id": 723,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1345,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "prompt_tokens": 2217,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.346,
+      "wall_s": 128.885
+    }
+  ],
+  "job_id": 724,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 664,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.",
+  "prompt_tokens": 2217,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/723/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/723",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene winter alpine landscape dominated by muted blues, whites, and cool grays. The composition features distant snow-draped mountains against a soft blue-gray sky, with sharp rock formations in the foreground. When viewers click at the center of the canvas, an avalanche is triggered that scatters debris and deposits fresh snow drifts over the existing rock structures. The technique uses particle physics to simulate falling snow and debris, with a fixed number of particles that are dynamically updated each frame. The viewer experiences a transformation from still landscape to animated avalanche, demonstrating how a simple interaction can create a dramatic natural event within an otherwise static scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 128.885
+}
