@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 675, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/675/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized cross-section of a tidal zone. Several horizontal bands of color oscillate rhythmically, mimicking the slow, continuous rising and falling of the tide. The visualization is characterized by increased visible turbulence, giving the appearance of chaotic movement within the bands. As the tide changes, the colors shift dramatically, exhibiting sharp gradients and emphasizing the contrast between the different water levels. A specific, darker band marks the high-water line, contrasting sharply with the surrounding zones. The entire visualization continuously moves and reshapes itself without requiring any interaction from the viewer.",
+  "completion_tokens": 579,
+  "created_utc": "2026-09-17T13:42:45Z",
+  "entry_id": 675,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 579,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "prompt_tokens": 1537,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.215,
+      "wall_s": 78.61
+    }
+  ],
+  "job_id": 676,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 589,
+    "root_entry_id": 379
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.",
+  "prompt_tokens": 1537,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/675/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/675",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a stylized tidal zone through oscillating horizontal bands that mimic the slow rise and fall of ocean tides. Each band moves rhythmically with its own speed and turbulence, creating a sense of continuous motion and water dynamics. The visualization emphasizes contrast between different water levels, with one darker band marking the high-water line to clearly distinguish it from surrounding zones. Additional chaotic floating particles enhance the appearance of turbulent movement within the bands. The entire composition continuously evolves without any interaction, fulfilling the requirement for autonomous visual change.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.61
+}
