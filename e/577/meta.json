@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 577, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/577/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with a vast, atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes. The landscape is constantly changing, with gentle movements suggesting wind and falling snow across the icy ground. When the user clicks anywhere on the canvas, a dramatic event occurs: a simulated avalanche sweeps down the slopes. This powerful movement scatters chunks of debris, striking and arranging specific rock formations into the immediate foreground, altering the scene's composition.",
+  "completion_tokens": 1012,
+  "created_utc": "2026-09-17T02:10:50Z",
+  "entry_id": 577,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1012,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.5,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.763,
+      "wall_s": 109.952
+    }
+  ],
+  "job_id": 578,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 472,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.",
+  "prompt_tokens": 2215,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/577/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/577",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene winter landscape of snow-draped alpine peaks rendered with atmospheric depth and subtle animation. The scene features a gradient sky, layered mountain silhouettes, and thousands of falling snow particles that gently drift across the canvas. When clicked, the viewer triggers an avalanche effect that sweeps down the slopes, disrupting the tranquil scene by scattering debris and repositioning rock formations into the foreground. The technique uses p5.js's drawing primitives to create a cohesive winter scene with dynamic elements that respond to user input, all within the performance constraints of a headless environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.952
+}
