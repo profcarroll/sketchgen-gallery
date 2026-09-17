@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca self portrait in three point perspective Revise: the same geometric\u2026\u201d \u2014 sketchgen entry 686, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/686/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a self-portrait rendered in a dramatically abstracted, geometric style. The structure is composed of numerous interlocking, planar facets, which create a sense of deep, carved-out depth. The defining characteristic is the interplay of light and shadow: hyper-defined shadow lines carve into the form, emphasizing the sharpness and angular precision of every meeting edge. The geometry remains fixed, allowing the viewer to study the intense contrast and depth achieved solely through the meticulous definition of negative space and structural planes.",
+  "completion_tokens": 534,
+  "created_utc": "2026-09-17T14:56:18Z",
+  "entry_id": 686,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 534,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 53.5,
+      "prompt_tokens": 1548,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 12.774,
+      "wall_s": 72.171
+    }
+  ],
+  "job_id": 687,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometrically abstracted self-portrait, and this time the interlocking planes emphasize the depth through hyper-defined shadow lines that carve out the geometry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 600,
+    "root_entry_id": 20
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a self portrait in three point perspective\n\nRevise: the same geometrically rendered self-portrait, and this time the interlocking planes reveal subtle shifts in color saturation and reflectivity.\n\nRevise: the same geometrically abstracted self-portrait, and this time the interlocking planes reveal crisp, faceted edges that catch the ambient light dramatically.\n\nRevise: the same geometrically abstracted self-portrait, and this time the interlocking planes emphasize the depth through hyper-defined shadow lines that carve out the geometry.",
+  "prompt_tokens": 1548,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/686/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/686",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a static, geometric self-portrait composed of interlocking cubic facets arranged in 3D space. Each block is positioned and rotated to create a sense of depth and angular complexity, with careful lighting that emphasizes sharp edges and defined shadow boundaries. The composition avoids animation or motion, relying entirely on the arrangement and rendering of solid planes to evoke a sculptural quality. The use of WebGL allows for precise control over lighting and perspective, creating an abstracted yet structured representation that focuses on form and negative space rather than realistic likeness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.171
+}
