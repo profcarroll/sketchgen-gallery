@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201can intricate tangle of wires and cables with animated signals pulsing\u2026\u201d \u2014 sketchgen entry 617, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/617/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an intricate, dense, and complex network of wires and cables suspended in space. These structural components vary greatly in thickness, creating a constantly tangled mesh. Flowing through this structure are luminous data streams\u2014glowing lines of bright, shifting color. These streams move autonomously in a pronounced, rhythmic pulsing pattern. The unique aspect of the visualization is that the luminous pulses travel along every diameter of the cables, regardless of how thick or thin the cable is, creating a continuous, flowing spectacle of energy through the interconnected system.",
+  "completion_tokens": 1927,
+  "created_utc": "2026-09-17T07:20:20Z",
+  "entry_id": 617,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1227,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 55)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 68)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 87)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] depth is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2237,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.212,
+      "wall_s": 119.848
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 700,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 46.4,
+      "prompt_tokens": 2637,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.348,
+      "wall_s": 55.367
+    }
+  ],
+  "job_id": 618,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, dense, and complex network composed of numerous wires and cables, and this time let the luminous data streams occasionally converge and overlap when passing through the cable intersections.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 518,
+    "root_entry_id": 97
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an intricate tangle of wires and cables with animated signals pulsing through\n\nRevise: The same luminous data streams, and this time make the pulsing energy pulses more defined and localized along the thicker cables.\n\nRevise: the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only\n\nRevise: the same luminous data streams, and this time let the pulses move along all cable thicknesses, following an intermittent, rhythmic pattern.\n\nRevise: the same intricate, dense network of wires and cables, and this time ensure the luminous data streams maintain a distinct, visible separation as they pulse through the intersections.\n\nRevise: the same intricate, dense, and complex network composed of numerous wires and cables, and this time let the luminous data streams occasionally converge and overlap when passing through the cable intersections.",
+  "prompt_tokens": 4874,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/617/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/617",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a complex network of suspended cables and data streams in three-dimensional space. The scene features hundreds of cables of varying thicknesses connecting random points in space, forming an intricate mesh structure. Luminous data streams flow continuously along these cables, appearing as glowing pulses that travel the full length of each cable regardless of its thickness. The visualization uses a pulsing animation technique where the streams move rhythmically along the cable paths, creating a sense of continuous energy flowing through the interconnected system. The entire scene rotates slowly to provide a comprehensive view of this three-dimensional network structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 175.215
+}
