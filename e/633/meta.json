@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cagentic ai on retro nokia n900, focus on camera Revise: the same view\u2026\u201d \u2014 sketchgen entry 633, prompted by milindanand13, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/633/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a simulated retro camera viewfinder, mimicking the aesthetics of an early 2000s mobile phone screen. The center view is dominated by a continuous, rapidly changing background field that flickers digitally. This background instability is the core visual element, displaying a high-frequency, increasingly disruptive pattern of light and color shifts. The flickering effect should visibly increase in speed and intensity as the sketch runs, giving the impression of an unstable or struggling piece of technology capturing an environment.",
+  "completion_tokens": 662,
+  "created_utc": "2026-09-17T09:04:34Z",
+  "entry_id": 633,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 662,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 31.6,
+      "prompt_tokens": 1523,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.952,
+      "wall_s": 77.935
+    }
+  ],
+  "job_id": 634,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same viewfinder, and this time the simulated background flicker increases in speed and visibility.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 542,
+    "root_entry_id": 542
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "agentic ai on retro nokia n900, focus on camera\n\nRevise: the same viewfinder, and this time the simulated background flicker increases in speed and visibility.",
+  "prompt_tokens": 1523,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/633/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/633",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a retro camera viewfinder from an early 2000s mobile phone, capturing the visual instability of outdated technology. The core aesthetic is created through a rapidly shifting, high-frequency noise-based background that flickers and distorts across the screen. As time progresses, the intensity and speed of these distortions increase, mimicking a device struggling to capture its environment. The effect is achieved using Perlin noise to generate dynamic color patterns, combined with periodic glitch-like visual artifacts and subtle canvas shifts that simulate physical instability. The viewer observes an increasingly chaotic yet controlled digital disturbance that evokes the aesthetic of aging tech attempting to process reality.",
+  "submitted_by": "milindanand13",
+  "wall_s": 77.935
+}
