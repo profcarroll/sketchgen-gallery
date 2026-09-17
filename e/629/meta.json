@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 629, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/629/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, aerial view of a densely packed cityscape rendered in a limited, monochromatic color palette. The composition is dominated by countless flowing light streaks that traverse the scene. These streaks constantly intersect, and at every major crossing point, they stabilize into defined, geometrically precise starburst patterns. The entire panorama is perpetually active, presenting a dynamic flow of interconnected light forms across the urban grid.",
+  "completion_tokens": 919,
+  "created_utc": "2026-09-17T08:39:44Z",
+  "entry_id": 629,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 919,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.9,
+      "prompt_tokens": 1510,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.717,
+      "wall_s": 84.267
+    }
+  ],
+  "job_id": 630,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, monochromatic aerial panorama of an urban cityscape, and this time the intersecting light streaks will form defined, repeating starburst patterns at every major intersection point.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 536,
+    "root_entry_id": 199
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: create a monochromatic version\n\nRevise: the same abstract, monochromatic aerial panorama of an urban cityscape, and this time the intersecting light streaks will form defined, repeating starburst patterns at every major intersection point.",
+  "prompt_tokens": 1510,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/629/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/629",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an abstract, aerial view of a bustling cityscape using a monochromatic color palette dominated by flowing light streaks. The composition features countless streaks that move dynamically across the canvas, constantly intersecting with one another. When streaks cross paths, they stabilize into geometric starburst patterns, creating a sense of energetic connectivity throughout the urban grid. The visual effect is achieved through particle-based motion where each streak has its own velocity and lifespan, and upon collision, triggers a temporary starburst pattern. The entire scene is perpetually active, with no static elements, ensuring continuous visual change as required by the gate's testing criteria.",
+  "submitted_by": "profcarroll",
+  "wall_s": 84.267
+}
