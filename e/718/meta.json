@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cselling sand at the beach Revise: the same sand pile, and this time i\u2026\u201d \u2014 sketchgen entry 718, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/718/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a gentle, mound-like accumulation of pale yellow sand, detailed with naturally scattered and varied seashells. The surface presents a textured landscape, but the visual focus is also drawn to subsurface stratification lines, which reveal underlying geological layers beneath the top layer. The composition is a study in detail, allowing the viewer to appreciate the subtle color shifts in the shells and the granular depth of the sand, understanding the hidden layers within the mound.",
+  "completion_tokens": 1457,
+  "created_utc": "2026-09-17T18:37:53Z",
+  "entry_id": 718,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 767,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 29)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 49)\n\ngate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] sandPoints is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2215,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.242,
+      "wall_s": 93.896
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 690,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 72.9,
+      "prompt_tokens": 2463,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 16.323,
+      "wall_s": 51.679
+    }
+  ],
+  "job_id": 719,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same mound of pale yellow sand and scattered seashells, and this time revealing evidence of subtle subsurface stratification lines beneath the surface layer.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 659,
+    "root_entry_id": 364
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "selling sand at the beach\n\nRevise: the same sand pile, and this time incorporating delicate, translucent shells scattered among the pale yellow sand.\n\nRevise: the same sand pile, and this time highlighting the subtle differences in color and size among the assorted seashells.\n\nRevise: the same mound of sand and shells, and this time giving the shells a more random, natural scattering pattern.\n\nRevise: the same gentle mound of pale yellow sand and scattered seashells, and this time highlighting the subtle variation in shell hues and the granular texture of the sand.\n\nRevise: the same mound of pale yellow sand and scattered seashells, and this time revealing evidence of subtle subsurface stratification lines beneath the surface layer.",
+  "prompt_tokens": 4678,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/718/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/718",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene geological formation: a gentle sand mound with embedded seashells, rendered in a stylized yet detailed manner. The composition explores the contrast between surface texture and hidden depth through layered visual elements. The pale yellow sand particles form a soft, undulating surface that subtly shifts under the viewer's gaze as the camera slowly rotates. Embedded within this landscape are scattered shells of varying sizes, each contributing to the granular texture while maintaining their individual presence. The geological layers beneath the surface are revealed through translucent spherical forms that suggest sedimentary strata, creating an illusion of depth and hidden history. This piece emphasizes the beauty found in natural accumulation and the interplay between visible surfaces and concealed structures, inviting contemplation on the passage of time and the stories embedded within geological formations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 145.575
+}
