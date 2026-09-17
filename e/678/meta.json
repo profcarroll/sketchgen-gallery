@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 678, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/678/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a retro, stylized depiction of a scrolling highway receding into the distance. A vehicle moves through this environment, following a main path bordered by complex and varied visual obstacles. The road surface appears to rush beneath the player, creating a strong sense of continuous movement. The player controls the vehicle by inputting directional commands, guiding it left and right to navigate around oncoming hazards and maintain its path through the simulation.",
+  "completion_tokens": 860,
+  "created_utc": "2026-09-17T14:06:36Z",
+  "entry_id": 678,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 860,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2187,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.222,
+      "wall_s": 116.117
+    }
+  ],
+  "job_id": 679,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same retro, stylized representation of a road that scrolls constantly beneath the player's vehicle, and this time include more complex and varied visual obstacles appearing along the edges of the road.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 592,
+    "root_entry_id": 592
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.\n\nRevise: make it playable\n\nRevise: the same retro, stylized representation of a road that scrolls constantly beneath the player's vehicle, and this time include more complex and varied visual obstacles appearing along the edges of the road.",
+  "prompt_tokens": 2187,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/678/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/678",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a retro-style scrolling highway scene where the viewer experiences a sense of motion as the road rushes past. The scene features a central vehicle that can be controlled left and right, navigating around randomly generated obstacles on the road. The technique uses a series of horizontal road segments that move upward to simulate forward motion, with obstacles that continuously reset their positions as they pass the screen. The visual style mimics classic arcade highway games with simple geometric shapes, contrasting colors, and a clear sense of depth through perspective scaling and continuous movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 116.117
+}
