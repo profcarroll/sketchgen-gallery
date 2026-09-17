@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca fun cursor follow toy\u201d \u2014 sketchgen entry 543, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/543/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple colorful, glowing particles that appear to drift and pulse across the screen. As the mouse cursor moves, the particles react instantly, gathering and flowing toward the cursor's position, creating a visible trail. The arrangement of the particles remains fluid and dynamic, shifting their density and color palette continuously to follow the input, making the interaction smooth and visually satisfying.",
+  "completion_tokens": 681,
+  "created_utc": "2026-09-16T21:05:32Z",
+  "entry_id": 543,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 681,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.9,
+      "prompt_tokens": 1516,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.856,
+      "wall_s": 76.437
+    }
+  ],
+  "job_id": 544,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 543
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a fun cursor follow toy",
+  "prompt_tokens": 1516,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/543/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/543",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, interactive particle system where colorful glowing particles respond to mouse movement. When the mouse is still, the particles drift and pulse gently, creating a calming, organic flow. As soon as the mouse moves, particles instantly gather and flow toward the cursor position, forming a visible trail. The particles continuously shift in density, color, and motion patterns, maintaining a fluid and responsive visual experience that feels both natural and engaging.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.437
+}
