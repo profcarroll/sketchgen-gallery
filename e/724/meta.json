@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cuse text to simulate a terminal console running a mysterious computer\u2026\u201d \u2014 sketchgen entry 724, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/724/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a retro, text-based terminal console, characterized by a subtle amber glow. The screen simulates the operation of a mysterious computer program that narrates a detective story through sequential system messages and terminal commands. The text flows automatically, revealing the story's progress. Periodically, the system output will exhibit a controlled, visual glitch effect while the continuous stream of text updates across the screen.",
+  "completion_tokens": 1112,
+  "created_utc": "2026-09-17T19:19:27Z",
+  "entry_id": 724,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1112,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2180,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.224,
+      "wall_s": 114.988
+    }
+  ],
+  "job_id": 725,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same retro, text-based terminal console, and this time the system messages should periodically flicker with a glitch effect.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 665,
+    "root_entry_id": 532
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "use text to simulate a terminal console running a mysterious computer program\n\nRevise: write a detective story told through terminal commands just like this\n\nRevise: the same canvas simulates a retro, text-based terminal console, and this time the text should glow a subtle amber color instead of green.\n\nRevise: the same retro, text-based terminal console, and this time the system messages should periodically flicker with a glitch effect.",
+  "prompt_tokens": 2180,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/724/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/724",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a retro terminal interface with an amber glow effect that simulates a mysterious detective investigation system. The program automatically generates a sequence of system messages and commands that unfold the story of a missing persons case, displaying them in real-time on screen. Periodically, the system output is disrupted by visual glitches\u2014random character substitutions\u2014that mimic hardware malfunctions or data corruption during intense processing. The viewer observes an evolving narrative through terminal-style text output, with the occasional visual disruption adding tension and atmosphere to the detective story being told.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.988
+}
