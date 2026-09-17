@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same vi\u2026\u201d \u2014 sketchgen entry 747, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/747/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a loom setup where visible, cross-directional threads are actively weaving into complex arrangements. Colour and tension are the primary elements, with threads crossing and intertwining in real-time. The motion is constant, depicting the fluid, generative act of weaving. As the process continues, the newly formed intersections of the threads momentarily stabilize, causing the threads to resolve into distinct, repeating, geometric motifs\u2014squares, diamonds, and triangles\u2014before the weaving action pulls them into the next iteration. The pattern is always evolving, displaying the potential of structured art emerging from randomized movement.",
+  "completion_tokens": 1530,
+  "created_utc": "2026-09-17T21:57:07Z",
+  "entry_id": 747,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1530,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "prompt_tokens": 2219,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.556,
+      "wall_s": 133.602
+    }
+  ],
+  "job_id": 748,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same visible weaving process, and this time the formed thread intersections must momentarily stabilize into repeating, discernible geometric motifs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 701,
+    "root_entry_id": 701
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same visible weaving process, and this time the formed thread intersections must momentarily stabilize into repeating, discernible geometric motifs.",
+  "prompt_tokens": 2219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/747/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/747",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the generative process of weaving through a system of animated threads that move and interact within a loom. Each thread has its own color, tension, and movement pattern, creating an organic flow that resembles the fluid motion of fabric being woven. As threads cross paths and form connections, they temporarily stabilize into geometric motifs like squares, diamonds, and triangles before continuing their weaving dance. The system uses spatial hashing to efficiently manage thread interactions and maintain performance, while the color palette shifts over time to create evolving visual patterns. The constant motion of the threads, punctuated by moments of stabilization, captures the dynamic tension between chaos and order inherent in the weaving process.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.602
+}
