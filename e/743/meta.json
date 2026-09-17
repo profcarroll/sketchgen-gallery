@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cDraw me a picture of HAL-2000 from the motion picture \u201c2001: A Space\u2026\u201d \u2014 sketchgen entry 743, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/743/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a highly detailed and stylized portrait of a complex, humanoid mechanical structure, representing HAL-2000. The primary colors are metallic grays, deep blacks, and various tarnished tones, emphasized by intricate structural seams and panels. The mechanical face is characterized by a patina of operational wear, including subtle scratches, degradation marks, and visible panel misalignment. The composition is a fixed, detailed depiction of the machine\u2019s form, designed to appear static and observational, without any required input or movement changing the visible surface.",
+  "completion_tokens": 1039,
+  "created_utc": "2026-09-17T21:26:16Z",
+  "entry_id": 743,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1039,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1530,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.153,
+      "wall_s": 95.865
+    }
+  ],
+  "job_id": 744,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly detailed, stylized portrait of the mechanical structure of HAL-2000, and this time subtle signs of operational wear and panel degradation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 691,
+    "root_entry_id": 607
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Draw me a picture of HAL-2000 from the motion picture \u201c2001: A Space Odyssey\u201d\n\nRevise: the same detailed, stylized portrait of HAL-2000, and this time visible structural seams defining the panel joints.\n\nRevise: the same highly detailed, stylized portrait of the mechanical structure of HAL-2000, and this time subtle signs of operational wear and panel degradation.",
+  "prompt_tokens": 1530,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/743/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/743",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a static, highly detailed mechanical portrait of HAL-2000, a humanoid machine characterized by metallic grays, deep blacks, and tarnished tones. The composition captures operational wear through subtle scratches, panel misalignments, and structural seams, rendered in a fixed, observational form. Using only p5's core API and avoiding any motion or sound, the work presents an unchanging yet intricate visualization of a complex mechanical structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.865
+}
