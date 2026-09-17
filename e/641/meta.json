@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 641, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/641/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a large, constantly shifting lattice of interconnected, glowing cells. This field of life is dynamic, with cells continually being born, decaying, and dissipating. When a new cell appears, it glows softly, illuminating the thin connection lines that link it to its neighbors. When a cell expires, it flares brightly before dissolving into a fading trail of residual light. The entire simulation is set against a dark background that pulses rhythmically, emphasizing the life cycle within the pattern. The visualization evolves autonomously, requiring no user input.",
+  "completion_tokens": 783,
+  "created_utc": "2026-09-17T10:00:37Z",
+  "entry_id": 641,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 783,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.3,
+      "prompt_tokens": 2213,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.789,
+      "wall_s": 96.764
+    }
+  ],
+  "job_id": 642,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamically shifting lattice of interconnected, glowing cells, and this time expired cells dissipate into trails of residual light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 550,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.\n\nRevise: the same dynamically shifting lattice of interconnected, glowing cells, and this time expired cells dissipate into trails of residual light.",
+  "prompt_tokens": 2213,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/641/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/641",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a dynamic lattice of glowing cells that continuously birth, grow, and decay in an endless cycle. The simulation creates a mesmerizing field of interconnected particles where new cells emerge with soft glows, linking to nearby neighbors through thin connecting lines. As cells mature and begin to decay, they flare brightly before dissolving into fading trails of light. The entire scene pulses rhythmically against a dark background, emphasizing the organic life cycle within the pattern. The visualization evolves autonomously without any user input, creating an immersive, ever-changing display that feels both mechanical and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.764
+}
