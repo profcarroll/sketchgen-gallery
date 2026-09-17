@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca fun cursor follow toy Revise: the same particle system, and this ti\u2026\u201d \u2014 sketchgen entry 634, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/634/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with colorful, glowing particles that trail behind the cursor, forming a visible, dissipating wake. As the viewer moves the cursor across the screen, a continuous cloud of particles is generated, leaving a glowing, curved structure in its immediate wake. If the cursor remains stationary, the particles generated will slowly fade and dissipate over time, leaving the canvas surface to gradually darken as the wake fades entirely.",
+  "completion_tokens": 1471,
+  "created_utc": "2026-09-17T09:10:20Z",
+  "entry_id": 634,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 553,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1526,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.332,
+      "wall_s": 67.694
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 483,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1642,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.314,
+      "wall_s": 32.529
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 435,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1642,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.291,
+      "wall_s": 19.37
+    }
+  ],
+  "job_id": 635,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same particle system, and this time the particles organize into a visible, dissipating wake directly trailing the cursor.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 543,
+    "root_entry_id": 543
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a fun cursor follow toy\n\nRevise: the same particle system, and this time the particles organize into a visible, dissipating wake directly trailing the cursor.",
+  "prompt_tokens": 4810,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/634/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/634",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a glowing particle trail that follows the cursor's movement, with particles dissipating over time. The visual effect is achieved through a particle system where new particles are generated at the cursor position when pressed, and each particle has its own velocity, size, and fading alpha value. The background uses a semi-transparent fill to create a trailing fade effect, while particles themselves gradually lose opacity and shrink until they disappear entirely. The system dynamically manages particle lifecycle to maintain performance within the frame budget constraints, producing a continuous, colorful wake that responds to cursor motion but also fades naturally when idle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.593
+}
