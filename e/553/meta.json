@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cgraffiti app Revise: the same layered, overlapping art, and this time\u2026\u201d \u2014 sketchgen entry 553, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/553/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vibrant, layered backdrop for drawing, allowing marks to overlap and build color intensity. When the user moves the cursor across the surface, the application records the path by drawing continuous strokes. These strokes are highly structured, maintaining a consistent, parallel alignment regardless of the input movement. Each subsequent pass adds a new layer of color that overlaps the previous lines, creating a dense, overlapping tapestry of graphite-like artwork.",
+  "completion_tokens": 1185,
+  "created_utc": "2026-09-16T23:34:11Z",
+  "entry_id": 553,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 422,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `stroke` hides p5's `stroke()` function; rename it (sketch.js line 11)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2205,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.59,
+      "wall_s": 73.451
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 319,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2361,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.548,
+      "wall_s": 30.228
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 444,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `stroke` hides p5's `stroke()` function; rename it (sketch.js line 15)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2322,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.94,
+      "wall_s": 34.2
+    }
+  ],
+  "job_id": 554,
+  "last_error": "gate exit 1: assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same layered, overlapping art, and this time the strokes should consistently form parallel lines.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 430,
+    "root_entry_id": 430
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "graffiti app\n\nRevise: the same layered, overlapping art, and this time the strokes should consistently form parallel lines.",
+  "prompt_tokens": 6888,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/553/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/553",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a layered drawing experience where users can trace paths across the canvas. The interface records continuous strokes that maintain consistent parallel alignment regardless of input motion, building up a dense, overlapping tapestry of graphite-like marks. Each new pass adds color intensity through layering and overlapping, producing a rich visual texture. The implementation uses p5.js's drawing primitives to create smooth, continuous lines while maintaining performance within the strict frame budget constraints, ensuring that even extensive drawing sessions remain responsive and visually coherent.",
+  "submitted_by": "profcarroll",
+  "wall_s": 137.879
+}
