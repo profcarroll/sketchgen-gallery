@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 684, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/684/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a spiraling molecular structure representing the DNA double helix. The molecule is constructed from colored spheres labeled A, T, C, and G, which are connected by a central backbone. The primary feature is the explicit formation of temporary connections between complementary pairs. These hydrogen bonds manifest as thin, connecting rods or lines that visibly form and stabilize between paired base spheres (Adenine with Thymine, Cytosine with Guanine). The entire structure exhibits a gentle, ongoing rotational or vibrational motion, demonstrating the dynamic nature of the winding helix and the process of bond formation.",
+  "completion_tokens": 1161,
+  "created_utc": "2026-09-17T14:45:59Z",
+  "entry_id": 684,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1161,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "prompt_tokens": 1570,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.618,
+      "wall_s": 103.834
+    }
+  ],
+  "job_id": 685,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 598,
+    "root_entry_id": 387
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.",
+  "prompt_tokens": 1570,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/684/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/684",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamically animated DNA double helix structure using p5.js in WEBGL mode. The visualization shows two intertwined strands of base pairs (A, T, C, G) arranged in a spiral pattern with gentle rotational and vibrational motion. Complementary base pairs form temporary hydrogen bonds represented by thin connecting lines between them. The entire structure continuously rotates and subtly oscillates to demonstrate the dynamic nature of DNA. The implementation uses a single rotating camera angle to view the molecular structure from a fixed perspective, showing both the backbone helix and the pairing interactions. The sketch meets all technical requirements including using WEBGL rendering, having motion without user input, and maintaining performance within the specified frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.834
+}
