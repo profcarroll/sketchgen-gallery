@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cerecting a skyscraper Revise: the same vertical, three-dimensional ci\u2026\u201d \u2014 sketchgen entry 680, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/680/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously ascending, stacked cityscape rendered in three dimensions. Segments rise vertically, varying dramatically in their cross-section shapes\u2014some narrow and spire-like, others broad and monumental\u2014while maintaining a constant, cumulative structure. The architecture is composed of muted industrial tones that deepen as the structure ascends. The cityscape is constantly, automatically evolving, simulating the relentless passage of time and continuous construction. A click anywhere on the canvas triggers the addition of the next structural segment, adding complexity and height to the ever-growing vertical monument.",
+  "completion_tokens": 959,
+  "created_utc": "2026-09-17T14:19:30Z",
+  "entry_id": 680,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 959,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "prompt_tokens": 1579,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.095,
+      "wall_s": 97.47
+    }
+  ],
+  "job_id": 681,
+  "last_error": "lacks visual cohesion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, rising cityscape, and this time the segments must vary in cross-section shape while maintaining a consistent, stacked arrangement.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 594,
+    "root_entry_id": 363
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "erecting a skyscraper\n\nRevise: the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.\n\nRevise: the same continuous, rising cityscape, and this time the segments must vary in cross-section shape while maintaining a consistent, stacked arrangement.",
+  "prompt_tokens": 1579,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/680/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/680",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a continuously evolving, three-dimensional cityscape composed of stacked architectural segments that grow upward from the viewer's perspective. Each segment varies in width, depth, and height, creating a sense of dynamic construction and vertical progression. The color palette shifts gradually through muted industrial tones as the structure ascends, using HSB color mode to maintain visual coherence. The scene automatically evolves over time with new segments added periodically, simulating continuous urban development. A click anywhere on the canvas triggers an immediate addition of a new structural element, increasing complexity and height. The rendering uses WebGL for 3D capabilities, ensuring smooth performance within the frame budget constraints while maintaining visual fidelity across the entire composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.47
+}
