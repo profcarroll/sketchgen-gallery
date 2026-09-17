@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca clock with no numbers that still tells the time\u201d \u2014 sketchgen entry 700, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/700/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perfect circle, filled with a muted, consistent color. Superimposed on this circle are two circular hands that pivot around the center point. These hands are minimalist in design, representing hours and minutes. The hands rotate constantly and smoothly, maintaining their relative distances from each other while sweeping across the face of the clock to accurately depict the passage of time. No user interaction is required to observe this continuous motion.",
+  "completion_tokens": 426,
+  "created_utc": "2026-09-17T16:37:40Z",
+  "entry_id": 700,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 426,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2186,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.195,
+      "wall_s": 74.33
+    }
+  ],
+  "job_id": 701,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time",
+  "prompt_tokens": 2186,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/700/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/700",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a minimalist analog clock with smoothly rotating hour and minute hands. The design uses simple geometric shapes to represent the clock face and hands, with the hour hand positioned at a longer distance from the center than the minute hand. The hands rotate continuously, accurately reflecting the passage of time through their proportional movement. The muted color palette and clean lines create a calm visual experience that emphasizes the steady flow of time without unnecessary decoration or complexity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.33
+}
