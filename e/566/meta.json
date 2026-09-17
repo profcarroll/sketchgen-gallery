@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 566, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/566/ Licensed CC BY 4.0.",
+  "brief": "A highly reflective sphere, representing a marble, travels through a rigid, funnel-shaped channel rendered in a complex, sculptural material. The environment is viewed in three dimensions, showing the passage narrowing and widening as the marble proceeds. The marble\u2019s motion is governed by physical simulation, bouncing naturally off the channel walls. As it progresses, the path is forced through alternating, intersecting ridges and deep troughs that abruptly shift the marble's trajectory, causing it to deviate sharply from its initial forward path in visible lateral movements before settling back into the flow.",
+  "completion_tokens": 974,
+  "created_utc": "2026-09-17T01:00:04Z",
+  "entry_id": 566,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 974,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.6,
+      "prompt_tokens": 1560,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 10.886,
+      "wall_s": 93.657
+    }
+  ],
+  "job_id": 567,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs force the marble into sudden, visible lateral deviations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 461,
+    "root_entry_id": 127
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope gradually curves inward toward the exit.\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope widens and flattens into a collecting basin at the exit.\n\nRevise: The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.\n\nRevise: the same funnel-shaped channel, and this time the shallow basin widens and deepens significantly at the exit.\n\nRevise: the same complex, funnel-shaped channel, and this time the initial slope features abrupt shifts in curvature and requires a momentary pause.\n\nRevise: the same complex, solid, funnel-shaped channel, and this time the structure incorporates small, alternating intersecting ridges and troughs forcing the marble into constant, minute course corrections.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs force the marble into sudden, visible lateral deviations.",
+  "prompt_tokens": 1560,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/566/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/566",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a three-dimensional simulation of a marble rolling through a sculptural funnel channel. The environment is rendered using WebGL for 3D graphics, with the marble's motion governed by simple physics including gravity and collision detection with the channel walls. The channel itself is a complex, curved path that narrows and widens as it progresses, punctuated by alternating ridges and troughs that force the marble to bounce and change direction unpredictably. The viewer observes the marble's journey through this dynamic landscape, seeing how its trajectory shifts dramatically when encountering the sculptural obstacles before settling back into the flow of the channel. The scene rotates slowly to show the full complexity of the three-dimensional space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 93.657
+}
