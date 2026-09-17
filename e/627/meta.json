@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdiagonal stripes animating in smoothly eased slicing patterns in colo\u2026\u201d \u2014 sketchgen entry 627, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/627/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, dynamic abstract composition composed entirely of bold, intersecting bands of color. These geometrical bands perpetually shift, warp, and reconfigure across the surface. The movement is relentless and fluid, creating a perpetually changing sense of depth and structure. The color palette cycles through vibrant hues, maintaining a distinct, retro aesthetic, while the defining visual feature is the sharp geometry: the bands transition sharply from one state to the next, defined by hard, angular corners rather than soft curves or smooth gradients.",
+  "completion_tokens": 542,
+  "created_utc": "2026-09-17T08:24:55Z",
+  "entry_id": 627,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 542,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2206,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.254,
+      "wall_s": 79.638
+    }
+  ],
+  "job_id": 628,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously shifting abstraction of bold geometry, and this time the bands warp with sharp, defined corners instead of smoothly transitioning edges",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 534,
+    "root_entry_id": 12
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures\n\nRevise: try a new color pallete\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the bands warp with sharp, defined corners instead of smoothly transitioning edges",
+  "prompt_tokens": 2206,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/627/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/627",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, abstract composition using geometric bands that continuously shift and reconfigure across the canvas. The bands are defined by sharp angular polygons that morph in real-time through sinusoidal distortion effects, creating an ever-changing sense of depth and structure. Each band moves independently with its own rotation speed and color hue, cycling through a vibrant retro palette. The composition maintains a bold, high-contrast aesthetic while delivering fluid motion that keeps the viewer engaged without any external input or user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.638
+}
