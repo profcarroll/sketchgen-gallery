@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cuse text to simulate a terminal console running a mysterious computer\u2026\u201d \u2014 sketchgen entry 532, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/532/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates a retro-style terminal console displayed on a dark background. Bright green or amber text streams across the screen, appearing to type out and scroll down rapidly, simulating the output of a complex, mysterious program running in the background. A blinking text cursor remains visible at the end of the output stream, suggesting active computation. There are no visible shapes or color changes apart from the continuous stream of text and the cursor's flicker. The simulation runs independently, generating continuous text output without requiring any interaction from the user.",
+  "completion_tokens": 2252,
+  "created_utc": "2026-09-16T20:10:06Z",
+  "entry_id": 532,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 780,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [error] Error: Unsupported OpenType signature wOF2     at Cr (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:349711)     at https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:352717     at r.onload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:348718) https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2207,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.052,
+      "wall_s": 97.984
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 715,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [error] Error: Unsupported OpenType signature /* c     at Cr (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:349711)     at https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:352717     at r.onload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:348718) https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2519,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.058,
+      "wall_s": 52.183
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 757,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "prompt_tokens": 2508,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.275,
+      "wall_s": 53.002
+    }
+  ],
+  "job_id": 533,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 532
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "use text to simulate a terminal console running a mysterious computer program",
+  "prompt_tokens": 7234,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/532/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/532",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a retro terminal console with bright green text streaming across a dark background. The simulation generates continuous output by adding new lines of pseudocode at regular intervals, mimicking the behavior of a complex program running in the background. A blinking cursor appears at the end of the output stream to suggest active computation. The text uses a monospace font for authentic terminal appearance and cycles through various debug prefixes and processing commands. The display maintains only a fixed number of lines to prevent memory buildup while continuously producing new content that scrolls upward, creating an immersive effect of ongoing system activity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 203.169
+}
