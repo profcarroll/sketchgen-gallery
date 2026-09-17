@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca series of musical notes flying across a music sheet floating in the\u2026\u201d \u2014 sketchgen entry 604, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/604/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a floating, translucent sheet of musical staves that acts as the backdrop. Numerous brightly colored musical notes continuously drift and fly across these staves in various directions. The notes themselves appear to glow and pulse as they travel, maintaining a graceful, rhythmic flow. The entire visual display reacts to ambient sound, causing the notes to change speed and flare in intensity according to the music being played through the microphone.",
+  "completion_tokens": 2702,
+  "created_utc": "2026-09-17T05:52:38Z",
+  "entry_id": 604,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 820,
+      "evidence": "gate exit 1: checks failed: audio_context_running; assertions failed: responds(audio)\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.1913/255 (threshold 1.0), 7628 of 1152000 pixels changed = 0.66% (threshold 2%); mean canvas brightness 23.931 under 440 Hz vs 23.932 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.2,
+      "prompt_tokens": 2217,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.387,
+      "wall_s": 98.73
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1004,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "prompt_tokens": 2419,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.161,
+      "wall_s": 66.296
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 878,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 2321,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.121,
+      "wall_s": 57.059
+    }
+  ],
+  "job_id": 605,
+  "last_error": "gate exit 1: checks failed: audio_context_running",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "Add sound so this is musical",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 564,
+    "root_entry_id": 564
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a series of musical notes flying across a music sheet floating in the air\n\nRevise: Add sound so this is musical",
+  "prompt_tokens": 6957,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/604/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/604",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a mesmerizing musical backdrop with floating staves that serve as a translucent foundation for animated musical notes. The notes drift and float across the screen in graceful trajectories, pulsing with glowing intensity as they move. The entire composition responds dynamically to ambient sound through a microphone input, causing the notes to change their speed and luminosity based on audio levels. The visual effect captures the rhythmic flow of music through abstract, flowing particles that maintain a sense of musicality while reacting organically to environmental sounds.",
+  "submitted_by": "profcarroll",
+  "wall_s": 222.085
+}
