@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca marble race game on an isometric 3D course, move the marble to the\u2026\u201d \u2014 sketchgen entry 729, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/729/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an isometric view of a multi-lane racetrack. Several spheres, representing marbles, navigate the course, moving with varying speeds toward a designated goal. The track itself is grounded in bright, solid colors, while the primary action is defined by light. As each marble rolls, it leaves behind a glowing, ephemeral trail of vibrant light that fades quickly, marking its path. The entire scene is animated, showing the constant movement of the competitive race and the formation and decay of the light trails. No direct input is required; the race unfolds automatically, drawing the viewer\u2019s attention to the dynamic, illuminated ballet of the marbles.",
+  "completion_tokens": 1125,
+  "created_utc": "2026-09-17T20:00:25Z",
+  "entry_id": 729,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1125,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "prompt_tokens": 2258,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.554,
+      "wall_s": 115.25
+    }
+  ],
+  "job_id": 730,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same isometric, multi-lane racetrack hosting a competitive marble race, and this time the marbles leave a glowing, transient trail of light in their wake.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 671,
+    "root_entry_id": 435
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a marble race game on an isometric 3D course, move the marble to the goal before the timer runs out\n\nRevise: the same multi-lane race course, and this time the marble leaves a temporary trail of sparkly residue\n\nRevise: the same isometric view of a multi-lane race course for a marble, and this time the marble leaves a visible, solid bioluminescent path instead of sparkly residue\n\nRevise: the same isometric view of a multi-lane race course for a marble, and this time the bioluminescent path also attracts and glows from scattered iridescent specks of debris.\n\nRevise: the same isometric, multi-lane racetrack hosting a competitive marble race, and this time the marbles leave a glowing, transient trail of light in their wake.",
+  "prompt_tokens": 2258,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/729/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/729",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an isometric view of a multi-lane racetrack where marbles race autonomously, leaving behind glowing light trails that fade over time. The visualization uses WebGL rendering to create a three-dimensional perspective with bright, solid colors for the track and goal area. Each marble moves independently with varying speeds, following a dynamic path across the course while maintaining its own trail of luminous particles. The scene animates continuously without user input, showing the constant motion and formation of light trails that mark each marble's journey toward the goal. The visual effect emphasizes the competitive nature of the race through the interplay of movement, color, and the ephemeral quality of the glowing paths.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.25
+}
