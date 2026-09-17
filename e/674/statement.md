@@ -1,0 +1,1 @@
+This sketch creates a mesmerizing field of particles that orbit smoothly around a central point, each leaving behind a fading trail. The motion is continuous and autonomous, with no external input required. Particles follow nearly perfect circular paths while their visual trails dissipate over time, creating an intricate, hypnotic display of motion and color.
