@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 538, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/538/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously evolving, intricate kaleidoscopic pattern contained within a defined hexagonal boundary. The visualization maintains a highly contrasting relationship between flowing, organic curves and sharply defined geometric lines. Within this structure, specific areas of color\u2014the \"stationary pockets\"\u2014become increasingly prominent. These self-contained, defined zones of color actively expand outward from their initial state, subtly growing larger and establishing distinct, cohesive fields of color within the overall mesmerizing flow.",
+  "completion_tokens": 2701,
+  "created_utc": "2026-09-16T20:39:20Z",
+  "entry_id": 538,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1290,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 95)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 129.5 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 129.5,
+      "prompt_tokens": 2193,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 21.515,
+      "wall_s": 118.606
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1411,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.5,
+      "prompt_tokens": 2392,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.348,
+      "wall_s": 88.034
+    }
+  ],
+  "job_id": 539,
+  "last_error": "lacks visual cohesion, derivative",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate kaleidoscope pattern within a hexagonal boundary, and this time the stationary pockets defined by the geometric lines will expand, creating larger, self-contained areas of color.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 313,
+    "root_entry_id": 18
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same intricate, flowing patterns that mimic the rich complexity of a kaleidoscope, and this time the colors will gradient from cool emeralds to warm amethysts\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the movement will emphasize diagonal sweeps and a cyclical expansion outward from the center\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the pattern will incorporate interwoven lines that intersect the primary hexagonal boundary\n\nRevise: the same intricate, flowing kaleidoscope pattern, and this time the interwoven lines will define sharp, contrasting geometric segments throughout the entire interior space\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the contrast between the curved flow and the sharp geometric segments will become highly contrasting and defined.\n\nRevise: the same intricate kaleidoscopic pattern, and this time the geometric segments will begin to form crystalline, interlocking lattices where they meet the flowing curves.\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the crystalline lattices will appear to pulse with a rhythmic, contained energy.\n\nRevise: the same intricate, continuously evolving pattern derived from a kaleidoscope, and this time the sharp geometric segments will expand to form defined, interlocking tessellations across the entire interior.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the geometric segments will actively resist the flow, creating sudden, defined areas of spatial stagnation.\n\nRevise: the same intricate kaleidoscope pattern within a hexagonal boundary, and this time the stationary pockets defined by the geometric lines will expand, creating larger, self-contained areas of color.",
+  "prompt_tokens": 4585,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/538/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/538",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing kaleidoscopic pattern within a hexagonal boundary using a blend of organic particle motion and geometric constraints. Particles flow continuously with subtle velocity changes, bouncing realistically off the hexagon's edges through vector reflection. The visualization balances flowing curves with sharp geometric lines, creating a dynamic interplay between chaos and order. Self-contained \"stationary pockets\" emerge as defined color zones that gradually expand outward from their initial positions, establishing cohesive fields of color within the overall flow. These expanding pockets maintain high contrast against the particle field, creating focal points that grow and evolve over time while the underlying motion continues uninterrupted. The technique uses efficient rendering with batched lines for connections and optimized particle updates to maintain performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 206.64
+}
