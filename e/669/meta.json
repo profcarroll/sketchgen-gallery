@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 669, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/669/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dynamic, cross-sectional view of a combustion engine's core mechanisms. Viewers observe multiple pistons moving rhythmically within their cylinders. The cycle is continuous: colored fluids visibly flow into and out of the chambers through actuated intake and exhaust valves, timed with the movement of the connecting rods. The movement culminates in a simulated spark explosion, which pushes the pistons downward, transferring kinetic energy through connecting rods to turn the visible transaxle and connected gears.",
+  "completion_tokens": 1278,
+  "created_utc": "2026-09-17T13:06:16Z",
+  "entry_id": 669,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1278,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.3,
+      "prompt_tokens": 1546,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.609,
+      "wall_s": 108.456
+    }
+  ],
+  "job_id": 670,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 582,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.\n\nRevise: the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.",
+  "prompt_tokens": 1546,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/669/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/669",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a dynamic combustion engine with four pistons moving rhythmically within their cylinders. The pistons oscillate vertically while fluid flows in and out through actuated intake valves timed with connecting rods. A spark explosion effect is simulated as pistons reach their peak, pushing the system downward and transferring kinetic energy to a visible transaxle and connected gears that rotate in response. The scene uses WebGL rendering for 3D depth and motion, with each component moving independently to create an immersive mechanical simulation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.456
+}
