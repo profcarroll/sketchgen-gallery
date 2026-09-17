@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201calternating patterns of oscillation and homeostasis evoked with color\u2026\u201d \u2014 sketchgen entry 649, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/649/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of interconnected, fluid geometric forms that continuously morph and pulsate. These shapes exist in a perpetual cycle between intense, defined oscillations and moments of stable, balanced equilibrium. The forms themselves are highly interconnected, shifting colors dramatically and sometimes violently across the spectrum. The movement is characterized by sharp, interlocking wave patterns that govern the transitions between these alternating states of vibrant motion and deep repose, creating a mesmerizing, constantly evolving organic lattice.",
+  "completion_tokens": 830,
+  "created_utc": "2026-09-17T11:00:03Z",
+  "entry_id": 649,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 830,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.7,
+      "prompt_tokens": 2219,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.09,
+      "wall_s": 99.285
+    }
+  ],
+  "job_id": 650,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interconnected, fluid geometric forms, and this time the connecting links are visibly more pronounced",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "parent_entry_id": 560,
+    "root_entry_id": 19
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "alternating patterns of oscillation and homeostasis evoked with color and form, continuously morphing\n\nRevise: the same fluid, geometric forms, and this time the oscillations are more jagged\n\nRevise: the same fluid geometric forms, and this time the oscillations are more jagged\n\nRevise: the same fluid interconnected geometric forms, and this time the color shifts are more defined\n\nRevise: the same interconnected, fluid geometric forms, and this time the color shifts are more abrupt\n\nRevise: the same interconnected, fluid geometric forms, and this time the oscillations are more jarring\n\nRevise: the same interconnected fluid geometric forms, and this time the color shifts are more pronounced\n\nRevise: the same interconnected, fluid geometric forms, and this time the oscillations are more defined\n\nRevise: the same interconnected, fluid geometric forms, and this time the oscillations are visibly governed by sharp, interlocking wave patterns\n\nRevise: the same interconnected, fluid geometric forms, and this time the color shifts are more abrupt\n\nRevise: the same interconnected, fluid geometric forms, and this time the oscillations are more visibly governed by sharp, interlocking wave patterns\n\nRevise: the same interconnected, fluid geometric forms, and this time the color shifts are violently pronounced across the spectrum\n\nRevise: the same interconnected fluid geometric forms, and this time the color shifts are more dramatically violent\n\nRevise: the same interconnected, fluid geometric forms, and this time the oscillations are more visibly governed by sharp, interlocking wave patterns\n\nRevise: the same interconnected, fluid geometric forms, and this time the connecting links are visibly more pronounced",
+  "prompt_tokens": 2219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/649/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/649",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of interconnected, morphing geometric forms that shift between states of vibrant motion and calm equilibrium. Using p5.js's WEBGL renderer, it generates a lattice of particles that pulse and flow through space, connected by dynamic lines that respond to their proximity. The forms continuously evolve with oscillating sizes, shifting hues across the spectrum, and fluid movement patterns that create an organic, living network. The visual effect emerges from simple particle physics combined with harmonic motion, producing a constantly evolving yet harmonious system that feels both mechanical and organic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 99.285
+}
