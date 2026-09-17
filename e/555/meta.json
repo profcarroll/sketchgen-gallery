@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2013 Revise: the sam\u2026\u201d \u2014 sketchgen entry 555, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/555/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, three-dimensional geometric structures composed of multiple intersecting glowing planes and connecting lines. These structures are constantly in motion, featuring a visible, directional wave pattern that travels across the surfaces of the planes, causing the entire glow to oscillate and pulse rhythmically. The visualization is a shifting, intricate abstract spectacle of light and geometry, continuously flowing and changing without requiring any user interaction.",
+  "completion_tokens": 896,
+  "created_utc": "2026-09-16T23:46:31Z",
+  "entry_id": 555,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 896,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 59.1,
+      "prompt_tokens": 2205,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.533,
+      "wall_s": 97.996
+    }
+  ],
+  "job_id": 556,
+  "last_error": "lacks visual cohesion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, glowing geometric data visualizations consisting of multiple intersecting planes and connecting lines, and this time amplifying the directional wave glow specifically at all plane intersections.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 449,
+    "root_entry_id": 160
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a broadcast graphics package for a TV network in 2013\n\nRevise: the same glowing data visualizations, and this time introducing a slow, subtle rotational change to the planes and lines\n\nRevise: the same glowing data visualizations, and this time emphasizing the intersections of the planes and lines with concentrated glows\n\nRevise: the same glowing geometric data visualizations, and this time introducing a visible, subtle periodic shift in the intensity of the glowing nodes\n\nRevise: the same glowing geometric data visualizations, and this time introducing a slow, subtle periodicity to the speed of the rotational shift\n\nRevise: the same glowing planes and connecting lines, and this time having the connection lines pulse in intensity whenever two planes pass within a critical distance\n\nRevise: add legible typography to brand the broadcast network in two seperate slowly drifting text blocks \"You're watching\" \"sketchgen TV\"\n\nRevise: the same glowing, complex geometric data visualizations composed of intersecting planes and connecting lines, and this time making the glow oscillate in a visible, directional wave pattern across the intersecting planes.\n\nRevise: the same complex, glowing geometric data visualizations consisting of multiple intersecting planes and connecting lines, and this time amplifying the directional wave glow specifically at all plane intersections.",
+  "prompt_tokens": 2205,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/555/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/555",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an ever-shifting, luminous architecture of intersecting geometric planes that pulse and flow in synchronized yet independent motion. Through a combination of rotating surfaces, wave-displaced geometry, and connecting lines, it visualizes abstract mathematical relationships in three-dimensional space. The glowing planes appear to breathe and undulate with a rhythmic pattern that travels across their surfaces, creating an immersive spectacle of light and form. Each plane moves independently while maintaining harmonic relationships with others, forming a complex yet coherent whole that evolves continuously without external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.996
+}
