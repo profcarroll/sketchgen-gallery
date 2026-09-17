@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctake the viewer inside an operating printing press Revise: the same c\u2026\u201d \u2014 sketchgen entry 562, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/562/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a continuous river of patterned material passing through a mechanical printing press. The material flows with patterned streaks of color and texture. When the movement momentarily halts, the viscous ink streaks crystalize into intricate, geometric patterns. These crystallized forms overlap and coalesce, forming complex, layered fractal lattices that hang suspended in space. The colors shift and intensify as the patterns form, creating a dynamic, shimmering sense of structure emerging from fluid motion.",
+  "completion_tokens": 2226,
+  "created_utc": "2026-09-17T00:35:39Z",
+  "entry_id": 562,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1115,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 65)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 73)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1500 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1500.0,
+      "prompt_tokens": 1549,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 96.345,
+      "wall_s": 95.883
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1111,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 88.3,
+      "prompt_tokens": 1797,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 15.757,
+      "wall_s": 103.917
+    }
+  ],
+  "job_id": 563,
+  "last_error": "prompt drift; derivative",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous flow of patterned material, and this time the crystallized patterns form overlapping, geometric fractal lattices.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 457,
+    "root_entry_id": 404
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside an operating printing press\n\nRevise: the same continuous movement of the printed material, and this time the ink streaks momentarily crystallize in geometric patterns upon stopping.\n\nRevise: the same continuous flow of patterned material, and this time the crystallized patterns form overlapping, geometric fractal lattices.",
+  "prompt_tokens": 3346,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/562/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/562",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates a mechanical printing press where viscous ink flows through a system of particles that form geometric patterns when they pause. The visual metaphor captures the idea of fluid motion crystallizing into structured lattices as particles connect and coalesce in space. Using a spatial grid optimization, it efficiently manages thousands of particles without exceeding frame budget constraints, creating an immersive sense of structure emerging from fluid motion through continuous particle flow and dynamic connections.",
+  "submitted_by": "profcarroll",
+  "wall_s": 199.8
+}
