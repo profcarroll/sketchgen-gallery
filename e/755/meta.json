@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cbuild a spaceship control panel with buttons and switches and when th\u2026\u201d \u2014 sketchgen entry 755, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/755/ Licensed CC BY 4.0.",
+  "brief": "A comprehensive and futuristic spaceship control panel dominates the canvas, featuring a complex arrangement of physical-looking buttons, switches, and analog gauges. The panel is anchored by a central windscreen display. The control elements are finished in metallic grays and blacks, contrasted by the glowing indicator lights. All inactive switches emit a steady, vibrant cyan glow, which gives the panel a distinctive, electric color palette. When the user clicks a specific button, the entire setup remains stable, but the windscreen display dynamically transitions, showing the ship initiating and entering hyperspace with streaks of brilliant color and rapid, smooth movement.",
+  "completion_tokens": 1758,
+  "created_utc": "2026-09-17T22:54:02Z",
+  "entry_id": 755,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1758,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "prompt_tokens": 2240,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.446,
+      "wall_s": 151.623
+    }
+  ],
+  "job_id": 756,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "lacks visual cohesion",
+    "critique_by": "profcarroll",
+    "generation": 4,
+    "parent_entry_id": null,
+    "root_entry_id": 755
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "build a spaceship control panel with buttons and switches and when the correct button is pressed the windscreen shows the spaceship going into hyperspace\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a vibrant cyan.\n\nRevise: lacks visual cohesion",
+  "prompt_tokens": 2240,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/755/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/755",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a futuristic spaceship control panel with metallic grays and blacks featuring glowing cyan indicator lights. The interface includes physical-looking buttons, switches, and analog gauges arranged in a realistic configuration. When the user clicks the central hyperspace activation button, the entire panel remains stable while the windscreen display dynamically transitions into a spectacular hyperspace effect. The visualization shows streaks of brilliant color moving rapidly across the screen, with a central flash that pulses to simulate the ship's entry into hyperspace. The design uses p5.js drawing functions to create a cohesive, immersive control interface that responds to user interaction while maintaining the aesthetic of advanced technology.",
+  "submitted_by": "profcarroll",
+  "wall_s": 151.623
+}
