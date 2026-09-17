@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201climinal dreamscape architectures Revise: the same impossible architec\u2026\u201d \u2014 sketchgen entry 559, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/559/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays impossible, crystalline architectures suspended in a void. These planes are fractured and highly stressed, with structural tension visibly propagating across the crystalline shards. The geometry appears to be under extreme shearing and gravitational forces, yet momentarily arrests its collapse. The forms are caught between decay and stability, surrounded by a particulate, dissolving mist. The entire scene is rendered in a muted palette dominated by teal light and deep shadows, maintaining a state of continuous, dramatic transformation.",
+  "completion_tokens": 2419,
+  "created_utc": "2026-09-17T00:15:52Z",
+  "entry_id": 559,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1302,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 51)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 93)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 99)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 113)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1151.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1151.9,
+      "prompt_tokens": 2223,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 72.077,
+      "wall_s": 120.103
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1117,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.9,
+      "prompt_tokens": 2588,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.092,
+      "wall_s": 76.859
+    }
+  ],
+  "job_id": 560,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 453,
+    "root_entry_id": 114
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "liminal dreamscape architectures\n\nRevise: the same impossible architectures, and this time fractured geometric planes reflecting muted teal light\n\nRevise: the same impossible architecture, and this time segments dissolving into particulate mist\n\nRevise: the same impossible architectures, and this time greater planar asymmetry causing visible structural stresses\n\nRevise: the same impossible architectures, and this time fractal self-similar geometries appearing across the fractured planes\n\nRevise: the same impossible architecture, and this time extreme shearing forces warping the planar surfaces into crystalline shards\n\nRevise: the same impossible architecture, and this time surfaces experiencing gravitational pull towards a central, undefined point\n\nRevise: the same impossible architectures, and this time the crystalline shards momentarily arrest their collapse, holding their structural integrity against the surrounding particulate mist\n\nRevise: the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.",
+  "prompt_tokens": 4811,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/559/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/559",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an impossible crystalline architecture suspended in a void, capturing the tension between decay and stability. Through a muted teal palette dominated by deep shadows, it visualizes structural stress propagating across fractured shards that appear to be under extreme shearing forces yet momentarily arrest their collapse. The scene is filled with particulate mist that dissolves around the geometric forms, creating an atmosphere of continuous transformation. The architecture emerges through fractured planes and stress lines that pulse with tension, while the entire composition subtly moves and evolves in real-time, never settling into static form. The viewer observes a dynamic equilibrium where destruction and stability coexist in a state of constant flux, rendered through a careful balance of geometric complexity and atmospheric particles within the constraints of performance limitations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 196.962
+}
