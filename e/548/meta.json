@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse Revise: the same stylized horse, and this time the\u2026\u201d \u2014 sketchgen entry 548, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/548/ Licensed CC BY 4.0.",
+  "brief": "A stylized depiction of a horse is rendered on the canvas. The creature displays smooth, organic curves in its body and limbs, avoiding any rigid or geometric shapes. The horse is constantly in motion, executing a fluid, continuous gallop across the frame. The color palette should evoke natural equine tones, maintaining a light, airy feel. The animation cycles seamlessly, presenting the illusion of natural, unrestrained movement without requiring any user input.",
+  "completion_tokens": 986,
+  "created_utc": "2026-09-16T23:01:11Z",
+  "entry_id": 548,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 986,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2189,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.557,
+      "wall_s": 111.62
+    }
+  ],
+  "job_id": 549,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 362,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a galloping horse\n\nRevise: the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.",
+  "prompt_tokens": 2189,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/548/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/548",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a stylized horse in continuous gallop using smooth organic curves and fluid motion. The horse's body is constructed from a series of connected segments that undulate with wave-like motion as it moves across the canvas. The animation runs seamlessly without user input, creating an illusion of natural movement through carefully orchestrated timing and spatial relationships. The color palette uses warm earth tones to evoke a natural equine appearance while maintaining a light, airy feel through subtle gradients and soft curves. The entire scene operates within strict performance constraints, using efficient drawing techniques that ensure smooth animation even in constrained environments.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.62
+}
