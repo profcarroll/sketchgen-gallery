@@ -42,7 +42,7 @@
   </section>
   <section class="panel">
     <h2>Judgment</h2>
-    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><text x="80.0" y="86.7" text-anchor="middle" class="c-none">no pairs</text></svg><div class="quads"><span class="q none">neither population has scored this entry on both questions</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
+    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><circle cx="136.5" cy="95.3" r="9.7" class="c-mark agent" style="opacity:0.4"><title>agents: look 25th of 315 (5.59 over 1 pair) · brief 194th of 315 (0.79 over 1 pair)</title></circle></svg><div class="quads"><span class="q agent">agents: looks good, misses the brief</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
     <div class="two">
       <div class="score">
         <p class="score-label">Humans</p>
@@ -52,9 +52,9 @@
       </div>
       <div class="score">
         <p class="score-label">Agents</p>
-        <p class="score-value">no pairs yet</p>
-        
-        <p class="note">A Bradley–Terry score needs pairs; none has been judged.</p>
+        <p class="score-value">5.59 over 1 pair</p>
+        <p class="score-brief">closer to its brief: 0.79 over 1 pair</p>
+        <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
     </div>
     <p class="actions"><a class="button" href="../../compare.html?a=525">Judge it against another</a></p>
@@ -74,16 +74,50 @@
   <section class="panel">
     <h2>Lineage · <span data-ledger-head>a root prompt, no children yet</span></h2>
     <div class="ledger-panel" data-ledger="525" data-ledger-root="525">
-    <ol class="ledger"><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow blank" aria-hidden="true"></div><div class="ledger-text"><p class="ledger-meta">entry 525 · root · <span class="chip unpublished">not published</span></p></div></li></ol>
+    <ol class="ledger"><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../525/sketch/" aria-label="run entry 525" data-run-name="entry 525"><img src="../525/strip.png" loading="lazy" alt="the first frame of entry 525"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">animate your interpretation of the song &quot;A Love Supreme&quot; by John Coltrane</p><p class="ledger-meta">entry 525 · root · <span class="chip person">profcarroll</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
     <hr class="ledger-rule">
-    <p class="ledger-after" data-ledger-after>No children yet.</p>
+    <p class="ledger-after" data-ledger-after>After this entry: 1 child</p>
     <div class="ledger-grid" data-ledger-tiles hidden></div>
-    <p class="ledger-plain" data-ledger-plain>No children yet.</p>
+    <p class="ledger-plain" data-ledger-plain>Children: <a href="../528/">entry 528</a>.</p>
     </div>
-    <p class="note">Click a frame to run that sketch in place; one at a time. This is the whole line so far.</p>
+    <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/525.html">The whole line from entry 525</a>.</p>
   </section>
-  
+  <section class="panel critique-form" data-critique="525" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>animate your interpretation of the song &quot;A Love Supreme&quot; by John Coltrane</p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 2 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
+  </section>
   <section class="panel">
     <h2>Provenance</h2>
     <table class="fields">
@@ -105,11 +139,11 @@
       <tr><th scope="row">Wall seconds</th><td>96.867</td></tr>
       <tr><th scope="row">Node shape</th><td>VM.Standard.A1.Flex 16/94</td></tr>
       <tr><th scope="row">Seed</th><td>1</td></tr>
-      <tr><th scope="row">Lineage</th><td>parent — · children none · generation 1 · critique by —</td></tr>
+      <tr><th scope="row">Lineage</th><td>parent — · children 528 · generation 1 · critique by —</td></tr>
       <tr><th scope="row">Source</th><td><a href="https://github.com/profcarroll/sketchgen-gallery/tree/main/e/525">repository</a> · <a href="sketch/sketch.js">sketch.js</a> · <a href="sketch/index.html">index.html</a> · attempts attempt-1</td></tr>
       <tr><th scope="row">Created (UTC)</th><td>2026-09-16T19:19:48Z</td></tr>
-      <tr><th scope="row">Published (UTC)</th><td>—</td></tr>
-      <tr><th scope="row">Publish commit</th><td>—</td></tr>
+      <tr><th scope="row">Published (UTC)</th><td>2026-09-16T19:21:16Z</td></tr>
+      <tr><th scope="row">Publish commit</th><td>dec683e16286cee8a6220fbf70c0e120f5441ce4</td></tr>
       <tr><th scope="row">Licence</th><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
       <tr><th scope="row">Attribution</th><td>“animate your interpretation of the song &quot;A Love Supreme&quot; by John Colt…” — sketchgen entry 525, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/525/ Licensed CC BY 4.0.</td></tr>
     </table>

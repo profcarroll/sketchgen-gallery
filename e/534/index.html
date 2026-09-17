@@ -74,7 +74,7 @@
   <section class="panel">
     <h2>Lineage · <span data-ledger-head>generation 2 of <span data-ledger-deepest>2</span> in the line from <a href="../../lines/12.html">entry 12</a></span></h2>
     <div class="ledger-panel" data-ledger="534" data-ledger-root="12" data-ledger-parent="22">
-    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../12/sketch/" aria-label="run entry 12" data-run-name="entry 12"><img src="../12/strip.png" loading="lazy" alt="the first frame of entry 12"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s</p><p class="ledger-meta"><a href="../12/">entry 12</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../22/sketch/" aria-label="run entry 22" data-run-name="entry 22"><img src="../22/strip.png" loading="lazy" alt="the first frame of entry 22"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures</em></p><p class="ledger-meta"><a href="../22/">entry 22</a> · generation 1 · <span class="chip model">gemma4</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow blank" aria-hidden="true"></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try a new color pallete</em></p><p class="ledger-meta">entry 534 · generation 2 · <span class="chip person">profcarroll</span> <span class="chip unpublished">not published</span></p></div></li></ol>
+    <ol class="ledger"><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../12/sketch/" aria-label="run entry 12" data-run-name="entry 12"><img src="../12/strip.png" loading="lazy" alt="the first frame of entry 12"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-prompt">diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s</p><p class="ledger-meta"><a href="../12/">entry 12</a> · root · <span class="chip person">profcarroll</span></p></div></li><li class="ledger-row"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../22/sketch/" aria-label="run entry 22" data-run-name="entry 22"><img src="../22/strip.png" loading="lazy" alt="the first frame of entry 22"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures</em></p><p class="ledger-meta"><a href="../22/">entry 22</a> · generation 1 · <span class="chip model">gemma4</span></p></div></li><li class="ledger-row here" aria-current="true"><div class="ledger-tile narrow"><button type="button" class="play" data-play data-run-href="../534/sketch/" aria-label="run entry 534" data-run-name="entry 534"><img src="../534/strip.png" loading="lazy" alt="the first frame of entry 534"><span data-play-label></span></button></div><div class="ledger-text"><p class="ledger-critique"><span class="revise">Revise:</span> <em>try a new color pallete</em></p><p class="ledger-meta">entry 534 · generation 2 · <span class="chip person">profcarroll</span></p></div></li></ol>
     <div class="ledger-forks" data-ledger-forks hidden></div>
     <hr class="ledger-rule">
     <p class="ledger-after" data-ledger-after>No children yet.</p>
@@ -83,7 +83,43 @@
     </div>
     <p class="note">Click a frame to run that sketch in place; one at a time. <a href="../../lines/12.html">The whole line from entry 12</a>.</p>
   </section>
-  
+  <section class="panel critique-form" data-critique="534" hidden>
+    <h2>Critique this sketch</h2>
+    <p class="signed-out-line" data-critique-out>
+      <a class="login" data-login href="../../index.html">Sign in with GitHub</a> to ask for a
+      revision. One sentence becomes the next generation's prompt.
+    </p>
+    <div data-critique-in hidden>
+      <p class="note">One sentence, under 40 words, no code — the same contract the critic
+      model works under. Your sentence is appended to this entry's prompt and the child is
+      queued.</p>
+      <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
+      <textarea id="critique-text" rows="2" data-critique-text></textarea>
+      <p class="rule" data-critique-rule></p>
+      <div class="preview">
+        <span class="label">the child's prompt</span>
+        <p>diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s</p>
+        <p class="revise"><span class="label">Revise:</span> <em>the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em>try a new color pallete</em></p>
+        <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
+      </div>
+      <p class="actions">
+        <button type="button" class="primary" data-critique-send>Queue the child</button>
+        <span class="note">generation 3 · a person's critique, so the line does not stall here</span>
+      </p>
+    </div>
+    <div data-critique-sent hidden>
+      <div class="receipt">
+        <p><strong>Critique recorded.</strong> Queued for review.</p>
+        <p>Your username appears on the child entry as the critic, the way the critic model's
+        name appears on this one.</p>
+      </div>
+      <div class="preview">
+        <span class="label">what you asked for</span>
+        <p class="revise"><em data-critique-echo-sent>…</em></p>
+      </div>
+    </div>
+  </section>
   <section class="panel">
     <h2>Provenance</h2>
     <table class="fields">
@@ -112,8 +148,8 @@ Revise: try a new color pallete</td></tr>
       <tr><th scope="row">Lineage</th><td>parent 22 · children none · generation 2 · critique by profcarroll</td></tr>
       <tr><th scope="row">Source</th><td><a href="https://github.com/profcarroll/sketchgen-gallery/tree/main/e/534">repository</a> · <a href="sketch/sketch.js">sketch.js</a> · <a href="sketch/index.html">index.html</a> · attempts attempt-1</td></tr>
       <tr><th scope="row">Created (UTC)</th><td>2026-09-16T20:15:03Z</td></tr>
-      <tr><th scope="row">Published (UTC)</th><td>—</td></tr>
-      <tr><th scope="row">Publish commit</th><td>—</td></tr>
+      <tr><th scope="row">Published (UTC)</th><td>2026-09-16T20:53:39Z</td></tr>
+      <tr><th scope="row">Publish commit</th><td>80c71b295931b92feaf5511e700151baed8e05a0</td></tr>
       <tr><th scope="row">Licence</th><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
       <tr><th scope="row">Attribution</th><td>“diagonal stripes animating in smoothly eased slicing patterns in colo…” — sketchgen entry 534, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/534/ Licensed CC BY 4.0.</td></tr>
     </table>
