@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cillustrate a loudspeaker magnet producing sound waves Revise: Add sou\u2026\u201d \u2014 sketchgen entry 605, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/605/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a cross-section of a loudspeaker mechanism. A powerful, circular magnet is anchored at the center, with the cone radiating outward. Emanating from the cone are distinct, oscillating wave patterns rendered in cool blues and whites. These waves expand radially from the source, interacting visually with the magnetic field lines visible around the magnet structure. The waves are constantly pulsing and growing in amplitude, giving the impression of palpable energy and vibration.",
+  "completion_tokens": 1332,
+  "created_utc": "2026-09-17T05:56:02Z",
+  "entry_id": 605,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 612,
+      "evidence": "gate exit 1: assertions failed: motion(idle), responds(audio)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 250000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 250000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 34.245 under 440 Hz vs 34.245 under silence\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1549,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.148,
+      "wall_s": 71.096
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 720,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1704,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 5.1,
+      "wall_s": 44.886
+    }
+  ],
+  "job_id": 606,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "Add sound",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 533,
+    "root_entry_id": 533
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate a loudspeaker magnet producing sound waves\n\nRevise: Add sound",
+  "prompt_tokens": 3253,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/605/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/605",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a cross-sectional loudspeaker mechanism with a central magnet and oscillating wave patterns. The design features a prominent circular magnet at the center of the canvas, surrounded by visible magnetic field lines that extend outward. Radiating from this core are expanding concentric circles representing sound waves \u2014 these waves pulse and grow in size while fading in opacity, creating a dynamic visualization of vibrational energy. The animation runs autonomously without user input, with new wave patterns generated at regular intervals to simulate the continuous vibration of a speaker cone. The cool blues and whites of the waves contrast against the darker background, emphasizing their energetic movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.982
+}
