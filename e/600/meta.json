@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca self portrait in three point perspective Revise: the same geometric\u2026\u201d \u2014 sketchgen entry 600, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/600/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a geometrically abstracted self-portrait rendered in three-point perspective, built from numerous interlocking, faceted planes. These planes are not solid but appear highly refractive and dynamic. The surface colors are saturated and subtly shifting, causing the edges to appear crisp and dramatic. The reflectivity of the planes changes constantly, catching and scattering the ambient light as if viewed from every possible angle, giving the geometric structure a sense of deep, breathing volume.",
+  "completion_tokens": 529,
+  "created_utc": "2026-09-17T04:54:18Z",
+  "entry_id": 600,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 529,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.6,
+      "prompt_tokens": 1542,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.499,
+      "wall_s": 71.279
+    }
+  ],
+  "job_id": 601,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometrically abstracted self-portrait, and this time the interlocking planes reveal crisp, faceted edges that catch the ambient light dramatically.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 493,
+    "root_entry_id": 20
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a self portrait in three point perspective\n\nRevise: the same geometrically rendered self-portrait, and this time the interlocking planes reveal subtle shifts in color saturation and reflectivity.\n\nRevise: the same geometrically abstracted self-portrait, and this time the interlocking planes reveal crisp, faceted edges that catch the ambient light dramatically.",
+  "prompt_tokens": 1542,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/600/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/600",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, abstract self-portrait using three-point perspective geometry in WebGL. It renders multiple interlocking faceted planes that appear to refract and shift color over time, simulating a breathing volume through constantly changing reflectivity. The composition uses geometric decomposition and procedural color shifts to achieve an immersive yet minimal visual effect.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.279
+}
