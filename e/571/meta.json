@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cillustrate tensor flows inside the GPUs racked up inside a data cente\u2026\u201d \u2014 sketchgen entry 571, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/571/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract, glowing data grids representing multi-dimensional tensors. These grids flow across the screen, appearing to compress, shift, and transform through a series of interconnected nodes. Colors represent the intensity or dimension of the data passing through the system, creating a constantly evolving, intricate flow of light and geometric shapes. When the user clicks anywhere on the canvas, a new input prompt activates, causing the central data stream to recalculate its flow and display a radically transformed output pattern.",
+  "completion_tokens": 3710,
+  "created_utc": "2026-09-17T01:35:32Z",
+  "entry_id": 571,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1271,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 134.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 134.1,
+      "prompt_tokens": 2241,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.373,
+      "wall_s": 123.771
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1016,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 47)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2371,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.456,
+      "wall_s": 66.114
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1423,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.0,
+      "prompt_tokens": 2532,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.957,
+      "wall_s": 93.942
+    }
+  ],
+  "job_id": 572,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again and show humans how AI models think in tensor flows",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "parent_entry_id": 531,
+    "root_entry_id": 531
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate tensor flows inside the GPUs racked up inside a data center\n\nRevise: try again and show humans how AI models think in tensor flows",
+  "prompt_tokens": 7144,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/571/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/571",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes abstract data grids representing multi-dimensional tensors flowing through space. The system consists of interconnected nodes that influence the movement of thousands of glowing particles in real-time. Each particle's position shifts based on its distance from these nodes, creating complex, evolving patterns. When clicked, the central data stream recalculates its flow by relocating the influencing nodes and reconfiguring the connections between particles, producing radically different output patterns while maintaining the overall abstract structure of data flow visualization.",
+  "submitted_by": "profcarroll",
+  "wall_s": 283.827
+}
