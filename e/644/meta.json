@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cgraffiti app Revise: the same layered, overlapping art, and this time\u2026\u201d \u2014 sketchgen entry 644, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/644/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, built-up texture composed of layered, overlapping strokes. The entire artwork is formed by drawing lines that are constrained to a consistent horizontal orientation. When the viewer interacts with the canvas by dragging the mouse, new segments of graffiti are laid down, building upon the existing network of lines. The color and density of the strokes change dynamically in response to the movement of the cursor.",
+  "completion_tokens": 1773,
+  "created_utc": "2026-09-17T10:25:33Z",
+  "entry_id": 644,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 859,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 34)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] x1 is not defined\n- [pageerror] Cannot read properties of undefined (reading 'x')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2196,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.332,
+      "wall_s": 99.433
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 360,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 12)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line.draw is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2459,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.342,
+      "wall_s": 33.283
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 554,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 62)\n\ngate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2338,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.339,
+      "wall_s": 40.26
+    }
+  ],
+  "job_id": 645,
+  "last_error": "gate failed",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same layered drawing experience, and this time the strokes should be consistently oriented horizontally.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 553,
+    "root_entry_id": 430
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "graffiti app\n\nRevise: the same layered, overlapping art, and this time the strokes should consistently form parallel lines.\n\nRevise: the same layered drawing experience, and this time the strokes should be consistently oriented horizontally.",
+  "prompt_tokens": 6993,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/644/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/644",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, layered graffiti texture by allowing viewers to draw horizontal strokes with their mouse. As users drag across the canvas, new line segments are added to the existing network, building up a dense composition of overlapping strokes. The visual properties\u2014color and thickness\u2014respond dynamically to cursor movement speed and position, creating an organic flow that transforms the static canvas into a living artwork. The technique uses simple line drawing with variable weights and hues to simulate the layered look of spray paint or marker graffiti, responding only to user interaction without any automatic animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 172.976
+}
