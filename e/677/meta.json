@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 677, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/677/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, rotating steampunk kinetic sculpture. Around a central, glowing core, several intricate, curving splines orbit and slowly rotate. These splines feature oxidized copper patina and patches of sea glass coloration. The entire structure is contained within a larger, rotating cubic framework. The central core emits a thick, molten bronze glow, within which distinct, visible internal currents of vibrant liquid fire constantly flow, creating a continuous and mesmerizing kinetic display.",
+  "completion_tokens": 1395,
+  "created_utc": "2026-09-17T13:58:24Z",
+  "entry_id": 677,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1395,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.4,
+      "prompt_tokens": 2223,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.741,
+      "wall_s": 166.258
+    }
+  ],
+  "job_id": 678,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, rotating kinetic sculpture, and this time the molten bronze core should glow with distinct, visible internal currents of liquid fire.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 591,
+    "root_entry_id": 162
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same orbiting splines, and this time the splines should appear made of oxidized copper and sea glass\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze glow should appear thicker and more viscous.\n\nRevise: the same complex, rotating kinetic sculpture, and this time the molten bronze core should glow with distinct, visible internal currents of liquid fire.",
+  "prompt_tokens": 2223,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/677/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/677",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a steampunk kinetic sculpture centered around a molten bronze core that pulses with internal currents of vibrant fire. Multiple curving splines orbit the core in a rotating cubic framework, each featuring an oxidized copper patina and patches of sea glass coloration. The entire structure slowly rotates, creating a mesmerizing, continuous motion that fills the canvas with intricate, glowing geometry. The visualization uses WEBGL rendering to achieve depth and complex 3D transformations while maintaining performance within the specified frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 166.258
+}
