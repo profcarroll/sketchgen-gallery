@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 748, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/748/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a constantly evolving, dense lattice of sharp, angular geometric lines flowing across the canvas. The lines appear to generate and expand continuously, creating a complex, ethereal field of dynamic pattern. The entire structure exhibits constant motion, making the pattern itself the focus. All lines are brightly colored against a dark background, and their geometry is highly structured: lines never cross randomly, meeting only at specific, luminous nodal points that define the network\u2019s connections. The visualization runs autonomously, presenting a perpetual study of complex, expanding nodal relationships.",
+  "completion_tokens": 1596,
+  "created_utc": "2026-09-17T22:04:44Z",
+  "entry_id": 748,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 877,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 71)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 86)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 384.4 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 384.4,
+      "prompt_tokens": 1560,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 20.484,
+      "wall_s": 91.049
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 719,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.5,
+      "prompt_tokens": 1806,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 3.022,
+      "wall_s": 46.264
+    }
+  ],
+  "job_id": 749,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 702,
+    "root_entry_id": 525
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: try again without circles\n\nRevise: the same dynamic, angular geometric lines that radiate outward from a central point, and this time the overall pattern should adopt continuous, interlocking spiral formations.\n\nRevise: the same angular, dynamic geometric lines radiating outward from a central core, and this time the overall pattern should periodically contract inward before resuming its continuous spiral expansion.\n\nRevise: the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.",
+  "prompt_tokens": 3366,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/748/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/748",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, evolving lattice of geometric lines and nodes that pulse and flow across the canvas. Using WebGL rendering, it generates a structured network where nodes are positioned in a grid and animated through time-based movement along the Z-axis. Lines connect nodes when they come within a certain distance, forming an intricate web that constantly reshapes itself. The entire visualization runs autonomously without any user interaction, with each frame building upon the previous one to create an ethereal field of motion. The bright, saturated colors against a dark background make the connections and nodal points stand out clearly, emphasizing the structured yet ever-changing nature of the pattern.",
+  "submitted_by": "profcarroll",
+  "wall_s": 137.313
+}
