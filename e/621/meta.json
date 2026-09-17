@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 621, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/621/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perpetual, cyclical cityscape bathed in constantly shifting light, simulating the full cycle from dawn to night. Rigid angular structures are scored by vibrant, permanent crystalline trails. Small pools of liquid gather at the base of these structures, reflecting the evolving light and displaying vivid fractal distortions. Bioluminescent flora pulses rhythmically across the surface, casting visible light that illuminates metallic deposits built up in the pooled liquid. These deposits react to the light pulses, charging the liquid and causing it to emit a secondary, visible luminescence that completes the continuous atmospheric cycle.",
+  "completion_tokens": 1292,
+  "created_utc": "2026-09-17T07:49:16Z",
+  "entry_id": 621,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1292,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.5,
+      "prompt_tokens": 2248,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.074,
+      "wall_s": 123.298
+    }
+  ],
+  "job_id": 622,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the generated metallic deposits charge the pooled liquid, causing it to emit a visible, secondary luminescence.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "parent_entry_id": 523,
+    "root_entry_id": 11
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color pallete\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating ripples cause temporary, visible distortions in the wet architectural reflections.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the visible distortions intensify into sharp, repeating fractal patterns.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the dissipating fractal patterns leave behind temporary, crystalline trails on the wet architectural surfaces.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the crystalline trails permanently score the rigid angular structures.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the crystalline scoring reacts with the pooled liquid to generate visible, metallic deposits.\n\nRevise: the same complex cyclical process of bioluminescence, fractal trails, and wet reflection, and this time the generated metallic deposits charge the pooled liquid, causing it to emit a visible, secondary luminescence.",
+  "prompt_tokens": 2248,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/621/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/621",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a perpetually cycling cityscape that transitions through a full day-night light cycle. The scene features rigid angular architectural structures that are scored by vibrant crystalline trails\u2014these trails emit their own luminous energy as they intersect with the environment. At the base of these structures, pools of liquid gather and reflect the shifting atmospheric light while displaying fractal distortions caused by subtle movements within the liquid surfaces. Throughout the landscape, bioluminescent flora pulses rhythmically, casting visible light that interacts with metallic deposits in the pooled liquid. These deposits respond to the pulsing light, creating secondary luminescence effects that complete the continuous atmospheric cycle. The entire scene is rendered using WebGL for its volumetric quality and dynamic lighting effects, with all elements moving autonomously to simulate an unattended, evolving environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.298
+}
