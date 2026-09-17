@@ -1,0 +1,113 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate a simple snowboarding game with no audio. use arrow keys to na\u2026\u201d \u2014 sketchgen entry 603, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/603/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a side-scrolling snowboarding course running horizontally across the screen. A colored snowboarder character moves down this course, following the gradient lines. The player controls the snowboarder using directional arrow keys to move laterally and the spacebar to jump. As the snowboarder progresses, the environment scrolls smoothly beneath them. If the snowboarder collides with the dark sidewalls of the course, the character immediately visibly recoils and shakes for a short period. This collision causes the snowboarder's visible health indicator to deplete, and upon reaching zero health, the game concludes.",
+  "completion_tokens": 2567,
+  "created_utc": "2026-09-17T05:44:43Z",
+  "entry_id": 603,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": null,
+      "evidence": "executor: model call failed: timed out",
+      "exit": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": null,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 1800.1
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1227,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.2118/255, 9790 of 320000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1562,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.149,
+      "wall_s": 75.242
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1340,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.5558/255, 3298 of 320000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1660,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.134,
+      "wall_s": 75.266
+    }
+  ],
+  "job_id": 604,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same side-scrolling snowboard course, and this time the snowboarder briefly pauses and visibly shakes when hitting the sidewall.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 497,
+    "root_entry_id": 56
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100%\n\nRevise: the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.\n\nRevise: the same side-scrolling snowboard course, and this time the snowboarder briefly pauses and visibly shakes when hitting the sidewall.",
+  "prompt_tokens": 3222,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/603/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/603",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a side-scrolling snowboarding game where the player controls a character through a course using arrow keys and spacebar. The environment features gradient lines indicating direction, with dark sidewalls that cause collision detection when touched. The game includes visual feedback such as shaking on collision and a health bar that depletes when hitting walls. The implementation uses basic physics for movement and gravity, along with a camera system to follow the player as they progress through the course. The design focuses on clean visuals and responsive controls within the constraints of the p5.js environment, creating an engaging yet simple interactive experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 1950.608
+}
