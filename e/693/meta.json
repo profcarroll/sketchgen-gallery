@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 693, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/693/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a detailed, three-dimensional rendition of the solar system. Planets are visible, each featuring distinct rings. These celestial bodies follow glowing paths that trace their elliptical orbital routes around the central star. The entire system is rendered with dynamic 3D lighting effects. The scene is in perpetual motion, showing the continuous orbits of the planets and the shifting brilliance of light sources. Interacting with the canvas by pressing the mouse activates or alters the ongoing celestial display.",
+  "completion_tokens": 3625,
+  "created_utc": "2026-09-17T15:50:04Z",
+  "entry_id": 693,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1425,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 148)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 168)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 226.5 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 226.5,
+      "prompt_tokens": 1563,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 15.514,
+      "wall_s": 115.983
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1283,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 111)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 147)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 120.9 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 120.9,
+      "prompt_tokens": 1818,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 25.208,
+      "wall_s": 76.146
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 917,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.3,
+      "prompt_tokens": 1830,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 4.586,
+      "wall_s": 55.424
+    }
+  ],
+  "job_id": 694,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same detailed, three-dimensional model of the solar system, and this time visible rings are rendered around each planetary body",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 611,
+    "root_entry_id": 95
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same detailed, three-dimensional representation of the solar system, and this time include visible, glowing paths tracing the elliptical routes of each body.\n\nRevise: the same detailed, three-dimensional model of the solar system, and this time visible rings are rendered around each planetary body",
+  "prompt_tokens": 5211,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/693/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/693",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic, three-dimensional solar system using p5.js's WEBGL renderer. It features a central sun with glowing light, eight orbiting planets with distinct colors and sizes, and some planets adorned with rings. Each planet follows an elliptical path around the sun, with orbits traced by faint light trails. The entire scene rotates slowly to provide a full view of the system. A click interaction toggles the animation on and off, allowing viewers to pause and examine the structure at any moment. The visualization emphasizes both celestial motion and the beauty of cosmic scale through lighting effects and smooth orbital mechanics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 247.553
+}
