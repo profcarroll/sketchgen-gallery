@@ -1,0 +1,308 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 10,
+  "attribution": "\u201cbuild a spaceship control panel with buttons and switches and when th\u2026\u201d \u2014 sketchgen entry 530, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/530/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a futuristic spaceship control panel, featuring several detailed switches and illuminated buttons arranged across a dashboard. The panel elements are static and rendered in sharp, geometric colors. The user interacts with the panel by clicking various buttons in a specific sequence. If the correct sequence is entered, the central windscreen section activates, depicting a vibrant, streaking effect of the spaceship entering hyperspace, accompanied by intense, dynamic visual motion that fills the screen.",
+  "completion_tokens": 14834,
+  "created_utc": "2026-09-16T19:59:33Z",
+  "entry_id": 530,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1406,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2210,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.259,
+      "wall_s": 134.987
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1613,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2374,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.239,
+      "wall_s": 105.995
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1446,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2374,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.24,
+      "wall_s": 79.78
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1546,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2327,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 1.228,
+      "wall_s": 104.999
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1457,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 120)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] color is not defined\n- [pageerror] Cannot access 'hyperspaceColors' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2327,
+      "rules_file": "treatment",
+      "source": "attempt-5",
+      "total_s": 1.229,
+      "wall_s": 82.633
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 6,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1439,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 116)\n\ngate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2515,
+      "rules_file": "treatment",
+      "source": "attempt-6",
+      "total_s": 1.216,
+      "wall_s": 100.816
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 7,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1514,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2414,
+      "rules_file": "treatment",
+      "source": "attempt-7",
+      "total_s": 1.226,
+      "wall_s": 101.87
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 8,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1457,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 120)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] color is not defined\n- [pageerror] Cannot access 'hyperspaceColors' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2327,
+      "rules_file": "treatment",
+      "source": "attempt-8",
+      "total_s": 1.199,
+      "wall_s": 83.334
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 9,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1510,
+      "evidence": "gate exit 1: assertions failed: responds(click), motion(idle)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2515,
+      "rules_file": "treatment",
+      "source": "attempt-9",
+      "total_s": 1.241,
+      "wall_s": 88.3
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true
+      },
+      "attempt": 10,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1446,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2374,
+      "rules_file": "treatment",
+      "source": "attempt-10",
+      "total_s": 1.243,
+      "wall_s": 82.314
+    }
+  ],
+  "job_id": 531,
+  "last_error": "gate exit 1: assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 530
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "build a spaceship control panel with buttons and switches and when the correct button is pressed the windscreen shows the spaceship going into hyperspace",
+  "prompt_tokens": 23757,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5",
+      "attempt-6",
+      "attempt-7",
+      "attempt-8",
+      "attempt-9",
+      "attempt-10"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/530/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/530",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a futuristic spaceship control panel with interactive switches and buttons arranged in a dashboard layout. The interface features geometric design elements with distinct color coding for active and inactive states. Users must click the switches and buttons in a specific sequence to unlock the hyperspace activation feature. When the correct sequence is entered, the central windscreen section activates, displaying a dynamic hyperspace effect with thousands of particles streaking toward the center of the screen. The visualization uses a particle system with motion towards a focal point to simulate the sensation of entering hyperspace, while maintaining performance within strict frame budget constraints by limiting particle count and draw operations per frame.",
+  "submitted_by": "profcarroll",
+  "wall_s": 965.028
+}
