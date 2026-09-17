@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 662, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/662/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a high-detail, mechanical scene where a substantial stack of books rests precariously above an open shredding apparatus. This machine features visible, complex internal gears and plates. The action begins with the entire stack visibly tilting, cracking under pressure, and then cascading into the crushing mechanism below. As the books fall, the gears rotate actively and intensely, demonstrating meshing and crushing motion. The scene is visually dramatic, defined by bright, arcing sparks that shoot out continuously from the engaged mechanical parts, emphasizing the power and destructive motion of the machinery.",
+  "completion_tokens": 1906,
+  "created_utc": "2026-09-17T12:24:57Z",
+  "entry_id": 662,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1906,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.3,
+      "prompt_tokens": 2240,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.684,
+      "wall_s": 157.163
+    }
+  ],
+  "job_id": 663,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same mechanical shredder consuming a stack of books, and this time visible sparks shoot out from the engaged internal gears.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 575,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the internal gears and plates of the shredder are visible and actively engage as the books fall into them.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time visible sparks shoot out from the engaged internal gears.",
+  "prompt_tokens": 2240,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/662/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/662",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dramatic mechanical destruction scene where a stack of books teeters precariously above a shredding machine. The composition uses WebGL rendering to create a sense of depth and scale, with detailed 3D models of books, gears, and the shredder mechanism. As the stack tilts and eventually falls into the crushing apparatus, the gears rotate intensely while sparks continuously shoot out from the mechanical parts, emphasizing the power and violence of the destruction. The animation captures both the impending catastrophe and its resolution, using particle effects for the sparks and controlled physics to simulate the falling books. The camera moves dynamically around the scene to enhance the dramatic effect of the machinery's operation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.163
+}
