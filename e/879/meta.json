@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 879, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/879/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, highly detailed simulation of fungal mold growth emerging from a substrate. Delicate, thread-like filamentous structures crisscross the surface, depicting the mold's intricate network. These primary filaments are visible alongside newer, thicker filaments, and they are actively interacting with the substrate material. Scattered throughout the structure are vividly rendered mineral deposits that appear to be crystallizing around the main filaments, giving the entire assembly a geological, ethereal depth. The colors are muted but rich, highlighting the contrasting textures of the organic mold, the substrate material, and the emerging crystalline structures. The visualization continuously simulates the processes of growth and deposition, presenting a delicate, constantly evolving natural landscape.",
+  "completion_tokens": 3220,
+  "created_utc": "2026-09-18T16:11:05Z",
+  "entry_id": 879,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1061,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 61)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 95)\n\ngate exit 1: checks failed: console_clean; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] f.dir.heading2D is not a function\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2270,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.244,
+      "wall_s": 66.892
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 838,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "prompt_tokens": 2526,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.483,
+      "wall_s": 59.064
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1321,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 41.4,
+      "prompt_tokens": 2308,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 9.838,
+      "wall_s": 81.125
+    }
+  ],
+  "job_id": 880,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate simulation of filamentous mold growth and accumulating sediment, and this time with visible mineral deposits crystallizing around the primary filaments.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 829,
+    "root_entry_id": 360
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same amorphous colorful growth, and this time with visible mycelial filaments reaching into the substrate surface\n\nRevise: the same delicate filamentous growth, and this time with increased density of visible mycelial filaments penetrating the substrate surface\n\nRevise: the same delicate, filamentous structures simulating mold growth, and this time with increased thickness and visibility of the primary connecting filaments\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible evidence of mineral deposition forming crystalline structures around the primary filaments.\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible accumulation of sediment within the deepest crevices of the substrate.\n\nRevise: the same intricate simulation of filamentous mold growth and accumulating sediment, and this time with visible mineral deposits crystallizing around the primary filaments.",
+  "prompt_tokens": 7104,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/879/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/879",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the growth of fungal mold in a substrate environment, rendering delicate thread-like filaments that branch and interact with their surroundings. The visualization captures the organic complexity of mold networks through constantly evolving structures that grow from initial points, each filament maintaining its own age and thickness while occasionally depositing mineral crystals. The scene features a muted, earthy color palette that contrasts with vibrant crystalline deposits, creating an ethereal geological landscape where natural processes of growth and mineralization unfold over time. The simulation runs continuously without user input, showing the dynamic nature of these biological processes through the constant motion and development of the network structures.",
+  "submitted_by": "profcarroll",
+  "wall_s": 207.081
+}
