@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 862, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/862/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a constantly evolving, dense lattice constructed from sharp, highly angular geometric lines. This intricate pattern maintains a crystalline structure as it flows across the screen. Periodically, the entire field pulses outward through visible, rhythmic bursts. These pulses do not originate from any visible points but emanate from multiple unseen centers, causing the overall angular lattice to expand dynamically and cyclically. The pattern is purely abstract, creating a constant sense of structured energy without requiring any direct input.",
+  "completion_tokens": 1174,
+  "created_utc": "2026-09-18T10:23:31Z",
+  "entry_id": 862,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 510,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "prompt_tokens": 1522,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.161,
+      "wall_s": 32.632
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 664,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.0,
+      "prompt_tokens": 1638,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 5.566,
+      "wall_s": 40.125
+    }
+  ],
+  "job_id": 863,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same constantly evolving, dense lattice formed by sharp, angular geometric lines, and this time the expansion should occur through rhythmic, discrete pulses radiating outward from multiple unseen centers",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 812,
+    "root_entry_id": 525
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: try again without circles\n\nRevise: the same dynamic, angular geometric lines that radiate outward from a central point, and this time the overall pattern should adopt continuous, interlocking spiral formations.\n\nRevise: the same angular, dynamic geometric lines radiating outward from a central core, and this time the overall pattern should periodically contract inward before resuming its continuous spiral expansion.\n\nRevise: the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.\n\nRevise: the same constantly evolving, dense lattice of sharp, angular geometric lines flowing across the canvas, and this time the expansion should occur only in visible, slow, harmonic wave patterns.\n\nRevise: the same constantly evolving, dense lattice formed by sharp, angular geometric lines, and this time the expansion should occur through rhythmic, discrete pulses radiating outward from multiple unseen centers",
+  "prompt_tokens": 3160,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/862/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/862",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, crystalline lattice of sharp angular lines that continuously evolves across the canvas. The pattern is constructed from a grid of geometric elements that shift and reconfigure in subtle ways over time, maintaining an underlying sense of structure while appearing alive with motion. Periodic pulses radiate outward from invisible centers, causing the entire field to expand and contract rhythmically. These visual bursts are synchronized with the lattice's internal dynamics, creating a sense of structured energy that pulses through the composition without any external input or interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.757
+}
