@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 807, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/807/ Licensed CC BY 4.0.",
+  "brief": "The composition features vast, overlapping planes of deep, saturated color, softly defined to suggest immense depth and emotional richness. These planes do not interact with the viewer, but instead contain a subtle, continuous chromatic shift. This shift begins as an intense concentration of color at the central dividing lines, gradually lessening in intensity as the eye travels outward toward the composition's edges. The overall effect is a mesmerizing, gentle illumination that appears to pulsate from the core outward, making the boundaries of the colors feel simultaneously fixed and in constant, slow movement.",
+  "completion_tokens": 1205,
+  "created_utc": "2026-09-18T04:47:52Z",
+  "entry_id": 807,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 648,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `createGraphics()` is called inside `draw()`, so this sketch allocates it again on every frame; do it once in `setup()` and keep the result in a variable (sketch.js line 37)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: the run passed its 90 s wall ceiling over the first 30 frames of the 120-frame idle window (17556.2 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17556.2,
+      "prompt_tokens": 2211,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 563.438,
+      "wall_s": 89.595
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 557,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.8,
+      "prompt_tokens": 2400,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.818,
+      "wall_s": 42.108
+    }
+  ],
+  "job_id": 808,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same overlapping planes of deep, rich color, and this time the chroma shift should intensify sequentially from the center to the outer edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 742,
+    "root_entry_id": 35
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same overlapping color fields, and this time the diffusion should subtly shift the saturation of the outer layer.\n\nRevise: the same overlapping, softly defined fields of rich color, and this time the intensity of the chromatic shift should pulse rhythmically across the composition.\n\nRevise: the same overlapping planes of rich, softly defined color, and this time the subtle chroma shift should briefly intensify the central vertical dividing lines.\n\nRevise: the same overlapping planes of deep, rich color, and this time the subtle chroma shift should intensify the defining boundaries of the outermost vertical layers.\n\nRevise: the same overlapping planes of deep, rich color, and this time the chroma shift should intensify sequentially from the center to the outer edges.",
+  "prompt_tokens": 4611,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/807/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/807",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, slowly shifting chromatic field using overlapping circular planes centered on the canvas. Each plane pulses with a gentle hue shift that originates at its center and fades outward, creating a sense of depth and emotional resonance. The composition avoids sharp boundaries or intense contrasts, instead using subtle transparency and gradual color transitions to suggest infinite layers of color moving in harmony. The viewer experiences a mesmerizing, almost meditative glow that emanates from the center, with each plane contributing to a unified field of shifting saturation and warmth.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.703
+}
