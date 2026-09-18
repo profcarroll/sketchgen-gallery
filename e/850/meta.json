@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same orbiting partic\u2026\u201d \u2014 sketchgen entry 850, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/850/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic field of light, streaking trails of color that traverse the space. These trails represent energetic particles continuously moving and interacting. The primary force visible is mutual repulsion, causing the particles to repel each other in visible, wavy patterns as they flow. Occasionally, however, the forces combine in a way that draws multiple particles together, creating temporary, localized knots or clusters of bright light that slowly fade as the field continues to flow around them.",
+  "completion_tokens": 2623,
+  "created_utc": "2026-09-18T09:17:14Z",
+  "entry_id": 850,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 797,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 79)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 100.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 100.4,
+      "prompt_tokens": 2195,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.2,
+      "wall_s": 50.998
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1062,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (9) with the end of it (9); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading '5')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (9) with the end of it (9); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.6,
+      "prompt_tokens": 2394,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.422,
+      "wall_s": 68.735
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 764,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 32.0,
+      "prompt_tokens": 2348,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.218,
+      "wall_s": 51.09
+    }
+  ],
+  "job_id": 851,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same field of visible, streaking trails, and this time the repulsive forces occasionally draw particles into localized, temporary groupings.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 800,
+    "root_entry_id": 373
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same orbiting particle system, and this time particles leave a visible, fading trail behind their continuous path.\n\nRevise: the same orbiting particle system, and this time some particles periodically accelerate outward from the central point\n\nRevise: the same orbiting particle system, and this time the fading trail left by each particle persists for a noticeable length of time.\n\nRevise: the same orbiting particle system, and this time the particles are occasionally perturbed from their perfect circular paths onto noticeably elliptical trajectories.\n\nRevise: the same field of visible, streaking trails, and this time the particles are occasionally perturbed from their perfect circular paths onto noticeably elliptical trajectories.\n\nRevise: the same streaking field of color across the canvas, and this time particles occasionally repel each other, causing visible deviations and bending in their trails.\n\nRevise: the same field of visible, streaking trails, and this time the repulsive forces occasionally draw particles into localized, temporary groupings.",
+  "prompt_tokens": 6937,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/850/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/850",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of light composed of hundreds of glowing particles that move continuously across the canvas. Each particle leaves a fading trail behind it, creating a sense of motion and energy. The particles repel each other within a certain radius, generating wavy, flowing patterns as they navigate around one another. Occasionally, clusters form where multiple particles come together temporarily due to the interplay of their repulsive forces, creating bright knots that slowly dissipate. The visual effect conveys both individual movement and collective behavior, with the repulsion force being the primary dynamic element shaping the field's structure and flow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 170.823
+}
