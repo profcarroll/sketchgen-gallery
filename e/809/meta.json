@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctwo flocks that avoid each other Revise: the same two separate, fluid\u2026\u201d \u2014 sketchgen entry 809, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/809/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays two separate, fluid streams of colored particles that drift together while maintaining a consistent distance from each other. The particles appear to ebb and flow as they interact with the invisible rules governing their movement. One of the colored streams pulses its size rhythmically, creating a visible pulsation that becomes increasingly rapid and pronounced throughout the drawing, giving the illusion of the flock expanding and contracting rapidly over time.",
+  "completion_tokens": 1037,
+  "created_utc": "2026-09-18T05:01:34Z",
+  "entry_id": 809,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1037,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.5,
+      "prompt_tokens": 2182,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.225,
+      "wall_s": 110.133
+    }
+  ],
+  "job_id": 810,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same two distinct, colored streams of particles, and this time the pulsing stream increases its frequency and maximum amplitude.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 745,
+    "root_entry_id": 699
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "two flocks that avoid each other\n\nRevise: the same two separate, fluid streams of colored particles, and this time one of the flocks pulses in size rhythmically\n\nRevise: the same two distinct, colored streams of particles, and this time the pulsing stream increases its frequency and maximum amplitude.",
+  "prompt_tokens": 2182,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/809/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/809",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts two fluid streams of colored particles that move in opposition yet maintain a consistent distance between them. One stream pulses rhythmically, expanding and contracting in sync with an increasing pulse frequency, creating a visual effect of rapid expansion and contraction. The particles follow simple rules: they repel each other within their own group to avoid clumping, while being attracted to particles in the opposing group. The visual result is a dynamic, flowing system where two distinct flocks move together yet maintain separation, with one flock pulsing dramatically over time to create a sense of rhythmic expansion and contraction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 110.133
+}
