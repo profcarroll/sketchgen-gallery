@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cillustrate liquid pouring into a glass\u201d \u2014 sketchgen entry 884, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/884/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a clear, geometric glass container positioned against a neutral background. A continuous stream of richly colored liquid begins pouring from an unseen source above, creating defined, fluid shapes as it descends. Upon impact with the liquid already collecting inside the glass, the stream creates dynamic ripples and occasional, smooth splashes. The liquid level steadily rises within the confines of the glass, momentarily distorting the background and refracting light off the curved walls before the pour continues uninterrupted.",
+  "completion_tokens": 1126,
+  "created_utc": "2026-09-18T16:52:05Z",
+  "entry_id": 884,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1126,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 2197,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.342,
+      "wall_s": 69.331
+    }
+  ],
+  "job_id": 885,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 884
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate liquid pouring into a glass",
+  "prompt_tokens": 2197,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/884/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/884",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a glass container filled with flowing liquid, capturing the visual dynamics of a continuous pour. The scene features a geometric transparent container against a neutral background, with liquid drops falling from above and splashing into the existing fluid below. I used particle-based simulation for the falling drops, incorporating gravity and viscosity to create realistic motion. Upon impact, the drops generate ripples that propagate outward, simulating surface tension effects. The liquid level steadily rises within the container, creating a subtle distortion effect on the background as it fills. The technique focuses on fluid simulation using simple physics principles while maintaining visual appeal through color and timing of the animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.331
+}
