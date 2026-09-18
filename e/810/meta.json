@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 810, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/810/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a clean, minimalist analog clock face. The time is conveyed solely through two hands: a noticeably thicker hour hand and a longer minute hand. Both hands feature softly rounded tips, giving the design a refined, modern feel. The clock does not use numbers or markings; instead, its continuous, smooth movement across the blank face tells the exact time. The visual focus is entirely on the graceful rotation and the minimalist design of the hands themselves.",
+  "completion_tokens": 590,
+  "created_utc": "2026-09-18T05:07:48Z",
+  "entry_id": 810,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 590,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2191,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.21,
+      "wall_s": 95.92
+    }
+  ],
+  "job_id": 811,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 746,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.",
+  "prompt_tokens": 2191,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/810/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/810",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a minimalist analog clock face with only two hands: a thick hour hand and a longer minute hand. The design emphasizes clean lines and refined aesthetics through softly rounded tips on both hands. Without any numbers or markings, the time is conveyed purely through the continuous, smooth rotation of the hands. The clock runs autonomously, updating its display every frame to reflect the current time. The visual focus remains entirely on the graceful movement and elegant form of the hands themselves, creating a sense of quiet sophistication and timeless elegance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.92
+}
