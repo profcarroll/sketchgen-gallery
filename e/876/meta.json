@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csafari landscape Revise: redraw without water safari is typically ass\u2026\u201d \u2014 sketchgen entry 876, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/876/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply textural, arid landscape dominated by rich terracotta earth tones beneath a stark beige sky. The ground surface is characterized by a network of visible cracks and fissures, which hold sparse patches of lighter, brittle sediment dust. The scene is dynamically animated by numerous, constantly drifting dust devils. These swirling currents traverse the deeply cracked ground, leaving distinct, visible sediment trails that fade as they pass.",
+  "completion_tokens": 928,
+  "created_utc": "2026-09-18T15:53:58Z",
+  "entry_id": 876,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 928,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": 2187,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.934,
+      "wall_s": 58.151
+    }
+  ],
+  "job_id": 877,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same arid landscape, and this time the visible sediment dust patches settled into the cracks and fissures should appear more brittle and sparsely distributed.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 826,
+    "root_entry_id": 104
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "safari landscape\n\nRevise: redraw without water safari is typically associated to arrid enviornments and the acacia tree,\n\nRevise: the same arid expanse, and this time deep terracotta earth tones replacing the dusty browns\n\nRevise: the same arid expanse, and this time fewer low scrub shapes\n\nRevise: the same arid expanse, and this time slight dust devils drifting across the terracotta ground\n\nRevise: the same arid landscape, and this time increasing the contrast between the terracotta ground and the beige sky\n\nRevise: the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures\n\nRevise: the same arid expanse, and this time the visible cracks and fissures should become wider and more sharply defined.\n\nRevise: the same arid landscape, and this time increasing the size and frequency of the drifting dust devils across the cracked ground\n\nRevise: the same arid expanse, and this time introducing patches of lighter, dried sediment dust settling into the cracks and fissures.\n\nRevise: the same arid landscape, and this time having the drifting dust devils leave visible sediment trails across the cracked ground.\n\nRevise: the same arid landscape, and this time the visible sediment dust patches settled into the cracks and fissures should appear more brittle and sparsely distributed.",
+  "prompt_tokens": 2187,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/876/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/876",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic, arid landscape dominated by rich terracotta earth tones and stark beige skies. It features a cracked ground surface with visible fissures and sparse sediment patches that create texture. The scene comes alive through numerous dust devils that drift across the terrain, leaving fading trails behind them. The composition uses color theory to evoke warmth and dryness while maintaining visual contrast between elements. The animation is procedural and self-contained, demonstrating how organic movement can be simulated using particle systems and trail effects within p5.js's constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.151
+}
