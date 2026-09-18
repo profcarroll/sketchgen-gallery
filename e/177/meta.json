@@ -1,0 +1,121 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 177, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/177/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, retro perspective of a main road that curves into the distance. Flanking the primary path are simple side roads leading off to the sides. The environment is populated by periodic visual obstacles that appear along the edges of the road. The viewer controls a vehicle, which moves forward automatically but can be steered using directional keys, and brought to a stop using the brake key.",
+  "completion_tokens": 3685,
+  "created_utc": "2026-09-15T01:08:26Z",
+  "entry_id": 177,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1374,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 99)\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 138)\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 152)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] lastW is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2180,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.169,
+      "wall_s": 120.106
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1271,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2480,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.269,
+      "wall_s": 81.03
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1040,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 73)\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 93)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2297,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.185,
+      "wall_s": 64.816
+    }
+  ],
+  "job_id": 178,
+  "last_error": "gate exit 1: assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      592
+    ],
+    "critique": "the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 126,
+    "root_entry_id": 55
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.",
+  "prompt_tokens": 6957,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/177/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/177",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a retro-style driving simulation with a curved road that extends into the distance. The viewer controls a vehicle using arrow keys\u2014steering left/right and accelerating forward while having the ability to brake. The environment features periodic visual obstacles along the edges of the road and side roads branching off at intervals. The perspective is rendered using a series of diminishing road segments that curve gently, creating a sense of depth and motion as the vehicle moves forward automatically. The scene demonstrates classic 3D perspective techniques with a simple but effective visual style reminiscent of early driving games.",
+  "submitted_by": "profcarroll",
+  "wall_s": 265.952
+}
