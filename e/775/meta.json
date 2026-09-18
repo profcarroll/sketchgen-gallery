@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 775, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/775/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dramatic, high-contrast nighttime view of a cityscape overlooking a harbor. Drones illuminate the scene, periodically arranging themselves into momentary geometric formations high above the water. The primary focus is the dynamic water surface, which captures the light from the formations and the buildings. These reflections are not static; they constantly pulsate and distort across the water, creating a ripple effect of pulsating colour and light patterns. The viewer simply observes this continuous, mesmerizing interplay of light, form, and reflected movement on the water\u2019s surface.",
+  "completion_tokens": 1888,
+  "created_utc": "2026-09-18T01:00:43Z",
+  "entry_id": 775,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1888,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.3,
+      "prompt_tokens": 2212,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.207,
+      "wall_s": 159.531
+    }
+  ],
+  "job_id": 776,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dramatic nighttime cityscape over a harbor, and this time the reflections of the drone formations should pulsate and distort across the water's surface.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 692,
+    "root_entry_id": 41
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations\n\nRevise: the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly\n\nRevise: the same dynamic nighttime harbor scene, and this time the drones will illuminate the buildings with focused searchlights\n\nRevise: the same dynamic, high-contrast nighttime cityscape over a harbor, and this time the searchlights will periodically highlight individual boats anchored in the water.\n\nRevise: the same dramatic nighttime cityscape over a harbor, and this time the drones will arrange themselves into complex, momentary geometric formations when the mouse hovers over specific areas.\n\nRevise: the same dramatic nighttime cityscape over a harbor, and this time the water reflects the light cast by the drones and buildings.\n\nRevise: the same dramatic nighttime cityscape over a harbor, and this time the reflections of the drone formations should pulsate and distort across the water's surface.",
+  "prompt_tokens": 2212,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/775/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/775",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing nighttime cityscape with a dynamic water surface that captures and distorts light from passing drones. The scene features a dramatic harbor view with high-contrast buildings and a pulsating, wave-like water surface that continuously shifts in color and form. Drones periodically illuminate the scene as they fly through the air, occasionally arranging themselves into geometric patterns that create momentary, mesmerizing light formations. The water surface reflects these lights with a dynamic, rippling effect that pulses and distorts, creating an immersive interplay of light, movement, and reflected color across the entire canvas. The entire composition evolves organically without any user input, creating a continuously shifting visual experience that captures the ethereal quality of light dancing on water in a city at night.",
+  "submitted_by": "profcarroll",
+  "wall_s": 159.531
+}
