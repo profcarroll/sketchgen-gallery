@@ -1,0 +1,1 @@
+This sketch depicts two vibrant streams of particles flowing across the canvas in a fluid, dynamic motion. Each stream maintains its own distinct identity while drifting across the screen with organic movement patterns. The visualization uses WebGL rendering for efficient particle drawing and connection lines that create an intricate network between nearby particles.

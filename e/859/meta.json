@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctwo flocks that avoid each other Revise: the same two separate, fluid\u2026\u201d \u2014 sketchgen entry 859, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/859/ Licensed CC BY 4.0.",
+  "brief": "Two separate, contrasting streams of vibrant colored particles flow across the canvas like liquid light. The streams maintain distinct, fluid boundaries and generally drift across the screen. Periodically, one of the streams begins to pulse, increasing its size and frequency dramatically. At the peak of this expansion, the movement of the particles momentarily reverses, causing the entire stream to recoil backward and then resume its initial outward trajectory.",
+  "completion_tokens": 1549,
+  "created_utc": "2026-09-18T10:08:13Z",
+  "entry_id": 859,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1549,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.6,
+      "prompt_tokens": 2206,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.781,
+      "wall_s": 92.195
+    }
+  ],
+  "job_id": 860,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same two separate, fluid streams of colored particles, and this time the pulsating stream momentarily inverts its internal particle vectors during peak expansion.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 809,
+    "root_entry_id": 699
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "two flocks that avoid each other\n\nRevise: the same two separate, fluid streams of colored particles, and this time one of the flocks pulses in size rhythmically\n\nRevise: the same two distinct, colored streams of particles, and this time the pulsing stream increases its frequency and maximum amplitude.\n\nRevise: the same two separate, fluid streams of colored particles, and this time the pulsating stream momentarily inverts its internal particle vectors during peak expansion.",
+  "prompt_tokens": 2206,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/859/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/859",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts two vibrant streams of particles flowing across the canvas in a fluid, dynamic motion. Each stream maintains its own distinct identity while drifting across the screen with organic movement patterns. The visualization uses WebGL rendering for efficient particle drawing and connection lines that create an intricate network between nearby particles.",
+  "submitted_by": "profcarroll",
+  "wall_s": 92.195
+}
