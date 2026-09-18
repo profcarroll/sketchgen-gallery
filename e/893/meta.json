@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 893, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/893/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, chaotic field of retro pixel shapes that constantly drift and shift. As the cursor moves, the chaos intensifies: nearby pixels scatter outward, forming transient, glowing geometric lattices. These structures pulse and expand, temporarily freezing the random motion by guiding nearby pixels into perfect, glowing lines and squares. Finally, the entire pattern crests, releasing a final, powerful echo that freezes the surrounding chaotic pixels into a structured, translucent, glass-like tapestry.",
+  "completion_tokens": 1437,
+  "created_utc": "2026-09-18T17:32:12Z",
+  "entry_id": 893,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1437,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "prompt_tokens": 1539,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.577,
+      "wall_s": 78.351
+    }
+  ],
+  "job_id": 895,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant, chaotic field of retro-styled pixel shapes, and this time the final glowing echo should expand outward, freezing the surrounding pixels into structured, translucent glass-like forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "parent_entry_id": 839,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path\n\nRevise: try again but make it interactive and animate\n\nRevise: the same chaotic grid of pixelated shapes, and this time the shapes should scatter outward from the cursor's path\n\nRevise: the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward\n\nRevise: the same vibrant, chaotic grid of retro-styled pixel shapes, and this time the scattering pixels should temporarily organize themselves into visible, geometric ripple patterns.\n\nRevise: the same chaotic, vibrant grid of retro pixel art shapes, and this time the scattered pixels should temporarily organize themselves into visible, structured lattices that glow faintly before fading back into the random motion.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the temporary lattices should sequentially glow to reveal a structured blueprint of the surrounding random chaos.\n\nRevise: the same vibrant and energetic field composed of retro-styled pixel shapes, and this time the structured lattices should emit a subtle force that gently guides the nearby chaotic pixels toward the emerging form.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the temporary lattices should pulse sequentially, causing the structure to visibly expand and contract before fully forming.\n\nRevise: the same vibrant, energetic chaos of retro-styled pixel shapes, and this time the fully materialized form should emit faint, organized trails of pixels outward into the surrounding noise.\n\nRevise: the same vibrant and energetic field of retro-styled pixel shapes, and this time the organized trails should pull nearby chaotic pixels into temporary, perfectly straight lines before releasing them.\n\nRevise: the same vibrant and energetic field composed of retro-styled pixel shapes, and this time the organized lines should momentarily adopt the rigid, visible geometry of glowing squares before dissipating.\n\nRevise: the same chaotic, vibrant field composed of retro-styled pixel shapes, and this time the residual pixels should pulse outward, leaving behind a momentary, visible echo of the pattern's perfect geometry.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the final glowing echo should expand outward, freezing the surrounding pixels into structured, translucent glass-like forms.",
+  "prompt_tokens": 1539,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/893/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/893",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, interactive field of glowing pixel particles that respond to cursor movement. As the mouse approaches, nearby pixels scatter outward and form temporary geometric lattices that pulse and expand. The system uses spatial hashing for efficient particle interactions and includes a periodic \"echo\" effect that dramatically reorganizes particles into a structured, translucent pattern. The chaotic motion is governed by physics-based movement with subtle pulses, creating an ever-shifting visual landscape where the viewer's interaction directly influences the emergent patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.351
+}
