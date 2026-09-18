@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cgrant theft auto ported to p5.js. arrow keys control character or car\u2026\u201d \u2014 sketchgen entry 780, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/780/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, open-world cityscape rendered with detailed realism. The environment features complex pavement textures, dynamic shadows cast by buildings, and visible water runoff that reflects the changing light. The viewer controls a character or vehicle that navigates this bustling urban landscape. Using the directional keys allows the user to traverse the scene, causing the avatar to move through the streets and interacting with the constantly shifting, simulated light and water surfaces.",
+  "completion_tokens": 2564,
+  "created_utc": "2026-09-18T01:45:49Z",
+  "entry_id": 780,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 839,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 14)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 15)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 55)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 64)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 114.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 114.4,
+      "prompt_tokens": 1535,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 23.664,
+      "wall_s": 81.364
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 673,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 15)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 17)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 49)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 58)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 117.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 117.7,
+      "prompt_tokens": 1852,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 23.31,
+      "wall_s": 48.192
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1052,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.2,
+      "prompt_tokens": 1852,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 6.432,
+      "wall_s": 64.743
+    }
+  ],
+  "job_id": 781,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, simulated open-world cityscape environment, and this time the ground surface exhibits water runoff and reflections from the dynamic shadows.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 697,
+    "root_entry_id": 183
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "grant theft auto ported to p5.js. arrow keys control character or car. spacebar to attack.\n\nRevise: the same open-world cityscape, and this time the attack leaves behind scorch marks on the pavement\n\nRevise: the same open-world cityscape, and this time the buildings dynamically cast shadows based on the simulated time of day\n\nRevise: start over and go back to the original prompt, too much prompt drift\n\nRevise: the same open-world cityscape, and this time the buildings dynamically cast shadows based on the simulated time of day\n\nRevise: the same open-world cityscape, and this time the pavement textures are visible and react to the passing shadows.\n\nRevise: the same open-world cityscape, and this time the ground surface shows differential weathering and grime based on the movement of the shadows\n\nRevise: the same vast, simulated open-world cityscape environment, and this time the ground surface exhibits water runoff and reflections from the dynamic shadows.",
+  "prompt_tokens": 5239,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/780/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/780",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive urban environment with a dynamic cityscape featuring towering buildings and flowing water runoff. The viewer navigates through the streets using arrow keys, experiencing shifting perspectives as they move. The scene includes detailed architectural elements like windows and realistic lighting that changes over time, casting moving shadows across the ground. Water particles simulate runoff effects, flowing continuously through the streets with physics-based movement. The entire scene operates within strict performance constraints, rendering efficiently in real-time without exceeding frame budget limitations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 194.299
+}
