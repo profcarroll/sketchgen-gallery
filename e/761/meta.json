@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 761, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/761/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a continuous, flowing field of glowing, amorphous planes that shift and drift across the screen. These semi-transparent shapes interact to create distinct, highly saturated boundaries where they overlap, lending a sharp, vibrant contrast to the background glow. Intersecting this fluid field are clusters of sharply defined, geometrically angular structures that appear to intersect the main current of motion. The overall composition maintains a gentle, mesmerizing movement and is accompanied by a low, ambient electronic soundscape.",
+  "completion_tokens": 958,
+  "created_utc": "2026-09-17T23:22:57Z",
+  "entry_id": 761,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 958,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 69.7,
+      "prompt_tokens": 2224,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.602,
+      "wall_s": 101.32
+    }
+  ],
+  "job_id": 762,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same field of glowing, amorphous planes, and this time introducing clusters of geometrically defined, sharply angular structures that intersect the main flow",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 613,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing variable rates of perceived rotation across the surface\n\nRevise: too derivatve, try something different\n\nRevise: the same field of amorphous, glowing planes, and this time introducing varied levels of sharper contrast and defined edges between the floating shapes\n\nRevise: the same field of glowing, amorphous planes, and this time increasing the saturation and contrast of the boundaries where the shapes overlap\n\nRevise: the same field of glowing, amorphous planes, and this time introducing clusters of geometrically defined, sharply angular structures that intersect the main flow",
+  "prompt_tokens": 2224,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/761/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/761",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, flowing field of glowing, amorphous planes that drift and shift across the screen in a mesmerizing dance. The planes are rendered using procedural geometry with noise functions to create organic, ever-changing shapes that seem to breathe and pulse. Semi-transparent and softly glowing, they interact to form sharp, vibrant boundaries where they overlap, creating a striking contrast against the dark background. Interspersed among this fluid field are clusters of sharply defined geometric structures\u2014angular cubes that appear to cut through the current of motion. The composition maintains a gentle, hypnotic rhythm through subtle rotations and movements, evoking an ambient electronic soundscape through visual motion alone. The use of WEBGL renderer allows for depth and spatial complexity while maintaining performance within the strict frame budget.",
+  "submitted_by": "profcarroll",
+  "wall_s": 101.32
+}
