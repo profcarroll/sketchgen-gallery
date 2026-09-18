@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 792, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/792/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deeply atmospheric, cold alpine winter landscape, featuring snow-draped peaks and muted, icy color palettes. The foreground is dominated by detailed rock formations etched with natural channels. The scene subtly moves with an ongoing sense of atmosphere, such as drifting snow or changing light. When the viewer clicks, an avalanche occurs, depositing debris and fresh snow that has settled specifically within the natural channels and crevices of the foreground rock formations, creating visible, sculpted snow drifts.",
+  "completion_tokens": 1287,
+  "created_utc": "2026-09-18T03:00:19Z",
+  "entry_id": 792,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1287,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.7,
+      "prompt_tokens": 2248,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.552,
+      "wall_s": 126.049
+    }
+  ],
+  "job_id": 793,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 723,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.",
+  "prompt_tokens": 2248,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/792/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/792",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an atmospheric winter landscape with layered geological formations and drifting snow. The scene features rocky terrain etched with natural channels that respond to user interaction through a triggered avalanche effect. The viewer experiences subtle environmental motion through camera movement and snow physics, while clicking produces a localized avalanche that deposits fresh snow specifically within the crevices of foreground rocks. The technique uses WEBGL rendering for depth perception, procedural generation for terrain elements, and particle systems for atmospheric snowfall that responds to both time-based animation and user input events.",
+  "submitted_by": "profcarroll",
+  "wall_s": 126.049
+}
