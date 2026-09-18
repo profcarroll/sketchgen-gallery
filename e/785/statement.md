@@ -1,0 +1,1 @@
+This sketch creates a dynamic visual field where orderly pixel trails emerge from chaos, forming temporary geometric structures before dissolving back into randomness. It uses a particle system with motion constraints to simulate organized movement within a noisy environment, creating fleeting moments of perfect geometry.
