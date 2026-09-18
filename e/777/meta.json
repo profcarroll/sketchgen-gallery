@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 777, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/777/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously evolving, dense network of abstract lines interwoven with complex geometric shapes. The entire field is constantly dynamic, undergoing periodic warping and tessellating distortions that cause the interconnected segments to momentarily break apart. These separated sections follow visible, decaying, and distinct trajectories across the screen before finally dissipating. As the network attempts to reconnect, the lines exhibit subtle chromatic rippling and the whole structure writhes, creating a powerful sense of contained, yet violently, structured movement.",
+  "completion_tokens": 2674,
+  "created_utc": "2026-09-18T01:18:57Z",
+  "entry_id": 777,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1235,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 66)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 110)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1665.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1665.7,
+      "prompt_tokens": 1552,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 103.19,
+      "wall_s": 105.794
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1439,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 74.3,
+      "prompt_tokens": 1800,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 16.004,
+      "wall_s": 83.161
+    }
+  ],
+  "job_id": 778,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same densely interconnected network of abstract lines and complex geometric shapes, and this time the separated segments will follow distinct, decaying trajectories before dissipating.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 694,
+    "root_entry_id": 34
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.\n\nRevise: the same continuous field of complex geometric shapes and abstract lines, and this time the separating vectors will accumulate and reconconnect at specific nodal points.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will momentarily invert the local direction of all visible segments.\n\nRevise: the same densely interconnected network of abstract lines and complex geometric shapes, and this time the separated segments will follow distinct, decaying trajectories before dissipating.",
+  "prompt_tokens": 3352,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/777/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/777",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, evolving network of interconnected particles that flow through a three-dimensional space. The system uses a grid-based spatial partitioning technique to efficiently manage particle connections while maintaining performance within strict frame budget constraints. Particles move continuously with randomized velocities, wrapping around the canvas boundaries and gradually decaying before resetting. As they move, particles form temporary connections with nearby neighbors based on distance thresholds, creating an ever-shifting web of lines that pulse with color intensity. The entire structure exhibits a sense of contained chaos\u2014particles break apart and reform connections as they travel, their trajectories creating both immediate visual interest and long-term structural coherence. The color palette shifts through hue values while maintaining consistent saturation and brightness levels, allowing the network to maintain visual cohesion even as individual elements fade in and out over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 188.955
+}
