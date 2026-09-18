@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 904, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/904/ Licensed CC BY 4.0.",
+  "brief": "A stylized cross-section of a tidal zone appears, featuring sharply defined horizontal bands of color that simulate water flow. These bands oscillate, moving from broad, gentle curves to highly compressed and expanding structures. Over time, the flow resolves into solid, structured channels that delineate the main currents. Along the edges and within these principal channels, smaller, repeating micro-eddies become visible, adding intricate, detailed movement that simulates persistent, localized turbulence within the overall rhythm of the tide.",
+  "completion_tokens": 813,
+  "created_utc": "2026-09-18T18:52:03Z",
+  "entry_id": 904,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 813,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.6,
+      "prompt_tokens": 2199,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.066,
+      "wall_s": 52.042
+    }
+  ],
+  "job_id": 906,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 851,
+    "root_entry_id": 379
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.",
+  "prompt_tokens": 2199,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/904/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/904",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a stylized cross-section of a tidal zone where horizontal bands of color simulate water flow dynamics. The bands oscillate between broad, gentle curves and highly compressed structures, evolving over time into structured channels that delineate main currents. Within these channels, smaller micro-eddies emerge as intricate, repeating movements that add localized turbulence to the overall rhythmic tide. The visualization uses a combination of sine wave oscillation, color gradients, and layered horizontal bands to create an abstract yet evocative representation of tidal flow patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 52.042
+}
