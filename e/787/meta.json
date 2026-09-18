@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 787, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/787/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, metallic, geometrically designed channel viewed in three dimensions. A spherical marble rolls through the structure, following a continuous, yet highly erratic path. The channel walls feature sharp, abrupt directional shifts, transitioning from shallow slopes to sudden, momentary vertical drops. The marble's movement dictates the primary action, appearing to struggle and correct itself as it navigates the deep, engineered curvature of the funnel. The overall scene is dominated by contrasting metallic grays of the channel and the smooth, consistent rolling motion of the marble as it rushes toward the exit.",
+  "completion_tokens": 635,
+  "created_utc": "2026-09-18T02:27:25Z",
+  "entry_id": 787,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 635,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "prompt_tokens": 1563,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.463,
+      "wall_s": 74.007
+    }
+  ],
+  "job_id": 788,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, geometrically designed channel, and this time the intersecting ridges and troughs are replaced by sections that feature abrupt directional shifts and momentary vertical drops.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 717,
+    "root_entry_id": 127
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope gradually curves inward toward the exit.\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope widens and flattens into a collecting basin at the exit.\n\nRevise: The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.\n\nRevise: the same funnel-shaped channel, and this time the shallow basin widens and deepens significantly at the exit.\n\nRevise: the same complex, funnel-shaped channel, and this time the initial slope features abrupt shifts in curvature and requires a momentary pause.\n\nRevise: the same complex, solid, funnel-shaped channel, and this time the structure incorporates small, alternating intersecting ridges and troughs forcing the marble into constant, minute course corrections.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs force the marble into sudden, visible lateral deviations.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs are replaced by randomly sized, asymmetrical crystalline barriers.\n\nRevise: the same complex, geometrically designed channel, and this time the random crystalline barriers are replaced by continuous, sharply angled metal walls.\n\nRevise: the same complex, geometrically designed channel, and this time the intersecting ridges and troughs are replaced by sections that feature abrupt directional shifts and momentary vertical drops.",
+  "prompt_tokens": 1563,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/787/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/787",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a three-dimensional metallic channel through which a spherical marble rolls in an erratic, physics-driven path. The scene is rendered using p5.js's WEBGL mode to achieve a true 3D perspective, with the marble navigating a complex geometric structure defined by a series of connected points that form a winding, undulating funnel. The marble's movement is governed by basic physics including gravity and collision detection with the channel walls, resulting in a dynamic, unpredictable motion that mimics the struggle of an object moving through a challenging environment. The contrast between the cool metallic tones of the channel and the smooth, consistent rolling of the marble creates visual tension and focus.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.007
+}
