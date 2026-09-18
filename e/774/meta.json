@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 774, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/774/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a detailed, three-dimensional rendering of amorphous, delicate mold structures growing across a deep substrate. An intricate network of filamentous mycelial growth dominates the scene, with visible primary connecting filaments spanning the surface. Embedded within this biological webbing are crystalline formations, suggesting mineral deposition. The structures are illuminated to reveal their complex surface texture, appearing to constantly simulate gradual, organic development over time, without requiring any user input.",
+  "completion_tokens": 1168,
+  "created_utc": "2026-09-18T00:53:47Z",
+  "entry_id": 774,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1168,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.1,
+      "prompt_tokens": 2216,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.997,
+      "wall_s": 112.997
+    }
+  ],
+  "job_id": 775,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate simulation of filamentous mold growth, and this time with visible evidence of mineral deposition forming crystalline structures around the primary filaments.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 681,
+    "root_entry_id": 360
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same amorphous colorful growth, and this time with visible mycelial filaments reaching into the substrate surface\n\nRevise: the same delicate filamentous growth, and this time with increased density of visible mycelial filaments penetrating the substrate surface\n\nRevise: the same delicate, filamentous structures simulating mold growth, and this time with increased thickness and visibility of the primary connecting filaments\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible evidence of mineral deposition forming crystalline structures around the primary filaments.",
+  "prompt_tokens": 2216,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/774/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/774",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an evolving three-dimensional mold structure composed of delicate mycelial filaments and embedded crystalline formations. The scene simulates organic growth through time-based animation, where mycelial segments extend and branch dynamically across the substrate while crystals slowly expand and rotate. The rendering uses WEBGL for volumetric depth and spatial complexity, creating an immersive environment that captures both the intricate surface textures of fungal networks and the geometric precision of mineral deposits. The entire composition evolves autonomously without user input, presenting a continuous visualization of biological development within a deep, dark substrate.",
+  "submitted_by": "profcarroll",
+  "wall_s": 112.997
+}
