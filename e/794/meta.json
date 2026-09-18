@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201clakes of data slowly draining out down river valleys into darkness Re\u2026\u201d \u2014 sketchgen entry 794, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/794/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a luminous, void-like subterranean space filled with streams of data. The primary visual elements are tightly defined ribbons of light, possessing sharp, crystalline edges. These streams are not random; their collective movement is highly organized, forming large, looping, helical patterns that weave continuously through the depths. The entire composition is a dynamic, cyclical display of brilliant, phosphorescent energy, appearing to drift and evolve autonomously without any required input to the viewer.",
+  "completion_tokens": 1341,
+  "created_utc": "2026-09-18T03:15:42Z",
+  "entry_id": 794,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 656,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 198.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 198.2,
+      "prompt_tokens": 2225,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 33.482,
+      "wall_s": 85.561
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 685,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.4,
+      "prompt_tokens": 2355,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.418,
+      "wall_s": 48.009
+    }
+  ],
+  "job_id": 795,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous streams of data, and this time their collective movement must follow large, looping, helical patterns within the void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 725,
+    "root_entry_id": 426
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lakes of data slowly draining out down river valleys into darkness\n\nRevise: the same subterranean depths, and this time the flowing data trails will leave faint, phosphorescent residual marks in the void.\n\nRevise: the same luminous streams of data, and this time the flow should be channeled into distinct, navigable canyons within the void.\n\nRevise: the same luminous streams of data, and this time the movement must form tightly clustered, defined ribbons of light.\n\nRevise: the same luminous streams of data, and this time the glowing ribbons must possess clearly delineated, crystalline edges.\n\nRevise: the same luminous streams of data, and this time their collective movement must follow large, looping, helical patterns within the void.",
+  "prompt_tokens": 4580,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/794/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/794",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing subterranean space filled with organized streams of light. Using WebGL rendering, it generates multiple ribbons that flow in continuous helical patterns through the void. Each ribbon follows a precise mathematical path while maintaining its own color identity and pulsing luminosity. The composition appears to drift autonomously, creating an impression of phosphorescent energy moving through deep space. The visual effect relies on carefully calculated motion paths and consistent color transitions rather than random particle behavior, resulting in a cohesive, hypnotic display that evolves without viewer input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.57
+}
