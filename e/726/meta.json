@@ -1,0 +1,120 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 726, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/726/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract interplay between solid, monolithic architectural planes and luminous energy. Computational rays are cast from an unseen source, intersecting the rigid geometry and mapping complex shadows onto the surfaces. These energy streams are continuously tracked, showing temporal dissipation and leaving behind visible, etched trails or crystalline patterns where the energy meets the solid structure. The interplay creates a shifting field of light and residual color, providing a dynamic visualization of geometric interaction over time.",
+  "completion_tokens": 3438,
+  "created_utc": "2026-09-17T19:42:22Z",
+  "entry_id": 726,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1256,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 57)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 89)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 121)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 126.8 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 126.8,
+      "prompt_tokens": 2221,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.538,
+      "wall_s": 125.85
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 985,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 55)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 87)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 264.1 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 264.1,
+      "prompt_tokens": 2549,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 15.237,
+      "wall_s": 69.773
+    },
+    {
+      "assertions": {},
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1197,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 54)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 111)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 790.2 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 790.2,
+      "prompt_tokens": 2474,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 87.989,
+      "wall_s": 79.766
+    }
+  ],
+  "job_id": 727,
+  "last_error": "gate exit 1: checks failed: frame_budget",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous study of how computational energy interacts with solid, planar geometry, and this time visualizing the residual energy trails etched onto the planar surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 667,
+    "root_entry_id": 358
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": null,
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows\n\nRevise: the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.\n\nRevise: the same abstract interplay between computational geometry and architectural mass, and this time render increased subsurface scattering effects on the rigid planes that catch the light.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the temporal dissipation of computational rays.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the crystallized points of ray impact where the computation meets the rigid geometry.\n\nRevise: the same abstract, shifting interplay between solid architectural mass and luminous energy, and this time visualizing the diffraction patterns etched onto the rigid planar surfaces.\n\nRevise: the same continuous study of how computational energy interacts with solid, planar geometry, and this time visualizing the residual energy trails etched onto the planar surfaces.",
+  "prompt_tokens": 7244,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/726/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/726",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch visualizes the dynamic interplay between rigid architectural forms and luminous energy fields. Through a combination of geometric planes that rotate slowly in space and energetic rays that move independently through 3D space, it creates an abstract representation of light interacting with solid matter. The rays leave glowing trails that dissipate over time, simulating the temporal nature of energy flow. Architectural planes cast shadows and interact with these energy streams, creating complex visual patterns where solid structures meet luminous force. The result is a constantly shifting field of light and shadow that suggests both the physical properties of geometric forms and the invisible dynamics of energy flow through space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 275.389
+}
