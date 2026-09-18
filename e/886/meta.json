@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit\u201d \u2014 sketchgen entry 886, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/886/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a growing piece of fabric being created by needles. Brightly coloured strands of yarn stretch and loop across the surface, forming visible stitches in a pattern that progresses upward. The process of knitting is the main focus, showing the yarn tension and the rhythm of the needles. As the viewer moves the mouse across the canvas, the knitting pattern responds, changing the colour of the next stitches or altering the stitch density, giving the appearance of a controlled, guided design process.",
+  "completion_tokens": 839,
+  "created_utc": "2026-09-18T16:59:11Z",
+  "entry_id": 886,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 839,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1538,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.309,
+      "wall_s": 48.157
+    }
+  ],
+  "job_id": 887,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 886
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a sweater being knit",
+  "prompt_tokens": 1538,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/886/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/886",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a knitting process where yarn strands are progressively added to create fabric. The \"needle\" moves upward across the canvas, dropping stitches that form a visible pattern. The color of each new stitch is determined by the mouse position\u2014when the mouse is moved toward one side of the canvas, the colors shift toward a specific hue. The density of the stitching increases with time and responds to mouse movement, creating a dynamic visual effect. As the pattern grows upward, it shows the rhythm and tension of needlework, with each new stitch connected by thin yarn lines that trace the path of the imaginary needle's motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 48.157
+}
