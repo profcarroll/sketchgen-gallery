@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 877, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/877/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, organic lattice composed of interconnected, glowing cells. The pattern constantly shifts and evolves in a natural, flowing manner. When cells die or change, they do not instantly vanish, but instead leave behind visible trails of residual light. These ghostly trails follow the original paths, lingering and slowly fading over several distinct cycles, giving the entire field a luminous, ephemeral quality. The movement is entirely autonomous, continually generating and dissipating light patterns without requiring any user interaction.",
+  "completion_tokens": 528,
+  "created_utc": "2026-09-18T15:58:52Z",
+  "entry_id": 877,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 528,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "prompt_tokens": 2200,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.671,
+      "wall_s": 38.058
+    }
+  ],
+  "job_id": 878,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, dynamically evolving lattice composed of interconnected, glowing cells, and this time the connection lines glow intensely when two cells are connected and only dimly fade when disconnected.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 827,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.\n\nRevise: the same dynamically shifting lattice of interconnected, glowing cells, and this time expired cells dissipate into trails of residual light.\n\nRevise: the same constantly shifting lattice of interconnected, glowing cells, and this time the residual light trails that follow decay linger visibly for several full generation cycles.\n\nRevise: the same vast, dynamically evolving lattice of interconnected, glowing cells, and this time the background darkens and brightens in pronounced, slow-motion waves of light.\n\nRevise: the same vast, dynamically evolving lattice composed of interconnected, glowing cells, and this time the connection lines glow intensely when two cells are connected and only dimly fade when disconnected.",
+  "prompt_tokens": 2200,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/877/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/877",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving organic lattice of glowing cells that move autonomously across the screen. Each cell leaves a luminous trail behind it, creating a sense of motion and continuity as patterns shift and flow. The system uses a fixed number of particles with persistent trails, allowing viewers to perceive the collective movement and interaction within the field. The visual effect emphasizes the ephemeral quality of light and motion through fading trails and continuous, self-generated patterns that require no user input to maintain their dynamic behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 38.058
+}
