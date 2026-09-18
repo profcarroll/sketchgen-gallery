@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe periodic table of elements\u201d \u2014 sketchgen entry 889, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/889/ Licensed CC BY 4.0.",
+  "brief": "A large, organized grid displays the elements of the periodic table, with each entry represented by a distinct, colored block. These blocks contain the element's chemical symbol and atomic number. The canvas maintains a sense of structure, with faint connections linking groups of related elements. The entire diagram subtly pulses, giving the appearance of living data. When the viewer clicks on any individual element block, that element expands and brightens significantly, displaying additional information such as its atomic mass, group, and electron configuration details.",
+  "completion_tokens": 4003,
+  "created_utc": "2026-09-18T17:10:33Z",
+  "entry_id": 889,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1866,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 67)\n\ngate exit 1: assertions failed: motion(idle), responds(click)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "prompt_tokens": 2221,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.401,
+      "wall_s": 112.457
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2137,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "prompt_tokens": 2454,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.347,
+      "wall_s": 134.827
+    }
+  ],
+  "job_id": 891,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 889
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the periodic table of elements",
+  "prompt_tokens": 4675,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/889/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/889",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the periodic table as an organized grid where each element is represented by a colored block displaying its chemical symbol and atomic number. The blocks pulse gently with subtle animation to give a sense of living data. Elements are color-coded by group, and faint lines connect elements within the same group to show relationships. When a viewer clicks on any element, that element expands and brightens significantly to reveal additional information such as atomic mass and electron configuration. The visualization maintains a structured aesthetic while providing an interactive experience that allows users to explore the periodic table's data through simple clicks.",
+  "submitted_by": "profcarroll",
+  "wall_s": 247.284
+}
