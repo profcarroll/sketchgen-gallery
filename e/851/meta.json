@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 851, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/851/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized cross-section of a tidal zone, rendered in rich, flowing color gradients. Deep, structured channels of water flow through the frame, replacing earlier turbulent plumes. The boundaries between the different zones are sharply defined, giving the illusion of solid, organized currents. These distinct channels move across the canvas, shifting their intensity and depth as the flow constantly evolves, creating a sense of powerful, uninterrupted hydrodynamics.",
+  "completion_tokens": 996,
+  "created_utc": "2026-09-18T09:21:49Z",
+  "entry_id": 851,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 996,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "prompt_tokens": 1511,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.494,
+      "wall_s": 55.331
+    }
+  ],
+  "job_id": 852,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 801,
+    "root_entry_id": 379
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.",
+  "prompt_tokens": 1511,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/851/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/851",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a stylized cross-section of a tidal zone with deep, structured water channels flowing across the canvas. The visualization uses color gradients and wave motion to create a sense of powerful, uninterrupted hydrodynamics. Each channel moves independently with its own speed and amplitude, creating an organic flow pattern that evolves over time. The composition features sharply defined boundaries between zones, giving the illusion of solid currents while maintaining a fluid appearance through subtle animations and reflections. The entire scene generates continuously without user input, meeting the gate's requirements for autonomous visual evolution.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.331
+}
