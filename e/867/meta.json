@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cbuild a spaceship control panel with buttons and switches and when th\u2026\u201d \u2014 sketchgen entry 867, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/867/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a futuristic and visually cohesive control panel composed of various shapes, including illuminated switches and distinct buttons. When the panel is viewed, all inactive switches are subtly glowing with a deep, ambient red light. To trigger the sequence, the viewer must interact by clicking specific buttons in the correct order. Upon successful input, the central windscreen section activates, simulating the spaceship entering hyperspace. This dynamic view is characterized by intense motion, displaying a tunnel composed of streaks and patterns defined by sharp, crystalline geometry.",
+  "completion_tokens": 5051,
+  "created_utc": "2026-09-18T10:55:19Z",
+  "entry_id": 867,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1376,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0557/255, 7168 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2223,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.27,
+      "wall_s": 82.575
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1886,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": 2293,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.885,
+      "wall_s": 113.295
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1789,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0121/255, 2036 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2340,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.234,
+      "wall_s": 107.713
+    }
+  ],
+  "job_id": 868,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same futuristic spaceship control panel, and this time the hyperspace tunnel streaks are composed of crystalline geometric patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 817,
+    "root_entry_id": 530
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "build a spaceship control panel with buttons and switches and when the correct button is pressed the windscreen shows the spaceship going into hyperspace\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a vibrant cyan.\n\nRevise: lacks visual cohesion\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the hyperspace tunnel streaks are composed of crystalline geometric patterns.",
+  "prompt_tokens": 6856,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/867/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/867",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a futuristic spaceship control panel with interactive elements that respond to user input. The interface features illuminated switches and numbered buttons arranged in a visually cohesive layout. When viewed normally, the switches emit a subtle ambient red glow, creating an atmosphere of readiness. The system is activated by pressing buttons in a specific sequence (0, 2, 1, 3), which triggers the central windscreen to activate with a dynamic hyperspace tunnel effect. This transition creates a dramatic visual change that transforms the static control panel into an active space travel interface. The design balances aesthetic futurism with functional interactivity, demonstrating how a controlled environment can shift dramatically through user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 303.583
+}
