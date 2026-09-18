@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cshower thoughts Revise: the same constantly evolving field of abstrac\u2026\u201d \u2014 sketchgen entry 762, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/762/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a constant, flowing field of highly luminous, abstract shapes. These primary bioluminescent forms continuously evolve and pulsate in intensity, shifting their glow and shape across the screen. When a large form dissipates, it breaks apart into smaller, secondary glowing particulates. These sparks drift downward, aggregating briefly in luminous pools near the bottom of the screen before gently dissolving back into the dark background.",
+  "completion_tokens": 863,
+  "created_utc": "2026-09-17T23:28:29Z",
+  "entry_id": 762,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 863,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "prompt_tokens": 1537,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.492,
+      "wall_s": 83.04
+    }
+  ],
+  "job_id": 763,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same constantly evolving field of bioluminescent abstract shapes, and this time the forms should pulsate with increasing and decreasing intensities.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 615,
+    "root_entry_id": 188
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "shower thoughts\n\nRevise: the same constantly evolving field of abstract, bioluminescent shapes, and this time the spheres should break down into smaller, secondary glowing particulates upon dissipation.\n\nRevise: the same constant, fluid field of bioluminescent abstract shapes, and this time the smaller glowing particulates should flow downward, pooling briefly before dissolving into the dark background.\n\nRevise: the same constantly evolving field of bioluminescent abstract shapes, and this time the forms should pulsate with increasing and decreasing intensities.",
+  "prompt_tokens": 1537,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/762/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/762",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, bioluminescent environment using abstract glowing forms that pulse and evolve over time. The scene begins with a few large luminous shapes that continuously shift in intensity and size. When these primary forms fade out, they break apart into numerous smaller glowing particles that drift downward, creating an effect of dissolving light. These particles aggregate briefly near the bottom of the screen before fading away, simulating a gentle dissolution back into darkness. The visual is entirely self-generated, requiring no user input to progress, and uses WebGL rendering for smooth performance while maintaining the luminous aesthetic described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.04
+}
