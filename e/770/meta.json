@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csafari landscape Revise: redraw without water safari is typically ass\u2026\u201d \u2014 sketchgen entry 770, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/770/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an expansive arid landscape dominated by deep terracotta earth tones set against a contrasting beige sky. The ground is heavily textured, featuring visible, sharply defined cracks and fissures into which lighter sediment dust has settled. Sparsely placed acacia trees dot the scene. The primary movement comes from numerous dust devils, which drift organically across the cracked surface, continuously animating the static, desert environment.",
+  "completion_tokens": 885,
+  "created_utc": "2026-09-18T00:24:16Z",
+  "entry_id": 770,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 885,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.5,
+      "prompt_tokens": 2186,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.657,
+      "wall_s": 101.076
+    }
+  ],
+  "job_id": 771,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same arid expanse, and this time introducing patches of lighter, dried sediment dust settling into the cracks and fissures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 637,
+    "root_entry_id": 104
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "safari landscape\n\nRevise: redraw without water safari is typically associated to arrid enviornments and the acacia tree,\n\nRevise: the same arid expanse, and this time deep terracotta earth tones replacing the dusty browns\n\nRevise: the same arid expanse, and this time fewer low scrub shapes\n\nRevise: the same arid expanse, and this time slight dust devils drifting across the terracotta ground\n\nRevise: the same arid landscape, and this time increasing the contrast between the terracotta ground and the beige sky\n\nRevise: the same arid expanse, and this time enhancing the texture of the terracotta ground with visible cracks and fissures\n\nRevise: the same arid expanse, and this time the visible cracks and fissures should become wider and more sharply defined.\n\nRevise: the same arid landscape, and this time increasing the size and frequency of the drifting dust devils across the cracked ground\n\nRevise: the same arid expanse, and this time introducing patches of lighter, dried sediment dust settling into the cracks and fissures.",
+  "prompt_tokens": 2186,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/770/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/770",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an expansive arid desert landscape using p5.js, with a dominant terracotta earth tone palette against a contrasting beige sky. The composition features heavily textured ground with sharply defined cracks into which lighter sediment has settled. Sparsely placed acacia trees provide occasional relief from the flat terrain. The key animation comes from numerous dust devils that drift organically across the cracked surface, continuously animating the static desert environment. Using a fixed number of pre-generated elements and simple physics-based movement, the sketch creates an immersive yet computationally efficient desert scene that evolves naturally over time without user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 101.076
+}
