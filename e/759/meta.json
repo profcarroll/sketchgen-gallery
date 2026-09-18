@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 759, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/759/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, interlocking tessellation of hexagons rendered in a vibrant 1980s color palette. These hexagons continuously rotate and shift, creating mesmerizing, evolving patterns. The visual core features color shifts across the tessellation, where the saturation of a hexagon is dynamically influenced by the rotational velocity of its neighbors. The pattern also features varied levels of perceived transparency and directional flow. The visual display is accompanied by a subtle, ambient soundtrack, and the entire structure is interactive, responding to mouse clicks to alter its configuration and movement.",
+  "completion_tokens": 2096,
+  "created_utc": "2026-09-17T23:14:01Z",
+  "entry_id": 759,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 892,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": 2268,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.616,
+      "wall_s": 98.971
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1204,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "prompt_tokens": 2372,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.566,
+      "wall_s": 75.657
+    }
+  ],
+  "job_id": 760,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "get sound working",
+    "critique_by": "profcarroll",
+    "generation": 9,
+    "parent_entry_id": 657,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working",
+  "prompt_tokens": 4640,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/759/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/759",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, evolving tessellation of rotating hexagons that pulse and shift across the canvas in a vibrant 1980s color palette. Each hexagon rotates at its own velocity while subtly shifting position, creating an organic flow that responds to its neighbors' movements. The saturation of each hexagon dynamically changes based on the average rotational speed of nearby hexagons, creating visual feedback loops that make the pattern feel alive and interactive. The composition features varying levels of transparency and subtle directional movement that create depth and motion. A simple click interaction alters the rotation dynamics of all hexagons while triggering a subtle sound effect, making the entire experience both visually and auditorily engaging. The system maintains performance through careful management of shape calls and spatial relationships, ensuring smooth animation even with many elements on screen.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.628
+}
