@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same vi\u2026\u201d \u2014 sketchgen entry 861, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/861/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, visible loom actively weaving across the entire surface. Threads cross and intertwine in continuous motion, forming intricate, repeating geometric motifs. These motifs are structured as interlocking, crystalline lattices, giving the pattern depth and dimension. The weaving process constantly advances, filling the visible field with brilliant color gradients that emphasize the rigid, yet fluid, structure of the lattices. The entire scene moves naturally and continuously without requiring any input.",
+  "completion_tokens": 1264,
+  "created_utc": "2026-09-18T10:18:21Z",
+  "entry_id": 861,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1264,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.1,
+      "prompt_tokens": 2220,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.134,
+      "wall_s": 75.103
+    }
+  ],
+  "job_id": 862,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, visible loom weaving in action, and this time the formed geometric motifs must incorporate interlocking, crystalline lattices within their structure.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 811,
+    "root_entry_id": 701
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same visible weaving process, and this time the formed thread intersections must momentarily stabilize into repeating, discernible geometric motifs.\n\nRevise: the same visible weaving process, and this time the formed geometric motifs must link seamlessly together, creating continuous, repeating color gradients across the entire visible field.\n\nRevise: the same dynamic, visible loom weaving in action, and this time the formed geometric motifs must incorporate interlocking, crystalline lattices within their structure.",
+  "prompt_tokens": 2220,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/861/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/861",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an infinite, dynamic weaving pattern that fills the entire canvas with interlocking geometric threads. The visualization uses a 3D webGL renderer to create an immersive, crystalline lattice structure where threads move in synchronized wave motions. The color palette shifts through hues based on position and time, creating a constantly evolving visual texture. Each thread follows a path defined by sine and cosine functions, creating the illusion of physical fabric being woven. The pattern is composed of multiple layers: individual threads crossing each other in complex patterns, and a central rotating lattice structure that adds depth and dimension to the overall composition. The motion appears fluid yet structured, resembling both organic weaving and geometric crystal formation, with no user input required for the continuous animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 75.103
+}
