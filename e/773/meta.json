@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 773, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/773/ Licensed CC BY 4.0.",
+  "brief": "A uniform, continuous grid of interconnected squares pulses gently, with each square exhibiting its own subtle, rhythmic breathing motion. The canvas remains alive with this soft pulsation until the viewer interacts with it. When the screen is clicked, a visible wave propagates outward from the point of impact. The wave flashes a bright, randomized color palette, but its most distinct effect is leaving behind a residual shadow on every square it passes through. This shadow is not instantaneous; it persists for an extended period, slowly darkening and then gradually fading back to the square's normal, steady pulsation.",
+  "completion_tokens": 987,
+  "created_utc": "2026-09-18T00:47:47Z",
+  "entry_id": 773,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 987,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "prompt_tokens": 2238,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.677,
+      "wall_s": 102.931
+    }
+  ],
+  "job_id": 774,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, uniform grid of small, interconnected squares, and this time the residual shadow leaves behind a slightly darkened afterglow that persists for a prolonged period.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 655,
+    "root_entry_id": 2
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.\n\nRevise: the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.\n\nRevise: Revise: the same continuous grid of small, interconnected squares, and this time the wave pulse momentarily alters the breathing rhythm of squares in a localized, unpredictable pattern.\n\nRevise: the same continuous grid composed of small, interconnected squares, and this time the wave pulse briefly alters the base pulsation color of every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the wave pulse momentarily shifts the base pulsation color of every affected square.\n\nRevise: the same uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square\n\nRevise: the same continuous, uniform grid composed of interconnected squares, and this time the residual shadow remains visible for an extended period, slowly returning to the base pulsation.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the residual shadow leaves behind a slightly darkened afterglow that persists for a prolonged period.",
+  "prompt_tokens": 2238,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/773/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/773",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a living grid of interconnected squares that breathe gently with a rhythmic pulse, each square subtly expanding and contracting in harmony. The canvas comes alive with this continuous motion until a viewer interacts with it through a click. When clicked, a bright flash propagates outward as a wave, leaving behind persistent shadows on every square it touches. These shadows don't instantly fade but linger, gradually darkening before slowly returning to the square's normal pulsation. The visual effect transforms an initially calm, organic rhythm into a dynamic, interactive experience where each interaction creates a ripple of lasting change across the entire grid.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.931
+}
