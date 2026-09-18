@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse Revise: the same stylized horse, and this time the\u2026\u201d \u2014 sketchgen entry 837, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/837/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized depiction of a horse captured in a full gallop. The figure is rendered with a focus on fluid, organic movement, emphasizing continuous, sweeping curves throughout the body and limbs, replacing any sharp angles. The horse is mid-stride, with the spine forming a prominent, continuous arc that drives the powerful motion. The front legs exhibit a pronounced extension, mirroring the exaggerated follow-through seen in the hind legs, creating a rhythmic and dynamic illusion of rapid motion. This powerful, cyclical action plays continuously on the canvas.",
+  "completion_tokens": 873,
+  "created_utc": "2026-09-18T08:00:03Z",
+  "entry_id": 837,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 873,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "prompt_tokens": 2212,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.336,
+      "wall_s": 54.857
+    }
+  ],
+  "job_id": 838,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized equine figure, and this time the spine should emphasize the continuous, sweeping curve that drives the powerful gallop stride.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 783,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a galloping horse\n\nRevise: the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.\n\nRevise: the same stylized depiction of a horse, and this time the front legs should exhibit a clearer, more pronounced extension during the gallop stride.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the body and limbs should display continuous, flowing curves instead of sharp angles.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the hind legs should exhibit a stronger follow-through during the stride.\n\nRevise: the same stylized equine figure, and this time the spine should emphasize the continuous, sweeping curve that drives the powerful gallop stride.",
+  "prompt_tokens": 2212,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/837/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/837",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a stylized galloping horse using continuous, sweeping curves to capture the fluid motion of a full stride. The horse's body forms a prominent arc with flowing segments that emphasize the rhythmic energy of movement. Through carefully orchestrated timing and position calculations, each point in the horse's form moves in harmony to create an illusion of rapid, cyclical motion. The organic flow is reinforced by connecting lines between points that follow the body's curves, creating a visual rhythm that suggests continuous motion without sharp angles or abrupt transitions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 54.857
+}
