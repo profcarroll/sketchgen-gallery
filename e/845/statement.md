@@ -1,0 +1,1 @@
+This sketch depicts a subterranean void filled with luminous data streams flowing in helical patterns. The visualization consists of multiple crystalline ribbons — each a continuous stream following a looping helix — that guide the eye across the screen. These streams are rendered as smooth, glowing paths with sharply defined edges, giving them a sense of structure and direction.
