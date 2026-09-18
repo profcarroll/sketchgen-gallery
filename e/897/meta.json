@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 897, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/897/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply atmospheric, cold alpine winter landscape, featuring snow-draped mountain peaks and a foreground composed of intricate rock formations. The color palette is muted and cold, emphasized by deep, crystalline blue reflections in the untouched snow. When the viewer clicks the canvas, a visible avalanche debris cascade sweeps down, impacting the foreground. This impact causes the deposited debris to visibly displace the fresh snow, creating disrupted drifts and highlighting the deep channels and crevices etched into the rock.",
+  "completion_tokens": 1260,
+  "created_utc": "2026-09-18T17:53:00Z",
+  "entry_id": 897,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1260,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2220,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.306,
+      "wall_s": 77.12
+    }
+  ],
+  "job_id": 899,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 843,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the fresh snow deposited within the foreground channels will reflect deep, crystalline blue light.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.",
+  "prompt_tokens": 2220,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/897/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/897",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene winter alpine landscape with layered mountain ranges, rocky formations, and a deep snowfield. The composition uses muted blues and grays to evoke cold, untouched wilderness. When clicked at the center of the canvas, an avalanche effect radiates outward from that point, visibly disturbing the snow particles and displacing them according to physics-based motion. The impact reveals underlying rock structures through disrupted snow drifts, emphasizing crevices and channels in the foreground terrain. The visual effect is achieved through particle displacement and a fading wave animation, creating an atmospheric scene that responds meaningfully to user interaction while maintaining stillness when idle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.12
+}
