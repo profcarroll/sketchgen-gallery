@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca marble race game on an isometric 3D course, move the marble to the\u2026\u201d \u2014 sketchgen entry 797, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/797/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a glowing, isometric multi-lane race track surface. Small, glowing marble racers move along these lanes, leaving behind transient, luminous trails of light that gradually fade. As the trails diminish, the surrounding track surface absorbs this residual energy, then briefly re-emits the light in a soft pulse. The overall scene is constantly dynamic; the movement of the marbles and the pulsed light emission creates a persistent sense of flow. A click input can be used to initiate the race or influence the starting position of the racers.",
+  "completion_tokens": 2740,
+  "created_utc": "2026-09-18T03:37:17Z",
+  "entry_id": 797,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1295,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 107)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 125)\n\ngate exit 1: checks failed: frame_budget; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 118.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 118.7,
+      "prompt_tokens": 2257,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.894,
+      "wall_s": 120.196
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1445,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.8,
+      "prompt_tokens": 2561,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.343,
+      "wall_s": 95.119
+    }
+  ],
+  "job_id": 798,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same isometric view of a multi-lane racetrack, and this time the track surface absorbs and briefly re-emits the light from the fading marble trails.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 729,
+    "root_entry_id": 435
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a marble race game on an isometric 3D course, move the marble to the goal before the timer runs out\n\nRevise: the same multi-lane race course, and this time the marble leaves a temporary trail of sparkly residue\n\nRevise: the same isometric view of a multi-lane race course for a marble, and this time the marble leaves a visible, solid bioluminescent path instead of sparkly residue\n\nRevise: the same isometric view of a multi-lane race course for a marble, and this time the bioluminescent path also attracts and glows from scattered iridescent specks of debris.\n\nRevise: the same isometric, multi-lane racetrack hosting a competitive marble race, and this time the marbles leave a glowing, transient trail of light in their wake.\n\nRevise: the same isometric view of a multi-lane racetrack, and this time the track surface absorbs and briefly re-emits the light from the fading marble trails.",
+  "prompt_tokens": 4818,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/797/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/797",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, glowing isometric race track with multiple lanes where marbles move in continuous motion. Each marble leaves behind luminous trails that gradually fade, while the track surface absorbs and re-emits light energy as soft pulses. The visualization uses WEBGL rendering for 3D depth and lighting effects, with particles drawn as point clouds rather than full meshes to stay within performance budgets. The scene is constantly in motion, creating a sense of continuous flow, with click input allowing users to reset the race or influence starting positions. The visual effect combines particle physics with light emission and absorption to create an immersive, glowing environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 215.315
+}
