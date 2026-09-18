@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 822, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/822/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, sweeping view of rolling green pastoral fields bathed in the warm, dramatic glow of a sunset. The foreground features intensely sharp detail, emphasizing the rich surface texture and varied pigmentation of the grass and land. The dramatic low light angle stretches long, deep shadows across the hills, enhancing the tonal contrast and making the distant mountains visible beneath a deepening sky. The overall effect is a hyper-detailed, sunlit landscape caught in a moment of dramatic transition.",
+  "completion_tokens": 1582,
+  "created_utc": "2026-09-18T06:25:12Z",
+  "entry_id": 822,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 843,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] b is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2196,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.199,
+      "wall_s": 53.635
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 739,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2249,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.241,
+      "wall_s": 47.609
+    }
+  ],
+  "job_id": 823,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sweeping, dramatic view of rolling green fields, and this time increasing the visible surface texture and varied pigmentation of the foreground land",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 764,
+    "root_entry_id": 69
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again\n\nRevise: the same pastoral landscape, and this time exaggerate the depth of field to make the foreground grass seem intensely sharp\n\nRevise: this is getting close but there is one giant cloud that ruins it\n\nRevise: the same pastoral landscape, and this time sharpen the detail on the distant mountain range\n\nRevise: the same vast sunlit pastoral landscape and this time introduce subtle patches of varied color and texture to the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time incorporate greater visible variation in the patches of color and texture of the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the dramatic size and tonal contrast of the patches of color and texture within the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time transition the lighting to a sunset glow, casting long, dramatic shadows over the rolling fields.\n\nRevise: the same sweeping, dramatic view of rolling green fields, and this time increasing the visible surface texture and varied pigmentation of the foreground land",
+  "prompt_tokens": 4445,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/822/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/822",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene pastoral landscape at sunset, capturing the dramatic interplay of light and shadow across rolling hills. Using a combination of gradient backgrounds, layered polygons for distant mountains, and densely populated point elements for grass details, it creates a richly textured scene that emphasizes both macro and micro scales. The composition draws attention to the foreground's intricate surface texture while maintaining atmospheric perspective through careful color choices and shadow placement. A glowing sun anchors the composition, casting long shadows that enhance the tonal contrast and depth. The technique relies on precomputed elements and simple geometric forms to achieve detailed visual richness without complex algorithms or particle systems.",
+  "submitted_by": "profcarroll",
+  "wall_s": 101.244
+}
