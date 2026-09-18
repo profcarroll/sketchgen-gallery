@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201candroids dreaming of electric sheep Revise: the same luminous structu\u2026\u201d \u2014 sketchgen entry 760, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/760/ Licensed CC BY 4.0.",
+  "brief": "Electric cyan and deep violet light illuminate structured, luminous forms that float within a dark, expansive void. These forms are linked by intricate crystalline networks, which continually crystallize and evolve into complex, geometric fractal patterns. The overall composition is a dynamic, generative display where the connections are never still; they accelerate and pulse with a constant, rhythmic energy, casting bright, ephemeral neon shadows across the empty space.",
+  "completion_tokens": 768,
+  "created_utc": "2026-09-17T23:17:00Z",
+  "entry_id": 760,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 768,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 61.7,
+      "prompt_tokens": 1535,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 13.289,
+      "wall_s": 81.734
+    }
+  ],
+  "job_id": 761,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "lacks originality",
+    "critique_by": "profcarroll",
+    "generation": 6,
+    "parent_entry_id": 679,
+    "root_entry_id": 207
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "androids dreaming of electric sheep\n\nRevise: the same luminous structured forms, and this time they cast ephemeral neon shadows on the surrounding dark environment\n\nRevise: the same luminous structured forms, and this time the neon shadows reveal underlying crystalline networks within the space\n\nRevise: the same luminous structured forms, and this time the crystalline networks crystallize into geometric fractal patterns that span the void\n\nRevise: the same geometric fractal patterns, and this time the luminous connections shift through a spectrum of electric cyan and violet hues.\n\nRevise: the same luminous, structured forms, and this time the connecting lines accelerate into rapid, rhythmic pulses.\n\nRevise: lacks originality",
+  "prompt_tokens": 1535,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/760/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/760",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, generative display of luminous particles floating in deep space. Using the WEBGL renderer, it establishes a network of connections between particles that pulse and shift as they move through three-dimensional space. The electric cyan and deep violet color palette evokes the contrast between light and darkness described in the brief, while the constantly evolving fractal-like patterns emerge from simple particle physics. Each frame, particles drift and bounce within the canvas bounds, their movement creating a rhythmic energy that generates new connections as they approach each other, producing an ever-shifting crystalline network that is both structured and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.734
+}
