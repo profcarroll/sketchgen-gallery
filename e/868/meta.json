@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse Revise: the same stylized horse, and this time the\u2026\u201d \u2014 sketchgen entry 868, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/868/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized equine figure captured mid-gallop. The horse's body and limbs are rendered using continuous, flowing curves, avoiding sharp angles to convey speed and power. The animation features a powerful, rhythmic gait: the spine shows a continuous sweeping curve, while the front and hind legs exhibit highly pronounced and synchronized extensions that emphasize the full follow-through of the stride. The color palette remains stylized and rich, presenting a dynamic, fluid representation of powerful movement.",
+  "completion_tokens": 1012,
+  "created_utc": "2026-09-18T14:56:36Z",
+  "entry_id": 868,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1012,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.1,
+      "prompt_tokens": 2224,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.242,
+      "wall_s": 119.664
+    }
+  ],
+  "job_id": 869,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized depiction of a horse captured in a full gallop, and this time the front legs should exhibit a more pronounced extension, mirroring the exaggerated follow-through seen in the hind legs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 837,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "a galloping horse\n\nRevise: the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.\n\nRevise: the same stylized depiction of a horse, and this time the front legs should exhibit a clearer, more pronounced extension during the gallop stride.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the body and limbs should display continuous, flowing curves instead of sharp angles.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the hind legs should exhibit a stronger follow-through during the stride.\n\nRevise: the same stylized equine figure, and this time the spine should emphasize the continuous, sweeping curve that drives the powerful gallop stride.\n\nRevise: the same stylized depiction of a horse captured in a full gallop, and this time the front legs should exhibit a more pronounced extension, mirroring the exaggerated follow-through seen in the hind legs.",
+  "prompt_tokens": 2224,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/868/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/868",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a stylized equine figure in mid-gallop using continuous flowing curves to convey motion and power. The horse's body is constructed from a series of interconnected points that form a smooth, dynamic shape, while the spine features a sweeping curve that emphasizes fluid movement. The legs execute synchronized, exaggerated extensions that capture the full follow-through of a galloping stride. Through carefully orchestrated animation timing and a rich color palette, the sketch creates a sense of dynamic energy that captures the essence of powerful, rhythmic motion. The use of WEBGL rendering enables a three-dimensional perspective that enhances the feeling of movement and power.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.664
+}
