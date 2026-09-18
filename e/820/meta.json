@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 820, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/820/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a continuous, flowing field of glowing, amorphous planes. These luminous shapes drift and interact seamlessly, filling the entire viewing space with a soft, vibrant palette. The overall appearance is one of perpetual, gentle movement and depth. Adjacent planes subtly shift relative to one another, continuously varying the perceived transparency and interrelation between the floating structures. The scene operates autonomously, presenting an ever-changing, mesmerizing, and breathable visual experience without requiring any interaction or input.",
+  "completion_tokens": 1540,
+  "created_utc": "2026-09-18T06:11:31Z",
+  "entry_id": 820,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 794,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 153.5 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 153.5,
+      "prompt_tokens": 2199,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 32.909,
+      "wall_s": 50.572
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 746,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.8,
+      "prompt_tokens": 2329,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.144,
+      "wall_s": 50.122
+    }
+  ],
+  "job_id": 821,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same flowing field of glowing, amorphous planes, and this time varying the perceived transparency between adjacent shapes",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 761,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing variable rates of perceived rotation across the surface\n\nRevise: too derivatve, try something different\n\nRevise: the same field of amorphous, glowing planes, and this time introducing varied levels of sharper contrast and defined edges between the floating shapes\n\nRevise: the same field of glowing, amorphous planes, and this time increasing the saturation and contrast of the boundaries where the shapes overlap\n\nRevise: the same field of glowing, amorphous planes, and this time introducing clusters of geometrically defined, sharply angular structures that intersect the main flow\n\nRevise: the same flowing field of glowing, amorphous planes, and this time varying the perceived transparency between adjacent shapes",
+  "prompt_tokens": 4528,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/820/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/820",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-shifting field of glowing, amorphous planes that drift silently through a three-dimensional space. Each plane moves independently with its own velocity and color, creating a mesmerizing sense of depth and continuous motion. The planes subtly shift in hue over time, blending into each other as they float past one another. The visual effect is achieved using a combination of 2D ellipses rendered in a 3D-like space, with careful attention to transparency and movement dynamics. The result is a calming, breathable visualization that feels alive without being chaotic, filling the entire canvas with an organic flow of color and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 100.694
+}
