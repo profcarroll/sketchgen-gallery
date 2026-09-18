@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 878, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/878/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a uniform, continuous grid of small, interconnected squares set against a deep background. Each square pulses and breathes with a subtle, ambient rhythm, giving the entire field a gentle sense of life. When the viewer clicks anywhere on the canvas, an expanding wave propagates outward from the impact point. As the wave passes through each square, it momentarily pulses with light. Crucially, the passage of the wave leaves a visible, slightly darkened residual shadow that persists and slowly fades away over an extended period, overlaying the base breathing rhythm.",
+  "completion_tokens": 704,
+  "created_utc": "2026-09-18T16:03:53Z",
+  "entry_id": 878,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 704,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.8,
+      "prompt_tokens": 2232,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.151,
+      "wall_s": 49.009
+    }
+  ],
+  "job_id": 879,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, uniform grid of small, interconnected squares, and this time the residual shadow leaves behind a slightly darkened afterglow that persists for a prolonged period",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "parent_entry_id": 828,
+    "root_entry_id": 2
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.\n\nRevise: the same grid, and this time the pulse colors are randomized upon impact\n\nRevise: the same grid of small squares, and this time the squares' breathing rhythm subtly shifts across different quadrants\n\nRevise: the same uniform grid composed of small, interconnected squares, and this time the expanding wave pulse flashes a randomized spectrum of colors\n\nRevise: the same continuous grid of small, interconnected squares, and this time the flash of randomized colors leaves a residual afterglow that slowly fades.\n\nRevise: the same continuous grid of small, interconnected squares, and this time the wave pulse temporarily pauses the subtle breathing rhythm of every square it passes through.\n\nRevise: Revise: the same continuous grid of small, interconnected squares, and this time the wave pulse momentarily alters the breathing rhythm of squares in a localized, unpredictable pattern.\n\nRevise: the same continuous grid composed of small, interconnected squares, and this time the wave pulse briefly alters the base pulsation color of every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the wave pulse momentarily shifts the base pulsation color of every affected square.\n\nRevise: the same uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the disruption from the wave leaves a brief, visible residual shadow on every affected square\n\nRevise: the same continuous, uniform grid composed of interconnected squares, and this time the residual shadow remains visible for an extended period, slowly returning to the base pulsation.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the residual shadow leaves behind a slightly darkened afterglow that persists for a prolonged period.\n\nRevise: the same continuous, uniform grid of interconnected squares, and this time the wave pulse momentarily alters the rhythmic breathing of every square it passes through.\n\nRevise: the same continuous, uniform grid of small, interconnected squares, and this time the residual shadow leaves behind a slightly darkened afterglow that persists for a prolonged period",
+  "prompt_tokens": 2232,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/878/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/878",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ambient, living grid of interconnected squares that pulse with a gentle, organic rhythm. Each square breathes with its own subtle timing, creating a field of soft movement and visual interest. When clicked, the canvas generates an expanding wave that travels outward from the impact point. As this wave encounters each square, it triggers a momentary burst of brightness before leaving behind a lingering, darkened shadow that gradually fades away. This persistent residual effect creates a sense of history within the field \u2014 each interaction builds upon previous ones, creating a layered visual narrative that evolves over time while maintaining its underlying tranquility.",
+  "submitted_by": "profcarroll",
+  "wall_s": 49.009
+}
