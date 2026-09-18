@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same vi\u2026\u201d \u2014 sketchgen entry 811, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/811/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, visible loom weaving in action. Two sets of colored threads move rhythmically across the visible field, interlocking to form geometric motifs. These motifs do not remain isolated; instead, they link seamlessly and continuously to create flowing, repeating color gradients that spread across the entire visible surface. The entire woven pattern is constantly shifting and changing, giving the impression of perpetual motion as the colors and shapes flow into one another.",
+  "completion_tokens": 892,
+  "created_utc": "2026-09-18T05:13:47Z",
+  "entry_id": 811,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 892,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2189,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.229,
+      "wall_s": 108.602
+    }
+  ],
+  "job_id": 812,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same visible weaving process, and this time the formed geometric motifs must link seamlessly together, creating continuous, repeating color gradients across the entire visible field.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 747,
+    "root_entry_id": 701
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same visible weaving process, and this time the formed thread intersections must momentarily stabilize into repeating, discernible geometric motifs.\n\nRevise: the same visible weaving process, and this time the formed geometric motifs must link seamlessly together, creating continuous, repeating color gradients across the entire visible field.",
+  "prompt_tokens": 2189,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/811/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/811",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dynamic weaving loom where threads move rhythmically across the canvas, creating interlocking geometric patterns. The visualization uses two sets of threads moving in perpendicular directions, with each thread carrying its own color and motion pattern. As they cross, their interactions generate flowing color gradients that continuously shift and evolve. The technique employs continuous motion with periodic resets to maintain visual coherence while ensuring the patterns remain fluid and interconnected. Viewers witness an ever-shifting tapestry of color and form, where individual threads contribute to a larger harmonic whole through their rhythmic interplay.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.602
+}
