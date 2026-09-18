@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctextile textures interweaving with color saturation\u201d \u2014 sketchgen entry 887, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/887/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate tapestry of abstract, flowing textile textures, appearing as complex, interwoven lines and woven knots. The pattern generates a subtle, ceaseless motion, simulating the gentle drift and shift of countless threads. Overlaid on these stable textures is a fluid wash of color whose saturation level is dynamically controlled by the cursor's movement. As the mouse is dragged across the canvas, the saturation of the overlying colors shifts dramatically, transforming the hue from muted pastels to vibrant, intense brilliance, giving the impression of weaving through different dyes.",
+  "completion_tokens": 1421,
+  "created_utc": "2026-09-18T17:02:41Z",
+  "entry_id": 887,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 762,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 187.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 187.7,
+      "prompt_tokens": 2234,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 43.171,
+      "wall_s": 50.431
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 659,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.9,
+      "prompt_tokens": 2316,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.13,
+      "wall_s": 45.054
+    }
+  ],
+  "job_id": 888,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 887
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "textile textures interweaving with color saturation",
+  "prompt_tokens": 4550,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/887/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/887",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract textile tapestry using flowing thread paths that weave across the canvas. The composition features hundreds of interconnected lines that drift and shift gently, mimicking the movement of countless threads in a woven fabric. A dynamic color wash overlays this texture, with its saturation level responding to mouse position \u2014 from muted pastels to vibrant hues \u2014 suggesting the passage of different dyes through the interwoven pattern. The technique uses Perlin noise to create natural-looking motion and multiple layered shapes to build up the complex, flowing texture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.485
+}
