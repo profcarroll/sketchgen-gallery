@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca fun cursor follow toy Revise: the same particle system, and this ti\u2026\u201d \u2014 sketchgen entry 814, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/814/ Licensed CC BY 4.0.",
+  "brief": "The cursor moves across the canvas, leaving behind a visible, dynamic wake of dissipating particles. Particles are initially spawned at the cursor's location, starting with a bright primary hue. As the trail progresses, the particles gradually transition in color to a soft pastel shade while simultaneously increasing in size. At their peak size, the particles briefly form a noticeable ring structure before fading completely into the background.",
+  "completion_tokens": 645,
+  "created_utc": "2026-09-18T05:35:30Z",
+  "entry_id": 814,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v2",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 645,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1520,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.329,
+      "wall_s": 44.012
+    }
+  ],
+  "job_id": 815,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, dissipating trail of particles, and this time the particles momentarily form a noticeable ring shape upon reaching peak size.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 752,
+    "root_entry_id": 543
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a fun cursor follow toy\n\nRevise: the same particle system, and this time the particles organize into a visible, dissipating wake directly trailing the cursor.\n\nRevise: the same particle system, and this time the particles change color from a bright primary hue at the cursor to a soft pastel shade before fully fading.\n\nRevise: the same dynamic and ephemeral wake of particles, and this time the particles grow noticeably larger in size from the moment of creation until they fully fade away.\n\nRevise: the same dynamic, dissipating trail of particles, and this time the particles momentarily form a noticeable ring shape upon reaching peak size.",
+  "prompt_tokens": 1520,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/814/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/814",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic particle trail that responds to mouse movement, with each particle beginning as a bright, saturated hue and gradually transitioning into a softer pastel tone. As the particles move, they grow in size, reaching a peak before fading away. The visual effect emphasizes motion through color and form transitions, creating a sense of fluidity and temporal flow. The implementation uses efficient particle management to ensure performance remains consistent while maintaining an engaging visual narrative.",
+  "submitted_by": "profcarroll",
+  "wall_s": 44.012
+}
