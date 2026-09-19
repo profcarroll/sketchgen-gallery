@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 922, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/922/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a minimalist analog clock face, rendered in muted tones. Time is shown by two distinct hands\u2014the hour and minute\u2014which are smoothly curved and feature the warm, metallic sheen of polished copper. The hands rotate steadily around the face, indicating the passage of time without the aid of numbers or markings. The overall aesthetic is clean and simple, focusing purely on the cyclical movement and the rich, copper color of the pointers against the neutral face.",
+  "completion_tokens": 1684,
+  "created_utc": "2026-09-18T20:54:24Z",
+  "entry_id": 922,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 655,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0183/255, 745 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2368,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.234,
+      "wall_s": 48.556
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 465,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'hour' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2485,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.21,
+      "wall_s": 40.556
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 564,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0240/255, 829 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2519,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.213,
+      "wall_s": 46.504
+    }
+  ],
+  "job_id": 924,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 860,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.",
+  "prompt_tokens": 7372,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/922/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/922",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a minimalist analog clock face rendered in muted tones, focusing purely on the cyclical movement of time through smoothly curved copper-toned hands. The design avoids any numerical markers or decorative elements, emphasizing clean lines and the elegant flow of motion. The hour and minute hands are drawn with a warm, metallic sheen that contrasts subtly against the neutral background, creating a timeless aesthetic that highlights the passage of time through pure visual rhythm. The clock operates using standard p5.js time functions to calculate hand positions, ensuring accurate representation of the current time without any external dependencies or interactive elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.616
+}
