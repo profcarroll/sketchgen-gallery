@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 1012, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1012/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal row of five distinct, colored rectangular pads. These pads are visually defined by their smoothly rounded corners. When a viewer clicks any one of these pads, the pad emits an audible musical note and illuminates its internal area. The overall arrangement remains static when no interaction is taking place.",
+  "completion_tokens": 788,
+  "created_utc": "2026-09-19T14:52:27Z",
+  "entry_id": 1012,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 788,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1681,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.242,
+      "wall_s": 54.662
+    }
+  ],
+  "job_id": 1015,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 972,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.",
+  "prompt_tokens": 1681,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1012/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1012",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static arrangement of five musical pads arranged horizontally across the canvas. Each pad is a rounded rectangle with a distinct color and corresponds to a different musical note played through the p5.sound library. When a viewer clicks any one of these pads, it instantly illuminates in its full color and plays a corresponding tone. The interaction is immediate and visual\u2014clicking a pad causes both a flash of light and an audible sound. The design remains still otherwise, with no animations or automatic changes unless triggered by user input. This minimal interface explores the relationship between visual feedback and musical output through direct interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 54.662
+}
