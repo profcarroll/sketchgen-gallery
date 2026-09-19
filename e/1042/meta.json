@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ctraveling infinitely through atomic structure across and through mole\u2026\u201d \u2014 sketchgen entry 1042, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1042/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an immersive, accelerating view deep within abstract molecular space, traversing highly luminous crystalline structures. The scene is defined by constant, dynamic movement, featuring glowing molecular shards that drift along pulsing energy conduits. The background features rhythmic bioluminescence that casts ephemeral, visible diffraction patterns onto the crystalline forms. These structures emit rhythmic internal green pulses, generating cascading residual energy waves that refract light off the outer edges, creating a profound sense of accelerating, luminous depth.",
+  "completion_tokens": 3294,
+  "created_utc": "2026-09-19T21:17:15Z",
+  "entry_id": 1042,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1144,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 115 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 115.0,
+      "prompt_tokens": 1733,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 24.063,
+      "wall_s": 68.362
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1061,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 61)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 76)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 603.1 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 603.1,
+      "prompt_tokens": 1945,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 38.9,
+      "wall_s": 67.15
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1089,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.7,
+      "prompt_tokens": 1979,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 2.438,
+      "wall_s": 69.001
+    }
+  ],
+  "job_id": 1045,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same accelerating, immersive passage through highly abstract molecular and atomic space, and this time making the cascading residual energy waves refract light off the outer edges of the crystalline structures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "parent_entry_id": 992,
+    "root_entry_id": 106
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "traveling infinitely through atomic structure across and through molecules\n\nRevise: the same accelerating passage, and this time adding moments of visible molecular instability\n\nRevise: the same accelerating, immersive tunnel that guides the viewer through abstract atomic and molecular structures, and this time incorporating sudden, crystalline distortions into the molecular forms\n\nRevise: the same accelerating passage, and this time making the crystalline distortions appear to fragment into glowing, loose shards that fall away from the primary flow\n\nRevise: the same accelerating deep-tunnel passage through abstract molecular and atomic space, and this time adding varying intensities of background bioluminescence that interact with the crystalline distortions\n\nRevise: the same accelerating deep-tunnel passage through abstract molecular and atomic space, and this time adding glimpses of superheated plasma interacting with the crystalline distortions\n\nRevise: the same accelerating, deep-tunnel passage through highly abstract molecular and atomic space, and this time making the crystalline distortions fracture into visible, glowing molecular shards that drift away.\n\nRevise: the same immersive, deep-tunnel view through abstract molecular and atomic space, and this time having the scattered luminous shards follow distinct, pulsing energy conduits within the tunnel flow.\n\nRevise: the same immersive, deep-tunnel view through abstract molecular and atomic space, and this time having the background bioluminescence pulse in rhythmic, shifting waves that illuminate the crystalline distortions.\n\nRevise: the same immersive, deep-tunnel view through abstract molecular and atomic space, and this time causing the scattered luminous molecular shards to momentarily brighten and flare when they pass through the pulsing bioluminescence.\n\nRevise: the same immersive, deep-tunnel view through abstract molecular and atomic space, and this time causing the pulsing energy conduits to momentarily distort and flare when they encounter the bioluminescence.\n\nRevise: the same immersive, accelerating deep-tunnel passage through abstract molecular and atomic space, and this time the background bioluminescence pulses cast visible, ephemeral diffraction patterns onto the crystalline forms.\n\nRevise: the same immersive, accelerating deep-tunnel through highly abstract atomic and molecular structures featuring complex, luminous crystalline forms, and this time making the crystalline structures emit visible, rhythmic pulses of internal green light.\n\nRevise: the same accelerating, immersive passage through highly abstract molecular and atomic space, and this time the rhythmic pulses emit brief, shimmering waves of residual energy that cascade along the crystalline structures.\n\nRevise: the same accelerating, immersive passage through highly abstract molecular and atomic space, and this time making the cascading residual energy waves refract light off the outer edges of the crystalline structures.",
+  "prompt_tokens": 5657,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1042/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1042",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive journey through a dynamic molecular landscape using WebGL rendering for high-performance 3D graphics. The scene features thousands of glowing particles drifting along pulsing energy conduits in a constantly shifting space, with rhythmic internal pulses generating cascading energy waves that refract light off the outer edges. The visualization emphasizes accelerating depth and luminous movement through camera motion, particle physics, and layered diffraction patterns. The sketch meets performance requirements by batching shape calls, avoiding per-frame mesh creation, and maintaining a consistent frame rate while creating an engaging, immersive experience that responds to audio input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 204.513
+}
