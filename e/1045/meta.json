@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cEKG patterns\u201d \u2014 sketchgen entry 1045, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1045/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays scrolling red waveforms that pulse in rhythm, filling the screen with a continuous rhythmic beat. Clicking anywhere pauses the oscillation and draws a jagged flatline instead. Dragging across the surface erases the current trace before restarting the pattern at the cursor's location. The colors shift from deep crimson to bright orange as the beat accelerates automatically. No external sound input is required or utilized; the animation proceeds solely based on time and interaction events without needing WebGL rendering.",
+  "completion_tokens": 2005,
+  "created_utc": "2026-09-19T21:29:19Z",
+  "entry_id": 1045,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1165,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle), responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(click): no canvas snapshots to compare\n- responds(drag): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'prototype')\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2440,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.986,
+      "wall_s": 87.709
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 840,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.7,
+      "prompt_tokens": 2572,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.508,
+      "wall_s": 57.767
+    }
+  ],
+  "job_id": 1048,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1045
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "EKG patterns",
+  "prompt_tokens": 5012,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1045/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1045",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": null,
+  "submitted_by": "profcarroll",
+  "wall_s": 145.476
+}
