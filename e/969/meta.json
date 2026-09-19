@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca playable piano\u201d \u2014 sketchgen entry 969, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/969/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a visually accurate, horizontal representation of a piano keyboard, segmented into repeating white and black keys. The overall appearance is calm and dormant until the user interacts with it. When the user clicks or taps on any specific key, two things occur immediately: a clear, musical tone sounds, and the appearance of the clicked key visibly depresses and highlights briefly before returning to its resting state. The keyboard remains stable and still unless a key is pressed.",
+  "completion_tokens": 3319,
+  "created_utc": "2026-09-19T04:18:26Z",
+  "entry_id": 969,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1168,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 48)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 80)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 106)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 117)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 139)\n\ngate exit 1: assertions failed: responds(click), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 199.853 under 440 Hz vs 199.853 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2420,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.08,
+      "wall_s": 77.965
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 740,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 55)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 76)\n\ngate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 211.620 under 440 Hz vs 211.620 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2782,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.013,
+      "wall_s": 61.313
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1411,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 56)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 91)\n\ngate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 199.565 under 440 Hz vs 199.565 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "prompt_tokens": 2654,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.028,
+      "wall_s": 94.55
+    }
+  ],
+  "job_id": 971,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 969
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a playable piano",
+  "prompt_tokens": 7856,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/969/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/969",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a visually accurate piano keyboard that responds to user interaction with both sound and visual feedback. The interface displays 52 keys arranged in the familiar white and black pattern of a piano, with proper spacing and sizing. When a key is pressed, it immediately produces a musical tone using Web Audio API's oscillator and simultaneously depresses visually to simulate physical interaction. The visual effect uses subtle color changes and shape modifications to indicate key press without overcomplicating the design. The implementation respects performance constraints by avoiding expensive operations in the draw loop and managing audio context properly through user gestures, ensuring both visual and auditory responses are clearly perceivable while maintaining smooth frame rates.",
+  "submitted_by": "profcarroll",
+  "wall_s": 233.828
+}
