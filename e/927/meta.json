@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse Revise: the same stylized horse, and this time the\u2026\u201d \u2014 sketchgen entry 927, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/927/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized, equine figure captured in the powerful act of a full gallop. The horse's body and limbs are rendered using smooth, flowing curves, avoiding sharp angles. The animation features continuous, dynamic movement where the spine acts as a sweeping curve driving the stride. The movement is highly exaggerated, showing the front and hind legs achieving synchronized and pronounced extensions with every step, creating a visibly heightened and fluid sense of momentum as the figure crosses the frame.",
+  "completion_tokens": 721,
+  "created_utc": "2026-09-18T21:27:07Z",
+  "entry_id": 927,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 721,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1698,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.143,
+      "wall_s": 47.44
+    }
+  ],
+  "job_id": 929,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized equine figure, and this time the synchronized extension of the front and hind legs should be visibly heightened.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 868,
+    "root_entry_id": 362
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a galloping horse\n\nRevise: the same stylized horse, and this time the body and limbs are rendered with smoother, less geometric curves.\n\nRevise: the same stylized depiction of a horse, and this time the front legs should exhibit a clearer, more pronounced extension during the gallop stride.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the body and limbs should display continuous, flowing curves instead of sharp angles.\n\nRevise: the same stylized depiction of a horse captured in the act of galloping, and this time the hind legs should exhibit a stronger follow-through during the stride.\n\nRevise: the same stylized equine figure, and this time the spine should emphasize the continuous, sweeping curve that drives the powerful gallop stride.\n\nRevise: the same stylized depiction of a horse captured in a full gallop, and this time the front legs should exhibit a more pronounced extension, mirroring the exaggerated follow-through seen in the hind legs.\n\nRevise: the same stylized equine figure, and this time the synchronized extension of the front and hind legs should be visibly heightened.",
+  "prompt_tokens": 1698,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/927/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/927",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a stylized horse in full gallop, rendered with smooth, flowing curves that emphasize the dynamic motion of the animal. The body follows a sweeping arc, while the legs move in synchronized, exaggerated extension to create a sense of momentum and power. The animation is driven entirely by mathematical functions\u2014specifically sine and cosine waves\u2014that control the timing and positioning of each body part, resulting in an endlessly looping, fluid gallop without any external input. The entire scene is self-contained within a single canvas that continuously evolves over time, fulfilling the requirement for autonomous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 47.44
+}
