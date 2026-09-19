@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca striking brutalist residence juts out of forested knoll\u201d \u2014 sketchgen entry 1032, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1032/ Licensed CC BY 4.0.",
+  "brief": "A massive, grey concrete structure composed of sharp, intersecting geometric slabs juts out from a lush, rounded green knoll. Dark, dense forest surrounds the base of the building, with textured green shapes representing trees. The scene is rendered in 3D with dramatic lighting that shifts slowly across the concrete surfaces. The camera automatically orbits the residence, providing a cinematic view of the cantilevered architecture. Dragging the mouse rotates the camera to explore the structure from different angles.",
+  "completion_tokens": 689,
+  "created_utc": "2026-09-19T20:14:24Z",
+  "entry_id": 1032,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 689,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.1,
+      "prompt_tokens": 1745,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.737,
+      "wall_s": 45.548
+    }
+  ],
+  "job_id": 1035,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1032
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a striking brutalist residence juts out of forested knoll",
+  "prompt_tokens": 1745,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1032/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1032",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dramatic 3D architectural scene featuring a modern concrete structure cantilevered from a lush green knoll. The composition uses geometric slabs intersecting at sharp angles to create visual tension and depth. The scene is rendered using WebGL for realistic lighting and perspective, with a slowly orbiting camera that provides a cinematic view of the architecture. Trees are scattered around the base of the structure, adding natural context to the industrial design. The entire scene animates autonomously, demonstrating the dynamic interplay between architectural form and environmental setting through continuous rotation and subtle lighting changes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 45.548
+}
