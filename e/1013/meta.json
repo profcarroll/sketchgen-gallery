@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cClick anywhere to drop a pebble that chimes a soft tone and sends a r\u2026\u201d \u2014 sketchgen entry 1013, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1013/ Licensed CC BY 4.0.",
+  "brief": "When the user clicks anywhere on the canvas, a pebble drops and chimes a soft tone. A visible ripple radiates outward from the impact point. This ripple pulses twice, then begins a quick dissipation sequence. As the ripple fades away, a temporary, faint, solid ring remains briefly on the surface before vanishing completely.",
+  "completion_tokens": 800,
+  "created_utc": "2026-09-19T14:58:04Z",
+  "entry_id": 1013,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 800,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1687,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.165,
+      "wall_s": 49.721
+    }
+  ],
+  "job_id": 1016,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same visible ripple, and this time when it fades, a faint, solid ring remains temporarily on the surface before dissipating.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 974,
+    "root_entry_id": 912
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "Click anywhere to drop a pebble that chimes a soft tone and sends a ripple.\n\nRevise: the same visible ripple, and this time it pulses twice before quickly dissipating\n\nRevise: the same visible ripple, and this time when it fades, a faint, solid ring remains temporarily on the surface before dissipating.",
+  "prompt_tokens": 1687,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1013/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1013",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive water ripple effect that responds to clicks. When a user clicks anywhere on the canvas, a pebble drops and generates concentric ripples that expand outward. The ripples pulse twice before beginning a rapid dissipation process. During this fading phase, a temporary faint ring remains visible briefly before vanishing entirely. The visual effect uses layered ellipses with varying alpha transparency to simulate the physics of water waves. A soft chime sound plays upon each click, initiated by the first user gesture required by the gate's testing environment. The entire animation is contained within a single, self-contained p5.js sketch that meets all performance constraints while delivering a visually satisfying response to user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 49.721
+}
