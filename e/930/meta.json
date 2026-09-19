@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 930, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/930/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, glowing field formed by the interaction of smooth, amorphous planes and a rigid, sharply defined hexagonal grid. The amorphous shapes drift and interlace, maintaining fluid, softly glowing edges. Periodically, the continuous movement is interrupted by moments of startling transformation. The glowing planes momentarily lose their organic softness, snapping into the sharp, precise angles of the underlying hexagonal structure before immediately returning to their smooth, fluid curves. The entire scene is a mesmerizing, continuous loop of geometric collapse and re-emergence.",
+  "completion_tokens": 2690,
+  "created_utc": "2026-09-18T21:44:53Z",
+  "entry_id": 930,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1171,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] hexRadius is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2392,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.226,
+      "wall_s": 77.848
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1519,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.0,
+      "prompt_tokens": 2595,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.03,
+      "wall_s": 103.12
+    }
+  ],
+  "job_id": 932,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interplay between glowing, amorphous planes and sharp hexagonal grids, and this time having the amorphous planes momentarily lose their fluid edges and adopt the sharp, repeating angles of the grid.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 871,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing variable rates of perceived rotation across the surface\n\nRevise: too derivatve, try something different\n\nRevise: the same field of amorphous, glowing planes, and this time introducing varied levels of sharper contrast and defined edges between the floating shapes\n\nRevise: the same field of glowing, amorphous planes, and this time increasing the saturation and contrast of the boundaries where the shapes overlap\n\nRevise: the same field of glowing, amorphous planes, and this time introducing clusters of geometrically defined, sharply angular structures that intersect the main flow\n\nRevise: the same flowing field of glowing, amorphous planes, and this time varying the perceived transparency between adjacent shapes\n\nRevise: the same continuous, flowing field of glowing, amorphous planes, and this time introducing sharp, intersecting hexagonal grids.\n\nRevise: the same interplay between glowing, amorphous planes and sharp hexagonal grids, and this time having the amorphous planes momentarily lose their fluid edges and adopt the sharp, repeating angles of the grid.",
+  "prompt_tokens": 4987,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/930/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/930",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing interplay between organic and geometric elements. Smooth, glowing amorphous planes drift across the canvas in fluid motion, their edges softly blurred with a luminous glow effect. Periodically, these planes undergo a dramatic transformation where they momentarily snap into sharp, precise hexagonal shapes that align with an underlying grid structure. This creates a compelling visual rhythm of organic flow transitioning to rigid geometry and back again. The continuous loop captures the essence of geometric collapse and re-emergence, where smooth forms briefly lose their fluidity to become angular and defined before returning to their natural, organic state.",
+  "submitted_by": "profcarroll",
+  "wall_s": 180.968
+}
