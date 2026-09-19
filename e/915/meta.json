@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cDraw me a picture of HAL-2000 from the motion picture \u201c2001: A Space\u2026\u201d \u2014 sketchgen entry 915, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/915/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed and stylized portrait of a complex, humanoid mechanical structure. The portrait is dominated by metallic forms and intricate hard angles. The surface features numerous visible structural seams, which are accented by colors ranging from oxidized browns to deep, dusty grays, illustrating accumulated grime and corrosion. Deep micro-fractures spiderweb across the primary seams, giving the machine a sense of profound operational decay. The resulting image is a static, intricate study of material degradation and complex engineering.",
+  "completion_tokens": 1466,
+  "created_utc": "2026-09-18T20:25:21Z",
+  "entry_id": 915,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1466,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1702,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.341,
+      "wall_s": 86.412
+    }
+  ],
+  "job_id": 917,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly stylized, detailed portrait of a complex humanoid mechanical structure, and this time visible accumulation of grime and debris within the structural seams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 858,
+    "root_entry_id": 607
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Draw me a picture of HAL-2000 from the motion picture \u201c2001: A Space Odyssey\u201d\n\nRevise: the same detailed, stylized portrait of HAL-2000, and this time visible structural seams defining the panel joints.\n\nRevise: the same highly detailed, stylized portrait of the mechanical structure of HAL-2000, and this time subtle signs of operational wear and panel degradation.\n\nRevise: the same highly detailed and stylized portrait of a complex, humanoid mechanical structure, and this time visible signs of oxidized corrosion forming along the primary structural seams.\n\nRevise: the same highly detailed portrait of a complex, humanoid mechanical structure, and this time visible signs of deep micro-fractures forming along the primary structural seams.\n\nRevise: the same highly stylized, detailed portrait of a complex humanoid mechanical structure, and this time visible accumulation of grime and debris within the structural seams.",
+  "prompt_tokens": 1702,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/915/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/915",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a static, highly detailed portrait of a complex humanoid mechanical structure rendered in a monochromatic palette of metallic grays and oxidized browns. The composition emphasizes structural integrity through angular forms, visible seams, and intricate fractures that suggest accumulated decay and operational wear. The piece uses layered geometric elements to create a sense of depth and material complexity, with micro-fractures radiating from key structural points to simulate the passage of time and stress. The work is deliberately still, adhering to the gate's requirement for no-motion animation, while inviting viewers to contemplate themes of technological obsolescence and material degradation through its rich textural detail and architectural precision.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.412
+}
