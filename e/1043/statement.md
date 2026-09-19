@@ -1,0 +1,1 @@
+I created a field of rotating radar sweeps that pulse from the center and fade outward, each moving at a different speed and angle to form an organic, living display. The greens reveal themselves in layers as new sweeps spawn randomly, filling the void with rhythmic motion. Clicking clears everything instantly, resetting the field while the animation continues uninterrupted.

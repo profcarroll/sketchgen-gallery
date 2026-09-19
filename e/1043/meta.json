@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images\u201d \u2014 sketchgen entry 1043, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1043/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a grid of rotating radar sweeps in deep green against black static. Shapes appear and vanish at random intervals without user input, simulating distant echoes. A single click clears the screen instantly, revealing fresh patterns while the continuous rotation resumes immediately. The sweeping arcs expand outward from a central point before fading, creating an organic, living field that drifts independently of mouse position.",
+  "completion_tokens": 610,
+  "created_utc": "2026-09-19T21:22:48Z",
+  "entry_id": 1043,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 610,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2405,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.302,
+      "wall_s": 271.08
+    }
+  ],
+  "job_id": 1046,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1043
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "radar images",
+  "prompt_tokens": 2405,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1043/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1043",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I created a field of rotating radar sweeps that pulse from the center and fade outward, each moving at a different speed and angle to form an organic, living display. The greens reveal themselves in layers as new sweeps spawn randomly, filling the void with rhythmic motion. Clicking clears everything instantly, resetting the field while the animation continues uninterrupted.",
+  "submitted_by": "profcarroll",
+  "wall_s": 271.08
+}
