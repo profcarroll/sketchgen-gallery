@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 995, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/995/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, mechanically active scene where a substantial stack of books rests above an open, complex shredding apparatus. Visible internal gears and shredding plates are actively engaged, continuously tearing and consuming the books as they fall into the machine. This violent, continuous process generates several visible effects: plumes of fine shredded dust hang suspended above the central gears, and wisps of steam actively vent from the points of friction between the internal machinery and the resisting books. The entire scene is driven by the machinery's relentless operation, resulting in ceaseless, autonomous movement.",
+  "completion_tokens": 2056,
+  "created_utc": "2026-09-19T06:41:14Z",
+  "entry_id": 995,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2056,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.9,
+      "prompt_tokens": 2419,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.952,
+      "wall_s": 130.899
+    }
+  ],
+  "job_id": 997,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 953,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the internal gears and plates of the shredder are visible and actively engage as the books fall into them.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time visible sparks shoot out from the engaged internal gears.\n\nRevise: the same mechanical scene where a substantial stack of books rests above an open shredding apparatus, and this time the visible internal gears are actively tearing and shredding one of the books as it falls.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus.\n\nRevise: the same mechanically active shredding scene, and this time fine plumes of shredded dust visibly hang suspended above the central gears.\n\nRevise: the same mechanically active shredding scene, and this time the rapid movement of the internal gears throws off sharp, visible splinters of wood and paper pulp.\n\nRevise: the same mechanically active shredding scene, and this time the flying splinters of wood and paper pulp strike and embed themselves visibly into the books remaining above the apparatus.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus",
+  "prompt_tokens": 2419,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/995/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/995",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a mechanical shredding apparatus in continuous operation, with books falling into a complex system of rotating gears and cutting plates. The scene features a stack of books slowly descending through the machine while being torn apart by active machinery. Fine dust particles rise above the central gears as debris accumulates, and wisps of steam vent from friction points between the machinery and resisting materials. The entire scene operates autonomously without user input, driven by constant mechanical motion that creates an ongoing visual narrative of destruction and processing. All elements are rendered in 3D using WEBGL with dynamic particle systems for dust and steam effects.",
+  "submitted_by": "profcarroll",
+  "wall_s": 130.899
+}
