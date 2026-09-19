@@ -1,0 +1,163 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cseismic activity\u201d \u2014 sketchgen entry 1046, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1046/ Licensed CC BY 4.0.",
+  "brief": "A dark background erupts with jagged red lines mimicking earthquake tremors that shake the canvas frame. These seismic shocks ripple outward from random points before fading, simulating ongoing tectonic stress. When a mouse click occurs, a fresh, larger quake originates at that exact location, sending shockwaves across the screen to demonstrate human intervention in the geological process.",
+  "completion_tokens": 5590,
+  "created_utc": "2026-09-19T21:36:16Z",
+  "entry_id": 1046,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1886,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Unexpected identifier 'Speed'\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1716,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.058,
+      "wall_s": 118.863
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 619,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1815,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.189,
+      "wall_s": 43.333
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1017,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] strokeWidth is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1878,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.177,
+      "wall_s": 63.291
+    },
+    {
+      "assertions": {},
+      "attempt": 4,
+      "checks": {},
+      "completion_tokens": 1017,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "prompt_tokens": 1923,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": null,
+      "wall_s": 65.172
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1051,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1737,
+      "rules_file": "control",
+      "source": "attempt-5",
+      "total_s": 1.314,
+      "wall_s": 64.341
+    }
+  ],
+  "job_id": 1049,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1046
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "seismic activity",
+  "prompt_tokens": 9069,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1046/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1046",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes tectonic stress through evolving red waveforms that burst from random points across a dark canvas, their jagged edges undulating like seismic waves before dissolving. Each mouse click injects human energy into the geological process, spawning a powerful quake whose ripples distort the entire landscape through noise-driven animation. The piece demonstrates how stochastic systems can simulate natural phenomena while responding to user interaction as both catalyst and conductor.",
+  "submitted_by": "profcarroll",
+  "wall_s": 355.0
+}
