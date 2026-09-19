@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 998, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/998/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with a dynamic, cross-sectional cutaway view of a running internal combustion engine. The core mechanisms, including pistons, connecting rods, and the crankshaft, are in continuous motion. The central focus is the visible timing gear train: a network of gears that are actively linking the rotational movement of the crankshaft to the valves. As the crankshaft rotates, the gears mesh and transmit power, visually demonstrating the precise, synchronized timing required to open and close the intake and exhaust valves for each cylinder.",
+  "completion_tokens": 1210,
+  "created_utc": "2026-09-19T07:00:40Z",
+  "entry_id": 998,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1210,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1707,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.156,
+      "wall_s": 71.412
+    }
+  ],
+  "job_id": 1000,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, cutaway cross-section of a running combustion engine, and this time the individual components of the valve train are clearly separated and visible.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 957,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.\n\nRevise: the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the connecting rods visibly rotating a crankshaft.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the connecting rods visibly articulating at their bearing points on the crankshaft.\n\nRevise: the same dynamic, three-dimensional cross-section of a running combustion engine, and this time the articulation points where the connecting rods bear on the crankshaft are clearly visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running combustion engine, and this time the intake and exhaust are represented by clearly visible, timed colored fluid flows.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the visible timing gear train linking the crankshaft and the valves is demonstrated.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the individual components of the valve train are clearly separated and visible.",
+  "prompt_tokens": 1707,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/998/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/998",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dynamic, cross-sectional view of an internal combustion engine in motion. It visualizes the core mechanical components including pistons, connecting rods, and a crankshaft, all synchronized in their movement. The central focus is the timing gear train that connects the crankshaft to valve mechanisms, showing how rotational motion is translated into precise valve actuation. The animation demonstrates the coordinated timing required for each cylinder's intake and exhaust valves to open and close at the correct moments during engine operation. The visual design emphasizes clarity and mechanical accuracy, with the engine's internal components rendered in a clean, technical style that reveals their functional relationships without unnecessary detail.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.412
+}
