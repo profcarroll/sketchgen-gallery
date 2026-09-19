@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdrone POV fly through an abandoned brutalist campus\u201d \u2014 sketchgen entry 1025, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1025/ Licensed CC BY 4.0.",
+  "brief": "A first-person perspective glides through a sprawling landscape of massive, weathered concrete structures. Monolithic geometric blocks and heavy architectural forms create a sense of desolation. The camera moves forward continuously through narrow corridors and over empty, grey plazas. Dragging the mouse steers the direction of flight, allowing for navigation through the brutalist ruins. The color palette is dominated by shades of concrete grey and deep shadows.",
+  "completion_tokens": 1466,
+  "created_utc": "2026-09-19T18:45:18Z",
+  "entry_id": 1025,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1466,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 39.9,
+      "prompt_tokens": 1776,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 12.245,
+      "wall_s": 92.125
+    }
+  ],
+  "job_id": 1028,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1025
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "drone POV fly through an abandoned brutalist campus",
+  "prompt_tokens": 1776,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1025/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1025",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A first-person descent through brutalist ruins rendered in stark concrete forms. The environment consists of monolithic geometric blocks and heavy architectural artifacts scattered across empty grey plazas. Navigation is achieved by dragging the mouse to steer through the desolate landscape, while the camera glides continuously forward. The color palette emphasizes weathered concrete greys and deep shadows, creating an atmosphere of architectural decay and monumental stillness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 92.125
+}
