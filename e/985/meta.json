@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cillustrate liquid pouring into a glass Revise: the same continuous st\u2026\u201d \u2014 sketchgen entry 985, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/985/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a continuous, mesmerizing flow of richly colored liquid pouring into a container. As the stream hits the surface, the impact generates visible, localized whirlpools that rapidly expand. These vortexes drive the creation of countless bubbles, which rise through the contained liquid. The bubbles climb, gathering density before coalescing into larger masses, which finally burst at the visible surface, creating momentary bursts of expanding color and movement before the cycle repeats.",
+  "completion_tokens": 1194,
+  "created_utc": "2026-09-19T05:47:26Z",
+  "entry_id": 985,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1194,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 2372,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.326,
+      "wall_s": 76.677
+    }
+  ],
+  "job_id": 987,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic interaction between the stream and the contained liquid, and this time the localized vortexes generate visible, rising bubbles that coalesce and burst at the surface.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 941,
+    "root_entry_id": 884
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate liquid pouring into a glass\n\nRevise: the same continuous stream of richly colored liquid pouring into a glass, and this time the impact at the surface creates visible, localized vortexes.\n\nRevise: the same dynamic interaction between the stream and the contained liquid, and this time the localized vortexes generate visible, rising bubbles that coalesce and burst at the surface.",
+  "prompt_tokens": 2372,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/985/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/985",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the mesmerizing flow of liquid into a container, capturing the essence of fluid dynamics through visual effects. The scene depicts a continuous stream of colored liquid pouring into a basin, where impacts generate swirling vortices that spawn countless bubbles. These bubbles rise through the liquid with varying speeds and sizes, growing denser as they ascend before bursting at the surface. The technique uses particle systems for both bubbles and vortices, with each element having its own physics properties and lifecycle. The visual palette shifts between warm hues for the liquid stream and cooler tones for the bubbles, creating a dynamic interplay of color and motion that captures the fluid's organic behavior without explicit simulation of complex physics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.677
+}
