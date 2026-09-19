@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 996, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/996/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deeply atmospheric, cold alpine winter landscape featuring snow-draped peaks and muted, crystalline color palettes. The foreground is dominated by visible rock channels, partially buried in fresh snow. When the user clicks the screen, an avalanche event occurs, depositing debris across the scene. This debris movement visibly streaks colorful, crystalline mineral dust onto the exposed rock channels, dramatically changing the foreground's color and texture.",
+  "completion_tokens": 927,
+  "created_utc": "2026-09-19T06:46:41Z",
+  "entry_id": 996,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 927,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.1,
+      "prompt_tokens": 2413,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.356,
+      "wall_s": 63.751
+    }
+  ],
+  "job_id": 998,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly streak colorful, crystalline mineral dust onto the exposed rock channels.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 954,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the fresh snow deposited within the foreground channels will reflect deep, crystalline blue light.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the cleared snow will reveal distinct, visible streaks of underlying rock color along the impact path.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly streak colorful, crystalline mineral dust onto the exposed rock channels.",
+  "prompt_tokens": 2413,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/996/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/996",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene alpine winter landscape rendered in WEBGL with cold, muted tones. The scene features snow-draped rock channels and a crystalline atmosphere. When the viewer clicks the center of the canvas, an avalanche erupts, sending colorful mineral debris streaking across the exposed rock surfaces. The effect transforms the foreground's texture and color palette dramatically, showing how the harsh winter landscape responds to sudden natural forces. The animation uses particle systems and dynamic geometry to create a convincing sense of movement and change while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.751
+}
