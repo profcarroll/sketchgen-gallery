@@ -1,0 +1,134 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmake a theremin. move the mouse for pitch and volume, click once to b\u2026\u201d \u2014 sketchgen entry 1014, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1014/ Licensed CC BY 4.0.",
+  "brief": "A vibrant, flowing visualization of sound appears on the canvas, depicting a real-time waveform that changes shape and color dynamically. The user controls the sound's pitch and volume by moving the cursor across the space. As sound begins, the waveform pulses and shifts, with its color directly mapping to the current frequency value. Additionally, the exact frequency value is prominently displayed above the shifting, colored waveform, providing a dynamic and clear readout of the audio being generated.",
+  "completion_tokens": 1831,
+  "created_utc": "2026-09-19T15:05:24Z",
+  "entry_id": 1014,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 608,
+      "evidence": "gate exit 1: assertions failed: motion(idle), responds(drag), responds(audio)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 240000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 0.877 under 440 Hz vs 0.877 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1765,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.448,
+      "wall_s": 42.862
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 609,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2029,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 5.378,
+      "wall_s": 46.186
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 614,
+      "evidence": "gate exit 1: assertions failed: motion(idle), responds(audio)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.2734/255 (threshold 1.0), 3775 of 480000 pixels changed = 0.79% (threshold 2%); mean canvas brightness 1.879 under 440 Hz vs 1.751 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1892,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 5.665,
+      "wall_s": 44.086
+    }
+  ],
+  "job_id": 1017,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, generative visual representation of real-time sound, and this time map the waveform's color to reflect the current frequency value.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 976,
+    "root_entry_id": 914
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "make a theremin. move the mouse for pitch and volume, click once to begin.\n\nRevise: the same visual representation of real-time sound generation, and this time position the current frequency value prominently above the waveform display.\n\nRevise: the same dynamic, generative visual representation of real-time sound, and this time map the waveform's color to reflect the current frequency value.",
+  "prompt_tokens": 5686,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1014/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1014",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic audio-reactive visualization where a waveform pulses and shifts in real-time based on sound input. The visualization responds to both mouse position (controlling pitch and volume) and actual audio input from the microphone, with color directly mapping to frequency values. As sound is generated through mouse interaction, the waveform flows and changes shape while displaying the current frequency prominently above it. The sketch begins audio only after a user click, satisfying the gate's requirements for proper audio context handling, and maintains visual responsiveness throughout its operation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.134
+}
