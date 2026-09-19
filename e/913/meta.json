@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cA little keyboard of coloured keys that each sound a note and glow wh\u2026\u201d \u2014 sketchgen entry 913, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/913/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal arrangement of brightly coloured, rectangular keys, forming a simplified keyboard. Each key is solid and static until interacted with. When the user clicks on any individual key, two things happen: the key emits a noticeable, expanding glow around its perimeter, and a distinct musical note sounds. The glow animation and the emitted tone are specific to the key pressed, making the visual feedback directly tied to the input.",
+  "completion_tokens": 3956,
+  "created_utc": "2026-09-18T20:17:06Z",
+  "entry_id": 913,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 822,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 32)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 74)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 160000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 137.920 under 440 Hz vs 137.920 under silence\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] amplitude.analyze is not a function\n- [pageerror] osc.setFreq is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1737,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.077,
+      "wall_s": 58.77
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 787,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 39)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 63)\n\ngate exit 1: assertions failed: responds(click), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 150000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 150000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 77.598 under 440 Hz vs 77.598 under silence\n\nRuntime state the gate read:\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2117,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 5.078,
+      "wall_s": 57.439
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 862,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 35)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 67)\n\ngate exit 1: assertions failed: responds(click), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 160000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 125.696 under 440 Hz vs 125.696 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1972,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 5.063,
+      "wall_s": 58.28
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 793,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 35)\n\ngate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 160000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 137.936 under 440 Hz vs 137.936 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2005,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": 5.224,
+      "wall_s": 54.985
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": true
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 692,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 32)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 60)\n\ngate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 160000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 175.240 under 440 Hz vs 175.240 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1944,
+      "rules_file": "control",
+      "source": "attempt-5",
+      "total_s": 5.162,
+      "wall_s": 49.74
+    }
+  ],
+  "job_id": 915,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 913
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A little keyboard of coloured keys that each sound a note and glow when pressed.",
+  "prompt_tokens": 9775,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/913/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/913",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a simplified keyboard interface with twelve colored rectangular keys arranged horizontally across the canvas. Each key is assigned a distinct musical note and displays a vibrant color. When a user clicks on any key, it triggers both a visual glow effect that expands outward from the key's perimeter and plays a corresponding musical note through the p5.sound library. The interaction is immediate and tactile, with each key maintaining its own unique tone and visual response. The design emphasizes clean, geometric forms with bold colors to create an engaging yet minimal interface for exploring sound and visual feedback in a single, interactive gesture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 279.214
+}
