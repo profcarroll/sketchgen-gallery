@@ -1,0 +1,1 @@
+This sketch depicts a violent mechanical shredding process with a stack of books precariously positioned above rotating industrial machinery. The scene features a central shredder apparatus with rotating gears and tearing plates, surrounded by a tower of books that gradually get consumed and fragmented.
