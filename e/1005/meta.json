@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdesign a rhythm sequencer Revise: the same organized grid of colored\u2026\u201d \u2014 sketchgen entry 1005, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1005/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a uniform arrangement of colored, square pads forming a responsive grid. Each pad is illuminated with a solid background color, creating a clean, modular structure. The primary interaction is clicking any individual pad within the grid. Upon receiving a click, the specific pad clicked will flash brightly, providing instant visual confirmation of the input while the surrounding pads remain steady and unchanged.",
+  "completion_tokens": 1688,
+  "created_utc": "2026-09-19T08:15:59Z",
+  "entry_id": 1005,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 547,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.6,
+      "prompt_tokens": 2371,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.44,
+      "wall_s": 83.951
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 547,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "prompt_tokens": 2488,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.521,
+      "wall_s": 43.98
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 594,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "prompt_tokens": 2488,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.663,
+      "wall_s": 30.212
+    }
+  ],
+  "job_id": 1008,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same organized grid of colored pads, and this time upon clicking a pad, only that specific pad flashes brightly.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 968,
+    "root_entry_id": 968
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a rhythm sequencer\n\nRevise: the same organized grid of colored pads, and this time upon clicking a pad, only that specific pad flashes brightly.",
+  "prompt_tokens": 7347,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1005/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1005",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a responsive grid of colorful square pads that form a clean, modular structure. Each pad has a randomly assigned color and maintains its position within the grid as the canvas resizes. When a user clicks on any pad, it immediately flashes brightly with white light for 200 milliseconds, providing clear visual feedback while all other pads remain unchanged. The interaction is simple yet effective\u2014clicking any pad triggers a localized flash that confirms the input without disturbing the rest of the grid. This design emphasizes both the structured nature of the grid and the immediate response to user action, creating an engaging yet calm interface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 158.143
+}
