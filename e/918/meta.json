@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA calm pond whose ripples grow with the sound level in the room.\u201d \u2014 sketchgen entry 918, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/918/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a tranquil, fluid surface resembling a pond. Even when quiet, the surface exhibits subtle, natural undulations that convey movement. When ambient sound is detected, these ripples become dynamic and pronounced. The sound level dictates the intensity and spread of the visible ripples, causing them to grow outwards and intensify across the water's surface. The visual effect should be immersive, using colours and gradient shifts to convey depth, while the movement dynamically reacts to the room's auditory environment.",
+  "completion_tokens": 930,
+  "created_utc": "2026-09-18T20:37:02Z",
+  "entry_id": 918,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 930,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1734,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 5.139,
+      "wall_s": 58.126
+    }
+  ],
+  "job_id": 920,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 918
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A calm pond whose ripples grow with the sound level in the room.",
+  "prompt_tokens": 1734,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/918/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/918",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive pond-like surface that responds to ambient sound. In its idle state, the canvas displays subtle, natural undulations through animated wave patterns and gently pulsing ripples. When sound is detected\u2014triggered by a single click that initiates audio input\u2014the visual behavior becomes more dynamic and intense. The intensity of the sound directly controls the size, speed, and number of ripples spreading across the water's surface. Colors shift subtly to convey depth and movement, with hues ranging from cool blues to deeper purples. The effect is designed to be both calming and responsive, creating an environment where viewers can observe how sound influences visual form through a fluid, organic interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.126
+}
