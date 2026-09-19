@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a rhythm sequencer\u201d \u2014 sketchgen entry 968, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/968/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an organized grid of colored pads, representing musical steps. When the sketch loads, the pads gently pulse with a steady, underlying beat, providing a clear visual sense of the tempo. The viewer can trigger the sequence by clicking any pad. Upon clicking, the selected pad and its immediate neighbors flash brightly, while simultaneously playing a distinct, synthesized tone. The grid lights react dynamically to the timing, making the rhythm visually apparent.",
+  "completion_tokens": 1014,
+  "created_utc": "2026-09-19T04:12:14Z",
+  "entry_id": 968,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1014,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2387,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.337,
+      "wall_s": 70.18
+    }
+  ],
+  "job_id": 970,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 968
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "design a rhythm sequencer",
+  "prompt_tokens": 2387,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/968/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/968",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive grid of musical pads that respond to user input with both visual and auditory feedback. The pads pulse gently in a steady beat, establishing a clear rhythmic tempo, while individual clicks trigger bright flash effects on the clicked pad and its immediate neighbors. Each pad plays a unique synthesized tone based on its position in the grid, creating an engaging interface where users can create simple musical sequences by clicking through the pads. The visual design uses color to distinguish each pad while maintaining a cohesive aesthetic that emphasizes the rhythmic nature of the interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.18
+}
