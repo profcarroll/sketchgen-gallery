@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clunar surface flyover\u201d \u2014 sketchgen entry 1031, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1031/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a cinematic descent over a desolate, cratered lunar landscape. Grey, textured terrain with deep shadows and jagged rock formations sweeps past the camera. The background is a pitch-black void filled with distant, static stars. The camera maintains a smooth, continuous forward motion, gliding low over the craters and ridges to simulate a spacecraft flyover.",
+  "completion_tokens": 658,
+  "created_utc": "2026-09-19T20:11:43Z",
+  "entry_id": 1031,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 658,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 59.5,
+      "prompt_tokens": 1702,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 13.154,
+      "wall_s": 96.112
+    }
+  ],
+  "job_id": 1034,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1031
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "lunar surface flyover",
+  "prompt_tokens": 1702,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1031/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1031",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a cinematic flyover of a lunar landscape using p5.js in WEBGL mode. The viewer observes a descent through a desolate cratered terrain with deep shadows and jagged rock formations. Stars fill the background as a pitch-black void, while the camera maintains smooth forward motion. The scene is constructed from procedurally generated points representing craters and ridges, creating a textured, low-poly representation of the moon's surface that moves past the viewer to simulate flight.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.112
+}
