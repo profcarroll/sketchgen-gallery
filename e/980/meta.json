@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 980, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/980/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly intricate, continuous lattice composed of interlocking hexagons. The structure is defined by sharply glowing boundaries that pulse with energy, visually simulating a moment of extreme tension just before structural collapse. This vibrant, geometric network exhibits constant, dynamic motion, appearing to strain and reform in a mesmerizing, complex rhythm. The visual activity is influenced by user interaction: clicking anywhere on the lattice causes a localized surge in the pulsing intensity and shifts the structural instability across the pattern. Accompanying the visual shifts is an ambient, evolving soundscape that amplifies during moments of perceived failure.",
+  "completion_tokens": 1253,
+  "created_utc": "2026-09-19T05:21:17Z",
+  "entry_id": 980,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1253,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.3,
+      "prompt_tokens": 2453,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.235,
+      "wall_s": 83.238
+    }
+  ],
+  "job_id": 982,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 929,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working\n\nRevise: The same intricate, interlocking tessellation of hexagons, and this time giving the hexagon boundaries sharper, more defined edges.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time introducing localized areas where the geometric integrity momentarily fractures.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time with localized areas exhibiting extreme contrast between stable and fracturing segments.\n\nRevise: the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.",
+  "prompt_tokens": 2453,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/980/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/980",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing lattice of interlocking hexagons that pulse with an inner energy, simulating tension just before structural collapse. The grid responds dynamically to both time-based animation and user interaction \u2014 clicking anywhere triggers a localized surge in pulsing intensity that propagates through the structure. The visual effect uses color, motion, and geometric relationships to create an immersive sense of stress and release. An ambient soundscape evolves with the visuals, amplifying during moments of perceived instability. The system maintains performance by using fixed arrays and avoiding expensive operations per frame, creating a complex but controlled visual experience that feels both organic and engineered.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.238
+}
