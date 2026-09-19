@@ -1,0 +1,190 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(drag)",
+    "responds(audio)"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cDrag a circle up and down to bend a tone's pitch, click to start the\u2026\u201d \u2014 sketchgen entry 911, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/911/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a single, visible circle positioned within the frame. The sketch is inactive until the user performs a click, which initializes a tone. From that point, the primary interaction involves dragging the circle vertically. As the user drags the circle up and down, the physical vertical position of the circle directly controls the pitch of the continuous tone, making the sound rise when the circle moves upward and fall when it moves downward.",
+  "completion_tokens": 2678,
+  "created_utc": "2026-09-18T20:07:54Z",
+  "entry_id": 911,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 545,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 239.474 under 440 Hz vs 239.474 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2433,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.138,
+      "wall_s": 44.807
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 465,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 239.825 under 440 Hz vs 239.825 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2704,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.122,
+      "wall_s": 44.068
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 593,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 239.450 under 440 Hz vs 239.450 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2704,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.166,
+      "wall_s": 50.698
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 494,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 239.512 under 440 Hz vs 239.512 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2704,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 6.096,
+      "wall_s": 42.485
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 581,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 239.450 under 440 Hz vs 239.450 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2704,
+      "rules_file": "treatment",
+      "source": "attempt-5",
+      "total_s": 6.138,
+      "wall_s": 47.483
+    }
+  ],
+  "job_id": 913,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 911
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "Drag a circle up and down to bend a tone's pitch, click to start the sound.",
+  "prompt_tokens": 13249,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/911/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/911",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive audio visualization where a blue circle can be dragged vertically to control the pitch of a continuous sine wave tone. The circle's vertical position directly maps to frequency \u2014 moving it upward raises the pitch from 440Hz to 880Hz, while moving downward lowers it. The interface responds to both user clicks to initialize audio and drag gestures to adjust pitch. A visual reference line indicates the pitch range, making the relationship between physical motion and sound clear. The implementation uses p5.js's built-in oscillator and mapping functions to create a responsive audio-visual feedback loop where the viewer can hear pitch changes as they manipulate the circle's position.",
+  "submitted_by": "profcarroll",
+  "wall_s": 229.541
+}
