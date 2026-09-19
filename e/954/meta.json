@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 954, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/954/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply atmospheric alpine winter landscape characterized by snow-draped peaks and muted, cold color palettes. The foreground is dominated by complex rock formations and deep channels. The scene is rendered with crystalline blue light reflecting off fresh snow. When the viewer clicks anywhere on the canvas, an avalanche occurs. A cascade of debris sweeps through the scene, visibly displacing the pristine snow in the foreground channels and leaving distinct streaks of the underlying rock color along the impact path.",
+  "completion_tokens": 4198,
+  "created_utc": "2026-09-19T00:18:42Z",
+  "entry_id": 954,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1437,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.0126/255, 37478 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.1,
+      "prompt_tokens": 2395,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.142,
+      "wall_s": 92.286
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1259,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.2929/255, 49512 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.8,
+      "prompt_tokens": 2514,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.261,
+      "wall_s": 82.414
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1502,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 4.2170/255, 73584 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.7,
+      "prompt_tokens": 2514,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.786,
+      "wall_s": 95.729
+    }
+  ],
+  "job_id": 956,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deeply atmospheric, cold alpine winter landscape, and this time the cleared snow will reveal distinct, visible streaks of underlying rock color along the impact path.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 897,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the fresh snow deposited within the foreground channels will reflect deep, crystalline blue light.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the cleared snow will reveal distinct, visible streaks of underlying rock color along the impact path.",
+  "prompt_tokens": 7423,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/954/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/954",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a serene alpine winter scene with layered peaks, rocky formations, and snow-covered terrain. The composition uses cold color palettes with deep blues and soft whites to evoke the stillness of a mountain landscape. When clicked, the canvas responds with an animated avalanche effect that sweeps across the foreground, visibly displacing the pristine snow and leaving trails of underlying rock. The technique combines simple geometric shapes with procedural particle systems to create both the static landscape and dynamic avalanche, using minimal draw calls within the specified frame budget while maintaining visual coherence throughout the scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 270.429
+}
