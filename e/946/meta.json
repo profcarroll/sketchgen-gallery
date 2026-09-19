@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe periodic table of elements Revise: the same large, organized grid\u2026\u201d \u2014 sketchgen entry 946, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/946/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a large, structured grid representing the elements of the periodic table. Each element occupies a specific, organized square within the chart. The entire diagram is unified by a continuous, pulsating glow. This light source is vibrant blue, creating a steady, rhythmic pulsing effect that washes over the grid structure. The pulsing glow is the main visual feature, changing color intensity and size without requiring any direct user interaction or input.",
+  "completion_tokens": 4046,
+  "created_utc": "2026-09-18T23:26:07Z",
+  "entry_id": 946,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2973,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Assignment to constant variable.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2369,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.224,
+      "wall_s": 189.75
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1073,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.9,
+      "prompt_tokens": 2571,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.661,
+      "wall_s": 75.197
+    }
+  ],
+  "job_id": 948,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same large, organized grid displays the elements of the periodic table, and this time the entire diagram pulses with a vibrant blue hue.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 889,
+    "root_entry_id": 889
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the periodic table of elements\n\nRevise: the same large, organized grid displays the elements of the periodic table, and this time the entire diagram pulses with a vibrant blue hue.",
+  "prompt_tokens": 4940,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/946/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/946",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a structured visualization of the periodic table as a glowing grid. Each element is represented by a colored cell with its chemical symbol, arranged in the familiar layout of the periodic table. The entire grid pulses with a vibrant blue glow that rhythmically expands and contracts, creating a mesmerizing effect that washes over the entire structure. The pulsing intensity is controlled by a sine wave function, producing a continuous, organic rhythm without any user interaction. The color palette shifts slowly through the hue spectrum to create visual interest while maintaining the scientific accuracy of element representation. The effect demonstrates how subtle animation and color modulation can transform a static data visualization into an engaging, living display that captures attention through its gentle, hypnotic motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 264.947
+}
