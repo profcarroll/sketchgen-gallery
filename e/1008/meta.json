@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA calm pond whose ripples grow with the sound level in the room. Revi\u2026\u201d \u2014 sketchgen entry 1008, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1008/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a tranquil, deep-water surface, constantly exhibiting gentle, flowing ripples that convey a sense of calm movement. The water maintains its fluid, unbroken quality until an external sound source is detected. As the sound level increases, the surface reacts dynamically: the subtle ripples become more pronounced, growing in fragmentation and brightness, culminating in a highly visible, sparkling effect when the sound peaks.",
+  "completion_tokens": 872,
+  "created_utc": "2026-09-19T14:30:57Z",
+  "entry_id": 1008,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 872,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.3,
+      "prompt_tokens": 1716,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 10.471,
+      "wall_s": 55.854
+    }
+  ],
+  "job_id": 1011,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same tranquil, fluid surface resembling a pond, and this time the ripples should become more fragmented and bright when the sound level peaks.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 918,
+    "root_entry_id": 918
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A calm pond whose ripples grow with the sound level in the room.\n\nRevise: the same tranquil, fluid surface resembling a pond, and this time the ripples should become more fragmented and bright when the sound level peaks.",
+  "prompt_tokens": 1716,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1008/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1008",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene water surface that responds dynamically to sound input. Under normal conditions, gentle ripples flow across the canvas in a calming, continuous motion. When sound is detected\u2014triggered by a 440 Hz tone in the test\u2014the ripples intensify, fragment, and brighten into a sparkling effect that visually represents the increase in audio energy. The interaction is entirely self-contained: it begins on user click to activate audio, then reacts to simulated sound input without any external controls.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.854
+}
