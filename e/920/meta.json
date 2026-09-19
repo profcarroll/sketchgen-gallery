@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(audio)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA glowing line that traces the live microphone input as a waveform.\u201d \u2014 sketchgen entry 920, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/920/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a single, luminous line that stretches across the frame. This line visually interprets the microphone's real-time audio input, fluctuating in height and intensity to map the sound's waveform. As sound enters the microphone, the glowing line immediately reacts, expanding and contracting according to the frequency and volume of the sound. The overall shape and color of the line are dictated entirely by the live input, making the canvas a direct, visible representation of the ambient soundscape.",
+  "completion_tokens": 508,
+  "created_utc": "2026-09-18T20:43:32Z",
+  "entry_id": 920,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 508,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2405,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.14,
+      "wall_s": 42.454
+    }
+  ],
+  "job_id": 922,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 920
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A glowing line that traces the live microphone input as a waveform.",
+  "prompt_tokens": 2405,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/920/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/920",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch transforms real-time microphone audio into a luminous, flowing line that stretches across the canvas. The line's shape and intensity fluctuate according to the sound's waveform, creating a direct visual representation of the ambient soundscape. As sound enters through the microphone, the glowing line immediately reacts\u2014expanding and contracting in response to both volume and frequency variations. The technique uses p5.js's audio analysis capabilities to capture live input and map it into dynamic visual geometry, producing an immersive, responsive visualization that changes with every sound.",
+  "submitted_by": "profcarroll",
+  "wall_s": 42.454
+}
