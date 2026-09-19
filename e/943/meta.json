@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 943, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/943/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously growing strip of fabric forming a sweater. The knitted structure is composed of visible, repeating geometric patterns created by colored stitches. The process is always visible: new rows of stitches constantly appear at the working end, simulating the action of knitting. These colorful, interlocking shapes propagate steadily across the width of the fabric, creating the illusion of slow, rhythmic construction. The pattern remains uniform and self-contained, expanding gracefully without any required viewer interaction or external input to drive the growth.",
+  "completion_tokens": 655,
+  "created_utc": "2026-09-18T23:07:15Z",
+  "entry_id": 943,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 655,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.6,
+      "prompt_tokens": 1705,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.635,
+      "wall_s": 43.25
+    }
+  ],
+  "job_id": 945,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 886,
+    "root_entry_id": 886
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.",
+  "prompt_tokens": 1705,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/943/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/943",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the continuous knitting of a sweater by generating a strip of fabric that grows from top to bottom. Each frame adds a new row of colored elliptical stitches, creating an interlocking geometric pattern that propagates across the canvas. The visual rhythm mimics the steady, repetitive motion of hand-knitting, with each stitch rendered as a small colored ellipse. The pattern remains uniform and self-contained, expanding gracefully without requiring any user interaction or external input to drive the growth. As new rows are added, they appear at the working end of the fabric, creating an illusion of slow, continuous construction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 43.25
+}
