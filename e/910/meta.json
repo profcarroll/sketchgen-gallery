@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 910, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/910/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal row containing five distinct colored rectangular pads. These pads are static elements, but each is interactive. When a user clicks on any of the five pads, the sketch provides an audible musical note corresponding to that pad's selection. Simultaneously, the clicked pad visually reacts by illuminating or changing its color to highlight the interaction.",
+  "completion_tokens": 702,
+  "created_utc": "2026-09-18T20:02:14Z",
+  "entry_id": 910,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 702,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2367,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.302,
+      "wall_s": 51.7
+    }
+  ],
+  "job_id": 912,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.",
+  "prompt_tokens": 2367,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/910/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/910",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static musical interface with five interactive pads arranged horizontally across the canvas. Each pad displays a distinct color and musical note frequency, forming a simple keyboard-like arrangement. When a user clicks on any pad, it instantly illuminates with a bright yellow highlight while simultaneously triggering a corresponding sine wave tone through the p5.sound library. The visual feedback is immediate and brief, lasting only 300 milliseconds, before returning to its original color. This design demonstrates both interactive audio generation and visual response within the constraints of a single-user gesture, creating an engaging yet minimal musical experience that responds directly to user input with both sound and sight.",
+  "submitted_by": "profcarroll",
+  "wall_s": 51.7
+}
