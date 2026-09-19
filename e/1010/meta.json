@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 1010, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1010/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a circular, minimalist clock face. Two distinct hands\u2014an hour hand and a minute hand\u2014are centrally mounted and are rendered in a matte bronze color. Both hands feature a noticeable thickness and softly rounded tips. These hands move continuously and smoothly across the face, perpetually tracking the passage of time. The entire scene remains stationary until the inherent, autonomous movement of the hands takes over, indicating the time without any user input required.",
+  "completion_tokens": 586,
+  "created_utc": "2026-09-19T14:43:07Z",
+  "entry_id": 1010,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 586,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2367,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.234,
+      "wall_s": 58.785
+    }
+  ],
+  "job_id": 1013,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock face, and this time with the hour and minute hands rendered in matte bronze",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 922,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in matte bronze",
+  "prompt_tokens": 2367,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1010/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1010",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a minimalist circular clock face with matte bronze-colored hour and minute hands. The design emphasizes clean, simple geometry with softly rounded tips on the hands for a tactile feel. Both hands move continuously and smoothly to track time automatically, without any user interaction required. The clock face is rendered using basic p5.js drawing functions\u2014ellipses for the face and lines for the hands\u2014with careful attention to proportional sizing and color to achieve an elegant, timeless aesthetic. The scene remains stationary except for the natural movement of the hands, which perpetually indicate the passage of time through their continuous rotation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.785
+}
