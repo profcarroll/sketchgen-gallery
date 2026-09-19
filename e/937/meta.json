@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 937, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/937/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, deeply detailed visualization of natural biological and geological processes occurring within a semi-submerged substrate. Delicate, filamentous mold structures span the surface, forming an organic lattice of thin, colorful filaments. Within the deepest crevices and around the thicker primary connections, sediment accumulates, giving the surface a rich, stratified quality. Over time, visible crystalline formations of mineral deposits slowly emerge, encasing and crystallizing around the underlying mold filaments. The entire structure is viewed in three dimensions, allowing the interplay of light and shadow to reveal the complexity of the growth.",
+  "completion_tokens": 1002,
+  "created_utc": "2026-09-18T22:27:36Z",
+  "entry_id": 937,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1002,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 58.4,
+      "prompt_tokens": 2427,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.033,
+      "wall_s": 66.858
+    }
+  ],
+  "job_id": 939,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate simulation of filamentous mold growth, and this time with visible accumulation of sediment within the deepest crevices of the substrate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 879,
+    "root_entry_id": 360
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same amorphous colorful growth, and this time with visible mycelial filaments reaching into the substrate surface\n\nRevise: the same delicate filamentous growth, and this time with increased density of visible mycelial filaments penetrating the substrate surface\n\nRevise: the same delicate, filamentous structures simulating mold growth, and this time with increased thickness and visibility of the primary connecting filaments\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible evidence of mineral deposition forming crystalline structures around the primary filaments.\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible accumulation of sediment within the deepest crevices of the substrate.\n\nRevise: the same intricate simulation of filamentous mold growth and accumulating sediment, and this time with visible mineral deposits crystallizing around the primary filaments.\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible accumulation of sediment within the deepest crevices of the substrate.",
+  "prompt_tokens": 2427,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/937/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/937",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes an intricate underground ecosystem where delicate filamentous structures grow and evolve over time. The organic lattice of thin, colorful filaments spreads across the semi-submerged substrate, creating a complex network that gradually develops. Within the deepest crevices and around thicker connections, sediment accumulates to form rich stratified layers. Over time, crystalline mineral formations slowly emerge and encase the underlying mold structures, creating a dynamic interplay between organic growth and geological processes. The three-dimensional rendering allows viewers to perceive how light and shadow reveal the complexity of this evolving biological-geological landscape, with filaments moving gently through space and crystals slowly expanding to create a sense of time passing within a fixed moment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.858
+}
