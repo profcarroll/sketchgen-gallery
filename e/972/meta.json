@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 972, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/972/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal row composed of five distinct rectangular pads. Each pad is filled with a different solid color and features smoothly rounded corners. When a user clicks on any of these pads, that pad visually illuminates and changes its appearance, while simultaneously a specific, corresponding musical note is played. The rest of the pads remain static until one of them is clicked.",
+  "completion_tokens": 1444,
+  "created_utc": "2026-09-19T04:31:25Z",
+  "entry_id": 972,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 736,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] tones[i].setFreq is not a function\n- [pageerror] Cannot read properties of undefined (reading 'freq')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2370,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.262,
+      "wall_s": 52.778
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 708,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2603,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.283,
+      "wall_s": 54.677
+    }
+  ],
+  "job_id": 974,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 910,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.",
+  "prompt_tokens": 4973,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/972/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/972",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a musical interface with five colorfully lit pads arranged horizontally across the canvas. Each pad features rounded corners and a distinct solid color. When a user clicks on any pad, it instantly illuminates with a bright white glow while simultaneously playing a corresponding musical note \u2014 C4, D4, E4, F4, or G4 \u2014 using p5's oscillator functions. The other pads remain static until another is clicked, creating an interactive musical experience where each pad serves as both a visual trigger and sound generator. The interface responds to the single gesture of clicking the center of the canvas, lighting up the corresponding pad and producing its note, then returning to its original state after a brief duration.",
+  "submitted_by": "profcarroll",
+  "wall_s": 107.455
+}
