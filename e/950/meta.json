@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cretrogamer's paradise Revise: the same chaotic vibrant grid of pixel\u2026\u201d \u2014 sketchgen entry 950, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/950/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly energetic, chaotic burst of vibrant, retro-styled pixel shapes. A final glowing echo ripples outward, resolving the surrounding chaos. This wave acts upon the random field, causing all the chaotic pixels to instantly freeze in place. The resulting image is a solid, structured, and glowing tapestry, giving the appearance of a luminous metallic sheet woven from pure pixel energy.",
+  "completion_tokens": 2151,
+  "created_utc": "2026-09-18T23:49:47Z",
+  "entry_id": 950,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 694,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 18.9820/255, 34368 of 160000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.8,
+      "prompt_tokens": 1679,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.997,
+      "wall_s": 43.624
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 617,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: no_motion\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 50.9300/255, 133551 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.5,
+      "prompt_tokens": 1798,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.182,
+      "wall_s": 42.501
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 840,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: no_motion\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 32.6926/255, 306789 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "prompt_tokens": 1839,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 2.3,
+      "wall_s": 54.737
+    }
+  ],
+  "job_id": 952,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant, chaotic field of retro pixel shapes, and this time the final echo should freeze the surrounding chaotic pixels into a solid, glowing, metallic tapestry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "parent_entry_id": 893,
+    "root_entry_id": 111
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "retrogamer's paradise\n\nRevise: the same chaotic vibrant grid of pixel art, and this time the shapes should track the cursor and briefly trail its path\n\nRevise: try again but make it interactive and animate\n\nRevise: the same chaotic grid of pixelated shapes, and this time the shapes should scatter outward from the cursor's path\n\nRevise: the same chaotic vibrant grid of pixelated shapes, and this time the shapes should grow larger before scattering outward\n\nRevise: the same vibrant, chaotic grid of retro-styled pixel shapes, and this time the scattering pixels should temporarily organize themselves into visible, geometric ripple patterns.\n\nRevise: the same chaotic, vibrant grid of retro pixel art shapes, and this time the scattered pixels should temporarily organize themselves into visible, structured lattices that glow faintly before fading back into the random motion.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the temporary lattices should sequentially glow to reveal a structured blueprint of the surrounding random chaos.\n\nRevise: the same vibrant and energetic field composed of retro-styled pixel shapes, and this time the structured lattices should emit a subtle force that gently guides the nearby chaotic pixels toward the emerging form.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the temporary lattices should pulse sequentially, causing the structure to visibly expand and contract before fully forming.\n\nRevise: the same vibrant, energetic chaos of retro-styled pixel shapes, and this time the fully materialized form should emit faint, organized trails of pixels outward into the surrounding noise.\n\nRevise: the same vibrant and energetic field of retro-styled pixel shapes, and this time the organized trails should pull nearby chaotic pixels into temporary, perfectly straight lines before releasing them.\n\nRevise: the same vibrant and energetic field composed of retro-styled pixel shapes, and this time the organized lines should momentarily adopt the rigid, visible geometry of glowing squares before dissipating.\n\nRevise: the same chaotic, vibrant field composed of retro-styled pixel shapes, and this time the residual pixels should pulse outward, leaving behind a momentary, visible echo of the pattern's perfect geometry.\n\nRevise: the same vibrant, chaotic field of retro-styled pixel shapes, and this time the final glowing echo should expand outward, freezing the surrounding pixels into structured, translucent glass-like forms.\n\nRevise: the same vibrant, chaotic field of retro pixel shapes, and this time the final echo should freeze the surrounding chaotic pixels into a solid, glowing, metallic tapestry.",
+  "prompt_tokens": 5316,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/950/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/950",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a chaotic burst of vibrant pixel shapes that suddenly freeze into a structured, glowing tapestry upon user interaction. The initial animation simulates an energetic explosion of color and motion, but when the user clicks the canvas, it triggers a \"glowing echo\" that instantly halts all movement and resolves the chaos into a stable, luminous composition. The effect is achieved through careful control of particle behavior and a transition triggered by a single mouse press, resulting in a visually striking contrast between disorder and order.",
+  "submitted_by": "profcarroll",
+  "wall_s": 140.862
+}
