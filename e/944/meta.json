@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctextile textures interweaving with color saturation Revise: the same\u2026\u201d \u2014 sketchgen entry 944, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/944/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, abstract tapestry composed of flowing textile textures. These intricate weaves are interwoven with structured, geometrically rigid knots, creating a pattern of complex color saturation. The overall field is continuously animated, exhibiting soft, organic movement. When the viewer drags the cursor across the surface, the nearest fibers react sharply; the color saturation and textural density swell outward from the cursor's path, causing the flowing elements to visibly pull and warp in response to the movement.",
+  "completion_tokens": 1902,
+  "created_utc": "2026-09-18T23:12:56Z",
+  "entry_id": 944,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 839,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 74)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] dist is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.6,
+      "prompt_tokens": 1721,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.874,
+      "wall_s": 52.426
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1063,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.1,
+      "prompt_tokens": 1873,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 9.476,
+      "wall_s": 64.324
+    }
+  ],
+  "job_id": 946,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 887,
+    "root_entry_id": 887
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "textile textures interweaving with color saturation\n\nRevise: the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.",
+  "prompt_tokens": 3594,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/944/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/944",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract textile tapestry where thousands of flowing fibers move organically across the canvas, interwoven with rigid geometric knots. The fibers continuously animate with noise-based motion patterns, creating a sense of depth and texture reminiscent of woven fabric. When the viewer drags their cursor, nearby fibers react sharply\u2014pulling and warping in response to the movement, causing color saturation and brightness to swell outward from the cursor's path. The piece also responds to audio input through subtle visual pulses that amplify with sound levels, adding another layer of interactivity to the flowing, organic composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 116.75
+}
