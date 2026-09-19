@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 957, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/957/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dynamic, cutaway cross-section of a combustion engine, allowing the viewer to observe its core mechanical function in action. Inside the cylinders, pistons move rapidly in a linear motion, driven by simulated explosions pushing them downward. This linear movement transfers rotational force through connecting rods, visibly turning a rotating crankshaft. Simultaneously, the intricate timing gear train demonstrates its crucial link: as the crankshaft rotates, the gears mesh and articulate, precisely controlling the opening and closing of the intake and exhaust valves in perfect synchronization.",
+  "completion_tokens": 933,
+  "created_utc": "2026-09-19T00:37:19Z",
+  "entry_id": 957,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 933,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "prompt_tokens": 1735,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.82,
+      "wall_s": 56.45
+    }
+  ],
+  "job_id": 959,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, cutaway cross-section of a running combustion engine, and this time the visible timing gear train linking the crankshaft and the valves is demonstrated.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 900,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.\n\nRevise: the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the connecting rods visibly rotating a crankshaft.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the connecting rods visibly articulating at their bearing points on the crankshaft.\n\nRevise: the same dynamic, three-dimensional cross-section of a running combustion engine, and this time the articulation points where the connecting rods bear on the crankshaft are clearly visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running combustion engine, and this time the intake and exhaust are represented by clearly visible, timed colored fluid flows.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the visible timing gear train linking the crankshaft and the valves is demonstrated.",
+  "prompt_tokens": 1735,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/957/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/957",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dynamic, cutaway cross-section of a combustion engine rendered in 3D using p5.js's WEBGL mode. The viewer observes the synchronized motion of pistons moving up and down within cylinders, connected to a rotating crankshaft via connecting rods. The animation demonstrates how linear piston motion translates into rotational force. Simultaneously, timing gears mesh and rotate, controlling intake and exhaust valves that open and close in perfect synchronization with the crankshaft's rotation. The engine block, cylinders, pistons, connecting rods, crankshaft, and timing gears all move together in a continuous mechanical dance, illustrating the fundamental principles of internal combustion engine operation through visual animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 56.45
+}
