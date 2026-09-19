@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 935, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/935/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, interconnected lattice composed of glowing biological cells. These cells and their structural connections are in a state of constant, organic flux, subtly shifting and reforming over time. When a new cell is spontaneously born within the lattice, the connections immediately surrounding that new cell flare up, emitting a bright, intense glow that visually highlights the point of birth. The entire system pulses with soft, diffused light, creating the impression of a dynamic, living neural network that continually evolves and reorganizes itself on the screen.",
+  "completion_tokens": 957,
+  "created_utc": "2026-09-18T22:16:37Z",
+  "entry_id": 935,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 957,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "prompt_tokens": 1709,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.268,
+      "wall_s": 59.902
+    }
+  ],
+  "job_id": 937,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, organic lattice composed of interconnected, glowing cells, and this time the connections glow intensely for a brief moment whenever a new cell is born.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 877,
+    "root_entry_id": 155
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.\n\nRevise: the same dynamically shifting lattice of interconnected, glowing cells, and this time expired cells dissipate into trails of residual light.\n\nRevise: the same constantly shifting lattice of interconnected, glowing cells, and this time the residual light trails that follow decay linger visibly for several full generation cycles.\n\nRevise: the same vast, dynamically evolving lattice of interconnected, glowing cells, and this time the background darkens and brightens in pronounced, slow-motion waves of light.\n\nRevise: the same vast, dynamically evolving lattice composed of interconnected, glowing cells, and this time the connection lines glow intensely when two cells are connected and only dimly fade when disconnected.\n\nRevise: the same vast, organic lattice composed of interconnected, glowing cells, and this time the connections glow intensely for a brief moment whenever a new cell is born.",
+  "prompt_tokens": 1709,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/935/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/935",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a living lattice of glowing biological cells that continuously evolve and reorganize. Cells are born randomly within the system, triggering intense glows around their birth points. The entire network pulses softly with diffused light, mimicking a dynamic neural structure. Connections between cells shift organically over time, forming and breaking links in a constant state of flux. The visual effect conveys organic complexity through subtle motion and vibrant highlights that emphasize new growth within the system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 59.902
+}
