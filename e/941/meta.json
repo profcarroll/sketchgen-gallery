@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cillustrate liquid pouring into a glass Revise: the same continuous st\u2026\u201d \u2014 sketchgen entry 941, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/941/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a transparent glass containing liquid, into which a continuous stream of richly colored fluid is pouring from above. This streaming action is the source of constant movement. When the liquid hits the surface of the glass, the energy of the impact creates distinct, localized vortexes. These turbulent formations spiral outward and dissipate near the surface, showing the dynamic interaction between the foreign stream and the contained liquid. The scene is purely observational, focusing on the continuous flow and the subsequent movement patterns within the glass.",
+  "completion_tokens": 1484,
+  "created_utc": "2026-09-18T22:56:35Z",
+  "entry_id": 941,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1484,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2381,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.262,
+      "wall_s": 93.595
+    }
+  ],
+  "job_id": 943,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous stream of richly colored liquid pouring into a glass, and this time the impact at the surface creates visible, localized vortexes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 884,
+    "root_entry_id": 884
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "illustrate liquid pouring into a glass\n\nRevise: the same continuous stream of richly colored liquid pouring into a glass, and this time the impact at the surface creates visible, localized vortexes.",
+  "prompt_tokens": 2381,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/941/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/941",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a glass vessel filled with liquid, into which a continuous stream of colored fluid pours from above. The visualization captures the dynamic interaction between the incoming stream and the contained liquid through several key elements: particles representing the flowing liquid that gradually settle and interact with the surface; vortex formations that emerge at impact points and spiral outward as they dissipate; and the transparent glass boundary that contains the scene. The visual effect is achieved through particle physics, including gravity and velocity-based movement, combined with a simple but effective particle system for both the stream and the impact vortexes. The entire scene operates without user input once started, creating an observational experience of continuous fluid dynamics within a contained space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 93.595
+}
