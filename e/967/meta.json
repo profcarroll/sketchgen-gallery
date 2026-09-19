@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cbuild a synthesizer to play chords\u201d \u2014 sketchgen entry 967, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/967/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of intersecting, glowing nodes that represent frequencies. When triggered, these nodes illuminate and expand, sending out visible, overlapping waveforms of changing color and intensity that ripple outward from the point of impact. The complexity and size of the resulting waveform pattern change based on the harmonic structure of the chord played. Users can activate this display by clicking anywhere on the canvas, which sends a chord through the synthesizer, causing the visible light structures to bloom and fade.",
+  "completion_tokens": 810,
+  "created_utc": "2026-09-19T04:08:53Z",
+  "entry_id": 967,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 810,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "prompt_tokens": 2393,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.313,
+      "wall_s": 58.833
+    }
+  ],
+  "job_id": 969,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 967
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "build a synthesizer to play chords",
+  "prompt_tokens": 2393,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/967/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/967",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a visual representation of sound as a field of glowing nodes that respond to harmonic structures. When activated by a click, nodes near the impact point illuminate and expand, sending out pulsing waveforms that ripple outward. The system translates audio energy into visible light patterns through a combination of particle physics and harmonic frequency mapping. Each node represents a frequency component that blooms with color when triggered, creating an immersive visualization where the complexity of the waveform pattern reflects the harmonic structure of the chord played. The visual effect is deliberately still until activation, then transforms into a dynamic field of interconnected luminous structures that fade over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.833
+}
