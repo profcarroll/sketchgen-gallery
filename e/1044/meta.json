@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "size(400,400)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cglowing orbs\u201d \u2014 sketchgen entry 1044, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1044/ Licensed CC BY 4.0.",
+  "brief": "Numerous circular shapes radiate with soft, warm light across a dark canvas. They drift slowly across the screen, expanding and contracting rhythmically on their own without user interaction. Occasionally, a new orb pulses into existence at a random location while older ones fade into the background. No mouse movement or click alters the drifting field, ensuring the animation feels like an autonomous, living atmosphere. The visuals rely entirely on smooth gradient transitions and subtle color shifts within the glowing spheres to maintain visual interest.",
+  "completion_tokens": 1985,
+  "created_utc": "2026-09-19T21:25:51Z",
+  "entry_id": 1044,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "size(400,400)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 971,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] sinf is not defined\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1778,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.139,
+      "wall_s": 65.07
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(400,400)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1014,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 2.6,
+      "prompt_tokens": 1997,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.582,
+      "wall_s": 65.947
+    }
+  ],
+  "job_id": 1047,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1044
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "glowing orbs",
+  "prompt_tokens": 3775,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1044/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1044",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A slowly evolving field of luminous orbs drifts across a darkened space, each one pulsing and breathing with its own rhythm. New orbs emerge sporadically at random positions while older ones gradually fade away, creating a living, breathing atmosphere that feels autonomous and organic. The warm, colored glows interact through subtle transparency and gentle ripples, suggesting a quiet cosmic dance unfolds without purpose or end.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.017
+}
