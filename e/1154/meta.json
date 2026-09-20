@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same interlocking jigsaw pieces, and this t\u2026\u201d \u2014 sketchgen entry 1154, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1154/ Licensed CC BY 4.0.",
+  "brief": "A vibrant, colorful image is fragmented into interlocking jigsaw puzzle pieces scattered across the canvas. Each individual piece displays a unique segment of the complete picture. A user can click and drag the pieces to move them around, attempting to fit the fragments together to reconstruct the full image.",
+  "completion_tokens": 1802,
+  "created_utc": "2026-09-20T15:56:58Z",
+  "entry_id": 1154,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 562,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1695,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.259,
+      "wall_s": 71.441
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 597,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1950,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 11.338,
+      "wall_s": 43.674
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 643,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 230400 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "prompt_tokens": 1867,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.495,
+      "wall_s": 43.553
+    }
+  ],
+  "job_id": 1158,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interlocking jigsaw pieces, and this time each segment displays a colorful, visible part of a larger image.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1102,
+    "root_entry_id": 1102
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle\n\nRevise: the same interlocking jigsaw pieces, and this time each segment displays a colorful, visible part of a larger image.",
+  "prompt_tokens": 5512,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1154/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1154",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant jigsaw puzzle where colorful rectangular pieces are scattered across the canvas. Each piece has a distinct color and maintains its own position, allowing users to click and drag them around. The interface is simple yet engaging\u2014pieces can be moved freely, but they do not snap into place, encouraging exploration of how fragments might fit together. The visual design uses solid fills with visible borders to clearly define each jigsaw piece, creating a dynamic interaction that responds directly to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 158.668
+}
