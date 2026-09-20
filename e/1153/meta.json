@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctracks in the rink during figure skating Revise: the same elegant, sw\u2026\u201d \u2014 sketchgen entry 1153, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1153/ Licensed CC BY 4.0.",
+  "brief": "A dark, reflective surface resembles an ice rink. Elegant, sweeping white lines glide continuously across the floor in graceful, looping arcs. As these lines move, they transform from flat paths into solid, luminous white pillars that extend vertically into the space. The scene is a dynamic, ever-changing 3D landscape of frozen light.",
+  "completion_tokens": 2920,
+  "created_utc": "2026-09-20T15:48:50Z",
+  "entry_id": 1153,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1890,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 90)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 106)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 124)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 141)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 145)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 161)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2402,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.041,
+      "wall_s": 155.61
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1030,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 46.0,
+      "prompt_tokens": 2919,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.588,
+      "wall_s": 70.981
+    }
+  ],
+  "job_id": 1157,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same elegant, sweeping white lines, and this time they should become solid, solid pillars rather than fading arcs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1096,
+    "root_entry_id": 1096
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "tracks in the rink during figure skating\n\nRevise: the same elegant, sweeping white lines, and this time they should become solid, solid pillars rather than fading arcs.",
+  "prompt_tokens": 5321,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1153/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1153",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A reflective ice rink surface with sweeping white lines that continuously transform into luminous vertical pillars of frozen light. The static points along circular paths create dynamic columns that rise and fall with sinusoidal motion, while independently-moving pillars create a layered 3D landscape of crystalline structures. The WEBGL renderer emphasizes the ethereal quality of light refracting through ice, with subtle color shifts and translucent geometry suggesting both motion and permanence in an ever-changing frozen environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 226.591
+}
