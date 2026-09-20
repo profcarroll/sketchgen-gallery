@@ -6,6 +6,36 @@
     <title>sketch</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+    <script>/* p5.sound in a sandboxed frame */
+    (function () {
+      var W = self.AudioWorklet;
+      var make = URL.createObjectURL;
+      var blobs = {};
+      if (!W || !W.prototype || !W.prototype.addModule) { return; }
+      var add = W.prototype.addModule;
+      URL.createObjectURL = function (obj) {
+        var url = make.apply(this, arguments);
+        if (obj instanceof Blob) { blobs[url] = obj; }
+        return url;
+      };
+      W.prototype.addModule = function (url, options) {
+        var worklet = this;
+        var blob = blobs[url];
+        return add.call(worklet, url, options).catch(function () {
+          if (!blob) { return; }
+          return new Promise(function (resolve) {
+            var reader = new FileReader();
+            reader.onload = function () {
+              add.call(worklet, "data:application/javascript;charset=utf-8," +
+                encodeURIComponent(reader.result), options).then(resolve, resolve);
+            };
+            reader.onerror = function () { resolve(); };
+            reader.readAsText(blob);
+          });
+        });
+      };
+    })();
+    </script>
     <style>
         body { margin: 0; overflow: hidden; background: #111; }
         canvas { display: block; }
