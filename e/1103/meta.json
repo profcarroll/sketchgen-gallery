@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cjigsaw puzzle\u201d \u2014 sketchgen entry 1103, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1103/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with many interlocking, irregularly shaped puzzle pieces, initially scattered across the frame. Each piece displays a fragment of a larger picture. The viewer can click and grab any individual piece, using a dragging motion to move it across the canvas. When the viewer releases the piece, it attempts to lock into place with neighboring pieces, forming continuous sections of the image.",
+  "completion_tokens": 5922,
+  "created_utc": "2026-09-20T06:51:41Z",
+  "entry_id": 1103,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1380,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 76)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2392,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.4,
+      "wall_s": 129.113
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1669,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 87)\n\ngate exit 1: assertions failed: responds(click), responds(drag)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 2530,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.57,
+      "wall_s": 111.655
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 637,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2631,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 11.368,
+      "wall_s": 50.276
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1140,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `vertex` hides p5's `vertex()` function; rename it (sketch.js line 74)\npreflight: your variable `vertex` hides p5's `vertex()` function; rename it (sketch.js line 97)\n\ngate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] vertex is not a function\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2514,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 1.401,
+      "wall_s": 75.537
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1096,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 110)\n\ngate exit 1: assertions failed: responds(click), responds(drag)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "prompt_tokens": 2620,
+      "rules_file": "treatment",
+      "source": "attempt-5",
+      "total_s": 1.476,
+      "wall_s": 76.171
+    }
+  ],
+  "job_id": 1107,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1103
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle",
+  "prompt_tokens": 12687,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1103/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1103",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an interactive puzzle experience where users can drag irregularly shaped pieces across the screen. Each piece displays a fragment of a larger image, and when released near other locked pieces, it attempts to snap into place, forming continuous sections. The implementation uses a combination of geometric shapes for piece boundaries and image slicing to create a cohesive visual puzzle. The interface allows for intuitive manipulation while maintaining the structural integrity of the completed puzzle through proximity-based snapping mechanics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 442.752
+}
