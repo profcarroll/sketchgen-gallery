@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate a live ant farm\u201d \u2014 sketchgen entry 1073, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1073/ Licensed CC BY 4.0.",
+  "brief": "A cross-section of a sandy enclosure filled with a complex network of winding tunnels. Tiny, dark ants crawl continuously through the tunnels and across the surface. Small particles of sand occasionally tumble down empty passageways. Clicking anywhere on the canvas drops a bright morsel of food, attracting nearby ants to the new location.",
+  "completion_tokens": 4418,
+  "created_utc": "2026-09-20T02:28:40Z",
+  "entry_id": 1073,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1254,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1688,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.099,
+      "wall_s": 75.011
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1707,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 103)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1937,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.177,
+      "wall_s": 105.494
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1457,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "prompt_tokens": 1989,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.23,
+      "wall_s": 92.227
+    }
+  ],
+  "job_id": 1077,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1073
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a live ant farm",
+  "prompt_tokens": 5614,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1073/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1073",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a sandy enclosure with an intricate network of winding tunnels that ants navigate through. The scene features a complex, organic tunnel system created using Perlin noise to simulate naturalistic pathways. Tiny black ants wander continuously through the tunnels and across the surface, occasionally being attracted to food sources dropped by clicking anywhere on the canvas. Small particles of sand tumble down empty passageways, adding to the sense of motion and activity within the confined space. The visual design uses a muted color palette with warm browns and sandy tones to evoke a desert-like environment, while the ants' movement and particle physics create an organic, living quality that brings the entire scene to life.",
+  "submitted_by": "profcarroll",
+  "wall_s": 272.732
+}
