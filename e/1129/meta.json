@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 1129, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1129/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a clean, circular clock face set against a neutral background. The time is conveyed solely by two distinct, metallic hands that feature a brushed nickel finish. These hands maintain a constant relationship, with the shorter hour hand and the longer minute hand rotating in synchronized, perpetual motion. The face remains unmarked by any numbers or indices, forcing the viewer to interpret the exact time purely through the relative positions and movement of the two polished metallic pointers. The visual elements suggest mechanical precision and minimalist elegance, keeping time through continuous, cyclical motion without requiring any user input to function.",
+  "completion_tokens": 1226,
+  "created_utc": "2026-09-20T09:44:06Z",
+  "entry_id": 1129,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 570,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 37)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2396,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.217,
+      "wall_s": 44.269
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 656,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2552,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.204,
+      "wall_s": 50.144
+    }
+  ],
+  "job_id": 1133,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock face, and this time the hour and minute hands are rendered in brushed nickel.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 1065,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in matte bronze\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in polished silver\n\nRevise: the same minimalist analog clock face, and this time the hour and minute hands are rendered in brushed nickel.",
+  "prompt_tokens": 4948,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1129/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1129",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a minimalist mechanical clock with a clean, circular face and no markings. Two distinct hands\u2014hour and minute\u2014move in synchronized perpetual motion to indicate time. The hour hand is shorter and thicker, while the minute hand is longer and thinner, both rendered in a brushed nickel finish. The design emphasizes precision and elegance through continuous, cyclical movement without any numbers or indices, relying solely on the relative positions of the hands for time reading. The neutral background and simple geometric forms create a sense of calm minimalism, focusing attention on the fluid motion of the clock mechanism.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.413
+}
