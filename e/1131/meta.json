@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 1131, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1131/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal arrangement of five distinct colored rectangular pads. These pads are uniform in shape and are each accented by a subtle, luminous border that glows softly. The pads remain still and await interaction. When the viewer clicks any single pad, that pad visually lights up, and simultaneously, a corresponding musical note sounds. The luminous border around the clicked pad pulses briefly, confirming the interaction and enhancing the visual feedback.",
+  "completion_tokens": 2464,
+  "created_utc": "2026-09-20T09:55:57Z",
+  "entry_id": 1131,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 820,
+      "evidence": "gate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 53.918 under 440 Hz vs 53.918 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2416,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.013,
+      "wall_s": 57.713
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 845,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 71.102 under 440 Hz vs 71.102 under silence\n\nConsole (1 error line, first 1 shown):\n- [pageerror] oscillator.setFreq is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2585,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.92,
+      "wall_s": 61.658
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(audio)": false,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 799,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(audio)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 41.218 under 440 Hz vs 41.218 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2673,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.961,
+      "wall_s": 61.125
+    }
+  ],
+  "job_id": 1135,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal row containing five distinct, colored rectangular pads, and this time the pads are surrounded by a subtle, luminous border.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 1067,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the interior of each pad features a subtle vertical color gradient.\n\nRevise: the same horizontal row containing five distinct, colored rectangular pads, and this time the pads are surrounded by a subtle, luminous border.",
+  "prompt_tokens": 7674,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1131/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1131",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static arrangement of five colored rectangular pads arranged horizontally across the canvas. Each pad has a subtle glowing border that creates a luminous effect. When a viewer clicks on any single pad, it lights up with a brighter color and its surrounding border pulses with a glowing animation to confirm the interaction. Simultaneously, a corresponding musical note plays through the computer's speakers \u2014 each pad produces a different pitch in a musical scale. The visual feedback is immediate and intuitive, creating an interactive musical instrument where clicking pads triggers both sound and light effects. The entire interface remains motionless until activated by a single click, fulfilling the requirement for stillness until interaction begins.",
+  "submitted_by": "profcarroll",
+  "wall_s": 180.496
+}
