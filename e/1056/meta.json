@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 1056, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1056/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized cornfield setting. Overhead, a glowing disc-shaped object hovers, casting intense cyan light onto the ground directly beneath it. This light is constrained to glowing semicircular pattern on the earth. The core movement is the cyan illumination, which pulses with rapid and erratic flashes. These flashing lights pulsate and shift, creating a dynamic, uneven glowing pattern across the semicircular section of the cornfield ground.",
+  "completion_tokens": 767,
+  "created_utc": "2026-09-20T00:41:12Z",
+  "entry_id": 1056,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 767,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2369,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.216,
+      "wall_s": 94.086
+    }
+  ],
+  "job_id": 1059,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing, disc-shaped object, and this time the cyan light pulses with rapid, erratic flashes across the semicircular ground pattern.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 994,
+    "root_entry_id": 402
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes are concentrated into steady, vertical beams of cyan light.\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes pulsate rhythmically with cyan light.\n\nRevise: the same two steady vertical beams of bright cyan light, and this time the light widens and shrinks cyclically, illuminating the corn stalks unevenly.\n\nRevise: the same intensely bright cyan light beams, and this time they illuminate the corn stalks in a fixed, glowing semicircle directly beneath the craft.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intense cyan light beams pulsate slowly and uniformly across the semicircle.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intensely cyan light beams pulse rapidly and irregularly across the semicircle.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with smooth, rhythmic waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with slow, uniform waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with rapid, erratic flashes across the semicircular ground pattern.",
+  "prompt_tokens": 2369,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1056/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1056",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a stylized cornfield scene with an overhead hovering disc-shaped object casting intense cyan light onto the ground. The light manifests as a dynamic semicircular glow that pulses with rapid, erratic flashes of varying intensity. The technique uses p5.js's drawing capabilities to simulate the atmospheric lighting effect through layered shapes and transparency, creating a sense of movement and energy without requiring any external libraries or audio components. The viewer observes a field of corn stalks beneath an animated light source that shifts and flickers with unpredictable timing, producing a hypnotic visual rhythm that fills the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.086
+}
