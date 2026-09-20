@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 1067, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1067/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal row containing five distinct, colored rectangular pads. Each pad has smoothly rounded corners, and its internal appearance is defined by a subtle vertical color gradient. The pads remain static until the user interacts with them. When the user clicks any single pad, it responds by emitting a unique musical note and visibly illuminates, confirming the input.",
+  "completion_tokens": 761,
+  "created_utc": "2026-09-20T01:47:49Z",
+  "entry_id": 1067,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 761,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "prompt_tokens": 2367,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.694,
+      "wall_s": 53.017
+    }
+  ],
+  "job_id": 1070,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal row containing five distinct colored rectangular pads, and this time the interior of each pad features a subtle vertical color gradient.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 1012,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the interior of each pad features a subtle vertical color gradient.",
+  "prompt_tokens": 2367,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1067/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1067",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static arrangement of five musical pads, each with a distinct color and subtle vertical gradient. The pads are evenly spaced horizontally across the canvas with rounded corners, creating a clean and modern interface. When a user clicks on any pad, it visually illuminates and plays a unique musical note corresponding to that pad's position. The interaction is immediate and responsive, providing both visual and auditory feedback. The design emphasizes simplicity and clarity, using minimal shapes and colors to convey functionality while maintaining an elegant aesthetic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 53.017
+}
