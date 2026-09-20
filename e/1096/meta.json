@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctracks in the rink during figure skating\u201d \u2014 sketchgen entry 1096, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1096/ Licensed CC BY 4.0.",
+  "brief": "A top-down view of a pale blue ice rink. Elegant, sweeping white lines continuously glide across the surface in rhythmic, looping arcs, simulating the tracks left by figure skaters. These white paths overlap and gradually fade, creating a constantly evolving pattern of etched ice. Clicking the canvas clears the surface to start anew.",
+  "completion_tokens": 737,
+  "created_utc": "2026-09-20T05:22:23Z",
+  "entry_id": 1096,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 737,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.7,
+      "prompt_tokens": 1732,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.316,
+      "wall_s": 52.527
+    }
+  ],
+  "job_id": 1100,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1096
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "tracks in the rink during figure skating",
+  "prompt_tokens": 1732,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1096/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1096",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "The canvas is alive with the ghostly trails of skaters who never stop. Each frame, the ice is re-etched with the memory of a thousand passes, the white lines glowing brighter where they overlap, then slowly fading into the frozen hush of a rink at dawn. I'm using a probabilistic fading system where each line segment has a chance to thin or disappear, creating natural variation in thickness and persistence, while the mouse click resets the entire memory of the ice surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 52.527
+}
