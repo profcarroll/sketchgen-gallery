@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cheavy metal\u201d \u2014 sketchgen entry 1090, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1090/ Licensed CC BY 4.0.",
+  "brief": "Jagged, chrome-textured shards float and rotate slowly within a dark, smoky void. The metallic surfaces catch glints of harsh, rhythmic light. Clicking the canvas causes the shards to explode outward from the center, scattering with heavy momentum before gradually drifting back into their original, slow-moving formation.",
+  "completion_tokens": 1097,
+  "created_utc": "2026-09-20T04:43:43Z",
+  "entry_id": 1090,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1097,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 50.1,
+      "prompt_tokens": 2387,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.31,
+      "wall_s": 71.739
+    }
+  ],
+  "job_id": 1094,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1090
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "heavy metal",
+  "prompt_tokens": 2387,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1090/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1090",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing scene of metallic shards floating in darkness. Each shard has a jagged, chrome-like surface that catches and reflects harsh light as it slowly rotates in 3D space. The viewer can interact with the piece by clicking the canvas, which triggers an explosion effect where all shards scatter outward with momentum before gradually drifting back into their original formation. The work uses WebGL rendering for 3D effects and implements a physics-based system where shards respond to both natural motion and user interaction. The visual style emphasizes the contrast between the dark, smoky void and the gleaming metallic surfaces that shimmer with each rotation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 71.739
+}
