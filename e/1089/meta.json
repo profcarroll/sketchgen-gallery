@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cyacht rock\u201d \u2014 sketchgen entry 1089, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1089/ Licensed CC BY 4.0.",
+  "brief": "A smooth, sunset-drenched seascape composed of pastel pinks, warm oranges, and soft teals. A stylized sailboat silhouette drifts slowly across the horizon, accompanied by gentle, rhythmic waves of soft gradients that undulate at the bottom of the canvas. Dragging the mouse creates liquid ripples that distort the water's surface and subtly shift the color temperature of the sky, as if a breeze is passing through the scene.",
+  "completion_tokens": 2054,
+  "created_utc": "2026-09-20T04:40:42Z",
+  "entry_id": 1089,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 902,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.3,
+      "prompt_tokens": 1712,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.945,
+      "wall_s": 56.408
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1152,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.4,
+      "prompt_tokens": 1827,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.844,
+      "wall_s": 69.001
+    }
+  ],
+  "job_id": 1093,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1089
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "yacht rock",
+  "prompt_tokens": 3539,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1089/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1089",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene seaside scene at sunset, rendered in soft pastels of pink, orange, and teal. The composition features a stylized sailboat drifting slowly across the horizon, gently undulating waves beneath it, and a sky that subtly shifts color with interaction. Through motion, the boat glides smoothly from right to left, while the waves rhythmically pulse with gentle sine-based movements. When users drag their mouse across the canvas, liquid ripples form on the water's surface, causing the sky's hues to subtly shift \u2014 simulating a breeze passing through the scene. The piece captures both tranquility and subtle dynamism, using only p5.js core features without external libraries.",
+  "submitted_by": "profcarroll",
+  "wall_s": 125.409
+}
