@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cvines growing, clinging to a brick wall Revise: the same aged, weathe\u2026\u201d \u2014 sketchgen entry 1157, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1157/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a hyper-detailed, weathered section of an aging brick wall, dominated by deep earth tones of rust, soot, and damp clay. Visible root tendrils, richly textured and dark brown, have forced their way into the mortar joints and deep fissures across the brick faces. The scene's core movement is the slow, inevitable structural failure: the roots have caused the mortar to wash out entirely, and entire vertical stacks of bricks begin to dislodge. Shapes shift from stable geometry to precarious stacks, accelerating their collapse downwards into the dark void of the foundation beneath, creating an organic, perpetual cycle of decay and gravity.",
+  "completion_tokens": 1326,
+  "created_utc": "2026-09-20T16:20:03Z",
+  "entry_id": 1157,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1326,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 62.5,
+      "prompt_tokens": 2435,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.822,
+      "wall_s": 127.43
+    }
+  ],
+  "job_id": 1161,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same hyper-detailed section of an aged, weathered brick wall, and this time whole stacks of bricks are visible dislodging and collapsing downwards into the underlying foundation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 1107,
+    "root_entry_id": 888
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "vines growing, clinging to a brick wall\n\nRevise: the same aged, weathered brick wall forming the backdrop, and this time the mortar lines are visibly crumbling and being infiltrated by root tendrils.\n\nRevise: the same detailed, weathered brick wall, and this time the surface of the bricks are actively eroding and spalling where the root tendrils make contact.\n\nRevise: the same densely detailed, weathered brick wall, and this time visible root tendrils are forcing major fissures across the brick faces, causing larger sections to shear off.\n\nRevise: the same highly detailed, weathered brick wall, and this time the roots cause the mortar joints to completely wash out and the individual bricks to begin tilting and shifting.\n\nRevise: the same hyper-detailed section of an aged, weathered brick wall, and this time whole stacks of bricks are visible dislodging and collapsing downwards into the underlying foundation.",
+  "prompt_tokens": 2435,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1157/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1157",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a weathered brick wall undergoing slow, organic decay through the intrusion of root tendrils and gravitational forces. The scene uses WebGL rendering to create depth and scale, with bricks rendered as textured 3D boxes that gradually lose structural integrity over time. Dark brown root systems force their way into mortar joints, creating fissures that lead to partial collapse. The simulation shows vertical stacks of bricks beginning to dislodge and fall downward, accelerating into a dark void beneath, while particles simulate debris and dust from the crumbling structure. The entire scene is in constant motion, with no external input required \u2013 it evolves autonomously through time-based animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 127.43
+}
