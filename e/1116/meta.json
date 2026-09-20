@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cseismic activity Revise: the same violet seismic waves, and this time\u2026\u201d \u2014 sketchgen entry 1116, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1116/ Licensed CC BY 4.0.",
+  "brief": "Violet seismic waves fracture rhythmically across the canvas, with thick jagged lines pulsing independently of any user interaction. The visual activity continues to evolve on its own without requiring input, creating a living landscape where the patterns shift and break apart autonomously over time. No mouse movement or clicks influence these fracturing sequences, as the animation proceeds entirely under its own internal logic.",
+  "completion_tokens": 499,
+  "created_utc": "2026-09-20T08:12:38Z",
+  "entry_id": 1116,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 499,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1678,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.128,
+      "wall_s": 67.929
+    }
+  ],
+  "job_id": 1120,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same violet seismic waves, and this time the thick jagged lines fracture rhythmically across the canvas, pulsing independently of user drag.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1050,
+    "root_entry_id": 1050
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "seismic activity\n\nRevise: the same violet seismic waves, and this time the thick jagged lines fracture rhythmically across the canvas, pulsing independently of user drag.",
+  "prompt_tokens": 1678,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1116/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1116",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch generates a dynamic, autonomous visual landscape where violet seismic waves fracture and pulse across the canvas. Using a particle system, each wave originates from a random point and evolves independently through time, growing, rotating, and shrinking in rhythmic patterns. The waves are composed of jagged, polygonal shapes that break apart and reform autonomously without any user input or interaction. The continuous evolution of these forms creates an ever-shifting fracturing rhythm that embodies the essence of uncontrolled, self-sustained motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 67.929
+}
