@@ -1,0 +1,142 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 4,
+  "attribution": "\u201cmacaroni and cheese\u201d \u2014 sketchgen entry 1047, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1047/ Licensed CC BY 4.0.",
+  "brief": "Golden noodle shapes drift in thick orange sauce across the screen, occasionally splashing upward as if boiling. A single piece of cheddar rests statically until a mouse click shatters it into scattered crumbs that float down slowly. Clicking again reforms the original bowl shape with greater density while the background hue cycles through warm yellow tones.",
+  "completion_tokens": 5545,
+  "created_utc": "2026-09-19T21:43:15Z",
+  "entry_id": 1047,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": 154,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "prompt_tokens": 1732,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 51.731
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1802,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 50)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] createSprite is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1753,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.305,
+      "wall_s": 102.075
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2038,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (3 error lines, first 3 shown):\n- [pageerror] width is not defined\n- [pageerror] Cannot access 'noodleCount' before initialization\n- [pageerror] Cannot access 'cheese' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2065,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.241,
+      "wall_s": 121.376
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1551,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 2.2,
+      "prompt_tokens": 2013,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": 1.513,
+      "wall_s": 93.709
+    }
+  ],
+  "job_id": 1050,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1047
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "macaroni and cheese",
+  "prompt_tokens": 7563,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1047/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1047",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an animated scene of golden noodles drifting in thick orange sauce, with subtle color shifts and motion suggesting a simmering bowl. A piece of cheddar cheese sits statically in the center until clicked, then explodes into floating crumbs. Each click reforms the cheese while intensifying the noodle animation through both visual density and background hue cycling through warm yellows. The movement comes from procedurally animated noodle shapes that drift organically across the canvas, with sauce colors that shift harmoniously over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 368.891
+}
