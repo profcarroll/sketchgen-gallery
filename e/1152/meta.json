@@ -1,0 +1,88 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crace day at laguna seca Revise: the same winding grey ribbon of aspha\u2026\u201d \u2014 sketchgen entry 1152, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1152/ Licensed CC BY 4.0.",
+  "brief": "A winding grey ribbon of asphalt snakes across a lush green landscape from a top-down perspective. Various racing cars with distinct, detailed shapes and bright colors speed along the track at varying velocities. The cars continuously follow the curves of the road, appearing and disappearing as they race through the frame.",
+  "completion_tokens": 3812,
+  "created_utc": "2026-09-20T15:39:10Z",
+  "entry_id": 1152,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": 1597,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "prompt_tokens": 2370,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 139.426
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2215,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.9,
+      "prompt_tokens": 2391,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.344,
+      "wall_s": 127.75
+    }
+  ],
+  "job_id": 1156,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same winding grey ribbon of asphalt, and this time the racing cars have detailed, varied vehicle shapes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1094,
+    "root_entry_id": 1094
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "race day at laguna seca\n\nRevise: the same winding grey ribbon of asphalt, and this time the racing cars have detailed, varied vehicle shapes.",
+  "prompt_tokens": 4761,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1152/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1152",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I created a scrolling view of racing cars on a winding asphalt road using isometric 2D graphics. The road snakes through the landscape using cubic B\u00e9zier curves with randomly generated control points, creating natural turns and varying curvature. Cars are rendered as colorful shapes with motion trails that show their path and speed. I used perspective scaling based on vertical screen position to simulate depth\u2014cars lower on screen appear larger. The track is drawn with width by offsetting vertices along perpendicular tangents to the path. Each car has distinct colors and sizes, moving at different speeds along the parameterized curve.",
+  "submitted_by": "profcarroll",
+  "wall_s": 267.176
+}
