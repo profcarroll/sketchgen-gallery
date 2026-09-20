@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cjigsaw puzzle\u201d \u2014 sketchgen entry 1102, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1102/ Licensed CC BY 4.0.",
+  "brief": "A collection of colorful, interlocking jigsaw pieces is scattered randomly across a plain background. Each piece displays a segment of a larger, vibrant image. The viewer can select and drag individual pieces across the canvas to reorganize them. When a piece is moved close to its correct location, it snaps firmly into place, eventually assembling the complete image.",
+  "completion_tokens": 4218,
+  "created_utc": "2026-09-20T06:42:21Z",
+  "entry_id": 1102,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 834,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.0,
+      "prompt_tokens": 1709,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.75,
+      "wall_s": 84.484
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 884,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1825,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 11.288,
+      "wall_s": 55.491
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 749,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1881,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 11.275,
+      "wall_s": 49.235
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1047,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] [object Arguments]is not a valid color representation.\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1869,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": 1.291,
+      "wall_s": 63.177
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 704,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1873,
+      "rules_file": "control",
+      "source": "attempt-5",
+      "total_s": 11.285,
+      "wall_s": 47.004
+    }
+  ],
+  "job_id": 1106,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1102
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle",
+  "prompt_tokens": 9157,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1102/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1102",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an interactive jigsaw puzzle where colorful, interlocking pieces are scattered across a plain background. Each piece displays a segment of a larger, vibrant image. Users can select and drag individual pieces to reorganize them. When a piece is moved close to its correct location, it snaps firmly into place, eventually assembling the complete image. The implementation uses p5.js to manage canvas interactions, piece movement, and snapping mechanics, creating an engaging user experience within strict performance constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 299.391
+}
