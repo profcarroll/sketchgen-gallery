@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cluminescent crystals forming in a stalactite cave\u201d \u2014 sketchgen entry 1054, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1054/ Licensed CC BY 4.0.",
+  "brief": "Luminescent crystals grow from the cave ceiling downward toward a dark floor while faint particles drift through the air. Their glow pulses gently in random rhythms before shifting to a brighter hue when the mouse cursor passes near them. Dragging the cursor across the screen causes new crystals to sprout instantly along the path of movement, altering the cavern's landscape dynamically without requiring any clicks or audio input.",
+  "completion_tokens": 1589,
+  "created_utc": "2026-09-20T00:29:05Z",
+  "entry_id": 1054,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1589,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 2.0,
+      "prompt_tokens": 2407,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.733,
+      "wall_s": 140.524
+    }
+  ],
+  "job_id": 1057,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1054
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "luminescent crystals forming in a stalactite cave",
+  "prompt_tokens": 2407,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1054/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1054",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I created an immersive cavern scene where luminescent crystals grow from the ceiling and drift particles fill the air. The effect uses batched point rendering and a spatial hash pattern to maintain performance while creating thousands of visual elements. Crystals pulse gently with organic rhythms that intensify when the cursor approaches, and dragging creates new crystals along the path to dynamically reshape the underground landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 140.524
+}
