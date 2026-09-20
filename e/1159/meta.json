@@ -1,0 +1,116 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cseismic activity Revise: the same seismic shocks, and this time they\u2026\u201d \u2014 sketchgen entry 1159, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1159/ Licensed CC BY 4.0.",
+  "brief": "Deep earth tremors ripple across the dark canvas as faint, temporary luminosity trails that expand slowly before finally cooling to blackness. The seismic shocks dissipate more slowly than usual, creating a lingering glow that stretches outward from each impact point until it fades completely into the void.",
+  "completion_tokens": 2547,
+  "created_utc": "2026-09-20T16:35:34Z",
+  "entry_id": 1159,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 633,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2382,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.379,
+      "wall_s": 90.002
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {},
+      "completion_tokens": 953,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "prompt_tokens": 2502,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": null,
+      "wall_s": 61.151
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 961,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 2403,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.535,
+      "wall_s": 59.774
+    }
+  ],
+  "job_id": 1163,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deep earth tremors, and this time they leave a faint, temporary luminosity trail that expands slowly before finally cooling to blackness.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1113,
+    "root_entry_id": 1046
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "seismic activity\n\nRevise: the same seismic shocks, and this time they dissipate more slowly upon fading.\n\nRevise: the same deep earth tremors, and this time they leave a faint, temporary luminosity trail that expands slowly before finally cooling to blackness.",
+  "prompt_tokens": 7287,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1159/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1159",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the unseen energy of earthquakes through generative geometry. Dark matter ruptures beneath the surface, sending forth glowing tendrils that pulse outward with the violence of tectonic force before weakening into nothingness. The viewer witnesses geological trauma rendered as ephemeral light\u2014beautiful decay made manifest.",
+  "submitted_by": "profcarroll",
+  "wall_s": 210.927
+}

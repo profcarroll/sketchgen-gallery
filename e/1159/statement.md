@@ -1,0 +1,1 @@
+This sketch visualizes the unseen energy of earthquakes through generative geometry. Dark matter ruptures beneath the surface, sending forth glowing tendrils that pulse outward with the violence of tectonic force before weakening into nothingness. The viewer witnesses geological trauma rendered as ephemeral light—beautiful decay made manifest.
