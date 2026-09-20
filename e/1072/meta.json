@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201choneycomb\u201d \u2014 sketchgen entry 1072, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1072/ Licensed CC BY 4.0.",
+  "brief": "A geometric field of interlocking golden hexagons fills the canvas. The cells pulse rhythmically in shades of amber and honey, creating an organic, breathing effect. As the mouse is dragged across the surface, the hexagons tilt and warp in three-dimensional space, simulating the sensation of pressing into thick, malleable wax. The entire structure subtly drifts, maintaining a constant, slow motion.",
+  "completion_tokens": 733,
+  "created_utc": "2026-09-20T02:21:54Z",
+  "entry_id": 1072,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 733,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.1,
+      "prompt_tokens": 1729,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.675,
+      "wall_s": 49.127
+    }
+  ],
+  "job_id": 1075,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1072
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "honeycomb",
+  "prompt_tokens": 1729,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1072/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1072",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of interlocking hexagons that pulse rhythmically with warm amber tones, evoking the feeling of malleable wax. The hexagonal grid subtly drifts and breathes on its own, responding to mouse interaction by tilting and warping in 3D space. As the mouse is dragged across the canvas, each hexagon reacts dynamically to the motion, simulating a tactile, organic response. The entire composition uses WebGL rendering for smooth 3D effects while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 49.127
+}
