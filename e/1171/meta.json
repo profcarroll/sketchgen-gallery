@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 1171, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1171/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a minimalist, circular clock face entirely devoid of numerals or markings. The primary features are the hour and minute hands, which possess a defined metallic finish, such as polished brass or matte bronze. These two hands are engineered to move together, continuously rotating and updating their positions around the face to accurately reflect the passage of real-world time. The entire system functions automatically, requiring no input or interaction to display the progression of time.",
+  "completion_tokens": 1274,
+  "created_utc": "2026-09-20T17:51:58Z",
+  "entry_id": 1171,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 578,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2368,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.223,
+      "wall_s": 45.626
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 696,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2485,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.207,
+      "wall_s": 53.995
+    }
+  ],
+  "job_id": 1175,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock, and this time with the hour and minute hands rendered in polished brass",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 1129,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in matte bronze\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in polished silver\n\nRevise: the same minimalist analog clock face, and this time the hour and minute hands are rendered in brushed nickel.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands rendered in polished brass",
+  "prompt_tokens": 4853,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1171/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1171",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a minimalist metallic clock face with only hour and minute hands that move continuously to reflect real-time. The design uses a simple circular face with no numerals or markings, focusing purely on the essential timekeeping elements. The hands are rendered with a bronze-like color using fill variations to suggest metallic finish. The motion is smooth and continuous, updating every frame to accurately track passage of time without any user interaction required. The implementation keeps all calculations in the draw loop while maintaining performance within the specified constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 99.621
+}
