@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca Persian rug pattern Revise: the same intricate, symmetrical composi\u2026\u201d \u2014 sketchgen entry 1087, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1087/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a richly colored, highly symmetrical textile pattern, rendered in deep jewel tones. The core visual structure is a repeating lattice grid that holds stylized floral motifs. The complexity is anchored by distinct border bands, which showcase specialized geometric patterns. Viewers observe the interplay of continuous curves, interlocking diagonal lines, and alternating solid shapes like squares and diamonds. The overall composition suggests an elaborate, artisanal artwork that maintains strict symmetry across its entire surface.",
+  "completion_tokens": 3041,
+  "created_utc": "2026-09-20T04:31:12Z",
+  "entry_id": 1087,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 991,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2391,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.305,
+      "wall_s": 109.227
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1077,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2460,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.217,
+      "wall_s": 72.184
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 973,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2460,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.312,
+      "wall_s": 51.001
+    }
+  ],
+  "job_id": 1091,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 1037,
+    "root_entry_id": 885
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a Persian rug pattern\n\nRevise: the same intricate, symmetrical composition of deep jewel tones woven into a lattice grid, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of geometric elements at the top and bottom.\n\nRevise: the same intricately symmetrical woven pattern, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of interlocking diagonal lines.\n\nRevise: the same lattice grid structure with repeating stylized floral motifs, and this time the pronounced bottom geometric band is comprised of alternating large squares and smaller diamond shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.",
+  "prompt_tokens": 7311,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1087/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1087",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a richly textured textile pattern with deep jewel tones and strict symmetry. The composition features a repeating lattice grid where each cell contains a stylized floral motif composed of interconnected curves, petals, and geometric elements. The pattern maintains perfect bilateral symmetry through alternating motifs and consistent color relationships. Distinct border bands showcase specialized geometric patterns that frame the central textile design, creating a cohesive artisanal artwork. The piece demonstrates how complex visual structures can emerge from simple geometric principles and mathematical repetition, resulting in an intricate yet harmonious composition that appears to pulse with subtle motion despite being static.",
+  "submitted_by": "profcarroll",
+  "wall_s": 232.412
+}
