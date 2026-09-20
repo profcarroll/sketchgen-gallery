@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same rhythmic pulses of red and black, and t\u2026\u201d \u2014 sketchgen entry 1115, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1115/ Licensed CC BY 4.0.",
+  "brief": "Red pulses emanate from the center, expanding rapidly across the canvas in rhythmic alternation of black and red. As each pulse grows, it leaves a persistent trail of glowing light residue that fades slowly behind its path. The animation runs continuously without requiring user interaction to generate new shapes, though clicks do not alter the existing sequence.",
+  "completion_tokens": 461,
+  "created_utc": "2026-09-20T08:08:04Z",
+  "entry_id": 1115,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 461,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1669,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.107,
+      "wall_s": 70.779
+    }
+  ],
+  "job_id": 1119,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic pulses of red and black, and this time they expand rapidly and leave a persistent trail of light residue behind them.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1048,
+    "root_entry_id": 1048
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "radar images\n\nRevise: the same rhythmic pulses of red and black, and this time they expand rapidly and leave a persistent trail of light residue behind them.",
+  "prompt_tokens": 1669,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1115/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1115",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a rhythmic pulsing animation where red and black waves emanate from the center of the canvas. Each pulse expands outward at a steady pace, leaving behind a glowing trail that gradually fades. The animation runs continuously without user interaction, with new pulses generated at regular intervals to maintain the pulsing effect. The visual design uses HSB color space to create vibrant red hues that blend smoothly into transparency as the pulses expand, creating a mesmerizing temporal layering effect where older pulses fade into the background while newer ones emerge from the center.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.779
+}
