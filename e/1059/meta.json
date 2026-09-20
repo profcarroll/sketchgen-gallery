@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 1059, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1059/ Licensed CC BY 4.0.",
+  "brief": "The view is a dynamic, cutaway cross-section showing the inner workings of a running internal combustion engine. The viewer observes pistons cycling within cylinders. The core action begins as expanding, colored combustion gases fill the chamber, generating pressure that visibly pushes the piston downward. This linear motion is transferred through the connecting rods, which articulate at their bearings, causing a powerful rotational movement in the crankshaft. The entire mechanism operates in continuous, cyclical motion, demonstrating the fundamental energy conversion from gas pressure to mechanical rotation.",
+  "completion_tokens": 1445,
+  "created_utc": "2026-09-20T01:01:24Z",
+  "entry_id": 1059,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 762,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `cylinder` hides p5's `cylinder()` function; rename it (sketch.js line 52)\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 56)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 76)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 87)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] cylinder is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1730,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.111,
+      "wall_s": 81.284
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 683,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.2,
+      "prompt_tokens": 2160,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 3.195,
+      "wall_s": 52.165
+    }
+  ],
+  "job_id": 1062,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, cross-sectional cutaway view of a running internal combustion engine, and this time the rapid, expanding combustion gases inside the cylinder are visually demonstrated, pushing the piston downward.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 998,
+    "root_entry_id": 422
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.\n\nRevise: the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the connecting rods visibly rotating a crankshaft.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the connecting rods visibly articulating at their bearing points on the crankshaft.\n\nRevise: the same dynamic, three-dimensional cross-section of a running combustion engine, and this time the articulation points where the connecting rods bear on the crankshaft are clearly visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running combustion engine, and this time the intake and exhaust are represented by clearly visible, timed colored fluid flows.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the visible timing gear train linking the crankshaft and the valves is demonstrated.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the individual components of the valve train are clearly separated and visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running internal combustion engine, and this time the rapid, expanding combustion gases inside the cylinder are visually demonstrated, pushing the piston downward.",
+  "prompt_tokens": 3890,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1059/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1059",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a cutaway view of an internal combustion engine in motion, illustrating the conversion of gas pressure into mechanical rotation. The viewer observes a piston moving up and down within a cylinder, with combustion gases visibly expanding to push the piston downward. This linear motion is transferred through a connecting rod to a rotating crankshaft, demonstrating the fundamental energy conversion process. The animation uses WebGL rendering to create a 3D cross-sectional representation, showing the interplay between mechanical components in real-time motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.449
+}
