@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks\u201d \u2014 sketchgen entry 1071, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1071/ Licensed CC BY 4.0.",
+  "brief": "A 3D sawmill features thick, cylindrical logs rolling along a conveyor belt toward a spinning circular saw. As the logs pass through the blade, they are sliced into thin, rectangular wooden planks that tumble into a growing pile. Fine particles of sawdust spray from the cutting edge. The color palette is composed of warm browns, tans, and cream tones. Clicking the canvas increases the speed of the conveyor belt.",
+  "completion_tokens": 1487,
+  "created_utc": "2026-09-20T02:18:30Z",
+  "entry_id": 1071,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1487,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.9,
+      "prompt_tokens": 2413,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.164,
+      "wall_s": 109.994
+    }
+  ],
+  "job_id": 1074,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1071
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "milling logs into planks",
+  "prompt_tokens": 2413,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1071/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1071",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a 3D sawmill scene where cylindrical logs roll along a conveyor belt toward a spinning circular saw. As logs pass through the blade, they are sliced into thin rectangular planks that tumble into a growing pile below. The scene includes a dynamic sawdust effect that sprays from the cutting edge of the blade, with particles flying in all directions before settling under gravity. The color palette uses warm browns and tans to represent wood tones, with cream backgrounds for contrast. Clicking anywhere on the canvas increases the speed of the conveyor belt, causing logs to move faster through the saw mechanism. The sketch uses WebGL rendering to create a three-dimensional environment with proper lighting and perspective effects.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.994
+}
