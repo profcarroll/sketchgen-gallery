@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 1123, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1123/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a deeply atmospheric, cold alpine winter landscape featuring snow-draped peaks and rugged foreground rock formations. The scene\u2019s color palette is icy and muted, defined by subtle crystalline blues. Initially, the scene is static. When the viewer clicks, an avalanche event is triggered. This debris deposits mineral dust into the foreground channels, where it settles and collects small pockets of meltwater. These trapped pools visibly refract light through the dusty rock crevices, creating dynamic, jewel-toned highlights that contrast with the deep winter cold.",
+  "completion_tokens": 1173,
+  "created_utc": "2026-09-20T09:03:56Z",
+  "entry_id": 1123,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1173,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "prompt_tokens": 2432,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.15,
+      "wall_s": 78.014
+    }
+  ],
+  "job_id": 1127,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deeply atmospheric, cold alpine winter landscape, and this time the settled mineral dust will collect small pockets of meltwater that visibly refract the light through the foreground crevices.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "parent_entry_id": 1058,
+    "root_entry_id": 425
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the fresh snow deposited within the foreground channels will reflect deep, crystalline blue light.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the cleared snow will reveal distinct, visible streaks of underlying rock color along the impact path.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly streak colorful, crystalline mineral dust onto the exposed rock channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited mineral dust will visibly settle and bridge the separated channels of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the settled mineral dust will collect small pockets of meltwater that visibly refract the light through the foreground crevices.",
+  "prompt_tokens": 2432,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1123/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1123",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene yet dynamic alpine winter scene that transforms upon interaction. Initially static and composed of icy blue peaks and rugged foreground rocks, the landscape responds to a viewer's click by triggering an avalanche. The debris settles into the foreground channels, creating pockets of mineral-dusted water that refract light through their crevices, producing vivid jewel-toned highlights against the cold palette. The scene employs WEBGL rendering for depth and spatial complexity, with particle systems simulating dust settling and water pooling to convey the transformation from stillness to motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.014
+}
