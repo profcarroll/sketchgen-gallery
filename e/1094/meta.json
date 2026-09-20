@@ -1,0 +1,92 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crace day at laguna seca\u201d \u2014 sketchgen entry 1094, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1094/ Licensed CC BY 4.0.",
+  "brief": "A 3D view of the Laguna Seca circuit, featuring a winding grey ribbon of asphalt that drops sharply through the Corkscrew turn. Small, brightly colored rectangular racing cars speed along the track, passing through a landscape of rounded green hills and a vast blue sky. The cars move continuously along the track's path. Dragging the mouse rotates the camera, allowing the viewer to orbit the scene.",
+  "completion_tokens": 2406,
+  "created_utc": "2026-09-20T05:07:53Z",
+  "entry_id": 1094,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": 165,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "prompt_tokens": 2438,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 262.791
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2241,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 7.6,
+      "prompt_tokens": 2459,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.679,
+      "wall_s": 131.707
+    }
+  ],
+  "job_id": 1098,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1094
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "race day at laguna seca",
+  "prompt_tokens": 4897,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1094/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1094",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch generates a 3D recreation of the Laguna Seca racetrack, complete with the famous Corkscrew turn where the track drops sharply. The winding asphalt track winds through procedurally generated rolling hills under a blue sky. Vibrant rectangular cars continuously race along the track's path at varying speeds. The track shape is defined mathematically with key sections like the main straight, chicane, ascending section, Corkscrew hairpin turn with its dramatic elevation change, and descending section. Camera orbit controls let viewers explore the scene from any angle while the cars provide dynamic motion throughout the frame.",
+  "submitted_by": "profcarroll",
+  "wall_s": 394.498
+}
