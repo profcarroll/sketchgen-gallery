@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 1139, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1139/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate and continuous lattice formed by interlocking hexagonal tessellations. These complex, crystalline structures are marked by defined boundaries, across which visible electrical energy pulses. Stress fractures radiate throughout the network, pulsing with a vibrant, glowing electricity that highlights the immense tension within the continuous lattice. The entire pattern exhibits perpetual, subtle motion, giving the impression of a giant, stressed machine held just moments from catastrophic collapse.",
+  "completion_tokens": 3600,
+  "created_utc": "2026-09-20T10:48:38Z",
+  "entry_id": 1139,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1051,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 64)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2393,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.235,
+      "wall_s": 110.931
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1286,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 209.8 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 209.8,
+      "prompt_tokens": 2637,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.098,
+      "wall_s": 87.034
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1263,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.6,
+      "prompt_tokens": 2511,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.883,
+      "wall_s": 82.808
+    }
+  ],
+  "job_id": 1143,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, continuously interlocking lattice of hexagons forming a complex tessellation, and this time making the stress fractures glow with visible electrical energy.",
+    "critique_by": "gemma4:e4b",
+    "generation": 16,
+    "parent_entry_id": 1077,
+    "root_entry_id": 13
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working\n\nRevise: The same intricate, interlocking tessellation of hexagons, and this time giving the hexagon boundaries sharper, more defined edges.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time introducing localized areas where the geometric integrity momentarily fractures.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time with localized areas exhibiting extreme contrast between stable and fracturing segments.\n\nRevise: the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagons, and this time introducing faint, transient stress fractures that radiate visibly from points of extreme structural energy.\n\nRevise: the same intricate tessellation composed of interlocking hexagons, and this time introducing sharp, localized stress fractures visible where the pulsating boundaries reach peak tension.\n\nRevise: the same intricate, continuously interlocking lattice of hexagons forming a complex tessellation, and this time making the stress fractures glow with visible electrical energy.",
+  "prompt_tokens": 7541,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1139/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1139",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic, crystalline lattice structure composed of interlocking hexagonal tessellations that pulse with electrical energy. The visual effect is achieved through a combination of geometric animation and procedural stress fracture generation. Each hexagon subtly changes size and color over time, while glowing connections between adjacent structures create a sense of tension and perpetual motion. Electrical energy pulses radiate from random points across the lattice as stress fractures form and dissipate, creating an impression of immense pressure building toward a catastrophic collapse. The entire scene slowly rotates to emphasize its mechanical nature and continuous strain.",
+  "submitted_by": "profcarroll",
+  "wall_s": 280.773
+}
