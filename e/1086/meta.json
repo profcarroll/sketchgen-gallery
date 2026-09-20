@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdrone POV fly through an abandoned brutalist campus Revise: the same\u2026\u201d \u2014 sketchgen entry 1086, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1086/ Licensed CC BY 4.0.",
+  "brief": "A first-person perspective glides steadily through a desaturated landscape of massive, monolithic concrete structures. The immense grey blocks feature textures of dark grime and streaks of vibrant green moss. The camera moves continuously forward through the brutalist environment, creating a constant sense of momentum amidst the heavy, geometric architecture.",
+  "completion_tokens": 670,
+  "created_utc": "2026-09-20T04:23:05Z",
+  "entry_id": 1086,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 670,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.5,
+      "prompt_tokens": 2367,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.16,
+      "wall_s": 91.449
+    }
+  ],
+  "job_id": 1090,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same first-person perspective glides steadily through a desaturated landscape of massive, monolithic concrete structures, and this time the concrete surfaces show streaks of green moss and grime",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1033,
+    "root_entry_id": 1033
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "drone POV fly through an abandoned brutalist campus\n\nRevise: the same first-person perspective glides steadily through a desaturated landscape of massive, monolithic concrete structures, and this time the concrete surfaces show streaks of green moss and grime",
+  "prompt_tokens": 2367,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1086/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1086",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a first-person journey through a brutalist concrete landscape. Using WEBGL rendering, it generates a series of massive monolithic structures that appear to scroll past the viewer as they move forward through space. Each block features detailed textures of dark grime and vibrant green moss streaks, creating a sense of weathered urban architecture. The camera glides steadily through this environment at a constant pace, generating momentum within the heavy geometric forms. The technique uses simple 3D primitives with custom texturing to create an immersive yet minimalist architectural experience that evokes the raw, unrefined beauty of brutalist design.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.449
+}
