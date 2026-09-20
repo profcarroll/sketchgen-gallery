@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 1082, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1082/ Licensed CC BY 4.0.",
+  "brief": "A breathtaking, complex steampunk sculpture dominates the canvas. Deep emerald glass tracery forms intricate, crystalline structures latticework, suspended and orbiting a central, rotating cube. Tarnished copper splines guide the motion, while the entire piece is animated by visible energy. This energy radiates through the latticework and along deep veins, causing the crystalline structures to pulse and discharge intense, pulsing energy bursts. The colors are rich, featuring deep emerald greens, oxidized copper browns, and brilliant, electric energy discharge highlights.",
+  "completion_tokens": 4651,
+  "created_utc": "2026-09-20T03:52:22Z",
+  "entry_id": 1082,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1663,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 109)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 115)\npreflight: `point()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(POINTS)` with `vertex()` per point (sketch.js line 132)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 44.2,
+      "prompt_tokens": 1744,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 10.241,
+      "wall_s": 106.285
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1505,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 86)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 91)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 142)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 146)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2033,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 3.465,
+      "wall_s": 97.003
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1483,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] createShape is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2083,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.211,
+      "wall_s": 99.158
+    }
+  ],
+  "job_id": 1086,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same breathtaking, multi-component steampunk sculpture, and this time the crystalline latticework should pulse with visible, intense energy discharges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "parent_entry_id": 1022,
+    "root_entry_id": 162
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same captivating, complex sculpture, and this time the glass-like tracery should catch simulated rainbow light.\n\nRevise: the same captivating and complex steampunk sculpture, and this time the deep emerald glass tracery should have visible internal glowing seams.\n\nRevise: the same captivating, multi-component steampunk sculpture built around a rotating cube, and this time the deep emerald glass tracery should exhibit shifting internal bioluminescent patterns.\n\nRevise: the same captivating, multi-component steampunk sculpture, and this time the bioluminescent patterns should reveal deep crystalline structures within the emerald glass.\n\nRevise: the same breathtaking, multi-component steampunk sculpture, and this time the deep bioluminescent patterns should exhibit visible, slow-moving crystalline growth structures within the emerald glass.\n\nRevise: the same captivating, multi-component steampunk sculpture, and this time the deep emerald glass should glow with visible, slow-moving energy veins.\n\nRevise: the same captivating, multi-component steampunk sculpture, and this time the deep emerald glass should exhibit dense, spiderweb-like internal crystalline latticework.\n\nRevise: the same captivating, multi-component steampunk sculpture, and this time the deep energy veins should exhibit pulsating, visible energy discharges.\n\nRevise: the same captivating, multi-component steampunk sculpture, and this time the deep emerald glass tracery should exhibit pulsating, visible energy discharges.\n\nRevise: the same breathtaking, multi-component steampunk sculpture, and this time the crystalline latticework should pulse with visible, intense energy discharges.",
+  "prompt_tokens": 5860,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1082/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1082",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a steampunk-inspired sculpture composed of geometric crystalline structures suspended around a central rotating cube. The piece combines deep emerald greens with oxidized copper browns and bright energy discharges, creating a sense of volumetric complexity through layered forms. The animated elements include orbiting points that emit glowing trails, pulsating crystal formations that expand and contract, and intense energy bursts that radiate from the central structure. The viewer experiences a dynamic interplay of motion and light as the entire composition evolves in real-time, driven by a continuous animation loop that maintains visual complexity without exceeding performance constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 302.446
+}
