@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 1175, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1175/ Licensed CC BY 4.0.",
+  "brief": "A continuous, intensely fluorescent neon line moves steadily from left to right across a solid black background. The line traces the rhythmic spikes and dips of a heartbeat, oscillating in a constant EKG pattern. The line emits a bright, vivid glow that stands out sharply against the darkness.",
+  "completion_tokens": 415,
+  "created_utc": "2026-09-20T18:20:24Z",
+  "entry_id": 1175,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 415,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "prompt_tokens": 2337,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.354,
+      "wall_s": 77.951
+    }
+  ],
+  "job_id": 1179,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1133,
+    "root_entry_id": 1069
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.",
+  "prompt_tokens": 2337,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1175/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1175",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a continuous, glowing heartbeat pattern moving across a black canvas. Using a sine wave to simulate EKG rhythms, the neon yellow line traces rhythmic spikes and dips that pulse with a steady, hypnotic motion from left to right. The technique employs multiple layered drawing operations with shadow effects to create an intense, glowing appearance that stands out sharply against the darkness. The animation runs smoothly without user interaction, demonstrating how simple mathematical functions can create compelling biological rhythms on screen.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.951
+}
