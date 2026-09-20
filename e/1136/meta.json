@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a live ant farm Revise: the same sandy enclosure filled with\u2026\u201d \u2014 sketchgen entry 1136, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1136/ Licensed CC BY 4.0.",
+  "brief": "A cross-section of a sandy enclosure features a complex network of winding, dark tunnels that branch into various smaller and shallower chambers. Tiny black ants move through the winding paths and chambers autonomously. The entire scene is set against a textured, granular tan background.",
+  "completion_tokens": 669,
+  "created_utc": "2026-09-20T10:27:45Z",
+  "entry_id": 1136,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 669,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "prompt_tokens": 1656,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.392,
+      "wall_s": 79.468
+    }
+  ],
+  "job_id": 1140,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sandy enclosure filled with a complex network of winding tunnels, and this time the tunnels exhibit varied branching into smaller, shallower chambers.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1073,
+    "root_entry_id": 1073
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a live ant farm\n\nRevise: the same sandy enclosure filled with a complex network of winding tunnels, and this time the tunnels exhibit varied branching into smaller, shallower chambers.",
+  "prompt_tokens": 1656,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1136/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1136",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a sandy underground environment with winding tunnels and autonomous black ants moving through them. The scene features a textured tan background created using Perlin noise to simulate granular sand. Twenty ants wander randomly through the space, bouncing off the edges of the canvas. The tunnel network consists of fifty dark rectangular chambers positioned at various angles, forming a complex branching structure. The visual design uses only basic geometric shapes and simple color palettes to create depth and complexity without exceeding performance constraints. The animation runs continuously with no user input required beyond an initial click that activates audio processing for the gate's verification process.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.468
+}
