@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cyacht rock Revise: the same sunset-drenched seascape, and this time a\u2026\u201d \u2014 sketchgen entry 1148, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1148/ Licensed CC BY 4.0.",
+  "brief": "A warm sunset seascape features a gradient sky of deep orange, pink, and soft violet reflecting onto shimmering ocean waves. A dark, stylized silhouette of a sailboat drifts slowly and steadily across the horizon. The scene is composed of smooth color transitions and calm, rhythmic movement.",
+  "completion_tokens": 1456,
+  "created_utc": "2026-09-20T15:08:11Z",
+  "entry_id": 1148,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 777,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2339,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.22,
+      "wall_s": 101.224
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 679,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.5,
+      "prompt_tokens": 2408,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.29,
+      "wall_s": 49.798
+    }
+  ],
+  "job_id": 1152,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sunset-drenched seascape, and this time a stylized sailboat silhouette drifts slowly across the horizon.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1089,
+    "root_entry_id": 1089
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "yacht rock\n\nRevise: the same sunset-drenched seascape, and this time a stylized sailboat silhouette drifts slowly across the horizon.",
+  "prompt_tokens": 4747,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1148/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1148",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene sunset seascape with a gradient sky transitioning from deep orange to violet, and a shimmering ocean with rhythmic wave patterns. A stylized sailboat drifts slowly across the horizon, creating a sense of calm motion and timeless beauty. The scene is rendered using smooth color transitions and organic waveforms that evolve over time, without any external input or animation controls. The composition captures the essence of peaceful coastal tranquility through layered visual elements and continuous, subtle movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 151.022
+}
