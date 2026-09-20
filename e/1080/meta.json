@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca fun cursor follow toy Revise: the same particle system, and this ti\u2026\u201d \u2014 sketchgen entry 1080, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1080/ Licensed CC BY 4.0.",
+  "brief": "A continuous, visible trail of deep, high-contrast ink is laid down across the canvas whenever the cursor moves. This ink does not simply fade; instead, it accumulates and organizes into intricate, geometric, crystalline structures along the path of travel. These formations are governed by the speed of the cursor, and when the user moves quickly, the resulting crystalline edges flash with a momentary, shimmering metallic sheen. The entire system is reactive, with the drawing and transformation of the persistent ink structures directly controlled by the movement of the input cursor.",
+  "completion_tokens": 1331,
+  "created_utc": "2026-09-20T03:33:40Z",
+  "entry_id": 1080,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1331,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2409,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.937,
+      "wall_s": 87.656
+    }
+  ],
+  "job_id": 1084,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same visible, deep, and persistent trail of ink, and this time the geometric crystalline structures should possess a momentary, shimmering metallic edge when formed by rapid movement.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "parent_entry_id": 1020,
+    "root_entry_id": 543
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a fun cursor follow toy\n\nRevise: the same particle system, and this time the particles organize into a visible, dissipating wake directly trailing the cursor.\n\nRevise: the same particle system, and this time the particles change color from a bright primary hue at the cursor to a soft pastel shade before fully fading.\n\nRevise: the same dynamic and ephemeral wake of particles, and this time the particles grow noticeably larger in size from the moment of creation until they fully fade away.\n\nRevise: the same dynamic, dissipating trail of particles, and this time the particles momentarily form a noticeable ring shape upon reaching peak size.\n\nRevise: the same visible, dynamic wake of dissipating particles, and this time the particles leave behind a smoky, transparent afterglow that fades slightly slower than the particles themselves.\n\nRevise: animate the background so that the cursor toy interacts with it as it moves\n\nRevise: the same dynamic, ephemeral trail of particles, and this time they briefly leave a faint, residual line of ink on the canvas where they passed.\n\nRevise: the same faint, residual line of deep ink, and this time it should slowly accumulate into concentrated clusters of high contrast color along the path of travel.\n\nRevise: the same visible, deep ink trail, and this time the accumulated ink should react to the cursor speed by forming geometric, crystalline structures that intensify over time.\n\nRevise: the same visible, deep, and persistent trail of ink, and this time the geometric crystalline structures should possess a momentary, shimmering metallic edge when formed by rapid movement.",
+  "prompt_tokens": 2409,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1080/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1080",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a reactive drawing system where cursor movement leaves behind persistent ink trails that organize into crystalline structures. The ink accumulates along paths and forms geometric patterns based on motion speed. When the cursor moves quickly, the resulting edges flash with metallic shimmer effects. The system uses spatial hashing to manage particle interactions and builds complex formations without overwhelming performance constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.656
+}
