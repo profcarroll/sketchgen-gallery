@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks Revise: the same sawmill, and this time the\u2026\u201d \u2014 sketchgen entry 1176, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1176/ Licensed CC BY 4.0.",
+  "brief": "In a 3D scene, textured cylindrical logs move through a sawmill mechanism and are sliced into thin, rectangular planks. The planks fall to the bottom of the canvas, where they automatically settle to form a neat, vertical row. The animation is continuous, showcasing a constant cycle of milling and stacking using a palette of earthy wood grains and metallic tones.",
+  "completion_tokens": 1301,
+  "created_utc": "2026-09-20T18:28:06Z",
+  "entry_id": 1176,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1301,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.8,
+      "prompt_tokens": 2379,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.749,
+      "wall_s": 135.587
+    }
+  ],
+  "job_id": 1180,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1134,
+    "root_entry_id": 1071
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "milling logs into planks\n\nRevise: the same sawmill, and this time the planks stack into a neatly structured pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.",
+  "prompt_tokens": 2379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1176/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1176",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuous sawmill process where cylindrical wooden logs move through a mechanical cutting system and are transformed into thin rectangular planks. The animation shows logs descending through a sawmill mechanism, being sliced into multiple planks that then fall vertically to the bottom of the canvas. These planks automatically settle into neat vertical stacks, demonstrating the industrial cycle of wood processing. The visual design uses earthy tones and metallic hues to evoke the textures of wood grain and industrial machinery, with smooth 3D rendering showcasing the geometric transformation from cylindrical logs to flat planks in a constantly cycling production process.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.587
+}
