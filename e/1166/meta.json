@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 1166, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1166/ Licensed CC BY 4.0.",
+  "brief": "A dense, mechanical scene shows a sturdy shredding apparatus positioned below a substantial stack of books. Visible within the gears and tearing plates are brass and dark metal components that are constantly turning and engaging. As books fall into the machinery, the gears visibly tear the paper, generating steam that vents from friction points. Fine dust and scattered pulp are suspended above the central mechanisms, while the metal surfaces show accumulated scorch marks and dark, solidified residue, reflecting the intense, continual act of mechanical destruction.",
+  "completion_tokens": 5358,
+  "created_utc": "2026-09-20T17:23:05Z",
+  "entry_id": 1166,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1874,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 96)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 113)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 122)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 143)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 169)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 516.8 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 516.8,
+      "prompt_tokens": 2404,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 34.346,
+      "wall_s": 163.435
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1909,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.3,
+      "prompt_tokens": 2896,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.948,
+      "wall_s": 139.757
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1575,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 111)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 115)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.2,
+      "prompt_tokens": 2442,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.133,
+      "wall_s": 103.125
+    }
+  ],
+  "job_id": 1170,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same mechanically active shredding scene, and this time the ejected pulp and splinters accumulate rapidly to form a dense, swirling plume below the apparatus.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "parent_entry_id": 1122,
+    "root_entry_id": 406
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the internal gears and plates of the shredder are visible and actively engage as the books fall into them.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time visible sparks shoot out from the engaged internal gears.\n\nRevise: the same mechanical scene where a substantial stack of books rests above an open shredding apparatus, and this time the visible internal gears are actively tearing and shredding one of the books as it falls.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus.\n\nRevise: the same mechanically active shredding scene, and this time fine plumes of shredded dust visibly hang suspended above the central gears.\n\nRevise: the same mechanically active shredding scene, and this time the rapid movement of the internal gears throws off sharp, visible splinters of wood and paper pulp.\n\nRevise: the same mechanically active shredding scene, and this time the flying splinters of wood and paper pulp strike and embed themselves visibly into the books remaining above the apparatus.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus\n\nRevise: the same mechanically active shredding scene, and this time visible splinters of wood and paper pulp are ejected from the central gears.\n\nRevise: the same mechanically active shredding scene, and this time scorch marks and residue build up visibly on the metal gears and plates.\n\nRevise: the same mechanically active shredding scene, and this time the ejected pulp and splinters accumulate rapidly to form a dense, swirling plume below the apparatus.",
+  "prompt_tokens": 7742,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1166/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1166",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a mechanical shredding apparatus in motion, showing the chaotic interaction between rotating gears, tearing components, and the aftermath of destruction. The scene is rendered in 3D space with constantly rotating elements that reveal a complex machinery system. Brass and dark metal components are visible through carefully designed gear structures and a prominent shredder plate positioned above a substantial stack of books. Fine dust and steam particles float in the air, suspended by subtle movements, while the mechanical destruction is emphasized through constant motion and detailed component rendering. The viewer observes an industrial-scale destructive process unfolding in real-time, with all visual elements moving autonomously without user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 406.317
+}
