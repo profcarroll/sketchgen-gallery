@@ -1,0 +1,1 @@
+A hypnotic visualization of pasta drifting through warm, evolving yellow light. Golden noodles unfurl across the canvas with organic, wave-like motion, their colors shifting through the warm spectrum as the background cycles through golden hues. Each noodle maintains its own rhythm, creating a mesmerizing dance of flowing lines that never ceases, regardless of user interaction.

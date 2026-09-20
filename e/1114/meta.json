@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "size(800,600)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmacaroni and cheese Revise: the same drifting golden noodles in thick\u2026\u201d \u2014 sketchgen entry 1114, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1114/ Licensed CC BY 4.0.",
+  "brief": "Golden noodles in thick sauce drift gently across the canvas without user input, while the background hue strictly cycles through warm yellow tones independently of any interaction. The floating pasta maintains a continuous, organic flow, changing color as the loop progresses, creating a hypnotic visual rhythm that plays out automatically on screen regardless of mouse position or clicks.",
+  "completion_tokens": 1482,
+  "created_utc": "2026-09-20T08:04:03Z",
+  "entry_id": 1114,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "size(800,600)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 676,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `point` hides p5's `point()` function; rename it (sketch.js line 50)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] spWidth is not defined\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1746,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.158,
+      "wall_s": 85.15
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(800,600)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 806,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 5.7,
+      "prompt_tokens": 2005,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.419,
+      "wall_s": 53.069
+    }
+  ],
+  "job_id": 1118,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same drifting golden noodles in thick sauce, and this time the background hue strictly cycles through warm yellow tones.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1047,
+    "root_entry_id": 1047
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "macaroni and cheese\n\nRevise: the same drifting golden noodles in thick sauce, and this time the background hue strictly cycles through warm yellow tones.",
+  "prompt_tokens": 3751,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1114/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1114",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A hypnotic visualization of pasta drifting through warm, evolving yellow light. Golden noodles unfurl across the canvas with organic, wave-like motion, their colors shifting through the warm spectrum as the background cycles through golden hues. Each noodle maintains its own rhythm, creating a mesmerizing dance of flowing lines that never ceases, regardless of user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 138.219
+}
