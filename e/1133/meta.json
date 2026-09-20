@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 1133, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1133/ Licensed CC BY 4.0.",
+  "brief": "A bright, glowing neon line traces rhythmic, sharp spikes and shallow dips across a solid black background. The waveform moves steadily from left to right in a continuous, endless scrolling motion, mimicking the pulse of a heartbeat on a medical monitor.",
+  "completion_tokens": 605,
+  "created_utc": "2026-09-20T10:09:51Z",
+  "entry_id": 1133,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 605,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "prompt_tokens": 2329,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.649,
+      "wall_s": 86.019
+    }
+  ],
+  "job_id": 1137,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1069,
+    "root_entry_id": 1069
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.",
+  "prompt_tokens": 2329,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1133/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1133",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a medical monitor heartbeat visualization with a glowing neon line that scrolls continuously from left to right. The waveform is generated using sine waves to create rhythmic patterns of sharp spikes and shallow dips that mimic real ECG readings. The line pulses with a neon glow effect using HSB color space for dynamic brightness changes, while sharp white spikes represent the peaks of the heartbeat and darker dots show the troughs. The continuous scrolling motion gives the impression of an endless medical monitor reading, with the visual rhythm matching the steady pulse of a heartbeat.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.019
+}
