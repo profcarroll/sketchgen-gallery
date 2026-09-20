@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images\u201d \u2014 sketchgen entry 1048, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1048/ Licensed CC BY 4.0.",
+  "brief": "Scanning lines sweep across the canvas in rhythmic pulses of red and black, resembling static radar blips detecting distant echoes. Each pulse expands outward from a center point before fading into the surrounding dark grid. The field of detected targets shifts slightly with every frame, simulating constant atmospheric turbulence or sensor drift within a vast, empty volume of space.",
+  "completion_tokens": 660,
+  "created_utc": "2026-09-19T21:45:21Z",
+  "entry_id": 1048,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 660,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1672,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.153,
+      "wall_s": 81.122
+    }
+  ],
+  "job_id": 1051,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1048
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "radar images",
+  "prompt_tokens": 1672,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1048/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1048",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a radar-like detection system sweeping across a dark grid field. Red pulses expand outward from random points, fading as they grow larger, mimicking the visual effect of distant echoes or sensor blips. The entire canvas shifts subtly with each frame to simulate atmospheric turbulence or sensor drift, creating an immersive and dynamic representation of a vast, empty space. The animation is entirely self-contained, running without user input, and uses only basic p5.js functions within strict performance constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.122
+}
