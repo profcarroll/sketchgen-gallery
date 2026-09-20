@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same rhythmic pulses of red and black, and t\u2026\u201d \u2014 sketchgen entry 1161, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1161/ Licensed CC BY 4.0.",
+  "brief": "Red pulses oscillate rhythmically across the black background, expanding rapidly to leave a persistent trail of light residue before fading. When they encounter the edge of the view, they distort into jagged, asymmetric ripples that break their circular symmetry. These forms drift and scatter independently without waiting for user interaction. The canvas remains alive with constant motion until it stops.",
+  "completion_tokens": 892,
+  "created_utc": "2026-09-20T16:45:47Z",
+  "entry_id": 1161,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 892,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "prompt_tokens": 2351,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.518,
+      "wall_s": 104.209
+    }
+  ],
+  "job_id": 1165,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic pulses of red and black, and this time they form through jagged, asymmetric ripples that distort the circular pattern.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1115,
+    "root_entry_id": 1048
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "radar images\n\nRevise: the same rhythmic pulses of red and black, and this time they expand rapidly and leave a persistent trail of light residue behind them.\n\nRevise: the same rhythmic pulses of red and black, and this time they form through jagged, asymmetric ripples that distort the circular pattern.",
+  "prompt_tokens": 2351,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1161/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1161",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of pulsating forms that expand and fade across a black canvas. Each pulse originates from a random point, grows rapidly, and leaves a persistent trail behind it. When pulses encounter the edges of the canvas, they distort into jagged, asymmetric ripples, breaking their circular symmetry. The system uses hundreds of independent pulses that drift and scatter without user interaction, creating an ever-changing composition filled with rhythmic motion and visual complexity. The subtle color shifts and varying speeds generate a sense of organic life within the minimalist black-and-white space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 104.209
+}
