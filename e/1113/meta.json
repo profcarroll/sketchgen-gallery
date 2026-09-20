@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cseismic activity Revise: the same seismic shocks, and this time they\u2026\u201d \u2014 sketchgen entry 1113, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1113/ Licensed CC BY 4.0.",
+  "brief": "Dark lines fracture across a dark grey background representing deep earth tremors. These jagged shapes appear at random intervals and ripple outward before vanishing. Under the revision, they fade more gradually, lingering on the screen as their edges blur slowly into nothingness rather than snapping away instantly. Watching these slow dissipation events reveals how seismic energy persists in the visual field before finally quieting.",
+  "completion_tokens": 974,
+  "created_utc": "2026-09-20T07:58:20Z",
+  "entry_id": 1113,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 974,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2384,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.211,
+      "wall_s": 102.916
+    }
+  ],
+  "job_id": 1117,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same seismic shocks, and this time they dissipate more slowly upon fading.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1046,
+    "root_entry_id": 1046
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "seismic activity\n\nRevise: the same seismic shocks, and this time they dissipate more slowly upon fading.",
+  "prompt_tokens": 2384,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1113/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1113",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": null,
+  "submitted_by": "profcarroll",
+  "wall_s": 102.916
+}
