@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 1172, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1172/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays overlapping, softly defined planes of deep, rich, and saturated color. These planes are structured by horizontal wave formations that perpetually ripple across the composition. The visual movement is governed by a complex, irregular rhythm; the amplitude and height of the colored waves shift in an unpredictable manner, creating an organic, pulsating flow that continually moves across the entire surface without any user interaction or external input.",
+  "completion_tokens": 1418,
+  "created_utc": "2026-09-20T17:57:30Z",
+  "entry_id": 1172,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 687,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2361,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.198,
+      "wall_s": 50.911
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 731,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "prompt_tokens": 2430,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.557,
+      "wall_s": 52.913
+    }
+  ],
+  "job_id": 1176,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "parent_entry_id": 1130,
+    "root_entry_id": 35
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same overlapping color fields, and this time the diffusion should subtly shift the saturation of the outer layer.\n\nRevise: the same overlapping, softly defined fields of rich color, and this time the intensity of the chromatic shift should pulse rhythmically across the composition.\n\nRevise: the same overlapping planes of rich, softly defined color, and this time the subtle chroma shift should briefly intensify the central vertical dividing lines.\n\nRevise: the same overlapping planes of deep, rich color, and this time the subtle chroma shift should intensify the defining boundaries of the outermost vertical layers.\n\nRevise: the same overlapping planes of deep, rich color, and this time the chroma shift should intensify sequentially from the center to the outer edges.\n\nRevise: the same overlapping planes of deep, saturated color, and this time the gradual chromatic shift should flow in smooth, horizontal waves across the composition.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping, softly defined planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.",
+  "prompt_tokens": 4791,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1172/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1172",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing composition of overlapping, softly defined planes that flow across the canvas with organic wave formations. Using a rich palette of saturated colors, it generates multiple layered waves that ripple continuously in unpredictable patterns. Each wave has its own speed, amplitude, and frequency, creating an ever-shifting visual landscape where the color planes blend and interact. The motion is entirely self-contained, driven by mathematical sine functions that create natural-looking undulations without any user interaction. The result is a constantly evolving abstract composition that feels alive and organic, with deep, rich colors that pulse and flow across the entire surface in an irregular rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.824
+}
