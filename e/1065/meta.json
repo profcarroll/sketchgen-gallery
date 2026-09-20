@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 1065, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1065/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a minimalist analog clock face, characterized by a simple, unnumbered circle. Suspended at the center are two distinct hands\u2014an hour hand and a minute hand\u2014rendered in a specific metallic tone, such as polished copper or matte bronze. These hands are noticeable for their thickness and polished edges. The hands are the only moving elements, sweeping smoothly and continuously around the face. The mechanism operates autonomously, always keeping track of the time without requiring any user interaction or input.",
+  "completion_tokens": 603,
+  "created_utc": "2026-09-20T01:38:52Z",
+  "entry_id": 1065,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 603,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2379,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.299,
+      "wall_s": 46.012
+    }
+  ],
+  "job_id": 1068,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same minimalist analog clock face, and this time with the hour and minute hands rendered in polished silver",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 1010,
+    "root_entry_id": 700
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in matte bronze\n\nRevise: the same minimalist analog clock face, and this time with the hour and minute hands rendered in polished silver",
+  "prompt_tokens": 2379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1065/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1065",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a minimalist analog clock face with smooth, continuous motion. The design features a clean, unnumbered circular face and two distinct hands \u2014 an hour hand and a minute hand \u2014 rendered in a warm metallic copper tone. The hands are thick and polished, sweeping autonomously around the clock face without any user interaction. The implementation calculates hand positions based on real-time updates, ensuring accurate timekeeping through continuous animation. The visual style emphasizes simplicity and elegance, with no decorative elements beyond the essential components of a functional timepiece.",
+  "submitted_by": "profcarroll",
+  "wall_s": 46.012
+}
