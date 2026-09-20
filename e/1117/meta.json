@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cEKG patterns Revise: the same EKG pattern, and this time the white wa\u2026\u201d \u2014 sketchgen entry 1117, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1117/ Licensed CC BY 4.0.",
+  "brief": "A white EKG waveform traces across a colored background that shifts to match the pulse color of the line itself. The background and trace colors synchronize as the wave beats, while the viewer observes this rhythmic synchronization without needing to provide any input. The canvas remains static until interaction occurs, defining the piece as a responsive display rather than an autonomous animation or still image.",
+  "completion_tokens": 928,
+  "created_utc": "2026-09-20T08:17:41Z",
+  "entry_id": 1117,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 928,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1718,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.155,
+      "wall_s": 96.039
+    }
+  ],
+  "job_id": 1121,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1052,
+    "root_entry_id": 1052
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "EKG patterns\n\nRevise: the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.",
+  "prompt_tokens": 1718,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1117/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1117",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": null,
+  "submitted_by": "profcarroll",
+  "wall_s": 96.039
+}
