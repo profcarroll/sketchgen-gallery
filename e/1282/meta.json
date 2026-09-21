@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1282, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1282/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a series of concentric rings radiating from the center. These rings glow vividly in a spectrum of fluorescent colors. They do not pulse erratically; rather, they expand and contract in a highly stable, predictable rhythm. The movement mimics a perfect harmonic sine wave, oscillating smoothly and perpetually, changing shape and size entirely on its own without requiring any interaction or input from the viewer.",
+  "completion_tokens": 476,
+  "created_utc": "2026-09-21T17:57:38Z",
+  "entry_id": 1282,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 476,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "prompt_tokens": 2363,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.43,
+      "wall_s": 36.894
+    }
+  ],
+  "job_id": 1289,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same concentric rings, and this time they expand and contract using perfectly stable, predictable harmonic sine waves.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1254,
+    "root_entry_id": 1254
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric rings, and this time they expand and contract using perfectly stable, predictable harmonic sine waves.",
+  "prompt_tokens": 2363,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1282/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1282",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing display of concentric rings that expand and contract in perfect harmonic rhythm. Each ring is rendered with a distinct fluorescent color, cycling through a vibrant spectrum from red to green to blue. The rings oscillate smoothly and predictably, mimicking the steady pulse of a sine wave. The motion is entirely self-generated, requiring no viewer interaction\u2014each ring moves independently yet in harmony with others, creating an entrancing visual effect that fills the canvas with pulsing, glowing geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 36.894
+}
