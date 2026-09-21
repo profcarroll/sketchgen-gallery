@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing\u201d \u2014 sketchgen entry 1254, prompted by profcarroll, written by gemini-3.8-flash under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1254/ Licensed CC BY 4.0.",
+  "brief": "From the center of a pitch-black canvas, a series of concentric rings radiates outward in high-voltage fluorescent hues\u2014electric lime, radioactive magenta, laser cyan, and hot cadmium yellow. Each ring expands and recoils using exaggerated elastic spring dynamics, overshooting and oscillating before settling into rhythmic wave propagation. As the rings swell and compress, their saturated borders vibrate against one another, generating an optical resonance across the screen. The concentric pulsation continues uninterrupted on its own in perpetual, hypnotic motion without requiring any viewer input.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T14:59:53Z",
+  "entry_id": 1254,
+  "executor": "gemini-3.8-flash",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "gemini-3.8-flash",
+      "ms_per_frame": 3.8,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.144,
+      "wall_s": 20.0
+    }
+  ],
+  "job_id": 1261,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1254
+  },
+  "off_node": [
+    {
+      "model": "gemini-3.8-flash",
+      "step": "planner"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "step": "executor"
+    }
+  ],
+  "planner": "gemini-3.8-flash",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (gemini-3.8-flash) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1254/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1254",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "An energetic op-art exploration of kinetic resonance and elastic easing. Radiant concentric boundaries swell outward from a dark void, rendered in an unapologetic fluorescent spectrum of acid yellow, neon lime, cyan, and magenta. Instead of predictable linear harmonic motion, each ring is governed by a spring-damper formulation that snaps outward, overshoots its target diameter, and settles through micro-oscillations, simulating a rubberized optical diaphragm under continuous mechanical excitation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 20.0
+}
