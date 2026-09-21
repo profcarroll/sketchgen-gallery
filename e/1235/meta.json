@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 1235, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1235/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays five distinct, colored rectangular pads arranged horizontally in a single row. Each pad features smoothly rounded corners and occupies a unique color space. When a user clicks on one of the individual pads, that pad's appearance changes\u2014it lights up\u2014and simultaneously generates a corresponding musical note. The pads remain visible and stationary until they are interacted with.",
+  "completion_tokens": 661,
+  "created_utc": "2026-09-21T05:17:27Z",
+  "entry_id": 1235,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 661,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1689,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.216,
+      "wall_s": 48.245
+    }
+  ],
+  "job_id": 1241,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal arrangement of five distinct, colored rectangular pads, and this time they are designed with smoothly rounded corners instead of sharp edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 1206,
+    "root_entry_id": 910
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the interior of each pad features a subtle vertical color gradient.\n\nRevise: the same horizontal row containing five distinct, colored rectangular pads, and this time the pads are surrounded by a subtle, luminous border.\n\nRevise: the same horizontal arrangement of five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are given a subtle, uniform drop shadow to enhance their physical separation from the canvas background.\n\nRevise: the same horizontal arrangement of five distinct, colored rectangular pads, and this time they are designed with smoothly rounded corners instead of sharp edges.",
+  "prompt_tokens": 1689,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1235/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1235",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a minimal interactive musical interface consisting of five colored pads arranged horizontally. Each pad has rounded corners and a distinct hue in the HSB color space. When clicked, a pad lights up and plays a corresponding musical note \u2014 the frequency increases with position from left to right. The visual feedback is immediate and clear: lit pads change appearance by increasing their brightness and stroke weight, while sound is generated through oscillators that respond only to user interaction. The design avoids unnecessary complexity, focusing on clean aesthetics and responsive interaction within strict performance constraints for headless execution.",
+  "submitted_by": "profcarroll",
+  "wall_s": 48.245
+}
