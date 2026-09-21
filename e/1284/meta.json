@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca Persian rug pattern Revise: the same intricate, symmetrical composi\u2026\u201d \u2014 sketchgen entry 1284, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1284/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly intricate, symmetrical pattern evoking a richly woven textile. The composition is built upon a structured lattice grid, featuring repeating motifs that transition between stylized floral patterns and dense, geometric, interlinked knotwork. This detailed field is framed by pronounced, geometrically defined border bands. These continuous borders are composed of highly structured, interlocking elements\u2014such as repeating rhombuses, crescent shapes, or chevron formations\u2014all rendered in rich, deep jewel tones that emphasize the complex and luxurious weaving structure.",
+  "completion_tokens": 2541,
+  "created_utc": "2026-09-21T18:11:29Z",
+  "entry_id": 1284,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1185,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] noMotion is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1707,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.201,
+      "wall_s": 73.771
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1356,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1773,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.183,
+      "wall_s": 83.097
+    }
+  ],
+  "job_id": 1291,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, highly symmetrical woven textile pattern, and this time the repeating stylized floral motifs are replaced by repeating geometric, interlinked knot patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 1257,
+    "root_entry_id": 885
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a Persian rug pattern\n\nRevise: the same intricate, symmetrical composition of deep jewel tones woven into a lattice grid, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of geometric elements at the top and bottom.\n\nRevise: the same intricately symmetrical woven pattern, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of interlocking diagonal lines.\n\nRevise: the same lattice grid structure with repeating stylized floral motifs, and this time the pronounced bottom geometric band is comprised of alternating large squares and smaller diamond shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.\n\nRevise: the same intricate, symmetrical woven pattern, and this time the border elements are simplified by featuring only a single continuous, interlocking row of small crescent shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the pronounced interlocking chevron border is replaced by a continuous row of stacked rhombus shapes.\n\nRevise: the same intricate, symmetrical woven textile pattern, and this time the pronounced border band is comprised of a continuous row of stacked, repeating rhombus shapes.\n\nRevise: the same highly intricate, symmetrical woven textile pattern, and this time the repeating stylized floral motifs are replaced by repeating geometric, interlinked knot patterns.\n\nRevise: the same intricate, highly symmetrical woven textile pattern, and this time the repeating stylized floral motifs are replaced by repeating geometric, interlinked knot patterns.",
+  "prompt_tokens": 3480,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1284/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1284",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a richly woven textile pattern using a structured grid of repeating motifs. The composition features three distinct design types\u2014floral elements, geometric knotwork, and interlocking rhombuses\u2014that tile seamlessly across the canvas. Each motif is carefully rendered with jewel-toned colors and precise proportions to evoke the complexity and luxury of traditional weaving. The entire piece is framed by pronounced geometric border bands composed of continuous chevron patterns, reinforcing the structured nature of the textile. The work remains completely static as required, presenting a detailed, symmetrical composition that demonstrates both mathematical precision and artistic design through its repetitive yet varied pattern construction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 156.868
+}
