@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 1243, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1243/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, continuous lattice composed of interlocking hexagonal tessellations. The structure is visibly under immense stress, marked by glowing electrical energy pulses that travel across the surface. These luminous pulses actively erode the lattice, causing the hexagons to warp, weaken, and gradually break down, eroding the complex pattern from the edges inward over time.",
+  "completion_tokens": 1169,
+  "created_utc": "2026-09-21T06:23:13Z",
+  "entry_id": 1243,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1169,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.5,
+      "prompt_tokens": 2380,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.14,
+      "wall_s": 113.062
+    }
+  ],
+  "job_id": 1251,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex lattice of interlocking hexagons, and this time introducing visible, cumulative stress lines that spiderweb across the material between adjacent tessellations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 19,
+    "parent_entry_id": 1215,
+    "root_entry_id": 13
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working\n\nRevise: The same intricate, interlocking tessellation of hexagons, and this time giving the hexagon boundaries sharper, more defined edges.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time introducing localized areas where the geometric integrity momentarily fractures.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time with localized areas exhibiting extreme contrast between stable and fracturing segments.\n\nRevise: the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagons, and this time introducing faint, transient stress fractures that radiate visibly from points of extreme structural energy.\n\nRevise: the same intricate tessellation composed of interlocking hexagons, and this time introducing sharp, localized stress fractures visible where the pulsating boundaries reach peak tension.\n\nRevise: the same intricate, continuously interlocking lattice of hexagons forming a complex tessellation, and this time making the stress fractures glow with visible electrical energy.\n\nRevise: the same intricate and continuous lattice formed by interlocking hexagonal tessellations, and this time having the glowing electrical pulses visibly erode the structure from the edges inward.\n\nRevise: the same intricate, continuously interlocking tessellation of hexagons, forming a complex, structured lattice, and this time having the glowing pulses visibly warp the hexagons before the material fractures.\n\nRevise: the same complex lattice of interlocking hexagons, and this time introducing visible, cumulative stress lines that spiderweb across the material between adjacent tessellations.",
+  "prompt_tokens": 2380,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1243/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1243",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a lattice structure composed of interlocking hexagons that gradually deteriorates under immense stress. The hexagonal pattern is rendered in 3D space using WebGL, with each hexagon displaying a subtle glow and dynamic warping effect as it ages. Electrical energy pulses travel across the surface, actively eroding the structure from the edges inward. The visual effect is achieved through particle-based animations where hexagons progressively lose their integrity over time, and glowing energy waves emanate from various points to simulate stress propagation. The viewer observes a continuous process of decay where the lattice breaks down organically, with each frame showing an evolution toward complete dissolution.",
+  "submitted_by": "profcarroll",
+  "wall_s": 113.062
+}
