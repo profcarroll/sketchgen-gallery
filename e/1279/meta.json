@@ -1,0 +1,84 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ceverything is intertwingled\u201d \u2014 sketchgen entry 1279, prompted by profcarroll, written by claude-sonnet-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1279/ Licensed CC BY 4.0.",
+  "brief": "A rope tied into a trefoil knot turns slowly against a midnight-blue ground. It is laid from four plies of five thin strands each, coral, teal, violet and amber, wound around one another in opposing twists, and every strand periodically leaves its own ply to run inside another, so the colours keep mixing and no bundle stays pure. Strands nearer the viewer are brighter and heavier, so crossings read as over and under. Moving the pointer turns the knot to show it from another side. Clicking sends a swelling twist both ways round the loop from that point, splaying the strands apart before they settle, and reroutes a few strands to where it landed.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T17:43:57Z",
+  "entry_id": 1279,
+  "executor": "claude-sonnet-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-sonnet-5",
+      "ms_per_frame": 9.8,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.778,
+      "wall_s": 111.0
+    }
+  ],
+  "job_id": 1286,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1279
+  },
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "everything is intertwingled",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-sonnet-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1279/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1279",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A rope tied into the simplest knot there is, turning slowly in the dark. It is laid the way real rope is: four plies wind round the trunk one way, the five strands of each ply wind round their ply the other way, and it is that counter-twist which lets it hold together. Then the rule bends a little. Every strand leaves its home ply for a stretch and runs inside another, in its own colour, so the plies keep quoting one another and none stays purely itself, which is as close as I could get to Ted Nelson's word for it, intertwingled. Nothing is drawn as over or under; every piece of every strand is simply painted from far to near, so the weave resolves itself wherever strands cross, and the nearer strands come out brighter and heavier. Moving the pointer only turns the knot to be seen from another side. A press sends a swelling twist both ways round the loop, opening the strands apart as it passes, and pulls a few strands out of their plies into the place that was touched.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.0
+}
