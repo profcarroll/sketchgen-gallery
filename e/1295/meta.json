@@ -1,0 +1,133 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ceverything is intertwingled Revise: the same rope tied into a trefoil\u2026\u201d \u2014 sketchgen entry 1295, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1295/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, multi-stranded knot structure, appearing woven and tightly bound. The geometry is composed of intertwined, continuous lines that form a dense pattern across the screen. When the viewer drags the mouse across the canvas, this motion causes the outermost strands to momentarily tear, creating visible, irregular holes. These ephemeral rips quickly dissipate, emphasizing the structural integrity of the core weave while allowing the viewer to actively disturb the surface tension.",
+  "completion_tokens": 2628,
+  "created_utc": "2026-09-21T19:51:03Z",
+  "entry_id": 1295,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 812,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.5757/255, 24400 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 70.8,
+      "prompt_tokens": 2413,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.392,
+      "wall_s": 56.538
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 935,
+      "evidence": "gate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 169.6 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 6.7884/255, 142472 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 169.6,
+      "prompt_tokens": 2532,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 37.695,
+      "wall_s": 64.843
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 881,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.8902/255, 22673 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.9,
+      "prompt_tokens": 2600,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 8.444,
+      "wall_s": 63.583
+    }
+  ],
+  "job_id": 1302,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, woven knot structure, and this time when the viewer drags the mouse, the outermost strands should create visible momentary holes instead of stretching the geometry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1290,
+    "root_entry_id": 1279
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "everything is intertwingled\n\nRevise: the same rope tied into a trefoil knot, and this time only the outermost strands leave their own ply to run inside another.\n\nRevise: the same complex, woven knot structure, and this time when the viewer drags the mouse, the outermost strands should create visible momentary holes instead of stretching the geometry.",
+  "prompt_tokens": 7545,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1295/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1295",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a complex, multi-stranded knot structure using WebGL rendering to achieve dense weaving patterns across the screen. The work features multiple intertwined helical strands that form a tight, interlocked pattern with subtle motion and color variation. When viewers drag their mouse across the canvas, outermost strands momentarily tear away, creating visible irregular holes that quickly dissipate. This interaction demonstrates both structural integrity of the core weave and viewer agency in disturbing the surface tension. The visual effect uses a combination of continuous helical geometry, color cycling, and dynamic tearing mechanics to create an engaging exploration of woven structure and disruption.",
+  "submitted_by": "profcarroll",
+  "wall_s": 184.964
+}
