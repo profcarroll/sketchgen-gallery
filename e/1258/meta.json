@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctextile textures interweaving with color saturation Revise: the same\u2026\u201d \u2014 sketchgen entry 1258, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1258/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an intricate, abstract tapestry woven from richly saturated, jewel-toned textiles. The core visual experience is defined by a deliberate contrast between two types of elements. One component consists of fluid, organic fibers that flow and drift across the surface, creating a sense of continuous, natural movement and soft curves. Interwoven within this fluid medium are structured geometric knots. These knots maintain a rigid, sharp angularity, anchoring the piece. The overall composition creates a complex, textural interplay, exaggerating the contrast between the chaotic softness of the flowing fibers and the defined, controlled geometry of the interwoven structure.",
+  "completion_tokens": 2464,
+  "created_utc": "2026-09-21T15:26:18Z",
+  "entry_id": 1258,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1277,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] windowWidth is not defined\n- [pageerror] Cannot access 'gridWidth' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2409,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.198,
+      "wall_s": 83.179
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1187,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.9,
+      "prompt_tokens": 2626,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.261,
+      "wall_s": 80.442
+    }
+  ],
+  "job_id": 1265,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, abstract tapestry woven from richly saturated textiles, and this time exaggerating the contrast between the fluid organic fibers and the structured geometric knots.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "parent_entry_id": 1220,
+    "root_entry_id": 887
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "textile textures interweaving with color saturation\n\nRevise: the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.\n\nRevise: the same abstract tapestry composed of flowing textile textures, and this time emphasizing the rigid geometry of the interwoven knots so they are more structured and angular.\n\nRevise: the same abstract tapestry woven from richly saturated, flowing textile textures, and this time making the individual interwoven knots appear larger and more defined.\n\nRevise: the same abstract tapestry, and this time exaggerating the contrast between the organic flowing fibers and the rigid geometric knots.\n\nRevise: the same intricate abstract tapestry of woven textures, and this time increasing the density and size of the sharply defined geometric knots.\n\nRevise: the same abstract tapestry of woven textures, and this time exaggerating the contrast between the fluid organic fibers and the structured geometric knots.\n\nRevise: the same abstract tapestry of richly saturated textiles, and this time exaggerating the contrast between the flowing organic fibers and the structured geometric knots\n\nRevise: the same intricate, abstract tapestry woven from richly saturated textiles, and this time exaggerating the contrast between the fluid organic fibers and the structured geometric knots.",
+  "prompt_tokens": 5035,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1258/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1258",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract textile tapestry through the interplay of fluid organic fibers and rigid geometric knots. The fibers flow across the canvas with gentle, natural movements, their positions subtly shifting to create a sense of continuous motion and soft curves. Embedded within this fluid medium are structured angular knots that provide defined contrast and visual anchors. The composition uses spatial hashing to efficiently manage interactions between fibers, drawing subtle connections that enhance the textural complexity. The jewel-toned color palette creates rich visual depth while maintaining the contrast between chaotic softness and controlled geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 163.621
+}
