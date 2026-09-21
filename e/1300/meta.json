@@ -1,0 +1,92 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 1300, prompted by profcarroll, written by claude-sonnet-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1300/ Licensed CC BY 4.0.",
+  "brief": "A drone glides on a slow, looping flight path through an abandoned college campus, seen from the drone's camera in pale overcast light. Monolithic raw-concrete slabs, stacked lecture blocks, cantilevered walkways, stair towers and repeating window grids rise on both sides in flat grey-beige planes with hard shadow edges, stained and cracked. Weeds and puddles break up the empty plazas, and dust drifts through the air. The camera banks, drifts and rises gently, threading between buildings, slipping under overhangs and past long facades with strong perspective and depth fog. A faint frame overlay shows altitude and heading like drone footage. The sequence keeps changing on its own; no input is needed.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T23:11:45Z",
+  "entry_id": 1300,
+  "executor": "claude-sonnet-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-sonnet-5",
+      "ms_per_frame": 4.0,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.979,
+      "wall_s": 469.0
+    }
+  ],
+  "job_id": 1308,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1300
+  },
+  "note": null,
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v1",
+  "process": {
+    "effort": null,
+    "output_tokens": null,
+    "screenshots": null,
+    "session_s": null,
+    "thinking_tokens": null,
+    "tool_calls": null,
+    "tries": 1
+  },
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-sonnet-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1300/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1300",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This is a slow drone flight through a campus that nobody has used in years. The buildings are raw-concrete slabs, cantilevered blocks sitting on recessed cores, and narrow stair towers on plinths, all laid out on a street grid and pierced by deep-set window grids. Walkways cross the streets overhead, so the drone passes under them as it follows an L-shaped route with rounded turns. It banks into each turn, drifts side to side, and rises and sinks a little. Everything is projected by hand as flat grey-beige polygons painted from far to near. Fog swallows the distance, each face has its own hard tone, and rain stains streak the near walls. Puddles, weeds and worn lane dashes mark the ground, dust hangs in the air, and a thin overlay shows altitude, heading, speed, a timecode and a blinking record light.",
+  "submitted_by": "profcarroll",
+  "wall_s": 469.0
+}
