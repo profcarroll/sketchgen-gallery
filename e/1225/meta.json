@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cseismic activity Revise: the same violet seismic waves, and this time\u2026\u201d \u2014 sketchgen entry 1225, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1225/ Licensed CC BY 4.0.",
+  "brief": "Violet seismic waves ripple across a white canvas while thick jagged lines fracture rhythmically into crystalline hexagonal grids that expand and contract independently. These geometric patterns pulse in place without waiting for user interaction, creating a shifting landscape of sharp angles and perfect symmetry that evolves continuously on its own. The color remains a consistent violet hue throughout the animation as the fracturing lines maintain their rhythmic cycle regardless of whether the mouse hovers or clicks near the active zones.",
+  "completion_tokens": 2596,
+  "created_utc": "2026-09-21T03:38:55Z",
+  "entry_id": 1225,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 887,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1695,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.142,
+      "wall_s": 89.345
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 851,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1798,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.107,
+      "wall_s": 52.57
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 858,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1910,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.154,
+      "wall_s": 54.026
+    }
+  ],
+  "job_id": 1231,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same violet seismic waves, and this time the thick jagged lines fracture rhythmically into crystalline hexagonal grids.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 1197,
+    "root_entry_id": 1050
+  },
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "seismic activity\n\nRevise: the same violet seismic waves, and this time the thick jagged lines fracture rhythmically across the canvas, pulsing independently of user drag.\n\nRevise: the same violet seismic waves, and this time the thick jagged lines fracture rhythmically into perfect, overlapping geometric circles.\n\nRevise: the same violet seismic waves, and this time the thick jagged lines fracture rhythmically into crystalline hexagonal grids.\n\nRevise: the same violet seismic waves, and this time the thick jagged lines fracture rhythmically into crystalline hexagonal grids.",
+  "prompt_tokens": 5403,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1225/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1225",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuous, self-contained animation of seismic activity and geometric fracturing. Violet-hued waves ripple outward from multiple points across a white canvas, expanding and contracting in rhythmic cycles. Simultaneously, crystalline hexagonal grids pulse and rotate independently, growing and shrinking in place without any user interaction. The composition maintains sharp angular forms while evolving through time, creating a dynamic interplay between organic waveforms and precise geometric structures. The animation proceeds entirely on its own, demonstrating continuous motion and visual change without requiring mouse input or external triggers.",
+  "submitted_by": "profcarroll",
+  "wall_s": 195.941
+}
