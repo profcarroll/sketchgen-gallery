@@ -1,0 +1,126 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "size(800,600)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle\u201d \u2014 sketchgen entry 1104, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1104/ Licensed CC BY 4.0.",
+  "brief": "Interlocking polygonal shapes drift gently across the screen before snapping into perfect alignment when clicked or dragged, revealing a colorful image behind them until all pieces lock place. The fragments possess a slight independent wander that pauses instantly upon user interaction, inviting reassembly through mouse clicks to rotate pieces and drags to slide them around the fixed 800 by 600 pixel workspace.",
+  "completion_tokens": 4045,
+  "created_utc": "2026-09-20T06:58:30Z",
+  "entry_id": 1104,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(800,600)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1342,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 107)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 153)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] Cannot access 'dist' before initialization\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (101); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1712,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.215,
+      "wall_s": 114.956
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(800,600)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1533,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 104)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 108)\npreflight: your variable `mouseX` hides p5's `mouseX`; rename it (sketch.js line 131)\npreflight: your variable `mouseY` hides p5's `mouseY`; rename it (sketch.js line 132)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 1897,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.167,
+      "wall_s": 90.406
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(800,600)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1170,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1972,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.188,
+      "wall_s": 72.909
+    }
+  ],
+  "job_id": 1108,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1104
+  },
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle",
+  "prompt_tokens": 5581,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1104/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1104",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a collection of polygonal shapes that drift gently across the screen in a subtle, randomized motion. When pieces come into proximity with one another, they snap into perfect alignment, revealing a hidden colorful pattern beneath them. Users can interact by clicking and dragging individual pieces to reposition or rotate them, temporarily pausing their autonomous movement. The visual effect combines organic wandering with precise geometric snapping, creating an engaging interplay between chaos and order as the shapes form new configurations through user manipulation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 278.271
+}
