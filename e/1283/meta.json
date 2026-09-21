@@ -1,0 +1,124 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 1283, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1283/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a deep, cylindrical tunnel composed of countless crystalline facets. These facets explode outwards and reflect light, creating a continuous, rich kaleidoscope of polychromatic colors. The entire field of vision is unified by the appearance of a single, dark hexagon that acts as the primary mask. The camera appears to travel through this structure, but instead of a rapid rush, the movement slows dramatically, giving the impression of a gentle, rhythmic pulse\u2014a slow, breathing inhale and exhale of light and color that cycles endlessly.",
+  "completion_tokens": 2203,
+  "created_utc": "2026-09-21T18:04:29Z",
+  "entry_id": 1283,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 794,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 77.0,
+      "prompt_tokens": 2415,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.036,
+      "wall_s": 54.718
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 750,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 57)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 74.4,
+      "prompt_tokens": 2453,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 15.615,
+      "wall_s": 52.174
+    },
+    {
+      "assertions": {},
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 659,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 54)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 236.6 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 236.6,
+      "prompt_tokens": 2526,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 16.175,
+      "wall_s": 50.645
+    }
+  ],
+  "job_id": 1290,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same kaleidoscopic tunnel of polychromatic crystalline facets, and this time the forward motion slows to a gentle, breathing pulse.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1255,
+    "root_entry_id": 1255
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same kaleidoscopic tunnel of polychromatic crystalline facets, and this time the forward motion slows to a gentle, breathing pulse.",
+  "prompt_tokens": 7394,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1283/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1283",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive cylindrical tunnel of crystalline facets that appear to pulse and breathe with light. Using the WEBGL renderer, it generates thousands of faceted spheres that float within a dark space, each animated independently to create a sense of organic movement. The camera slowly traverses through this environment, moving in a gentle, rhythmic pattern that mimics breathing. A dark hexagonal mask overlays the entire scene, creating a unified focal point while allowing the kaleidoscopic colors and light patterns to flow around it. The animation is driven entirely by mathematical functions, creating an endless, hypnotic cycle of light and color that fills the entire canvas without any external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.537
+}
