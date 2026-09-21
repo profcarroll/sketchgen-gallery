@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe periodic table of elements Revise: the same large, organized grid\u2026\u201d \u2014 sketchgen entry 1222, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1222/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a structured grid of boxes, arranged in rows and columns to represent the periodic table of elements. This fixed diagram is not static; a luminous, visible glow travels continuously across the entire structure. This light appears as distinct, repeating sine waves that pulse and wash across the elements from edge to edge. The movement is continuous and ambient, making the entire grid feel alive with oscillating color and structured energy.",
+  "completion_tokens": 613,
+  "created_utc": "2026-09-21T03:23:16Z",
+  "entry_id": 1222,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 613,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.0,
+      "prompt_tokens": 2364,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.081,
+      "wall_s": 84.712
+    }
+  ],
+  "job_id": 1229,
+  "last_error": "prompt drift",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same structured grid representing the periodic table of elements, and this time the ambient glow pulses with a warm crimson red hue.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 1193,
+    "root_entry_id": 889
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "the periodic table of elements\n\nRevise: the same large, organized grid displays the elements of the periodic table, and this time the entire diagram pulses with a vibrant blue hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous pulsating glow is a warm golden hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow travels in distinct, visible sine waves.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the ambient glow travels across the grid in distinct, visible sine waves.\n\nRevise: the same structured grid representing the periodic table of elements, and this time the ambient glow pulses with a warm crimson red hue.",
+  "prompt_tokens": 2364,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1222/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1222",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a structured visualization of the periodic table as a grid of animated boxes, each pulsing with a luminous glow that travels continuously across the entire structure. The animation uses sine wave functions to create a smooth, ambient oscillation effect where elements appear to pulse and flow with energy. The glow moves from edge to edge in a continuous wave, giving the impression of structured, living energy moving through the table. The technique uses mathematical wave functions to drive color intensity changes across all elements simultaneously, creating a unified visual rhythm without complex particle systems or excessive draw calls.",
+  "submitted_by": "profcarroll",
+  "wall_s": 84.712
+}
