@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cheavy metal Revise: the same jagged, chrome-textured shards float and\u2026\u201d \u2014 sketchgen entry 1211, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1211/ Licensed CC BY 4.0.",
+  "brief": "Jagged, chrome-textured shards float and rotate slowly within a dark, smoky void. A deep emerald light emanates from the center of the void, casting sharp glints and reflections across the metallic surfaces of the shifting shards.",
+  "completion_tokens": 903,
+  "created_utc": "2026-09-21T00:49:15Z",
+  "entry_id": 1211,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 903,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 59.0,
+      "prompt_tokens": 2353,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.179,
+      "wall_s": 109.692
+    }
+  ],
+  "job_id": 1215,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jagged, chrome-textured shards, and this time the deep emerald light emanates gently from within the center of the void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1149,
+    "root_entry_id": 1090
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "heavy metal\n\nRevise: the same jagged, chrome-textured shards float and rotate slowly within a dark, smoky void, and this time the metallic surfaces catch glints of deep, continuous emerald light.\n\nRevise: the same jagged, chrome-textured shards, and this time the deep emerald light emanates gently from within the center of the void.",
+  "prompt_tokens": 2353,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1211/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1211",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing scene of floating, rotating metallic shards in a dark void. Using the WEBGL renderer, it generates hundreds of jagged, chrome-textured fragments that drift and spin slowly through space. Each shard is composed of irregular polygonal faces with carefully placed highlights to simulate metallic reflections. A deep emerald light at the center casts sharp glints across the surfaces, creating dynamic interplay between light and shadow. The scene rotates gently over time, revealing the three-dimensional complexity of the shards as they move through the dark environment. The effect is both ethereal and mechanical, evoking the sense of something ancient and precious floating in cosmic darkness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.692
+}
