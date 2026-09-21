@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca Persian rug pattern Revise: the same intricate, symmetrical composi\u2026\u201d \u2014 sketchgen entry 1217, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1217/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly intricate, symmetrical woven textile pattern inspired by traditional Persian rugs. The overall composition is built upon a deep lattice grid structure, filled with repeating stylized floral motifs rendered in rich jewel tones. This central field is framed by a prominent border composed of a continuous, interlocking chain of sharp chevron and triangle shapes. The geometry creates a structured sense of depth and repetitive rhythm, evoking the dense, careful artistry of handwoven tapestry. The pattern remains static, presenting a fixed, decorative vista.",
+  "completion_tokens": 3112,
+  "created_utc": "2026-09-21T01:59:52Z",
+  "entry_id": 1217,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 902,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] noMotion is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1707,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.162,
+      "wall_s": 61.33
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 988,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1773,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.166,
+      "wall_s": 60.219
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1222,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1762,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.193,
+      "wall_s": 71.356
+    }
+  ],
+  "job_id": 1221,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, symmetrical woven textile pattern, and this time the pronounced border band is comprised of a continuous row of stacked, repeating rhombus shapes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 1184,
+    "root_entry_id": 885
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a Persian rug pattern\n\nRevise: the same intricate, symmetrical composition of deep jewel tones woven into a lattice grid, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of geometric elements at the top and bottom.\n\nRevise: the same intricately symmetrical woven pattern, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of interlocking diagonal lines.\n\nRevise: the same lattice grid structure with repeating stylized floral motifs, and this time the pronounced bottom geometric band is comprised of alternating large squares and smaller diamond shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.\n\nRevise: the same intricate, symmetrical woven pattern, and this time the border elements are simplified by featuring only a single continuous, interlocking row of small crescent shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the pronounced interlocking chevron border is replaced by a continuous row of stacked rhombus shapes.\n\nRevise: the same intricate, symmetrical woven textile pattern, and this time the pronounced border band is comprised of a continuous row of stacked, repeating rhombus shapes.",
+  "prompt_tokens": 5242,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1217/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1217",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static, highly detailed woven textile pattern inspired by traditional Persian rugs. It constructs a central field filled with repeating stylized floral motifs in rich jewel tones, arranged within a structured grid lattice. The composition is framed by an elaborate border composed of interlocking chevron and triangle shapes that form a continuous chain around the canvas edges. The design employs mathematical precision to ensure perfect symmetry and rhythmic repetition throughout the pattern, evoking the careful artistry of handwoven tapestry while remaining completely static and unchanging.",
+  "submitted_by": "profcarroll",
+  "wall_s": 192.905
+}
