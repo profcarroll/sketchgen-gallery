@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons Revise: the same colorful hot air balloons, and this\u2026\u201d \u2014 sketchgen entry 1286, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1286/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays several vividly colored hot air balloons floating against a soft, atmospheric sky. Each balloon retains its unique hue and shape, but a prominent feature is the soft, ethereal glow that radiates outward from the edges of every balloon. These balloons appear to drift and float slowly across the scene, simulating gentle movement in the breeze. The colors are rich and saturated, giving the scene a magical, serene quality.",
+  "completion_tokens": 627,
+  "created_utc": "2026-09-21T18:22:01Z",
+  "entry_id": 1286,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 627,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "prompt_tokens": 2365,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.413,
+      "wall_s": 46.268
+    }
+  ],
+  "job_id": 1293,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colorful hot air balloons, and this time depicting them with a soft, radiant glow around their edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1259,
+    "root_entry_id": 1259
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "hot air balloons\n\nRevise: the same colorful hot air balloons, and this time depicting them with a soft, radiant glow around their edges.",
+  "prompt_tokens": 2365,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1286/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1286",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene scene of floating hot air balloons drifting across a soft blue sky. Each balloon has a unique saturated color and moves at its own gentle pace, creating a sense of natural motion in the breeze. The key visual feature is the ethereal glow that radiates outward from each balloon, achieved through multiple semi-transparent ellipses layered behind the main balloon shape. The balloons continuously drift across the canvas, wrapping around the edges when they move off-screen, maintaining a seamless and endless floating effect. The scene evokes a magical, tranquil atmosphere with rich, saturated colors and smooth, organic movement patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 46.268
+}
