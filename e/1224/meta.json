@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cradar images Revise: the same rhythmic pulses of red and black, and t\u2026\u201d \u2014 sketchgen entry 1224, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1224/ Licensed CC BY 4.0.",
+  "brief": "Rhythmic pulses of red and black expand rapidly across a black void, leaving persistent trails of light residue that fade slowly. When the mouse is clicked, new pulses spawn at that exact location and drift outward with varying speeds. Dragging the cursor scatters these lingering lights into chaotic patterns while maintaining the core rhythmic pulse rate. The visuals evolve continuously through time, creating a hypnotic dance of expanding rings and fading echoes against the dark background without any external audio or 3D rendering requirements.",
+  "completion_tokens": 1840,
+  "created_utc": "2026-09-21T03:32:08Z",
+  "entry_id": 1224,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 578,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1702,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.109,
+      "wall_s": 77.92
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 566,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1905,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.107,
+      "wall_s": 39.927
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 696,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1817,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.096,
+      "wall_s": 44.173
+    }
+  ],
+  "job_id": 1230,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic pulses of red and black, and this time they spiral inward toward a central point.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 1196,
+    "root_entry_id": 1048
+  },
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v1+lenient",
+  "prompt": "radar images\n\nRevise: the same rhythmic pulses of red and black, and this time they expand rapidly and leave a persistent trail of light residue behind them.\n\nRevise: the same rhythmic pulses of red and black, and this time they form through jagged, asymmetric ripples that distort the circular pattern.\n\nRevise: the same rhythmic pulses of red and black, and this time they coalesce into large, interconnected networks that drift across the black void.\n\nRevise: the same rhythmic pulses of red and black, and this time they spiral inward toward a central point.",
+  "prompt_tokens": 5424,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1224/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1224",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing visual experience of rhythmic pulses expanding from random points. The black canvas serves as a void where red and black pulses rapidly expand outward, leaving glowing trails that fade slowly behind them. Each pulse is a glowing ring that grows at its own speed, creating an organic, chaotic dance across the screen. The system accumulates these lingering lights into a persistent layer of luminous residue that slowly dissipates over time. The viewer's interaction with the mouse adds new pulses and scatters existing lights, creating a constantly evolving pattern of motion. The visual rhythm is maintained by the consistent timing of pulse expansion, while the fading trails create an impression of temporal depth and continuity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 162.02
+}
