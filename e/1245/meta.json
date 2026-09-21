@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA slow grid of pale squares, each fading in and out on its own rhythm\u2026\u201d \u2014 sketchgen entry 1245, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1245/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a precise, symmetrical grid formed by pale, luminous squares set against a deep, near-black void. The primary feature is the synchronized, breathing quality of the grid. All the squares collectively cycle their opacity in perfect rhythm, appearing to fade slowly into and out of existence together, giving the impression of a slow, rhythmic pulse across the entire field. The resulting movement is continuous and cyclical, requiring no interaction or input from the viewer to observe the effect.",
+  "completion_tokens": 368,
+  "created_utc": "2026-09-21T13:46:13Z",
+  "entry_id": 1245,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 368,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.1,
+      "prompt_tokens": 2377,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.742,
+      "wall_s": 32.45
+    }
+  ],
+  "job_id": 1252,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same field of pale squares on a near-black ground, and this time each square cycles its opacity rhythm in perfect synchrony across the entire grid.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1223,
+    "root_entry_id": 1223
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A slow grid of pale squares, each fading in and out on its own rhythm.\n\nRevise: the same field of pale squares on a near-black ground, and this time each square cycles its opacity rhythm in perfect synchrony across the entire grid.",
+  "prompt_tokens": 2377,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1245/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1245",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing grid of luminous squares that pulse in perfect synchronization across the entire canvas. The visual effect emerges from a simple yet elegant technique: each square's opacity is calculated using a sine wave function that oscillates smoothly over time. All squares share the same rhythm, creating a unified breathing motion that seems to emanate from the void itself. The deep near-black background enhances the pale luminosity of the squares, while their precise geometric arrangement establishes a strong sense of order and symmetry. Viewers observe a continuous, cyclical pulse that requires no interaction to appreciate \u2013 the entire field appears to breathe as one organic unit.",
+  "submitted_by": "profcarroll",
+  "wall_s": 32.45
+}
