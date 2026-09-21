@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctwo flocks that avoid each other Revise: the same two separate, fluid\u2026\u201d \u2014 sketchgen entry 1179, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1179/ Licensed CC BY 4.0.",
+  "brief": "Two distinct, vibrant streams of contrasting colored particles flow across the canvas. The particles maintain a continuous, fluid motion, creating the illusion of separated currents. When these two streams enter a shared proximity, they interact dynamically, causing their individual particle colors to temporarily swap. This color exchange occurs only when the streams are close, creating a momentary blend of the contrasting palettes before they resume flowing separately.",
+  "completion_tokens": 778,
+  "created_utc": "2026-09-20T19:18:29Z",
+  "entry_id": 1179,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 778,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "prompt_tokens": 2359,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.923,
+      "wall_s": 97.216
+    }
+  ],
+  "job_id": 1183,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same two separate, continuous streams of vibrant colored particles, and this time they temporarily fuse into a single, brightly colored stream at their point of closest approach.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "parent_entry_id": 1137,
+    "root_entry_id": 699
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "two flocks that avoid each other\n\nRevise: the same two separate, fluid streams of colored particles, and this time one of the flocks pulses in size rhythmically\n\nRevise: the same two distinct, colored streams of particles, and this time the pulsing stream increases its frequency and maximum amplitude.\n\nRevise: the same two separate, fluid streams of colored particles, and this time the pulsating stream momentarily inverts its internal particle vectors during peak expansion.\n\nRevise: the same two separate, contrasting streams of vibrant colored particles, and this time the stream leaves a faintly glowing echo trailing the moment it reverses direction.\n\nRevise: the same two separate, distinct streams of contrasting and vibrant colored particles, and this time the streams briefly exchange particle colors when they are within a shared proximity.\n\nRevise: the same two distinct, continuous streams of vibrant colored particles, and this time they gently separate and curve away from each other as they enter shared proximity.\n\nRevise: the same distinct streams of vibrant colored particles, and this time they momentarily form a tight, radiating knot at their point of closest approach before separating.\n\nRevise: the same distinct streams of vibrant colored particles, and this time they leave a faint, dissipating echo trailing the moment the streams separate.\n\nRevise: the same two separate, continuous streams of vibrant colored particles, and this time they temporarily fuse into a single, brightly colored stream at their point of closest approach.",
+  "prompt_tokens": 2359,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1179/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1179",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts two distinct streams of colorful particles flowing across a dark canvas. The left stream glows in blue hues while the right stream pulses in green tones, each maintaining its own vibrant identity as they move independently. When the streams come into proximity, their particles momentarily swap colors in a dynamic interaction that creates a visual blend before they separate again. The effect emerges from a simple physics model where particles move with randomized velocities and bounce off screen edges, while their color states are dynamically updated based on proximity to particles from the opposing stream. The result is an organic, fluid visualization of interacting currents that demonstrates both separation and connection through color exchange.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.216
+}
