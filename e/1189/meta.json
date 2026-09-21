@@ -1,0 +1,130 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same interlocking jigsaw pieces, and this t\u2026\u201d \u2014 sketchgen entry 1189, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1189/ Licensed CC BY 4.0.",
+  "brief": "Colorful, interlocking jigsaw pieces are scattered across the canvas, each showing a unique fragment of a larger, cohesive image. A viewer can click and drag individual pieces to reposition them. When a piece is moved close to its intended location, it snaps into its correct place, eventually forming the complete picture.",
+  "completion_tokens": 2763,
+  "created_utc": "2026-09-20T21:24:59Z",
+  "entry_id": 1189,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 918,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2379,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.401,
+      "wall_s": 108.791
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 790,
+      "evidence": "gate exit 1: assertions failed: responds(click), responds(drag)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2501,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.4,
+      "wall_s": 58.835
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1055,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2501,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.427,
+      "wall_s": 57.421
+    }
+  ],
+  "job_id": 1193,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interlocking jigsaw puzzle pieces, and this time they snap into place when correctly positioned.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1154,
+    "root_entry_id": 1102
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle\n\nRevise: the same interlocking jigsaw pieces, and this time each segment displays a colorful, visible part of a larger image.\n\nRevise: the same interlocking jigsaw puzzle pieces, and this time they snap into place when correctly positioned.",
+  "prompt_tokens": 7381,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1189/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1189",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an interactive jigsaw puzzle experience where nine colored pieces are randomly scattered across the canvas. Each piece displays a unique number and contains a fragment of what will eventually form a complete image when properly assembled. Viewers can click and drag individual pieces to reposition them. When a piece is moved close enough to its intended location, it automatically snaps into place, gradually forming the complete picture. The implementation uses a simple but effective snapping mechanism that responds to user interaction while maintaining visual feedback during dragging operations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 225.047
+}
