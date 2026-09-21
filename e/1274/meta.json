@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca field of tiny compass needles that slowly turn toward the cursor, t\u2026\u201d \u2014 sketchgen entry 1274, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1274/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a constantly moving field of tiny, compass-like pointers scattered across the surface. In the absence of input, these pointers slowly and subtly drift, maintaining a general orientation toward a shared North point. As the cursor enters the field, the individual pointers react immediately, dynamically turning to align and point directly toward the cursor\u2019s current position. When the cursor moves away, the pointers gracefully cease their tracking and smoothly begin their slow, collective drift back toward the shared north.",
+  "completion_tokens": 824,
+  "created_utc": "2026-09-21T17:15:43Z",
+  "entry_id": 1274,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 824,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.6,
+      "prompt_tokens": 2393,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.128,
+      "wall_s": 96.215
+    }
+  ],
+  "job_id": 1281,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic field of tiny, compass-like pointers, and this time with a slightly increased overall size.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1244,
+    "root_entry_id": 1244
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "a field of tiny compass needles that slowly turn toward the cursor, then drift back to a shared north when it leaves\n\nRevise: the same dynamic field of tiny, compass-like pointers, and this time with a slightly increased overall size.",
+  "prompt_tokens": 2393,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1274/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1274",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of compass-like pointers that respond to user interaction. Initially, the pointers slowly drift toward a shared north direction, creating an organic, flowing motion across the canvas. When the cursor enters the field, individual pointers immediately orient themselves toward the cursor's position, creating a responsive and visually engaging effect. As the cursor moves, the pointers follow with smooth transitions, and when the cursor leaves, they gradually return to their collective drift pattern. The visual result is a constantly shifting landscape of directional intent that demonstrates both individual responsiveness and group coherence, using minimal but effective visual elements to convey complex motion dynamics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.215
+}
