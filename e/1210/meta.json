@@ -1,0 +1,116 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same digital jigsaw puzzle, and this time t\u2026\u201d \u2014 sketchgen entry 1210, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1210/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a large, nearly complete landscape image made of jigsaw puzzle pieces. Most pieces are already interlocked to show a detailed natural scene, but several loose pieces remain at the edges. A viewer can click and drag these loose pieces to move them around the canvas.",
+  "completion_tokens": 3728,
+  "created_utc": "2026-09-21T00:41:58Z",
+  "entry_id": 1210,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1063,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.4,
+      "prompt_tokens": 2351,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.308,
+      "wall_s": 114.043
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1253,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "prompt_tokens": 2474,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.009,
+      "wall_s": 86.216
+    },
+    {
+      "assertions": {},
+      "attempt": 3,
+      "checks": {},
+      "completion_tokens": 1412,
+      "evidence": "gate did not finish and wrote no report.json: the gate did not finish within 600s",
+      "exit": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": null,
+      "prompt_tokens": 2474,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": null,
+      "wall_s": 78.14
+    }
+  ],
+  "job_id": 1214,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same digital jigsaw puzzle, and this time the pieces are more assembled, showing a larger completed landscape view.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1099,
+    "root_entry_id": 1099
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle\n\nRevise: the same digital jigsaw puzzle, and this time the pieces are more assembled, showing a larger completed landscape view.",
+  "prompt_tokens": 7299,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1210/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1210",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a jigsaw puzzle landscape scene where most pieces are already interlocked to form a natural scene with grass, paths, and trees. Several loose puzzle pieces remain at the edges of the canvas that viewers can click and drag around. The implementation uses a grid-based approach to arrange the majority of puzzle pieces while randomly placing a selection of pieces to represent loose items. The visualization features a simplified landscape using basic shapes and colors to depict grass, dirt paths, and trees. The interactive elements allow users to manipulate the loose pieces by clicking and dragging them across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 278.399
+}
