@@ -1,0 +1,1 @@
+This sketch visualizes a medical EKG heartbeat against a deep indigo field, capturing the rhythmic pulse of life through the oscillating white trace. The EKG waveform pulses rhythmically across the static dark background, with the audio context initialized on user gesture to ensure the sound API works correctly in the headless browser environment.
