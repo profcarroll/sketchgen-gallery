@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 1208, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1208/ Licensed CC BY 4.0.",
+  "brief": "A bright, intensely fluorescent neon line scrolls continuously from left to right across a solid black background. The line traces an erratic EKG pattern, characterized by unpredictable and irregular spikes and dips that simulate a chaotic heartbeat.",
+  "completion_tokens": 1231,
+  "created_utc": "2026-09-20T23:33:46Z",
+  "entry_id": 1208,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 397,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 320000 pixels changed\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1645,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.191,
+      "wall_s": 66.933
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 473,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.5,
+      "prompt_tokens": 1713,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.36,
+      "wall_s": 33.489
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 361,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 320000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1748,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.135,
+      "wall_s": 29.193
+    }
+  ],
+  "job_id": 1212,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 1175,
+    "root_entry_id": 1069
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.",
+  "prompt_tokens": 5106,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1208/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1208",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuous, erratic EKG pattern that scrolls from left to right across a black canvas. The neon yellow line simulates a chaotic heartbeat through unpredictable spikes and dips, with occasional large irregularities to mimic real EKG variability. The animation runs smoothly without user interaction until the canvas is clicked, at which point it begins its motion. The visual effect is achieved by drawing a series of points that shift across the screen over time, creating a trail-like motion that maintains visibility as new data replaces old.",
+  "submitted_by": "profcarroll",
+  "wall_s": 129.615
+}
