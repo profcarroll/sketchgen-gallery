@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks Revise: the same sawmill, and this time the\u2026\u201d \u2014 sketchgen entry 1288, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1288/ Licensed CC BY 4.0.",
+  "brief": "A sawmill mechanism continuously processes cylindrical logs, slicing them into rectangular planks. As the planks emerge from the mill, they drop toward the bottom of the frame, where they automatically settle into a perfectly straight, organized, and structured row. The animation cycles through the process of log consumption and plank accumulation, creating a steady stream of timber being neatly arranged at the base of the view.",
+  "completion_tokens": 1310,
+  "created_utc": "2026-09-21T18:34:06Z",
+  "entry_id": 1288,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1310,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "prompt_tokens": 2383,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.912,
+      "wall_s": 124.612
+    }
+  ],
+  "job_id": 1295,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same milling logs into planks, and this time the accumulated planks settle themselves into a precisely structured, organized row at the bottom of the frame.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 1268,
+    "root_entry_id": 1071
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "milling logs into planks\n\nRevise: the same sawmill, and this time the planks stack into a neatly structured pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.\n\nRevise: the same milling logs into planks, and this time the planks accumulate and form a much larger, irregular pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the collected planks stack themselves into a precise, orderly, and structured pile.\n\nRevise: the same milling logs into planks, and this time the collected planks form a large, irregular, and disorganized mound at the bottom.\n\nRevise: the same milling logs into planks, and this time the accumulated planks settle themselves into a precisely structured, organized row at the bottom of the frame.",
+  "prompt_tokens": 2383,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1288/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1288",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a sawmill process where cylindrical logs are continuously fed through a cutting mechanism and transformed into rectangular planks. The animation shows logs descending from the top of the frame, being sliced into planks that then fall toward the bottom. As the planks reach the base, they automatically settle into a perfectly organized row. The visual metaphor captures the mechanical precision and rhythmic flow of industrial timber processing, with logs appearing as rotating cylinders and finished planks as stacked rectangles that organize themselves into neat lines at the bottom of the screen.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.612
+}
