@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA row of five colored pads; click one to play its note and light it u\u2026\u201d \u2014 sketchgen entry 1206, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1206/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a horizontal arrangement of five distinct, colored rectangular pads. Each pad appears to lift slightly above the background due to a subtle, uniform drop shadow. When the viewer clicks one of the pads, two things happen: the pad emits a noticeable light glow, and a corresponding musical note is played. The colors and sounds react immediately to the touch, making the pads function like an interactive, colorful, musical keyboard.",
+  "completion_tokens": 749,
+  "created_utc": "2026-09-20T23:16:58Z",
+  "entry_id": 1206,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 749,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "prompt_tokens": 2381,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.31,
+      "wall_s": 54.054
+    }
+  ],
+  "job_id": 1210,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same horizontal row containing five distinct colored rectangular pads, and this time the pads are given a subtle, uniform drop shadow to enhance their physical separation from the canvas background.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "parent_entry_id": 1173,
+    "root_entry_id": 910
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "A row of five colored pads; click one to play its note and light it up.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges.\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the interior of each pad features a subtle vertical color gradient.\n\nRevise: the same horizontal row containing five distinct, colored rectangular pads, and this time the pads are surrounded by a subtle, luminous border.\n\nRevise: the same horizontal arrangement of five distinct colored rectangular pads, and this time the pads are designed with smoothly rounded corners instead of sharp edges\n\nRevise: the same horizontal row containing five distinct colored rectangular pads, and this time the pads are given a subtle, uniform drop shadow to enhance their physical separation from the canvas background.",
+  "prompt_tokens": 2381,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1206/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1206",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This interactive sketch presents a horizontal arrangement of five musical pads, each glowing with distinct colors and producing a corresponding tone when clicked. The pads appear to lift slightly from the background through subtle drop shadows that enhance their three-dimensional presence. When activated by a click, each pad emits a light glow and plays a musical note \u2014 creating an engaging visual and auditory experience that transforms the canvas into an interactive musical instrument. The implementation uses p5.js for both graphics rendering and audio generation, with careful attention to the frame budget and user gesture requirements for browser audio context activation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 54.054
+}
