@@ -1,0 +1,96 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 1234, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1234/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays overlapping, softly defined planes of deep, rich, and highly saturated color. These solid planes are intersected by dynamic horizontal wave formations. These waves are constantly shifting, causing the chromatic color saturation to oscillate across the composition. The amplitude of this wave formation is irregular and randomized, giving the illusion of a continuous, restless flow across the entire surface.",
+  "completion_tokens": 1289,
+  "created_utc": "2026-09-21T05:12:43Z",
+  "entry_id": 1234,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 671,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 268.8 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 268.8,
+      "prompt_tokens": 2354,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.227,
+      "wall_s": 48.002
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 618,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "prompt_tokens": 2472,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.961,
+      "wall_s": 48.721
+    }
+  ],
+  "job_id": 1240,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same overlapping planes of deep, rich, and highly saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "parent_entry_id": 1205,
+    "root_entry_id": 35
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same overlapping color fields, and this time the diffusion should subtly shift the saturation of the outer layer.\n\nRevise: the same overlapping, softly defined fields of rich color, and this time the intensity of the chromatic shift should pulse rhythmically across the composition.\n\nRevise: the same overlapping planes of rich, softly defined color, and this time the subtle chroma shift should briefly intensify the central vertical dividing lines.\n\nRevise: the same overlapping planes of deep, rich color, and this time the subtle chroma shift should intensify the defining boundaries of the outermost vertical layers.\n\nRevise: the same overlapping planes of deep, rich color, and this time the chroma shift should intensify sequentially from the center to the outer edges.\n\nRevise: the same overlapping planes of deep, saturated color, and this time the gradual chromatic shift should flow in smooth, horizontal waves across the composition.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping, softly defined planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping, softly defined planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and highly saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.",
+  "prompt_tokens": 4826,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1234/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1234",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic visual composition of overlapping colored planes intersected by flowing wave formations. The background features deep, saturated colors that shift and move independently across the canvas. Horizontal waves ripple through the scene with varying amplitudes and frequencies, creating an illusion of continuous, restless motion. The color saturation oscillates naturally as the waves interact with the solid planes, producing a mesmerizing interplay between geometric forms and fluid dynamics. The composition evolves organically without any external input, demonstrating how simple mathematical functions can create complex, visually engaging patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.723
+}
