@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 5,
+  "attribution": "\u201cjigsaw puzzle\u201d \u2014 sketchgen entry 1099, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1099/ Licensed CC BY 4.0.",
+  "brief": "A digital jigsaw puzzle features colorful, interlocking pieces scattered across a solid-colored canvas. Each piece displays a fragment of a large, vibrant image. Users can click and drag the pieces to move them around the screen. When a piece is placed near its correct destination, it snaps into the proper position to help complete the picture.",
+  "completion_tokens": 4633,
+  "created_utc": "2026-09-20T05:56:45Z",
+  "entry_id": 1099,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 884,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": 1705,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 1.329,
+      "wall_s": 91.951
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 771,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 19)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1827,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.299,
+      "wall_s": 49.48
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 947,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2000,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.302,
+      "wall_s": 61.916
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1144,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 124)\n\ngate exit 1: checks failed: console_clean; assertions failed: responds(click)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 1865,
+      "rules_file": "control",
+      "source": "attempt-4",
+      "total_s": 1.308,
+      "wall_s": 69.329
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": true
+      },
+      "attempt": 5,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 887,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "prompt_tokens": 1854,
+      "rules_file": "control",
+      "source": "attempt-5",
+      "total_s": 11.796,
+      "wall_s": 56.3
+    }
+  ],
+  "job_id": 1103,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1099
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "jigsaw puzzle",
+  "prompt_tokens": 9251,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4",
+      "attempt-5"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1099/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1099",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a digital jigsaw puzzle where colorful, interlocking pieces are scattered across a dark canvas. Each piece displays a fragment of a vibrant landscape image, and users can click and drag them around the screen. When a piece is moved near its correct destination, it snaps into place to help complete the picture. The interface simulates the satisfying interaction of physical puzzle assembly through visual feedback and snapping mechanics, with pieces maintaining their image fragments while being draggable and responsive to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 328.976
+}
