@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cphoto collage\u201d \u2014 sketchgen entry 1229, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1229/ Licensed CC BY 4.0.",
+  "brief": "A collage of various photographic textures, shapes, and grayscale fragments that drift and rotate slowly across the canvas in a continuous, layered flow. Clicking the canvas triggers a sudden, randomized rearrangement of all elements, while dragging the mouse allows the user to pull specific fragments across the screen.",
+  "completion_tokens": 785,
+  "created_utc": "2026-09-21T04:12:55Z",
+  "entry_id": 1229,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 785,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.1,
+      "prompt_tokens": 1699,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.606,
+      "wall_s": 80.461
+    }
+  ],
+  "job_id": 1235,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1229
+  },
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "photo collage",
+  "prompt_tokens": 1699,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1229/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1229",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, layered composition of photographic fragments that drift and rotate slowly across the canvas. Each fragment is a randomly generated grayscale texture with organic shapes and patterns. The elements move independently with subtle velocity and rotation, creating an immersive, flowing visual experience. Clicking anywhere triggers a sudden, randomized rearrangement of all fragments, while dragging allows users to pull specific fragments across the screen. The continuous motion and interactive response create a sense of fluidity and control, where the viewer can influence the composition without disrupting its underlying rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 80.461
+}
