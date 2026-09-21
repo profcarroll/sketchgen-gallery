@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 1253, prompted by profcarroll, written by gemini-3.8-flash under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1253/ Licensed CC BY 4.0.",
+  "brief": "Stacked rectilinear fields of deep, luminous color hover over a warm ochre-plum ground. Two large, soft-edged rectangular color masses\u2014one intense crimson and burnt orange, the other deep plum-violet\u2014float vertically with feathered, atmospheric perimeters. Across time, subtle chromatic breathing gently shifts the saturation, hue offsets, and translucent edge bleeds of each block, evoking the radiant depth and emotional vibration characteristic of classic color-field painting. The composition breathes and evolves continuously in self-contained contemplative motion without requiring any viewer interaction.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T14:58:20Z",
+  "entry_id": 1253,
+  "executor": "gemini-3.8-flash",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "gemini-3.8-flash",
+      "ms_per_frame": 3.9,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.91,
+      "wall_s": 17.0
+    }
+  ],
+  "job_id": 1260,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1253
+  },
+  "off_node": [
+    {
+      "model": "gemini-3.8-flash",
+      "step": "planner"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "step": "executor"
+    }
+  ],
+  "planner": "gemini-3.8-flash",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist\\x27s signature forms and use of color.",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (gemini-3.8-flash) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1253/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1253",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "An homage to the contemplative spatial presence of Mark Rothko\u2019s Multiform paintings. Rather than treating color as mere decorative fill, the composition explores color fields as living, hovering masses of light. Two immense rectilinear forms\u2014one radiant with embers of cadmium and crimson, the other steeped in nocturnal plum\u2014float within an earthen envelope. Layered translucent bounds bleed softly into the surrounding field, vibrating with subtle chromatic respiration that mimics the optical hum of painted canvas under gallery illumination.",
+  "submitted_by": "profcarroll",
+  "wall_s": 17.0
+}
