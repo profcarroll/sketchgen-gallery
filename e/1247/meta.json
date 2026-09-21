@@ -1,0 +1,73 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog Revise: the same lightho\u2026\u201d \u2014 sketchgen entry 1247, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1247/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an ethereal, deep-water scene enveloped in dense, shifting fog. A strong lighthouse beam sweeps across the mist, defining a clear, bright arc. The fog itself drifts slowly, creating subtle, constantly changing gradients of gray and muted blues. As the light cuts through the water surface, the moonlight enhances the effect, causing the reflected beam to fracture. These reflections are not smooth; they appear as countless, sharp, shimmering points of intense color that shimmer and glitter independently, adding a fragmented texture to the otherwise tranquil, sweeping motion of the scene.",
+  "completion_tokens": 900,
+  "created_utc": "2026-09-21T13:57:36Z",
+  "entry_id": 1247,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 900,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.5,
+      "prompt_tokens": 2397,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.785,
+      "wall_s": 59.989
+    }
+  ],
+  "job_id": 1254,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same lighthouse beam sweeping over drifting fog, and this time the moonlit water catches the beam in more broken, sharper reflections.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1246,
+    "root_entry_id": 1246
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a lighthouse beam sweeping over drifting fog\n\nRevise: the same lighthouse beam sweeping over drifting fog, and this time the moonlit water catches the beam in more broken, sharper reflections.",
+  "prompt_tokens": 2397,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1247/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1247",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an ethereal underwater scene with dense, shifting fog and a sweeping lighthouse beam. The composition uses thousands of individual particles to simulate fog density, each moving at different speeds to create a sense of depth and motion. A dynamic beam sweeps across the mist, creating bright arcs that cut through the gray atmosphere. The scene incorporates subtle moonlight reflections as shimmering points that flicker independently, adding texture to the otherwise smooth, flowing motion. The entire effect is achieved through careful layering and blending techniques within p5's 2D rendering, creating an immersive, tranquil yet dramatic underwater environment that evolves without any user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 59.989
+}
