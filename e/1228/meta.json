@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 1228, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1228/ Licensed CC BY 4.0.",
+  "brief": "The sketch presents a detailed, three-dimensional, cutaway view of a running internal combustion engine. The canvas displays pistons moving dynamically within their cylinders, connected to a visible crankshaft. The primary visual focus is the synchronized mechanical action of the intake and exhaust valves. As the pistons undergo their cycle, the valves visibly and sequentially open and close. This movement illustrates the precise timing and crucial mechanical relationship between the piston's motion and the engine's gas exchange cycle.",
+  "completion_tokens": 3094,
+  "created_utc": "2026-09-21T04:03:14Z",
+  "entry_id": 1228,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1075,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 92)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 99)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 121)\n\ngate exit 1: checks failed: console_clean; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.1,
+      "prompt_tokens": 1721,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.06,
+      "wall_s": 99.934
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2019,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.4,
+      "prompt_tokens": 1997,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 11.933,
+      "wall_s": 119.277
+    }
+  ],
+  "job_id": 1234,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same detailed, three-dimensional, cutaway view of a running internal combustion engine, and this time the opening and closing of the intake and exhaust valves are clearly timed with the piston's position.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "parent_entry_id": 1201,
+    "root_entry_id": 422
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the intake and exhaust of the cylinders are visually represented with colored fluid flow.\n\nRevise: the same dynamic, cross-sectional cutaway of a running combustion engine, and this time the intake and exhaust valves are visibly actuated and timed with the movement of the connecting rods.\n\nRevise: the same dynamic, cross-sectional view of a combustion engine's core mechanisms, and this time the connecting rods visibly rotating a crankshaft.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the connecting rods visibly articulating at their bearing points on the crankshaft.\n\nRevise: the same dynamic, three-dimensional cross-section of a running combustion engine, and this time the articulation points where the connecting rods bear on the crankshaft are clearly visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running combustion engine, and this time the intake and exhaust are represented by clearly visible, timed colored fluid flows.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the visible timing gear train linking the crankshaft and the valves is demonstrated.\n\nRevise: the same dynamic, cutaway cross-section of a running combustion engine, and this time the individual components of the valve train are clearly separated and visible.\n\nRevise: the same dynamic, cross-sectional cutaway view of a running internal combustion engine, and this time the rapid, expanding combustion gases inside the cylinder are visually demonstrated, pushing the piston downward.\n\nRevise: the same dynamic, cutaway cross-section view of a running internal combustion engine, and this time the opening and closing of the intake and exhaust valves are clearly timed with the piston's position.\n\nRevise: the same dynamic, cross-sectional cutaway of a running internal combustion engine, and this time the rapid, expanding combustion gases inside the cylinder are visually demonstrated, pushing the piston downward.\n\nRevise: the same dynamic, three-dimensional cross-section cutaway of a running internal combustion engine, and this time the visible timing chain linking the crankshaft to the camshaft is clearly highlighted.\n\nRevise: the same detailed, three-dimensional, cutaway view of a running internal combustion engine, and this time the opening and closing of the intake and exhaust valves are clearly timed with the piston's position.",
+  "prompt_tokens": 3718,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1228/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1228",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a detailed three-dimensional visualization of an internal combustion engine's mechanical components. It features a cutaway view showing pistons moving within cylinders, connected to a rotating crankshaft, with synchronized intake and exhaust valves that open and close in precise coordination with the piston cycle. The engine operates in real-time, demonstrating the timing and interaction between all major moving parts. The visualization emphasizes the dynamic relationship between valve operation and piston motion, illustrating how gas exchange occurs during the engine's four-stroke cycle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 219.211
+}
