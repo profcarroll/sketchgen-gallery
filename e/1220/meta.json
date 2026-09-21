@@ -1,0 +1,124 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ctextile textures interweaving with color saturation Revise: the same\u2026\u201d \u2014 sketchgen entry 1220, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1220/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, abstract tapestry woven from richly saturated textiles. The viewer observes the delicate contrast between two elements: wildly flowing, organic fibers and sharply structured, geometric knots. The interwoven knots appear defined, rigid, and angular, interrupting the fluid motion of the natural, curving threads. The entire composition is in constant, subtle motion, giving the sense of a massive, dynamic woven cloth that is perpetually shifting and unfolding.",
+  "completion_tokens": 2630,
+  "created_utc": "2026-09-21T03:04:49Z",
+  "entry_id": 1220,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1074,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 55)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 74)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 82)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 996.1 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 996.1,
+      "prompt_tokens": 1720,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 60.615,
+      "wall_s": 100.882
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 654,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 42)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 64)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 108.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 108.4,
+      "prompt_tokens": 2031,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 22.734,
+      "wall_s": 88.522
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 902,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "prompt_tokens": 1985,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 2.611,
+      "wall_s": 59.102
+    }
+  ],
+  "job_id": 1226,
+  "last_error": "paused: update.sh deploy",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract tapestry of richly saturated textiles, and this time exaggerating the contrast between the flowing organic fibers and the structured geometric knots",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "parent_entry_id": 1191,
+    "root_entry_id": 887
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": null,
+  "prompt": "textile textures interweaving with color saturation\n\nRevise: the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.\n\nRevise: the same abstract tapestry composed of flowing textile textures, and this time emphasizing the rigid geometry of the interwoven knots so they are more structured and angular.\n\nRevise: the same abstract tapestry woven from richly saturated, flowing textile textures, and this time making the individual interwoven knots appear larger and more defined.\n\nRevise: the same abstract tapestry, and this time exaggerating the contrast between the organic flowing fibers and the rigid geometric knots.\n\nRevise: the same intricate abstract tapestry of woven textures, and this time increasing the density and size of the sharply defined geometric knots.\n\nRevise: the same abstract tapestry of woven textures, and this time exaggerating the contrast between the fluid organic fibers and the structured geometric knots.\n\nRevise: the same abstract tapestry of richly saturated textiles, and this time exaggerating the contrast between the flowing organic fibers and the structured geometric knots",
+  "prompt_tokens": 5736,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1220/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1220",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, dynamic tapestry of motion and structure using p5.js's WEBGL renderer. The canvas displays thousands of glowing particles that flow organically through space, interrupted by sharply defined geometric knots that rotate in harmony with the cosmic movement. The interplay between fluid, curving threads and rigid, angular elements evokes the feeling of a vast, living textile unfolding in real-time. Audio input drives both the particle motion and visual scale, creating an ever-shifting composition where sound and sight merge into a single, cohesive experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 248.506
+}
