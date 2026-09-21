@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cvines growing, clinging to a brick wall\u201d \u2014 sketchgen entry 1256, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1256/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a textured brick wall painted in earth tones of red and brown. Emerald and forest green vines cling naturally to the masonry, with tendrils and leaves continuously shifting and blooming, simulating slow, biological growth across the entire surface. The movement is organic and subtle, depicting the slow creep of vegetation over time. While the growth proceeds independently, a click anywhere on the wall prompts a sudden, concentrated burst of vibrant new foliage originating from that point, increasing the density and variety of the covering.",
+  "completion_tokens": 1310,
+  "created_utc": "2026-09-21T15:13:06Z",
+  "entry_id": 1256,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1310,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.7,
+      "prompt_tokens": 2402,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.806,
+      "wall_s": 81.528
+    }
+  ],
+  "job_id": 1263,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1256
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "vines growing, clinging to a brick wall",
+  "prompt_tokens": 2402,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1256/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1256",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a textured brick wall with organic vine growth that evolves naturally over time. The wall is constructed from individual brick elements with a subtle texture pattern, painted in earthy red and brown tones. Emerald and forest green vines creep across the masonry surface with organic movement patterns - tendrils extend and contract while leaves bloom and fade in a continuous cycle of growth.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.528
+}
