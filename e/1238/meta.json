@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks Revise: the same sawmill, and this time the\u2026\u201d \u2014 sketchgen entry 1238, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1238/ Licensed CC BY 4.0.",
+  "brief": "A 3D scene depicts cylindrical brown logs being processed through a sawmill. As the logs are sliced, rectangular tan planks emerge and fall to the bottom of the canvas. These planks automatically stack themselves into a precise, orderly, and structured pile. The motion is continuous, with the neat, geometric pile growing as more logs are milled into planks.",
+  "completion_tokens": 1338,
+  "created_utc": "2026-09-21T05:38:38Z",
+  "entry_id": 1238,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1338,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.6,
+      "prompt_tokens": 2379,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.179,
+      "wall_s": 124.749
+    }
+  ],
+  "job_id": 1244,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same milling logs into planks, and this time the collected planks stack themselves into a precise, orderly, and structured pile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "parent_entry_id": 1209,
+    "root_entry_id": 1071
+  },
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "milling logs into planks\n\nRevise: the same sawmill, and this time the planks stack into a neatly structured pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.\n\nRevise: the same milling logs into planks, and this time the planks accumulate and form a much larger, irregular pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the collected planks stack themselves into a precise, orderly, and structured pile.",
+  "prompt_tokens": 2379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1238/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1238",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuous sawmill process where cylindrical brown logs are sliced into rectangular tan planks that fall and stack into an orderly pile. Using p5.js WEBGL renderer, I simulate the physics of falling and stacking with gravity, collision detection, and spatial partitioning. The scene is fully self-contained with no external dependencies beyond the core p5 library, demonstrating a clean, geometric animation of industrial processing.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.749
+}
