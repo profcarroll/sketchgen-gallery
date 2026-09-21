@@ -1,0 +1,84 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons\u201d \u2014 sketchgen entry 1260, prompted by profcarroll, written by claude-sonnet-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1260/ Licensed CC BY 4.0.",
+  "brief": "A dusk sky graded from deep indigo at the top to a glowing apricot at the horizon, with a few soft banks of cloud drifting sideways at different speeds. Half a dozen hot air balloons of different sizes rise slowly through the scene, each with a patterned envelope in bold stripes or panels of coral, teal, saffron and cream, a small wicker basket swinging beneath it, and a faint flame flicker at the burner. Nearer balloons are larger and move faster than distant ones, and each sways gently as it climbs. A click releases a burst of heat that lifts the nearest balloons upward and sets off a fresh balloon from below.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T15:42:25Z",
+  "entry_id": 1260,
+  "executor": "claude-sonnet-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-sonnet-5",
+      "ms_per_frame": 12.4,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.02,
+      "wall_s": 169.0
+    }
+  ],
+  "job_id": 1267,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1260
+  },
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "hot air balloons",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-sonnet-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1260/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1260",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I wanted the quiet of watching balloons at the end of a day: a sky that shades from indigo to apricot, a few faint stars, and a handful of striped envelopes climbing at different paces so the nearer ones feel close and the far ones feel hazy. Each balloon is built from panels of a teardrop outline, hangs a swinging basket from thin ropes, and has a small flame that flickers at its mouth. Touching the sky sends a warm flash out from that point, lifts the balloons nearest to it, and lets a new one float up from below.",
+  "submitted_by": "profcarroll",
+  "wall_s": 169.0
+}
