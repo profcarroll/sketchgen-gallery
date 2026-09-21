@@ -1,0 +1,158 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 4,
+  "attribution": "\u201ctexture map the wikipedia picture of the day onto a low-poly form\u201d \u2014 sketchgen entry 1230, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1230/ Licensed CC BY 4.0.",
+  "brief": "A low-poly, faceted geometric form floats in the center of the canvas. The Wikipedia picture of the day is mapped onto the object's flat, angular surfaces, creating a fragmented version of the image across the shards of geometry. The shape rotates continuously in a slow, rhythmic motion. Users can click and drag the mouse to rotate the object manually, exploring the textured facets from any angle.",
+  "completion_tokens": 4296,
+  "created_utc": "2026-09-21T04:20:12Z",
+  "entry_id": 1230,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 451,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag), uses(webgl)\n\nResources the sketch asked for and did not get:\n- https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Wikipedia_Picture_of_the_Day_2024-10-01.jpg/800px-Wikipedia_Picture_of_the_Day_2024-10-01.jpg \u2014 HTTP 400\n  Reaching outside the sketch is allowed. What you reach for has to arrive: use a host that serves CORS headers, or carry the asset in the sketch itself as a data: URI. Until it arrives the canvas may be blank and every check and assertion below will read zero, whatever the rest of the code does.\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(drag): no canvas snapshots to compare\n- uses(webgl): renderer context is unreadable\n\nConsole (3 error lines, first 3 shown):\n- [error] Failed to load resource: the server responded with a status of 400 ()\n- [error] Failed to load resource: the server responded with a status of 400 ()\n- [error] Event\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2404,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.092,
+      "wall_s": 49.188
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1218,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.0,
+      "prompt_tokens": 2785,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.284,
+      "wall_s": 83.741
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1321,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag), uses(webgl)\n\nResources the sketch asked for and did not get:\n- https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pic_of_the_day_2024-11-15.jpg/640px-Pic_of_the_day_2024-11-15.jpg \u2014 HTTP 400\n  Reaching outside the sketch is allowed. What you reach for has to arrive: use a host that serves CORS headers, or carry the asset in the sketch itself as a data: URI. Until it arrives the canvas may be blank and every check and assertion below will read zero, whatever the rest of the code does.\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(drag): no canvas snapshots to compare\n- uses(webgl): renderer context is unreadable\n\nConsole (3 error lines, first 3 shown):\n- [error] Failed to load resource: the server responded with a status of 400 ()\n- [error] Failed to load resource: the server responded with a status of 400 ()\n- [error] Event\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2442,
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 11.081,
+      "wall_s": 80.337
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 4,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1306,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.3,
+      "prompt_tokens": 2779,
+      "rules_file": "treatment",
+      "source": "attempt-4",
+      "total_s": 3.938,
+      "wall_s": 89.295
+    }
+  ],
+  "job_id": 1236,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1230
+  },
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "texture map the wikipedia picture of the day onto a low-poly form",
+  "prompt_tokens": 10410,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3",
+      "attempt-4"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1230/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1230",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a low-poly, faceted geometric form that orbits slowly in the center of the canvas. The object's angular surfaces are mapped with a texture\u2014here represented by a placeholder image but intended to be the Wikipedia picture of the day. The shape rotates continuously with a gentle, rhythmic motion, while users can interactively explore its textured facets by clicking and dragging. The visual effect creates a fragmented, crystalline representation of the source image across the object's many geometric planes. The technique uses WebGL rendering for efficient 3D drawing, and the mesh is constructed programmatically using triangle indices to create a faceted sphere with adjustable polygon count.",
+  "submitted_by": "profcarroll",
+  "wall_s": 302.561
+}
