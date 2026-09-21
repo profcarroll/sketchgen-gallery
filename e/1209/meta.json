@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks Revise: the same sawmill, and this time the\u2026\u201d \u2014 sketchgen entry 1209, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1209/ Licensed CC BY 4.0.",
+  "brief": "In a 3D scene, a sawmill mechanism processes cylindrical logs by slicing them into rectangular planks. The planks fall from the machinery and collect at the bottom of the frame, forming a massive, chaotic, and irregular pile that continuously grows. The movement is constant as logs are fed through the saw and more planks are added to the growing heap.",
+  "completion_tokens": 1329,
+  "created_utc": "2026-09-20T23:41:15Z",
+  "entry_id": 1209,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1329,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.8,
+      "prompt_tokens": 2378,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.84,
+      "wall_s": 125.808
+    }
+  ],
+  "job_id": 1213,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same milling logs into planks, and this time the planks accumulate and form a much larger, irregular pile at the bottom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "parent_entry_id": 1176,
+    "root_entry_id": 1071
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "milling logs into planks\n\nRevise: the same sawmill, and this time the planks stack into a neatly structured pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.\n\nRevise: the same milling logs into planks, and this time the planks accumulate and form a much larger, irregular pile at the bottom.",
+  "prompt_tokens": 2378,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1209/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1209",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuously operating sawmill mechanism in a 3D space. Cylindrical logs are fed into a rotating sawblade that cuts them into rectangular planks. The resulting planks fall from the machinery and accumulate at the bottom of the scene, creating a growing, chaotic pile. The visualization uses WebGL rendering for three-dimensional effects, with physics simulation including gravity and rotation to animate the falling planks. The scene features a constant cycle of log input, cutting, and plank accumulation that creates an organic, dynamic heap forming over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 125.808
+}
