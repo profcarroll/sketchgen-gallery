@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog\u201d \u2014 sketchgen entry 1249, prompted by profcarroll, written by gemini-3.8-flash under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1249/ Licensed CC BY 4.0.",
+  "brief": "A silhouetted coastal cliff and lighthouse tower stand against a deep midnight-blue expanse. From the lantern room, a broad, warm golden-white beam of light rotates continuously in slow, panoramic arcs across the scene. Translucent, organic banks of fog drift lazily across the frame at varying horizontal speeds and altitudes, catching luminous scattering and brightening into hazy silver gradients wherever the beam strikes them. Below, dark obsidian ocean water rolls with gentle cresting highlights reflecting ambient moonlight and intermittent beam flashes. The entire nocturnal seascape breathes and evolves on its own in continuous, tranquil motion without requiring any viewer interaction.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T14:51:12Z",
+  "entry_id": 1249,
+  "executor": "gemini-3.8-flash",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "gemini-3.8-flash",
+      "ms_per_frame": 3.5,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.859,
+      "wall_s": 17.0
+    }
+  ],
+  "job_id": 1256,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1249
+  },
+  "off_node": [
+    {
+      "model": "gemini-3.8-flash",
+      "step": "planner"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "step": "executor"
+    }
+  ],
+  "planner": "gemini-3.8-flash",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a lighthouse beam sweeping over drifting fog",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (gemini-3.8-flash) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1249/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1249",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A study in nocturnal atmosphere and volumetric illumination, capturing the solitary vigil of a lighthouse overlooking a quiet coastal fog. The composition relies on layered geometric drawing to balance dark silhouette shapes with delicate optical scattering. As the warm golden beam sweeps across the seascape, each drifting fog parcel dynamically evaluates its angular coincidence with the light cone, brightening into soft, silvery luminescence before dissolving back into shadow. Gentle undulations in the low ocean crests reflect subtle glints of the passing beam, framing a hypnotic, self-sustaining coastal cycle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 17.0
+}
