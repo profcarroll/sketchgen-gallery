@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmilling logs into planks Revise: the same sawmill, and this time the\u2026\u201d \u2014 sketchgen entry 1268, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1268/ Licensed CC BY 4.0.",
+  "brief": "Thick, cylindrical logs move through a sawmill, being sliced into rectangular wooden planks. The planks fall continuously toward the bottom of the frame, accumulating into a large, irregular, and disorganized mound of overlapping pieces. The scene features earthy brown tones and textures, with the planks piling up in a chaotic, unorganized heap. The animation is constant, showing the ongoing process of milling.",
+  "completion_tokens": 1260,
+  "created_utc": "2026-09-21T16:31:31Z",
+  "entry_id": 1268,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1260,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.5,
+      "prompt_tokens": 2388,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.21,
+      "wall_s": 123.669
+    }
+  ],
+  "job_id": 1275,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same milling logs into planks, and this time the collected planks form a large, irregular, and disorganized mound at the bottom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "parent_entry_id": 1238,
+    "root_entry_id": 1071
+  },
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "milling logs into planks\n\nRevise: the same sawmill, and this time the planks stack into a neatly structured pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the settled planks stack themselves to form a neat, vertical row.\n\nRevise: the same milling logs into planks, and this time the planks accumulate and form a much larger, irregular pile at the bottom.\n\nRevise: the same milling logs into planks, and this time the collected planks stack themselves into a precise, orderly, and structured pile.\n\nRevise: the same milling logs into planks, and this time the collected planks form a large, irregular, and disorganized mound at the bottom.",
+  "prompt_tokens": 2388,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1268/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1268",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuous sawmill process where cylindrical logs move through a cutting mechanism and are sliced into wooden planks. The animation shows logs entering the sawmill from the left, being cut apart into multiple planks that then fall downward under gravity. These planks accumulate in a chaotic, irregular pile at the bottom of the frame. Using WEBGL rendering, the scene creates depth with perspective, while earthy brown color tones and simple geometric shapes convey the organic texture of wood. The animation runs continuously without user interaction, showing the ongoing industrial process through particle-like motion and stacking behavior that builds up into an organic heap.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.669
+}
