@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctwo flocks that avoid each other\u201d \u2014 sketchgen entry 1251, prompted by profcarroll, written by gemini-3.8-flash under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1251/ Licensed CC BY 4.0.",
+  "brief": "Two distinct flocks of streamlined, arrowhead particles circulate smoothly across a dark slate-gray canvas. One flock gleams in bright amber and copper hues, while the other shines in vivid cyan and electric azure. Each flock exhibits cohesive flocking behavior, aligning with and maintaining proximity to its own members. When the two opposing swarms draw close to one another, an invisible repulsive force pushes them apart, causing them to part like opposing currents in a river, curving gracefully around the boundary before reforming. The continuous, fluid dance of mutual avoidance unfolds endlessly on its own without requiring any viewer interaction.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T14:54:46Z",
+  "entry_id": 1251,
+  "executor": "gemini-3.8-flash",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "gemini-3.8-flash",
+      "ms_per_frame": 3.2,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.772,
+      "wall_s": 16.0
+    }
+  ],
+  "job_id": 1258,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1251
+  },
+  "off_node": [
+    {
+      "model": "gemini-3.8-flash",
+      "step": "planner"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "step": "executor"
+    }
+  ],
+  "planner": "gemini-3.8-flash",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "two flocks that avoid each other",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (gemini-3.8-flash) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1251/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1251",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A kinetic study of opposing collective dynamics, exploring how simple local interactions generate intricate macroscopic tension. Two distinct colonies\u2014one radiant in warm amber, the other in sharp cyan\u2014traverse the same canvas under decentralized flocking rules. While members within each flock coalesce and coordinate their headings, a repulsive barrier activates whenever the swarms meet, cleaving the groups into sweeping, hydrodynamic detours before they re-converge in continuous fluid balance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 16.0
+}
