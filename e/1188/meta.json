@@ -1,0 +1,74 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctracks in the rink during figure skating Revise: the same elegant, sw\u2026\u201d \u2014 sketchgen entry 1188, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1188/ Licensed CC BY 4.0.",
+  "brief": "A dark surface serves as an ice rink where elegant, sweeping white lines glide in graceful, continuous curves. As these lines travel, they transform into distinct, glowing white pillars that rise vertically from the surface. These luminous pillars remain visible after they are formed, slowly accumulating into a complex, three-dimensional sculpture of light.",
+  "completion_tokens": 1062,
+  "created_utc": "2026-09-20T21:16:17Z",
+  "entry_id": 1188,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1062,
+      "evidence": null,
+      "exit": 0,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 3.4,
+      "prompt_tokens": 2400,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.737,
+      "wall_s": 115.013
+    }
+  ],
+  "job_id": 1192,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same elegant, sweeping white lines, and this time they should solidify into distinct, glowing pillar formations that remain visible after the move.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1153,
+    "root_entry_id": 1096
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "tracks in the rink during figure skating\n\nRevise: the same elegant, sweeping white lines, and this time they should become solid, solid pillars rather than fading arcs.\n\nRevise: the same elegant, sweeping white lines, and this time they should solidify into distinct, glowing pillar formations that remain visible after the move.",
+  "prompt_tokens": 2400,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1188/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1188",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": null,
+  "submitted_by": "profcarroll",
+  "wall_s": 115.013
+}
