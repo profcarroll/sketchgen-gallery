@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca stack of books being eaten by a book eating machine Revise: add mor\u2026\u201d \u2014 sketchgen entry 1227, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1227/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a menacing, mechanically active shredding apparatus positioned below a large stack of books. The internal gears and plates are visible and operate with relentless motion, actively tearing and shredding books as they fall in. Intense friction generates bursts of visible sparks, while plumes of steam vent from the metal joints. As books are consumed, fine plumes of shredded dust, alongside sharp wood and paper splinters, are ejected, accumulating below in a dense, swirling cloud. These falling splinters and debris travel upward, visibly etching and scarring the remaining books still stacked above the machine\u2019s mouth.",
+  "completion_tokens": 4444,
+  "created_utc": "2026-09-21T03:55:03Z",
+  "entry_id": 1227,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2586,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 115)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 149)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 150)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 157)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 191)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 206)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 224)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 245)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 107.9 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 107.9,
+      "prompt_tokens": 2426,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.028,
+      "wall_s": 204.374
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1858,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.2,
+      "prompt_tokens": 3057,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.706,
+      "wall_s": 129.798
+    }
+  ],
+  "job_id": 1233,
+  "last_error": "too dark, lacks visual cohesion",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same powerful mechanical shredding apparatus, and this time the ejected splinters visibly etch the surfaces of the books remaining above the mouth.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "parent_entry_id": 1200,
+    "root_entry_id": 406
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a stack of books being eaten by a book eating machine\n\nRevise: add more books and a machine that eats them\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the remaining stack of books must first lean and crack before collapsing into the machine.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time the internal gears and plates of the shredder are visible and actively engage as the books fall into them.\n\nRevise: the same mechanical shredder consuming a stack of books, and this time visible sparks shoot out from the engaged internal gears.\n\nRevise: the same mechanical scene where a substantial stack of books rests above an open shredding apparatus, and this time the visible internal gears are actively tearing and shredding one of the books as it falls.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus.\n\nRevise: the same mechanically active shredding scene, and this time fine plumes of shredded dust visibly hang suspended above the central gears.\n\nRevise: the same mechanically active shredding scene, and this time the rapid movement of the internal gears throws off sharp, visible splinters of wood and paper pulp.\n\nRevise: the same mechanically active shredding scene, and this time the flying splinters of wood and paper pulp strike and embed themselves visibly into the books remaining above the apparatus.\n\nRevise: the same mechanically active shredding scene, and this time wisps of steam vent from the friction points of the internal gears and shredding apparatus\n\nRevise: the same mechanically active shredding scene, and this time visible splinters of wood and paper pulp are ejected from the central gears.\n\nRevise: the same mechanically active shredding scene, and this time scorch marks and residue build up visibly on the metal gears and plates.\n\nRevise: the same mechanically active shredding scene, and this time the ejected pulp and splinters accumulate rapidly to form a dense, swirling plume below the apparatus.\n\nRevise: the same mechanically active shredding scene, and this time the ejected pulp and splinters accumulate rapidly to form a dense, swirling plume below the apparatus.\n\nRevise: the same powerful mechanical shredding apparatus, and this time the ejected splinters visibly etch the surfaces of the books remaining above the mouth.",
+  "prompt_tokens": 5483,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1227/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1227",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a menacing mechanical shredding apparatus with visible internal gears and blades, positioned below a stack of books that are being consumed by the machine. The scene features relentless motion as books fall into the shredder, where they are torn apart by rotating gears and sharp blades. Intense friction generates bursts of glowing sparks, while plumes of steam vent from metal joints. As books are shredded, fine dust particles and sharp splinters are ejected upward, accumulating in a swirling cloud below and visibly etching and scarring the remaining books above the machine's mouth. The animation uses WEBGL rendering to create depth and motion effects, with particle systems for sparks, debris, and steam that respond dynamically to the mechanical action.",
+  "submitted_by": "profcarroll",
+  "wall_s": 334.172
+}
