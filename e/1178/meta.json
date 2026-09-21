@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201canimate a live ant farm Revise: the same sandy enclosure filled with\u2026\u201d \u2014 sketchgen entry 1178, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1178/ Licensed CC BY 4.0.",
+  "brief": "A cross-section view of a sandy enclosure shows a complex network of dark, winding tunnels that branch into small, shallow chambers in a repeating hexagonal honeycomb pattern. Tiny, dark shapes representing ants crawl continuously through the winding paths and chambers. The background is composed of various textured shades of tan and beige to simulate sand.",
+  "completion_tokens": 2186,
+  "created_utc": "2026-09-20T19:12:40Z",
+  "entry_id": 1178,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 933,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 78)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "prompt_tokens": 2344,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.742,
+      "wall_s": 107.265
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1253,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "prompt_tokens": 2588,
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.419,
+      "wall_s": 85.383
+    }
+  ],
+  "job_id": 1182,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cross-section of a sandy enclosure features a complex network of winding, dark tunnels that branch into various smaller and shallower chambers, and this time the tunnels exhibit a clear, repeating hexagonal honeycomb arrangement.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1136,
+    "root_entry_id": 1073
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "animate a live ant farm\n\nRevise: the same sandy enclosure filled with a complex network of winding tunnels, and this time the tunnels exhibit varied branching into smaller, shallower chambers.\n\nRevise: the same cross-section of a sandy enclosure features a complex network of winding, dark tunnels that branch into various smaller and shallower chambers, and this time the tunnels exhibit a clear, repeating hexagonal honeycomb arrangement.",
+  "prompt_tokens": 4932,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1178/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1178",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cross-sectional view of a sandy enclosure with a complex network of dark tunnels and hexagonal honeycomb chambers. The composition simulates the texture of sand using a particle-based background with varying shades of tan and beige. Dark winding tunnels meander through the space, creating a maze-like structure where tiny ants crawl continuously. The ants leave faint trails behind them as they move, and their motion appears organic and unpredictable. The honeycomb pattern emerges from the repetition of hexagonal chambers that branch into the tunnel network, giving the impression of an intricate underground ecosystem. The entire scene is rendered without any external libraries beyond p5.js itself, using only basic shape drawing and particle simulation techniques to create a naturalistic yet abstract representation of an ant colony's architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 192.648
+}
