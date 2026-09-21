@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cyacht rock Revise: the same sunset-drenched seascape, and this time a\u2026\u201d \u2014 sketchgen entry 1185, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1185/ Licensed CC BY 4.0.",
+  "brief": "A warm, sunset-drenched seascape glows with gradients of orange, pink, and deep gold. In the foreground, ocean waves display sharply contrasting, dark ripples that undulate rhythmically. A stylized black silhouette of a sailboat drifts slowly and steadily across the distant horizon line against the setting sun.",
+  "completion_tokens": 807,
+  "created_utc": "2026-09-20T20:25:52Z",
+  "entry_id": 1185,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 807,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "prompt_tokens": 2344,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.411,
+      "wall_s": 98.231
+    }
+  ],
+  "job_id": 1189,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same warm sunset seascape, and this time the ocean waves show more sharply contrasting ripples.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "parent_entry_id": 1148,
+    "root_entry_id": 1089
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "yacht rock\n\nRevise: the same sunset-drenched seascape, and this time a stylized sailboat silhouette drifts slowly across the horizon.\n\nRevise: the same warm sunset seascape, and this time the ocean waves show more sharply contrasting ripples.",
+  "prompt_tokens": 2344,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1185/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1185",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene seascape at sunset, blending warm gradients of orange and pink with rhythmic ocean waves. The composition features a stylized black sailboat drifting steadily across the horizon against a glowing sky. Waves are generated using sine functions to create undulating ripples that move autonomously across the canvas, with each wave having its own speed and amplitude. The scene is rendered entirely through p5.js drawing primitives without any external assets or audio components, relying solely on procedural generation for all visual elements. The gentle motion of waves and boat creates a peaceful, meditative quality while maintaining the visual richness requested in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 98.231
+}
