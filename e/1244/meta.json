@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca field of tiny compass needles that slowly turn toward the cursor, t\u2026\u201d \u2014 sketchgen entry 1244, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1244/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a dynamic field of tiny, compass-like pointers. When the user moves the cursor across the surface, the entire field reacts, with each needle individually rotating and smoothly orienting itself to point toward the cursor's location. If the cursor leaves the area, the individual pointers lose their targeted focus and instead begin a slow, natural drift. Over time, they gradually lose their independent momentum and settle into a cohesive, shared direction, simulating a return to north.",
+  "completion_tokens": 740,
+  "created_utc": "2026-09-21T13:44:29Z",
+  "entry_id": 1244,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 740,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.3,
+      "prompt_tokens": 2395,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.675,
+      "wall_s": 90.709
+    }
+  ],
+  "job_id": 1246,
+  "last_error": "handed to the local path by profcarroll: session killed 2026-09-21",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1244
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "a field of tiny compass needles that slowly turn toward the cursor, then drift back to a shared north when it leaves",
+  "prompt_tokens": 2395,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1244/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1244",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of compass-like pointers that respond to user interaction. Each needle is individually controlled, rotating smoothly to point toward the cursor when it moves across the canvas. When the cursor leaves the area, the needles gradually lose their targeted focus and begin to drift naturally, eventually settling into a shared direction that simulates returning to true north. The visualization uses a subtle trail effect and color variation to enhance the sense of motion and cohesion, creating an immersive experience where the entire field reacts as a unified system while maintaining individual pointer characteristics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 90.709
+}
