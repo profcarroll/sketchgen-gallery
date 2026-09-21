@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cheavy metal Revise: the same jagged, chrome-textured shards float and\u2026\u201d \u2014 sketchgen entry 1149, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1149/ Licensed CC BY 4.0.",
+  "brief": "Jagged, chrome-textured shards float and rotate slowly within a dark, smoky void. Deep, continuous emerald light glints off the metallic surfaces of the rotating shapes, casting sharp highlights across the jagged edges.",
+  "completion_tokens": 1612,
+  "created_utc": "2026-09-20T15:15:21Z",
+  "entry_id": 1149,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 732,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.5,
+      "prompt_tokens": 1673,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 3.089,
+      "wall_s": 81.374
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 880,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "prompt_tokens": 1776,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 2.336,
+      "wall_s": 57.845
+    }
+  ],
+  "job_id": 1153,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jagged, chrome-textured shards float and rotate slowly within a dark, smoky void, and this time the metallic surfaces catch glints of deep, continuous emerald light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1090,
+    "root_entry_id": 1090
+  },
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "heavy metal\n\nRevise: the same jagged, chrome-textured shards float and rotate slowly within a dark, smoky void, and this time the metallic surfaces catch glints of deep, continuous emerald light.",
+  "prompt_tokens": 3449,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1149/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1149",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dark, smoky void filled with rotating metallic shards that have jagged, chrome-like surfaces. Each shard is composed of randomly generated polygonal shapes with sharp edges that reflect deep emerald light. The shards float slowly through space, rotating at different rates and amplitudes, creating an immersive, almost crystalline effect. The motion responds to audio input, with the intensity of sound affecting both the movement and rotation speeds of the shards. The visual texture is achieved through careful use of lighting and color in a WebGL environment, giving each shard a reflective quality that makes them appear metallic and three-dimensional despite being constructed from simple geometric forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 139.219
+}
