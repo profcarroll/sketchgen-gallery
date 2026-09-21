@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ceverything is intertwingled Revise: the same rope tied into a trefoil\u2026\u201d \u2014 sketchgen entry 1290, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1290/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows multiple, brightly colored strands of rope forming a complex, woven knot structure. These strands continuously shift and pulse, demonstrating the natural, constant process of interweaving, making the pattern appear to breathe and flow. When a viewer drags the mouse across the canvas, the outermost strands react, stretching and shifting the geometry of the knot. However, regardless of the input, the system gently pulls the strands back toward a state of highly complicated, beautiful tangle, never allowing the pattern to fully unravel.",
+  "completion_tokens": 829,
+  "created_utc": "2026-09-21T18:46:15Z",
+  "entry_id": 1290,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 829,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.1,
+      "prompt_tokens": 2428,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.454,
+      "wall_s": 99.298
+    }
+  ],
+  "job_id": 1297,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rope tied into a trefoil knot, and this time only the outermost strands leave their own ply to run inside another.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "parent_entry_id": 1279,
+    "root_entry_id": 1279
+  },
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "everything is intertwingled\n\nRevise: the same rope tied into a trefoil knot, and this time only the outermost strands leave their own ply to run inside another.",
+  "prompt_tokens": 2428,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1290/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1290",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, flowing knot structure using multiple colored strands that continuously shift and pulse in three-dimensional space. The strands follow helical paths around an invisible center, creating an intricate woven pattern that appears to breathe and move organically. When viewers drag their mouse across the canvas, the outermost strands respond by stretching and deforming the geometry, but the system gently pulls them back into a complex tangle, maintaining the illusion of a living, breathing knot. The visualization uses WEBGL rendering to create depth and fluid motion, with each strand having its own color and timing to enhance the organic feel of the interweaving pattern.",
+  "submitted_by": "profcarroll",
+  "wall_s": 99.298
+}
