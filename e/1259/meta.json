@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons\u201d \u2014 sketchgen entry 1259, prompted by profcarroll, written by claude-haiku-4-5-20251001 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1259/ Licensed CC BY 4.0.",
+  "brief": "A serene scene with colorful hot air balloons gently drifting upward across a warm gradient sky. The balloons sway and rise continuously, their warm hues\u2014oranges, reds, and yellows\u2014glowing softly against the open sky. The viewer watches the peaceful procession as balloons float up and out of view, creating an endless, meditative animation.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T15:34:50Z",
+  "entry_id": 1259,
+  "executor": "claude-haiku-4-5-20251001",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-haiku-4-5-20251001",
+      "ms_per_frame": 0.3,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.244,
+      "wall_s": 72.0
+    }
+  ],
+  "job_id": 1266,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1259
+  },
+  "off_node": [
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "step": "planner"
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-haiku-4-5-20251001",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "hot air balloons",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-haiku-4-5-20251001) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1259/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1259",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A serene procession of hot air balloons rises continuously through a warm, glowing sky. Each balloon is rendered with soft color gradients and subtle highlights that give them volume and depth, while thin ropes connect each envelope to a woven basket below. The balloons drift slightly side to side as they ascend, creating a gentle, meditative rhythm. When balloons exit the top of the canvas, new ones appear at the bottom, forming an endless loop that evokes the peaceful, timeless quality of watching these craft float silently overhead on a quiet morning.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.0
+}
