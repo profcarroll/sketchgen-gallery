@@ -1,0 +1,92 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog\u201d \u2014 sketchgen entry 1297, prompted by profcarroll, written by claude-sonnet-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1297/ Licensed CC BY 4.0.",
+  "brief": "A deep navy night fills the canvas, a dark headland and a slim lighthouse silhouetted low on the left with a warm lamp glowing at its top. From the lamp a pale, wedge-shaped beam of light swings slowly and steadily across the sky in a wide arc, brightening and narrowing at its core and fading toward its edges. Layers of soft, translucent fog drift sideways at different speeds, thick and heavy near the ground and thinning higher up. Where the beam crosses the fog it lights it a warm cream, so the mist glows in a moving sweep and returns to grey blue once the beam has passed. Nothing needs touching; it runs on its own.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-21T22:52:46Z",
+  "entry_id": 1297,
+  "executor": "claude-sonnet-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-sonnet-5",
+      "ms_per_frame": 9.4,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.104,
+      "wall_s": 220.0
+    }
+  ],
+  "job_id": 1305,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1297
+  },
+  "note": null,
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v1",
+  "process": {
+    "effort": null,
+    "output_tokens": 19773,
+    "screenshots": 4,
+    "session_s": 513.0,
+    "thinking_tokens": 10125,
+    "tool_calls": 33,
+    "tries": 2
+  },
+  "prompt": "a lighthouse beam sweeping over drifting fog",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-sonnet-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1297/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1297",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A lighthouse on a dark headland sends a soft wedge of light sweeping back and forth across a navy night, while five layers of mist slide sideways at different speeds, thin and slow high up, thick and quicker near the ground. The beam is a stack of translucent wedges that narrow and brighten toward the middle. Each patch of fog remembers how lit it is, so mist turns warm cream as the light passes through and cools slowly back to grey blue behind it. The whole scene is a few hundred flat shapes and needs no input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 220.0
+}
