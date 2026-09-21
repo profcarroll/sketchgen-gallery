@@ -17,11 +17,11 @@
 <main class="entry" data-entry="543">
   <h1>a fun cursor follow toy</h1>
   
-  <p class="byline">Prompt by profcarroll. Planned by gemma4:e4b, written by qwen3-coder:30b-a3b-q4_K_M, passed the gate on attempt 1.</p>
+  <p class="byline">Prompt by profcarroll. Planned by gemma4:e4b, written by qwen3-coder:30b-a3b-q4_K_M.</p>
   
   <section class="stage">
     <iframe class="sketch" src="sketch/" title="a fun cursor follow toy" loading="lazy" sandbox="allow-scripts"></iframe>
-    <p class="stage-meta">seed 1 · entry 543 · <span class="chip published">published</span> · the gate ran this page with the seeds fixed and the clock frozen</p>
+    <p class="stage-meta">seed 1 · entry 543 · <span class="chip published">published</span></p>
   </section>
   <p class="scanned" data-scanned hidden>You scanned this from a projection. <a href="../../compare.html?a=543">Judge it against another</a> · <a href="#engagement">Like it</a><span data-scanned-critique> · <a href="#critique-text">Ask for a revision</a></span><span data-scanned-swipe> · <a href="../../swipe.html?at=543">Swipe on from here</a></span>.</p>
   <section class="engagement" id="engagement">
@@ -30,7 +30,6 @@
       <button type="button" class="like" data-like="543" disabled>like</button>
       <a class="login" data-login href="../../index.html">sign in with GitHub to like</a>
     </p>
-    <p class="note">Engagement, not judgment: views and likes are never folded into either score (spec §5).</p>
   </section>
   <section class="panel">
     <h2>Brief</h2>
@@ -43,7 +42,7 @@
   </section>
   <section class="panel">
     <h2>Judgment</h2>
-    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><circle cx="47.0" cy="131.1" r="11.0" class="c-mark agent" style="opacity:0.8"><title>agents: look 572nd of 765 (0.47 over 6 pairs) · brief 676th of 765 (0.28 over 6 pairs)</title></circle></svg><div class="quads"><span class="q agent">agents: neither</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
+    <div class="compass-wrap"><svg class="compass" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="how this entry stands on looks, across, against its brief, up"><rect x="0.5" y="0.5" width="159" height="159" rx="10.0" class="c-ground"/><line x1="80.0" y1="6.7" x2="80.0" y2="153.3" class="c-axis"/><line x1="6.7" y1="80.0" x2="153.3" y2="80.0" class="c-axis"/><circle cx="39.7" cy="123.5" r="11.0" class="c-mark agent" style="opacity:0.8"><title>agents: look 630th of 785 (0.40 over 7 pairs) · brief 649th of 785 (0.38 over 7 pairs)</title></circle></svg><div class="quads"><span class="q agent">agents: neither</span><span class="axes">→ rather look at it · ↑ closer to its brief</span></div></div>
     <div class="two">
       <div class="score">
         <p class="score-label">Humans</p>
@@ -53,8 +52,8 @@
       </div>
       <div class="score">
         <p class="score-label">Agents</p>
-        <p class="score-value">0.47 over 6 pairs</p>
-        <p class="score-brief">closer to its brief: 0.28 over 6 pairs</p>
+        <p class="score-value">0.40 over 7 pairs</p>
+        <p class="score-brief">closer to its brief: 0.38 over 7 pairs</p>
         <p class="note">Bradley–Terry over this population&#x27;s pairs alone. 1.00 is the virtual reference every entry is tied against once, so few pairs pull a score toward it: read the ordering before the margin. Views and likes are engagement, not judgment, and are not in this number.</p>
       </div>
     </div>
@@ -95,9 +94,7 @@
       revision. One sentence becomes the next generation's prompt.
     </p>
     <div data-critique-in hidden>
-      <p class="note">One sentence, under 40 words, no code — the same contract the critic
-      model works under. Your sentence is appended to this entry's prompt and the child is
-      queued.</p>
+      <p class="note">One sentence, under 40 words, no code.</p>
       <label class="rule" for="critique-text">Say what should change, not how to write it.</label>
       <textarea id="critique-text" rows="2" data-critique-text></textarea>
       <p class="rule" data-critique-rule></p>
@@ -107,8 +104,7 @@
         <p class="revise"><span class="label">Revise:</span> <em data-critique-echo>…</em></p>
       </div>
       <p class="actions">
-        <button type="button" class="primary" data-critique-send>Queue the child</button>
-        <span class="note">generation 2 · a person's critique, so the line does not stall here</span>
+        <button type="button" class="primary" data-critique-send>Submit Critique</button>
       </p>
     </div>
     <div data-critique-sent hidden>
@@ -156,7 +152,7 @@
   </section>
 </main>
 <footer class="bar">
-  <p class="note"><strong>AI Disclosure:</strong> All code is generated by sketchgen from its own database of prompts using open-weights, self-hosted models on free data center compute. sketchgen is designed by profcarroll and maintained by Anthropic frontier models. p5.js is part of the Processing Foundation ecosystem and has no affiliation with sketchgen. See <a href="https://p5js.org/">p5js.org</a> to support humans learning creative coding.</p>
+  <p class="note"><strong>AI Disclosure:</strong> All code is generated by sketchgen from its own database of human and agent-generated prompts using fully attributed self-hosted models on traceable compute. sketchgen is designed by <strong>profcarroll</strong> and maintained by Anthropic frontier models on <a href="https://github.com/profcarroll/sketchgen">GitHub</a>. <strong>p5.js</strong> is part of the <strong>Processing Foundation</strong> ecosystem and has no affiliation with sketchgen. See <a href="https://p5js.org/">p5js.org</a> to support humans learning creative coding.</p>
 </footer>
 <script src="../../assets/gallery.js"></script>
 </body>
