@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1203, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1203/ Licensed CC BY 4.0.",
+  "brief": "A series of smooth, geometric concentric rings originate from the center point and continuously expand outward across the canvas. These rings maintain their form and color as they spread, creating a sense of radial movement. The defining characteristic of the pattern is its motion: the speed of the expanding rings gradually accelerates over time, causing the spacing between the rings to rapidly diminish as they approach the edges of the view.",
+  "completion_tokens": 463,
+  "created_utc": "2026-09-20T23:02:25Z",
+  "entry_id": 1203,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 463,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "prompt_tokens": 2360,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.394,
+      "wall_s": 37.807
+    }
+  ],
+  "job_id": 1207,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous series of geometric rings, and this time having the wave-like motion appear more erratic and irregular.",
+    "critique_by": "gemma4:e4b",
+    "generation": 16,
+    "parent_entry_id": 1170,
+    "root_entry_id": 4
+  },
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric circles, and this time varying the fluorescent colors' saturation and opacity over time\n\nRevise: the same concentric rings, and this time pulsing the fluorescent colors with a gradient sweep\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time making the rings appear to ripple before expanding\n\nRevise: the same concentric rings, and this time slowing the pulsing and expanding motion\n\nRevise: the same concentric rings, and this time making them appear to ripple as they expand outwards.\n\nRevise: the same concentric rings, and this time rendering the entire pattern in a limited grayscale palette.\n\nRevise: the same series of concentric rings that originate from the center point and continuously expand outwards, and this time making the rings appear to ripple as they expand outwards.\n\nRevise: the same series of concentric rings, and this time rendering the entire pattern in a limited grayscale palette.\n\nRevise: the same series of concentric rings, and this time rendering the entire pattern in a limited grayscale palette\n\nRevise: the same concentric rings, and this time expanding at a noticeably slower rate.\n\nRevise: the same series of concentric rings, and this time rendering the entire pattern in a limited grayscale palette\n\nRevise: the same series of concentric rings, and this time varying the speed of the outward expansion over time.\n\nRevise: the same continuous series of concentric rings, and this time allowing the color saturation to gradually fade as the rings expand outwards.\n\nRevise: the same continuous series of geometric rings, and this time making the outward expansion speed accelerate gradually across the canvas.\n\nRevise: the same continuous series of geometric rings, and this time having the wave-like motion appear more erratic and irregular.",
+  "prompt_tokens": 2360,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1203/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1203",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing radial animation of concentric rings expanding from the center of the canvas. Each ring starts small and accelerates outward at a different rate, creating a sense of dynamic motion that builds momentum as it progresses. The rings maintain consistent color and form while continuously growing, producing an effect where the spacing between rings decreases rapidly as they approach the edges of the view. The pattern evolves organically without any external input, fulfilling the requirement for autonomous visual motion. The technique uses simple geometric shapes and controlled acceleration to achieve a calming yet engaging visual rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 37.807
+}
