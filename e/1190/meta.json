@@ -1,0 +1,148 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same jigsaw puzzle, and this time the seams\u2026\u201d \u2014 sketchgen entry 1190, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1190/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an incomplete jigsaw puzzle composed of interlocking pieces. The edges of the puzzle are formed by individual, rigid shapes separated by visible seams. The viewer must interact by clicking and dragging pieces into their correct corresponding positions. As a piece snaps into place, the seam where the pieces interlock dramatically changes: the gap disappears, and the underlying image beneath the puzzle surface becomes visible, revealing fragments of the full, cohesive picture.",
+  "completion_tokens": 3760,
+  "created_utc": "2026-09-20T21:34:31Z",
+  "entry_id": 1190,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1179,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "prompt_tokens": 1726,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.359,
+      "wall_s": 104.373
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1256,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 84)\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 84)\n\ngate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 240000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "prompt_tokens": 1898,
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 11.325,
+      "wall_s": 79.261
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1325,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "prompt_tokens": 1961,
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 11.412,
+      "wall_s": 83.407
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1194,
+  "last_error": "gate exit 1: checks failed: console_clean; assertions failed: responds(click), responds(drag)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jigsaw puzzle, and this time the seams where pieces interlock reveal the full, underlying image beneath the puzzle surface.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1155,
+    "root_entry_id": 1103
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "jigsaw puzzle\n\nRevise: the same jigsaw puzzle, and this time the seams where pieces interlock glow faintly when they snap into place.\n\nRevise: the same jigsaw puzzle, and this time the seams where pieces interlock reveal the full, underlying image beneath the puzzle surface.",
+  "prompt_tokens": 5585,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "aarch64 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1190/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1190",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch presents an interactive jigsaw puzzle where users can drag and snap pieces into place. The interface shows a collection of irregularly shaped puzzle pieces floating on a background image, with the ability to click and drag them around the canvas. As pieces are moved and snapped into position, they become visible as part of the larger picture beneath the puzzle surface, revealing how they fit together. The interaction is designed for simple yet satisfying engagement, allowing users to manipulate the puzzle visually without complex controls or sound.",
+  "submitted_by": "profcarroll",
+  "wall_s": 267.041
+}
