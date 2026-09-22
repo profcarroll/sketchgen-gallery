@@ -29,8 +29,11 @@
       "completion_tokens": 762,
       "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 187.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 187.7,
+      "num_ctx": null,
       "prompt_tokens": 2234,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 659,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 19.9,
+      "num_ctx": null,
       "prompt_tokens": 2316,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 45.054
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
   "job_id": 888,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": null,
     "critique_by": null,
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": null,
     "root_entry_id": 887
   },

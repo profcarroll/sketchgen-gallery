@@ -27,8 +27,11 @@
       "completion_tokens": 1185,
       "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] noMotion is not defined\n- [pageerror] userStartAudio is not defined\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1707,
       "rules_file": "control",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1356,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1773,
       "rules_file": "control",
       "source": "attempt-2",
@@ -60,14 +66,22 @@
       "wall_s": 83.097
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1291,
   "last_error": null,
   "licence": "CC BY 4.0",
   "lineage": {
-    "children": [],
+    "children": [
+      1293
+    ],
     "critique": "the same intricate, highly symmetrical woven textile pattern, and this time the repeating stylized floral motifs are replaced by repeating geometric, interlinked knot patterns.",
     "critique_by": "gemma4:e4b",
     "generation": 9,
+    "inherits_source": false,
     "parent_entry_id": 1257,
     "root_entry_id": 885
   },

@@ -29,8 +29,11 @@
       "completion_tokens": 619,
       "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.3,
+      "num_ctx": null,
       "prompt_tokens": 2371,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 454,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2480,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 40.638
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
   "job_id": 914,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": null,
     "critique_by": null,
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": null,
     "root_entry_id": 912
   },

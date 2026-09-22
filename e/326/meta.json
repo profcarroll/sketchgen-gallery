@@ -25,8 +25,11 @@
       "completion_tokens": 1145,
       "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 200.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 200.7,
+      "num_ctx": null,
       "prompt_tokens": 2220,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -49,8 +52,11 @@
       "completion_tokens": 1003,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 2.8,
+      "num_ctx": null,
       "prompt_tokens": 2338,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -58,6 +64,11 @@
       "wall_s": 64.105
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 327,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -66,6 +77,7 @@
     "critique": "the same luminous, evolving tapestry, and this time the architectural fragments will incorporate abstract biological forms",
     "critique_by": "gemma4:e4b",
     "generation": 3,
+    "inherits_source": false,
     "parent_entry_id": 287,
     "root_entry_id": 197
   },

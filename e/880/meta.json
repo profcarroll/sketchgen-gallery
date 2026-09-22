@@ -29,8 +29,11 @@
       "completion_tokens": 1138,
       "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.8,
+      "num_ctx": null,
       "prompt_tokens": 2235,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 835,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.3,
+      "num_ctx": null,
       "prompt_tokens": 2352,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 55.916
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
   "job_id": 881,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "animate the background so that the cursor toy interacts with it as it moves",
     "critique_by": "profcarroll",
     "generation": 6,
+    "inherits_source": false,
     "parent_entry_id": 864,
     "root_entry_id": 543
   },

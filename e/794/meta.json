@@ -29,8 +29,11 @@
       "completion_tokens": 656,
       "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 198.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 198.2,
+      "num_ctx": null,
       "prompt_tokens": 2225,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 685,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 17.4,
+      "num_ctx": null,
       "prompt_tokens": 2355,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 48.009
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 795,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same luminous streams of data, and this time their collective movement must follow large, looping, helical patterns within the void.",
     "critique_by": "gemma4:e4b",
     "generation": 5,
+    "inherits_source": false,
     "parent_entry_id": 725,
     "root_entry_id": 426
   },

@@ -29,8 +29,11 @@
       "completion_tokens": 612,
       "evidence": "gate exit 1: assertions failed: motion(idle), responds(audio)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 250000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 250000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 34.245 under 440 Hz vs 34.245 under silence\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1549,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 720,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.2,
+      "num_ctx": null,
       "prompt_tokens": 1704,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 44.886
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 606,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "Add sound",
     "critique_by": "profcarroll",
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": 533,
     "root_entry_id": 533
   },

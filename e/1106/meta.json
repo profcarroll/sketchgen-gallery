@@ -27,8 +27,11 @@
       "completion_tokens": 880,
       "evidence": "gate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 197.8 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 42.7626/255, 576065 of 1152000 pixels changed\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 197.8,
+      "num_ctx": null,
       "prompt_tokens": 2358,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 973,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2498,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 66.605
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1110,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same abstract tapestry, and this time exaggerating the contrast between the organic flowing fibers and the rigid geometric knots.",
     "critique_by": "gemma4:e4b",
     "generation": 4,
+    "inherits_source": false,
     "parent_entry_id": 1039,
     "root_entry_id": 887
   },

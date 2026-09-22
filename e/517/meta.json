@@ -29,8 +29,11 @@
       "completion_tokens": 1234,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 71)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 98)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 102)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 114)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 119)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 143.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 143.3,
+      "num_ctx": null,
       "prompt_tokens": 2218,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 1211,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 26.8,
+      "num_ctx": null,
       "prompt_tokens": 2735,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 88.837
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 518,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same sprawling, photorealistic urban landscape, and this time inclusion of highly detailed street fixtures such as signage and streetlights",
     "critique_by": "gemma4:e4b",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 241,
     "root_entry_id": 191
   },

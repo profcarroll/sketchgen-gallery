@@ -28,8 +28,11 @@
       "completion_tokens": 717,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 19)\n\ngate exit 1: checks failed: is_looping; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1550,
       "rules_file": "control",
       "source": "attempt-1",
@@ -52,8 +55,11 @@
       "completion_tokens": 762,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1679,
       "rules_file": "control",
       "source": "attempt-2",
@@ -61,6 +67,11 @@
       "wall_s": 44.843
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 206,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "the same mechanical ballet of light and geometry, and this time the orbital planes should exhibit visible resonance effects",
     "critique_by": "gemma4:e4b",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 142,
     "root_entry_id": 101
   },

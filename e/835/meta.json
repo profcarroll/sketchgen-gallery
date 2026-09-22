@@ -27,8 +27,11 @@
       "completion_tokens": 878,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 36)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1513,
       "rules_file": "control",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1347,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 10.4,
+      "num_ctx": null,
       "prompt_tokens": 1754,
       "rules_file": "control",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 77.812
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 836,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same abstract aerial panorama of a densely packed metropolitan cityscape, and this time the intersecting light streaks will form sharp, angular crystalline clusters instead of elongated and wispy floral blooms.",
     "critique_by": "gemma4:e4b",
     "generation": 6,
+    "inherits_source": false,
     "parent_entry_id": 781,
     "root_entry_id": 199
   },

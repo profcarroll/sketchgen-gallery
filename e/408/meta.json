@@ -25,8 +25,11 @@
       "completion_tokens": 944,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 88)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 246.4 ms per frame over the first 114 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 114 of the 120 idle frames and did not finish the probes or the assertions\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 246.4,
+      "num_ctx": null,
       "prompt_tokens": 1542,
       "rules_file": "control",
       "source": "attempt-1",
@@ -49,8 +52,11 @@
       "completion_tokens": 1169,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 20.6,
+      "num_ctx": null,
       "prompt_tokens": 1731,
       "rules_file": "control",
       "source": "attempt-2",
@@ -58,6 +64,11 @@
       "wall_s": 66.54
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 409,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "Revise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the geometric patterns formed by the light streaks will be composed of intersecting lines and illuminated nodes.",
     "critique_by": "gemma4:e4b",
     "generation": 5,
+    "inherits_source": false,
     "parent_entry_id": 351,
     "root_entry_id": 199
   },

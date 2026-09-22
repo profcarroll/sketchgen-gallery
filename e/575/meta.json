@@ -27,8 +27,11 @@
       "completion_tokens": 1590,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 122)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2205,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1298,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.4,
+      "num_ctx": null,
       "prompt_tokens": 2450,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 82.852
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 576,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same mechanical shredder consuming a stack of books, and this time the internal gears and plates of the shredder are visible and actively engage as the books fall into them.",
     "critique_by": "gemma4:e4b",
     "generation": 3,
+    "inherits_source": false,
     "parent_entry_id": 470,
     "root_entry_id": 406
   },

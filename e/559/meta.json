@@ -26,8 +26,11 @@
       "completion_tokens": 1302,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 51)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 93)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 99)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 113)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1151.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 1151.9,
+      "num_ctx": null,
       "prompt_tokens": 2223,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1117,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 23.9,
+      "num_ctx": null,
       "prompt_tokens": 2588,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 76.859
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 560,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.",
     "critique_by": "gemma4:e4b",
     "generation": 8,
+    "inherits_source": false,
     "parent_entry_id": 453,
     "root_entry_id": 114
   },

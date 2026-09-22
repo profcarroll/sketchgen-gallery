@@ -27,8 +27,11 @@
       "completion_tokens": 1470,
       "evidence": "gate exit 1: checks failed: console_clean; assertions failed: no_motion\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- no_motion: no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [pageerror] missing ) after argument list\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2399,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1586,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2491,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 100.836
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1300,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "the same intricate, symmetrical woven textile pattern, and this time the pronounced border bands are composed of a continuous row of repeating crescent shapes.",
     "critique_by": "gemma4:e4b",
     "generation": 10,
+    "inherits_source": false,
     "parent_entry_id": 1284,
     "root_entry_id": 885
   },

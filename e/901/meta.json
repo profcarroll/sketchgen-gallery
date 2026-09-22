@@ -27,8 +27,11 @@
       "completion_tokens": 1026,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 82)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.6433/255, 49490 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 11.1,
+      "num_ctx": null,
       "prompt_tokens": 2192,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 890,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2380,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 61.271
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 903,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "the same richly woven, organic tapestry inspired by rhododendrons, and this time render the delicate structural network with etched, crystalline clarity.",
     "critique_by": "gemma4:e4b",
     "generation": 8,
+    "inherits_source": false,
     "parent_entry_id": 847,
     "root_entry_id": 424
   },

@@ -26,8 +26,11 @@
       "completion_tokens": 877,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 71)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 86)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 384.4 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 384.4,
+      "num_ctx": null,
       "prompt_tokens": 1560,
       "rules_file": "control",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 719,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 8.5,
+      "num_ctx": null,
       "prompt_tokens": 1806,
       "rules_file": "control",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 46.264
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 749,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.",
     "critique_by": "gemma4:e4b",
     "generation": 4,
+    "inherits_source": false,
     "parent_entry_id": 702,
     "root_entry_id": 525
   },

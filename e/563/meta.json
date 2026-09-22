@@ -29,8 +29,11 @@
       "completion_tokens": 1134,
       "evidence": "gate exit 1: assertions failed: responds(drag), motion(idle)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.2,
+      "num_ctx": null,
       "prompt_tokens": 2210,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 1256,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 1.3,
+      "num_ctx": null,
       "prompt_tokens": 2380,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 80.381
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
   "job_id": 564,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same interactive stovetop surface, and this time the metal surrounding the burners should glow red when the flames are running.",
     "critique_by": "gemma4:e4b",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 458,
     "root_entry_id": 405
   },

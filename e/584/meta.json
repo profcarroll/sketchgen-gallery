@@ -31,8 +31,11 @@
       "completion_tokens": 806,
       "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 5.7,
+      "num_ctx": null,
       "prompt_tokens": 2249,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -57,8 +60,11 @@
       "completion_tokens": 1323,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 38.5,
+      "num_ctx": null,
       "prompt_tokens": 2366,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -66,6 +72,11 @@
       "wall_s": 128.009
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
   "job_id": 585,
   "last_error": "paused: update.sh deploy",
   "licence": "CC BY 4.0",
@@ -76,6 +87,7 @@
     "critique": "the same isometric view of a multi-lane race course for a marble, and this time the marble leaves a visible, solid bioluminescent path instead of sparkly residue",
     "critique_by": "gemma4:e4b",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 479,
     "root_entry_id": 435
   },

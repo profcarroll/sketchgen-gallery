@@ -29,8 +29,11 @@
       "completion_tokens": 839,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 74)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] dist is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 15.6,
+      "num_ctx": null,
       "prompt_tokens": 1721,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 1063,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 39.1,
+      "num_ctx": null,
       "prompt_tokens": 1873,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 64.324
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
   "job_id": 946,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.",
     "critique_by": "gemma4:e4b",
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": 887,
     "root_entry_id": 887
   },

@@ -29,8 +29,11 @@
       "completion_tokens": 1690,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `mouseX` hides p5's `mouseX`; rename it (sketch.js line 114)\npreflight: your variable `mouseY` hides p5's `mouseY`; rename it (sketch.js line 115)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] mouseXP is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 1.4,
+      "num_ctx": null,
       "prompt_tokens": 2221,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 1420,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 1.0,
+      "num_ctx": null,
       "prompt_tokens": 2392,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 87.187
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
   "job_id": 377,
   "last_error": "regression, did not follow critique",
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "excellent progress, try to complete the rest of the table as you started it",
     "critique_by": "profcarroll",
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": 372,
     "root_entry_id": 372
   },

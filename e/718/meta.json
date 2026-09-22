@@ -29,8 +29,11 @@
       "completion_tokens": 767,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 29)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 49)\n\ngate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] sandPoints is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2215,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 690,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 72.9,
+      "num_ctx": null,
       "prompt_tokens": 2463,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 51.679
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 719,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same mound of pale yellow sand and scattered seashells, and this time revealing evidence of subtle subsurface stratification lines beneath the surface layer.",
     "critique_by": "gemma4:e4b",
     "generation": 5,
+    "inherits_source": false,
     "parent_entry_id": 659,
     "root_entry_id": 364
   },

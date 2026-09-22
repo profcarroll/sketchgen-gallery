@@ -26,8 +26,11 @@
       "completion_tokens": 664,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 41)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 50)\n\ngate exit 1: checks failed: console_clean, frame_budget\n\nFixed checks that failed:\n- console_clean = false\n- frame_budget = false\n    frame_budget: 212.4 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 212.4,
+      "num_ctx": null,
       "prompt_tokens": 1546,
       "rules_file": "control",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 666,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 60.2,
+      "num_ctx": null,
       "prompt_tokens": 1798,
       "rules_file": "control",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 54.47
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 510,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -70,6 +81,7 @@
     "critique": "the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.",
     "critique_by": "gemma4:e4b",
     "generation": 6,
+    "inherits_source": false,
     "parent_entry_id": 141,
     "root_entry_id": 34
   },

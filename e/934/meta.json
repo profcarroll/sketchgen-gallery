@@ -27,8 +27,11 @@
       "completion_tokens": 898,
       "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2376,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1091,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 6.3,
+      "num_ctx": null,
       "prompt_tokens": 2445,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 73.215
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 936,
   "last_error": "rejected by operator",
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "the same arid landscape, and this time the cracks and fissures should display greater depth and darker shadows.",
     "critique_by": "gemma4:e4b",
     "generation": 12,
+    "inherits_source": false,
     "parent_entry_id": 876,
     "root_entry_id": 104
   },

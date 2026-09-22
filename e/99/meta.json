@@ -30,8 +30,11 @@
       "completion_tokens": 834,
       "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1215,
       "rules_file": "control",
       "source": "attempt-1",
@@ -55,8 +58,11 @@
       "completion_tokens": 1272,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1331,
       "rules_file": "control",
       "source": "attempt-2",
@@ -64,6 +70,11 @@
       "wall_s": 60.709
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
   "job_id": 100,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -75,6 +86,7 @@
     "critique": "attempt again with the 3D lighting effect this time",
     "critique_by": "profcarroll",
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": 95,
     "root_entry_id": 95
   },

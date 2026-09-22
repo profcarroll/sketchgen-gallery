@@ -29,8 +29,11 @@
       "completion_tokens": 732,
       "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 5.5,
+      "num_ctx": null,
       "prompt_tokens": 1673,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 880,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 3.0,
+      "num_ctx": null,
       "prompt_tokens": 1776,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 57.845
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1153,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same jagged, chrome-textured shards float and rotate slowly within a dark, smoky void, and this time the metallic surfaces catch glints of deep, continuous emerald light.",
     "critique_by": "gemma4:e4b",
     "generation": 1,
+    "inherits_source": false,
     "parent_entry_id": 1090,
     "root_entry_id": 1090
   },

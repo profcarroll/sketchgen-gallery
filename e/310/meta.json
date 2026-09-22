@@ -29,8 +29,11 @@
       "completion_tokens": 1935,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 133)\npreflight: `point()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(POINTS)` with `vertex()` per point (sketch.js line 145)\n\ngate exit 1: checks failed: console_clean, is_looping; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'x')\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1531,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 1362,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 27.0,
+      "num_ctx": null,
       "prompt_tokens": 1812,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 80.567
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 311,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -73,6 +84,7 @@
     "critique": "the same complex, highly detailed visualization of simulated data flow through a digital network, and this time the dynamic lines exhibit visible harmonic frequencies across the entire network.",
     "critique_by": "gemma4:e4b",
     "generation": 4,
+    "inherits_source": false,
     "parent_entry_id": 269,
     "root_entry_id": 112
   },

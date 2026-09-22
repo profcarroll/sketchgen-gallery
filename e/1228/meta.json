@@ -29,8 +29,11 @@
       "completion_tokens": 1075,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 92)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 99)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 121)\n\ngate exit 1: checks failed: console_clean; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 5.1,
+      "num_ctx": null,
       "prompt_tokens": 1721,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 2019,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 48.4,
+      "num_ctx": null,
       "prompt_tokens": 1997,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 119.277
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1234,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "the same detailed, three-dimensional, cutaway view of a running internal combustion engine, and this time the opening and closing of the intake and exhaust valves are clearly timed with the piston's position.",
     "critique_by": "gemma4:e4b",
     "generation": 15,
+    "inherits_source": false,
     "parent_entry_id": 1201,
     "root_entry_id": 422
   },

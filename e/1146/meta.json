@@ -29,8 +29,11 @@
       "completion_tokens": 1009,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 52)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 34.6,
+      "num_ctx": null,
       "prompt_tokens": 2375,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 621,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 12.3,
+      "num_ctx": null,
       "prompt_tokens": 2486,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 47.338
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1150,
   "last_error": "rejected by operator",
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "the same first-person perspective through a desaturated landscape of massive, monolithic concrete structures, and this time the concrete surfaces show streaks of mineral runoff and areas where rusted metal weep through the stone.",
     "critique_by": "gemma4:e4b",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 1086,
     "root_entry_id": 1033
   },

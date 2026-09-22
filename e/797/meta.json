@@ -31,8 +31,11 @@
       "completion_tokens": 1295,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 107)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 125)\n\ngate exit 1: checks failed: frame_budget; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 118.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 118.7,
+      "num_ctx": null,
       "prompt_tokens": 2257,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -57,8 +60,11 @@
       "completion_tokens": 1445,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 25.8,
+      "num_ctx": null,
       "prompt_tokens": 2561,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -66,6 +72,11 @@
       "wall_s": 95.119
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
   "job_id": 798,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -74,6 +85,7 @@
     "critique": "the same isometric view of a multi-lane racetrack, and this time the track surface absorbs and briefly re-emits the light from the fading marble trails.",
     "critique_by": "gemma4:e4b",
     "generation": 5,
+    "inherits_source": false,
     "parent_entry_id": 729,
     "root_entry_id": 435
   },

@@ -26,8 +26,11 @@
       "completion_tokens": 633,
       "evidence": "gate exit 1: checks failed: is_looping; assertions failed: motion(idle)\n\nFixed checks that failed:\n- is_looping = false\n    frame_advancing skipped: the sketch calls noLoop(), so it declares itself static (spec 3.1, closes MEASURE[gate-false-negatives])\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1140,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -49,8 +52,11 @@
       "completion_tokens": 701,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": null,
+      "num_ctx": null,
       "prompt_tokens": 1263,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -58,6 +64,11 @@
       "wall_s": 34.735
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 95,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again",
     "critique_by": "profcarroll",
     "generation": 2,
+    "inherits_source": false,
     "parent_entry_id": 92,
     "root_entry_id": 69
   },

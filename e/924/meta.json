@@ -29,8 +29,11 @@
       "completion_tokens": 1026,
       "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 55)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 160000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 26.000 under 440 Hz vs 26.000 under silence\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n- AudioContext state after the click probe: running\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 1720,
       "rules_file": "control",
       "source": "attempt-1",
@@ -54,8 +57,11 @@
       "completion_tokens": 979,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.2,
+      "num_ctx": null,
       "prompt_tokens": 2059,
       "rules_file": "control",
       "source": "attempt-2",
@@ -63,6 +69,11 @@
       "wall_s": 66.907
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 926,
   "last_error": "rejected by operator",
   "licence": "CC BY 4.0",
@@ -71,6 +82,7 @@
     "critique": "the same constantly evolving, dense lattice constructed from sharp, highly angular geometric lines, and this time the overall formation should periodically reorganize into visible, repeating honeycomb or hexagonal meshes.",
     "critique_by": "gemma4:e4b",
     "generation": 7,
+    "inherits_source": false,
     "parent_entry_id": 862,
     "root_entry_id": 525
   },

@@ -27,8 +27,11 @@
       "completion_tokens": 1277,
       "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] windowWidth is not defined\n- [pageerror] Cannot access 'gridWidth' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
       "exit": 1,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 0.1,
+      "num_ctx": null,
       "prompt_tokens": 2409,
       "rules_file": "treatment",
       "source": "attempt-1",
@@ -51,8 +54,11 @@
       "completion_tokens": 1187,
       "evidence": null,
       "exit": 0,
+      "ghost": null,
+      "given": null,
       "model": "qwen3-coder:30b-a3b-q4_K_M",
       "ms_per_frame": 18.9,
+      "num_ctx": null,
       "prompt_tokens": 2626,
       "rules_file": "treatment",
       "source": "attempt-2",
@@ -60,6 +66,11 @@
       "wall_s": 80.442
     }
   ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
   "job_id": 1265,
   "last_error": null,
   "licence": "CC BY 4.0",
@@ -68,6 +79,7 @@
     "critique": "the same intricate, abstract tapestry woven from richly saturated textiles, and this time exaggerating the contrast between the fluid organic fibers and the structured geometric knots.",
     "critique_by": "gemma4:e4b",
     "generation": 8,
+    "inherits_source": false,
     "parent_entry_id": 1220,
     "root_entry_id": 887
   },
