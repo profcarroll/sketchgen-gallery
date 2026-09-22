@@ -1,0 +1,86 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cheavy metal Revise: the same jagged, chrome-textured shards float and\u2026\u201d \u2014 sketchgen entry 1296, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1296/ Licensed CC BY 4.0.",
+  "brief": "Jagged, chrome-textured shards with traces of deep verdigris patina float and rotate slowly within a dark, smoky void. From the center of the void, a deep emerald light emanates and subtly pulsates, casting slow, defined shadows across the moving metallic surfaces.",
+  "completion_tokens": 1007,
+  "created_utc": "2026-09-21T22:47:43Z",
+  "entry_id": 1296,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1007,
+      "evidence": null,
+      "exit": 0,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 92.3,
+      "num_ctx": null,
+      "prompt_tokens": 1686,
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 17.17,
+      "wall_s": 91.71
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1304,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jagged, chrome-textured shards, and this time their surfaces show subtle traces of deep, oxidized verdigris patina.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1269,
+    "root_entry_id": 1090
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "heavy metal\n\nRevise: the same jagged, chrome-textured shards float and rotate slowly within a dark, smoky void, and this time the metallic surfaces catch glints of deep, continuous emerald light.\n\nRevise: the same jagged, chrome-textured shards, and this time the deep emerald light emanates gently from within the center of the void.\n\nRevise: the same jagged, chrome-textured shards, and this time the deep emerald light subtly pulsates in rhythm with the ambient void.\n\nRevise: the same jagged, chrome-textured shards, and this time the deep emerald light casts slow, defined shadows across the floating metallic surfaces.\n\nRevise: the same jagged, chrome-textured shards, and this time their surfaces show subtle traces of deep, oxidized verdigris patina.",
+  "prompt_tokens": 1686,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1296/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1296",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, dark void filled with metallic shards that float and rotate slowly, each displaying a deep verdigris patina texture. At the center, a pulsating emerald light casts subtle shadows across the moving surfaces, creating an atmosphere of ancient, weathered metal in a smoky space. The scene is subtly responsive to audio input, where sound amplitude and frequency affect the movement of the shards, adding an interactive layer to the static visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.71
+}
