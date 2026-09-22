@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1321, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1321/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays several nested, circular rings. These rings are not continuous lines, but are segmented into adjacent rectangular pieces using shades of blue, purple, and magenta. These segments are constantly oscillating, smoothly expanding and contracting. The movement is defined by a visible temporal relationship: as the rings expand and contract, each successive ring exhibits a distinct and consistent phase shift, meaning the oscillation of one adjacent ring lags behind the next in a predictable, visible sequence around the entire structure.",
+  "completion_tokens": 535,
+  "created_utc": "2026-09-22T01:39:37Z",
+  "entry_id": 1321,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 535,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 39,
+        "sha256": "efafebaad3e9ee56b270a85468fe54c3a90a5b8eb17ceb14fccc9e6c52921701",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "prompt_tokens": 2794,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.748,
+      "wall_s": 48.283
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1329,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same nested, circular rings, and this time the segment oscillations maintain a consistent, visible phase shift between adjacent rings.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1310,
+    "root_entry_id": 1254
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same concentric rings, and this time they expand and contract using perfectly stable, predictable harmonic sine waves.\n\nRevise: the same concentric rings, and this time they oscillate exclusively using shades of deep purple and magenta.\n\nRevise: the same nested, circular rings, and this time they appear as adjacent, rectangular segments using shades of blue, purple, and magenta.\n\nRevise: the same nested, circular rings, and this time the segment oscillations maintain a consistent, visible phase shift between adjacent rings.",
+  "prompt_tokens": 2794,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1321/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1321",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing display of nested circular rings composed of segmented rectangular pieces. Each ring is made up of multiple segments that oscillate smoothly in size, creating a rhythmic expansion and contraction effect. The visual rhythm is enhanced by a consistent phase shift applied to each successive ring \u2014 meaning that as you move outward from the center, each ring lags behind the previous one in its oscillation cycle. The color palette transitions through shades of blue, purple, and magenta, giving the whole structure a vibrant, pulsing appearance. The motion is entirely self-generated, driven by time-based oscillations, and requires no external input once started.",
+  "submitted_by": "profcarroll",
+  "wall_s": 48.283
+}
