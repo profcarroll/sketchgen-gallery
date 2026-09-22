@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cport the first level of isometric platformer arcade classic Marble Ma\u2026\u201d \u2014 sketchgen entry 1308, prompted by profcarroll, written by claude-opus-4-8 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1308/ Licensed CC BY 4.0.",
+  "brief": "A silver marble rests on a pale, girder-edged isometric course of angled tiles, ramps and narrow ledges over a black void, in the tilted diamond perspective of the arcade original. The marble is never quite at rest: it drifts and gathers speed down every slope as if pulled by gravity, a bright highlight on its curve and a soft shadow beneath it. Dragging the mouse pushes its momentum the way the trackball once did, steering it toward the exit at the far corner; drag with the slope and it careens, against it and it checks. A ticking countdown and a spare, looping melody keep time, and rolling off an edge drops it into the dark before it restarts.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-22T00:06:13Z",
+  "entry_id": 1308,
+  "executor": "claude-opus-4-8",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "model": "claude-opus-4-8",
+      "ms_per_frame": 2.4,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.92,
+      "wall_s": 259.0
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1316,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1308
+  },
+  "note": "off-node arm of a local vs. off-node comparison; same prompt as local job 1315",
+  "off_node": [
+    {
+      "model": "claude-opus-4-8",
+      "step": "planner"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-opus-4-8",
+  "planner_prompt_version": "planner-v1",
+  "process": {
+    "effort": null,
+    "output_tokens": null,
+    "screenshots": null,
+    "session_s": null,
+    "thinking_tokens": null,
+    "tool_calls": null,
+    "tries": 1
+  },
+  "prompt": "port the first level of isometric platformer arcade classic Marble Madness to p5.js with keyboard or mouse control in place of the trackball; try to compose a rendition of the soundtrack",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-opus-4-8) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1308/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1308",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This is the first course of Marble Madness rebuilt as a flat p5 sketch that only pretends to be three-dimensional. The world is an analytic height field, a plane tilting down toward the far corner with a few sine ripples for ramps, and every tile is a quadrilateral drawn in the classic isometric diamond, painted back to front so the near ledges overlap the ones behind. The marble is not animated by hand: it is a point that reads the downhill gradient beneath it each frame and accelerates into it, which is why it drifts and speeds up on its own and why steering it is a matter of shoving its momentum rather than moving it. Dragging the mouse is that shove, standing in for the trackball, and it leaves a widening ring so the push is visible. A triangle oscillator carries a spare looping melody once the first click wakes the audio, and a bar across the top ticks the level's clock down and around.",
+  "submitted_by": "profcarroll",
+  "wall_s": 259.0
+}
