@@ -1,0 +1,182 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cnostalgic photo collage Revise: the same layered composition of vinta\u2026\u201d \u2014 sketchgen entry 1341, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1341/ Licensed CC BY 4.0.",
+  "brief": "A layered collage of sepia-toned vintage photographs and jagged, torn paper scraps drifts slowly across the canvas. The textures overlap, creating a sense of depth through varying levels of transparency and shadow. The motion is rhythmic but irregular; the photographs drift in different directions before occasionally coming to a complete halt, creating brief moments of stillness amidst the slow, nostalgic movement.",
+  "completion_tokens": 1623,
+  "created_utc": "2026-09-22T05:29:32Z",
+  "entry_id": 1341,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1623,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 107,
+        "sha256": "306530d23750fc1c6a474cb3e1cf6da1a8c9bb4567af27ac503fad32af115da0",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 87.6,
+      "num_ctx": 16384,
+      "preload_s": 0.484,
+      "prompt_tokens": 3022,
+      "resources_loaded": [
+        {
+          "bytes": 81799,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 29612,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 18458,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 28153,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 83273,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 50400,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 44225,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 67220,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 40.797,
+      "wall_s": 323.124
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1350,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same layered composition of vintage, sepia-toned photographs and torn paper scraps, and this time the images occasionally halt their drift to create a moment of stillness.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1335,
+    "root_entry_id": 1335
+  },
+  "loads": [
+    {
+      "bytes": 81799,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 29612,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 18458,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 28153,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 83273,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 50400,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 44225,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 67220,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: the same layered composition of vintage, sepia-toned photographs and torn paper scraps, and this time the images occasionally halt their drift to create a moment of stillness.",
+  "prompt_tokens": 3022,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1341/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1341",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a meditative drifting of vintage-style photographic images and torn paper fragments across a warm, aged canvas. The visuals layer sepia-toned textures with varying transparency, building atmospheric depth through overlapping forms. The motion is deliberately organic: objects drift in their own directions with subtle rotations, but movement follows a rhythmic sine wave pattern that creates natural pauses and accelerations. These moments of stillness allow viewers to absorb each frame's composition before the next image shifts. The irregular timing and random-phase modulation ensure no two movements are identical, creating an ever-changing but coherent visual narrative of memory and time passing through analog nostalgia.",
+  "submitted_by": "profcarroll",
+  "wall_s": 323.124
+}
