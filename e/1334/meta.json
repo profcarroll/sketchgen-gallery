@@ -1,0 +1,131 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cnostalgic photo collage\u201d \u2014 sketchgen entry 1334, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1334/ Licensed CC BY 4.0.",
+  "brief": "Faded, sepia-toned photographs with torn edges and light leaks drift slowly and aimlessly across the canvas. These overlapping images create a sense of drifting memories. Clicking an image brings it to the foreground and shifts its color tint, while dragging an image allows it to be moved around the collage.",
+  "completion_tokens": 1192,
+  "created_utc": "2026-09-22T04:34:46Z",
+  "entry_id": 1334,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1192,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 54.3,
+      "num_ctx": 8192,
+      "preload_s": 1.036,
+      "prompt_tokens": 1807,
+      "resources_loaded": [
+        {
+          "bytes": 36882,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 133177,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 34203,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 36.358,
+      "wall_s": 106.168
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1343,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1334
+  },
+  "loads": [
+    {
+      "bytes": 36882,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 133177,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 34203,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage",
+  "prompt_tokens": 1807,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1334/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1334",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dreamlike collage of drifting, sepia-toned photographs that slowly move across the canvas with subtle rotations and gentle bouncing. Each image has torn edges and a warm, vintage color palette, evoking memories floating through consciousness. Light leak particles drift slowly upwards, adding to the nostalgic atmosphere. Users can click on images to bring them to the foreground or click anywhere else to shift the color tint of the topmost image. Dragging allows users to reposition the images freely, creating a tactile, interactive memory-scene where each interaction alters the drifting composition. The visual effect is achieved through layered movement and simple physics, giving the impression of soft, floating fragments of the past.",
+  "submitted_by": "profcarroll",
+  "wall_s": 106.168
+}
