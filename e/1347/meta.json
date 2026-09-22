@@ -1,0 +1,112 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cChromatic Streams: Load a photograph from the web. Use its pixel lumi\u2026\u201d \u2014 sketchgen entry 1347, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1347/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a mesmerizing, flowing network of pure, liquid light. Streams of vibrant color emerge from the structure of a loaded photograph, following paths dictated by the image's underlying energy. As the particles move, they weave intricate patterns, creating dynamic, liquid trails that ebb and flow. Where these independent streams intersect or overlap, their colors do not diffuse but form sharply defined, brilliantly illuminated junctions, creating a complex, breathing tapestry of color against the background. The entire visualization is a self-contained animation, continuously shifting and flowing without any input.",
+  "completion_tokens": 908,
+  "created_utc": "2026-09-22T06:21:28Z",
+  "entry_id": 1347,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 908,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 99,
+        "sha256": "bc5b3c56f94e037ba195c9b2c481e2ccc7682e99a33a6fa20871d2e9c73a0ce2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.4,
+      "num_ctx": 16384,
+      "preload_s": 0.425,
+      "prompt_tokens": 3319,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.953,
+      "wall_s": 119.986
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1356,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same flowing network of light trails, and this time the color boundaries should become sharply defined wherever the streams overlap.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1344,
+    "root_entry_id": 1339
+  },
+  "loads": [
+    {
+      "bytes": 44098,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Chromatic Streams: Load a photograph from the web. Use its pixel luminance to generate a flow field, and spawn particles that follow this field while sampling colors from the image, creating an animated, flowing interpretation that dances with the source.\n\nRevise: the same rivers of motion, and this time the colors should bleed subtly and diffuse into adjacent particle trails as they flow.\n\nRevise: the same flowing network of light trails, and this time the color boundaries should become sharply defined wherever the streams overlap.",
+  "prompt_tokens": 3319,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1347/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1347",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, flowing network of vibrant light particles that emerge from and follow the structure of a loaded photograph. Each particle samples color directly from the image at its current position, creating streams of liquid light that move according to the image's underlying energy patterns. The particles weave intricate trails across the canvas, forming a constantly shifting tapestry where intersecting flows create sharply defined, brilliantly illuminated junctions. The visualization is entirely self-contained and continuously evolving without any user input, presenting a dynamic, breathing field of color that pulses with the rhythm of the source image's luminosity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.986
+}
