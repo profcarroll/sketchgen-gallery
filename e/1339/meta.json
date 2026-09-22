@@ -1,0 +1,123 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cChromatic Streams: Load a photograph from the web. Use its pixel lumi\u2026\u201d \u2014 sketchgen entry 1339, prompted by profcarroll, written by claude-haiku-4-5-20251001 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1339/ Licensed CC BY 4.0.",
+  "brief": "A photograph loads from the web. Particles spawn continuously and flow through the canvas following invisible currents derived from the image's luminance. Each particle samples and inherits the color directly beneath it in the source image, creating an animated reinterpretation where the photograph dissolves into rivers of motion. The flow field itself is invisible; only the colored particle trails reveal its structure as they swirl and drift, slowly building up an impressionistic, ever-shifting echo of the source.",
+  "completion_tokens": 1338,
+  "created_utc": "2026-09-22T05:10:22Z",
+  "entry_id": 1339,
+  "executor": "claude-haiku-4-5-20251001",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1338,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "claude-haiku-4-5-20251001",
+      "ms_per_frame": 7.6,
+      "num_ctx": null,
+      "preload_s": 1.027,
+      "prompt_tokens": 78014,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.317,
+      "wall_s": 72.0
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1348,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1339
+  },
+  "loads": [
+    {
+      "bytes": 44098,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": "algorithmic-art skill + image-driven particles; local prototype tested",
+  "off_node": [
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "step": "planner"
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-haiku-4-5-20251001",
+  "planner_prompt_version": "planner-v2",
+  "process": {
+    "effort": null,
+    "output_tokens": 12544,
+    "screenshots": 0,
+    "session_s": 1619.0,
+    "thinking_tokens": 3110,
+    "tool_calls": 32
+  },
+  "prompt": "Chromatic Streams: Load a photograph from the web. Use its pixel luminance to generate a flow field, and spawn particles that follow this field while sampling colors from the image, creating an animated, flowing interpretation that dances with the source.",
+  "prompt_tokens": 78014,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-haiku-4-5-20251001) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1339/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1339",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "The sketch loads a photograph and translates it into pure motion: invisible currents derived from the image's luminance guide 1200 particles that flow across the canvas. Each particle samples and inherits the color from the region of the source image it occupies, creating an animated reinterpretation where photographic data becomes the score for generative movement. The image emerges not as a picture but as a choreography\u2014viewers recognize the source through the flow patterns alone as particles swirl and drift, building up trails that echo the photograph's structure in motion and color.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.0
+}
