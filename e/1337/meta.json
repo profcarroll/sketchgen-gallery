@@ -1,0 +1,155 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccurious photos framed in floating octagons against a background of li\u2026\u201d \u2014 sketchgen entry 1337, prompted by profcarroll, written by gemma4:26b under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1337/ Licensed CC BY 4.0.",
+  "brief": "Floating octagonal frames drift through a vast, hazy liminal space. Each frame holds a curious photograph that subtly rotates and shifts in scale. The background is a soft, atmospheric gradient of muted colors, creating the feeling of an empty, dreamlike void. The octagons move independently across the canvas, bobbing and weaving in a continuous, ghostly motion.",
+  "completion_tokens": 3383,
+  "created_utc": "2026-09-22T05:04:07Z",
+  "entry_id": 1337,
+  "executor": "gemma4:26b",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1756,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] getAudioContext is not defined\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "gemma4:26b",
+      "ms_per_frame": 5.7,
+      "num_ctx": 8192,
+      "preload_s": 0.931,
+      "prompt_tokens": 2519,
+      "resources_loaded": [
+        {
+          "bytes": 59231,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.936,
+      "wall_s": 138.839
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1627,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 171,
+        "sha256": "0e94acd3a5457a31a986f52deca9c264e0fdf6b32db9f195ca3dc9b6ffef1285",
+        "shown": true
+      },
+      "model": "gemma4:26b",
+      "ms_per_frame": 5.3,
+      "num_ctx": 16384,
+      "preload_s": 0.329,
+      "prompt_tokens": 4285,
+      "resources_loaded": [
+        {
+          "bytes": 59231,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.159,
+      "wall_s": 177.847
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1346,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1337
+  },
+  "loads": [
+    {
+      "bytes": 59231,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "curious photos framed in floating octagons against a background of liminal space",
+  "prompt_tokens": 6804,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1337/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1337",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I created a dreamlike, liminal scene featuring drifting octagonal frames that float through a hazy, atmospheric void. Each frame contains a photograph that shifts and scales independently, creating a sense of memory or ghostliness. I used a pre-rendered background gradient to maintain high performance and implemented a clipping mask within each frame to contain the drifting imagery.",
+  "submitted_by": "profcarroll",
+  "wall_s": 316.686
+}
