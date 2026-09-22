@@ -1,0 +1,112 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccurious photos framed in floating octagons against a background of li\u2026\u201d \u2014 sketchgen entry 1342, prompted by profcarroll, written by gemma4:26b under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1342/ Licensed CC BY 4.0.",
+  "brief": "A vast, empty void serves as the background for several photographic images. Each photo is held within a floating octagonal frame. These frames drift slowly and independently through the darkness, widely dispersed to emphasize the immense and lonely sense of space.",
+  "completion_tokens": 1603,
+  "created_utc": "2026-09-22T05:37:22Z",
+  "entry_id": 1342,
+  "executor": "gemma4:26b",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1603,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "94cc237f76f20c53411a7a22e068243d6a38739d9dba4a499628a342ffced5ba",
+        "shown": true
+      },
+      "model": "gemma4:26b",
+      "ms_per_frame": 4.6,
+      "num_ctx": 16384,
+      "preload_s": 0.426,
+      "prompt_tokens": 3399,
+      "resources_loaded": [
+        {
+          "bytes": 22542,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.473,
+      "wall_s": 158.944
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1351,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same floating octagonal frames, and this time dispersing them further into the vast, empty void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1337,
+    "root_entry_id": 1337
+  },
+  "loads": [
+    {
+      "bytes": 22542,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "curious photos framed in floating octagons against a background of liminal space\n\nRevise: the same floating octagonal frames, and this time dispersing them further into the vast, empty void.",
+  "prompt_tokens": 3399,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1342/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1342",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I have created a visual meditation on isolation and the vastness of the unknown. By placing photographic fragments within floating octagonal frames, the sketch mimics the feeling of drifting through a dark, liminal void. The frames move with a slow, heavy momentum, using subtle sine-wave oscillations and extreme scale shifts to suggest a weightless, drifting existence. The wide dispersion of these objects and the deep, dark gradient background are intended to evoke a sense of lonely, infinite space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 158.944
+}
