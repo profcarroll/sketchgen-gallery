@@ -1,0 +1,92 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 1311, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1311/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, continuous cylindrical tunnel composed of richly colored crystalline facets. These facets are polychromatic, shifting through a vibrant palette of hues. The core element is the movement: the tunnel does not move into the distance, but instead undulates rhythmically, displaying a continuous, soft wave motion that flows both upward and downward along the length of the tunnel. The entire scene maintains this steady, hypnotic ebb and flow of color and light.",
+  "completion_tokens": 655,
+  "created_utc": "2026-09-22T00:27:47Z",
+  "entry_id": 1311,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 655,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.4,
+      "num_ctx": null,
+      "prompt_tokens": 2399,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.381,
+      "wall_s": 87.289
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1320,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cylindrical tunnel of polychromatic crystalline facets, and this time the rapid spiral vortex is replaced by a continuous, rhythmic upward and downward wave.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1292,
+    "root_entry_id": 1255
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same kaleidoscopic tunnel of polychromatic crystalline facets, and this time the forward motion slows to a gentle, breathing pulse.\n\nRevise: the same cylindrical tunnel of polychromatic crystalline facets, and this time the gentle pulse is replaced by a rapid, spiraling vortex drawing the viewer outwards from the central mask.\n\nRevise: the same cylindrical tunnel of polychromatic crystalline facets, and this time the rapid spiral vortex is replaced by a continuous, rhythmic upward and downward wave.",
+  "prompt_tokens": 2399,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1311/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1311",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing, continuously undulating cylindrical tunnel filled with crystalline facets that shift through a rich, vibrant palette of colors. The motion is not a simple forward movement but a rhythmic wave that flows both upward and downward along the tunnel's length, creating a hypnotic ebb and flow of light and hue. Using WebGL rendering for depth and smooth color transitions, the visualization avoids expensive per-frame calculations by pre-building geometry and using efficient batched drawing techniques to maintain performance while delivering a visually captivating experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.289
+}
