@@ -1,0 +1,82 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 1299, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1299/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a simulated three-dimensional scene of an abandoned campus defined by the heavy, angular forms characteristic of Brutalist architecture. Structures are composed of muted concrete tones, deep shadows, and stark geometric repeating patterns. The camera simulates a drone's flight, providing a steady, sweeping view as it progresses through the halls and courtyards, revealing the scope and decay of the academic environment through continuous, automatic movement.",
+  "completion_tokens": 868,
+  "created_utc": "2026-09-21T23:02:42Z",
+  "entry_id": 1299,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 868,
+      "evidence": null,
+      "exit": 0,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 97.2,
+      "prompt_tokens": 2388,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.029,
+      "wall_s": 99.518
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1307,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1299
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture",
+  "prompt_tokens": 2388,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1299/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1299",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a haunting, automated drone flight through an abandoned Brutalist campus. Using the WEBGL renderer, it creates a series of angular concrete structures with repeating geometric patterns that define the characteristic aesthetic of brutalist architecture. The camera slowly sweeps through the environment, revealing the scale and decay of this academic space through continuous, autonomous motion. The muted color palette and stark lighting emphasize the cold, imposing nature of these architectural forms, while subtle grid patterns on building surfaces reinforce their rigid, utilitarian design philosophy. The scene unfolds without user interaction, demonstrating how algorithmic animation can create immersive architectural narratives in a purely digital environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 99.518
+}
