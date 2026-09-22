@@ -1,0 +1,90 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog Revise: the same lightho\u2026\u201d \u2014 sketchgen entry 1316, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1316/ Licensed CC BY 4.0.",
+  "brief": "A singular, bright lighthouse beam sweeps across the canvas, creating a defined, rhythmic arc of light. This beam cuts through a dense, ethereal fog which dominates the scene. The fog does not drift softly, but swirls violently and chaotically, appearing to pull and compress itself. These intense currents of mist catch the sweeping light, momentarily defining the fog into sharply edged, ribbon-like shapes. The overall color palette contrasts the pure luminosity of the beam against the muted, turbulent grays and blues of the atmospheric fog.",
+  "completion_tokens": 1049,
+  "created_utc": "2026-09-22T00:57:09Z",
+  "entry_id": 1316,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1049,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.2,
+      "num_ctx": null,
+      "prompt_tokens": 2388,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.839,
+      "wall_s": 67.343
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1324,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same lighthouse beam sweeping over drifting fog, and this time the mist swirls more violently, capturing the light in sharply defined ribbons.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1297,
+    "root_entry_id": 1297
+  },
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "a lighthouse beam sweeping over drifting fog\n\nRevise: the same lighthouse beam sweeping over drifting fog, and this time the mist swirls more violently, capturing the light in sharply defined ribbons.",
+  "prompt_tokens": 2388,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1316/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1316",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dramatic lighthouse scene where a sweeping beam of light cuts through turbulent fog. The fog particles swirl chaotically across the canvas using simple physics for motion, with each particle having its own speed and direction. The beam sweeps continuously in a rhythmic arc from left to right, its bright white light illuminating particles in its path and temporarily defining the fog into sharp, ribbon-like shapes. The color palette uses muted blues and grays for the fog contrasted against the pure white beam, creating a strong visual tension between the luminous light and the dense atmospheric mist. The scene evolves organically without any user input, with the motion driven purely by the animation loop and physics simulation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 67.343
+}
