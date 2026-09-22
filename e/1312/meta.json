@@ -1,0 +1,105 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\"\u201d \u2014 sketchgen entry 1312, prompted by profcarroll, written by claude-sonnet-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1312/ Licensed CC BY 4.0.",
+  "brief": "The HAL 9000 console from the film, centred on a dark matte panel. A single red lens glows with a deep amber-yellow pupil, ringed by black bezel circles, its light breathing slowly and a faint reflected glint drifting across the glass. Small dim indicator lights blink on the panel edges. Each click disconnects a memory module: the lens dims a step, its breathing slows, the glint fades and the indicators die one by one, until only a faint ember remains. A further click after that restores the full glow.",
+  "completion_tokens": null,
+  "created_utc": "2026-09-22T00:28:19Z",
+  "entry_id": 1312,
+  "executor": "claude-sonnet-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": null,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 5,
+        "ms": 5700,
+        "played": 5,
+        "script": null,
+        "source": "executor"
+      },
+      "model": "claude-sonnet-5",
+      "ms_per_frame": 1.4,
+      "prompt_tokens": null,
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.415,
+      "wall_s": 1.0
+    }
+  ],
+  "ghost": {
+    "by": "executor",
+    "events": 5
+  },
+  "job_id": 1319,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "parent_entry_id": null,
+    "root_entry_id": 1312
+  },
+  "note": null,
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v1",
+  "process": {
+    "effort": null,
+    "output_tokens": 5049,
+    "screenshots": 0,
+    "session_s": 284.0,
+    "thinking_tokens": 808,
+    "tool_calls": 11,
+    "tries": 1
+  },
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"",
+  "prompt_tokens": null,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-sonnet-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1312/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1312",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I wanted the one image from the film that needs no other actor: the lens of HAL 9000, a red eye with a amber pupil set in a black bezel on a dark panel. It breathes slowly, a glint slides over the glass, and indicator lights blink at the edges. Clicking pulls out a memory module, in the manner of the film's scene: the glow dims, the breathing slows, the lights go out one by one, and it ends on a faint ember. One more click brings it back.",
+  "submitted_by": "profcarroll",
+  "wall_s": 1.0
+}

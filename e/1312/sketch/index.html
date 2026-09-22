@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sketch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+    <style>
+        body { margin: 0; overflow: hidden; background: #111; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script src="sketch.js"></script>
+    <script>window.__ghostScript = [{"t":500,"type":"click","x":0.5,"y":0.5},{"t":1800,"type":"click","x":0.5,"y":0.5},{"t":3100,"type":"click","x":0.5,"y":0.5},{"t":4400,"type":"click","x":0.5,"y":0.5},{"t":5700,"type":"click","x":0.5,"y":0.5}];</script>
+    <script>/* ghost pointer */
+    (function () {
+      /* Inert without ?ghost=; see sketchgen/ghostshim.py for why it is here
+       * at all. Nothing below runs on the entry page, on swipe or in a
+       * preview, because none of them pass the parameter. */
+      var MAX_EVENTS = 64;
+      var MAX_MS = 8000;
+      var LOOP_MS = 6000;
+      var GAP_MS = 600;          /* between two built-ins played in a row */
+      var POLL_MS = 100;         /* a preload() sketch has no canvas yet */
+      var WAIT_MS = 10000;       /* and after ten seconds it is not coming */
+      var BUILTINS = {
+        "click": [{"t":50,"type":"move","x":0.1325,"y":0.8675},{"t":100,"type":"move","x":0.185,"y":0.815},{"t":150,"type":"move","x":0.2375,"y":0.7625},{"t":200,"type":"move","x":0.29,"y":0.71},{"t":250,"type":"move","x":0.3425,"y":0.6575},{"t":300,"type":"move","x":0.395,"y":0.605},{"t":350,"type":"move","x":0.4475,"y":0.5525},{"t":400,"type":"move","x":0.5,"y":0.5},{"t":500,"type":"down","x":0.5,"y":0.5},{"t":620,"type":"up","x":0.5,"y":0.5},{"t":1400,"type":"move","x":0.382,"y":0.618},{"t":1520,"type":"click","x":0.382,"y":0.618},{"t":2300,"type":"move","x":0.618,"y":0.382},{"t":2420,"type":"click","x":0.618,"y":0.382},{"t":3200,"type":"move","x":0.618,"y":0.618},{"t":3320,"type":"click","x":0.618,"y":0.618}],
+        "drag": [{"t":200,"type":"move","x":0.2,"y":0.5},{"t":400,"type":"down","x":0.2,"y":0.5},{"t":467,"type":"move","x":0.25,"y":0.5},{"t":533,"type":"move","x":0.3,"y":0.5},{"t":600,"type":"move","x":0.35,"y":0.5},{"t":667,"type":"move","x":0.4,"y":0.5},{"t":733,"type":"move","x":0.45,"y":0.5},{"t":800,"type":"move","x":0.5,"y":0.5},{"t":867,"type":"move","x":0.55,"y":0.5},{"t":933,"type":"move","x":0.6,"y":0.5},{"t":1000,"type":"move","x":0.65,"y":0.5},{"t":1067,"type":"move","x":0.7,"y":0.5},{"t":1133,"type":"move","x":0.75,"y":0.5},{"t":1200,"type":"move","x":0.8,"y":0.5},{"t":1320,"type":"up","x":0.8,"y":0.5},{"t":1800,"type":"move","x":0.5,"y":0.2},{"t":2000,"type":"down","x":0.5,"y":0.2},{"t":2067,"type":"move","x":0.5,"y":0.25},{"t":2133,"type":"move","x":0.5,"y":0.3},{"t":2200,"type":"move","x":0.5,"y":0.35},{"t":2267,"type":"move","x":0.5,"y":0.4},{"t":2333,"type":"move","x":0.5,"y":0.45},{"t":2400,"type":"move","x":0.5,"y":0.5},{"t":2467,"type":"move","x":0.5,"y":0.55},{"t":2533,"type":"move","x":0.5,"y":0.6},{"t":2600,"type":"move","x":0.5,"y":0.65},{"t":2667,"type":"move","x":0.5,"y":0.7},{"t":2733,"type":"move","x":0.5,"y":0.75},{"t":2800,"type":"move","x":0.5,"y":0.8},{"t":2920,"type":"up","x":0.5,"y":0.8}],
+        "wander": [{"t":100,"type":"move","x":0.6816,"y":0.8564},{"t":200,"type":"move","x":0.8236,"y":0.8951},{"t":300,"type":"move","x":0.8951,"y":0.8951},{"t":400,"type":"move","x":0.8804,"y":0.8564},{"t":500,"type":"move","x":0.7828,"y":0.7828},{"t":600,"type":"move","x":0.6236,"y":0.6816},{"t":700,"type":"move","x":0.4374,"y":0.5626},{"t":800,"type":"move","x":0.2649,"y":0.4374},{"t":900,"type":"move","x":0.1436,"y":0.3184},{"t":1000,"type":"move","x":0.1,"y":0.2172},{"t":1100,"type":"move","x":0.1436,"y":0.1436},{"t":1200,"type":"move","x":0.2649,"y":0.1049},{"t":1300,"type":"move","x":0.4374,"y":0.1049},{"t":1400,"type":"move","x":0.6236,"y":0.1436},{"t":1500,"type":"move","x":0.7828,"y":0.2172},{"t":1600,"type":"move","x":0.8804,"y":0.3184},{"t":1700,"type":"move","x":0.8951,"y":0.4374},{"t":1800,"type":"move","x":0.8236,"y":0.5626},{"t":1900,"type":"move","x":0.6816,"y":0.6816},{"t":2000,"type":"move","x":0.5,"y":0.7828},{"t":2100,"type":"move","x":0.3184,"y":0.8564},{"t":2200,"type":"move","x":0.1764,"y":0.8951},{"t":2300,"type":"move","x":0.1049,"y":0.8951},{"t":2400,"type":"move","x":0.1196,"y":0.8564},{"t":2500,"type":"move","x":0.2172,"y":0.7828},{"t":2600,"type":"move","x":0.3764,"y":0.6816},{"t":2700,"type":"move","x":0.5626,"y":0.5626},{"t":2800,"type":"move","x":0.7351,"y":0.4374},{"t":2900,"type":"move","x":0.8564,"y":0.3184},{"t":3000,"type":"move","x":0.9,"y":0.2172},{"t":3100,"type":"move","x":0.8564,"y":0.1436},{"t":3200,"type":"move","x":0.7351,"y":0.1049},{"t":3300,"type":"move","x":0.5626,"y":0.1049},{"t":3400,"type":"move","x":0.3764,"y":0.1436},{"t":3500,"type":"move","x":0.2172,"y":0.2172},{"t":3600,"type":"move","x":0.1196,"y":0.3184},{"t":3700,"type":"move","x":0.1049,"y":0.4374},{"t":3800,"type":"move","x":0.1764,"y":0.5626},{"t":3900,"type":"move","x":0.3184,"y":0.6816},{"t":4000,"type":"move","x":0.5,"y":0.7828}]
+      };
+
+      function note(err) {
+        /* debug, never error: the gate's console_clean must not be trippable
+         * by a shim the sketch did not ask for. */
+        if (window.console && window.console.debug) {
+          window.console.debug("ghost pointer: " +
+            ((err && err.message) ? err.message : err));
+        }
+      }
+
+      function guarded(fn) {
+        return function () {
+          try { fn(); } catch (err) { note(err); }
+        };
+      }
+
+      function param(name) {
+        var found = new RegExp("[?&]" + name + "=([^&#]*)")
+          .exec(window.location.search || "");
+        return found ? decodeURIComponent(found[1].replace(/\+/g, " ")) : null;
+      }
+
+      function num(value, fallback) {
+        var parsed = Number(value);
+        return (value !== null && value !== "" && isFinite(parsed) && parsed > 0)
+          ? parsed : fallback;
+      }
+
+      /* Every script, whoever wrote it, goes through here. */
+      function clean(events) {
+        var out = [];
+        var at;
+        var one;
+        var kind;
+        if (!events || typeof events.length !== "number") { return out; }
+        for (at = 0; at < events.length && out.length < MAX_EVENTS; at += 1) {
+          one = events[at];
+          if (!one) { continue; }
+          kind = String(one.type);
+          if (kind !== "move" && kind !== "down" &&
+              kind !== "up" && kind !== "click") { continue; }
+          if (!(Number(one.t) >= 0) || Number(one.t) > MAX_MS) { continue; }
+          if (!(Number(one.x) >= 0) || Number(one.x) > 1) { continue; }
+          if (!(Number(one.y) >= 0) || Number(one.y) > 1) { continue; }
+          out.push({ t: Number(one.t), type: kind, x: Number(one.x), y: Number(one.y) });
+        }
+        return out;
+      }
+
+      function ends(events) {
+        var last = 0;
+        var at;
+        for (at = 0; at < events.length; at += 1) {
+          if (events[at].t > last) { last = events[at].t; }
+        }
+        return last;
+      }
+
+      /* window.__ghostScript, when a page carries one, beats the built-ins
+       * the parameter names; a comma list is played one after another. */
+      function chosen(names) {
+        var out = [];
+        var parts;
+        var shifted;
+        var at;
+        var by;
+        var step;
+        if (window.__ghostScript) { return clean(window.__ghostScript); }
+        parts = String(names).split(",");
+        for (at = 0; at < parts.length; at += 1) {
+          shifted = BUILTINS[parts[at].replace(/^\s+|\s+$/g, "")];
+          if (!shifted) { continue; }
+          by = out.length ? ends(out) + GAP_MS : 0;
+          for (step = 0; step < shifted.length; step += 1) {
+            out.push({
+              t: shifted[step].t + by, type: shifted[step].type,
+              x: shifted[step].x, y: shifted[step].y
+            });
+          }
+        }
+        return clean(out);
+      }
+
+      var want = param("ghost");
+      if (!want || want === "0") { return; }
+
+      var script = chosen(want);
+      if (!script.length) { return; }
+      var loopMs = num(param("ghost_loop"), LOOP_MS);
+      var stopped = false;
+
+      /* A hand always wins. isTrusted is false on everything dispatched
+       * below, so this cannot be woken by the ghost itself, and once it has
+       * fired the ghost never plays again in this load. */
+      function yieldToHand(event) {
+        if (event && event.isTrusted) { stopped = true; }
+      }
+      document.addEventListener("pointerdown", yieldToHand, true);
+      document.addEventListener("mousemove", yieldToHand, true);
+
+      function send(canvas, kind, x, y, buttons) {
+        canvas.dispatchEvent(new MouseEvent(kind, {
+          bubbles: true, cancelable: true,
+          clientX: x, clientY: y, button: 0, buttons: buttons
+        }));
+      }
+
+      /* p5 1.11 reads clientX against the canvas's own rect and attaches its
+       * handlers to window, so bubbles: true on the canvas is a hand. */
+      function fire(one) {
+        var canvas = document.querySelector("canvas");
+        var box;
+        var x;
+        var y;
+        if (stopped || !canvas) { return; }
+        box = canvas.getBoundingClientRect();
+        x = box.left + box.width * one.x;
+        y = box.top + box.height * one.y;
+        if (one.type === "move") { send(canvas, "mousemove", x, y, 0); }
+        else if (one.type === "down") { send(canvas, "mousedown", x, y, 1); }
+        else if (one.type === "up") { send(canvas, "mouseup", x, y, 0); }
+        else {
+          send(canvas, "mousedown", x, y, 1);
+          send(canvas, "mouseup", x, y, 0);
+          send(canvas, "click", x, y, 0);
+        }
+      }
+
+      function play() {
+        var at;
+        if (stopped) { return; }
+        for (at = 0; at < script.length; at += 1) {
+          window.setTimeout(guarded(fire.bind(null, script[at])), script[at].t);
+        }
+        window.setTimeout(guarded(play), ends(script) + loopMs);
+      }
+
+      function waitForCanvas(waited) {
+        if (stopped) { return; }
+        if (document.querySelector("canvas")) { play(); return; }
+        if (waited >= WAIT_MS) { note("no canvas after " + WAIT_MS + " ms"); return; }
+        window.setTimeout(
+          guarded(waitForCanvas.bind(null, waited + POLL_MS)), POLL_MS);
+      }
+
+      guarded(waitForCanvas.bind(null, 0))();
+    })();
+    </script>
+</body>
+</html>
