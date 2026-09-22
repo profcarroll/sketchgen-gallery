@@ -1,0 +1,112 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csupergraphics from 1975\u201d \u2014 sketchgen entry 1330, prompted by profcarroll, written by claude-opus-4-8 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1330/ Licensed CC BY 4.0.",
+  "brief": "Broad flat bands of saturated color sweep the canvas at hard diagonals, crossed by a few oversized concentric arcs and a chevron stack, in the manner of a 1970s environmental graphic mural applied straight to a wall. The palette is a handful of punchy, unmodulated hues, edges are crisp with no gradients or shading, and the composition fills the frame edge to edge with no background showing through. A click reshuffles the arrangement: the diagonal angle, the arc positions, and the color assignment all jump to a new fixed configuration, holding still until the next click.",
+  "completion_tokens": 7089,
+  "created_utc": "2026-09-22T04:07:12Z",
+  "entry_id": 1330,
+  "executor": "claude-opus-4-8",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 7089,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "claude-opus-4-8",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "preload_s": 0.028,
+      "prompt_tokens": 67729,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.99,
+      "wall_s": 139.0
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1339,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1330
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-sonnet-5",
+  "planner_prompt_version": "planner-v2",
+  "process": {
+    "effort": null,
+    "output_tokens": 8635,
+    "screenshots": 1,
+    "session_s": 131.0,
+    "thinking_tokens": 5255,
+    "tool_calls": 6,
+    "tries": 1
+  },
+  "prompt": "supergraphics from 1975",
+  "prompt_tokens": 67729,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-opus-4-8) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1330/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1330",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This is a flat graphic in the spirit of the environmental murals painted straight onto walls in the 1970s \u2014 the kind of hard-edged, high-key wayfinding art that treated a whole building facade as a single poster. Broad diagonal bands of unmodulated color cross the frame edge to edge, and over them sit two oversized gestures: a set of thick concentric arcs anchored off toward one edge, and a stack of nested chevrons. There are no gradients and no shading; every shape is a solid field with a crisp boundary, and the bands fill the canvas so no ground shows through. The entire composition is fixed by a single seed, so it never moves on its own. Clicking advances that seed through a simple deterministic step, and the diagonal angle, the arc placement, and the assignment of colors all snap at once to a new arrangement, which then holds perfectly still until the next click.",
+  "submitted_by": "profcarroll",
+  "wall_s": 139.0
+}
