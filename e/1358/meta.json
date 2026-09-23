@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwater coming to a boil Revise: this try using WebGL and make the wate\u2026\u201d \u2014 sketchgen entry 1358, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1358/ Licensed CC BY 4.0.",
+  "brief": "A 3D view of a container filled with water that is actively boiling. Transparent, spherical bubbles rise rapidly from the bottom to the surface, creating small disturbances upon breaking. The water's surface features turbulent, shimmering ripples. Wispy, translucent clouds of steam drift upward from the heat. Light refracts through the moving liquid and reflects off the bubbling surface, creating a realistic sense of depth and fluid motion.",
+  "completion_tokens": 1203,
+  "created_utc": "2026-09-22T20:39:13Z",
+  "entry_id": 1358,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1203,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "3ba8a71e592027460bc569e4d42e7b425581f9c0747999188e31e8b84979dc93",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.2,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 2563,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.413,
+      "wall_s": 89.446
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1368,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "this try using WebGL and make the water look more realiistic",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1358
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "water coming to a boil\n\nRevise: this try using WebGL and make the water look more realiistic",
+  "prompt_tokens": 2563,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1358/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1358",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a 3D visualization of boiling water in a container using p5.js's WEBGL renderer. It features rising spherical bubbles that grow as they ascend from the bottom, steam clouds that drift upward with wind effects, and a turbulent water surface with dynamic ripples. The scene responds to user interaction through mouse clicks that intensify the boiling effect. The rendering uses 3D primitives for realistic depth and motion, with particles created using spheres that dynamically change size and position over time. The visual effect simulates the physics of boiling water including buoyancy, vapor formation, and surface tension effects.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.446
+}
