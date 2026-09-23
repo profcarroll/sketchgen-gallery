@@ -1,0 +1,145 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 1360, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1360/ Licensed CC BY 4.0.",
+  "brief": "Interlocking metallic gears of varying sizes rotate within a dark, industrial 3D environment. The teeth of the gears mesh tightly, transferring motion from the fast-spinning small gears to the slow, heavy rotation of the larger ones. As the gears turn, a heavy flywheel at the end of the sequence spins with immense torque. Dragging the mouse rotates a central drive gear, changing the speed and direction of the entire interconnected system.",
+  "completion_tokens": 2373,
+  "created_utc": "2026-09-22T21:28:26Z",
+  "entry_id": 1360,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1184,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (4 error lines, first 4 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "391b0676994e8e887451d715f3698981af6db0ef55d34952d8d8432c9a21d03c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2574,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 9.321,
+      "wall_s": 87.424
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1189,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 144,
+        "sha256": "b10f22c817cd82642918f96cff4f76f59998da75ed59603e5c96759f16bb4a0d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2984,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 9.346,
+      "wall_s": 96.663
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1370,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "make more changes to the code, these are not real revisions",
+    "critique_by": "profcarroll",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1360
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect\n\nRevise: try again, the gears are not interlocking yet\n\nRevise: make more changes to the code, these are not real revisions",
+  "prompt_tokens": 5558,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1360/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1360",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a mechanical system of interlocking gears rotating in a dark, industrial 3D space. The visualization demonstrates how motion transfers through a gear train, with smaller, faster gears driving larger, slower ones. A central flywheel spins with great torque at the end of this chain, representing the culmination of the mechanical energy transfer. Viewers can interact by dragging their mouse across the canvas to change the rotation speed and direction of the entire system. The scene subtly pulses with light that responds to the average speed of the gears, enhancing the sense of mechanical rhythm and energy flow within the rotating machinery.",
+  "submitted_by": "profcarroll",
+  "wall_s": 184.087
+}
