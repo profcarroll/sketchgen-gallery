@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can ant colony digging tunnels toward wherever you last clicked\u201d \u2014 sketchgen entry 1478, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1478/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a view into a cross-section of rich, earthen tunnels occupied by swarms of stylized ants. The background uses browns and ochres to create depth and texture. The tunnels themselves are the primary visible feature, appearing as meandering, intersecting geometric paths. When the viewer clicks anywhere on the canvas, the entire ant colony shifts focus. The tunnels immediately begin to extend, widening and carving actively toward the precise point of the click, demonstrating a clear and continuous shift in the colony\u2019s digging path.",
+  "completion_tokens": 1203,
+  "created_utc": "2026-09-23T15:51:58Z",
+  "entry_id": 1478,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1203,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2405,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.25,
+      "wall_s": 74.682
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1489,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1478
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an ant colony digging tunnels toward wherever you last clicked",
+  "prompt_tokens": 2405,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1478/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1478",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an underground ecosystem where ants tunnel through earthen paths, creating a network of interconnected passages. The visual design uses warm browns and ochres to evoke the texture of soil and rock. When clicked, the entire colony's focus shifts to that point, initiating a dramatic change in the tunnel system - the main tunnel rapidly extends toward the click location, widening as it carves its path. The ants continue their natural behavior, following the tunnels while occasionally emerging from the main passage. The effect is both dynamic and organic, showing how a single action can reshape an entire underground environment through continuous, evolving patterns of excavation and movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.682
+}
