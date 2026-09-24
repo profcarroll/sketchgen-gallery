@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cice melting quickly a complex gearing mechanism converting speed to p\u2026\u201d \u2014 sketchgen entry 1351, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1351/ Licensed CC BY 4.0.",
+  "brief": "Interlocking brass gears of different sizes rotate at varying speeds, demonstrating a conversion of motion. This mechanism drives a component that agitates a vessel of water, which rapidly transitions into a vigorous boil with rising bubbles and swirling steam. Nearby, large chunks of translucent blue ice shrink quickly, melting into small droplets that flow across the surface. The entire scene is a continuous animation of mechanical motion and thermal phase changes.",
+  "completion_tokens": 1974,
+  "created_utc": "2026-09-22T15:18:13Z",
+  "entry_id": 1351,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1974,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2362,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.816,
+      "wall_s": 127.998
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1360,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1351
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "ice melting quickly\r\na complex gearing mechanism converting speed to power\r\nwater coming to a boil",
+  "prompt_tokens": 2362,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1351/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1351",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a mechanical system of interlocking brass gears driving a boiling water vessel. The animation begins with large rotating gears that connect through a mechanism to agitate the water below. As motion transfers through the gears, it causes bubbles to rise from the heated water surface and steam to emerge. Nearby, translucent ice chunks melt rapidly into droplets that flow across the water's surface. The scene captures the continuous transformation of mechanical energy into thermal motion, showing phase changes in a single evolving visual narrative. The entire composition uses only p5.js core functions with no external libraries.",
+  "submitted_by": "profcarroll",
+  "wall_s": 127.998
+}
