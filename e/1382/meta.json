@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cseismic activity\u201d \u2014 sketchgen entry 1382, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1382/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continually shifting field of interconnected, fluid waves that pulse across the surface, transitioning between deep blues and warm reds. These waves undulate slowly, suggesting immense, underlying pressure, causing ripples that expand and diminish automatically across the entire visible area. When the viewer drags the mouse across the canvas, the existing wave patterns are intensified, causing a focused tremor that radiates outwards, momentarily disrupting the color gradient and creating visible, localized stress points.",
+  "completion_tokens": 667,
+  "created_utc": "2026-09-23T06:52:19Z",
+  "entry_id": 1382,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 667,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.4,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 2394,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.36,
+      "wall_s": 47.134
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1393,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1382
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "seismic activity",
+  "prompt_tokens": 2394,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1382/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1382",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, interactive field of fluid waves that shift between deep blues and warm reds. The waves pulse slowly across the canvas, forming an ever-changing pattern of interconnected forms that suggest underlying pressure and motion. When users drag their mouse across the surface, localized tremors radiate outward, intensifying the wave patterns and creating visible stress points where the color gradient is momentarily disrupted. The visual effect is achieved through a combination of sine wave animations, color mapping, and real-time interaction handling, all within strict performance constraints to ensure smooth operation in any browser environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 47.134
+}
