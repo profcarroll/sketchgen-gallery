@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can origami crane folding and unfolding itself forever\u201d \u2014 sketchgen entry 1479, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1479/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, three-dimensional representation of an origami crane constantly undergoing transformation. Initially, the viewer sees the crane constructed from several interlocking, brightly colored planes of paper. These planes do not remain static; instead, they writhe and shift, executing a perpetual cycle of folding and unfolding. The structure repeatedly blossoms fully into a graceful crane shape, only to instantly begin collapsing back into its constituent folded layers, restarting the mesmerizing metamorphosis over and over again. The entire piece is a continuous loop of architectural movement, generating visual complexity solely through its own self-contained motion.",
+  "completion_tokens": 783,
+  "created_utc": "2026-09-23T15:54:08Z",
+  "entry_id": 1479,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 783,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2424,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.255,
+      "wall_s": 52.744
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1490,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1479
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an origami crane folding and unfolding itself forever",
+  "prompt_tokens": 2424,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1479/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1479",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an abstract, three-dimensional origami crane in perpetual motion. The crane is composed of multiple interlocking planes that continuously fold and unfold in a mesmerizing cycle. Using the WEBGL renderer, I created a series of rotating geometric planes that transform their positions and orientations over time, simulating the natural flow of paper folding and unfolding. The animation is self-contained and driven entirely by mathematical functions, creating an endless metamorphosis of form. The planes shift through various configurations, transitioning from a structured crane shape back into its constituent folded layers, generating visual complexity through pure motion rather than static geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 52.744
+}
