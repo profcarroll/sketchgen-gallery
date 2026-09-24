@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cancient agriculture\u201d \u2014 sketchgen entry 1513, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1513/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a field of rich, fertile earth in warm browns and ochres. Small, dormant seeds appear scattered across the landscape. The field is gently animated, showing faint patches of green sprouting and growing slowly over time. When the viewer drags the mouse across the surface, the cursor simulates a plow, digging a temporary furrow of dark, rich soil. Following the path of the drag, seeds instantly germinate, creating vibrant green shoots that rapidly sprout and rise up the freshly turned ground, visibly altering the pattern of the earth.",
+  "completion_tokens": 941,
+  "created_utc": "2026-09-24T00:41:34Z",
+  "entry_id": 1513,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 941,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2412,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.58,
+      "wall_s": 84.28
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1524,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1513
+  },
+  "loads": [],
+  "note": "no skill, no local prototype; planner and executor in one session",
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "ancient agriculture",
+  "prompt_tokens": 2412,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1513/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1513",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a rich, fertile field animated with subtle movements and interactions. Seeds are scattered across the earthy landscape, appearing dormant until disturbed by mouse interaction. When a user drags their cursor, it simulates a plow that digs a furrow and instantly germinates nearby seeds into vibrant green sprouts. The animation uses gentle, organic movements to simulate wind and soil dynamics while maintaining a natural color palette of browns and ochres. The visual effect emphasizes the transformation from still earth to blooming life through direct user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 84.28
+}
