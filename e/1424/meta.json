@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 1424, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1424/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an abstract, sweeping view of a sprawling metropolitan cityscape viewed from a great height at night. The atmosphere is dominated by deep, dark blues and blacks, dramatically contrasted by brilliant bursts of luminous light. These light streaks constantly flow and shift across the surface, coalescing into intricate, luminous geometric patterns. The lines intersect at bright, glowing nodes, creating the appearance of a massive, electronic circuit board or a constantly evolving energy matrix across the vast urban backdrop.",
+  "completion_tokens": 898,
+  "created_utc": "2026-09-23T09:27:12Z",
+  "entry_id": 1424,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 898,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2404,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.362,
+      "wall_s": 59.489
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1435,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1424
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a vast, illuminated cityscape, and this time the color shifts of the light streaks will have a more pronounced contrast with the dark backdrop.\n\nRevise: the same abstract, high-altitude view of a vast metropolis at night, and this time the flowing light streaks will coalesce into visible, repeating, luminous geometric patterns.\n\nRevise: Revise: the same abstract, high-altitude panorama of a vast metropolis at night, and this time the geometric patterns formed by the light streaks will be composed of intersecting lines and illuminated nodes.",
+  "prompt_tokens": 2404,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1424/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1424",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract, evolving cityscape from a bird's-eye view at night. Using WebGL rendering, it depicts a vast urban energy matrix with flowing light streaks (lines) and glowing nodes that form an intricate circuit board pattern. The scene continuously evolves as the camera slowly orbits the space, revealing the dynamic interplay between geometric connections and luminous points. The deep blues and blacks contrast dramatically with brilliant white and cyan lights, creating a sense of massive electronic infrastructure pulsing with energy across the urban expanse. The visual effect captures both the scale of a sprawling metropolis and the micro-detail of an electronic circuit board, all within a single continuous animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 59.489
+}
