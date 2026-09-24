@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cfireflies spelling out a message in Morse code\u201d \u2014 sketchgen entry 1476, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1476/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a dark night environment populated by numerous small, glowing lights representing fireflies. These lights flicker and drift across the screen, but their movements synchronize periodically. They organize themselves into rapid, structured bursts of light, forming distinct patterns of dots and dashes that spell out a message in Morse code. The light show unfolds rhythmically and automatically, creating a timed, visual performance that does not require any input from the viewer.",
+  "completion_tokens": 849,
+  "created_utc": "2026-09-23T15:47:14Z",
+  "entry_id": 1476,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 849,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2366,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.248,
+      "wall_s": 55.614
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1487,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1476
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fireflies spelling out a message in Morse code",
+  "prompt_tokens": 2366,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1476/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1476",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing night scene populated by hundreds of glowing fireflies that drift gently across the screen. The fireflies flicker with natural randomness and subtly synchronize their movements in periodic bursts, creating rhythmic visual patterns. At regular intervals, these synchronized moments coalesce into clear Morse code dots and dashes spelling out \"SOS\" in the upper portion of the canvas. The entire composition unfolds automatically without any user input, presenting a hypnotic blend of individual randomness and collective synchronization that evokes both the organic chaos and structured beauty of natural phenomena.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.614
+}
