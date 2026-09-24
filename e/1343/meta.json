@@ -1,0 +1,112 @@
+{
+  "assertions": [
+    "no_motion",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmake two frames. fill one with a beautiful photo. fill the other with\u2026\u201d \u2014 sketchgen entry 1343, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1343/ Licensed CC BY 4.0.",
+  "brief": "The canvas is divided into two side-by-side frames. The first frame displays a photograph of sharp mountain peaks piercing through a layer of thick, atmospheric mist. The second frame displays an artistic painting of the same scene, translating the photograph's colors and shapes into expressive, textured brushstrokes that capture the mountains emerging from the fog. The composition provides a direct visual comparison between the photographic reality and the painterly interpretation.",
+  "completion_tokens": 543,
+  "created_utc": "2026-09-22T05:43:30Z",
+  "entry_id": 1343,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 543,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 48,
+        "sha256": "a36cff867ea191b353d4ea8ae39b0556093917fb0cf461a2245a69a76c6ea0ab",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 2.188,
+      "prompt_tokens": 2232,
+      "resources_loaded": [
+        {
+          "bytes": 89602,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 4.894,
+      "wall_s": 80.106
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1352,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same side-by-side comparison, and this time the mist allows the mountain peaks to pierce clearly through the fog.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1338,
+    "root_entry_id": 1338
+  },
+  "loads": [
+    {
+      "bytes": 89602,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "make two frames. fill one with a beautiful photo. fill the other with your painting of the photo.\n\nRevise: the same side-by-side comparison, and this time the mist allows the mountain peaks to pierce clearly through the fog.",
+  "prompt_tokens": 2232,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1343/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1343",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a visual comparison between a realistic photograph and an artistic interpretation of the same mountain landscape. The left frame displays a sharp, detailed image of snow-capped peaks emerging from atmospheric mist, while the right frame shows a painterly rendering that translates the photograph's colors and forms into expressive brushstrokes. The artwork explores the contrast between mechanical documentation and human artistic perception, showing how the same scene can be interpreted through different visual languages\u2014photography capturing precise detail versus painting emphasizing emotional texture and atmospheric flow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 80.106
+}
