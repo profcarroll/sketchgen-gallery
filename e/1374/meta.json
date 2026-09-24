@@ -1,0 +1,143 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)",
+    "responds(audio)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cread Finnegan's Wake by James Joyce and then create an interactive sk\u2026\u201d \u2014 sketchgen entry 1374, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1374/ Licensed CC BY 4.0.",
+  "brief": "The canvas is a perpetual, swirling vortex of semi-transparent characters, glyphs, and linguistic fragments, rendered in deep, echoing aqueous colors. These textual elements constantly overlap, drift, and dissolve, creating a dynamic, rhythmic field of patterned chaos that mimics continuous stream-of-consciousness. The background is in constant, gentle motion. When the viewer interacts\u2014by clicking or dragging the mouse, or by generating sound\u2014the surrounding textual cloud momentarily solidifies. These fragments coalesce into brief, highly suggestive, yet nonsensical, phrasal structures before immediately dissolving and resuming the fluid, hypnotic motion.",
+  "completion_tokens": 4342,
+  "created_utc": "2026-09-23T06:31:17Z",
+  "entry_id": 1374,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false,
+        "responds(click)": false,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 2201,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing, audio_context_running; assertions failed: motion(idle), responds(click), responds(drag), responds(audio)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n    fix: the gate pokes the canvas with one real click at its centre and gives the sketch no other gesture; a browser keeps an AudioContext suspended until a gesture, so start audio from that click \u2014 call `userStartAudio()` (or `getAudioContext().resume()`) inside `mousePressed()` on the canvas, not in `setup()` and not behind an HTML button the gate never clicks\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(click): no canvas snapshots to compare\n- responds(drag): no canvas snapshots to compare\n- responds(audio): the silent reference run produced no canvas to compare with\n\nConsole (1 error line, first 1 shown):\n- [error] Error: Unsupported OpenType signature /* c     at Cr (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:349711)     at https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:352717     at r.onload (https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js:2:348718) https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "ghost": {
+        "events": 46,
+        "ms": 0,
+        "played": 0,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 10.004,
+      "prompt_tokens": 2476,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.946,
+      "wall_s": 133.667
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 2141,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 179,
+        "sha256": "8bed2868bce862d496779010739b9d3501d555f2d79a7d2d06f14fbd553e660d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.3,
+      "num_ctx": 16384,
+      "preload_s": 0.033,
+      "prompt_tokens": 4949,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 22.905,
+      "wall_s": 214.441
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1385,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "read Finnegan's Wake by James Joyce and then create an interactive sketch that interprets the text",
+  "prompt_tokens": 7425,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1374/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1374",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, fluid field of textual elements that swirl and dance across the screen like a continuous stream of consciousness. The characters\u2014letters, numbers, and Greek symbols\u2014move in subtle, organic patterns, constantly overlapping and dissolving into one another. In their natural state, they drift slowly with semi-transparent hues, creating an aqueous, hypnotic atmosphere. When the viewer interacts by clicking or dragging, these textual fragments momentarily coalesce into more solid, suggestive forms before quickly returning to their fluid motion. Sound input causes a similar temporary solidification effect, making the abstract visual field respond to audio stimuli in real-time. The work explores themes of mental flow, linguistic fragmentation, and the dynamic relationship between perception and interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 348.108
+}
