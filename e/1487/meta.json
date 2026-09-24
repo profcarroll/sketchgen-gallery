@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cfresh snowfall slowly filling in a trail of footprints\u201d \u2014 sketchgen entry 1487, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1487/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a scene dominated by white and shades of gray. Crisp, dark shapes mark a clear trail of footprints etched into the ground. Soft, white particles representing fresh snowfall drift slowly from the top of the canvas, steadily accumulating and covering the tracks. The footprints remain visible initially, but over time, the snow visibly settles, filling in the lines and gradually obscuring the pattern until the ground appears uniformly covered. The movement is gentle and continuous.",
+  "completion_tokens": 913,
+  "created_utc": "2026-09-23T16:22:53Z",
+  "entry_id": 1487,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 913,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2375,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.515,
+      "wall_s": 58.909
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1498,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1487
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fresh snowfall slowly filling in a trail of footprints",
+  "prompt_tokens": 2375,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1487/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1487",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene winter scene where footprints etched into the snow gradually disappear under a continuous snowfall. The work uses a simple yet effective technique of layering visual elements: dark elliptical shapes represent footprints that fade over time, while white particles simulate falling snow. As snow accumulates, it obscures the original trail, creating an elegant narrative about time's passage and nature's quiet transformation. The gentle, continuous animation captures the patient process of snow settling into the ground, with each footprint gradually becoming less visible as fresh snow piles up around them. The scene is entirely self-contained, evolving without external input through a combination of fading elements and particle physics that maintain the illusion of natural movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.909
+}
