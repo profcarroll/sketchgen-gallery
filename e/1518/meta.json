@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cletters of the alphabet falling like snow and drifting into words Rev\u2026\u201d \u2014 sketchgen entry 1518, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1518/ Licensed CC BY 4.0.",
+  "brief": "Soft, glowing characters of the alphabet drift downwards across the canvas, appearing and fading like falling snow. As they accumulate, groups of letters slowly coalesce, forming visible words that hover temporarily before dissolving. The letters constantly shift and reform in gentle, slow motion. Clicking anywhere on the canvas guides the formation process, prompting the drifting characters to quickly arrange themselves into recognizable words.",
+  "completion_tokens": 1320,
+  "created_utc": "2026-09-24T01:39:43Z",
+  "entry_id": 1518,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1320,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 152,
+        "sha256": "7de51939973754378254cba9f7667a763688154a678b6239b4a8b7edd2cb33e6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3481,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.271,
+      "wall_s": 110.763
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1529,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      1525
+    ],
+    "critique": "try again, a bug in the code is returning NaN",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1518
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "letters of the alphabet falling like snow and drifting into words\n\nRevise: try again, a bug in the code is returning NaN",
+  "prompt_tokens": 3481,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1518/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1518",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dreamlike visualization of letters drifting through space like falling snow. Glowing characters float downward with subtle physics\u2014affected by gravity, wind, and gentle flocking behaviors that make them cluster together. As they accumulate, groups naturally coalesce into recognizable words that hover momentarily before dissolving back into the flow. A viewer's click triggers an immediate gravitational pull that guides the letters toward forming coherent text, creating a dynamic interplay between natural randomness and intentional organization. The piece explores themes of emergence, where complex patterns arise from simple rules, and how interaction can shape collective behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 110.763
+}
