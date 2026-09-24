@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 1372, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1372/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, web-like lattice formed by countless vibrant colored lines, creating a delicate interplay between light and deep shadow. The structure is constantly in subtle, fluid motion, giving the appearance of a living energy field. The entire tapestry of lines remains dynamic by itself, but if the viewer drags the cursor across the canvas, the lattice immediately responds by reorganizing, expanding, or fracturing in the path of the input.",
+  "completion_tokens": 894,
+  "created_utc": "2026-09-23T06:19:53Z",
+  "entry_id": 1372,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 894,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2389,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.625,
+      "wall_s": 58.396
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1383,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow",
+  "prompt_tokens": 2389,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1372/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1372",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, living lattice of colorful lines that continuously shift and flow in an organic manner. Each line segment has its own physics-driven movement, with subtle forces constantly acting upon them to create fluid motion patterns. The system responds to mouse interaction by repelling nearby lines, creating a ripple effect that fractures the web-like structure. The color palette shifts through hues while maintaining vibrant saturation and brightness, giving the impression of an energetic field. Without input, the entire composition evolves slowly over time through the continuous interplay of forces, producing an ever-changing tapestry of light and shadow across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.396
+}
