@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca glacier calving into the sea in slow motion Revise: try again to ma\u2026\u201d \u2014 sketchgen entry 1520, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1520/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a massive, slowly moving glacial wall meeting a deep ocean sea. Huge blocks of compressed ice, rendered in shades of sapphire, stark white, and slate grey, shift constantly, giving the sense of immense, slow time. As the glacier wall gradually retreats, large chunks detach and fall into the water below. The falling ice creates visible shockwaves and ripples that expand outwards, distorting the deep blue surface of the sea. The interplay of light and deep shadow emphasizes the cold, dramatic forces of the calving event.",
+  "completion_tokens": 1308,
+  "created_utc": "2026-09-24T01:45:40Z",
+  "entry_id": 1520,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1308,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 135,
+        "sha256": "0010de352ff1b40df07d253a6658e7f97c93c39233f64cdd0b2a2d117ad4acff",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3630,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.407,
+      "wall_s": 115.186
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1531,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again to make it more representational",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1520
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a glacier calving into the sea in slow motion\n\nRevise: try again to make it more representational",
+  "prompt_tokens": 3630,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1520/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1520",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a serene yet powerful glacial calving event, where massive blocks of ice slowly shift and detach from a towering glacier wall. The scene is rendered using p5.js in WEBGL mode, creating an immersive underwater perspective with the ocean floor visible below the waterline. Ice chunks are generated dynamically as they fall into the sea, each with unique trajectories and rotations. As they impact the surface, shockwaves ripple outward\u2014visualized as expanding spheres that gradually fade\u2014distorting the deep blue ocean's calm surface. The interplay of light and shadow enhances the cold, dramatic atmosphere of the natural phenomenon, emphasizing both the immense scale and the slow, inevitable passage of time in this frozen landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.186
+}
