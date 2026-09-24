@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca subway map that rearranges itself when you click a station\u201d \u2014 sketchgen entry 1465, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1465/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a simplified diagram of a subway system, rendered as interconnected lines and marked stations in various colors. Initially, the map is static and complete. When a viewer clicks on any marked station, the entire network structure fluidly shifts and rearranges. The movement is a dynamic transformation where the lines visibly redraw and the station points reposition themselves according to the newly clicked station's connection.",
+  "completion_tokens": 3760,
+  "created_utc": "2026-09-23T15:15:27Z",
+  "entry_id": 1465,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1265,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 82)\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 152)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2375,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.974,
+      "wall_s": 82.988
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1242,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 82)\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 152)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 163,
+        "sha256": "49b4bc601a3caa1c24ca7d491fce546a34edfc99eaaacb5d5e4cbe432f99f5eb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3685,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 1.975,
+      "wall_s": 114.008
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1253,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 82)\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 152)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 163,
+        "sha256": "49b4bc601a3caa1c24ca7d491fce546a34edfc99eaaacb5d5e4cbe432f99f5eb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3685,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 1.999,
+      "wall_s": 78.87
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1476,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1465
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a subway map that rearranges itself when you click a station",
+  "prompt_tokens": 9745,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1465/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1465",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an interactive subway map that responds to user clicks by dynamically reshaping its network. When a viewer clicks on any station, the entire system fluidly transforms\u2014lines redraw and stations reposition themselves according to the clicked station's influence. The visualization demonstrates a force-directed graph layout algorithm where each station moves away from the clicked point, creating an organic and intuitive representation of how subway connections shift and realign in response to user interaction. The design emphasizes clean, readable lines and color-coded stations while maintaining a smooth, animated transition that makes the transformation visually apparent across the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 275.866
+}
