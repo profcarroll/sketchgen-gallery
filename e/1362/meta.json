@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 1362, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1362/ Licensed CC BY 4.0.",
+  "brief": "A 3D mechanical assembly of interlocking metallic gears features highly detailed, precisely carved teeth that mesh together seamlessly. The gears rotate at varying speeds, creating a visual representation of a mechanism converting speed into power. Polished steel and brass textures catch the light as the components spin in a continuous, synchronized motion, highlighting the physical connection between each gear.",
+  "completion_tokens": 1183,
+  "created_utc": "2026-09-23T02:44:10Z",
+  "entry_id": 1362,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1183,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 143,
+        "sha256": "05aa49a1f83320d8b0d90f0ac02b47f1c541910291be645b180d7010179dda5f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2813,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 9.714,
+      "wall_s": 95.168
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1372,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interlocking metallic gears, and this time the gear teeth should be highly detailed and visibly mesh together.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1360,
+    "root_entry_id": 1360
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect\n\nRevise: try again, the gears are not interlocking yet\n\nRevise: make more changes to the code, these are not real revisions\n\nRevise: the same interlocking metallic gears, and this time the gear teeth should be highly detailed and visibly mesh together.",
+  "prompt_tokens": 2813,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1362/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1362",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a 3D mechanical gear assembly that rotates with synchronized motion, capturing the essence of a precision-engineered mechanism converting speed into power. The visualization uses WebGL rendering to create a polished metallic appearance with interlocking gears of varying sizes and speeds. A central light pulse responds dynamically to the rotation, and a flywheel at the end adds visual weight and motion. The entire scene rotates slowly around its center, offering a continuous view of the mechanical dance. Viewer interaction adjusts the overall speed through mouse drag, while the camera movement provides a dynamic perspective on the rotating components.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.168
+}
