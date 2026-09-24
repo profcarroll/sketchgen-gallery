@@ -1,0 +1,137 @@
+{
+  "assertions": [
+    "responds(audio)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cskatepark music video\u201d \u2014 sketchgen entry 1398, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1398/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays neon, kinetic shapes that cascade and intersect across the frame, mirroring the rhythm and bass drops of the music. Spheres and sharp polygons bloom and contract in vibrant hues\u2014electric blues, acid greens, and hot pinks\u2014following the beat. The shapes continuously shift and reform, creating a dynamic, abstract representation of motion and energy that reacts instantly to the microphone input.",
+  "completion_tokens": 2233,
+  "created_utc": "2026-09-23T07:50:48Z",
+  "entry_id": 1398,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(audio)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1112,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(audio), motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.0000/255 (threshold 1.0), 0 of 1152000 pixels changed = 0.00% (threshold 2%); mean canvas brightness 0.000 under 440 Hz vs 0.000 under silence\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] sphere() is only supported in WEBGL mode. If you'd like to use 3D graphics and WebGL, see  https://p5js.org/examples/form-3d-primitives.html for more information.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.034,
+      "prompt_tokens": 2390,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.294,
+      "wall_s": 69.684
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1121,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 125,
+        "sha256": "8e8c23c8ed7ce22a5b0887bbdd6844c70240e0623d11378cb671194a5041c09c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "preload_s": 0.034,
+      "prompt_tokens": 3740,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.881,
+      "wall_s": 101.946
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1409,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video",
+  "prompt_tokens": 6130,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1398/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1398",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, audio-reactive visualization of kinetic shapes that pulse and flow across the screen in response to sound input. The composition features glowing spheres and geometric polygons that shift in size, color, and rotation based on the amplitude and frequency spectrum of live microphone input. Shapes continuously move across the canvas while their visual properties respond instantly to musical beats and bass drops, creating an abstract representation of rhythm through color, motion, and form. The visualization maintains a consistent frame rate and responsive behavior without external dependencies beyond the core p5.js library.",
+  "submitted_by": "profcarroll",
+  "wall_s": 171.63
+}
