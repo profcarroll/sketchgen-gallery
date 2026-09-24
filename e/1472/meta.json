@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca jellyfish made of drifting sine waves\u201d \u2014 sketchgen entry 1472, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1472/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an ethereal jellyfish rendered in flowing, translucent shapes. Its body is composed entirely of smoothly undulating, bioluminescent patterns, predominantly deep blues and bright cyans. These complex wave structures continuously expand, contract, and drift across the canvas, creating a sense of perpetual, fluid motion. The entire organism pulsates and moves gently and autonomously, without needing any direct interaction from the viewer to maintain its shifting, mesmerizing form.",
+  "completion_tokens": 699,
+  "created_utc": "2026-09-23T15:37:50Z",
+  "entry_id": 1472,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 699,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2372,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.108,
+      "wall_s": 47.573
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1483,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1472
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a jellyfish made of drifting sine waves",
+  "prompt_tokens": 2372,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1472/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1472",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an ethereal jellyfish using layered undulating waveforms that pulse and flow autonomously across the canvas. The organism's body is composed of multiple translucent, bioluminescent layers in deep blues and bright cyans, each expanding and contracting in sync with its own rhythmic motion. Floating particles drift through the space, enhancing the luminous, dreamlike quality of the form. The fluid, organic movement emerges from mathematical wave functions that continuously evolve over time, creating an immersive visual experience without any external interaction. The jellyfish appears to breathe and drift gently, maintaining its mesmerizing form through self-generated animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 47.573
+}
