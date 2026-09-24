@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 1437, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1437/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, steampunk kinetic sculpture structure. Several luminous splines, crafted from oxidized copper and fragments of sea glass, orbit around a central, intensely glowing source. This central element is rendered as thick, viscous molten bronze. The entire, intricate apparatus revolves and shifts in three dimensions, showcasing mechanical precision and the contrast between aged metal and glowing magma. The viewer observes this dynamic, self-contained mechanism without needing any input to witness the full, continuous motion.",
+  "completion_tokens": 985,
+  "created_utc": "2026-09-23T10:18:21Z",
+  "entry_id": 1437,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 985,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2404,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.07,
+      "wall_s": 63.682
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1448,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1437
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same orbiting splines, and this time the splines should appear made of oxidized copper and sea glass\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze glow should appear thicker and more viscous.",
+  "prompt_tokens": 2404,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1437/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1437",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a steampunk kinetic sculpture in three-dimensional space, featuring a central molten bronze core that emits intense light and glowing particles orbiting around it. The composition uses oxidized copper hues for the mechanical elements and blue-green sea glass fragments to contrast the aged metal with the vibrant glow. The entire structure rotates continuously, showing the intricate interplay between mechanical precision and luminous energy. The visualization employs WebGL rendering to create a dynamic, self-contained mechanical system that moves without external input, embodying the contrast between ancient materials and intense, otherworldly light.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.682
+}
