@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca coral reef bleaching and slowly recovering its color Revise: try ag\u2026\u201d \u2014 sketchgen entry 1516, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1516/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays intricate, branching structures representing a coral reef. The shapes start pale and fragmented, conveying a sense of dormancy. Over time, the entire scene slowly undergoes a vibrant transformation. Rich, deep colors\u2014including vivid blues, oranges, and greens\u2014begin to seep back into the coral tissues. The structures appear to gently pulse and flow, visualizing the biological process of life returning to the depths. The movement is subtle, representing the slow, continuous passage of recovery.",
+  "completion_tokens": 898,
+  "created_utc": "2026-09-24T01:25:56Z",
+  "entry_id": 1516,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 898,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "c1a1ba296161798e781dc002c561f3bdc182df1625c49edfb32a598dc723f86c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3138,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.742,
+      "wall_s": 76.338
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1527,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again to make a coral reef",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1516
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a coral reef bleaching and slowly recovering its color\n\nRevise: try again to make a coral reef",
+  "prompt_tokens": 3138,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1516/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1516",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts the slow, patient revival of a coral reef through abstract branching forms that begin pale and fragmented before gradually blooming into rich, saturated hues. The visualization uses color transitions over time to represent the biological process of life returning to the depths, with each coral structure pulsing gently as it evolves from dormancy to vibrancy. The subtle motion and gradual color shifts create an immersive sense of recovery and renewal in a deep-sea environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.338
+}
