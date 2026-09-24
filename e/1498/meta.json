@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csand dunes migrating across the screen over a thousand years\u201d \u2014 sketchgen entry 1498, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1498/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with vast, organic shapes of undulating sand dunes, shifting through warm ochre and burnt sienna tones. These colossal dunes appear to drift and flow, constantly rearranging themselves to mimic the ceaseless passage of time. The movement is grand and sweeping, suggesting geological forces at work, as if the landscape itself is breathing. There is no direct input required from the viewer; the system simply displays the relentless, slow ballet of the migrating sands, continually reshaping the surface over the span of hours.",
+  "completion_tokens": 800,
+  "created_utc": "2026-09-23T17:02:34Z",
+  "entry_id": 1498,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 800,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2385,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.437,
+      "wall_s": 53.827
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1509,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1498
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "sand dunes migrating across the screen over a thousand years",
+  "prompt_tokens": 2385,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1498/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1498",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-shifting landscape of organic sand dunes that flow across the canvas in a continuous, breathing motion. Using a combination of overlapping ellipses and procedural noise functions, each dune is rendered as a layered, undulating form with subtle color variations that shift between warm ochre and burnt sienna tones. The system employs time-based movement and perlin noise to simulate the slow, geological forces that shape desert landscapes, creating an immersive visualization of perpetual change without any user interaction required. The visual effect suggests vastness and timelessness, with dunes constantly repositioning themselves in a gentle, hypnotic dance across the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 53.827
+}
