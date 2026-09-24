@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate an interactive drone show over a cityscape harbor and let mous\u2026\u201d \u2014 sketchgen entry 1444, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1444/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vibrant, dynamic nighttime harbor and encompassing cityscape. Miniature drones navigate the scene, their paths and formations being directly influenced by the viewer's mouse input. Moving the cursor guides the drones' flight pattern across the water and buildings. Clicking the mouse causes the drones to transition into pre-set formation patterns. As they move, the drones emit bright, focused beams of light\u2014searchlights\u2014that sweep across the architecture and the harbor, dramatically illuminating specific structures in the deep night.",
+  "completion_tokens": 4731,
+  "created_utc": "2026-09-23T10:49:21Z",
+  "entry_id": 1444,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1619,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cone()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 140)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 180)\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 181)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: responds(drag), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'width' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2442,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.793,
+      "wall_s": 99.813
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false,
+        "responds(drag)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1682,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cone()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 166)\n\ngate exit 1: checks failed: console_clean; assertions failed: uses(webgl), responds(drag), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] box() is only supported in WEBGL mode. If you'd like to use 3D graphics and WebGL, see  https://p5js.org/examples/form-3d-primitives.html for more information.\n",
+      "exit": 1,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 194,
+        "sha256": "f293352acd2ce570ef9aa644882dcf711ea2c92220ea5c76e3370a1d65b9e146",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4328,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.231,
+      "wall_s": 156.734
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1430,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cone()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 137)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 18.9283/255, 508009 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 194,
+        "sha256": "306191ce8269d345854b52672a9ccd6ed47a4c3dd15773c3092ef799f65da365",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 93.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4336,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 75.376,
+      "wall_s": 138.176
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1455,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1444
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create an interactive drone show over a cityscape harbor and let mouse movements and clicks cycle the drones into their various formations\n\nRevise: the same dynamic nighttime cityscape harbor, and this time the drones will leave glowing contrails as they fly\n\nRevise: the same dynamic nighttime harbor scene, and this time the drones will illuminate the buildings with focused searchlights",
+  "prompt_tokens": 11106,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1444/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1444",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic nighttime harbor scene populated by miniature drones that respond to viewer interaction. When the user moves their cursor, the drones navigate the environment in a fluid, responsive manner, following the mouse position with physics-based motion. A single click toggles between free-flight mode and pre-set formation patterns, where drones align into geometric configurations. Each drone emits a bright searchlight beam that sweeps across the cityscape and harbor, creating dramatic illumination effects. The visualization uses WebGL for 3D rendering to achieve depth and lighting effects while maintaining performance within the strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 394.723
+}
