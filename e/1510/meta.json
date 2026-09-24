@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca marching band seen from above, forming shapes on a football field\u201d \u2014 sketchgen entry 1510, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1510/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an overhead view of a brightly colored football field, upon which the figures of a marching band are arranged. The band members are visible by their coordinated uniforms, creating abstract and geometric shapes on the turf. The shapes shift subtly through arrangement, utilizing primary colors of the uniforms against the green field. The visual composition of the figures and the resulting forms are the main elements, with the arrangement appearing stable and ready for presentation.",
+  "completion_tokens": 628,
+  "created_utc": "2026-09-23T17:39:53Z",
+  "entry_id": 1510,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 628,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2363,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.53,
+      "wall_s": 43.814
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1521,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1510
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a marching band seen from above, forming shapes on a football field",
+  "prompt_tokens": 2363,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1510/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1510",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a static overhead view of a football field with a marching band arranged in a circular formation. The band members are represented as geometric shapes\u2014circles and squares\u2014in primary colors against the green field background. The composition remains completely still, presenting a stable, ready-for-presentation moment that emphasizes the abstract geometric relationships formed by the coordinated uniforms. The visual effect relies on the contrast between the uniform shapes and the field's markings to create a sense of organized movement within a static frame.",
+  "submitted_by": "profcarroll",
+  "wall_s": 43.814
+}
