@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cretrogamer's paradise\u201d \u2014 sketchgen entry 1390, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1390/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a shifting, glowing grid patterned with neon pixel clusters, simulating an old arcade circuit board. These clusters form basic geometric sprites\u2014squares, triangles, and pulsing lines\u2014rendered in a limited, bright palette of electric cyan, magenta, and lime green. When the viewer moves the cursor across the screen, the grid and the sprites respond by expanding, colliding, and reforming, creating temporary bursts of light and structural shifts that mimic action or power-up collection. The overall effect is one of perpetual, joyous, digital decay and rebirth.",
+  "completion_tokens": 1272,
+  "created_utc": "2026-09-23T07:12:54Z",
+  "entry_id": 1390,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1272,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.5,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2417,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.19,
+      "wall_s": 78.34
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1401,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1390
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "retrogamer's paradise",
+  "prompt_tokens": 2417,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1390/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1390",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a nostalgic arcade circuit board simulation with a shifting grid of glowing neon pixels. It features geometric sprite clusters (squares, triangles, and lines) that pulse and interact with the viewer's cursor. When the mouse moves across the screen, it triggers expanding collisions that activate nearby grid cells and generate temporary bursts of light. The effect combines static grid elements with animated particles and responsive sprites to evoke a sense of digital decay and rebirth, capturing the joyous energy of retro gaming interfaces while maintaining an organic, evolving pattern.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.34
+}
