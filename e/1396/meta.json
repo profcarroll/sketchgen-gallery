@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca galloping horse\u201d \u2014 sketchgen entry 1396, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1396/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with the dynamic silhouettes of a powerful horse in mid-stride. The horse is depicted using looping, flowing shapes and vibrant earth tones, creating the illusion of relentless speed. The motion is the primary focus, manifesting as a rhythmic, looping sequence of forms that repeat and escalate. The galloping animation continually changes its pose, suggesting forward momentum and raw energy, while the shapes occasionally trail or blur as if moving through a windstorm. The entire canvas is consumed by this constant, kinetic display of movement.",
+  "completion_tokens": 853,
+  "created_utc": "2026-09-23T07:40:38Z",
+  "entry_id": 1396,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 853,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2388,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.688,
+      "wall_s": 56.087
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1407,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1396
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a galloping horse",
+  "prompt_tokens": 2388,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1396/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1396",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, flowing visualization of a galloping horse using abstract, organic shapes that move and morph across the screen. The animation employs a looping sequence of horse silhouettes in earth tones\u2014warm browns and ochres\u2014that appear to race forward through space with relentless momentum. Each shape flows independently yet maintains a rhythmic, synchronized motion that suggests the continuous, powerful stride of a horse in full gallop. The visual effect is enhanced by subtle trails and motion blur, giving the impression of movement through wind or air resistance. The entire canvas is consumed by this kinetic display, which moves without any user interaction once started, creating an immersive and energetic experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 56.087
+}
