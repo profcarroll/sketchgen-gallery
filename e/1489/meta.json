@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows\u201d \u2014 sketchgen entry 1489, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1489/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, empty desert seen under the darkness of night. The only visible action is the passage of a distant train across the horizon. The viewer's perception is limited entirely to the rhythmic bursts of light emanating from the train's windows. These lit rectangular shapes streak across the canvas, alternating between bright yellow and white against the deep, receding blues and blacks of the desert night. The movement is continuous and cyclical, suggesting the journey of the train without any required interaction from the viewer.",
+  "completion_tokens": 574,
+  "created_utc": "2026-09-23T16:32:19Z",
+  "entry_id": 1489,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 574,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 2383,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.811,
+      "wall_s": 44.758
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1500,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows",
+  "prompt_tokens": 2383,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1489/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1489",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast desert nightscape with a distant train moving across the horizon. The scene features a starry background with randomly positioned stars of varying sizes and brightness. A train moves continuously from left to right, with its windows alternating between bright yellow and white light in a rhythmic pattern. The animation is entirely self-contained, running without any user interaction after initialization. The visual effect captures the sense of journey and motion through a minimalist yet evocative night scene, where the train's lights create a striking contrast against the deep blue-black desert night.",
+  "submitted_by": "profcarroll",
+  "wall_s": 44.758
+}
