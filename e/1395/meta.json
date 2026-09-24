@@ -1,0 +1,173 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "responds(drag)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cflyover: is it a motherboard or is it an aerial view of warehouses an\u2026\u201d \u2014 sketchgen entry 1395, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1395/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, geometrically complex network of glowing lines and interconnected nodes that suggest both highly organized circuitry and dense architectural blueprints. The dominant colors are rich, metallic blues and deep copper tones, punctuated by bright, electric green lines that trace paths of light. The scene operates with a continuous, sweeping drift, mimicking the slow passage of an aerial flyover across a vast, structured terrain. This constant motion is subtly influenced by the viewer's cursor; moving the mouse causes the perspective of the nearest planes and segments of the grid to momentarily refract and flare, emphasizing the constant ambiguity between manufactured technology and urban sprawl.",
+  "completion_tokens": 5249,
+  "created_utc": "2026-09-23T07:38:28Z",
+  "entry_id": 1395,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1518,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 100)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 205.1 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 205.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 2453,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 30.168,
+      "wall_s": 93.442
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1908,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (4 error lines, first 4 shown):\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 149,
+        "sha256": "96008ee5e0d560dbe17c788e677c10ec396231fb9235bfafc7e9e8bd9e83cf7e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4053,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.002,
+      "wall_s": 166.381
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1823,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 193,
+        "sha256": "64076b3763391ca6288658786fc4bdf76cb6173a05d1511cd98a42324bb65194",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4401,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.019,
+      "wall_s": 168.713
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1406,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1395
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "flyover: is it a motherboard or is it an aerial view of warehouses and factories",
+  "prompt_tokens": 10907,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1395/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1395",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a vast, intricate network of glowing lines and nodes that evokes both futuristic circuitry and urban blueprints. The scene unfolds in three-dimensional space with a sweeping camera movement that mimics an aerial flyover across a structured landscape. The color palette combines rich metallic blues and deep copper tones with bright electric green pathways that trace light through the system. As the viewer moves their cursor, nearby elements subtly refract and flare, creating an illusion of ambiguous technology and urban sprawl. The entire composition pulses with a slow, hypnotic rhythm driven by time-based animations, while maintaining a visual balance between complexity and coherence. The work explores themes of interconnected systems, technological abstraction, and the passage of time through geometric relationships.",
+  "submitted_by": "profcarroll",
+  "wall_s": 428.536
+}
