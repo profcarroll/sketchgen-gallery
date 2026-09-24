@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 1377, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1377/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a still life rendered in three dimensions within a small, dark room. The central elements on the brown table include a clear jug of water, a silver set of candlesticks holding a single lit candle, and a platter of colorful fruit. The composition is designed to emphasize the strong, dramatic interplay of light and shadow, highlighting the sculptural forms of all the objects. The color palette is rich and deep, defined by the earthen tones of the table contrasted with the polished silver and the bright colors of the fruit. The objects are fixed in position, offering a dramatically lit and static view.",
+  "completion_tokens": 1414,
+  "created_utc": "2026-09-23T06:41:32Z",
+  "entry_id": 1377,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1414,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 2426,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.709,
+      "wall_s": 86.517
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1388,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1377
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.",
+  "prompt_tokens": 2426,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1377/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1377",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a still life composition in three-dimensional space using p5.js's WEBGL renderer. The scene is set within a dark room featuring a brown table as the central element, upon which are arranged a clear water jug, silver candlesticks with a lit candle, and a colorful fruit platter. Through careful lighting design and material properties, the work emphasizes the sculptural quality of each object through strong contrasts of light and shadow. The composition is deliberately static\u2014no animation occurs\u2014creating an immersive moment frozen in time that invites contemplation of form, texture, and color within the confined architectural space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.517
+}
