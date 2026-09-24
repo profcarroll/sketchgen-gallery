@@ -1,0 +1,134 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca clock with no numbers that still tells the time Revise: the same mi\u2026\u201d \u2014 sketchgen entry 1446, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1446/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a minimalist analog clock face, set against a neutral background. The core elements are two distinct metallic hands\u2014hour and minute\u2014emerging from the center. These hands possess noticeable thickness and softly rounded tips, and their color is specifically rendered as polished copper, exhibiting a rich, warm sheen. The hands move in a continuous, smooth sweep, accurately tracking the passage of time across the face. The entire sketch operates autonomously, displaying the time regardless of any input.",
+  "completion_tokens": 882,
+  "created_utc": "2026-09-23T10:55:05Z",
+  "entry_id": 1446,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 435,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2377,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.611,
+      "wall_s": 34.791
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 447,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 46,
+        "sha256": "2b4dad1b01e23d5ffbfad418bd6cb2f94e881f280a769d9b2d75c8e5961c823d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2856,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.571,
+      "wall_s": 42.658
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1457,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1446
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a clock with no numbers that still tells the time\n\nRevise: the same minimalist analog clock, and this time with a noticeable thickness and slightly more rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with noticeable thickness and softly rounded tips on the hour and minute hands.\n\nRevise: the same minimalist analog clock, and this time with the hour and minute hands featuring edges of polished brushed steel.\n\nRevise: the same minimalist analog clock, and this time the hour and minute hands are rendered in polished copper.",
+  "prompt_tokens": 5233,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1446/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1446",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a minimalist analog clock face with polished copper hands that smoothly track the passage of time. The design uses a neutral background with carefully calculated hand positions that update continuously to reflect the current hour and minute. The hands feature appropriate thickness and rounded tips to create a realistic metallic appearance, moving in continuous sweeps rather than discrete jumps. The implementation maintains visual consistency across different canvas sizes through responsive scaling while ensuring smooth animation through precise angle calculations that incorporate seconds for fluid motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.449
+}
