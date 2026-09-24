@@ -1,0 +1,140 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cice melting quickly\u201d \u2014 sketchgen entry 1352, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1352/ Licensed CC BY 4.0.",
+  "brief": "Translucent 3D ice blocks sit on a dark surface. The blocks rapidly shrink and lose their sharp edges, transforming into shimmering blue liquid pools that spread across the floor. The melting process is continuous and constant. Clicking on the ice blocks introduces sudden heat, accelerating their dissolution into water.",
+  "completion_tokens": 2226,
+  "created_utc": "2026-09-22T15:33:44Z",
+  "entry_id": 1352,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1135,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 81)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 83)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 100)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (5 error lines, first 5 shown):\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 1708,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 11.401,
+      "wall_s": 70.984
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1091,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 136,
+        "sha256": "51f2711b09a52c5673e540cc8165934d0368df6ece3583b22c0a7b80a943febe",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.3,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3137,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 7.264,
+      "wall_s": 98.303
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1361,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1352
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "ice melting quickly",
+  "prompt_tokens": 4845,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1352/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1352",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a continuous transformation from solid ice blocks into fluid pools on a dark floor. The ice blocks gradually shrink and lose their angular edges, evolving into smooth, shimmering blue liquid forms that spread outward. The process is animated to run continuously without user input, yet clicking anywhere on the canvas introduces localized heat that accelerates melting in nearby blocks. The visual effect emphasizes the interplay between form and fluidity, using WebGL rendering to create a 3D environment where translucent geometry morphs over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 169.287
+}
