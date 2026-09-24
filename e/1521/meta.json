@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cancient agriculture Revise: too minimal, try to add interesting detai\u2026\u201d \u2014 sketchgen entry 1521, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1521/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a cross-section of fertile earth, represented by bands of mottled, earthy color. Scattered across the field are geometric representations of planted crops and stylized tools. When the cursor is dragged across the surface, it simulates plowing: a line of rich green particles is drawn, spreading and transforming into small, dark seed shapes embedded in the ground. Clicking anywhere on the canvas sends a luminous pulse that spreads outward, causing the embedded seeds to animate and rise up in bursts of varying heights, mimicking growth. The whole scene possesses a subtle, slow pulse of color and movement, representing the cyclical rhythm of the seasons.",
+  "completion_tokens": 1382,
+  "created_utc": "2026-09-24T01:48:44Z",
+  "entry_id": 1521,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1382,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "611720e03da4f4d51268aa356f31a01e9f6b2570738cefce47f1332797af55e1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3331,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.35,
+      "wall_s": 110.294
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1532,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "too minimal, try to add interesting details from the brief's concept",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1521
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "ancient agriculture\n\nRevise: too minimal, try to add interesting details from the brief's concept",
+  "prompt_tokens": 3331,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1521/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1521",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch portrays the cyclical rhythm of agricultural life through a dynamic representation of fertile earth. The canvas displays rich brown soil with scattered seeds that subtly pulse and move, suggesting the quiet energy of dormant potential. When users drag their cursor, they simulate plowing, leaving a green furrow that transforms seeds into growing sprouts. A single click triggers a luminous pulse that spreads across the field, causing embedded seeds to animate upward in bursts, mimicking the emergence of new growth. The scene breathes with slow, organic motion, reflecting how seasons govern the eternal dance between planting and harvest.",
+  "submitted_by": "profcarroll",
+  "wall_s": 110.294
+}
