@@ -1,0 +1,142 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cwater coming to a boil Revise: this try using WebGL and make the wate\u2026\u201d \u2014 sketchgen entry 1361, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1361/ Licensed CC BY 4.0.",
+  "brief": "A transparent glass vessel sits in a three-dimensional space, filled with churning, boiling water. Rapidly rising bubbles create a constant, turbulent motion from the bottom to the surface. Light refracts through the liquid and the container's walls, distorting the background, while bright reflections shimmer across the smooth, curved surfaces of the glass.",
+  "completion_tokens": 2319,
+  "created_utc": "2026-09-23T02:37:52Z",
+  "entry_id": 1361,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1417,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 160000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] createShape is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "1ed47e9b961888f97550616ebec111d46b5a12d4d4091871ddc6c137e29ecf2b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 2823,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.474,
+      "wall_s": 119.546
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 902,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 163,
+        "sha256": "0fdf9d9052a091cd2d1ef17157b9c701f4a46ba0d40bcddc1c73bd1b1fb9da97",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.8,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3241,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 5.437,
+      "wall_s": 86.583
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1371,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same boiling water, and this time enhance the light refraction and reflection visible through the container walls.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1358,
+    "root_entry_id": 1358
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "water coming to a boil\n\nRevise: this try using WebGL and make the water look more realiistic\n\nRevise: the same boiling water, and this time enhance the light refraction and reflection visible through the container walls.",
+  "prompt_tokens": 6064,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1361/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1361",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a boiling water simulation inside a transparent glass vessel using p5.js's WEBGL renderer. The scene shows bubbles rising from the bottom of the container, growing as they ascend, and popping at the surface. The water surface is rendered with subtle distortion effects that simulate light refraction, while the glass container appears semi-transparent. The animation runs autonomously without user input, demonstrating turbulent motion through physics-based particle movement and continuous bubble generation. The visual effect creates an immersive representation of boiling water's dynamic behavior, emphasizing the constant churning motion and the interaction between light and liquid.",
+  "submitted_by": "profcarroll",
+  "wall_s": 206.129
+}
