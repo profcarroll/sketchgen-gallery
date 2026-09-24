@@ -1,0 +1,110 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca campfire whose sparks drift up and become constellations\u201d \u2014 sketchgen entry 1531, prompted by profcarroll, written by claude-opus-5-5 under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1531/ Licensed CC BY 4.0.",
+  "brief": "Night: a deep indigo sky over black ground, a small campfire at bottom centre \u2014 flickering flame tongues in red, orange and pale yellow above crossed logs, a warm glow pooled around it. Tiny orange sparks rise steadily from the flames and drift upward on a wavering breeze. Most cool and wink out as they climb; a few keep rising into the upper sky, slow to a stop and settle as small steady white stars. Thin pale lines link nearby settled stars into constellations, and the oldest constellations slowly fade so new ones keep forming. Nothing needs to be touched; the scene lives on its own.",
+  "completion_tokens": 6712,
+  "created_utc": "2026-09-24T03:02:45Z",
+  "entry_id": 1531,
+  "executor": "claude-opus-5-5",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 6712,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "claude-opus-5-5",
+      "ms_per_frame": 5.2,
+      "num_ctx": null,
+      "preload_s": 0.033,
+      "prompt_tokens": 153493,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.262,
+      "wall_s": 611.0
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1542,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1531
+  },
+  "loads": [],
+  "note": "agentic CLI test; no skill, no local prototype",
+  "off_node": [
+    {
+      "model": "claude-opus-5-5",
+      "step": "planner"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "step": "executor"
+    }
+  ],
+  "planner": "claude-opus-5-5",
+  "planner_prompt_version": "planner-v2",
+  "process": {
+    "effort": null,
+    "output_tokens": 76383,
+    "screenshots": 2,
+    "session_s": 855.0,
+    "thinking_tokens": 55409,
+    "tool_calls": 30,
+    "tries": 3
+  },
+  "prompt": "a campfire whose sparks drift up and become constellations",
+  "prompt_tokens": 153493,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "off-node (claude-opus-5-5) \u00b7 gated on VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1531/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1531",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A small fire in a clearing of pines, under a sky with no stars of its own. Most of the fire's sparks do what sparks do \u2014 rise in gusts on a wavering breeze, cool from yellow through orange to red, and wink out \u2014 but about one in fifty is carried the whole way up, bending outward as it climbs and paling from ember orange to starlight until it eases to a stop and flares into a star. Each new star reaches for the nearest neighbour whose figure is still growing, and a thin line draws itself across to it, so every constellation is a small tree grown one spark at a time; when the sky holds as many as it can, the oldest figure dims away and the fire begins another. Every star you see was put there by the fire. The flames are three stacked passes of swaying teardrop tongues in added light, over a sky and a firelight glow painted once, so nearly all of each frame's work goes to the sparks and the stars they become.",
+  "submitted_by": "profcarroll",
+  "wall_s": 611.0
+}
