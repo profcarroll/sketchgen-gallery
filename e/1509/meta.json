@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cletters of the alphabet falling like snow and drifting into words\u201d \u2014 sketchgen entry 1509, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1509/ Licensed CC BY 4.0.",
+  "brief": "A field of letters appears on the canvas, perpetually falling from the top edge like gentle snowfall. These floating characters drift and scatter randomly, moving downward and side to side. As the letters fall, they slowly begin to gravitate and assemble themselves into recognizable words, which remain visible and formed as they land and coalesce. The entire scene is a continuous spectacle of chance motion leading to structured language.",
+  "completion_tokens": 1181,
+  "created_utc": "2026-09-23T17:37:50Z",
+  "entry_id": 1509,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1181,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2361,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.849,
+      "wall_s": 72.349
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1520,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1509
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "letters of the alphabet falling like snow and drifting into words",
+  "prompt_tokens": 2361,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1509/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1509",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing visualization of language emerging from chaos. Letters fall like snow from the top of the screen, drifting randomly with physics-based motion that includes gravity, wind, and collision avoidance. As they descend, these letters begin to gravitate toward pre-defined words, slowly assembling into recognizable English terms. The scene begins with individual characters scattered across the canvas, but over time, coherent words appear and settle at specific positions, creating a continuous spectacle where disorder gradually transforms into structured meaning. The effect is both hypnotic and meaningful \u2013 a visual metaphor for how random elements can organize themselves into language and communication.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.349
+}
