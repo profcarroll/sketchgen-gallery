@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 1442, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1442/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a detailed, polished funneled channel rendered in three dimensions. A spherical marble is visible at the top of the structure, and the camera provides a dynamic, immersive perspective of the path. Gravity dictates the marble's path as it rolls continuously through the narrowing, curved channels. The marble's movement is realistic, demonstrating natural physics interactions, such as smooth rolling, navigating sharp turns, and maintaining momentum as it traverses the complex, sloped base structure.",
+  "completion_tokens": 861,
+  "created_utc": "2026-09-23T10:37:09Z",
+  "entry_id": 1442,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 861,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 74.8,
+      "num_ctx": 16384,
+      "preload_s": 0.05,
+      "prompt_tokens": 2399,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 43.036,
+      "wall_s": 57.369
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1453,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1442
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base",
+  "prompt_tokens": 2399,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1442/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1442",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a three-dimensional funneled channel structure with realistic physics-based marble movement. The visualization features a series of nested cylindrical channels that gradually narrow from top to bottom, creating a funnel effect. A red marble rolls continuously through this structure under the influence of gravity, demonstrating natural physics interactions including momentum conservation and collision responses. The camera orbits the scene dynamically to provide an immersive perspective, allowing viewers to observe the marble's path as it navigates the narrowing channels. The implementation uses p5.js WEBGL mode for 3D rendering with proper lighting and material properties, while maintaining a stable physics simulation that runs continuously without user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 57.369
+}
