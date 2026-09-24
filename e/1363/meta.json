@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 1363, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1363/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an evolving, abstract landscape of intersecting geometric fields. These fields consist of luminous, overlapping planes that shift in color and density. As the music plays, wave-like patterns ripple outward from the center, causing the shapes to stretch, contract, and multiply in complexity, reflecting the intensity of the rhythm. The entire composition breathes and pulses in sync with the audible frequencies, building kinetic energy until a point of serene, harmonic diffusion.",
+  "completion_tokens": 952,
+  "created_utc": "2026-09-23T05:10:26Z",
+  "entry_id": 1363,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 952,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.035,
+      "prompt_tokens": 2402,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.688,
+      "wall_s": 77.149
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1374,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1363
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane",
+  "prompt_tokens": 2402,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1363/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1363",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract, evolving landscape of intersecting geometric fields that pulse and shift in response to audio input. The composition features overlapping circular and rectangular planes that expand, contract, and distort based on the rhythm and intensity of music played through a microphone. As sound enters, wave-like ripples emanate from the center, causing all shapes to stretch and multiply in complexity. The color palette breathes with a shifting hue cycle, and the density of elements increases with volume, creating a kinetic energy that builds before settling into a serene harmonic diffusion. The visual feedback is immediate and intuitive\u2014when silence plays, the fields stabilize; when music plays, they become alive with motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.149
+}
