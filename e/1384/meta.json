@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crhododendrons\u201d \u2014 sketchgen entry 1384, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1384/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, lush field of rhododendrons. Large, abstract blooms in varying shades of deep pink, soft white, and green foliage fill the space. The shapes are organic and layered, giving the impression of depth. The blooms do not remain static; they gently float and pulse with a life of their own, creating a soft, animated field. As the cursor drags across the canvas, the entire field reacts, causing the individual blooms to briefly scatter and reform into new patterns beneath the pointer's movement.",
+  "completion_tokens": 1144,
+  "created_utc": "2026-09-23T06:57:18Z",
+  "entry_id": 1384,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1144,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2406,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.748,
+      "wall_s": 72.5
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1395,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons",
+  "prompt_tokens": 2406,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1384/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1384",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene, animated field of rhododendron blooms that gently float and pulse with life. Using organic shapes and layered ellipses, each bloom features a central core surrounded by leafy foliage. The blooms drift slowly across the canvas with subtle spring-like motion, responding to mouse interactions by scattering briefly under the cursor's touch before reforming into new patterns. The visual effect combines smooth animation with responsive interaction, creating an immersive environment that feels both static and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.5
+}
