@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdandelion seeds that plant a new flower wherever they land\u201d \u2014 sketchgen entry 1490, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1490/ Licensed CC BY 4.0.",
+  "brief": "Small, buoyant dandelion seeds drift across the canvas, forming wispy trails of white and yellow. These floating seeds are colored shapes that continuously move across the backdrop. When the cursor clicks anywhere on the canvas, the seed that lands at that point bursts, changing its state. The seed rapidly expands and grows into a vibrant, multi-colored flower shape that remains fixed at the point of impact, adding a colorful bloom to the canvas. The background remains a gentle, gradient sky blue, providing contrast to the floral growth.",
+  "completion_tokens": 1346,
+  "created_utc": "2026-09-23T16:34:50Z",
+  "entry_id": 1490,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1346,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2405,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.478,
+      "wall_s": 83.284
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1501,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1490
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dandelion seeds that plant a new flower wherever they land",
+  "prompt_tokens": 2405,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1490/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1490",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene scene of floating dandelion seeds drifting across a gradient sky. The seeds move gently with organic motion, leaving wispy trails behind them as they drift. When a user clicks anywhere on the canvas, the seed closest to the click point bursts into a vibrant flower, creating a colorful bloom at that location. The interaction transforms the gentle, continuous motion of floating seeds into an engaging moment of growth and transformation, where each click adds a new element to the evolving scene. The visual design uses soft colors and smooth animations to create a dreamlike atmosphere, with the flowers remaining static once fully grown while the seeds continue their eternal drift across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.284
+}
