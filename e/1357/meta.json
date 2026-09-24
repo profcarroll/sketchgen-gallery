@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 1357, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1357/ Licensed CC BY 4.0.",
+  "brief": "A complex arrangement of interconnected 3D gears in metallic shades rotates continuously. Small, high-speed gears drive larger, heavy-looking gears, visually representing the transfer of kinetic energy through mechanical movement. The gears feature teeth that mesh precisely as they turn, creating a rhythmic, interlocking dance of geometry. A user can drag the mouse across the canvas to manipulate the speed of the primary drive gear, causing the entire mechanical system to accelerate or slow down, shifting the visual tempo of the movement.",
+  "completion_tokens": 911,
+  "created_utc": "2026-09-22T20:35:56Z",
+  "entry_id": 1357,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 911,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "391b0676994e8e887451d715f3698981af6db0ef55d34952d8d8432c9a21d03c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2585,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.787,
+      "wall_s": 77.343
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1367,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "this try to make the gears interconnect",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1357
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect",
+  "prompt_tokens": 2585,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1357/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1357",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a mesmerizing 3D mechanical gear system that responds dynamically to user interaction. The assembly features interconnected gears of varying sizes and speeds, rotating in a continuous loop with precise meshing teeth. A central light pulse intensifies based on the average rotation speed of the gears, creating a rhythmic visual heartbeat. Users can manipulate the entire system's tempo by dragging their mouse across the canvas \u2014 a gesture that directly controls the speed of the primary drive gear, which then influences all connected components. The piece explores themes of kinetic energy transfer and mechanical harmony through pure geometric form and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.343
+}
