@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca campfire whose sparks drift up and become constellations\u201d \u2014 sketchgen entry 1504, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1504/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a warm, central campfire formed by vibrant streaks and spheres of orange and red. From this source, numerous bright particles of light detach and drift upward. These initial sparks move randomly and slowly, leaving subtle trails of light. As the particles ascend higher into the darkness, their movement slows, and they gradually solidify and reorganize. The drifting sparks transform into distinct, glowing dots that align themselves to form recognizable patterns, like celestial constellations against a deep indigo background.",
+  "completion_tokens": 1104,
+  "created_utc": "2026-09-23T17:22:30Z",
+  "entry_id": 1504,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1104,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2381,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.472,
+      "wall_s": 68.276
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1515,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1504
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a campfire whose sparks drift up and become constellations",
+  "prompt_tokens": 2381,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1504/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1504",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a serene night scene with a central campfire that evolves over time. Initially, vibrant orange and red streaks emerge from the fire, forming a warm base. From this source, countless bright particles detach and drift upward in random motion, leaving subtle light trails behind them. As these particles ascend higher into the dark sky, they gradually slow down and begin to reorganize. At greater heights, the particles transform into distinct glowing dots that align themselves into recognizable patterns\u2014like celestial constellations\u2014against a deep indigo background. The visual progression captures both the chaotic energy of an initial fire and the peaceful, ordered beauty of stars forming in the night sky.",
+  "submitted_by": "profcarroll",
+  "wall_s": 68.276
+}
