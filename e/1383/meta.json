@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstock market clip art\u201d \u2014 sketchgen entry 1383, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1383/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with an abstract financial landscape composed of intersecting, fluctuating lines and geometric shapes. These elements, primarily shades of green and red, constantly shift and pulse, simulating the real-time data movement of a stock market. Large, sweeping candlestick shapes appear and disappear as the data lines oscillate. The movement gives the appearance of intense, ceaseless activity, while the viewer's mouse click causes the entire graph to momentarily spike in a bright color, visualizing a simulated transaction.",
+  "completion_tokens": 1098,
+  "created_utc": "2026-09-23T06:54:41Z",
+  "entry_id": 1383,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1098,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2399,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.251,
+      "wall_s": 69.482
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1394,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1383
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "stock market clip art",
+  "prompt_tokens": 2399,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1383/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1383",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an abstract financial landscape that simulates stock market data visualization. The canvas displays fluctuating geometric lines and candlestick shapes in varying shades of green and red, representing market movements. The elements continuously shift and pulse with organic motion, creating a sense of real-time data flow. When the viewer clicks anywhere on the canvas, the entire scene momentarily spikes with bright yellow coloration, simulating a simulated transaction event. The visual metaphor captures the intensity and volatility of financial markets through abstract geometric forms that move independently yet maintain a cohesive, dynamic system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.482
+}
