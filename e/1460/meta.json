@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 1460, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1460/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, high-altitude view of a densely illuminated cityscape at night. The primary visual feature is a continuous flow of bright, flowing light streaks that crisscross the screen, conveying a deep sense of constant movement and energy. These luminous trails are dynamic and shift constantly. When multiple streaks intersect, they momentarily coalesce into sharper, defined geometric forms, such as glowing points and angular lines, before dissolving back into the flowing abstraction of the metropolis.",
+  "completion_tokens": 1000,
+  "created_utc": "2026-09-23T11:36:13Z",
+  "entry_id": 1460,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1000,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2379,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.229,
+      "wall_s": 63.299
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1471,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1460
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.",
+  "prompt_tokens": 2379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1460/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1460",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract nighttime cityscape through a system of flowing light streaks that move dynamically across the canvas. The visual metaphor captures the energy and constant motion of urban life through a field of particles that follow subtle flow patterns, creating a sense of depth and continuous activity. When these moving elements intersect, they briefly form geometric relationships\u2014glowing points and connecting lines\u2014that momentarily solidify the abstract flow into defined forms before dissolving back into the fluid abstraction. The technique uses particle systems with flow fields to simulate movement, combined with intersection detection to create emergent geometric moments that reflect the dynamic interplay of light and motion in a city environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.299
+}
