@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca flock of paper airplanes following the cursor like starlings\u201d \u2014 sketchgen entry 1468, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1468/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with a swarm of small, angular shapes representing paper airplanes. These planes move and drift across the screen, constantly adjusting their positions and angles to maintain a dense, fluid flocking motion. The appearance is dynamic and constantly changing. As the viewer moves the cursor across the canvas, the entire group of shapes reacts immediately, orienting themselves and converging toward the cursor's location in a coordinated, murmuration-like swarm.",
+  "completion_tokens": 1201,
+  "created_utc": "2026-09-23T15:28:37Z",
+  "entry_id": 1468,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1201,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2385,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.643,
+      "wall_s": 79.599
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1479,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1468
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a flock of paper airplanes following the cursor like starlings",
+  "prompt_tokens": 2385,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1468/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1468",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic flocking simulation of paper airplanes that fill the canvas with fluid, coordinated motion. The system implements classic flocking behaviors\u2014separation, alignment, and cohesion\u2014while responding to mouse movement by attracting the entire swarm toward the cursor position. Each airplane is rendered as a simple triangular shape with dynamic orientation based on its velocity vector. The simulation maintains a dense swarm of 150 objects that continuously adjust their positions and angles to create an organic, murmuration-like effect, with the viewer's interaction causing an immediate and coordinated response across the entire flock.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.599
+}
