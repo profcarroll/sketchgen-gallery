@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctextile textures interweaving with color saturation Revise: the same\u2026\u201d \u2014 sketchgen entry 1421, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1421/ Licensed CC BY 4.0.",
+  "brief": "A rich, abstract tapestry fills the canvas, composed of two dramatically contrasting elements: vast networks of softly flowing, richly saturated textile fibers, and highly structured, sharply defined geometric knots. The interwoven fibers create a sense of organic depth, which is constantly juxtaposed against the rigid, angular precision of the knots. These interwoven textures shift and evolve continuously, giving the impression of a complex, living fabric that moves and breathes without the need for any interaction.",
+  "completion_tokens": 733,
+  "created_utc": "2026-09-23T09:12:00Z",
+  "entry_id": 1421,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 733,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 2401,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.289,
+      "wall_s": 50.334
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1432,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1421
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "textile textures interweaving with color saturation\n\nRevise: the same intricate tapestry of abstract, flowing textile textures, and this time making the interwoven knots appear more geometrically rigid.\n\nRevise: the same abstract tapestry composed of flowing textile textures, and this time emphasizing the rigid geometry of the interwoven knots so they are more structured and angular.\n\nRevise: the same abstract tapestry woven from richly saturated, flowing textile textures, and this time making the individual interwoven knots appear larger and more defined.\n\nRevise: the same abstract tapestry, and this time exaggerating the contrast between the organic flowing fibers and the rigid geometric knots.\n\nRevise: the same intricate abstract tapestry of woven textures, and this time increasing the density and size of the sharply defined geometric knots.",
+  "prompt_tokens": 2401,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1421/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1421",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, evolving textile tapestry that juxtaposes organic flow with geometric precision. The composition features thousands of softly flowing fibers that move in subtle, organic patterns across the canvas, creating a sense of depth and movement akin to flowing fabric or liquid. These are contrasted with sharply defined geometric knots that rotate and pulse in place, providing rigid structure against the flowing elements. The interplay between these two contrasting elements creates a living, breathing fabric that shifts and evolves continuously without any user interaction. The visual effect is achieved through particle-based rendering where fibers are drawn as points and knots as rotating 3D shapes, all animated to create a sense of constant motion and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 50.334
+}
