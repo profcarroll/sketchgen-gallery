@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 1419, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1419/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a whimsical landscape dominated by whimsical, paper-cut ships navigating across a body of water. These vessels are rendered with striking detail, exhibiting the texture of aged wood grain and a subtle, time-worn patina. The entire scene is in constant, gentle motion as the ships sail autonomously across the plane. As they move, they leave behind ethereal wake trails that softly dissipate and dissolve into the water, lending a shifting, dreamlike quality to the composition.",
+  "completion_tokens": 981,
+  "created_utc": "2026-09-23T09:05:47Z",
+  "entry_id": 1419,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 981,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2378,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.712,
+      "wall_s": 63.204
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1430,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1419
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails\n\nRevise: the same whimsical, paper-cut ships, and this time the ships are weathered with subtle patina and aged wood grain",
+  "prompt_tokens": 2378,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1419/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1419",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dreamlike seascape with whimsical paper-cut ships sailing autonomously across a body of water. Each vessel is rendered with detailed wood grain textures and subtle patinas, moving with gentle randomness that mimics real ocean navigation. As ships traverse the canvas, they leave behind ethereal wake trails that gradually fade, creating a shifting, dreamlike quality to the composition. The constant motion ensures the canvas changes visibly without any user input, fulfilling the requirement for autonomous visual progression.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.204
+}
