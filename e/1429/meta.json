@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 1429, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1429/ Licensed CC BY 4.0.",
+  "brief": "The viewer stands within a vast, echoing architectural space dominated by monolithic, curved planes of heavy steel. These sheets are textured with a distinctive, mottled rust, establishing a weighty presence against the emptiness of the hall. The pathway defined by the steel curves in an endless, sweeping arc before abruptly making a sharply perpendicular shift, creating a jarring visual interruption. The scale and fixed geometry of the pathway dominate the scene, appearing static and permanent, defined solely by its own imposing structure.",
+  "completion_tokens": 2407,
+  "created_utc": "2026-09-23T09:54:02Z",
+  "entry_id": 1429,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 808,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.6228/255, 21039 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2402,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.818,
+      "wall_s": 54.234
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 795,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.6228/255, 21039 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 82,
+        "sha256": "3f13531879911b996e79c44d6c529246e473ff15a2a37afed15646fd5fec09c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3213,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.804,
+      "wall_s": 68.56
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 804,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.6228/255, 21039 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 82,
+        "sha256": "3f13531879911b996e79c44d6c529246e473ff15a2a37afed15646fd5fec09c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3213,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 8.826,
+      "wall_s": 43.016
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1440,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1429
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.",
+  "prompt_tokens": 8828,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1429/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1429",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an architectural space dominated by monolithic, curved steel planes that create a sense of weight and permanence. The composition features a series of arched steel sheets arranged in a circular pattern, each one textured with a mottled rust finish to emphasize their material presence. A dramatic perpendicular shift interrupts the continuous arc at the center, creating a jarring visual break that emphasizes the fixed geometry and imposing structure of the space. The scene is rendered in a static, immersive environment where viewers can observe the interplay of light and shadow on the steel surfaces, with the entire composition rotating slowly to reveal different aspects of its curved forms. The work captures the feeling of standing within a vast, echoing architectural hall defined solely by its own imposing structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 165.81
+}
