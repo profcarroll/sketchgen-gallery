@@ -1,0 +1,140 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201climinal dreamscape architectures\u201d \u2014 sketchgen entry 1366, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1366/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract, shifting geometries suspended in a deep, aqueous palette of muted teals, violets, and pale greys. Structures appear to materialize and dissolve in the background, giving the sense of navigating an impossible, transitional space. The forms are constantly undulating and reforming, creating the illusion of infinite, unseen halls. When the viewer drags the cursor across the area, the geometry responds by tracing and solidifying pathways in real-time, allowing the user to sculpt the architectural space and manipulate the shifting light sources within the dreamscape.",
+  "completion_tokens": 2413,
+  "created_utc": "2026-09-23T05:21:27Z",
+  "entry_id": 1366,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1220,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (4 error lines, first 4 shown):\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n- [pageerror] getAudioContext is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2438,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.812,
+      "wall_s": 130.851
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1193,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "073bc9d8fc351c443bf86e49e97ababbb0dfc437194f514fa6030f32c7f5f480",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3699,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.397,
+      "wall_s": 109.606
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1377,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1366
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "liminal dreamscape architectures",
+  "prompt_tokens": 6137,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1366/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1366",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive, shifting architectural space using a particle system that flows through a deep, aquatic palette of muted teals, violets, and pale greys. The particles undulate in a constant, hypnotic motion, forming an ever-reforming background that evokes the sensation of navigating an impossible, transitional realm. When viewers drag their cursor across the canvas, they can sculpt pathways through this dreamlike environment, leaving solid traces that respond to their movement. The scene is rendered using WebGL for efficient 3D rendering, with dynamic lighting and camera movement that creates a sense of depth and constant transformation, as if exploring infinite, unseen halls.",
+  "submitted_by": "profcarroll",
+  "wall_s": 240.457
+}
