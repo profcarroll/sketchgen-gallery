@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power\u201d \u2014 sketchgen entry 1353, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1353/ Licensed CC BY 4.0.",
+  "brief": "A 3D assembly of interlocking brass and steel gears of various sizes. The gears rotate continuously, with small cogs spinning rapidly to drive larger ones. A bright, pulsing light at the center of the mechanism intensifies based on the rotational velocity, representing the conversion of speed into power. The user can click and drag to adjust the input speed, causing the entire mechanism to accelerate or slow down.",
+  "completion_tokens": 875,
+  "created_utc": "2026-09-22T15:38:19Z",
+  "entry_id": 1353,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 875,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 1729,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.688,
+      "wall_s": 55.47
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1362,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1353
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power",
+  "prompt_tokens": 1729,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1353/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1353",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a 3D mechanical gear assembly where brass and steel gears interlock and rotate at varying speeds. Smaller cogs spin rapidly to drive larger ones, creating a cascading motion. A central pulsing light intensifies with rotational velocity, symbolizing the conversion of motion into energy. The viewer can interact by clicking and dragging to adjust input speed, which affects the entire mechanism's rotation rate.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.47
+}
