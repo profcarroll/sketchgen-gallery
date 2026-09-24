@@ -1,0 +1,107 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csupergraphics from 1975 Revise: the same 1970s environmental graphic\u2026\u201d \u2014 sketchgen entry 1332, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1332/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dense, vibrant mural composed of interlocking, abstract geometric shapes rendered in a palette reminiscent of 1970s design. Running through and underlying every section of this complex arrangement is a constant field of faint, luminous concentric arcs. The entire composition exhibits a slow, internal vibration, giving it life even when idle. When the viewer clicks anywhere on the canvas, the displayed shapes instantly and dramatically restructure, flowing outward from various points while always maintaining the presence of the foundational circular arcs.",
+  "completion_tokens": 1026,
+  "created_utc": "2026-09-22T04:21:25Z",
+  "entry_id": 1332,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1026,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "f0fcde768fe24904bcad12fbae6ab9ba02f5bc6960ecffdc1282671cc611279d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 40.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3620,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.392,
+      "wall_s": 96.155
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1341,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same 1970s environmental graphic mural, and this time keep the concentric arcs present in every reshuffled arrangement, not just the diagonal bands and chevron stack",
+    "critique_by": "claude-sonnet-5",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1330,
+    "root_entry_id": 1330
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [
+    {
+      "model": "claude-sonnet-5",
+      "step": "critic"
+    }
+  ],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "supergraphics from 1975\n\nRevise: the same 1970s environmental graphic mural, and this time keep the concentric arcs present in every reshuffled arrangement, not just the diagonal bands and chevron stack",
+  "prompt_tokens": 3620,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1332/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1332",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a vibrant 1970s-inspired mural using geometric abstraction and luminous arcs. The composition features interlocking shapes in saturated colors that flow and vibrate slowly across the canvas. A constant field of faint, glowing concentric arcs moves independently, creating a sense of underlying energy. When clicked, the entire arrangement instantly restructures while maintaining the foundational arc field, producing dramatic visual transformation. The piece uses the WEBGL renderer to achieve depth and color saturation reminiscent of the era's environmental graphics, with careful attention to the frame budget for performance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.155
+}
