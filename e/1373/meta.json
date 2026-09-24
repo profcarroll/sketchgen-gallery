@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctraveling infinitely through atomic structure across and through mole\u2026\u201d \u2014 sketchgen entry 1373, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1373/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, vibrant field of glowing, interconnecting structures that represent molecular lattices. Small, brightly colored particles pulse and drift, constantly assembling into complex, recognizable molecular geometries that immediately reform and dissociate. The view simulates an endless, systematic journey, allowing the viewer to continuously zoom and drift from large, overarching molecular arrangements down to the pulsating, fundamental core of individual atoms. The color palette is dominated by deep blues, purples, and neon accents, creating an immersive sense of perpetual, organized movement through matter.",
+  "completion_tokens": 1644,
+  "created_utc": "2026-09-23T06:23:21Z",
+  "entry_id": 1373,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1644,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 79.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 2416,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 42.813,
+      "wall_s": 99.463
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1384,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1373
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "traveling infinitely through atomic structure across and through molecules",
+  "prompt_tokens": 2416,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1373/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1373",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes a dynamic molecular lattice field using WebGL rendering to create an immersive experience of constantly forming and dissolving chemical structures. The scene features thousands of glowing particles that pulse and drift through three-dimensional space, connecting to form recognizable molecular geometries like rings and chains that continuously reorganize. The deep blue and purple color palette with neon accents creates a sense of perpetual motion through matter, while the camera slowly orbits the field to simulate zooming from macroscopic arrangements down to atomic cores. Particles follow physics-based movement patterns with collision boundaries and gentle drift, forming spatially coherent connections that represent chemical bonds. The visual effect simulates an endless journey through organized molecular complexity, where individual atoms pulse at different rates while larger structures maintain their integrity before reforming into new configurations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 99.463
+}
