@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1453, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1453/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, three-dimensional model of the solar system, featuring planets orbiting a central star. Connecting all the major celestial bodies are vividly glowing orbital paths that stretch across the void. When the user presses the mouse down anywhere on the canvas, the entire system begins to animate, allowing the planets to orbit and rotate, creating a dynamic and deep cosmic scene.",
+  "completion_tokens": 1015,
+  "created_utc": "2026-09-23T11:14:50Z",
+  "entry_id": 1453,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1015,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.026,
+      "prompt_tokens": 2398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.761,
+      "wall_s": 64.901
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1464,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.",
+  "prompt_tokens": 2398,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1453/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1453",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static yet dynamic representation of our solar system in three-dimensional space. The scene begins as a serene, unchanging cosmos with a central star and planets frozen in their orbital positions. Upon clicking anywhere on the canvas, the entire system springs into motion \u2014 planets begin to orbit their star along luminous paths that trace their journeys through space. The viewer is invited to witness the eternal dance of celestial bodies, where each planet moves at its own unique pace and hue, creating a visual symphony of cosmic choreography. The use of WEBGL rendering allows for a rich depth perception, while the orbital paths glow subtly against the black void, emphasizing the vastness and order of the solar system's architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 64.901
+}
