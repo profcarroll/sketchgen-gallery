@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside a combustion engine demonstrating pistons and\u2026\u201d \u2014 sketchgen entry 1454, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1454/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a highly detailed, cutaway cross-section of a combustion engine's core mechanisms. Viewers observe several pistons moving cyclically up and down within their cylinders. The movement is driven by a visual representation of a contained spark ignition event, which pushes the piston down. These pistons are connected by rods that mechanically drive a visible, meshing transaxle and gear system. The entire assembly showcases the internal flow of mechanical energy, rendering the complex metallic parts in continuous motion.",
+  "completion_tokens": 1392,
+  "created_utc": "2026-09-23T11:17:33Z",
+  "entry_id": 1454,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1392,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 2403,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.003,
+      "wall_s": 85.353
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1465,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1454
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "take the viewer inside a combustion engine demonstrating pistons and gearing\n\nRevise: we should see pistons moving up and down inside a cylinder and a spark explosion pushes the piston down which turns a transaxle connected to a gear\n\nRevise: the same cross-section of a combustion engine's core mechanisms, and this time the connection between the pistons and the rods is more visible",
+  "prompt_tokens": 2403,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1454/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1454",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a detailed cross-sectional view of a combustion engine's internal mechanisms in motion. The visualization shows four pistons moving up and down within their cylinders, driven by the mechanical action of connecting rods that link to a rotating crankshaft. A key feature is the spark ignition effect that visually pushes pistons down, creating the cyclic motion of the engine cycle. The entire assembly includes a meshing gear system that demonstrates how mechanical energy flows through the transaxle. The scene renders in 3D using WEBGL with metallic surfaces and particle effects for sparks, showing the continuous interplay between combustion and mechanical transmission in an internal combustion engine.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.353
+}
