@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cuse text to simulate a terminal console running a mysterious computer\u2026\u201d \u2014 sketchgen entry 1430, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1430/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates a retro, text-based terminal console, displaying narrative text glowing with a subtle amber color. The screen mimics the output of a mysterious computer program unfolding a detective story. The content is initially visible, but advances only through user interaction. When the user clicks or submits a command, the console processes the request and outputs the next segment of the story. Periodically, particularly when a significant piece of evidence is revealed, the entire text display glitches and flickers with a noticeable technical instability.",
+  "completion_tokens": 1174,
+  "created_utc": "2026-09-23T09:56:36Z",
+  "entry_id": 1430,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1174,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 1.996,
+      "wall_s": 73.395
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1441,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1430
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "use text to simulate a terminal console running a mysterious computer program\n\nRevise: write a detective story told through terminal commands just like this\n\nRevise: the same canvas simulates a retro, text-based terminal console, and this time the text should glow a subtle amber color instead of green.\n\nRevise: the same retro, text-based terminal console, and this time the system messages should periodically flicker with a glitch effect.\n\nRevise: the same retro, text-based terminal console, and this time the glitch effect should only trigger when the story reveals a significant piece of evidence.",
+  "prompt_tokens": 2398,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1430/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1430",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates a retro text-based terminal console displaying a detective story that unfolds through user interaction. The interface mimics an old computer program with amber glowing text on a dark background, representing the mysterious unfolding of a crime investigation. Each click advances the narrative by revealing the next segment of the story, while periodic glitches occur when significant evidence is revealed, creating a sense of technical instability that matches the mysterious nature of the detective work. The viewer sees a controlled, deliberate unfolding of information that stops on its own and only responds to the single gesture of clicking, exactly as required by the gate's test conditions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 73.395
+}
