@@ -1,0 +1,256 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cnostalgic photo collage Revise: the same layered composition of vinta\u2026\u201d \u2014 sketchgen entry 1348, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1348/ Licensed CC BY 4.0.",
+  "brief": "A layered collage of sepia-toned vintage photographs and jagged, torn paper scraps featuring delicate, highly visible frayed fibers. The pieces overlap to create a strong illusion of physical depth. The composition drifts slowly across the canvas, with the images and scraps occasionally halting their movement to create brief moments of stillness.",
+  "completion_tokens": 6027,
+  "created_utc": "2026-09-22T14:28:53Z",
+  "entry_id": 1348,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 3062,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 955.5 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 152,
+        "sha256": "699cfc3c98f3fca2de1627a1983cb391c9febb25e12151b85f66583b40010b41",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 955.5,
+      "num_ctx": 16384,
+      "preload_s": 0.626,
+      "prompt_tokens": 3451,
+      "resources_loaded": [
+        {
+          "bytes": 116846,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 16133,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 81799,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 67220,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 83903,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 50400,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 35057,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 21195,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 32.361,
+      "wall_s": 377.031
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2965,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 255,
+        "sha256": "dcce1c2e7d357a59e6d0f80ac56105cc7d5231fa4ebfd68bd79ef2766110561e",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 30.0,
+      "num_ctx": 16384,
+      "preload_s": 1.284,
+      "prompt_tokens": 4831,
+      "resources_loaded": [
+        {
+          "bytes": 21195,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 35057,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 81799,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 16133,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 18458,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 116846,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 50400,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 83273,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 20.818,
+      "wall_s": 275.312
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1357,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same layered collage of sepia-toned vintage photographs and jagged, torn paper scraps, and this time the overlap of the pieces should create a stronger illusion of physical depth.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1345,
+    "root_entry_id": 1335
+  },
+  "loads": [
+    {
+      "bytes": 21195,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 35057,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 81799,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 16133,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 18458,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 116846,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 50400,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 83273,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: the same layered composition of vintage, sepia-toned photographs and torn paper scraps, and this time the images occasionally halt their drift to create a moment of stillness.\n\nRevise: the same layered collage of sepia-toned vintage photographs and jagged, torn paper scraps, and this time the torn edges and frayed fibers should appear more delicate and highly visible.\n\nRevise: the same layered collage of sepia-toned vintage photographs and jagged, torn paper scraps, and this time the overlap of the pieces should create a stronger illusion of physical depth.",
+  "prompt_tokens": 8282,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1348/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1348",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dreamlike collage of vintage photographs and torn paper scraps floating across a sepia-toned void. The images drift slowly with organic movement, occasionally pausing in moments of stillness before continuing their gentle dance. Each piece features ragged, hand-torn edges with delicate frayed fibers that catch the light, emphasizing the physicality of the layered composition. The pre-rendered sepia treatment gives everything a cohesive aged timbre while the stochastic movement patterns create a sense of contemplative suspension, inviting viewers to lose themselves in the quiet poetry of forgotten memories drifting through digital space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 652.343
+}
