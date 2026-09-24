@@ -1,0 +1,132 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201challucinate, allow unharnessed, unrestrained visual code explorations\u201d \u2014 sketchgen entry 1391, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1391/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with a massive, flowing field of interconnected, brightly colored particles. These elements drift and undulate autonomously, creating continuously evolving, chaotic, yet beautiful abstract patterns. When the viewer clicks anywhere on the canvas, the local field reacts dramatically, causing the particles to surge outward while the overall color palette shifts abruptly. Furthermore, dragging the mouse across the canvas distorts the entire flow, creating visible, ethereal trails of displaced light.",
+  "completion_tokens": 2694,
+  "created_utc": "2026-09-23T07:19:00Z",
+  "entry_id": 1391,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1339,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 313 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 313.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2433,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.086,
+      "wall_s": 83.221
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1355,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 148,
+        "sha256": "89ba349093d493bc3a269f20aab8c576ed12b1cc6b8e139804ceabc1600c900e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 92.9,
+      "num_ctx": 16384,
+      "preload_s": 0.052,
+      "prompt_tokens": 3788,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 60.0,
+      "wall_s": 118.367
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1402,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1391
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hallucinate, allow unharnessed, unrestrained visual code explorations",
+  "prompt_tokens": 6221,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1391/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1391",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, immersive field of interconnected particles that flow and shift in continuous motion. The system uses a simplified spatial hashing technique to efficiently connect nearby particles, forming an evolving web of glowing lines that pulse and change with the viewer's interaction. When clicked, the entire field reacts with a surge of energy that redistributes particles and shifts the color palette dramatically. Dragging creates visible trails that distort the flow, adding ethereal light effects. The visual effect is achieved through batching particle rendering into a single point cloud and limiting connection counts per frame to maintain performance while preserving the organic, chaotic beauty of the system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 201.588
+}
