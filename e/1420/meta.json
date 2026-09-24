@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    "no_motion",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 1420, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1420/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, sun-drenched pastoral landscape dominated by rolling green fields that undulate across the foreground. These fields are textured by visible patches of varied color and intense contrast, suggesting a play of deep shadow and bright sunlight. The scene is framed by a distant mountain range, whose peaks are softened by an atmospheric haze. Above the vibrant green hills, the sky fills the background, completing a serene, expansive vista that remains perfectly still.",
+  "completion_tokens": 1893,
+  "created_utc": "2026-09-23T09:09:43Z",
+  "entry_id": 1420,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 632,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 2470,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.703,
+      "wall_s": 46.328
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 621,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 57,
+        "sha256": "8da76103016b8dff56ce96123a72dff95b7a7a349d918c3b2c797b877311e3ce",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3094,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.707,
+      "wall_s": 57.33
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 640,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 57,
+        "sha256": "8da76103016b8dff56ce96123a72dff95b7a7a349d918c3b2c797b877311e3ce",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3094,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.73,
+      "wall_s": 33.301
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1431,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1420
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again\n\nRevise: the same pastoral landscape, and this time exaggerate the depth of field to make the foreground grass seem intensely sharp\n\nRevise: this is getting close but there is one giant cloud that ruins it\n\nRevise: the same pastoral landscape, and this time sharpen the detail on the distant mountain range\n\nRevise: the same vast sunlit pastoral landscape and this time introduce subtle patches of varied color and texture to the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape featuring rolling green fields that vary in patches of color and texture, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the visible detail and contrast in the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the visible play of sunlight and shadow across the rolling green fields.",
+  "prompt_tokens": 8658,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1420/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1420",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a serene pastoral scene under a sun-drenched sky, featuring rolling green fields that undulate across the foreground. The composition includes a distant mountain range softened by atmospheric haze, and a vibrant sky gradient that transitions from warm oranges at the horizon to cool blues overhead. The landscape is enhanced with patches of varied color and contrast that suggest the interplay of deep shadow and bright sunlight across the terrain. The entire scene is static, capturing an expansive, tranquil vista frozen in time, emphasizing the stillness and openness of the natural environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 136.959
+}
