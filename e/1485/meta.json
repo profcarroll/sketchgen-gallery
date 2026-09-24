@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center\u201d \u2014 sketchgen entry 1485, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1485/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with falling, rectangular shapes representing dominoes. These shapes continuously pour onto the screen from the edges, interacting with one another as they fall. The movement is highly systematic, guiding the shapes into a mesmerizing, spiraling pattern. This perpetual cascade of blocks creates a sense of perpetual, inescapable motion, generating a visual vortex that constantly rotates and draws near the center without ever collapsing or reaching a single point.",
+  "completion_tokens": 871,
+  "created_utc": "2026-09-23T16:15:33Z",
+  "entry_id": 1485,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 871,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2369,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.713,
+      "wall_s": 56.748
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1496,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center",
+  "prompt_tokens": 2369,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1485/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1485",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an mesmerizing cascade of falling dominoes that spiral toward the center of the canvas. The dominoes continuously pour from the edges, bouncing off walls and gradually spiraling inward due to their physics-based movement and rotation. Each domino has unique properties including size, speed, and color, creating a dynamic, flowing pattern that never collapses into a single point but instead maintains perpetual motion around the center. The visual effect is enhanced by a subtle trail behind each domino and a central spiral vortex that guides the viewer's eye toward the heart of the composition. The system uses physics simulation to create natural-looking interactions while maintaining performance within the strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 56.748
+}
