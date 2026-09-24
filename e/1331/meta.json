@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\" Revise\u2026\u201d \u2014 sketchgen entry 1331, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1331/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a highly polished, obsidian-like console surface, suggesting extreme depth and technology. Within this sleek facade, a rhythmic internal illumination begins: small, emerald-green lines appear in sequenced, cascading waves, spreading across the grid pattern. Overlaying this structured activity, a faint, barely perceptible glint drifts in a slow, deliberate diagonal streak across the dark glass surface. The composition is rich with gradients and sharp, geometric lines, creating a sense of profound, quiet technological energy that permeates the entire scene.",
+  "completion_tokens": 4950,
+  "created_utc": "2026-09-22T04:18:06Z",
+  "entry_id": 1331,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1648,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 95)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "b392f1c11db5ecd5a9cc7ebcec022d7bc5a4a99f6cef18b722b86ac6dda9f613",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3598,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.602,
+      "wall_s": 134.349
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1646,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 159,
+        "sha256": "7c555c12c19b9a3320d02765e6960c19fb9fdccd7c8cd7336b8e708dd0bba6b1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 4233,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.169,
+      "wall_s": 158.553
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1656,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 159,
+        "sha256": "31f21587dcbd013fa385b68137ed89b787aea0ff3e76d6f3312be947011988fb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4071,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.154,
+      "wall_s": 138.029
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1340,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sleek, futuristic console, and this time the internal grid lines illuminate sequentially in small, emerald-green cascades.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1322,
+    "root_entry_id": 1312
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"\n\nRevise: the same HAL 9000 console from the film, and this time the faint reflected glint drifts across the glass in a slow, diagonal streak.\n\nRevise: the same sleek, futuristic console, and this time the internal grid lines illuminate sequentially in small, emerald-green cascades.",
+  "prompt_tokens": 11902,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1331/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1331",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a high-tech console surface rendered in deep obsidian tones with subtle technological details. The composition features a dark, reflective panel with a geometric grid pattern suggesting advanced materials and craftsmanship. Cascading emerald-green waves animate across the surface in rhythmic sequences, creating a sense of internal energy pulsing through the system. A slow-moving white glint drifts diagonally across the surface, barely perceptible but adding an element of quiet motion that suggests deeper processes at work. The piece conveys profound technological energy through careful attention to gradient, lighting, and the interplay between structured patterns and fluid movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 430.931
+}
