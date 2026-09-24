@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cglowing orbs\u201d \u2014 sketchgen entry 1386, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1386/ Licensed CC BY 4.0.",
+  "brief": "The canvas will fill with numerous luminous orbs of varying sizes and pastel colors. These shapes drift and pulse with a soft, constant glow across the screen, giving the appearance of deep space nebulas. The orbs move independently, constantly interacting and slowly changing brightness. If the viewer drags the mouse across the canvas, the field of orbs will react dynamically, becoming temporarily denser and scattering brighter outward from the cursor's path, creating mesmerizing, fluid light trails.",
+  "completion_tokens": 936,
+  "created_utc": "2026-09-23T07:02:47Z",
+  "entry_id": 1386,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 936,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2394,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.138,
+      "wall_s": 60.837
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1397,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1386
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "glowing orbs",
+  "prompt_tokens": 2394,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1386/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1386",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive deep space nebula effect using hundreds of luminous orbs that drift and pulse independently across the screen. Each orb has its own size, color, movement pattern, and pulsing rhythm, creating a dynamic, organic field of light that responds to viewer interaction. When a user drags their mouse across the canvas, nearby orbs react by scattering outward and brightening, creating fluid light trails that emphasize the interconnectedness of the cosmic field. The visual effect is achieved through careful use of p5.js's color blending, transparency, and shadow effects to create soft glows and smooth motion, while maintaining performance within the strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 60.837
+}
