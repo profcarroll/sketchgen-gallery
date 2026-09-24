@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca coral reef bleaching and slowly recovering its color\u201d \u2014 sketchgen entry 1494, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1494/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the complex, branching shapes of a coral reef ecosystem. Initially, the vivid, diverse colors of the coral structures saturate the scene, but slowly, the colors drain away, fading into muted, pale tones, representing bleaching. The coral shapes themselves remain, yet their vibrant color palette diminishes. Over a continuous, subtle passage of time, the saturated colors slowly seep back into the coral structures, cycling through deeper hues and restoring the reef's life, creating a constant visual cycle of fading and recovery.",
+  "completion_tokens": 835,
+  "created_utc": "2026-09-23T16:46:57Z",
+  "entry_id": 1494,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 835,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2385,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.362,
+      "wall_s": 55.683
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1505,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1494
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a coral reef bleaching and slowly recovering its color",
+  "prompt_tokens": 2385,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1494/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1494",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a dynamic coral reef ecosystem that undergoes a continuous cycle of color bleaching and recovery. The coral structures are composed of branching, organic shapes that pulse gently with time. Initially vibrant in saturated colors, the corals gradually fade to muted, pale tones as if experiencing bleaching, then slowly regain their rich hues in an endless loop. The visual effect is achieved through a combination of procedural geometry for the coral forms and color cycling that modulates saturation and brightness over time. The animation runs continuously without user interaction, creating a meditative representation of the natural cycle of coral health and resilience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.683
+}
