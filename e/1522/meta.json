@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdancing bears Revise: the same chaotic, joyful dance, and this time t\u2026\u201d \u2014 sketchgen entry 1522, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1522/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with overlapping, serpentine lines that constantly writhe and twist across the surface. These lines, representing bears engaged in a chaotic and joyful dance, undulate together, forming dense, shifting ribbons of color and shape as they travel. The entire composition has a vibrant, continuous life, with the intertwined lines flowing and reforming without any input from the viewer.",
+  "completion_tokens": 608,
+  "created_utc": "2026-09-24T01:53:50Z",
+  "entry_id": 1522,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 608,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "504c7f5d0601153c5e615d7b3160429537312e196b4d027c95b3e61f19895170",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 55.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3420,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.708,
+      "wall_s": 66.725
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1533,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chaotic, joyful dance, and this time the bears should form overlapping, serpentine lines as they travel across the canvas.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1364,
+    "root_entry_id": 1364
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dancing bears\n\nRevise: the same chaotic, joyful dance, and this time the bears should form overlapping, serpentine lines as they travel across the canvas.",
+  "prompt_tokens": 3420,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1522/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1522",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, ever-shifting landscape of overlapping serpentine lines that flow across the canvas like living ribbons. Each line is composed of many points that move according to Perlin noise functions, creating organic, unpredictable motion patterns. The lines continuously morph and twist, weaving through each other in a choreographed dance of color and form. The visual effect emerges from the interaction of hundreds of animated points, each following its own path while being subtly influenced by global timing, resulting in a rich tapestry of movement that feels both chaotic and harmonious. The entire composition is self-contained, requiring no user input to generate its continuous, mesmerizing animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.725
+}
