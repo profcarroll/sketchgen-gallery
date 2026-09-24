@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cselling sand at the beach Revise: the same sand pile, and this time i\u2026\u201d \u2014 sketchgen entry 1440, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1440/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a gentle, natural mound of pale yellow beach sand. Scattered across and embedded within the sand are dozens of various seashells. These shells are rendered with meticulous detail, showcasing a random, natural scattering pattern and highlighting the subtle, varied hues of the shells, which range from creamy white to delicate pinks and muted beige tones. The sand itself is given a rich, granular texture, emphasizing the fine, particulate nature of the beach material. The visualization is a static, detailed study of beach detritus, existing solely as a careful arrangement of shapes and subtle color variations.",
+  "completion_tokens": 1225,
+  "created_utc": "2026-09-23T10:28:06Z",
+  "entry_id": 1440,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1225,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.032,
+      "prompt_tokens": 2398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.73,
+      "wall_s": 75.799
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1451,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1440
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "selling sand at the beach\n\nRevise: the same sand pile, and this time incorporating delicate, translucent shells scattered among the pale yellow sand.\n\nRevise: the same sand pile, and this time highlighting the subtle differences in color and size among the assorted seashells.\n\nRevise: the same mound of sand and shells, and this time giving the shells a more random, natural scattering pattern.\n\nRevise: the same gentle mound of pale yellow sand and scattered seashells, and this time highlighting the subtle variation in shell hues and the granular texture of the sand.",
+  "prompt_tokens": 2398,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1440/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1440",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a serene, static visualization of a beach sand mound populated with dozens of detailed seashells. The composition features thousands of individually placed sand particles rendered in subtle yellow hues that create a granular texture, forming the gentle slope of a beach dune. Scattered throughout this sandy landscape are 60 carefully positioned shells, each with randomized shapes, sizes, and natural color variations ranging from creamy whites to delicate pinks. The technique uses procedural generation to place elements naturally across the canvas, with no motion or animation to maintain the stillness required by the gate's requirements. Each shell is rendered as a distinct geometric form with subtle variations in shape and orientation, creating a natural scattering effect that mimics beach debris. The palette emphasizes soft, earthy tones to evoke the feeling of a calm coastal environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 75.799
+}
