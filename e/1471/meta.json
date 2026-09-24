@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city\u201d \u2014 sketchgen entry 1471, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1471/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with the atmospheric movement of falling raindrops streaking across the surface of a window. Each individual drop acts like a miniature lens, containing a suspended, inverted view of a tiny cityscape. The rain drops move downward in continuous motion, and the cityscape visible within them appears to drift and shimmer. If the viewer clicks anywhere on the canvas, the impact of the drop causes a brief, expanding ripple that distorts the view of the city within the raindrop, followed by the continuation of the steady, constant rain flow.",
+  "completion_tokens": 916,
+  "created_utc": "2026-09-23T15:35:53Z",
+  "entry_id": 1471,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 916,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2409,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.012,
+      "wall_s": 63.814
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1482,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city",
+  "prompt_tokens": 2409,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1471/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1471",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a rain-soaked window with falling raindrops that each contain a miniature inverted cityscape. Each drop moves downward with a gentle sway, and the city visible within it appears to shimmer and drift as it falls. When the viewer clicks anywhere on the canvas, an expanding ripple effect distorts the view of the city inside the raindrop at the click location, creating a visual impact that then fades out. The scene is rendered entirely in 2D with smooth animations and visual effects using p5.js's drawing functions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.814
+}
