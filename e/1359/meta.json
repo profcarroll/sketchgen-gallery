@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 1359, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1359/ Licensed CC BY 4.0.",
+  "brief": "Interlocking brass and steel gears of various diameters mesh together across a dark background, rotating in a continuous, synchronized dance. The teeth of each gear are precisely aligned to show a physical connection that transfers motion throughout the assembly. A mouse drag adjusts the rotational speed of the entire mechanism, causing the gears to spin faster or slower in response to the drag.",
+  "completion_tokens": 926,
+  "created_utc": "2026-09-22T20:43:02Z",
+  "entry_id": 1359,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 926,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "391b0676994e8e887451d715f3698981af6db0ef55d34952d8d8432c9a21d03c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2533,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 6.762,
+      "wall_s": 70.108
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1369,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [
+      1360
+    ],
+    "critique": "try again, the gears are not interlocking yet",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1359
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect\n\nRevise: try again, the gears are not interlocking yet",
+  "prompt_tokens": 2533,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1359/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1359",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a mechanical animation of interlocking gears rotating in three-dimensional space, with a dark background that emphasizes the metallic textures and precise motion. The gears are arranged in a synchronized system where each gear's rotation speed is inversely proportional to its size, mimicking real gear ratios. A subtle light pulse at the center responds dynamically to the average rotational speed of the assembly. The viewer can interact with the mechanism by dragging their mouse across the canvas, which adjusts the global speed of all gears in real time. The visual design uses simple geometric forms and consistent color gradients to convey a sense of physicality and mechanical harmony, without any complex rendering or performance-heavy effects.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.108
+}
