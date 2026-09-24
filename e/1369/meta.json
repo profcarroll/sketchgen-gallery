@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2010\u201d \u2014 sketchgen entry 1369, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1369/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract, high-energy fields of vibrant, saturated color. These fields comprise softly shifting gradients and liquid-like geometric shapes that interact and overlap, constantly changing their luminosity and form. The movement is continuous and organic, giving the impression of glowing, fluid energy flowing across the screen. When the viewer clicks, the current field immediately dissipates into a radial burst of light, which then transitions into a new, complex configuration of interlocking shapes, restarting the smooth, cyclical movement. The piece is entirely defined by its animated, flowing geometry.",
+  "completion_tokens": 1044,
+  "created_utc": "2026-09-23T06:13:17Z",
+  "entry_id": 1369,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1044,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2435,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.333,
+      "wall_s": 66.129
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1380,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1369
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 2010",
+  "prompt_tokens": 2435,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1369/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1369",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-shifting field of glowing, organic geometric forms that flow across the screen in a continuous, mesmerizing dance. The composition features interlocking spheres, cubes, and torus shapes that slowly drift through 3D space while their colors subtly shift through the hue spectrum. When clicked, the current configuration instantly dissolves into a radial burst of light before transitioning to a completely new arrangement of forms. The piece captures the essence of fluid energy and dynamic systems through smooth, continuous motion and additive blending techniques that create luminous, overlapping fields of color. The visual experience is entirely self-contained, requiring no external inputs beyond the initial click to trigger the transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.129
+}
