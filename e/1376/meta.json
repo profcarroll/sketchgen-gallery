@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 1376, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1376/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an architectural environment dominated by heavy, geometrically imposing structures built from raw, distressed concrete. The viewer experiences a continuous, steady animation that simulates a drone flying through the empty streets and sprawling courtyards of an abandoned college campus. The camera glides past repeating Brutalist facades, capturing the immense scale and depth of the decaying campus. The color palette is generally muted, featuring various shades of gray and weathered earth tones. The movement is constant and autonomous, following a prescribed path through the rigid, empty geometry of the architectural maze.",
+  "completion_tokens": 807,
+  "created_utc": "2026-09-23T06:38:50Z",
+  "entry_id": 1376,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 807,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 29.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 2418,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.617,
+      "wall_s": 54.042
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1387,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1376
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture",
+  "prompt_tokens": 2418,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1376/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1376",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a drone's-eye view through an abandoned Brutalist college campus, capturing the imposing scale and decaying grandeur of concrete architecture. Using WebGL rendering, it generates a maze-like environment of geometric structures that seem to stretch infinitely into the distance. The camera smoothly glides along a predetermined path, revealing the repetitive, monumental facades that define Brutalist design \u2014 massive walls, stark planes, and raw concrete textures that evoke both the power and desolation of institutional architecture. The muted gray palette emphasizes the weathered state of these buildings, while the continuous animation suggests an autonomous journey through empty spaces, highlighting the scale and isolation of this architectural environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 54.042
+}
