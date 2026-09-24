@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA grid of small squares, each breathing at its own slow rhythm, on a\u2026\u201d \u2014 sketchgen entry 1404, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1404/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a grid composed of numerous small squares set against a deep, near-black background infused with a single warm hue. Each square pulses gently and independently, creating a subtle, rhythmic breathing motion across the entire grid. When the viewer clicks anywhere on the canvas, a visible wave radiates outward from the point of impact. As this wave passes over the squares, those affected briefly flash a bright intensity before quickly returning to their natural, steady rhythmic pulse.",
+  "completion_tokens": 674,
+  "created_utc": "2026-09-23T08:07:03Z",
+  "entry_id": 1404,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 674,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2393,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.678,
+      "wall_s": 47.38
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1415,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1404
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "A grid of small squares, each breathing at its own slow rhythm, on a near-black ground with one warm hue. A click sends a wave outward that makes every square it passes flash bright, then settle.",
+  "prompt_tokens": 2393,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1404/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1404",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a grid of small squares on a deep, near-black background infused with a warm hue. Each square pulses gently and independently, creating a subtle rhythmic breathing motion across the entire grid. When clicked anywhere on the canvas, a wave radiates outward from the point of impact. As this wave passes over the squares, those affected briefly flash a bright intensity before quickly returning to their natural, steady pulse. The effect combines organic movement with responsive interaction, creating an immersive visual experience that evolves through user engagement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 47.38
+}
