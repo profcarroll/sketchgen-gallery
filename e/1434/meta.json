@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 1434, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1434/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously evolving field of complex geometric shapes and interconnected abstract lines. The shapes dynamically warp and undergo tessellating distortions, driven by a controlled, sinusoidal frequency. As the field evolves, the interconnected segments periodically separate, drawing visible vectors that extend outward. These separating vectors do not dissipate; rather, they accumulate across the canvas, creating tension and mass before ultimately reconnnecting at specific, visible nodal points, restarting the cycle of distortion and integration.",
+  "completion_tokens": 1017,
+  "created_utc": "2026-09-23T10:10:53Z",
+  "entry_id": 1434,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1017,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 2402,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.506,
+      "wall_s": 66.214
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1445,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1434
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.\n\nRevise: the same continuous field of complex geometric shapes and abstract lines, and this time the separating vectors will accumulate and reconconnect at specific nodal points.",
+  "prompt_tokens": 2402,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1434/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1434",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuously evolving field of interconnected geometric forms that shift and distort over time. Using the WEBGL renderer, it displays a collection of abstract shapes that dynamically warp and tessellate, driven by a controlled sinusoidal frequency. The shapes maintain visual connections through lines that form a complex network, while occasionally separating to create tension before reuniting at specific nodal points. The motion is entirely self-generated without user input, with each frame creating subtle but perceptible changes across the entire canvas. The visual effect combines organic flow with mathematical precision, creating an immersive field of evolving geometric relationships that maintain both coherence and constant transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.214
+}
