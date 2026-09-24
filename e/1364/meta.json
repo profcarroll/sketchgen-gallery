@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdancing bears\u201d \u2014 sketchgen entry 1364, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1364/ Licensed CC BY 4.0.",
+  "brief": "Large, vibrant shapes of bears pop across the canvas in a chaotic, joyful dance. The figures are rendered with bold, fluid lines and a palette of contrasting, jungle colors. They bounce, swirl, and change formation as if caught in a rhythmic, spontaneous celebration. The bears navigate the space by altering their poses and speeds, creating overlapping fields of motion. The canvas is always occupied by this continuous, dynamic performance, keeping the viewer's eyes drawn to the ever-changing ballet of the creatures.",
+  "completion_tokens": 1158,
+  "created_utc": "2026-09-23T05:12:49Z",
+  "entry_id": 1364,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1158,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2379,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.273,
+      "wall_s": 74.625
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1375,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1364
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dancing bears",
+  "prompt_tokens": 2379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1364/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1364",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, chaotic dance of animated bear figures that populate the entire canvas with fluid motion and bold jungle colors. Each bear has its own unique size, velocity, rotation, and color palette, creating an ever-changing field of movement where creatures bounce off edges, sway in rhythmic patterns, and continuously reorient themselves. The bears are rendered with simplified but recognizable features - bodies, heads, ears, eyes, noses, arms, and legs - all drawn using basic 2D primitives like ellipses and translated shapes. The animation is completely self-contained, with no external input required after the initial setup, creating a mesmerizing, continuous performance that fills the screen with joyful, unpredictable motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.625
+}
