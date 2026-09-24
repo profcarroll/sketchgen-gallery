@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201candroids dreaming of electric sheep Revise: the same luminous structu\u2026\u201d \u2014 sketchgen entry 1417, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1417/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays luminous, structured geometric forms set against a dark void. These forms cascade and drift downward continuously, creating the appearance of sheets of liquid light that flow toward the bottom edge of the frame. The color palette is restricted to vibrant emerald and cyan. The movement is constant and cyclical, giving the entire display a mesmerizing, fluid sense of perpetual motion. The viewer simply observes the gradual, shifting fall of these intensely glowing, ethereal structures.",
+  "completion_tokens": 625,
+  "created_utc": "2026-09-23T09:01:01Z",
+  "entry_id": 1417,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 625,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 49.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.855,
+      "wall_s": 49.077
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1428,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1417
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "androids dreaming of electric sheep\n\nRevise: the same luminous structured forms, and this time they cast ephemeral neon shadows on the surrounding dark environment\n\nRevise: the same luminous structured forms, and this time the neon shadows reveal underlying crystalline networks within the space\n\nRevise: the same luminous structured forms, and this time they pulse with a cyclical spectrum of vibrant emerald and cyan hues\n\nRevise: the same luminous, structured forms, and this time they cascade and drift downward like sheets of liquid emerald and cyan light",
+  "prompt_tokens": 2398,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1417/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1417",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of luminous geometric forms cascading downward in a dark void. Using the WEBGL renderer, it generates hundreds of structured, glowing tori and spheres that drift and rotate with fluid motion, evoking sheets of liquid light flowing toward the bottom of the frame. The color palette is restricted to vibrant emerald and cyan hues, creating a mesmerizing, ethereal effect. Each form has unique properties including size, speed, and rotation, contributing to the sense of perpetual, cyclical motion. The forms continuously reset when they fall below the canvas, maintaining an endless flow that fills the screen with dynamic, glowing geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 49.077
+}
