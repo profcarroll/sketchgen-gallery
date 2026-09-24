@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sand mandala that a gust of wind blows apart grain by grain\u201d \u2014 sketchgen entry 1484, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1484/ Licensed CC BY 4.0.",
+  "brief": "The canvas initially displays a detailed and symmetrical mandala, composed of countless individual grains of sand in varied, earthy colours. The entire structure appears stable at first glance, forming complex, intricate patterns. Slowly, however, the composition begins to lose cohesion. Small clusters of sand grains vibrate and detach, simulating the effect of a pervasive, constant gust of wind. This invisible force gradually pulls at the structural integrity, causing the defined shapes to dissolve and disperse grain by grain until the beautiful pattern fades completely into scattered, static sand upon the canvas.",
+  "completion_tokens": 1175,
+  "created_utc": "2026-09-23T16:13:22Z",
+  "entry_id": 1484,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1175,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2393,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.177,
+      "wall_s": 73.735
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1495,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1484
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sand mandala that a gust of wind blows apart grain by grain",
+  "prompt_tokens": 2393,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1484/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1484",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing mandala pattern composed of thousands of individual sand grains in earthy hues, initially appearing stable and intricate. Over time, an invisible wind force gradually destabilizes the structure, causing grains to vibrate and detach one by one from their positions. The simulation shows how even the most elaborate patterns can slowly dissolve under constant, gentle pressure. As grains break free, they scatter independently across the canvas, transforming the ordered composition into a field of static particles. The effect demonstrates the fragility of complex structures and how persistent small forces can gradually erode even the most stable-looking formations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 73.735
+}
