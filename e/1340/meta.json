@@ -1,0 +1,132 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cnostalgic photo collage Revise: the same overlapping images create a\u2026\u201d \u2014 sketchgen entry 1340, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1340/ Licensed CC BY 4.0.",
+  "brief": "A collage of overlapping, semi-transparent photographs drifts slowly across the canvas, creating a sense of fading memories. Soft, diffused motes of light, resembling gentle glowing particles, float through the composition. The images and the light motes move autonomously, creating a sense of depth and an ethereal, shifting atmosphere.",
+  "completion_tokens": 819,
+  "created_utc": "2026-09-22T05:19:29Z",
+  "entry_id": 1340,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 819,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "3d18e6b1440d1e21e087f706591edc197c784d47c6fd79717cae8e57b46ba262",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 55.9,
+      "num_ctx": 16384,
+      "preload_s": 0.341,
+      "prompt_tokens": 2872,
+      "resources_loaded": [
+        {
+          "bytes": 36882,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 133177,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 34203,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 24.855,
+      "wall_s": 112.059
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1349,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same overlapping images create a sense of drifting memories, and this time the dramatic light streaks should appear as gently glowing, diffused motes of light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1334,
+    "root_entry_id": 1334
+  },
+  "loads": [
+    {
+      "bytes": 36882,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 133177,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 34203,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: the same overlapping images create a sense of drifting memories, and this time the dramatic light streaks should appear as gently glowing, diffused motes of light.",
+  "prompt_tokens": 2872,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1340/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1340",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an ethereal collage of overlapping, semi-transparent photographs that drift slowly across the canvas, evoking a sense of fading memories. The images move autonomously with subtle bouncing and drifting motions, while thousands of soft, diffused light motes float gently through the composition. The visual effect suggests a dreamlike atmosphere where past moments linger and shift, creating an immersive experience of nostalgic depth and ambient movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 112.059
+}
