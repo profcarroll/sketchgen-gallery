@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 1455, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1455/ Licensed CC BY 4.0.",
+  "brief": "On the canvas, small, vibrant circular cells spontaneously appear and grow. These cells exhibit subtle, rhythmic pulses before they begin the replication process. When a cell reaches a critical size, it slows its movement, forming a clear separation point. Over time, the initial cell visibly splits into two, and these resulting daughter cells then repeat the entire cycle, dividing into pairs and increasing the total count on the screen. The scene is entirely autonomous, continuously generating new life and observing the increasing population until the canvas fills with activity.",
+  "completion_tokens": 908,
+  "created_utc": "2026-09-23T11:19:45Z",
+  "entry_id": 1455,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 908,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2384,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.573,
+      "wall_s": 58.859
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1466,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split",
+  "prompt_tokens": 2384,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1455/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1455",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an autonomous ecosystem of growing, pulsing cells that spontaneously divide. Starting with a single cell at the center, each cell expands rhythmically while slowly drifting across the canvas. When a cell reaches a critical size, it halts its movement and splits into two daughter cells, which then begin their own growth cycle. The process repeats continuously, creating an ever-increasing population of vibrant, pulsing entities that fill the screen. Each cell maintains its own color hue while exhibiting synchronized rhythmic pulses before splitting, visualizing a simple yet mesmerizing form of biological replication in a digital space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 58.859
+}
