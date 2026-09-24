@@ -1,0 +1,179 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(drag)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near\u201d \u2014 sketchgen entry 1481, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1481/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vibrant tide pool environment, showing various shapes and vivid colours characteristic of deep-sea life. Large, colorful anemones are visible, generally opening into undulating, gentle shapes. The water provides a reflective, shifting background. As the mouse moves closer to the pool's edge, the anemones react visibly, withdrawing their tentacles and appearing closed or folded, creating a dynamic shift in the composition's outline.",
+  "completion_tokens": 2837,
+  "created_utc": "2026-09-23T16:06:23Z",
+  "entry_id": 1481,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 956,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.5645/255, 31777 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2383,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.021,
+      "wall_s": 63.521
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 937,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.5645/255, 31777 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 101,
+        "sha256": "e05d4743245e6c3642945298de6ce11dc8b80e39825fb5ff571a389ccb280af3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3370,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.93,
+      "wall_s": 80.779
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 944,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.5645/255, 31777 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 100,
+        "sha256": "238f849ae0724b2e0390d30e9c51c0b6229c255dfcf530ce994fd8c9a736d03e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3363,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.957,
+      "wall_s": 80.875
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1492,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near",
+  "prompt_tokens": 9116,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1481/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1481",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive tide pool environment where vibrant anemones respond dynamically to mouse proximity. The composition features a deep blue ocean background with gently moving particles that simulate water currents. Multiple colorful anemones are scattered throughout the lower portion of the canvas, each with undulating tentacles that open and close rhythmically. When the mouse approaches any anemone, its tentacles retract and fold inward, creating a realistic reaction that transforms the overall shape of the tide pool's edge. The scene remains static until user interaction triggers the responsive behavior, emphasizing the delicate balance between marine life and their environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 225.175
+}
