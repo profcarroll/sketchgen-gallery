@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cshower thoughts\u201d \u2014 sketchgen entry 1403, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1403/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows a field of soft, translucent bubbles and floating text fragments that drift slowly across the screen, simulating steam or ephemeral thoughts. The colors are muted and pastel, suggesting the atmosphere of a shower. The movement is constant and random, with fragments gently rising and drifting apart. When the viewer clicks anywhere on the canvas, a cluster of new, brightly colored thought bubbles burst into the air, temporarily disrupting the serene flow. Furthermore, dragging the cursor across the surface causes the existing thoughts to gather and momentarily reorganize, like brainstorming scattered ideas.",
+  "completion_tokens": 1348,
+  "created_utc": "2026-09-23T08:05:05Z",
+  "entry_id": 1403,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1348,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2433,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.836,
+      "wall_s": 83.113
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1414,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1403
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "shower thoughts",
+  "prompt_tokens": 2433,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1403/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1403",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene, dreamlike atmosphere of floating thoughts and steam-like bubbles drifting across the screen. The composition features a field of translucent pastel-colored bubbles that gently rise and drift apart, interspersed with floating text fragments representing ephemeral ideas. The scene responds to user interaction: clicking anywhere triggers a burst of bright, temporary bubbles that disrupt the peaceful flow, while dragging the cursor causes existing elements to gather and reorganize like scattered brainstorming thoughts. The muted color palette and slow, organic movements evoke the tranquil, contemplative space of a shower, where thoughts drift and dissolve naturally. The interaction design provides both disruption and organization, allowing viewers to engage with the floating ideas in a way that feels intuitive and responsive to their presence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.113
+}
