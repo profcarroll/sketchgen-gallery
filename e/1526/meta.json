@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca marching band seen from above, forming shapes on a football field R\u2026\u201d \u2014 sketchgen entry 1526, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1526/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an overhead view of a segmented football field. Groups of people, representing a marching band, populate the green space. The band members constantly move, forming temporary, abstract geometric shapes as they march across the field. The movement is the primary focus: the figures shift, wobble, and occasionally falter in coordination, creating a dynamic, yet slightly uncoordinated, visual rhythm that constantly changes on the screen.",
+  "completion_tokens": 1161,
+  "created_utc": "2026-09-24T02:18:19Z",
+  "entry_id": 1526,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1161,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 91,
+        "sha256": "4348fcecda2649b5fea4813d9b2a770894d2a3278204224e83a665ae3addad4b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3460,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.553,
+      "wall_s": 102.206
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1537,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "improvment, try again and make the bands movements more realiistic, and controlled, this band is not yet cooridinated",
+    "critique_by": "profcarroll",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": null,
+    "root_entry_id": 1526
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a marching band seen from above, forming shapes on a football field\n\nRevise: try again with animation and movement this time\n\nRevise: improvment, try again and make the bands movements more realiistic, and controlled, this band is not yet cooridinated",
+  "prompt_tokens": 3460,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1526/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1526",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a marching band moving across a football field in an abstract, constantly shifting formation. The 24 band members are organized into four groups, each following a distinct movement pattern that creates dynamic geometric shapes as they march. The visual rhythm emerges from the interplay between their individual motions and group coordination, with occasional moments of misalignment that create a sense of organic, uncoordinated flow. The field markings provide a static backdrop against which the band's motion generates a continuous, evolving composition of color and form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.206
+}
