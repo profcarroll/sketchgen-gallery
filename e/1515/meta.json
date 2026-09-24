@@ -1,0 +1,131 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe northern lights seen from inside a snow globe Revise: try again,\u2026\u201d \u2014 sketchgen entry 1515, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1515/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a confined, dome-shaped world\u2014the interior of a snow globe. Vibrant curtains of pulsating, ethereal light, rendered in shades of emerald, sapphire, and violet, swirl and undulate across the space, depicting the northern lights. Overlaid upon this shifting glow is a constant flurry of white particles, which drift down, accumulate at the base, and catch the light. The entire composition maintains a perpetual, swirling motion of colored gases and falling snow, creating a rich sense of contained depth and continuous organic change.",
+  "completion_tokens": 2382,
+  "created_utc": "2026-09-24T01:23:27Z",
+  "entry_id": 1515,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1387,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 94)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 234.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "c5e59122c86349516a3caa2fb39d0df1e13f0900823e05d5d66b6b0c6b38d605",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 234.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3896,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.422,
+      "wall_s": 129.053
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 995,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "4de10067ef0917c6c3ab65875e53e35d9e3ce5d5de1ffefe995c3a95e29189a5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3905,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.624,
+      "wall_s": 103.232
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1526,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again, the code produced no animation",
+    "critique_by": "profcarroll",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1515
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the northern lights seen from inside a snow globe\n\nRevise: try again, the code produced no animation",
+  "prompt_tokens": 7801,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1515/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1515",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive snow globe experience with a dome-shaped interior. Ethereal curtains of pulsating emerald, sapphire, and violet light swirl across the space like dancing northern lights, rendered through a precomputed texture mapped onto a sphere. Overlaid on this cosmic display, thousands of white particles drift downward in a continuous snowfall, accumulating at the base of the globe. The entire composition maintains a perpetual, organic motion with the aurora curtains flowing and snow gently falling, creating a rich sense of contained depth and continuous change within the confined space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 232.285
+}
