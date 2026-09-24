@@ -1,0 +1,114 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "loads(image)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccurious photos framed in floating octagons against a background of li\u2026\u201d \u2014 sketchgen entry 1349, prompted by profcarroll, written by gemma4:26b under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1349/ Licensed CC BY 4.0.",
+  "brief": "Floating octagonal frames, each containing a curious photograph, drift through a dark, immense void. The frames move in a slow, gentle, and synchronized spiral, gradually receding away from the viewer into the distance. This creates a rhythmic sense of depth as the shapes travel into the emptiness.",
+  "completion_tokens": 1317,
+  "created_utc": "2026-09-22T14:38:17Z",
+  "entry_id": 1349,
+  "executor": "gemma4:26b",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1317,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 149,
+        "sha256": "04891decf90db5ee215eb3ddc0d1de36229f6e7ba9897c95a36cdc982a595eca",
+        "shown": true
+      },
+      "model": "gemma4:26b",
+      "ms_per_frame": 11.4,
+      "num_ctx": 16384,
+      "preload_s": 0.364,
+      "prompt_tokens": 3323,
+      "resources_loaded": [
+        {
+          "bytes": 22542,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 7.977,
+      "wall_s": 254.819
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1358,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same octagonal frames containing curious photographs, and this time traveling slowly in a gentle, synchronized spiral away from the viewer into the void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1346,
+    "root_entry_id": 1337
+  },
+  "loads": [
+    {
+      "bytes": 22542,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "curious photos framed in floating octagons against a background of liminal space\n\nRevise: the same floating octagonal frames, and this time dispersing them further into the vast, empty void.\n\nRevise: the same floating octagonal frames, and this time greatly separated across the immense void.\n\nRevise: the same octagonal frames containing curious photographs, and this time traveling slowly in a gentle, synchronized spiral away from the viewer into the void.",
+  "prompt_tokens": 3323,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1349/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1349",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "I created a 3D environment that simulates a slow, rhythmic voyage through a dark void. Using a synchronized spiral algorithm, a series of octagonal frames containing photographic textures drift in a collective movement, gradually receding into the distance. By linking the scale of the frames and their stroke weights to their depth in the Z-axis, I established a sense of scale and perspective that emphasizes the emptiness of the space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 254.819
+}
