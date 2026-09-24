@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwater coming to a boil\u201d \u2014 sketchgen entry 1355, prompted by profcarroll, written by laguna-xs-2.1:latest under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1355/ Licensed CC BY 4.0.",
+  "brief": "Small, translucent white bubbles emerge from the bottom of a deep blue canvas, rising toward the top. The bubbles vary in size and speed, creating a sense of depth. As they reach the top, they cluster into white, frothy shapes that flicker and dissipate. The movement becomes increasingly frantic and turbulent, simulating the agitation of water reaching a rolling boil.",
+  "completion_tokens": 1054,
+  "created_utc": "2026-09-22T15:53:46Z",
+  "entry_id": 1355,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1054,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 1720,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.642,
+      "wall_s": 347.91
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1364,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1355
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "water coming to a boil",
+  "prompt_tokens": 1720,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1355/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1355",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "A simulation of bubbles rising in a boiling pot of water. White translucent bubbles drift upward through a deep blue void, their paths gently undulating with subtle noise. When the agitation intensifies, the bubbles gather at the top, forming frothy white clusters that shimmer and break apart into nothingness. The composition captures the tension between stillness and chaos\u2014the meditative rise of individual bubbles giving way to the violent, turbulent energy of boiling water. The animation builds and releases through its rhythm of emergence, clustering, and dissipation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 347.91
+}
