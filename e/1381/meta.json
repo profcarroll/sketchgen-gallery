@@ -1,0 +1,95 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmacaroni and cheese\u201d \u2014 sketchgen entry 1381, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1381/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract clusters of creamy yellow-orange sauce and smooth, curved macaroni shapes. The ingredients exhibit a subtle, continuous, and gentle wobble, giving the whole scene a viscous, living quality. As the viewer drags the cursor across the canvas, the sauce reacts instantly, stretching and pulling the nearest macaroni pieces into a dynamic, flowing stream that follows the path of the cursor. This interaction allows the viewer to manipulate and reshape the creamy, structural representation of the dish.",
+  "completion_tokens": 1075,
+  "created_utc": "2026-09-23T06:50:26Z",
+  "entry_id": 1381,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1075,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2399,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.301,
+      "wall_s": 68.255
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1392,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1381
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "macaroni and cheese",
+  "prompt_tokens": 2399,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1381/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1381",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a viscous, living representation of creamy sauce and macaroni, with clusters of yellow-orange sauce that gently wobble and smooth, curved macaroni shapes that undulate with subtle motion. The scene responds to mouse interaction by stretching and pulling nearby macaroni pieces into flowing streams that follow the cursor path. The visual effect combines organic motion with a sense of fluidity and elasticity, creating an immersive experience where viewers can manipulate the dish's structure through direct interaction. The gentle, continuous wobble gives each element a living quality, while the drag interaction provides immediate feedback that transforms the static composition into a dynamic, interactive scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 68.255
+}
