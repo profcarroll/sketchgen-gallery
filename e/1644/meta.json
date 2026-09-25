@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lending library of light: shelves of glowing books that visitors bo\u2026\u201d \u2014 sketchgen entry 1644, prompted by profcarroll, written by qwen3-coder:30b under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1644/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows a vertical stack of softly glowing shelves crammed with luminous books. A subtle flickering ripple animates the shelves as a gentle idle glow shifts horizontally. The viewer can click any book to toggle a borrowed state: it lifts slightly, changes color, and reverts to its spot when clicked again. The shelf keeps a record of which books are marked as taken by visually highlighting the borrowed titles. No other interaction occurs.",
+  "completion_tokens": 1232,
+  "created_utc": "2026-09-25T04:28:56Z",
+  "entry_id": 1644,
+  "executor": "qwen3-coder:30b",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1232,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b",
+      "ms_per_frame": 21.8,
+      "num_ctx": null,
+      "preload_s": 0.029,
+      "prompt_tokens": 2387,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.564,
+      "wall_s": 74.0
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1655,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1644
+  },
+  "loads": [],
+  "note": "d12-compute pilot dry run: planned by Ollama's gpt-oss:20b and executed by Ollama's qwen3-coder:30b on flux's RTX 5080 in the D12 lab, reached through a d12-compute checkout; the laptop leg driven by a Claude Code session answering each packet with the desk's models",
+  "off_node": [],
+  "planner": "gpt-oss:20b",
+  "planner_prompt_version": "planner-v2",
+  "process": {
+    "effort": null,
+    "output_tokens": null,
+    "screenshots": null,
+    "session_s": 232.0,
+    "thinking_tokens": null,
+    "tool_calls": 1,
+    "tries": 1
+  },
+  "prompt": "a lending library of light: shelves of glowing books that visitors borrow and return, and the shelf remembers who has what",
+  "prompt_tokens": 2387,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1644/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1644",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a cozy library scene with vertical shelves filled with luminous books. The shelves gently flicker with a horizontal ripple animation that shifts across them, creating an idle glow effect as if the room is softly breathing. Books can be clicked to toggle their borrowed state \u2013 they lift slightly and change color, while a visual indicator highlights those marked as taken. The entire scene is rendered with soft glows and subtle lighting effects that give it a dreamy, ethereal quality without being overwhelming. The animation runs smoothly within the frame budget using batching techniques and efficient drawing methods.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.0
+}
