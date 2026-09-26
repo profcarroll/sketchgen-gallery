@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1561, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1561/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with multiple, glowing rings of fluorescent color. These rings are always visible, maintaining a vivid, electric glow against the background. Rather than pulsing randomly, the entire pattern exhibits a steady, rhythmic inward motion, with the edges of the rings gently spiraling towards a central point on the screen. The viewer watches the continuous, hypnotic journey of the expanding and contracting circular forms as they slowly collapse toward the center.",
+  "completion_tokens": 666,
+  "created_utc": "2026-09-24T07:05:53Z",
+  "entry_id": 1561,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 666,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "c6d0da8995091c85138c0b99a5c60fecfbee4edbde621272b9212e94bf08641a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2905,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.922,
+      "wall_s": 60.029
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1572,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same multiple rings of concentric circles, and this time they should gently spiral inward from the edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1405,
+    "root_entry_id": 1405
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same multiple rings of concentric circles, and this time they should gently spiral inward from the edges.",
+  "prompt_tokens": 2905,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1561/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1561",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing display of glowing, fluorescent rings that slowly spiral inward toward the center of the canvas. Each ring maintains its own rhythm of motion while contributing to a cohesive, hypnotic pattern. The animation is achieved through carefully modulated sine waves that control each ring's radius over time, creating a continuous, rhythmic collapse toward the center. The visual effect relies on the HSB color space for vibrant, electric hues and a consistent stroke weight that ensures each ring remains clearly visible against the dark background. The motion is smooth and constant, without any abrupt changes or random elements, resulting in an immersive experience where the viewer observes the continuous dance of expanding and contracting circular forms as they inexorably move toward the center.",
+  "submitted_by": "profcarroll",
+  "wall_s": 60.029
+}
