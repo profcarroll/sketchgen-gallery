@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 1678, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1678/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, evolving biological mass simulating slime mold growth on a substrate. The structure is rendered in intricate three-dimensional detail, with dynamic lighting emphasizing the material's surface qualities. The expanding masses are characterized by sharp, angular folds, which exhibit visible, crystalline fracturing. These folds and ridges give the structure a rigid, mineralized appearance as the masses continue to shift and expand over time. The entire composition is a self-contained, continuous organic simulation, requiring no direct input to observe its transformation.",
+  "completion_tokens": 3268,
+  "created_utc": "2026-09-26T18:00:25Z",
+  "entry_id": 1678,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1638,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 101)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 124)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 131 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex, evolving biological masses, and this time the folds exhibit sharp, angular ridges of visible crystal fracture.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 164,
+        "sha256": "be1d23682f5b732d2d47239592a3b0b7d5d90577e5a8a7edc6f11826e296befa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 29.4,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3990,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.688,
+      "wall_s": 163.774
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1630,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 164,
+        "sha256": "be1d23682f5b732d2d47239592a3b0b7d5d90577e5a8a7edc6f11826e296befa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4301,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 26.831,
+      "wall_s": 449.159
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1691,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, evolving biological masses, and this time the folds exhibit sharp, angular ridges of visible crystal fracture.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1647,
+    "root_entry_id": 1375
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same complex, evolving biological structure, and this time the defined folds and masses appear sharper and more rigid.\n\nRevise: the same complex, evolving biological structure, and this time the individual masses exhibit fine, crystalline fracturing along their defined folds and ridges.\n\nRevise: the same complex, evolving biological masses, and this time the folds exhibit sharp, angular ridges of visible crystal fracture.",
+  "prompt_tokens": 8291,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1678/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1678",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the growth and transformation of a biological mass resembling slime mold, rendered in three-dimensional space with dynamic lighting. The structures evolve over time, expanding and shifting through organic movement while maintaining sharp, angular crystalline fractures that define their rigid, mineralized appearance. The simulation uses a combination of fluid motion and sudden structural changes to create an ever-shifting landscape of interconnected ridges and folds, capturing both the fluidity and rigidity inherent in biological growth patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 612.933
+}
