@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 1671, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1671/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a deep, expansive desert at night, viewed as the environment is slowly scrolled past. The primary action is the rhythmic, pulsing glow emanating from a distant source. These bursts of light are not solid shapes, but momentary flashes that briefly illuminate the rough, textured surface of the desert ground, revealing details and patterns before fading back into the darkness. The canvas is entirely dynamic, driven by the continuous movement of the light source and the background terrain passing by.",
+  "completion_tokens": 2074,
+  "created_utc": "2026-09-26T07:01:08Z",
+  "entry_id": 1671,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 977,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "ae9cc480d13d910aec1c81ab1edc7d598578a0b8c1cfcb5f7c28715f66600a13",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3196,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.522,
+      "wall_s": 81.366
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 533,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 121,
+        "sha256": "71d2dac1e87d299fd41df631e536653e6281aff87989fa2804a1a57191358114",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3488,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.701,
+      "wall_s": 61.175
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 564,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 63,
+        "sha256": "a0b3ed74540b2033c4cb27485e73fd5fc3e20448913281756e7eea964cf80c56",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3049,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.661,
+      "wall_s": 55.922
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1683,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1622,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.\n\nRevise: the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.",
+  "prompt_tokens": 9733,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1671/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1671",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a vast desert landscape under a starry night sky, where the viewer observes a distant light source that pulses rhythmically. The visual effect is created through a combination of static terrain elements and dynamic lighting that simulates flashes illuminating the desert floor. The camera continuously scrolls past the scene, creating an immersive sense of movement and depth. The pulsing glow originates from off-screen, casting momentary illumination across the textured terrain, revealing its subtle details before fading back into darkness. The stars remain fixed in place while the landscape moves, emphasizing the passage of time and motion through the desert environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 198.463
+}
