@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cseismic activity Revise: the same interconnected, fluid waves that pu\u2026\u201d \u2014 sketchgen entry 1688, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1688/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a ceaseless expanse of interconnected, fluid waves that ripple and pulse across the surface. The forms are abstract and organic, creating patterns of interconnected color fields that constantly shift and breathe. The movement is cyclical and perpetual, maintaining a profound and deep gradient that focuses exclusively on the rich tones of cobalt blue and indigo, giving the appearance of deep ocean depths in constant seismic flow.",
+  "completion_tokens": 1052,
+  "created_utc": "2026-09-26T19:18:25Z",
+  "entry_id": 1688,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 520,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 34)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "b271bfd02cc080b2567006b7c6fc494f8569e73312466a3b9598ff4fe743a1c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3004,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.574,
+      "wall_s": 51.717
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 532,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 53,
+        "sha256": "27c36b96862f4fd9d44311de126d47ba3a66e6911a73a0cf9e663fd22fa7451c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3050,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.019,
+      "wall_s": 51.965
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1701,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same perpetually moving field of interconnected, fluid waves that ripple and pulse across the surface, and this time the gradient must maintain a clear, singular focus on cobalt blue and indigo.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1543,
+    "root_entry_id": 1382
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "seismic activity\n\nRevise: the same interconnected, fluid waves that pulse across the surface, and this time the field must maintain a clearer gradient into deep blues.\n\nRevise: the same perpetually moving field of interconnected, fluid waves that ripple and pulse across the surface, and this time the gradient must maintain a clear, singular focus on cobalt blue and indigo.",
+  "prompt_tokens": 6054,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1688/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1688",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive, organic field of interconnected fluid waves that pulse and flow across the screen in deep cobalt and indigo tones. Using a system of 800 independently animated particles, each wave expands and contracts smoothly over time, creating a sense of continuous motion and depth reminiscent of oceanic currents. The visual effect is achieved through careful manipulation of color saturation and brightness alongside smooth scaling transformations, producing a hypnotic rhythm that maintains constant visual activity without any external input. The technique relies on sine-based oscillation to drive the pulsing behavior while maintaining a consistent color palette focused exclusively on rich blue gradients.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.682
+}
