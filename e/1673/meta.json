@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca stained-glass window as the light moves through a whole day Revise:\u2026\u201d \u2014 sketchgen entry 1673, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1673/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, static structure resembling a stained-glass window, composed of vividly colored, interconnected geometric panels. The light source, which interacts with the window's structure, is the main element of motion. Instead of a constant flow, beams of light sweep across the panels, pulsating and contracting around the internal edges of the geometric pieces in a steady, rhythmic cycle. The colors remain vibrant, defining the sharp separation between the glass panes, while the rhythmic contraction of the beams creates a hypnotic, oscillating glow across the surface.",
+  "completion_tokens": 2377,
+  "created_utc": "2026-09-26T07:12:53Z",
+  "entry_id": 1673,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1242,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (84 lines of code before, 85 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex structure of geometric stained-glass panels, and this time the sweeping beams of light pulse and contract rhythmically around the internal edges.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "9105ddc6a5ee386a5a801848fae05f8acfc6ae2b2f5f545ea6fd3263617bf185",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3553,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 23.411,
+      "wall_s": 107.298
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1135,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "c1e14f5639b876f114344c02ecc20a807ee49c4737af005a1ab9c272943c4789",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.2,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3778,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.534,
+      "wall_s": 105.239
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1685,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex structure of geometric stained-glass panels, and this time the sweeping beams of light pulse and contract rhythmically around the internal edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1627,
+    "root_entry_id": 1496
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a stained-glass window as the light moves through a whole day\n\nRevise: the same stained-glass window, and this time the light beams cast glowing halos around the internal edges of the geometric pieces.\n\nRevise: the same complex structure of geometric stained-glass panels, and this time the sweeping beams of light pulse and contract rhythmically around the internal edges.",
+  "prompt_tokens": 7331,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1673/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1673",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing stained-glass window effect with interconnected geometric panels that pulse and glow rhythmically. The viewer observes a complex structure of vibrant polygons arranged in a static composition, where light sweeps across the surface in a steady, hypnotic motion. The light beams contract and expand in a pulsating cycle around the internal edges of the glass pieces, creating an oscillating glow that transforms the entire scene over time. The constant motion and rhythmic pulses generate an immersive visual experience that captures the ethereal quality of light passing through colored glass.",
+  "submitted_by": "profcarroll",
+  "wall_s": 212.537
+}
