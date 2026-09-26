@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cletters of the alphabet falling like snow and drifting into words Rev\u2026\u201d \u2014 sketchgen entry 1640, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1640/ Licensed CC BY 4.0.",
+  "brief": "Small geometric letters of the alphabet drift down from the top of the canvas, continuously falling and accumulating like slow, linguistic snow. As these letters settle, they begin to naturally connect and group into readable, coherent words. This formation process is perpetual, resulting in words that remain permanently anchored and visible on the canvas, even as new letters continue to fall from above. The only elements visible are the stark letter shapes and the implied flow of accumulation.",
+  "completion_tokens": 781,
+  "created_utc": "2026-09-24T14:43:27Z",
+  "entry_id": 1640,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 781,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 174,
+        "sha256": "61e9071160a6b5de3f660680125a42318df3a7a9d4057a315e7e607c2dd56d62",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3617,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.633,
+      "wall_s": 79.319
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1651,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the continuous accumulation of falling letters into coherent words, and this time, the formed words should remain visible and anchored to the canvas.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1525,
+    "root_entry_id": 1509
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "letters of the alphabet falling like snow and drifting into words\n\nRevise: try again, a bug in the code is returning NaN\n\nRevise: try again, you didn't fix the bug, still NaN\n\nRevise: the continuous accumulation of falling letters into coherent words, and this time, the formed words should remain visible and anchored to the canvas.",
+  "prompt_tokens": 3617,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1640/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1640",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a continuous, flowing accumulation of falling letters that gradually form coherent words. Letters drift downward from the top of the screen under the influence of gravity and gentle wind, bouncing off each other through cohesion and separation forces. As they settle, they naturally cluster together to form readable words, creating a visual metaphor for language emerging from chaos. The process is perpetual\u2014new letters continuously fall while existing ones accumulate and group into meaningful formations, resulting in an ever-changing landscape of linguistic snow that fills the canvas over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.319
+}
