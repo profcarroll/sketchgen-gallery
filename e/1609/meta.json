@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca clock that runs on heartbeats; click to make it race Revise: the sa\u2026\u201d \u2014 sketchgen entry 1609, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1609/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a circular clock face centered on the screen. A visible hour hand, which is colored blue, sweeps around the clock face to indicate the passage of time. Initially, the hand moves slowly and rhythmically, mimicking the steady beat of a heart. When the viewer clicks anywhere on the canvas, the hand's movement dramatically increases, causing it to rapidly spin and sweep around the face until the movement naturally slows again.",
+  "completion_tokens": 685,
+  "created_utc": "2026-09-24T11:56:16Z",
+  "entry_id": 1609,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 685,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "7e0e7b8e41707a606ac2524fb148c57a827d3e931a2a3307ac4bf540279aa759",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3001,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.004,
+      "wall_s": 63.401
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1620,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same circular clock face, and this time the hand is colored blue.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1473,
+    "root_entry_id": 1473
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a clock that runs on heartbeats; click to make it race\n\nRevise: the same circular clock face, and this time the hand is colored blue.",
+  "prompt_tokens": 3001,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1609/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1609",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a rhythmic clock face with a blue hour hand that pulses gently at first, mimicking the steady beat of a heart. When the viewer clicks anywhere on the canvas, the hand's movement dramatically increases, causing it to rapidly spin and sweep around the face until the motion naturally slows down again. The visual effect demonstrates a transition from calm to dynamic motion triggered by user interaction, using mathematical functions to control the timing and acceleration of the spinning hand. The design emphasizes smooth, continuous animation within p5.js constraints while maintaining clear visual feedback for both idle and interactive states.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.401
+}
