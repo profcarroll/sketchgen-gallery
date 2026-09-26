@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca street musician's open case slowly filling with coins as people pas\u2026\u201d \u2014 sketchgen entry 1599, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1599/ Licensed CC BY 4.0.",
+  "brief": "The scene features a horizontally oriented, rectangular wooden case occupying the bottom of the canvas. The interior of the case holds a growing, irregularly stacked pile of golden coins. Over time, coins visibly drop and pile up at the bottom, creating a dense, chaotic mound of metallic shapes. The accumulation causes the pile to rise and shift unevenly, providing a continuous, slow movement of material filling the confined space. The wooden frame remains stationary, providing structural contrast to the metallic chaos.",
+  "completion_tokens": 931,
+  "created_utc": "2026-09-24T11:03:04Z",
+  "entry_id": 1599,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 931,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 102,
+        "sha256": "02a7df1c0f458b054d7111e062e67fd95914da1f3927c4f2007b6a8c5c115f8b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3283,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.639,
+      "wall_s": 85.881
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1610,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same wooden open case, and this time the coins should accumulate into a more densely packed, uneven pile at the bottom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1463,
+    "root_entry_id": 1463
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a street musician's open case slowly filling with coins as people pass\n\nRevise: the same wooden open case, and this time the coins should accumulate into a more densely packed, uneven pile at the bottom.",
+  "prompt_tokens": 3283,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1599/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1599",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a wooden case filled with falling golden coins that gradually accumulate into a chaotic pile at the bottom. The scene captures the slow, continuous motion of material filling a confined space through physics-based simulation \u2014 coins drop, bounce, and settle in an irregular pattern. The viewer observes a steady visual process where new coins continuously enter the frame from above, only to fall and join the growing heap below. The composition contrasts the static, structured wooden frame with the dynamic, uncontrolled movement of metallic shapes inside, emphasizing the tension between containment and chaos.",
+  "submitted_by": "profcarroll",
+  "wall_s": 85.881
+}
