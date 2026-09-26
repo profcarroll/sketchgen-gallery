@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca chessboard whose pieces drift like boats on a tide Revise: the same\u2026\u201d \u2014 sketchgen entry 1624, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1624/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a clear, geometric chessboard pattern serving as a grid foundation. Arranged upon this board are various piece-shapes, which appear to drift slowly and organically across the squares. The pieces are not randomly scattered but seem guided by subtle, flowing undercurrents that manifest as gentle, visible shifts in position. The movement is continuous, giving the overall appearance of a deep, submerged tide carrying buoyant objects across a fixed plane.",
+  "completion_tokens": 816,
+  "created_utc": "2026-09-24T13:11:18Z",
+  "entry_id": 1624,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 816,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "40578ae5b600f3d2b9b3e753f51445d1446d99df1e4acf2b2dbba94498e12a5d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3121,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.73,
+      "wall_s": 69.944
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1635,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same chessboard pattern upon which piece-shapes are arranged, and this time the movement is guided by subtle, visible undercurrents.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1491,
+    "root_entry_id": 1491
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a chessboard whose pieces drift like boats on a tide\n\nRevise: the same chessboard pattern upon which piece-shapes are arranged, and this time the movement is guided by subtle, visible undercurrents.",
+  "prompt_tokens": 3121,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1624/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1624",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents an organic, flowing chessboard where geometric pieces drift slowly across a fixed grid. The visualization creates an illusion of deep, submerged movement by combining smooth transitions between random targets with gentle, periodic oscillations that vary per piece. Each piece maintains its own rhythm and direction while appearing to be carried by an invisible current, resulting in a mesmerizing effect of continuous, natural motion over a structured foundation. The visual design emphasizes fluidity through the combination of easing functions, individual timing variations, and subtle rotational movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.944
+}
