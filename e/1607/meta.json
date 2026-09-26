@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 1607, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1607/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a view through a rain-streaked windowpane. The atmosphere is defined by falling raindrops, which move dynamically, streaking across the surface and distorting the view. Visible within the flowing water pockets are tiny, detailed cityscapes, oriented upside down. These contained miniature worlds are not static; they subtly pulse with a gentle, slow, rhythmic glow, providing a constant, cyclical movement against the backdrop of the falling rain.",
+  "completion_tokens": 1003,
+  "created_utc": "2026-09-24T11:47:20Z",
+  "entry_id": 1607,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1003,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 98,
+        "sha256": "0cf1ef4b3a829daf637686a03ba2dbc1d32f25f272d1e26c50920764c5c85983",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3227,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.756,
+      "wall_s": 88.411
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1618,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1471,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.",
+  "prompt_tokens": 3227,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1607/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1607",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a view through a rain-streaked window, where falling raindrops distort the vision of tiny, upside-down cityscapes within each droplet. The raindrops move dynamically down the screen, their paths subtly swaying to mimic wind, while each contains a miniature city that pulses gently with a rhythmic glow. The visual effect creates an atmospheric interplay between the motion of rain and the calm, cyclical light of the contained worlds, evoking a sense of quiet observation and gentle movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.411
+}
