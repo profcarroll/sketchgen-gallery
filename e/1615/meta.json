@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can origami crane folding and unfolding itself forever Revise: the sam\u2026\u201d \u2014 sketchgen entry 1615, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1615/ Licensed CC BY 4.0.",
+  "brief": "The canvas features an abstract, three-dimensional sculpture of an origami crane constructed from interconnected, sharp planes. The crane cyclically transitions through a fluid state of folding and unfolding itself, a continuous metamorphosis. The movement is rhythmic and complex, momentarily halting its reshaping before smoothly restarting the cycle. The color palette consists of sharp, matte shades that define its geometric structure, and the entire display operates independently, maintaining its mesmerizing rhythm without requiring any interaction from the viewer.",
+  "completion_tokens": 1200,
+  "created_utc": "2026-09-24T12:28:48Z",
+  "entry_id": 1615,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1200,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "acb78c1e471d9b57a047a05e86574a9a92ee990170fecf805b133564668aa0f8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3110,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.11,
+      "wall_s": 95.049
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1626,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, three-dimensional representation of an origami crane, and this time it momentarily pauses its folding cycle before restarting the metamorphosis.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1479,
+    "root_entry_id": 1479
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an origami crane folding and unfolding itself forever\n\nRevise: the same abstract, three-dimensional representation of an origami crane, and this time it momentarily pauses its folding cycle before restarting the metamorphosis.",
+  "prompt_tokens": 3110,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1615/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1615",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an abstract, three-dimensional origami crane constructed from interconnected geometric planes that continuously fold and unfold in a rhythmic metamorphosis. The sculpture appears to breathe with organic motion despite its rigid mathematical structure, as each plane rotates and repositions according to sine and cosine functions that create harmonious, flowing transitions. The color palette consists of matte, sharp hues that define the crane's structure without visual distraction, emphasizing the interplay between geometric form and fluid motion. The entire composition operates independently in an endless cycle of folding and unfolding, creating a mesmerizing effect through its careful balance of mathematical precision and organic rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.049
+}
