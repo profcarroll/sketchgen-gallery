@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sand mandala that a gust of wind blows apart grain by grain Revise:\u2026\u201d \u2014 sketchgen entry 1619, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1619/ Licensed CC BY 4.0.",
+  "brief": "The canvas initially displays a large, intricate, and highly detailed mandala structure, perfectly formed from colorful, fine grains of sand. The artwork is symmetrical and appears stable until a specific point on the structure begins to vibrate and fail. With a sudden burst of energy, the perfect symmetry fractures, and the grains of sand rapidly lose cohesion. The colorful particulate matter cascades outward and downwards in a sharp, asymmetrical plume of debris, collapsing the carefully constructed radial pattern until the entire structure is nothing but a scattered pile of colorful sand.",
+  "completion_tokens": 1301,
+  "created_utc": "2026-09-24T12:47:49Z",
+  "entry_id": 1619,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1301,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "2c72d72d7ce223ca2b45f03b737cd3de092ca880a3cf4a5ade71ed7e59eac553",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3491,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.419,
+      "wall_s": 112.49
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1630,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same detailed and symmetrical mandala, and this time the structure rapidly unravels from a single point, creating a sharp, asymmetrical fracture.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1484,
+    "root_entry_id": 1484
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sand mandala that a gust of wind blows apart grain by grain\n\nRevise: the same detailed and symmetrical mandala, and this time the structure rapidly unravels from a single point, creating a sharp, asymmetrical fracture.",
+  "prompt_tokens": 3491,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1619/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1619",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the collapse of a perfectly symmetrical mandala structure made of colorful sand grains. The work begins with a stable, intricate pattern that gradually vibrates as wind force increases. At a critical moment, the symmetry fractures and grains begin to detach and fall in an asymmetrical cascade, transforming the ordered structure into scattered debris. The visualization uses physics-based particle movement with gravity and wind forces to create the dynamic collapse effect. The piece explores themes of stability, fragility, and the transformation from order to chaos through a visual metaphor of geometric perfection breaking apart under external forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 112.49
+}
