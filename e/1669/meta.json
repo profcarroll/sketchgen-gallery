@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sand mandala that a gust of wind blows apart grain by grain Revise:\u2026\u201d \u2014 sketchgen entry 1669, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1669/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an extremely detailed and symmetrical mandala composed of fine, richly colored sand. Initially, the structure is stable, presenting complex geometric patterns and intricate lines. Over time, the perfect structure begins to destabilize, and sections of the sand slowly detach and drift downward. As the structure gives way, all the falling grains do not scatter; rather, they are magnetically drawn to the center point, steadily accumulating into a single, tall, and ever-growing central pillar, transforming the symmetrical art into a singular point of dramatic focus.",
+  "completion_tokens": 1562,
+  "created_utc": "2026-09-26T06:50:01Z",
+  "entry_id": 1669,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1562,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "b8cf94cd9e92158e46dcd8a2ea946f93136b2ee4e3de635d6c3689ce8cb56833",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3648,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.11,
+      "wall_s": 131.178
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1681,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate sand mandala structure, and this time the failing grains accumulate in a single, towering central pillar.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1619,
+    "root_entry_id": 1484
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sand mandala that a gust of wind blows apart grain by grain\n\nRevise: the same detailed and symmetrical mandala, and this time the structure rapidly unravels from a single point, creating a sharp, asymmetrical fracture.\n\nRevise: the same intricate sand mandala structure, and this time the failing grains accumulate in a single, towering central pillar.",
+  "prompt_tokens": 3648,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1669/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1669",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the transformation of a perfectly symmetrical mandala into a singular central pillar through the process of structural collapse and gravitational reassembly. Initially, thousands of sand-like particles form an intricate geometric pattern with rich color variations and subtle vibrations. As wind gradually increases, the structure begins to destabilize and individual grains detach from their positions. Unlike scattering, these falling grains are magnetically drawn toward the center point where they accumulate into a growing vertical column. The visual effect shows a slow-motion metamorphosis from complex symmetry to focused dramatic unity, with each grain transitioning from its original position in the mandala to a new role as part of the central pillar.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.178
+}
