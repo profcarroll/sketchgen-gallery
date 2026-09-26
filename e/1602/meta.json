@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe last leaf on a tree refusing to fall in the wind Revise: the same\u2026\u201d \u2014 sketchgen entry 1602, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1602/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a stylized forest scene dominated by the intricate, detailed branches of a tree rendered in muted autumnal colors. The canvas is filled with a continuous cascade of floating leaves, which fall quickly and directionally, suggesting a strong, persistent wind. The entire scene is dynamic, focusing on the constant, directional movement of the surrounding debris around the relatively stable central tree structure.",
+  "completion_tokens": 1317,
+  "created_utc": "2026-09-24T11:22:55Z",
+  "entry_id": 1602,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1317,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 261,
+        "sha256": "ab5e823161920fe184b8cce1d4e1f3cf17671949c4181c1f27f846d41bb4a291",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4301,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.413,
+      "wall_s": 139.733
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1613,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should fall with greater directional speed.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1466,
+    "root_entry_id": 1466
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the last leaf on a tree refusing to fall in the wind\n\nRevise: the same stylized scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should fall with greater directional speed.",
+  "prompt_tokens": 4301,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1602/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1602",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene autumn forest scene with a detailed tree at its center, rendered in muted earth tones that evoke the changing seasons. The composition captures the interplay between stability and motion: the central tree stands firm against a backdrop of constant, directional movement. Hundreds of floating leaves cascade downward with realistic physics\u2014affected by gravity, wind turbulence, and natural wobbling motions\u2014creating an immersive sense of continuous wind. The tree's branches are rendered with intricate detail, using layered segments and sub-branches to create a rich, organic texture that contrasts with the dynamic leaf field. The entire scene pulses with subtle, natural motion that maintains visual interest without overwhelming the viewer, suggesting both calm resilience and the persistent force of nature.",
+  "submitted_by": "profcarroll",
+  "wall_s": 139.733
+}
