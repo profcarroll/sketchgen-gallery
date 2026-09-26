@@ -1,0 +1,142 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 1539, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1539/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a continuous, cinematic glide through a vast architectural landscape. Dominating the scene are the rigid, geometric forms and muted grey tones of Brutalist concrete structures, which are softened and invaded by organic growth. Creeping vines and vibrant patches of moss introduce irregular, rich greens and earthy tones that cling to the massive facades. The movement is that of a simulated drone flying through the campus, presenting an immersive, persistent journey that flows autonomously without any required user interaction.",
+  "completion_tokens": 2783,
+  "created_utc": "2026-09-24T04:02:34Z",
+  "entry_id": 1539,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1252,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 70)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 122)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 116.5 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 81,
+        "sha256": "d942d9baf39c42efecac101c4cf803b965a96c60f41376bc9c4e85bf31a30dd4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 116.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3124,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 56.994,
+      "wall_s": 97.413
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1531,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 144,
+        "sha256": "71548ad07e035e866bca2f605e8901ba6c0efb7ac504821f2d62d2ca360527a4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3832,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 21.753,
+      "wall_s": 134.456
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1550,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same architectural environment, and this time showing creeping vines and moss growing from the concrete facades.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1376,
+    "root_entry_id": 1376
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture\n\nRevise: the same architectural environment, and this time showing creeping vines and moss growing from the concrete facades.",
+  "prompt_tokens": 6956,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1539/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1539",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a cinematic journey through a Brutalist architectural landscape where rigid concrete forms are softened by organic growth. The viewer observes a simulated drone flight moving through a vast urban space filled with towering geometric structures that dominate the scene. The concrete architecture is rendered using batched drawing techniques to maintain performance while preserving the harsh, angular aesthetic of Brutalism. Organic elements like creeping vines and moss patches introduce vibrant green accents that cling to the massive facades, creating a contrast between the cold, industrial materials and living, earthy tones. The movement is continuous and immersive, presenting an autonomous journey without user interaction that emphasizes both the scale and the interplay between human-made and natural elements in this architectural environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 231.869
+}
