@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can ant colony digging tunnels toward wherever you last clicked Revise\u2026\u201d \u2014 sketchgen entry 1614, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1614/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex networks of intersecting geometric paths beneath the surface. These tunnels are not static structures; they are dynamic conduits that continuously widen and fill with vibrant, flowing underground streams. The color palette emphasizes earthy, muted browns for the rock walls, vividly contrasted by deep blues and cyans representing the running water. The streams appear to move with constant, natural motion, giving the sense of vast, subterranean currents. When the viewer clicks anywhere on the canvas, that point immediately initiates a new segment of the tunnel network, causing the surrounding paths to widen and triggering the rapid formation of new, flowing streams at the intersection.",
+  "completion_tokens": 1217,
+  "created_utc": "2026-09-24T12:23:50Z",
+  "entry_id": 1614,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1217,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 156,
+        "sha256": "540bed6c14f040716eda514645fd3449daa8a1fd485b0fe4e2a4220e4499b1a9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3554,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.341,
+      "wall_s": 109.637
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1625,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intersecting geometric paths, and this time the tunnels widen and fill with running underground streams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1478,
+    "root_entry_id": 1478
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an ant colony digging tunnels toward wherever you last clicked\n\nRevise: the same intersecting geometric paths, and this time the tunnels widen and fill with running underground streams.",
+  "prompt_tokens": 3554,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1614/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1614",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes an underground network of tunnels and flowing water streams. It depicts the dynamic interaction between solid rock walls\u2014represented by brown, winding paths\u2014and vibrant blue and cyan streams that flow through them. When a viewer clicks anywhere on the canvas, that point initiates a new tunnel segment, causing surrounding paths to widen and triggering the formation of new streams at the intersection. The system creates a continuous sense of movement and growth, simulating how subterranean currents might evolve and expand from a single point of origin.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.637
+}
