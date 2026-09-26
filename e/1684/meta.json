@@ -1,0 +1,133 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctea steam curling into the shapes of forgotten words Revise: the same\u2026\u201d \u2014 sketchgen entry 1684, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1684/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays luminous, soft tendrils of steam that continuously drift and curl across the surface. These plumes gather, subtly coiling and solidifying into the ephemeral forms of forgotten words. These glowing structures begin to coalesce and appear to stabilize, emitting a faint, soft internal luminescence that slowly intensifies before gradually dissipating back into the vapor. The entire scene is self-contained and constantly animated, presenting a mesmerizing, slow-motion cycle of forming and fading memory.",
+  "completion_tokens": 2648,
+  "created_utc": "2026-09-26T18:46:36Z",
+  "entry_id": 1684,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1179,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 68)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 209.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 68,
+        "sha256": "3992098f7ba809859a863c23281826bb821691b1b902adb68b0b7aed2c2453db",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 209.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3002,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.286,
+      "wall_s": 89.745
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1469,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 132,
+        "sha256": "0db095a2e46a6fb81441cd9f791f998da3daf19c436356cd22d561151aa52e8a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3686,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.82,
+      "wall_s": 436.892
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1697,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same soft, luminous tendrils of steam, and this time allowing the formed words to stabilize and glow with a faint internal light before fading.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1603,
+    "root_entry_id": 1467
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tea steam curling into the shapes of forgotten words\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the forgotten word forms to linger and fade more slowly.\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the formed words to stabilize and glow with a faint internal light before fading.",
+  "prompt_tokens": 6688,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1684/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1684",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal atmosphere of drifting steam that gradually forms into fleeting, luminous shapes resembling forgotten words. Through a combination of noise-based particle movement and spatial hashing for efficient neighbor detection, thousands of soft particles drift across the canvas, occasionally coalescing into stable formations. These glowing structures pulse with internal light before dissolving back into vapor. The animation uses a grid-based system to prevent expensive all-pairs comparisons while maintaining the organic, flowing motion characteristic of steam. The result is a mesmerizing, slow-motion meditation on memory's ephemeral nature, where meaning briefly emerges and fades like mist in the air.",
+  "submitted_by": "profcarroll",
+  "wall_s": 526.637
+}
