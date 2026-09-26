@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cancient agriculture Revise: the same sun-baked terraced hillside, and\u2026\u201d \u2014 sketchgen entry 1636, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1636/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a steep, terraced hillside under a bright, dry sky. The background features layers of earth in shades of ochre and burnt sienna, creating a geometry of stacked agricultural steps. Running down the lower sections, a subtle, flowing stream of water moves downward, mimicking an irrigation flow. As this water moves, it deposits a visibly rich, greenish-grey layer of fine silt and mud onto the lower steps. This buildup changes the surface texture and color of the dry stone over time, emphasizing the geological and agricultural cycle of deposition.",
+  "completion_tokens": 2231,
+  "created_utc": "2026-09-24T14:24:47Z",
+  "entry_id": 1636,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2231,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 135,
+        "sha256": "5bdfd33762a702da10efaf460bdce67914e56565f40af4d268c4f7d750cc2f4b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4510,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.645,
+      "wall_s": 209.815
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1647,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sun-baked terraced hillside, and this time the passing irrigation water deposits a visible, silt-rich layer on the lower steps.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1514,
+    "root_entry_id": 1514
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "ancient agriculture\n\nRevise: the same sun-baked terraced hillside, and this time the passing irrigation water deposits a visible, silt-rich layer on the lower steps.",
+  "prompt_tokens": 4510,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1636/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1636",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts an ancient agricultural landscape in a dry, bright sky, where terraced steps create a layered hillside. The visual narrative follows the interaction between geological time and human cultivation: the steep, stepped terrain holds deep ochre hues that suggest the slow accumulation of earth and silt over generations. A subtle stream flows down from the top, carrying fine deposits that gradually build up on the lower steps, changing their color and texture\u2014evoking the slow, persistent process of deposition. The viewer's interaction introduces a new element into this timeless scene: clicking tills a patch and plants shoots that grow and blend with the existing crop. The animation captures both natural motion (swaying crops, flowing water) and human intervention (the cultivation), creating a sense of cyclical activity within the static landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 209.815
+}
