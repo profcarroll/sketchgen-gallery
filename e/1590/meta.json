@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1590, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1590/ Licensed CC BY 4.0.",
+  "brief": "A dynamic, three-dimensional model of the solar system is displayed on the canvas. The Sun serves as the central anchor, while planets are rendered at proportionally accurate sizes, orbiting along distinct, glowing paths. The entire system reacts to user input, animating and shifting when the mouse is pressed down, providing a realistic and cosmic view of celestial bodies and their movements.",
+  "completion_tokens": 1017,
+  "created_utc": "2026-09-24T10:00:03Z",
+  "entry_id": 1590,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1017,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 113,
+        "sha256": "995c77ed4b8284d46132d7c33fac8eb059b9f171ef028c17f7306d14fad9a847",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.017,
+      "prompt_tokens": 3315,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.73,
+      "wall_s": 91.144
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1601,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1453,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.",
+  "prompt_tokens": 3315,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1590/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1590",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a three-dimensional model of our solar system, rendered using p5.js's WEBGL mode for immersive depth. The Sun sits at the center, its golden glow anchoring the scene, while planets orbit in their respective paths with proportional distances and speeds. Each celestial body is rendered with a distinct hue and size, creating a visually cohesive yet varied cosmic landscape. When the viewer clicks the canvas, the system springs into motion, animating planetary orbits in real-time. The entire scene rotates slowly to offer different perspectives, enhancing the sense of being adrift in space. The visual effect emphasizes both scientific accuracy and aesthetic beauty, using lighting and color to distinguish celestial bodies and their movements within a static yet dynamic framework.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.144
+}
