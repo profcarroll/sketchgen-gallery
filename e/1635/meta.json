@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca Rube Goldberg machine whose only job is to water one flower Revise:\u2026\u201d \u2014 sketchgen entry 1635, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1635/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an intricate, mechanical assembly built of pipes, levers, and various connected shapes. These components are stationary until the sequence begins. Suddenly, a small watering can tips over with noticeable momentum, initiating a chain reaction. Water flows through the system, creating visible rivulets and arcs that follow gravity. The water eventually cascades into a central, brightly colored flower, splashing dynamically across its petals. The entire machine operates autonomously, simulating a forceful and concentrated pour of water onto the single target.",
+  "completion_tokens": 1791,
+  "created_utc": "2026-09-24T14:18:06Z",
+  "entry_id": 1635,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1791,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 191,
+        "sha256": "c1389587965dbb692711327a49cb4417fa781a1d85cf1bb9ff7ce25f985ab3ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3893,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.688,
+      "wall_s": 153.563
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1646,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same contraption, and this time the small watering can tips over with greater force, splashing visible rivulets onto the central flower.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1508,
+    "root_entry_id": 1508
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Rube Goldberg machine whose only job is to water one flower\n\nRevise: the same contraption, and this time the small watering can tips over with greater force, splashing visible rivulets onto the central flower.",
+  "prompt_tokens": 3893,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1635/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1635",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a mechanical system that springs into motion when a watering can tips over. The animation begins with stationary gears and weights, then triggers the tipping action that sends water flowing through the apparatus. As the can tips, it releases droplets that follow gravity and form rivulets that travel down to a central flower. The entire sequence operates autonomously without user input, showing an intricate chain reaction where mechanical components initiate fluid dynamics. The viewer observes the interplay between rigid mechanical elements and the fluid motion of water as it cascades into the target flower, creating both visual rhythm and dynamic interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 153.563
+}
