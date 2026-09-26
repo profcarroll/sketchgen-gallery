@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdrone POV fly through an abandoned brutalist campus Revise: the same\u2026\u201d \u2014 sketchgen entry 1535, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1535/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, sweeping architectural view, giving the viewer the impression of looking down through the remains of a sprawling brutalist campus. Monumental, decaying concrete structures frame overgrown courtyards where aggressive vegetation rapidly integrates with and deteriorates the rigid geometry. The primary experience is the continuous, dynamic movement, simulating an aerial drone flight path that swoops and drifts through the scene, revealing the constant, vivid struggle between humanity's harsh architectural forms and the overwhelming force of encroaching natural life. The scene flows with its own life, requiring no input.",
+  "completion_tokens": 1094,
+  "created_utc": "2026-09-24T03:32:51Z",
+  "entry_id": 1535,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1094,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "9c9d3f2f3599323d499537cb70ce6f45d85fae74d3d4438f0407e333ab90c951",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 87.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3182,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 46.568,
+      "wall_s": 89.104
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1546,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sweeping movement through the architectural remains of a sprawling brutalist campus, and this time the overgrown courtyards feature aggressive vegetative overgrowth integrating with and deteriorating the concrete structures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1371,
+    "root_entry_id": 1371
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "drone POV fly through an abandoned brutalist campus\n\nRevise: the same sweeping movement through the architectural remains of a sprawling brutalist campus, and this time the overgrown courtyards feature aggressive vegetative overgrowth integrating with and deteriorating the concrete structures.",
+  "prompt_tokens": 3182,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1535/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1535",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a haunting aerial view of a decaying brutalist campus, where rigid concrete structures struggle against the relentless advance of nature. Through continuous camera movement, viewers witness an immersive drone flight that reveals the ongoing battle between human architectural ambition and the overwhelming force of encroaching vegetation. The scene unfolds organically without any input, with structures and plant life dynamically arranged to create a sense of vastness and time's passage. The monochromatic concrete buildings are rendered with subtle textural details, while overgrown vegetation emerges from courtyards, showing how nature slowly integrates with and deteriorates the harsh geometry. The visual tension between the brutalist forms and organic growth creates a contemplative space that reflects on themes of decay, resilience, and humanity's relationship with its built environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.104
+}
