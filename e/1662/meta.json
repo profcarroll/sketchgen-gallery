@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA slow tide of overlapping translucent circles rising from the bottom\u2026\u201d \u2014 sketchgen entry 1662, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1662/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an ethereal, continuous flow of overlapping translucent circles, forming a cosmic tide. These circles drift slowly across the screen, each possessing a shifting hue and luminosity. As they move, they leave behind visible, glowing trails of luminescence that gently fade as they flow into the depths of the canvas. The entire scene maintains a deep, hypnotic sense of fluid, unending motion.",
+  "completion_tokens": 748,
+  "created_utc": "2026-09-26T06:09:41Z",
+  "entry_id": 1662,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 748,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 53,
+        "sha256": "e5cd30bfc22b18a0f31ce3581b88ea13984c9f3996a0f9b9ff6166b9fa2aa10b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2902,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.307,
+      "wall_s": 61.91
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1674,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same ethereal, continuous cosmic environment filled with overlapping, translucent circles, and this time the circles occasionally exhibit small, visible trails of trailing luminescence.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1569,
+    "root_entry_id": 1416
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide.\n\nRevise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue\n\nRevise: the same continuous flow of translucent circles, and this time the circles overlap with small, visible pointillist stars\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles reflect varying shades of luminescence\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles shift subtly in hue depending on their position in the stream\n\nRevise: the same slow, continuous tide of translucent, overlapping circles, and this time the pointillist stars pulse gently with varying shades of bright luminescence.\n\nRevise: the same ethereal fluid cosmic environment, and this time the translucent circles occasionally dissolve into fine particulate light.\n\nRevise: the same ethereal cosmic environment, and this time the overlapping translucent circles vary their opacity and luminosity as they flow across the canvas.\n\nRevise: the same ethereal, continuous cosmic environment filled with overlapping, translucent circles, and this time the circles occasionally exhibit small, visible trails of trailing luminescence.",
+  "prompt_tokens": 2902,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1662/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1662",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal cosmic environment where translucent circles drift slowly across the screen, each shifting through hues and pulsing with luminosity. The circles leave behind glowing trails that fade gently as they move, forming a continuous flow of light that evokes the sensation of a cosmic tide. The visual effect is achieved through careful management of transparency, color cycling, and position tracking to create an immersive, hypnotic field of motion. The implementation uses a semi-transparent background to allow trail effects to accumulate, while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 61.91
+}
