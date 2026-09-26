@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cfireflies spelling out a message in Morse code Revise: the same light\u2026\u201d \u2014 sketchgen entry 1612, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1612/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of glowing white light. Luminous dots appear to bloom and fade in highly synchronized bursts, mimicking the movement of fireflies. These pulses coalesce into a continuous, repeating formation composed of five distinct, brilliant white dots. The light show is cyclical and rhythmic, presenting a defined, unbroken pattern that shifts and pulses across the screen automatically, independent of any user interaction.",
+  "completion_tokens": 773,
+  "created_utc": "2026-09-24T12:12:34Z",
+  "entry_id": 1612,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 773,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 84,
+        "sha256": "1b4b24be763c1731d89964a306737699a5b48f2a3cf4f02fef23fa56a942d3dc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3148,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.504,
+      "wall_s": 72.02
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1623,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same light show, and this time the synchronized bursts form a continuous, unbroken pattern of five white dots.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1476,
+    "root_entry_id": 1476
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fireflies spelling out a message in Morse code\n\nRevise: the same light show, and this time the synchronized bursts form a continuous, unbroken pattern of five white dots.",
+  "prompt_tokens": 3148,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1612/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1612",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of glowing fireflies that pulse in synchronized bursts, forming the letters \"SOS\" in a rhythmic pattern. The fireflies drift gently across the screen while flickering with individual timing, but they also align into a collective rhythm that causes them to brighten together in waves. As the pattern cycles through \"SOS\", five brilliant white dots form and pulse as a unified formation, creating an elegant, cyclical light show that evolves without any user interaction. The effect relies on mathematical synchronization and simple visual physics to create a hypnotic, organic feel.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.02
+}
