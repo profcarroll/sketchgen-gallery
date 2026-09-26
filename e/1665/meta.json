@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can origami crane folding and unfolding itself forever Revise: the sam\u2026\u201d \u2014 sketchgen entry 1665, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1665/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, three-dimensional sculpture of an origami crane built from sharp, interconnected geometric planes. The piece is in perpetual motion, cyclically folding and unfolding its structure. Simultaneously, one specific plane detaches itself from the main body and begins an independent, drifting movement. This detached plane floats away from the central metamorphosis, tracing erratic, slow paths through the space. The entire sculpture, featuring vivid, folded paper colours, exists as a self-contained, unending spectacle of structural separation and rearrangement.",
+  "completion_tokens": 1654,
+  "created_utc": "2026-09-26T06:27:44Z",
+  "entry_id": 1665,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1654,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "fbc368427f0faa12a3e79816918073bdeeaec78f5b165518b92487b1ecf748d2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3569,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.088,
+      "wall_s": 134.952
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1677,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, three-dimensional sculpture of an origami crane, and this time one of its interconnected planes detaches and drifts independently of the folding cycle.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1615,
+    "root_entry_id": 1479
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an origami crane folding and unfolding itself forever\n\nRevise: the same abstract, three-dimensional representation of an origami crane, and this time it momentarily pauses its folding cycle before restarting the metamorphosis.\n\nRevise: the same abstract, three-dimensional sculpture of an origami crane, and this time one of its interconnected planes detaches and drifts independently of the folding cycle.",
+  "prompt_tokens": 3569,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1665/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1665",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an abstract, three-dimensional origami crane constructed from geometric planes that continuously fold and unfold in a rhythmic dance. The sculpture exists as a perpetual metamorphosis, with its components shifting through space in synchronized motion. Amidst this orchestrated movement, one plane detaches itself from the central structure and begins an independent journey\u2014drifting erratically through the three-dimensional space with its own momentum and rotation. The viewer witnesses both the collective unfolding of the crane's form and the solitary, drifting path of the detached piece, creating a visual narrative about separation and autonomy within a structured whole. The vivid colors and smooth motion emphasize the delicate, paper-like nature of the sculpture while the detached plane's erratic trajectory adds an element of unpredictability to the otherwise controlled animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 134.952
+}
