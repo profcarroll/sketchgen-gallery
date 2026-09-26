@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same radar sweep, and this time changing the\u2026\u201d \u2014 sketchgen entry 1649, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1649/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, sweeping view reminiscent of a sonar radar. Deep blue and violet geometric lines emanate from the center and propagate outward across the viewing area. Instead of a constant flow, the expanding trails exhibit rhythmic, visible pulsations. These lines move continuously, drawing complex, ever-changing patterns without any user interaction being required.",
+  "completion_tokens": 769,
+  "created_utc": "2026-09-26T04:54:14Z",
+  "entry_id": 1649,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 769,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 79,
+        "sha256": "fb9efe30ec3110b2d7af843ad07b8f71a30283aa4d3b3dbebd6e4a1983241ee0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3017,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.425,
+      "wall_s": 65.757
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1661,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same radar scan, and this time making the expanding trails pulse with distinct, rhythmic pulsations rather than a constant sweep.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1540,
+    "root_entry_id": 1379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "radar images\n\nRevise: the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines\n\nRevise: the same radar scan, and this time making the expanding trails pulse with distinct, rhythmic pulsations rather than a constant sweep.",
+  "prompt_tokens": 3017,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1649/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1649",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract sonar radar visualization where geometric lines emanate from the center and propagate outward in rhythmic pulses. The expanding trails exhibit distinct pulsating patterns that create a dynamic, wave-like effect across the canvas. Unlike a constant sweep, each line's glow intensity varies rhythmically over time, creating a mesmerizing pattern of pulsing light waves that move continuously without any user interaction required. The deep blue to violet color palette enhances the ethereal quality of the visualization, while the central point serves as the origin from which all patterns radiate.",
+  "submitted_by": "profcarroll",
+  "wall_s": 65.757
+}
