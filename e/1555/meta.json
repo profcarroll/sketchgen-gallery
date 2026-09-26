@@ -1,0 +1,102 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 1555, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1555/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with highly energized, neon-lit geometric forms. These shapes, restricted only to octahedral and hexagonal geometry, continuously cascade and intersect, creating a complex, rhythmic field of light. The composition is intensely dynamic, making every moment a flurry of intersecting edges and brilliant color. The intensity, velocity, and complexity of the geometric intersections are modulated by sound, amplifying the visual pulse of the accompanying music.",
+  "completion_tokens": 1444,
+  "created_utc": "2026-09-24T06:36:57Z",
+  "entry_id": 1555,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1444,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 128,
+        "sha256": "03aa692704454ed3ccd5c1ff1f6b81c4901394e0d0c1cf2043a86c6e1f30f3d9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.9,
+      "num_ctx": 16384,
+      "preload_s": 0.075,
+      "prompt_tokens": 3484,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.447,
+      "wall_s": 121.703
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1566,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1398,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.",
+  "prompt_tokens": 3484,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1555/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1555",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, sound-reactive field of neon-lit geometric forms using only octahedrons and hexagonal shapes. The composition operates in 3D space with constantly shifting positions, rotations, and colors that pulse in response to audio input. Shapes cascade through the viewing volume while intersecting and overlapping each other in complex patterns. The visual intensity increases with audio amplitude, creating a rhythmic field of light that fills the entire canvas. The piece uses p5.js WEBGL mode to achieve true three-dimensional movement and interaction between forms, with each shape's behavior modulated by real-time sound analysis through FFT and amplitude detection.",
+  "submitted_by": "profcarroll",
+  "wall_s": 121.703
+}
