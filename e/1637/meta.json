@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdancing bears Revise: the same chaotic, joyful dance, and this time t\u2026\u201d \u2014 sketchgen entry 1637, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1637/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with overlapping, serpentine ribbons of color. These flowing lines dance across the surface, creating a sense of chaotic, joyful movement. While the colored pathways overlap and intersect, they never merge completely; instead, they leave clearly visible, distinct, and empty spaces between the flowing ribbons. The entire performance is self-contained, continuously unfolding across the canvas with no input required from the viewer.",
+  "completion_tokens": 602,
+  "created_utc": "2026-09-24T14:29:25Z",
+  "entry_id": 1637,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 602,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "198113ca84a9f3f09129c342fe26325ce58e124a690a14d50a3ebaf9894a8de1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 57.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2885,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 31.037,
+      "wall_s": 53.574
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1648,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same overlapping, serpentine lines, and this time they must leave distinct, empty pathways between the flowing ribbons.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1522,
+    "root_entry_id": 1364
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dancing bears\n\nRevise: the same chaotic, joyful dance, and this time the bears should form overlapping, serpentine lines as they travel across the canvas.\n\nRevise: the same overlapping, serpentine lines, and this time they must leave distinct, empty pathways between the flowing ribbons.",
+  "prompt_tokens": 2885,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1637/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1637",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of flowing, serpentine ribbons that move autonomously across the canvas. Each ribbon is composed of many points that follow noise-based paths with organic swaying motions, creating continuous, undulating forms that dance and weave through space. The ribbons maintain their distinct identities through careful color management and spacing, never fully merging despite overlapping extensively. The visual effect conveys a sense of chaotic joy and fluid motion, with each ribbon shifting through a spectrum of hues over time while maintaining its own unique path. The entire composition unfolds without any external input, creating an endlessly evolving landscape of color and movement that fills the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 53.574
+}
