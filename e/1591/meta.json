@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 1591, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1591/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple organic, liquid-like shapes that populate the space, starting with a single blob. These cells autonomously multiply and expand, achieving exponential growth. When a cell reaches maturity, it initiates a visible lifecycle: the parent cell visibly contracts, forming a narrow constriction point that slowly pinches off the daughter cell. This cycle repeats continuously, filling the canvas with expanding life and constant separation events. The simulation requires no user interaction to run.",
+  "completion_tokens": 1143,
+  "created_utc": "2026-09-24T10:05:01Z",
+  "entry_id": 1591,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1143,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 101,
+        "sha256": "b143d758d71ad2c0800ccf9e3cc23ae770d0c0d9928b12aa621a14deb381512f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3206,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.577,
+      "wall_s": 95.697
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1602,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1455,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.",
+  "prompt_tokens": 3206,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1591/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1591",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates an organic, self-replicating liquid system where initial blobs grow and divide following a biological process. Each cell expands until it reaches maturity, then undergoes a contraction phase that forms a narrow pinch point before splitting into two daughter cells. The simulation creates an endless cycle of growth, division, and separation across the canvas. The visual effect shows fluid-like motion with pulsating rhythms and smooth contraction animations as cells prepare to reproduce, resulting in a continuously evolving ecosystem of expanding forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.697
+}
