@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cillustrate a loudspeaker magnet producing sound waves Revise: the sam\u2026\u201d \u2014 sketchgen entry 1551, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1551/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a central magnetic source at the base of the frame. Concentric, expanding ripples emanate from this source across the screen. These ripples are rendered using vibrant colors, simulating waves moving outward. As the waves travel away from the central source, their amplitude visibly diminishes. They lose energy and become increasingly subtle and fainter, gradually fading into the background until they dissipate completely. The simulation is purely observational, demonstrating the physical process of wave dampening.",
+  "completion_tokens": 365,
+  "created_utc": "2026-09-24T06:12:31Z",
+  "entry_id": 1551,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 365,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "b85ef5460f67f635ee21daa0eb653a8928cb4a4eaf786463cc5f3cc756e41000",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2902,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.93,
+      "wall_s": 42.716
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1562,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same expanding ripples, and this time depicting a visible dampening of the wave amplitude as they move outward.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1393,
+    "root_entry_id": 1393
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "illustrate a loudspeaker magnet producing sound waves\n\nRevise: the same expanding ripples, and this time depicting a visible dampening of the wave amplitude as they move outward.",
+  "prompt_tokens": 2902,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1551/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1551",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the propagation of waves from a central magnetic source at the base of the screen. Concentric circles expand outward from the point of origin, representing wavefronts that lose energy as they travel. The ripples begin with vibrant colors and full opacity, gradually fading to invisibility as their amplitude diminishes. The simulation demonstrates wave dampening through the controlled reduction of alpha and the increasing radius of each ripple, creating a natural-looking decay effect that fills the canvas with an observational representation of energy dissipation in wave physics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 42.716
+}
