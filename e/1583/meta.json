@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a liminal space in 3D as a massive indoor pool of water. Revis\u2026\u201d \u2014 sketchgen entry 1583, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1583/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees an expansive, seemingly endless indoor space dominated by a calm, reflective pool of water. The color palette consists of deep, ambient tones punctuated by the bright reflection of light sources. The primary movement comes from the water's surface, where subtle, continuous ripples propagate outwards. These gentle disturbances cause complex, vivid shadows to constantly stretch and writhe, projecting dynamic, shifting patterns across the surrounding vertical walls and pooling onto the floor below. The scene is self-contained and continuously changing without requiring any input.",
+  "completion_tokens": 1359,
+  "created_utc": "2026-09-24T09:22:24Z",
+  "entry_id": 1583,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1359,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "e54ba0e4e29f1ed343a6c45f463f799a5917e588729d1cd046b95d0fc9715add",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3361,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.183,
+      "wall_s": 113.364
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1594,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same massive pool of water, and this time the ripples cause the shadows to stretch and writhe across the surrounding vertical walls.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1441,
+    "root_entry_id": 1441
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a liminal space in 3D as a massive indoor pool of water.\n\nRevise: the object is too dark against the background so change the lightiing or some other way to make it legible\n\nRevise: the same vast pool of water, and this time the rippling water causes deeper, more vivid shadows to play across the floor.\n\nRevise: the same massive pool of water, and this time the ripples cause the shadows to stretch and writhe across the surrounding vertical walls.",
+  "prompt_tokens": 3361,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1583/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1583",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-changing indoor space centered around a reflective water pool. The scene uses WebGL rendering to build a sense of depth with carefully positioned walls and floor planes. Subtle ripples on the water's surface generate dynamic distortions that cast shifting shadows across the vertical walls and onto the floor below. The color palette employs deep ambient tones punctuated by bright light reflections, creating an atmosphere of calm contemplation. The continuous motion arises from the interplay between the gently undulating water surface and the constantly evolving shadow patterns, all without any user input or external stimuli\u2014this is a self-contained, perpetually transforming environment that captures the quiet drama of light and reflection within a confined architectural space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 113.364
+}
