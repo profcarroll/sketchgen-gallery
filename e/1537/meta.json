@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cread Finnegan's Wake by James Joyce and then create an interactive sk\u2026\u201d \u2014 sketchgen entry 1537, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1537/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, flowing vortex of semi-transparent textual characters, constantly swirling and overlapping across the surface. The text flows and changes, giving the impression of a liquid stream of words. When the viewer clicks anywhere on the canvas, the dispersed characters briefly draw together, forming distinct, legible phrases rendered with the stark, high-contrast luminosity of old newsprint. This momentary coherence is immediately followed by the structure unraveling and dissolving back into the original, swirling, amorphous vortex.",
+  "completion_tokens": 1972,
+  "created_utc": "2026-09-24T03:45:00Z",
+  "entry_id": 1537,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1972,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 180,
+        "sha256": "a89975ba338d099fe55818a4d6d31c3ca074db02941be076d387b13877bc8888",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4442,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.948,
+      "wall_s": 188.096
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1548,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same perpetual, swirling vortex of semi-transparent characters, and this time when the textual elements coalesce, they must briefly adopt the luminosity and stark contrast of old newsprint before dissolution.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1374,
+    "root_entry_id": 1374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "read Finnegan's Wake by James Joyce and then create an interactive sketch that interprets the text\n\nRevise: the same perpetual, swirling vortex of semi-transparent characters, and this time when the textual elements coalesce, they must briefly adopt the luminosity and stark contrast of old newsprint before dissolution.",
+  "prompt_tokens": 4442,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1537/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1537",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing vortex of semi-transparent text characters that swirl and flow across the screen like liquid words. The characters follow natural, organic motion patterns with a subtle vortex effect, constantly shifting and overlapping. When clicked, the characters instantly coalesce into legible phrases with high contrast\u2014transforming from an amorphous stream into coherent, readable text. This momentary clarity is followed by the text dissolving back into its original flowing state. The visual effect captures the tension between chaos and order, representing how meaning can emerge from disorder before returning to it. The technique uses physics-based movement with velocity damping and vortex dynamics, combined with a simple click interaction that triggers an immediate transformation in character behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 188.096
+}
