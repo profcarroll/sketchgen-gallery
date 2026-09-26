@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca campfire whose sparks drift up and become constellations Revise: th\u2026\u201d \u2014 sketchgen entry 1642, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1642/ Licensed CC BY 4.0.",
+  "brief": "The canvas centers on a lively, flickering campfire whose flames emit bright, warm sparks. These sparks rise in a graceful, continuous stream, drifting upward as they ascend. At their peak, the sparks stabilize, settling into a constellation of glowing points. Once the stars are formed, faint, luminous lines connect these points, creating intricate stellar patterns. These connecting lines glow softly, pulsing with an ethereal light that subtly shifts in intensity over time, giving the entire arrangement the appearance of a quietly breathing cosmic map.",
+  "completion_tokens": 3439,
+  "created_utc": "2026-09-24T14:57:59Z",
+  "entry_id": 1642,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 3439,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 217,
+        "sha256": "ea0fb5e3ff0c82701ac445132ba09a1cdec917563ab84576a144b15d74160edb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "num_ctx": 16384,
+      "preload_s": 0.033,
+      "prompt_tokens": 5743,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.25,
+      "wall_s": 386.316
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1653,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same campfire whose sparks drift up and become constellations, and this time the lines connecting the stars glow faintly after they settle.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1531,
+    "root_entry_id": 1531
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a campfire whose sparks drift up and become constellations\n\nRevise: the same campfire whose sparks drift up and become constellations, and this time the lines connecting the stars glow faintly after they settle.",
+  "prompt_tokens": 5743,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1642/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1642",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a dynamic campfire scene where sparks rise and transform into glowing stars that form constellations. The visualization begins with flickering flames at the center of the canvas, from which sparks emerge and drift upward in naturalistic paths. As they ascend, some sparks reach a peak and settle into stable positions, becoming luminous points that gradually connect with nearby stars to form intricate patterns. These connections pulse gently, mimicking the subtle breathing of cosmic structures. The entire scene is rendered using p5.js with carefully managed visual layers, blending techniques for depth and glow, and a fixed frame budget ensuring smooth performance even in constrained environments.",
+  "submitted_by": "profcarroll",
+  "wall_s": 386.316
+}
