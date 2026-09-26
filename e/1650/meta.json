@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmacaroni and cheese Revise: the same abstract clusters of creamy yell\u2026\u201d \u2014 sketchgen entry 1650, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1650/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays abstract clusters of rich, creamy yellow-orange pigment. These clusters form interlocking structures defined by smooth, sharply curved forms reminiscent of macaroni. The shapes are varied in size and overlap, creating a complex, sculptural arrangement of pigment. The focus is on the interplay of these structural forms and the consistent, buttery yellow-orange hue, creating a defined and intricate pattern.",
+  "completion_tokens": 5086,
+  "created_utc": "2026-09-26T05:05:34Z",
+  "entry_id": 1650,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1535,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 126)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 38.4941/255, 821416 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "5ce59ec9d5dab123929604cb33de7db79ba03394719ef90432698c49884b0aed",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3571,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 21.442,
+      "wall_s": 125.864
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1768,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 129)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 136)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 150)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 38.4975/255, 821416 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 156,
+        "sha256": "67f1d88742dcf45c75f1526f3873e28d15121d21df381127937f9bcbdb68b49a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3997,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 21.468,
+      "wall_s": 155.797
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1783,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 129)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 24.9611/255, 544048 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 185,
+        "sha256": "7848dc8903467c14a4141d53a4740e6bbe8fdb5b3b97a9d0812a4fa3acdf8d56",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4244,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 13.562,
+      "wall_s": 152.917
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1662,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, interlocking clusters of creamy yellow-orange pigment, and this time the curves and overlapping edges of the macaroni pieces are more sharply defined and structurally varied.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1542,
+    "root_entry_id": 1381
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "macaroni and cheese\n\nRevise: the same abstract clusters of creamy yellow-orange sauce and smooth, curved macaroni shapes, and this time the macaroni pieces incorporate more varying sizes and interlocking structures.\n\nRevise: the same abstract, interlocking clusters of creamy yellow-orange pigment, and this time the curves and overlapping edges of the macaroni pieces are more sharply defined and structurally varied.",
+  "prompt_tokens": 11812,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1650/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1650",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract composition of interlocking, sculptural forms that evoke the organic curves and rich textures of macaroni. Using a system of drifting clusters with dynamic, wobbling shapes, it generates a complex pattern of overlapping pigment masses in a consistent creamy yellow-orange hue. The clusters subtly coalesce and influence each other's motion through a spatial hash grid, creating emergent structural relationships that feel both chaotic and organized. Each cluster contains its own internal dynamics\u2014curved outer forms, structural loops, and subtle highlights\u2014that contribute to the overall sense of rich, buttery pigment rendered in an abstract, architectural manner. The result is a still composition that pulses with underlying motion, suggesting depth and complexity through the interplay of overlapping curved forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 434.578
+}
