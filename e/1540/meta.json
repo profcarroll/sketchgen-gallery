@@ -1,0 +1,139 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cradar images Revise: the same radar sweep, and this time changing the\u2026\u201d \u2014 sketchgen entry 1540, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1540/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a constantly moving network of lines simulating a radar scan. Glowing trails of deep blue and violet sweep across the screen, originating from a central point and expanding outward in circular and arc patterns. The motion is continuous and dynamic, creating a rhythmic, expanding sense of depth as the colors sweep across the visible field. There are no user interactions required to observe this ongoing, rhythmic pattern.",
+  "completion_tokens": 1408,
+  "created_utc": "2026-09-24T05:12:27Z",
+  "entry_id": 1540,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 711,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 38)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 90,
+        "sha256": "d66e6a32c3df36f971898eae3fba4b236180cf6ec6d6b71bf56b586db99fe416",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3018,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.644,
+      "wall_s": 65.338
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 697,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 79,
+        "sha256": "6352d54fc854578a260f0cd73fe3c4231322720ecde7461b9a6b65b426479250",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3211,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.373,
+      "wall_s": 67.741
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1551,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1379,
+    "root_entry_id": 1379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "radar images\n\nRevise: the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines",
+  "prompt_tokens": 6229,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1540/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1540",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic radar scan visualization with glowing blue and violet trails expanding from a central point. The animation features hundreds of lines that spiral outward in circular patterns, creating a rhythmic sense of depth and motion. The visual effect is achieved through a particle system where each line element has its own speed and angle, continuously updating to form an ever-expanding network. The deep blue and violet color palette gives the impression of a high-tech radar display with glowing trails sweeping across the screen in a continuous, mesmerizing pattern.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.079
+}
