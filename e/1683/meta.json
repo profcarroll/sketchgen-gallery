@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe last leaf on a tree refusing to fall in the wind Revise: the same\u2026\u201d \u2014 sketchgen entry 1683, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1683/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a stylized autumnal forest canopy built from muted reds, golds, and deep browns. The viewer sees an intricate network of detailed branches forming the structural backdrop. Scattered throughout this scene are numerous floating leaves that exhibit a constant, gentle movement. These shapes are perpetually drifting and softly spiraling downward, creating the impression of a quiet, endless descent through the trees.",
+  "completion_tokens": 2509,
+  "created_utc": "2026-09-26T18:33:24Z",
+  "entry_id": 1683,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1282,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 115 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same stylized forest scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should drift slowly and softly downward.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 157,
+        "sha256": "a8de8fe2bb456b2a6c2a247a091fe7164cf63390bebbe4b8cf68713a45635bb7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3614,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.539,
+      "wall_s": 112.182
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1227,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 157,
+        "sha256": "a8de8fe2bb456b2a6c2a247a091fe7164cf63390bebbe4b8cf68713a45635bb7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3802,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.199,
+      "wall_s": 113.489
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1696,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same stylized forest scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should drift slowly and softly downward.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1602,
+    "root_entry_id": 1466
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the last leaf on a tree refusing to fall in the wind\n\nRevise: the same stylized scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should fall with greater directional speed.\n\nRevise: the same stylized forest scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should drift slowly and softly downward.",
+  "prompt_tokens": 7416,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1683/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1683",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a serene autumnal forest scene where a detailed tree canopy is rendered with intricate branching structures using muted reds, golds, and deep browns. Floating leaves drift slowly downward in a gentle spiral motion, creating an impression of quiet descent through the trees. The composition uses procedural techniques to build both the structural elements and the organic movement of the leaves, all within the performance constraints for reliable browser execution. The viewer observes a peaceful, endlessly looping animation of natural falling motion against a stylized backdrop.",
+  "submitted_by": "profcarroll",
+  "wall_s": 225.671
+}
