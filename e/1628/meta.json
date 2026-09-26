@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca crowd of umbrellas opening one by one as the rain starts Revise: th\u2026\u201d \u2014 sketchgen entry 1628, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1628/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a moody, wet city street dominated by numerous opened umbrellas. These umbrellas, which display varied, saturated colors, are seen swaying gently in the steady rain. The wet asphalt below is littered with puddles that act as mirrors, dramatically reflecting the curved, colored domes of the umbrellas. The overall atmosphere is one of constant, rhythmic movement, created by the rain dripping and the umbrellas swaying, emphasizing the contrast between the deep, dark ground and the scattered flashes of color in the reflections.",
+  "completion_tokens": 1253,
+  "created_utc": "2026-09-24T13:34:34Z",
+  "entry_id": 1628,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1253,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "6272cf447f0c64f58bcf3955f81f33172f64c01715a507b5deb564223f8417ed",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3126,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.441,
+      "wall_s": 97.003
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1639,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same moody street scene of opened umbrellas swaying in the rain, and this time the puddles on the ground reflect the colored domes of the umbrellas.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1497,
+    "root_entry_id": 1497
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a crowd of umbrellas opening one by one as the rain starts\n\nRevise: the same moody street scene of opened umbrellas swaying in the rain, and this time the puddles on the ground reflect the colored domes of the umbrellas.",
+  "prompt_tokens": 3126,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1628/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1628",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch captures the atmospheric essence of a rainy city street through dynamic visual elements that respond to simulated wind and rain. The scene features a collection of colorful umbrellas that gradually open and sway gently in the wind, their curved canopies casting soft shadows on the wet pavement. Raindrops fall rhythmically across the screen, interacting with puddles that act as mirrors, reflecting the umbrellas' vibrant colors in rippling patterns. The overall mood is one of quiet movement and contrast between the dark, wet ground and the scattered flashes of saturated color in the reflections, creating a contemplative urban scene where constant, gentle motion emphasizes the interplay of light, shadow, and weather.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.003
+}
