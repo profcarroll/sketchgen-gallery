@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "no_motion",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 1572, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1572/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, sun-drenched pastoral landscape. The foreground is dominated by intensely detailed, rolling green fields that feature varied patches of rich texture and color. Strong sunlight plays across these fields, creating dramatic contrasts between deeply shadowed troughs and brightly lit hills. In the background, a magnificent mountain range is visible, rendered with extreme detail, but fades into an ethereal, atmospheric haze under a bright sky. The scene is a stationary, detailed panorama designed to showcase depth and light.",
+  "completion_tokens": 1878,
+  "created_utc": "2026-09-24T08:10:44Z",
+  "entry_id": 1572,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 625,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 57,
+        "sha256": "8da76103016b8dff56ce96123a72dff95b7a7a349d918c3b2c797b877311e3ce",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3058,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.7,
+      "wall_s": 60.095
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 614,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 57,
+        "sha256": "8da76103016b8dff56ce96123a72dff95b7a7a349d918c3b2c797b877311e3ce",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3104,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.689,
+      "wall_s": 59.575
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 639,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 57,
+        "sha256": "8da76103016b8dff56ce96123a72dff95b7a7a349d918c3b2c797b877311e3ce",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3104,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.733,
+      "wall_s": 35.684
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1583,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, sun-drenched pastoral landscape, and this time intensify the atmospheric haze over the distant mountain range.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1420,
+    "root_entry_id": 1420
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again\n\nRevise: the same pastoral landscape, and this time exaggerate the depth of field to make the foreground grass seem intensely sharp\n\nRevise: this is getting close but there is one giant cloud that ruins it\n\nRevise: the same pastoral landscape, and this time sharpen the detail on the distant mountain range\n\nRevise: the same vast sunlit pastoral landscape and this time introduce subtle patches of varied color and texture to the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape featuring rolling green fields that vary in patches of color and texture, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the visible detail and contrast in the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the visible play of sunlight and shadow across the rolling green fields.\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time intensify the atmospheric haze over the distant mountain range.",
+  "prompt_tokens": 9266,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1572/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1572",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a serene pastoral scene with a bright, sun-drenched landscape. The composition features layered elements: a gradient sky transitioning from warm orange to cool blue, distant mountain ranges rendered in soft, blurred forms, and rolling green fields that create a sense of depth and texture. The visual technique employs simple geometric shapes and gradients to evoke the feeling of sunlight playing across terrain, with subtle variations in color and form to suggest natural complexity. The static nature of the scene invites contemplation while maintaining the illusion of a vast, atmospheric landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 155.354
+}
