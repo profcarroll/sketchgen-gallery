@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cread Finnegan's Wake by James Joyce and then create an interactive sk\u2026\u201d \u2014 sketchgen entry 1646, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1646/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perpetual, amorphous vortex composed of hundreds of semi-transparent textual characters drawn from *Finnegans Wake*. These characters flow constantly and cyclically, forming a drifting, immersive stream across the surface. When the viewer clicks anywhere on the canvas, the surrounding characters are drawn toward the cursor, coalescing into a temporary, luminous cluster. This moment of concentration gives the text the stark, high-contrast appearance of old newsprint. Following this brief moment of clarity, the formed text does not instantly vanish, but instead undergoes a perceptibly gradual fade, dissolving smoothly back into the continuous, swirling background stream.",
+  "completion_tokens": 4542,
+  "created_utc": "2026-09-26T04:30:47Z",
+  "entry_id": 1646,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1965,
+      "evidence": "gate exit 1: checks failed: console_clean, revised; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (143 lines of code before, 143 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same continuous, flowing vortex of semi-transparent textual characters, and this time the dissolution must occur via a perceptible, gradual fade rather than an instant return to the amorphous stream.\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- responds(click): no canvas snapshots to compare\n\nConsole (1 error line, first 1 shown):\n- [pageerror] missing ) after argument list\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 0,
+        "played": 0,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 186,
+        "sha256": "fe92fd3467d41e41c859a3ff136c269b5caa8e6ffba416c0f3e47252b4f6cd5c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 10.004,
+      "prompt_tokens": 4348,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.087,
+      "wall_s": 185.628
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1305,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: responds(click)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] charArray is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (101); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 186,
+        "sha256": "c0aebe364b32582f2c5634c0fdf020545ea9442ecc4e2a22fe1346c760471a08",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4573,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.981,
+      "wall_s": 142.37
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1272,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "d3f1bfa2fdb457b3d52a5b27f1518c7bb679ed25e1f27199615f06a30037b8aa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3797,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.815,
+      "wall_s": 114.121
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1658,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, flowing vortex of semi-transparent textual characters, and this time the dissolution must occur via a perceptible, gradual fade rather than an instant return to the amorphous stream.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1537,
+    "root_entry_id": 1374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "read Finnegan's Wake by James Joyce and then create an interactive sketch that interprets the text\n\nRevise: the same perpetual, swirling vortex of semi-transparent characters, and this time when the textual elements coalesce, they must briefly adopt the luminosity and stark contrast of old newsprint before dissolution.\n\nRevise: the same continuous, flowing vortex of semi-transparent textual characters, and this time the dissolution must occur via a perceptible, gradual fade rather than an instant return to the amorphous stream.",
+  "prompt_tokens": 12718,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1646/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1646",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, ever-shifting text vortex using characters from James Joyce's *Finnegans Wake*. Hundreds of semi-transparent letters flow in a continuous spiral, forming a hypnotic background stream. When clicked, the characters rush toward the center, creating a momentary burst of clarity and high-contrast density\u2014like old newsprint suddenly focused. The effect is both organic and mechanical, with characters gradually fading back into the swirling chaos after the click. The visualization emphasizes the cyclical nature of language and meaning, where individual words gain prominence only briefly before dissolving back into the collective text.",
+  "submitted_by": "profcarroll",
+  "wall_s": 442.119
+}
