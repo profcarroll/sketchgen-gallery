@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 1656, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1656/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a dazzling, highly energized field of neon-lit geometric forms. The structures are composed exclusively of octahedral and hexagonal geometries. These shapes constantly cascade and intersect, creating a vibrant sense of depth. The defining movement is a relentless series of synchronized, repeating helical spirals that twist and intersect across the frame, creating the kinetic, mesmerizing glow of a futuristic music video. The visual action is entirely self-contained and continuous, drawing the viewer into the pulsating geometry.",
+  "completion_tokens": 1263,
+  "created_utc": "2026-09-26T05:36:53Z",
+  "entry_id": 1656,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1263,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "e09400c65cebe5d721c980f151712b9487945e98105308220f5702cd6821336d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3803,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.23,
+      "wall_s": 115.784
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1668,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1555,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.",
+  "prompt_tokens": 3803,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1656/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1656",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of neon-lit geometric forms composed entirely of octahedra and hexagonal shapes that move in synchronized helical spirals. The visual effect is achieved through a combination of particle-based motion systems and constant rotation to create a sense of depth and energy. The shapes cascade across the screen in repeating spiral patterns, each maintaining its own unique phase while staying in perfect synchronization with others. The colors pulse and shift continuously, creating a vibrant, futuristic glow that fills the entire canvas. The motion is entirely self-contained and continuous, drawing viewers into an immersive, kinetic geometry that feels both organic and algorithmically precise.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.784
+}
