@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sewing machine stitching a seam that follows your cursor Revise: th\u2026\u201d \u2014 sketchgen entry 1610, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1610/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a surface, representing fabric, ready for stitching. When the cursor moves, a visible sewing machine head tracks the movement across the surface. As the cursor drags, the machine head continuously deposits small, distinct units of thread, creating a visible, segmented seam that precisely traces the path of the cursor. The thread units are a contrasting color to the fabric, and the overall appearance suggests mechanical motion and precise pattern following.",
+  "completion_tokens": 657,
+  "created_utc": "2026-09-24T12:00:18Z",
+  "entry_id": 1610,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 657,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 43,
+        "sha256": "ba4f59779c518b7db897de154ac79d505edc1878229e8479dfbba40b9ff05a5d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2693,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.559,
+      "wall_s": 55.514
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1621,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same seam, and this time the individual stitches must be visibly discrete units of thread rather than a single continuous line.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1474,
+    "root_entry_id": 1474
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sewing machine stitching a seam that follows your cursor\n\nRevise: the same seam, and this time the individual stitches must be visibly discrete units of thread rather than a single continuous line.",
+  "prompt_tokens": 2693,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1610/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1610",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a visual representation of a fabric surface with a sewing machine head that tracks cursor movement. When the user drags their mouse across the canvas, the machine head follows the path while depositing distinct thread units that form a visible seam. The design uses a grid pattern to simulate fabric texture and employs contrasting gold-colored stitches against a dark background to create visual clarity. The mechanical motion is suggested through the precise following of cursor paths and the discrete placement of thread points along the seam, creating an impression of deliberate, methodical stitching rather than continuous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.514
+}
