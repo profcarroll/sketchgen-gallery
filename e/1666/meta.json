@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near Revise\u2026\u201d \u2014 sketchgen entry 1666, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1666/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, lively scene depicting a shallow tide pool, featuring richly colored rocks, textured sand, and detailed anemones. The water throughout the pool appears dynamic and gently moving. The primary interaction involves the user's mouse proximity: as the cursor moves over the canvas, the anemones react, opening or closing based on the distance. This state change controls the surrounding environment, causing the reflected sunlight on the water to become dramatically brighter and more intensely sparkling only when the anemones are fully open.",
+  "completion_tokens": 1503,
+  "created_utc": "2026-09-26T06:33:01Z",
+  "entry_id": 1666,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1503,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "cd03c4b8cb258be7d02c9e14e36637dd5eaa04962d3eb0f312177d158dd3a103",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3534,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.41,
+      "wall_s": 123.937
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1678,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1616,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.",
+  "prompt_tokens": 3534,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1666/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1666",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vibrant shallow tide pool environment with animated rocks, sand base, and swaying anemones. The key interaction is that when users move their mouse near the anemones, they respond by opening or closing. When anemones are fully open, this triggers a dramatic visual effect: bright, sparkling sunlight reflections appear on the water surface. The scene dynamically responds to both the natural movement of the anemones and user proximity, creating an immersive underwater experience where the environment reacts to interaction. The visual feedback is immediate and visually striking, with the entire water surface brightening and sparkling as a result of the anemones' openness state.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.937
+}
