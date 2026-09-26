@@ -1,0 +1,190 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdraw the Earth in 3D floating in space engulfed by a swarm of orbitin\u2026\u201d \u2014 sketchgen entry 1564, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1564/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a celestial scene showing the Earth suspended in a dark, star-dusted expanse. This central sphere is surrounded by a dense, intricate swarm of countless orbiting satellites. The movement is continuous and dynamic; the satellites do not follow a single path, but instead maintain complex, varying orbital inclinations around the planet, creating a dazzling pattern of constant motion and gravitational dance.",
+  "completion_tokens": 2348,
+  "created_utc": "2026-09-24T07:23:40Z",
+  "entry_id": 1564,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 792,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 488.5 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "e2d0f59f674639b4a5125fa82f4a25c6243369f55bd3e9f09da354c2b87d410d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 488.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3217,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 18.363,
+      "wall_s": 73.692
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 751,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 95,
+        "sha256": "df38682c3616086491df1b8a6f6771d5c4b255a909b7cf8003ec0999b633fc4d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3334,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.846,
+      "wall_s": 73.663
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 805,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 86,
+        "sha256": "73dcd7dfdc6e326cec4807b82aa7b5756066774460b15fe4292b0755cf6b7a10",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.777,
+      "prompt_tokens": 3270,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.722,
+      "wall_s": 74.207
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1575,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic depiction of Earth and orbiting satellites, and this time with the satellites exhibiting varying orbital inclinations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1409,
+    "root_entry_id": 1409
+  },
+  "loads": [
+    {
+      "bytes": 44098,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "draw the Earth in 3D floating in space engulfed by a swarm of orbiting satellites\n\nRevise: the same dynamic depiction of Earth and orbiting satellites, and this time with the satellites exhibiting varying orbital inclinations.",
+  "prompt_tokens": 9821,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1564/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1564",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene yet dynamic view of Earth suspended in the vastness of space. The central planet is rendered with a realistic texture, rotating slowly to reveal its surface details. Surrounding it is a dense swarm of satellites moving in complex orbital patterns\u2014each following its own path with varying inclinations and eccentricities. The stars in the background form a scattered point cloud that fills the darkness, enhancing the sense of depth and scale. The continuous motion creates an ever-shifting pattern that mimics the real gravitational dance of artificial satellites orbiting our planet, offering viewers a glimpse into humanity's technological presence in space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 221.562
+}
