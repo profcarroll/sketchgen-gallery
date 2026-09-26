@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cfresh snowfall slowly filling in a trail of footprints Revise: the sa\u2026\u201d \u2014 sketchgen entry 1621, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1621/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field covered in fresh, undisturbed snow, patterned with a distinct series of deep footprints crossing the surface. Soft, white flakes of snow begin to drift down, gradually filling in the edges of the visible tracks. The falling snow continues slowly, obscuring the deep contours of the prints until the precipitation reaches a peak intensity, at which point the falling snow dramatically pauses. This momentary stillness allows the viewer to observe the full, clear pattern of the footprints revealed underneath the lightly settled powder.",
+  "completion_tokens": 1276,
+  "created_utc": "2026-09-24T12:57:11Z",
+  "entry_id": 1621,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1276,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 104,
+        "sha256": "0f1f36f71a9487b0e914e77ba3ac26742b2398b81c21fb490cbc9d82a83bcd38",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3204,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.562,
+      "wall_s": 103.505
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1632,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same gradual obscuring of footprints by fresh snowfall, and this time the falling snow briefly pauses, allowing the full pattern of tracks to become visible.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1487,
+    "root_entry_id": 1487
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fresh snowfall slowly filling in a trail of footprints\n\nRevise: the same gradual obscuring of footprints by fresh snowfall, and this time the falling snow briefly pauses, allowing the full pattern of tracks to become visible.",
+  "prompt_tokens": 3204,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1621/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1621",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a serene winter landscape where fresh snow gradually fills in footprints left by wanderers. The scene begins with clear, deep impressions in the pristine snowfield, then transitions to a gentle snowfall that slowly accumulates around these tracks. As the precipitation intensifies, it eventually reaches a dramatic pause \u2014 a moment of stillness where the full pattern of the prints emerges clearly beneath a light dusting of settled powder. The viewer observes this transformation unfold over time, watching as the snow's behavior changes from gentle falling to a peak intensity and then to a tranquil pause that reveals the hidden footprints. The technique uses layered visual elements with carefully controlled animation timing and opacity changes to create the illusion of natural snow accumulation and the brief moment of stillness within the ongoing weather cycle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.505
+}
