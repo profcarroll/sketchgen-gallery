@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can hourglass where the sand falls upward Revise: the same glass hourg\u2026\u201d \u2014 sketchgen entry 1632, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1632/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a classically shaped, clear glass hourglass structure. Within this contained system, the deeply saturated sapphire blue sand is perpetually moving. Instead of falling downward, the grains stream upward from the bottom bulb to the top. The flow is continuous and fluid, creating a steady, mesmerizing cascade of deep blue particles filling the glass against the pull of an inverted force.",
+  "completion_tokens": 727,
+  "created_utc": "2026-09-24T14:02:20Z",
+  "entry_id": 1632,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 727,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "781f33cd6a0ef459cfb6951441112c3e90cf5b788a04dbdc2110c6e39b8d3460",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3054,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.662,
+      "wall_s": 66.202
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1643,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glass hourglass, and this time the reddish-orange sand is a deep sapphire blue.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1502,
+    "root_entry_id": 1502
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an hourglass where the sand falls upward\n\nRevise: the same glass hourglass, and this time the reddish-orange sand is a deep sapphire blue.",
+  "prompt_tokens": 3054,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1632/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1632",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an inverted glass hourglass with a mesmerizing flow of sapphire blue particles moving upward against gravity. The particles continuously cycle through the glass structure, creating a hypnotic cascade effect that suggests time flowing in reverse. Using simple physics and particle systems, the visualization maintains a fluid, organic motion while respecting performance constraints. The deep blue color palette emphasizes the liquid quality of the sand flow, and the continuous animation creates an engaging, meditative visual experience that operates entirely autonomously.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.202
+}
