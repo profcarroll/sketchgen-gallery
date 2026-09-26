@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near Revise\u2026\u201d \u2014 sketchgen entry 1616, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1616/ Licensed CC BY 4.0.",
+  "brief": "The scene presents a vibrant tide pool environment filled with textured rocks and colorful anemones anchored to the seabed. The water above is rendered with dynamic hues and reflections, suggesting sunlight dappling the surface. The anemones are reactive: when the mouse enters the proximity of the pool, they change their state, either opening or closing. This change directly affects the visible water surface, increasing the brightness and intensity of the reflected sunlight when the anemones are fully open.",
+  "completion_tokens": 1167,
+  "created_utc": "2026-09-24T12:34:02Z",
+  "entry_id": 1616,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1167,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 100,
+        "sha256": "238f849ae0724b2e0390d30e9c51c0b6229c255dfcf530ce994fd8c9a736d03e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3264,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.151,
+      "wall_s": 97.996
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1627,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1481,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.",
+  "prompt_tokens": 3264,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1616/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1616",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an immersive tide pool environment where animated anemones react to mouse proximity by opening and closing, creating dynamic visual effects that influence the surrounding water. The scene features textured rocks scattered across a sandy seabed, with water particles flowing realistically beneath the surface. When users move their mouse near the anemones, they respond by partially opening or closing, which affects the reflected sunlight intensity on the water's surface. The visualization uses layered drawing techniques to create depth and motion, with color and transparency effects that make the underwater world feel alive and interactive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.996
+}
