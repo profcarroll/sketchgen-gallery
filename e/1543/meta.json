@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cseismic activity Revise: the same interconnected, fluid waves that pu\u2026\u201d \u2014 sketchgen entry 1543, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1543/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perpetually moving field of interconnected, fluid waves that ripple and pulse across the surface, suggesting subterranean seismic activity. The visual field is dominated by deep, rich blues, maintaining a clear, gradient quality that pulls toward indigo and cobalt. These slow, rhythmic waves move independently, giving the appearance of continuous, silent energy. When the user interacts with the canvas\u2014by clicking or touching\u2014the ongoing pattern responds by generating visible ripple effects and temporary disruptions, causing the local gradients to flare and pulse outward from the point of contact.",
+  "completion_tokens": 691,
+  "created_utc": "2026-09-24T05:30:39Z",
+  "entry_id": 1543,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 691,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "b271bfd02cc080b2567006b7c6fc494f8569e73312466a3b9598ff4fe743a1c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3011,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.977,
+      "wall_s": 63.742
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1554,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same interconnected, fluid waves that pulse across the surface, and this time the field must maintain a clearer gradient into deep blues.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1382,
+    "root_entry_id": 1382
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "seismic activity\n\nRevise: the same interconnected, fluid waves that pulse across the surface, and this time the field must maintain a clearer gradient into deep blues.",
+  "prompt_tokens": 3011,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1543/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1543",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of interconnected, pulsing waves that simulate subterranean seismic activity. The visual field is dominated by deep blues transitioning to indigo and cobalt, with each wave element moving independently at its own rhythm. The waves ripple and pulse continuously across the canvas, creating an impression of silent energy flowing beneath the surface. When a user interacts by clicking or touching the canvas, localized ripples emanate outward from the point of contact, disrupting the ongoing pattern with visible flare effects that pulse and dissipate. The technique uses sine wave functions to create organic motion, combined with HSB color space for rich, gradient-based visuals that maintain consistent depth and saturation across all elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.742
+}
