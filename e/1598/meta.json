@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 1598, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1598/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic weave of brightly colored threads, continuously crisscrossing across the space. These vibrant strands intersect and overlap in a highly structured manner, always adhering to a strict geometric rule: every point of intersection must form the vertices of a perfect equilateral triangle. The resulting pattern is a complex, rhythmic tapestry that constantly evolves, generating complex structures of color and line without the need for user interaction.",
+  "completion_tokens": 814,
+  "created_utc": "2026-09-24T10:57:53Z",
+  "entry_id": 1598,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 814,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 105,
+        "sha256": "88936490a6f714bfbd7aa4a9b75003330e462dc25f53df0c2a2330dfbb4e1f77",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3195,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.394,
+      "wall_s": 75.163
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1609,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1462,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.",
+  "prompt_tokens": 3195,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1598/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1598",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic tapestry of colorful threads that continuously weave across the canvas. Each thread moves independently while maintaining its trajectory, and at every point along their paths, they form perfect equilateral triangles\u2014ensuring geometric harmony throughout the composition. The resulting pattern is both chaotic and structured, with threads crisscrossing in an evolving symphony of color and line. The visual rhythm emerges from the constant motion and intersection of these threads, creating complex patterns that shift organically over time without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 75.163
+}
