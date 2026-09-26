@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 1694, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1694/ Licensed CC BY 4.0.",
+  "brief": "The viewer enters a vast, echoing interior space containing a massive, sculpted pathway of heavily rusted metal. The pathway begins as a smooth, sweeping curve, maintaining a gentle curvature for a considerable distance. The journey feels continuous until the sweeping arc abruptly halts, shifting sharply and dramatically into a perpendicular segment. This perpendicular section maximizes its visual weight as it widens abruptly, creating a sudden, powerful interruption that dominates the scene's geometry.",
+  "completion_tokens": 2706,
+  "created_utc": "2026-09-26T19:55:12Z",
+  "entry_id": 1694,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 814,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.6228/255, 21039 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 82,
+        "sha256": "3f13531879911b996e79c44d6c529246e473ff15a2a37afed15646fd5fec09c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3122,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.781,
+      "wall_s": 71.085
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 954,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] PI is not defined\n- [pageerror] Cannot access 'curveStartAngle' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 86,
+        "sha256": "c0ac4d669355d8ffe4b40a428c4ea1f2d2f2811590bdd9488339353384632b72",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3242,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.645,
+      "wall_s": 80.852
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 938,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] PI is not defined\n- [pageerror] Cannot access 'curveStartAngle' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 107,
+        "sha256": "494a961bd2b76432881c3c96828f6c151aea2dc200a544f07fa2ddde36b7990a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3408,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.643,
+      "wall_s": 83.802
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1707,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sweeping, curved pathway, and this time the perpendicular segment widens abruptly, maximizing the visual weight of the sudden geometric shift.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1577,
+    "root_entry_id": 1429
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same monumental pathway, and this time the sweeping arc begins with a much tighter, almost circular curvature.\n\nRevise: the same sweeping, curved pathway, and this time the perpendicular segment widens abruptly, maximizing the visual weight of the sudden geometric shift.",
+  "prompt_tokens": 9772,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1694/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1694",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast, echoing interior space containing a massive, sculpted pathway of heavily rusted metal. The pathway begins as a smooth, sweeping curve that maintains gentle curvature for a considerable distance. The journey feels continuous until the sweeping arc abruptly halts and shifts sharply into a perpendicular segment. This perpendicular section widens dramatically to maximize its visual weight, creating a sudden, powerful interruption in the scene's geometry. The piece uses geometric forms and lighting to emphasize the contrast between the flowing curve and the stark, wide perpendicular segment, evoking a sense of dramatic transition within an expansive architectural space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 235.739
+}
