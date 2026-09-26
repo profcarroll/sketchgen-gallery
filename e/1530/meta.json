@@ -1,0 +1,142 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 1530, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1530/ Licensed CC BY 4.0.",
+  "brief": "A complex 3D mechanical assembly of interlocking gears rotates continuously. Highly detailed gear teeth, crafted from polished steel and weathered brass with a pronounced patina, mesh precisely as they turn to simulate a mechanism converting speed into power. The interplay of light on the polished surfaces and the textured, aged brass creates a sense of heavy, rhythmic mechanical movement.",
+  "completion_tokens": 2479,
+  "created_utc": "2026-09-24T02:50:36Z",
+  "entry_id": 1530,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1235,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 143,
+        "sha256": "05aa49a1f83320d8b0d90f0ac02b47f1c541910291be645b180d7010179dda5f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2816,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 9.831,
+      "wall_s": 105.281
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1244,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 149,
+        "sha256": "3a8f1c434121bc70bae38bd4590b288cf3a76ce5f897cd77a215cf3b6faf2032",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2937,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 9.89,
+      "wall_s": 102.902
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1541,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same 3D mechanical assembly of interlocking metallic gears, and this time the brass components should show a more pronounced patina interacting with the polished steel.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1362,
+    "root_entry_id": 1353
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect\n\nRevise: try again, the gears are not interlocking yet\n\nRevise: make more changes to the code, these are not real revisions\n\nRevise: the same interlocking metallic gears, and this time the gear teeth should be highly detailed and visibly mesh together.\n\nRevise: the same 3D mechanical assembly of interlocking metallic gears, and this time the brass components should show a more pronounced patina interacting with the polished steel.",
+  "prompt_tokens": 5753,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1530/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1530",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a mesmerizing 3D mechanical assembly of interlocking gears in continuous motion, evoking the precision and rhythmic elegance of a high-precision clockwork mechanism. Through careful attention to visual detail\u2014polished steel-like gear teeth, weathered brass hues, and subtle lighting effects\u2014a sense of heavy, deliberate movement is created. The viewer observes the gears rotating at different speeds, their interlocking motion simulating a system converting rotational speed into mechanical power. The entire scene rotates slowly around its center, revealing the complex geometry of each gear and flywheel component. The visual rhythm created by the synchronized yet distinct rotations of the gears suggests both precision engineering and organic motion, drawing the viewer into the quiet complexity of the mechanical world.",
+  "submitted_by": "profcarroll",
+  "wall_s": 208.183
+}
