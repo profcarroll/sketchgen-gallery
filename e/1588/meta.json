@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cpunctuated equilibrium Revise: try again, no circles, and render the\u2026\u201d \u2014 sketchgen entry 1588, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1588/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous cycle of angular geometric forms. Initially, numerous sharp, brightly colored fragments float within the frame, exhibiting subtle random motion. Periodically, the system collapses, causing the fragments to violently fracture and dissipate their organized patterns. As the process resets, the components begin to draw together, assembling with force into a cohesive, distinct helical spiral structure, only to repeat the collapse cycle moments later.",
+  "completion_tokens": 1857,
+  "created_utc": "2026-09-24T09:49:27Z",
+  "entry_id": 1588,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1857,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 168,
+        "sha256": "f6ab24c9c10d7d510855e117371d30b04a2d2de6791a158143026db4cbd8351f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3741,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.948,
+      "wall_s": 163.4
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1599,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic geometric mechanism, and this time the fragments should assemble in a distinct helical spiral pattern during re-equilibration.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1451,
+    "root_entry_id": 1451
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "punctuated equilibrium\n\nRevise: try again, no circles, and render the concept of punctuation juxtaposed against the return to equilibrium\n\nRevise: the same geometric arrangement, and this time use more angular and sharper edges during the collapse.\n\nRevise: the same dynamic geometric mechanism, and this time the fragments should assemble in a distinct helical spiral pattern during re-equilibration.",
+  "prompt_tokens": 3741,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1588/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1588",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a continuous cycle of structural transformation through geometric forms in 3D space. It begins with a stable arrangement of colored cubes floating in space, each subtly animated with gentle motion and rotation. Every few seconds, the system enters a violent collapse phase where these fragments explode outward in chaotic directions, their motion governed by random forces and gravity. After this destruction, the scene resets and begins to reassemble itself into a cohesive helical spiral structure, using the same particles that were once scattered. The viewer witnesses an endless loop of formation and dissolution, with the transition between states smoothly animated through a morphing effect that bridges the gap between the fragmented state and the spiral reconstruction. This creates a mesmerizing visual rhythm that reflects themes of destruction and rebirth in geometric form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 163.4
+}
