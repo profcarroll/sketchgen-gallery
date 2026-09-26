@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cthe game of life Revise: the same complex, simulated organic life, an\u2026\u201d \u2014 sketchgen entry 1558, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1558/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with simulated life, manifesting as complex, evolving patterns and geometric structures. Color shifts and density changes as the patterns grow and interact, giving the appearance of simulated organic life forming defined, stable shapes. The composition continuously flows and reshapes over time, creating an intricate, ever-shifting tapestry of interconnected forms without requiring any input from the viewer.",
+  "completion_tokens": 1046,
+  "created_utc": "2026-09-24T06:52:05Z",
+  "entry_id": 1558,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1046,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 139,
+        "sha256": "22909c47e9ad2e879d8997e497bc916344f33d04a0725b9dab85491f99956960",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3421,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.847,
+      "wall_s": 96.312
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1569,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, simulated organic life, and this time the evolving patterns form distinct, non-random shapes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1402,
+    "root_entry_id": 1402
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the game of life\n\nRevise: the same complex, simulated organic life, and this time the evolving patterns form distinct, non-random shapes.",
+  "prompt_tokens": 3421,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1558/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1558",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates an evolving cellular automaton that generates complex, organic-looking patterns through color-shifting states. The system begins with a dynamic grid where cells transition between dormant, transitioning, and active states according to modified Conway's Game of Life rules. As time progresses, the patterns continuously flow and reshape, creating intricate structures that appear to grow and interact without external input. Color transitions shift over time, giving the impression of living forms emerging from chaos, with warm and cool hues creating visual depth and movement across the canvas. The simulation runs autonomously, producing an ever-shifting tapestry of interconnected geometric patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.312
+}
