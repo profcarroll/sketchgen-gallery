@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2013 Revise: the sam\u2026\u201d \u2014 sketchgen entry 1575, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1575/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, continuously evolving broadcast graphic composed of interconnected geometric planes, lines, and nodes. These structures drift slowly and rotate in three dimensions, with their glowing connections visibly pulsing whenever two planes approach a critical distance. The individual nodes and the intersections of the lines feature periodic bursts of bright glow. Supplementing the visualization, two distinct, legible text blocks\u2014\"You're watching\" and \"sketchgen TV\"\u2014drift slowly across the foreground.",
+  "completion_tokens": 4697,
+  "created_utc": "2026-09-24T08:34:06Z",
+  "entry_id": 1575,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1538,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 149)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 104.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 146,
+        "sha256": "668f291f69ee4a825d304f49d42354adde3aef8775d5f6ec613032d5c116d7fe",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 104.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3644,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 58.061,
+      "wall_s": 136.919
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1590,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 157)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 104.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 173,
+        "sha256": "ff36ea2eddfb29536aab097d61deac64d1039bd870e45bdf4f87a974c9972569",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 104.4,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4025,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 57.659,
+      "wall_s": 148.081
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1569,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 177,
+        "sha256": "265de144b9dd5e8037f4159653af9847f46cbec0cdc052dfc8a7f0eed4599fab",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4086,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.493,
+      "wall_s": 147.238
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1586,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing geometric visualizations consisting of interconnected planes, lines, and nodes, and this time introducing a periodic, visible brightening of the glows concentrated at the intersections.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1427,
+    "root_entry_id": 1427
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 2013\n\nRevise: the same glowing data visualizations, and this time introducing a slow, subtle rotational change to the planes and lines\n\nRevise: the same glowing data visualizations, and this time emphasizing the intersections of the planes and lines with concentrated glows\n\nRevise: the same glowing geometric data visualizations, and this time introducing a visible, subtle periodic shift in the intensity of the glowing nodes\n\nRevise: the same glowing geometric data visualizations, and this time introducing a slow, subtle periodicity to the speed of the rotational shift\n\nRevise: the same glowing planes and connecting lines, and this time having the connection lines pulse in intensity whenever two planes pass within a critical distance\n\nRevise: add legible typography to brand the broadcast network in two seperate slowly drifting text blocks \"You're watching\" \"sketchgen TV\"\n\nRevise: the same glowing geometric visualizations consisting of interconnected planes, lines, and nodes, and this time introducing a periodic, visible brightening of the glows concentrated at the intersections.",
+  "prompt_tokens": 11755,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1575/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1575",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving broadcast visualization using interconnected geometric planes that drift and rotate in three-dimensional space. The system features glowing connections that pulse when planes come close, creating a dynamic network effect. Bright bursts emanate from node intersections, while two text blocks drift slowly across the foreground for visual anchoring. The composition is rendered entirely in WebGL with optimized rendering techniques to maintain performance, using batched drawing operations and avoiding expensive per-frame calculations. Viewers experience a constantly shifting, luminous network of planes and connections that feels both organic and structured, evoking the aesthetic of digital broadcast systems or cosmic data visualization.",
+  "submitted_by": "profcarroll",
+  "wall_s": 432.238
+}
