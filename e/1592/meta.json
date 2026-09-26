@@ -1,0 +1,184 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can interactive stovetop. turn the dial and blue natural gas flames ap\u2026\u201d \u2014 sketchgen entry 1592, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1592/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a circular stovetop surface featuring multiple circular burners. The user interacts with a central dial to adjust the heat setting. Turning the dial activates natural gas flames, which appear above the burners. As the dial is set, the flames change both their height and their color in direct proportion to the setting. Furthermore, the metal ring surrounding any actively burning burner emits a glowing red luminescence.",
+  "completion_tokens": 4059,
+  "created_utc": "2026-09-24T10:13:06Z",
+  "entry_id": 1592,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1230,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 148,
+        "sha256": "7a1e8c98f055f783cb2df0d524f44dd15b69d1530b254463baf5131a5c388d15",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3531,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.512,
+      "wall_s": 110.836
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1231,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 148,
+        "sha256": "7a1e8c98f055f783cb2df0d524f44dd15b69d1530b254463baf5131a5c388d15",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3645,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.533,
+      "wall_s": 113.134
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1598,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 148,
+        "sha256": "7a1e8c98f055f783cb2df0d524f44dd15b69d1530b254463baf5131a5c388d15",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3645,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.536,
+      "wall_s": 102.727
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1603,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same circular stovetop surface, and this time the flame heights should rise proportionally with the dial setting",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1456,
+    "root_entry_id": 1456
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an interactive stovetop. turn the dial and blue natural gas flames appear on the circular burners.\n\nRevise: the same interactive stovetop surface, and this time the flames should change color with the dial setting\n\nRevise: the same interactive stovetop surface, and this time the metal surrounding the burners should glow red when the flames are running.\n\nRevise: the same circular stovetop surface, and this time the flame heights should rise proportionally with the dial setting",
+  "prompt_tokens": 10821,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1592/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1592",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an interactive stovetop interface where users can adjust heat settings via a central dial. When rotated, the dial activates flames above the burners, with flame height and color dynamically responding to the heat level. Each burner features a glowing red ring that intensifies with activation, while individual flame particles rise and fade realistically. The design uses efficient particle systems and gradient rendering to create visually engaging effects without exceeding performance budgets, allowing for smooth interaction even on constrained hardware.",
+  "submitted_by": "profcarroll",
+  "wall_s": 326.697
+}
