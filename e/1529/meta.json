@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca marching band seen from above, forming shapes on a football field R\u2026\u201d \u2014 sketchgen entry 1529, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1529/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a wide view of a football field upon which a large marching band performs. The band moves in a highly coordinated, professional routine, drawing complex geometric patterns with their bodies. Their synchronized movements cause them to first perfectly form a complete circle, which then transitions smoothly into the distinct outline of a square. The entire sequence of formations plays out continuously and rhythmically across the field.",
+  "completion_tokens": 1267,
+  "created_utc": "2026-09-24T02:42:32Z",
+  "entry_id": 1529,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1267,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "b6fa6ee32dbc9ea5e36fd0ff186ed594145d4e8702435909216eba9b7747d439",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3460,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.534,
+      "wall_s": 120.945
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1540,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "try again, make the band form shapes, make them form a circle and then a square.",
+    "critique_by": "profcarroll",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1526,
+    "root_entry_id": 1510
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a marching band seen from above, forming shapes on a football field\n\nRevise: try again with animation and movement this time\n\nRevise: improvment, try again and make the bands movements more realiistic, and controlled, this band is not yet cooridinated\n\nRevise: try again, make the band form shapes, make them form a circle and then a square.",
+  "prompt_tokens": 3460,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1529/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1529",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a marching band performing on a football field, transitioning smoothly from a circular formation to a square pattern. The visualization uses 24 band members arranged in groups, each following distinct movement patterns that create complex geometric formations. As time progresses, the members gradually morph their positions from a circle into a square shape through interpolation, maintaining synchronized motion throughout the transition. The color-coded members and the field markings provide visual context while emphasizing the coordinated nature of the performance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.945
+}
