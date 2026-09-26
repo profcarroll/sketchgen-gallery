@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 1686, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1686/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, cross-sectional view of water. The composition is built from overlapping, horizontal bands of color that flow and shift together. Structured wave patterns visibly crest and trough across the frame, moving in a rhythmic, cyclical motion that suggests the natural ebb and flow of tides. The overall representation is purely kinetic, with the wave patterns continuously evolving and breathing without any user input affecting the displayed dynamics.",
+  "completion_tokens": 587,
+  "created_utc": "2026-09-26T19:08:14Z",
+  "entry_id": 1686,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 587,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 62,
+        "sha256": "9a05049ea79a2475210b513a3cdef7282b2fecea72f0414aec36a21aff39c76d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 2938,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.648,
+      "wall_s": 66.821
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1699,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous cross-section of water, and this time the surface ripples gather into visibly defined, rhythmic wave patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1533,
+    "root_entry_id": 1368
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same visual representation of tidal movement, and this time the horizontal bands incorporate visible, erratic surface ripples.\n\nRevise: the same continuous cross-section of water, and this time the surface ripples gather into visibly defined, rhythmic wave patterns.",
+  "prompt_tokens": 2938,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1686/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1686",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuous cross-sectional view of water with defined rhythmic wave patterns. The composition consists of overlapping horizontal bands of color that move in synchronized, cyclical motion to simulate the ebb and flow of tides. Each band oscillates vertically according to its own phase while also shifting horizontally to create visible wave crests and troughs. The visual effect is achieved through layered sine wave functions applied to the vertical positioning and horizontal displacement of each band, creating a kinetic representation of water movement that evolves continuously without user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.821
+}
