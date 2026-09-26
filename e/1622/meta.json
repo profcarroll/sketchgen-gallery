@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 1622, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1622/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, dark expanse simulating a desert landscape under a night sky. A train moves horizontally across the scene, appearing to glide through the depths. The only sources of illumination are the rectangular windows of the train cars. These lights generate a noticeable, rhythmic effect: they emit bursts of warm, yellow-orange light that appear intensely bright, followed by a distinct, momentary pause before the next flash begins, creating a pulsing rhythm across the night setting.",
+  "completion_tokens": 779,
+  "created_utc": "2026-09-24T13:01:38Z",
+  "entry_id": 1622,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 779,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "54a644aab84e84a9107ebe5ded19d546721860535a70966cbe2f9b5585c5ae1f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2885,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.839,
+      "wall_s": 66.208
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1633,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1489,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.",
+  "prompt_tokens": 2885,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1622/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1622",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a nocturnal desert scene with a train gliding across the landscape. The composition uses a dark color palette to evoke night, populated by thousands of twinkling stars that provide depth and scale. The train moves steadily from left to right, its rectangular windows creating a rhythmic pulsing light pattern as they flash on and off in sequence. This creates an illusion of motion through the vast darkness, with each burst of warm yellow-orange light briefly illuminating the surroundings before fading back into night. The effect simulates the experience of witnessing a train's passage through a remote desert under starlight, emphasizing the contrast between the artificial glow of the train and the natural darkness of the environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.208
+}
