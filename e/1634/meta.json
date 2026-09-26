@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca beehive seen through a thermal camera Revise: the same honeycomb pa\u2026\u201d \u2014 sketchgen entry 1634, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1634/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a repeating, detailed honeycomb pattern, giving the appearance of a beehive viewed through a thermal camera. The colors are warm and vibrant, utilizing deep reds, oranges, and cooler blues to represent fluctuating temperatures. The entire pattern is dynamic, as the color gradients continuously shift and flow across the surface. A visible diagonal channel cuts across the hexagonal network, and along this specific line, the intensity of the color gradients increases and decreases, causing the channel to appear as if it is pulsing or glowing with heightened thermal energy.",
+  "completion_tokens": 1133,
+  "created_utc": "2026-09-24T14:12:15Z",
+  "entry_id": 1634,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1133,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "9486cd8db0dafbb392f57b52d8b5125cd533fd6bcee27a86c0beb7c017d043ac",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3100,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.914,
+      "wall_s": 93.924
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1645,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same honeycomb pattern, and this time the color gradients shift with increased intensity along the visible diagonal channel",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1507,
+    "root_entry_id": 1507
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a beehive seen through a thermal camera\n\nRevise: the same honeycomb pattern, and this time the color gradients shift with increased intensity along the visible diagonal channel",
+  "prompt_tokens": 3100,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1634/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1634",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic honeycomb pattern that evokes the visual effect of a beehive observed through a thermal camera. The hexagonal cells pulse gently with shifting warm colors\u2014deep reds and oranges transitioning into cooler blues\u2014representing varying temperatures. A prominent diagonal channel cuts across the pattern, glowing with intensified color gradients that pulse rhythmically, suggesting heightened thermal activity along that path. The entire composition moves slowly and continuously without any user interaction, using only the core p5.js library to generate an immersive, animated thermal landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 93.924
+}
