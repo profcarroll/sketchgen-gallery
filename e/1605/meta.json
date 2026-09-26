@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sundial in a world with three suns Revise: the same sundial, and th\u2026\u201d \u2014 sketchgen entry 1605, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1605/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a geometric sundial etched onto a flat surface. Three distinct light sources simulate the suns, casting three separate shadows across the sundial face. These shadows overlap, creating complex, defined shadow edges where the lines intersect. Over time, the arrangement of all three shadows slowly shifts and rotates, illustrating the passing of time as the suns traverse the sky.",
+  "completion_tokens": 1286,
+  "created_utc": "2026-09-24T11:37:51Z",
+  "entry_id": 1605,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1286,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 138,
+        "sha256": "612c2e8c87a974abaab5dab2e9a8330edb31a23a7e510977bd70781c60cf1946",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3562,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.351,
+      "wall_s": 115.991
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1616,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sundial, and this time the overlapping shadows cast sharper, more defined edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1469,
+    "root_entry_id": 1469
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sundial in a world with three suns\n\nRevise: the same sundial, and this time the overlapping shadows cast sharper, more defined edges.",
+  "prompt_tokens": 3562,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1605/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1605",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a geometric sundial with three animated suns that cast overlapping shadows across its surface. The suns orbit the center of the canvas at different speeds and angles, causing their shadows to shift and rotate continuously. Each sun projects both a circular shadow boundary and individual shadow lines from random points on the sundial face. The interplay of these three shadow systems creates complex intersecting patterns that evolve over time, illustrating the passage of hours through the changing positions of celestial bodies. The viewer observes a timeless yet dynamic representation of how solar motion determines time, with each sun contributing its own shadow signature to the overall temporal rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.991
+}
