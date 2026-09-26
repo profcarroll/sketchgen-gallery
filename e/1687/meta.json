@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 1687, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1687/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals an intricate and dense lattice structure composed of vibrant, colored lines. These lines are precisely interwoven, organizing into distinct, interlocking hexagonal patterns that cover the entire visible area. The colors are saturated and highly varied, creating a visual depth that makes the structure feel simultaneously fragile and immensely complex. Because the final pattern is a fixed drawing, the composition is entirely stationary and requires no interaction or input to observe.",
+  "completion_tokens": 1186,
+  "created_utc": "2026-09-26T19:13:08Z",
+  "entry_id": 1687,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1186,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 53,
+        "sha256": "6076daa17d7e6de6666f581dc51bc1bf9e67373a91e40e36a348ae1f611bd1fc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2876,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.748,
+      "wall_s": 86.85
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1700,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dense, interwoven lattice, and this time the lines must be entirely stationary.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1536,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate, web-like lattice, and this time the intersecting lines should organize into discernible, interlocking hexagonal patterns.\n\nRevise: the same dense, interwoven lattice, and this time the lines must be entirely stationary.",
+  "prompt_tokens": 2876,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1687/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1687",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static, interwoven lattice structure composed of vibrant, colored lines that form intricate hexagonal patterns across the entire canvas. The work is entirely stationary, with no motion or animation, yet it achieves visual complexity through careful arrangement of geometric relationships. Each hexagon is defined by its own unique color palette and interconnected through multiple sets of lines that create a sense of depth and interconnection. The composition fills the visible area with an organic but mathematically precise pattern, where saturated colors and consistent line weights give the impression of both fragility and immense structural complexity. The viewer observes a fixed drawing that reveals the underlying mathematical relationships between geometric forms, creating a sense of ordered chaos through the repetition and variation of hexagonal patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.85
+}
