@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca Persian rug pattern Revise: the same intricate, symmetrical composi\u2026\u201d \u2014 sketchgen entry 1693, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1693/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, symmetrical woven textile pattern, reminiscent of a classic Persian rug. The composition is built upon a structural lattice grid, rendered in deep, jewel tones. The main visual element is the continuous interwoven vine pattern, which dominates the surface and strictly adheres to vertical symmetry across all repeating motifs. The pattern maintains a rich, complex visual texture and depth, remaining entirely static and non-responsive to external input, allowing the viewer to observe the interlocking flow of the decorative design.",
+  "completion_tokens": 2457,
+  "created_utc": "2026-09-26T19:48:13Z",
+  "entry_id": 1693,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1177,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 90 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same highly intricate, symmetrical woven textile pattern, and this time the continuous interwoven vine patterns emphasize distinct vertical symmetry across all repeating motifs.\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 123,
+        "sha256": "e9602872a247439643ddcd4e34221b5b6d30367c528d9db9e1c110f86abebc9a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3490,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.582,
+      "wall_s": 102.682
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1280,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 123,
+        "sha256": "e9602872a247439643ddcd4e34221b5b6d30367c528d9db9e1c110f86abebc9a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3629,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.543,
+      "wall_s": 111.97
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1706,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly intricate, symmetrical woven textile pattern, and this time the continuous interwoven vine patterns emphasize distinct vertical symmetry across all repeating motifs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1576,
+    "root_entry_id": 1428
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Persian rug pattern\n\nRevise: the same intricate, symmetrical composition of deep jewel tones woven into a lattice grid, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of geometric elements at the top and bottom.\n\nRevise: the same intricately symmetrical woven pattern, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of interlocking diagonal lines.\n\nRevise: the same lattice grid structure with repeating stylized floral motifs, and this time the pronounced bottom geometric band is comprised of alternating large squares and smaller diamond shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.\n\nRevise: the same highly intricate, symmetrical woven pattern that resembles a classic Persian rug, and this time the stylized floral motifs are rendered as continuous interlocking vine patterns.\n\nRevise: the same highly intricate, symmetrical woven textile pattern, and this time the continuous interwoven vine patterns emphasize distinct vertical symmetry across all repeating motifs.",
+  "prompt_tokens": 7119,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1693/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1693",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static, highly detailed Persian rug pattern with intricate woven textures and strict vertical symmetry. The composition features a central lattice grid where each repeating motif consists of interwoven vine patterns that mirror perfectly along the vertical axis. The design employs rich jewel tones\u2014deep purples, greens, blues, and reds\u2014to create a complex visual texture reminiscent of traditional Persian carpet weaving. All elements are carefully arranged to maintain perfect symmetry across the entire surface, with no motion or animation, allowing viewers to appreciate the mathematical precision and ornamental complexity of the textile pattern. The work emphasizes the relationship between geometric structure and organic flow, creating depth through layered decorative elements that appear to interlock seamlessly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 214.652
+}
