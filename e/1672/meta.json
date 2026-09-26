@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca spirograph drawn by two planets orbiting each other Revise: the sam\u2026\u201d \u2014 sketchgen entry 1672, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1672/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with intricate, symmetrical spirograph patterns, giving the illusion of highly detailed mechanical drawing. These complex designs are composed entirely of richly saturated jewel tones: vibrant emerald green and deep sapphire blue. The two simulated orbiting planets dictate the curve and depth of the patterns, causing the entire composition to continually expand and reform in a mesmerizing cycle. The entire artwork moves autonomously, displaying the elegant, predictable rhythm of celestial mechanics without requiring any interaction or input from the viewer.",
+  "completion_tokens": 690,
+  "created_utc": "2026-09-26T07:05:26Z",
+  "entry_id": 1672,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 690,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "4836ee5e01b200273d597923e8a2a3f6620ccad94df4b66bac4559684222b173",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3194,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.675,
+      "wall_s": 65.657
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1684,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, symmetrical spirograph patterns, and this time rendered in richly saturated emerald green and sapphire blue colors",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1626,
+    "root_entry_id": 1495
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a spirograph drawn by two planets orbiting each other\n\nRevise: the same symmetrical spirograph patterns, and this time rendered in richly saturated, vibrant neon space-inspired colours.\n\nRevise: the same complex, symmetrical spirograph patterns, and this time rendered in richly saturated emerald green and sapphire blue colors",
+  "prompt_tokens": 3194,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1672/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1672",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an autonomous, mesmerizing display of symmetrical spirograph patterns using only the core p5.js library. The composition features a series of orbiting celestial bodies that trace intricate, mathematically-generated curves in rich emerald green and sapphire blue hues. The motion is entirely self-contained, driven by mathematical relationships between orbital radii, speeds, and phases, creating an endlessly evolving pattern that resembles mechanical drawing. The work demonstrates the elegance of geometric harmony through pure algorithmic expression, with no user interaction required to maintain its hypnotic rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 65.657
+}
