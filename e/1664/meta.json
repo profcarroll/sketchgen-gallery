@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clakes of data slowly draining out down river valleys into darkness Re\u2026\u201d \u2014 sketchgen entry 1664, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1664/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts subterranean depths\u2014a void\u2014through which luminous streams of data flow. These streams are channeled into tightly clustered ribbons of light, possessing clear crystalline edges. The collective movement follows large, looping helical patterns, leaving faint, phosphorescent residual marks in their wake. The motion is highly dynamic: the ribbons first exhibit a visible harmonic oscillation at their edges, which smoothly transitions into a deep, rhythmic pulsation. The entire field continuously oscillates, dimming and brightening sequentially as the luminous data drifts through the darkness.",
+  "completion_tokens": 1198,
+  "created_utc": "2026-09-26T06:22:03Z",
+  "entry_id": 1664,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1198,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "fe91d94dd283a40d4eafae61dd8695283598b84e00dcb3121c74e39bd854e01f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3488,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.184,
+      "wall_s": 102.542
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1676,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous streams of data, and this time the visible harmonic oscillation must transition into a deep, rhythmic pulsation, brightening and dimming sequentially along their collective length.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1573,
+    "root_entry_id": 1423
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lakes of data slowly draining out down river valleys into darkness\n\nRevise: the same subterranean depths, and this time the flowing data trails will leave faint, phosphorescent residual marks in the void.\n\nRevise: the same luminous streams of data, and this time the flow should be channeled into distinct, navigable canyons within the void.\n\nRevise: the same luminous streams of data, and this time the movement must form tightly clustered, defined ribbons of light.\n\nRevise: the same luminous streams of data, and this time the glowing ribbons must possess clearly delineated, crystalline edges.\n\nRevise: the same luminous streams of data, and this time their collective movement must follow large, looping, helical patterns within the void.\n\nRevise: the same luminous streams of data, and this time the entire field of motion must exhibit a visible, harmonic oscillation at the edges of the ribbons.\n\nRevise: the same luminous streams of data, and this time the visible harmonic oscillation must transition into a deep, rhythmic pulsation, brightening and dimming sequentially along their collective length.",
+  "prompt_tokens": 3488,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1664/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1664",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes subterranean depths through which luminous data streams flow in helical patterns. The streams are rendered as crystalline ribbons that exhibit both harmonic oscillation at their edges and rhythmic pulsation along their length. The motion creates a dynamic interplay of light and shadow, with each stream's brightness modulating over time to create a sense of depth and movement. The entire field continuously oscillates in brightness, enhancing the illusion of a living, breathing void through which information flows. The visual effect is achieved through careful modulation of color and shape parameters within a WEBGL rendering context, maintaining performance while creating an immersive experience of flowing data through darkness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.542
+}
