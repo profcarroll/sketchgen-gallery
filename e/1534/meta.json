@@ -1,0 +1,139 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2010 Revise: the sam\u2026\u201d \u2014 sketchgen entry 1534, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1534/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with abstract, high-energy fields of vibrant, saturated color. Uniform, interconnected lines of geometry constantly sweep and streak horizontally across the screen. These linear elements move with rhythmic speed and intensity, creating a sense of dynamic energy. The shapes persist and evolve in an interconnected pattern, forming complex, glowing structures that traverse the viewer's field of vision from left to right.",
+  "completion_tokens": 1343,
+  "created_utc": "2026-09-24T03:26:49Z",
+  "entry_id": 1534,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 679,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 34)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 113,
+        "sha256": "2160fa6f4375a4c6041fc8bed9bb927f09f3c3aae9c04e76d875a74fb5dc3a9e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3312,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.6,
+      "wall_s": 68.445
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 664,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 67,
+        "sha256": "303e1cc2b9dd0a04865d3a942f64ee34c0ae31a42967736e908265a9c0fef892",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3199,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.108,
+      "wall_s": 64.281
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1545,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-energy fields of vibrant, saturated color, and this time the shapes should adopt a uniform, interconnected, linear geometry that moves horizontally across the screen.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1369,
+    "root_entry_id": 1369
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 2010\n\nRevise: the same abstract, high-energy fields of vibrant, saturated color, and this time the shapes should adopt a uniform, interconnected, linear geometry that moves horizontally across the screen.",
+  "prompt_tokens": 6511,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1534/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1534",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic field of vibrant, interconnected lines that sweep horizontally across the screen with rhythmic energy. The visual effect emerges from hundreds of individual line segments moving at varying speeds, each with its own hue and opacity, creating a sense of continuous motion and flow. Colorful particles streak through the field adding to the energetic feel. The pattern evolves organically over time, forming complex structures that traverse the viewer's field of vision, generating a high-energy abstract experience filled with glowing, interconnected geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 132.726
+}
