@@ -1,0 +1,139 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cyacht rock Revise: the same abstract, fluid shapes, and this time the\u2026\u201d \u2014 sketchgen entry 1548, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1548/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with abstract, fluid forms rendered in rich, oceanic tones. These shapes drift and glide across the space, maintaining a sense of graceful, effortless movement. When any form crosses another, a faint, glowing luminescence blooms, leaving behind a transient, shimmering trail that slowly dissipates. The composition is constantly changing, creating a hypnotic, evolving field of color and light that suggests slow, rhythmic motion.",
+  "completion_tokens": 2467,
+  "created_utc": "2026-09-24T05:56:33Z",
+  "entry_id": 1548,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1239,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 71)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 76)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 106)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 196.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (196.2 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 2200,
+        "played": 22,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "711e5d147ee6b1453ab43bda5fd520bd55631db7ed1351119e5d22c4dae939b2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 196.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3550,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 91.864,
+      "wall_s": 110.066
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1228,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 131,
+        "sha256": "4ada303fb45d0197b0670e2603a0ce0dbfec28e5482ca49fcfa9669557db29e9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3921,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.846,
+      "wall_s": 118.656
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1559,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, fluid shapes, and this time they should leave a faint, luminescent trail when they cross other forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1389,
+    "root_entry_id": 1389
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "yacht rock\n\nRevise: the same abstract, fluid shapes, and this time they should leave a faint, luminescent trail when they cross other forms.",
+  "prompt_tokens": 7471,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1548/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1548",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving field of fluid, oceanic forms that drift and interact within a dark space. The shapes\u2014gentle spheres moving with slow, rhythmic motion\u2014glide across the canvas like floating elements of water or light. When two forms cross paths, they generate a transient bloom of luminous energy that leaves behind shimmering trails. These trails gradually fade out, creating a sense of continuous transformation and flow. The visual rhythm emerges from the subtle interplay between the drifting forms and their interactions, evoking the slow, hypnotic motion of deep ocean currents or atmospheric phenomena. The composition is dynamic yet serene, filled with an underlying pulse that suggests life and movement without becoming chaotic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 228.722
+}
