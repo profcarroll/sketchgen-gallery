@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201candroids dreaming of electric sheep Revise: the same luminous structu\u2026\u201d \u2014 sketchgen entry 1663, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1663/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a deep, endless void where luminous, structured geometric forms drift and float. These forms are highly iridescent, casting dynamic, vibrant light and shimmering reflections across the surrounding darkness. As the light interacts with the void, these reflections slowly stabilize, accumulating into delicate, glowing patterns that resemble cosmic dust. The entire scene pulses with a subtle, continuous movement, giving the impression of vast, silent, stellar evolution within the deep expanse.",
+  "completion_tokens": 2249,
+  "created_utc": "2026-09-26T06:16:45Z",
+  "entry_id": 1663,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1139,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 76)\npreflight: `torus()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 107)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 111)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 219.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 58,
+        "sha256": "2e6c963afaa5594becd006bd0d8e65a7bbeebee12c5a9faba8e1ab34caeee9a3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 219.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 2975,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.378,
+      "wall_s": 86.17
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1110,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "d49ea8c086255b1bef805f1a7999a1934771650167e850086049c51dbb6d2ec8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.4,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3767,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.813,
+      "wall_s": 104.112
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1675,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous, structured geometric forms, and this time their iridescent reflections solidify into patterns of glowing cosmic dust scattered through the deep void.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1570,
+    "root_entry_id": 1417
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "androids dreaming of electric sheep\n\nRevise: the same luminous structured forms, and this time they cast ephemeral neon shadows on the surrounding dark environment\n\nRevise: the same luminous structured forms, and this time the neon shadows reveal underlying crystalline networks within the space\n\nRevise: the same luminous structured forms, and this time they pulse with a cyclical spectrum of vibrant emerald and cyan hues\n\nRevise: the same luminous, structured forms, and this time they cascade and drift downward like sheets of liquid emerald and cyan light\n\nRevise: the same luminous, structured geometric forms, and this time they cast dynamic, iridescent reflections across the dark void.\n\nRevise: the same luminous, structured geometric forms, and this time their iridescent reflections solidify into patterns of glowing cosmic dust scattered through the deep void.",
+  "prompt_tokens": 6742,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1663/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1663",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a cosmic void populated by luminous geometric forms that drift and float in an endless expanse. The scene pulses with subtle motion, evoking the silent evolution of stellar structures. The iridescent forms cast dynamic light and shimmering reflections that accumulate into delicate glowing patterns resembling cosmic dust. Through careful batching of particles and efficient rendering techniques, the sketch achieves a sense of vastness and quiet complexity without exceeding performance constraints, allowing viewers to experience the immersive quality of deep space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 190.282
+}
