@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 1670, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1670/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a constant, hypnotic movement of colorful rectangular blocks. These blocks begin to fall and cascade downward in a perpetual, tightening spiral that never reaches the center. The forms are unpredictable, featuring wildly varying sizes and irregular shapes, giving the illusion of a continuous, random avalanche. The viewer simply watches the mesmerizing flow of color and geometry, as the entire scene moves dynamically without any need for input or interaction.",
+  "completion_tokens": 866,
+  "created_utc": "2026-09-26T06:54:21Z",
+  "entry_id": 1670,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 866,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 99,
+        "sha256": "d4a43b200df320310ebc2cbf12c137823b1ba798d54edf43f6093c29b9f7133e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3174,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.747,
+      "wall_s": 74.301
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1682,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1620,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes",
+  "prompt_tokens": 3174,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1670/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1670",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an endless cascade of colorful rectangular blocks that fall and spiral downward in a mesmerizing pattern. The blocks vary in size, shape, and rotation, creating an unpredictable avalanche effect as they move through the canvas. Each block is influenced by gravity and friction, bouncing off the edges of the screen while maintaining their dynamic movement. A central vortex draws the eye into the scene, reinforcing the spiral motion without ever reaching a center point. The visual rhythm combines constant motion with subtle variations in color and geometry to produce an hypnotic, ever-changing display that captivates the viewer's attention through pure visual flow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 74.301
+}
