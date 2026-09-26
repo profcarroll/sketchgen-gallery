@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 1639, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1639/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents vast, overlapping rectangular planes of deeply saturated, resonant colors. These fields give the impression of floating and breathing, with the tones subtly bleeding into one another. Luminosity is enhanced at the edges where the masses overlap, defining a rich, profound transition between hues. The overall composition suggests a slow, continuous, ambient shift in color depth. When the user interacts with the canvas, the existing color transitions deepen dramatically, causing the overlapping masses to swell and sharpen their contrast.",
+  "completion_tokens": 1219,
+  "created_utc": "2026-09-24T14:38:54Z",
+  "entry_id": 1639,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1219,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 100,
+        "sha256": "9562eb39ec87793d59dc73e8e12543d51b441d09ea0b4fe2260a63545d95f757",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3564,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.278,
+      "wall_s": 104.569
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1650,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, overlapping rectangular planes of deeply saturated color, and this time enhance the luminosity and definition of the tonal transitions between the fields.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1524,
+    "root_entry_id": 1367
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same large, layered rectangular color fields that float and bleed into one another, and this time deepen the resonant tones by increasing the saturation of the overlapping color masses.\n\nRevise: the same vast, overlapping rectangular planes of deeply saturated color, and this time enhance the luminosity and definition of the tonal transitions between the fields.",
+  "prompt_tokens": 3564,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1639/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1639",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an ambient, evolving field of overlapping, floating rectangles that pulse and breathe with deep, saturated colors. The composition suggests a slow, continuous shift in color depth through subtle motion and luminosity changes. When a user interacts by clicking the canvas, the existing transitions deepen dramatically\u2014causing overlapping masses to swell and sharpen their contrast. The visual effect emerges from layers of soft-edged rectangles drawn with alpha blending, glow effects, and layered transparency that create rich, organic transitions between hues.",
+  "submitted_by": "profcarroll",
+  "wall_s": 104.569
+}
