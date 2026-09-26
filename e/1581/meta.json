@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 1581, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1581/ Licensed CC BY 4.0.",
+  "brief": "A complex, three-dimensional steampunk kinetic sculpture is displayed, featuring several polished, vibrant brass splines. These splines orbit around a central glowing core of viscous, molten bronze. The entire structure is constantly in motion, creating an illusion of dynamic, intertwined gears and radiant energy, allowing the viewer to observe the intricate, continuous rotation and the metallic interplay of light on the brass surfaces.",
+  "completion_tokens": 985,
+  "created_utc": "2026-09-24T09:12:02Z",
+  "entry_id": 1581,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 985,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 111,
+        "sha256": "45bd9a08d57f6639fbf0d474c4de1dd4806c6a4b205fd69ac9315c5b237cb382",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3303,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.222,
+      "wall_s": 87.982
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1592,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, steampunk kinetic sculpture structure, and this time the splines should appear made of polished, vibrant brass",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1437,
+    "root_entry_id": 1437
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same orbiting splines, and this time the splines should appear made of oxidized copper and sea glass\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze glow should appear thicker and more viscous.\n\nRevise: the same complex, steampunk kinetic sculpture structure, and this time the splines should appear made of polished, vibrant brass",
+  "prompt_tokens": 3303,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1581/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1581",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic, three-dimensional steampunk kinetic sculpture composed of orbiting brass splines around a central molten bronze core. The scene features continuous rotation and subtle vertical motion that creates an illusion of interlocking gears and radiant energy. The brass elements are rendered with metallic hues that shift across oxidized copper tones, while the central core pulses with a glowing, viscous bronze glow. The entire structure maintains constant motion without external input, creating an autonomous visual experience where viewers can observe the intricate dance of light and shadow across the polished surfaces of the rotating components.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.982
+}
