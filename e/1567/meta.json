@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 1567, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1567/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, atmospheric scene featuring a glowing disc-shaped object suspended over a field of vertical corn stalks. From the base of this craft, intensely bright cyan light emanates, illuminating the stalks beneath. This light source is dynamic: it first appears as two distinct, steady vertical beams, which then widen and narrow cyclically. The light ultimately settles into a glowing semicircle directly below the UFO. This powerful cyan wash continuously pulses, either pulsing rhythmically or sweeping slowly and uniformly across the stalks, creating a pulsating, ethereal glow in the otherwise still field.",
+  "completion_tokens": 1027,
+  "created_utc": "2026-09-24T07:42:48Z",
+  "entry_id": 1567,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1027,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "e9ee4a3b89f1b5ff93df979c96916bc7b51593144437bba9a6bbdf6d6406cbdf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3428,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.351,
+      "wall_s": 94.997
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1578,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intensely pulsing cyan light beams, and this time they pulse slowly and uniformly across the semicircle.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1414,
+    "root_entry_id": 1414
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes are concentrated into steady, vertical beams of cyan light.\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes pulsate rhythmically with cyan light.\n\nRevise: the same two steady vertical beams of bright cyan light, and this time the light widens and shrinks cyclically, illuminating the corn stalks unevenly.\n\nRevise: the same intensely bright cyan light beams, and this time they illuminate the corn stalks in a fixed, glowing semicircle directly beneath the craft.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intense cyan light beams pulsate slowly and uniformly across the semicircle.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intensely cyan light beams pulse rapidly and irregularly across the semicircle.\n\nRevise: the same intensely pulsing cyan light beams, and this time they pulse slowly and uniformly across the semicircle.",
+  "prompt_tokens": 3428,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1567/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1567",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a mysterious alien landing scene with an atmospheric field of corn stalks under a hovering disc-shaped craft. The visualization begins with two distinct vertical light beams emanating from the craft's base, which then evolve into a continuous glowing semicircle beneath the craft. The entire scene pulses rhythmically in a deep, ethereal blue-green color scheme that creates a sense of otherworldly calm and wonder. The viewer witnesses an evolving light phenomenon that moves from discrete beams to a unified wash of illumination, with the corn field remaining still and grounded while the light source creates a dynamic, pulsing glow that seems to pulse with its own inner rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.997
+}
