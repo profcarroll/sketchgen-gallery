@@ -1,0 +1,100 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cchoose a famous film's opening title sequence and try to mimic it. Re\u2026\u201d \u2014 sketchgen entry 1579, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1579/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously flowing web of complex, abstract lines and interconnected geometric shapes. These structures are constantly in motion, exhibiting an ongoing process of evolution. Segments appear to warp and distort in real-time, and periodically, interconnected parts separate, moving outward along distinct, visible vectors. As these components drift and then reconverge into the main network, they leave behind faint, luminous trails\u2014ghostly echoes of their former paths\u2014creating a richly evolving field of light, form, and movement.",
+  "completion_tokens": 1258,
+  "created_utc": "2026-09-24T08:59:51Z",
+  "entry_id": 1579,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1258,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 112,
+        "sha256": "f2c6e1b7ecefc2fbbb35c339c7df667a113f1101e7a0f6c729d5058ea5913043",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3344,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.403,
+      "wall_s": 106.109
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1590,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously evolving field of complex geometric shapes and abstract lines, and this time the separating vectors will leave faint, luminous traces of their path.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1434,
+    "root_entry_id": 1434
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "choose a famous film's opening title sequence and try to mimic it.\n\nRevise: the same evolving abstract shapes and lines, and this time the shapes will exhibit controlled, periodic pulsatility.\n\nRevise: the same dynamic interplay of abstract lines and geometric shapes, and this time the colors will exhibit chromatic shifting and rippling.\n\nRevise: try again, needs more sophistiacted sense of space, form and movement\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the forms will exhibit localized warping and tessellating distortions\n\nRevise: the same evolving abstract lines and complex geometric shapes, and this time the distortions will follow a controlled, sinusoidal frequency.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the warping distortions will cause the interconnected segments to briefly separate along distinct, visible vectors.\n\nRevise: the same continuous field of complex geometric shapes and abstract lines, and this time the separating vectors will accumulate and reconconnect at specific nodal points.\n\nRevise: the same continuously evolving field of complex geometric shapes and abstract lines, and this time the separating vectors will leave faint, luminous traces of their path.",
+  "prompt_tokens": 3344,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1579/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1579",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuously evolving field of interconnected geometric forms that pulse and flow in three-dimensional space. Each shape distorts over time with organic motion, constantly reconfiguring its form while maintaining connections to nearby shapes through glowing lines. The system periodically releases segments from their connections, sending them drifting outward along distinct vectors before they gradually drift back into the main network. These components leave behind luminous trails that fade over time, creating an ethereal echo effect where past positions become visible ghostly imprints. The visual result is a dynamic, living network of light and form that continuously evolves through separation and reconnection events, producing an ever-shifting tapestry of motion and geometry that feels both mechanical and organic in its behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 106.109
+}
