@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cshower thoughts Revise: the same field of soft, translucent bubbles a\u2026\u201d \u2014 sketchgen entry 1559, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1559/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with a field of soft, translucent bubbles and scattered text fragments. These shapes gently emerge from the bottom edge of the screen and continuously drift upwards. They ascend slowly, appearing to float through the space before gradually dissipating and fading away as they reach the top. The entire scene is defined by this constant, natural upward motion of the floating elements.",
+  "completion_tokens": 837,
+  "created_utc": "2026-09-24T06:56:48Z",
+  "entry_id": 1559,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 837,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 181,
+        "sha256": "e8d1e784ed3f03cbe998d98bfe1b1727781b21ad7ff7564e928072d12550de36",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3597,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.425,
+      "wall_s": 86.221
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1570,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same field of soft, translucent bubbles and floating text fragments, and this time they slowly ascend from the bottom of the canvas and dissipate upwards.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1403,
+    "root_entry_id": 1403
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "shower thoughts\n\nRevise: the same field of soft, translucent bubbles and floating text fragments, and this time they slowly ascend from the bottom of the canvas and dissipate upwards.",
+  "prompt_tokens": 3597,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1559/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1559",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a serene, floating environment where translucent bubbles and text fragments slowly rise from the bottom of the screen. The elements emerge naturally from the base, drift upward at gentle speeds, and gradually fade as they reach the top. The motion suggests a dreamlike state of floating thoughts and ideas, with each bubble and text piece having its own unique size, speed, and opacity. The visual effect is one of continuous, soft animation without any user interaction, creating an immersive field of floating elements that moves organically across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.221
+}
