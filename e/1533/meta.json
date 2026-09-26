@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 1533, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1533/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous cross-section of water, rendered as stacked horizontal bands of color. The entire representation undergoes a slow, rhythmic vertical oscillation, simulating the natural rise and fall of the tides. Superimposed over this slow, sinusoidal movement are numerous highly textured surface ripples, giving the water a constantly shifting, erratic appearance. A specific, darker horizontal band remains visible, acting as a persistent marker for the peak of the tidal cycle. The visualization maintains a perpetual, organic movement throughout, existing entirely independent of any user interaction.",
+  "completion_tokens": 611,
+  "created_utc": "2026-09-24T03:20:46Z",
+  "entry_id": 1533,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 611,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 50,
+        "sha256": "94227b855c6521e241b7fa91e4b1fc106ba5f9b3d1207f3a8a4bc1d5b683d5e1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 2838,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.659,
+      "wall_s": 66.213
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1544,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same visual representation of tidal movement, and this time the horizontal bands incorporate visible, erratic surface ripples.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1368,
+    "root_entry_id": 1368
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same visual representation of tidal movement, and this time the horizontal bands incorporate visible, erratic surface ripples.",
+  "prompt_tokens": 2838,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1533/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1533",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuous, organic visualization of water using stacked horizontal bands that oscillate vertically to simulate tidal movement. The system combines a slow, rhythmic sine wave motion with high-frequency surface ripples that create a constantly shifting texture across the water's surface. A persistent dark band marks the peak of each tidal cycle, serving as a visual anchor for the viewer's perception of the water's natural rhythm. The visualization operates entirely autonomously, creating an immersive representation of ocean dynamics through carefully modulated color gradients and movement patterns that maintain visual interest without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 66.213
+}
