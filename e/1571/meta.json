@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 1571, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1571/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a whimsical maritime scene where stylized, paper-cut ships sail across a body of water. These ships are rendered with subtle details, suggesting weathered wood grain and patina. As they move, they leave behind delicate, dissipating trails. The surrounding environment is reflected in the water, which is depicted with gentle, visible ripples that continuously shift and distort the reflections. The entire scene possesses a natural, ceaseless flow of movement, causing the ships and the surrounding ripples to drift slowly across the canvas.",
+  "completion_tokens": 1236,
+  "created_utc": "2026-09-24T08:04:32Z",
+  "entry_id": 1571,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1236,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "9b1ac34b63907695eab8765910a8e3c4986d03b1833caa1f81f5bcb07128180b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3316,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.948,
+      "wall_s": 105.047
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1582,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same whimsical, paper-cut ships, and this time the water reflects the surrounding environment with gentle, visible ripples",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1419,
+    "root_entry_id": 1419
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails\n\nRevise: the same whimsical, paper-cut ships, and this time the ships are weathered with subtle patina and aged wood grain\n\nRevise: the same whimsical, paper-cut ships, and this time the water reflects the surrounding environment with gentle, visible ripples",
+  "prompt_tokens": 3316,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1571/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1571",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a whimsical maritime scene with stylized paper-cut ships sailing across a water body. The ships are rendered with weathered wood textures and leave behind delicate dissipating trails. The environment features gentle water ripples that continuously shift and distort reflections, creating a natural flow. The entire scene possesses a ceaseless movement where ships drift slowly across the canvas while water ripples animate in the background, giving the impression of an ever-changing seascape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.047
+}
