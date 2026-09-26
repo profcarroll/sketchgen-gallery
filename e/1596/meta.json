@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 1596, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1596/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, high-altitude perspective of a sprawling, densely illuminated cityscape at night. Bright, flowing streams of light traverse the frame, simulating the movement across the metropolitan grid. When these luminous streaks intersect, they spontaneously create momentary, sharply defined geometric forms. These temporary shapes build in complexity, lingering for varying durations before smoothly dissolving back into the continuous flow of light.",
+  "completion_tokens": 1393,
+  "created_utc": "2026-09-24T10:47:12Z",
+  "entry_id": 1596,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1393,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 96,
+        "sha256": "f36a54696ba880b39b6bf5abe89fb4d59e0f514f962940cfd61c52444f8b50ef",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3279,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.098,
+      "wall_s": 114.071
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1607,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the momentary geometric forms created by intersecting streaks will become more complex and linger longer before dissolving.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1460,
+    "root_entry_id": 1460
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the momentary geometric forms created by intersecting streaks will become more complex and linger longer before dissolving.",
+  "prompt_tokens": 3279,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1596/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1596",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, abstract cityscape at night where streams of light flow across the canvas like urban illumination. The lights move in a subtle flow field, creating an organic yet structured movement pattern that mimics traffic or electricity flowing through a dense metropolitan grid. When these luminous streaks intersect, they temporarily form geometric shapes\u2014triangles, squares, and pentagons\u2014that appear and dissolve with a sense of spontaneous energy. The effect builds complexity as intersections occur, creating an ever-shifting pattern of light and geometry that captures the essence of a bustling cityscape from a high-altitude perspective, where individual lights become part of a larger, interconnected system of illumination.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.071
+}
