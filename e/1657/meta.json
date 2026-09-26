@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1657, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1657/ Licensed CC BY 4.0.",
+  "brief": "A vibrant array of overlapping concentric circles expands and contracts with a gentle, rhythmic pulse. These glowing rings are rendered in a palette of fluorescent, electric colors that shift and intersect. The rings do not remain static; instead, they exhibit a mesmerizing movement, gradually and smoothly spiraling inward toward a central point on the canvas, creating a sense of graceful depth and convergence.",
+  "completion_tokens": 691,
+  "created_utc": "2026-09-26T05:40:56Z",
+  "entry_id": 1657,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 691,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 66,
+        "sha256": "e77ef67c32517f5d8b78eb16b380245dfb58444420da32a0206ff85e1ab6bd7a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.3,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 2946,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.857,
+      "wall_s": 62.299
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1669,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same multiple rings of concentric circles, and this time they should pulse gently while spiraling inward.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1561,
+    "root_entry_id": 1405
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same multiple rings of concentric circles, and this time they should gently spiral inward from the edges.\n\nRevise: the same multiple rings of concentric circles, and this time they should pulse gently while spiraling inward.",
+  "prompt_tokens": 2946,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1657/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1657",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of glowing, pulsing concentric circles that spiral inward toward the center of the canvas. Each ring pulses gently while simultaneously moving in a smooth spiral motion, creating an effect of graceful depth and convergence. The vibrant fluorescent color palette shifts through hues that blend and intersect as the rings expand and contract, producing a hypnotic visual rhythm. The animation runs continuously without any user input, with each ring following its own timing and movement pattern while maintaining the overall cohesive flow of the system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 62.299
+}
