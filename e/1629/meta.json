@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csand dunes migrating across the screen over a thousand years Revise:\u2026\u201d \u2014 sketchgen entry 1629, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1629/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays vast, organic formations of undulating sand dunes, simulating the passage of geological time. These massive, flowing shapes are detailed with visible, subtle striations that traverse all slopes. The color palette consists of deep, earthy tones\u2014shifting browns, beiges, and ochres. The dunes continuously migrate and reshape themselves, suggesting an endless, subterranean flow. The viewer's action is purely observation, as the shapes and layers gently, persistently, and perpetually change across the screen.",
+  "completion_tokens": 914,
+  "created_utc": "2026-09-24T13:39:36Z",
+  "entry_id": 1629,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 914,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 67,
+        "sha256": "b1e19fa9d785789c4d23826b35ba7ce2e7ce85bb2044bb1b06684e8accccbb66",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3102,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.198,
+      "wall_s": 78.106
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1640,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, organic shapes of undulating sand dunes, and this time with subtle, striated layers visible on all their slopes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1498,
+    "root_entry_id": 1498
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "sand dunes migrating across the screen over a thousand years\n\nRevise: the same vast, organic shapes of undulating sand dunes, and this time with subtle, striated layers visible on all their slopes.",
+  "prompt_tokens": 3102,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1629/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1629",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts vast, organic sand dunes that continuously reshape and migrate across the screen, simulating the slow passage of geological time. Using a combination of layered ellipses and subtle noise-based movement, the formations flow organically with undulating slopes and detailed striations that traverse all surfaces. The earthy color palette of browns, beiges, and ochres creates a sense of depth and texture, while the constant motion suggests an endless, subterranean flow. Each dune moves independently through a field of similar forms, creating a dynamic landscape that evolves continuously without any external input, capturing the patient persistence of natural erosion and deposition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.106
+}
