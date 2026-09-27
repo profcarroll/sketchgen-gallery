@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 1681, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1681/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, dynamically woven tapestry composed of brightly colored threads. These threads constantly interweave and shift, forming an evolving, intricate pattern. The structure of the pattern is dictated by a strict geometric rule: threads are only permitted to intersect at points where exactly three distinct colors meet. The resulting textile appears to weave itself continuously, creating a complex, living mosaic of crossing lines that never settles into a repeating rhythm.",
+  "completion_tokens": 1070,
+  "created_utc": "2026-09-26T18:21:11Z",
+  "entry_id": 1681,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1070,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 90,
+        "sha256": "fd1519e0b84ad8ef5ad8b6e389051dc72bab22264992e6c6a3d422e05dcc3959",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3151,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.336,
+      "wall_s": 86.961
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1694,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1598,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.\n\nRevise: the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.",
+  "prompt_tokens": 3151,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1681/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1681",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuously evolving tapestry of vibrant threads that weave through the canvas according to strict geometric rules. The threads move independently with varying directions and speeds, leaving trails behind them. Where threads come close together, they form connections that intersect at points where exactly three distinct colors meet\u2014a rule that governs the entire composition. These intersections create a complex, living mosaic of crossing lines that never settles into repetition, producing an ever-shifting visual pattern reminiscent of a dynamic textile being woven itself. The interplay between movement, color, and geometric constraint results in a mesmerizing display of organic complexity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.961
+}
