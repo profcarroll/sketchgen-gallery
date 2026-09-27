@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cread Finnegan's Wake by James Joyce and then create an interactive sk\u2026\u201d \u2014 sketchgen entry 1719, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1719/ Licensed CC BY 4.0.",
+  "brief": "The canvas is dominated by a dense, continuous vortex of semi-transparent textual characters, originating from James Joyce\u2019s *Finnegans Wake*. These letters flow and swirl in a perpetual, amorphous stream, appearing to drift and eddy constantly. Periodically, as the characters reach a point of convergence, the flow abruptly shifts. The jumbled mass of letters momentarily organizes itself into perfectly legible, sequential lines of text, displaying a stark luminosity reminiscent of old newsprint, before immediately collapsing back into the swirling, semi-transparent vortex.",
+  "completion_tokens": 1553,
+  "created_utc": "2026-09-26T22:47:20Z",
+  "entry_id": 1719,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1553,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 136,
+        "sha256": "9e782a5cc81da33d2fe2d52f7ad5ab207f4d7cd94a3b9f611f355f153862ddf7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.5,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3626,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.405,
+      "wall_s": 131.911
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1732,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, flowing vortex of semi-transparent textual characters, and this time the moment of coalescence must briefly arrange the letters into fully legible, sequential lines of text.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1646,
+    "root_entry_id": 1374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "read Finnegan's Wake by James Joyce and then create an interactive sketch that interprets the text\n\nRevise: the same perpetual, swirling vortex of semi-transparent characters, and this time when the textual elements coalesce, they must briefly adopt the luminosity and stark contrast of old newsprint before dissolution.\n\nRevise: the same continuous, flowing vortex of semi-transparent textual characters, and this time the dissolution must occur via a perceptible, gradual fade rather than an instant return to the amorphous stream.\n\nRevise: the same continuous, flowing vortex of semi-transparent textual characters, and this time the moment of coalescence must briefly arrange the letters into fully legible, sequential lines of text.",
+  "prompt_tokens": 3626,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1719/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1719",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a continuous, flowing vortex of semi-transparent textual characters inspired by James Joyce's *Finnegans Wake*. The characters swirl and eddy in an organic pattern, forming a dense, amorphous stream that dominates the canvas. Every few seconds, the flow momentarily organizes itself into perfectly legible, sequential lines of text \u2014 a stark contrast to the swirling chaos \u2014 before collapsing back into its continuous vortex form. The effect uses a particle system with physics-based movement, color blending, and periodic reorganization to create an evolving visual narrative that captures both the fluidity and structure inherent in Joyce's text.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.911
+}
