@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 1758, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1758/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a tapestry created by countless brightly colored threads, which dynamically weave across the plane. Threads continuously interweave in complex, patterned structures, forming geometric constraints based on the intersection points. The viewer observes the continuous flow of color and tension as the tapestry develops, following strict geometric rules: the threads only intersect either when three distinct colors meet, or at precise ninety-degree angles. This dynamic weaving process is self-contained and constantly progresses without requiring any input.",
+  "completion_tokens": 1363,
+  "created_utc": "2026-09-27T20:36:16Z",
+  "entry_id": 1758,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1363,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 129,
+        "sha256": "63abf8e2cc5609631aac384c3577fa8f857f588c75d0bdee893ca28c67e34748",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3402,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.6,
+      "wall_s": 124.823
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1771,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamically woven tapestry of brightly colored threads, and this time the intersection points must only occur at angles of perfect ninety degrees.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1681,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.\n\nRevise: the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.\n\nRevise: the same dynamically woven tapestry of brightly colored threads, and this time the intersection points must only occur at angles of perfect ninety degrees.",
+  "prompt_tokens": 3402,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1758/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1758",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic tapestry of colorful threads that weave across the canvas in continuous motion. Each thread moves independently with its own direction and color, leaving trails behind it as it flows. Where threads come close to each other, they form connections at precise 90-degree angles, creating a structured geometric pattern. The system maintains a constant flow of new threads entering the canvas while older ones fade out, ensuring the weaving never stops. The result is an ever-evolving pattern of intersecting lines that follows strict geometric rules, producing a visually compelling and mathematically constrained composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.823
+}
