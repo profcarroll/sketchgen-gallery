@@ -1,0 +1,211 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdraw the Earth in 3D floating in space engulfed by a swarm of orbitin\u2026\u201d \u2014 sketchgen entry 1659, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1659/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a brilliant blue and green Earth suspended in infinite, deep black space. This central planet is encircled by a dense, intricate swarm of glowing points and trajectories that represent satellites. These orbiting elements are the key feature, displaying highly complex and varying paths. Some satellites hug the atmosphere while others drift at extreme altitudes, and their orbital paths constantly change their angles relative to the viewer, creating a deeply dynamic and mesmerizing celestial panorama that moves continuously.",
+  "completion_tokens": 2475,
+  "created_utc": "2026-09-26T05:55:22Z",
+  "entry_id": 1659,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 823,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (69 lines of code before, 70 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same celestial scene showing the Earth and orbiting satellites, and this time with the swarm exhibiting more visible variations in orbital altitudes and inclinations.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "42b4675148304757f4f0da536f8e54d62270379ce4665247ace4a5a6b02d324c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.854,
+      "prompt_tokens": 3160,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.799,
+      "wall_s": 71.844
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 826,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (69 lines of code before, 70 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same celestial scene showing the Earth and orbiting satellites, and this time with the swarm exhibiting more visible variations in orbital altitudes and inclinations.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 93,
+        "sha256": "d9e4ff72fe56704eb54b2ef7ec254d9548101b118d7b4bdea76302e5706666a7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "num_ctx": 16384,
+      "preload_s": 0.481,
+      "prompt_tokens": 3384,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.368,
+      "wall_s": 76.899
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 826,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (69 lines of code before, 70 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same celestial scene showing the Earth and orbiting satellites, and this time with the swarm exhibiting more visible variations in orbital altitudes and inclinations.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 93,
+        "sha256": "d9e4ff72fe56704eb54b2ef7ec254d9548101b118d7b4bdea76302e5706666a7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.3,
+      "num_ctx": 16384,
+      "preload_s": 0.346,
+      "prompt_tokens": 3384,
+      "resources_loaded": [
+        {
+          "bytes": 44098,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.301,
+      "wall_s": 46.683
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1671,
+  "last_error": "gate exit 1: checks failed: revised",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same celestial scene showing the Earth and orbiting satellites, and this time with the swarm exhibiting more visible variations in orbital altitudes and inclinations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1564,
+    "root_entry_id": 1409
+  },
+  "loads": [
+    {
+      "bytes": 44098,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "draw the Earth in 3D floating in space engulfed by a swarm of orbiting satellites\n\nRevise: the same dynamic depiction of Earth and orbiting satellites, and this time with the satellites exhibiting varying orbital inclinations.\n\nRevise: the same celestial scene showing the Earth and orbiting satellites, and this time with the swarm exhibiting more visible variations in orbital altitudes and inclinations.",
+  "prompt_tokens": 9928,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1659/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1659",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a dynamic visualization of Earth suspended in deep space, surrounded by a swarm of orbiting satellites. The scene features a textured Earth rotating slowly against a backdrop of thousands of stars. The satellite swarm exhibits highly varied orbital paths with different altitudes, inclinations, and eccentricities, creating an intricate tapestry of glowing trajectories that continuously evolve. Each satellite follows its own complex orbital mechanics while maintaining the overall cohesive motion of the system, resulting in a mesmerizing celestial panorama that captures the complexity and beauty of our orbital environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 195.426
+}
