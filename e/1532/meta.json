@@ -1,0 +1,188 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 1532, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1532/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an evolving, abstract landscape composed of intersecting geometric fields. These fields feature complex, overlapping structures rendered in vibrant, shifting colors. The shapes are constantly morphing and intersecting, creating a sense of depth and motion. Furthermore, the outermost elements of the composition are animated to adopt pronounced, directional wave-like curves. The entire scene continuously changes on its own, reacting dynamically to sound detected through the microphone.",
+  "completion_tokens": 4112,
+  "created_utc": "2026-09-24T03:15:54Z",
+  "entry_id": 1532,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1383,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 113 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (113 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 2500,
+        "played": 25,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 107,
+        "sha256": "7b727453c58d238516875855b7361cb422916191cc19129887926022d07097f7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 113.0,
+      "num_ctx": 16384,
+      "preload_s": 0.077,
+      "prompt_tokens": 3285,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 90.338,
+      "wall_s": 113.886
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1377,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n    fix: the gate pokes the canvas with one real click at its centre and gives the sketch no other gesture; a browser keeps an AudioContext suspended until a gesture, so start audio from that click \u2014 call `userStartAudio()` (or `getAudioContext().resume()`) inside `mousePressed()` on the canvas, not in `setup()` and not behind an HTML button the gate never clicks\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 152,
+        "sha256": "04be211bea9a3dd17640e99de47c41c29e931749c20cb3887b7a434e8858c9f6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.9,
+      "num_ctx": 16384,
+      "preload_s": 0.078,
+      "prompt_tokens": 3916,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 13.799,
+      "wall_s": 207.183
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1352,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n    fix: the gate pokes the canvas with one real click at its centre and gives the sketch no other gesture; a browser keeps an AudioContext suspended until a gesture, so start audio from that click \u2014 call `userStartAudio()` (or `getAudioContext().resume()`) inside `mousePressed()` on the canvas, not in `setup()` and not behind an HTML button the gate never clicks\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 153,
+        "sha256": "be4c7b006d81fb6f89d596def7714c33f17ca122269b2c882da892814b2fcdad",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.0,
+      "num_ctx": 16384,
+      "preload_s": 0.078,
+      "prompt_tokens": 3888,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 13.799,
+      "wall_s": 122.469
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1543,
+  "last_error": "gate exit 1: checks failed: audio_context_running",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same evolving, abstract landscape of intersecting geometric fields, and this time allow the outermost elements to adopt directional, wave-like curves.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1363,
+    "root_entry_id": 1363
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: the same evolving, abstract landscape of intersecting geometric fields, and this time allow the outermost elements to adopt directional, wave-like curves.",
+  "prompt_tokens": 11089,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1532/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1532",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates an evolving, abstract landscape using intersecting geometric fields that morph and shift in real-time. The composition features multiple layers of animated shapes\u2014circles and rectangles\u2014that respond dynamically to sound input from the microphone. Vibrant, shifting colors create a sense of depth and motion as the fields continuously transform. The outermost elements exhibit pronounced wave-like curves that emphasize the organic flow of the system. The entire scene is self-contained and reacts autonomously to audio stimuli, creating an immersive, ever-changing visual experience where sound directly influences form and color.",
+  "submitted_by": "profcarroll",
+  "wall_s": 443.538
+}
