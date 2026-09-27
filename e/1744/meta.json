@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca fishbowl seen from the fish's point of view Revise: the same submer\u2026\u201d \u2014 sketchgen entry 1744, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1744/ Licensed CC BY 4.0.",
+  "brief": "The viewer is immersed in a deep, ethereal underwater environment. The scene is dominated by visible, slow-moving currents that drift across the screen. Floating within this deep blue expanse are numerous semi-transparent, abstract shapes. As the currents guide the movement, these shapes naturally drift together, forming occasional, glowing clusters of light that pulse softly along the visible flow lines, creating a dynamic, undulating field of luminescence.",
+  "completion_tokens": 1160,
+  "created_utc": "2026-09-27T01:31:15Z",
+  "entry_id": 1744,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1160,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 80,
+        "sha256": "a226202d6f6ab48f2c53cddce25e4e9f769c898db798aa5c42304b2880c430ec",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3335,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.39,
+      "wall_s": 97.414
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1757,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same immersive, submerged view into a deep aquatic environment, and this time having the semi-transparent shapes gather into luminous clusters along the visible currents.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1675,
+    "root_entry_id": 1500
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a fishbowl seen from the fish's point of view\n\nRevise: the same submerged view, and this time increasing the density and size of the suspended, semi-transparent shapes.\n\nRevise: the same immersive view into a submerged aquatic environment, and this time introducing visible, slow currents that guide the semi-transparent shapes in a gradual circular pattern.\n\nRevise: the same immersive, submerged view into a deep aquatic environment, and this time having the semi-transparent shapes gather into luminous clusters along the visible currents.",
+  "prompt_tokens": 3335,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1744/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1744",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch immerses viewers in a tranquil underwater world where semi-transparent, abstract forms drift slowly through an ethereal current field. The scene features a deep blue gradient background that evokes ocean depths, while countless particles move in subtle, flowing patterns guided by a dynamically generated flow field. As these particles drift, they occasionally gather into luminous clusters that pulse gently, creating an undulating field of soft light that pulses with the invisible currents. The visual effect emphasizes the organic, fluid nature of water through smooth, continuous motion and the natural gathering of elements along invisible flow lines, resulting in a serene yet dynamic aquatic environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.414
+}
