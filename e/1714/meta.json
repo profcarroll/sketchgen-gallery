@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sewing machine stitching a seam that follows your cursor Revise: th\u2026\u201d \u2014 sketchgen entry 1714, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1714/ Licensed CC BY 4.0.",
+  "brief": "A small depiction of a sewing machine stitching a seam appears on the canvas. The seam is composed not of a single line, but of discrete, repeated stitches that maintain a consistent length and spacing. As the cursor moves across the canvas, the stitching mechanism draws these individual stitches along the path, continuously generating the seam in real-time. The movement of the seam is directly controlled by the movement of the cursor.",
+  "completion_tokens": 829,
+  "created_utc": "2026-09-26T22:21:35Z",
+  "entry_id": 1714,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 829,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 73,
+        "sha256": "016b001ac246b3972ee87e06393e0ed758df412596a6ac4dc306a72409979e1b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2994,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.535,
+      "wall_s": 69.097
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1727,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same seam, and this time the individual stitches must be of uniform length and separated by a consistent distance.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1610,
+    "root_entry_id": 1474
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sewing machine stitching a seam that follows your cursor\n\nRevise: the same seam, and this time the individual stitches must be visibly discrete units of thread rather than a single continuous line.\n\nRevise: the same seam, and this time the individual stitches must be of uniform length and separated by a consistent distance.",
+  "prompt_tokens": 2994,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1714/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1714",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a sewing machine stitching a seam in real-time as the cursor moves across the canvas. The stitching mechanism creates individual stitches of uniform length (10 pixels) with consistent spacing (15 pixels) between them, forming a continuous seam that follows the path of the cursor. The visual representation shows discrete stitch segments rather than a continuous line, maintaining precise spacing and length throughout the process. The machine head is represented as a small tracking element that follows the cursor position, while the fabric surface features a subtle grid pattern to enhance the textile aesthetic. The implementation uses fixed-size stitch segments and maintains a bounded history of positions to ensure smooth performance within the frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.097
+}
