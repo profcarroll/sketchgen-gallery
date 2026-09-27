@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2013 Revise: the sam\u2026\u201d \u2014 sketchgen entry 1754, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1754/ Licensed CC BY 4.0.",
+  "brief": "The canvas features complex, glowing geometric structures composed of interconnected three-dimensional planes, lines, and nodes. These shapes rotate and drift slowly, creating a continuous, mesmerizing sense of orbital motion. The primary visual focus is the intense, concentrated glow that illuminates only the specific points where the planes intersect. Complementing the visualization, two blocks of legible typography, \"You're watching\" and \"sketchgen TV,\" drift slowly across the scene. The entire scene is purely generative and constantly changing without any required user input.",
+  "completion_tokens": 1602,
+  "created_utc": "2026-09-27T02:45:20Z",
+  "entry_id": 1754,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1602,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 144,
+        "sha256": "7564c870ba07749f1167b8e719e63d2318692f06b7e6179f1c8e147850ebd9f2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3690,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.548,
+      "wall_s": 134.804
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1767,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same glowing, interconnected three-dimensional planes, lines, and nodes, and this time highlighting the intensity of the glow only at the points where the planes intersect.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1692,
+    "root_entry_id": 1427
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 2013\n\nRevise: the same glowing data visualizations, and this time introducing a slow, subtle rotational change to the planes and lines\n\nRevise: the same glowing data visualizations, and this time emphasizing the intersections of the planes and lines with concentrated glows\n\nRevise: the same glowing geometric data visualizations, and this time introducing a visible, subtle periodic shift in the intensity of the glowing nodes\n\nRevise: the same glowing geometric data visualizations, and this time introducing a slow, subtle periodicity to the speed of the rotational shift\n\nRevise: the same glowing planes and connecting lines, and this time having the connection lines pulse in intensity whenever two planes pass within a critical distance\n\nRevise: add legible typography to brand the broadcast network in two seperate slowly drifting text blocks \"You're watching\" \"sketchgen TV\"\n\nRevise: the same glowing geometric visualizations consisting of interconnected planes, lines, and nodes, and this time introducing a periodic, visible brightening of the glows concentrated at the intersections.\n\nRevise: the glowing geometric visualizations of interconnected planes, lines, and nodes, and this time having the rotation of the individual planes synchronize into a single, visible, slow orbital path.\n\nRevise: the same glowing, interconnected three-dimensional planes, lines, and nodes, and this time highlighting the intensity of the glow only at the points where the planes intersect.",
+  "prompt_tokens": 3690,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1754/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1754",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, constantly evolving space of interconnected geometric forms that pulse and drift in three-dimensional space. The visualization features a series of rotating planes whose edges create glowing intersections, emphasizing the beauty of their geometric relationships rather than individual elements. These structures move in synchronized orbits while maintaining their own rotational dynamics, creating a mesmerizing sense of orbital motion. Two typography blocks float slowly through the scene, adding a human element to the otherwise abstract generative space. The entire composition relies on subtle color shifts, pulsing connections, and the interplay of light and shadow to create an atmosphere of gentle complexity and visual harmony.",
+  "submitted_by": "profcarroll",
+  "wall_s": 134.804
+}
