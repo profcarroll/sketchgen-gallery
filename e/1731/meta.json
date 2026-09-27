@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 1731, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1731/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, sprawling urban landscape characterized by wet, highly reflective architecture. The color palette is deep and luminous, centered on cycling bioluminescent effects. The scene is defined by the constant, rhythmic flux of light emanating from hidden sources, causing the ambient atmosphere and reflected colors to shift dramatically. These hues appear to bloom and transition across the wet surfaces as the ambient light cycles from deep night to ethereal dawn. The movement is organic and continuous, making the environment feel alive and ever-changing.",
+  "completion_tokens": 1635,
+  "created_utc": "2026-09-27T00:06:31Z",
+  "entry_id": 1731,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1635,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "199d5ebcaed07d90e7bacb6bc93a3f80f4518913294676de14ae0836930139f4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 83.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3444,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 38.129,
+      "wall_s": 131.001
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1744,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the reflected colors shift and bloom as the ambient atmospheric light changes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1660,
+    "root_entry_id": 1412
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color palette and mood\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause small clusters of luminous plankton to drift across the wet architectural surfaces.\n\nRevise: the same vast, reflective cityscape and cyclical bioluminescence, and this time the drifting luminous plankton gather and illuminate specific pools on the wet architectural surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the glowing pools cast stable, geometric reflections onto the wet surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the reflected colors shift and bloom as the ambient atmospheric light changes.",
+  "prompt_tokens": 3444,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1731/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1731",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an immersive, ever-shifting urban landscape where bioluminescent light cycles through deep night to ethereal dawn. The cityscape features angular buildings with wet, highly reflective surfaces that continuously shift in hue and intensity, creating a living, breathing environment. The scene pulses with rhythmic color transitions and dynamic reflections that ripple across the wet architecture, giving the impression of an alive ecosystem. Through subtle camera movement and time-based animations, the viewer experiences a continuous transformation of light and atmosphere that makes the urban environment feel organic and responsive to an unseen ambient energy source.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.001
+}
