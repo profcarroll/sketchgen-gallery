@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 1699, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1699/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, three-dimensional molecular model of the DNA double helix. The structure is composed of backbones and labeled base spheres (A, T, C, G) connected by visible bonds. The entire helix continuously demonstrates a winding and unwinding motion. A key, focused action involves a specific section of the helix actively unzipping away from the main coil, illustrating the process of strand separation initiation. The viewing angle and orientation of the complex molecular structure can be manipulated by the user through interaction.",
+  "completion_tokens": 3419,
+  "created_utc": "2026-09-26T20:39:03Z",
+  "entry_id": 1699,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1423,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 60)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 115 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 154,
+        "sha256": "1b57ded069fa2f493f917255aee7537c925529a7ff20fe079bf9b62fe4af3982",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3787,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.812,
+      "wall_s": 127.988
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1996,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 154,
+        "sha256": "1b57ded069fa2f493f917255aee7537c925529a7ff20fe079bf9b62fe4af3982",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4110,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.83,
+      "wall_s": 176.085
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1712,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1587,
+    "root_entry_id": 1450
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: the same dynamic, three-dimensional model of the DNA double helix, and this time showing a specific segment unwinding completely to initiate strand separation.\n\nRevise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).",
+  "prompt_tokens": 7897,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1699/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1699",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dynamic three-dimensional model of the DNA double helix using WebGL rendering. The visualization shows the characteristic twisted ladder structure with labeled base pairs (A, T, C, G) connected by hydrogen bonds. The entire helix gently oscillates and rotates in space, demonstrating molecular motion. A key feature is the active unzipping animation that targets a specific section of the helix, showing how DNA strands separate during replication or transcription. Users can manipulate the viewing angle through mouse interaction. The implementation stays within performance constraints by avoiding excessive draw calls and efficiently managing the molecular components' positions and connections in real-time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 304.073
+}
