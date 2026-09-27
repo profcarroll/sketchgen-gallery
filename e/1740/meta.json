@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 1740, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1740/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a ceaseless cascade of colorful, crystalline rectangular blocks. These blocks appear to be composed of iridescent, shifting materials, catching and reflecting light with every movement. They fall and accumulate in a continuous, perpetually spiraling descent, creating a dense, vibrant curtain of shifting color and shape. There is no user input required; the blocks continuously fall, making the scene a mesmerizing, relentless display of perpetual motion and color.",
+  "completion_tokens": 996,
+  "created_utc": "2026-09-27T01:08:29Z",
+  "entry_id": 1740,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 996,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 101,
+        "sha256": "ad3ba056560c41cef5d8b1b9fe47931b925ca9342661ff275d7af026636d7c09",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3184,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.911,
+      "wall_s": 81.972
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1753,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1670,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes\n\nRevise: the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.",
+  "prompt_tokens": 3184,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1740/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1740",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing cascade of colorful, crystalline rectangular blocks that continuously fall and spiral in an endless motion. Each block displays iridescent material properties through dynamic color shifts and crystalline shine effects, creating a vibrant curtain of shifting light and form. The blocks accumulate in a perpetual spiral descent, with physics-based movement including gravity, friction, and bouncing off screen edges. The composition is enhanced by a central vortex that draws the eye while maintaining the overall sense of continuous, hypnotic motion. The visual effect relies on HSB color cycling and layered transparency to create depth and luminosity without complex rendering techniques.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.972
+}
