@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 1728, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1728/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with highly energized, neon-lit geometric shapes that appear to cascade and intersect. The forms are restricted exclusively to octahedral and hexagonal symmetries, shifting and moving across the screen. The geometry is continuously active, forming structured patterns that are alternately bound to rigid, rectilinear axes or drawn into synchronized, repeating helical spirals. The entire kinetic display is highly responsive, visibly shifting and accelerating its movements in time with the rhythm and beat of external audio input.",
+  "completion_tokens": 3031,
+  "created_utc": "2026-09-26T23:50:21Z",
+  "entry_id": 1728,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1352,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n    fix: the gate pokes the canvas with one real click at its centre and gives the sketch no other gesture; a browser keeps an AudioContext suspended until a gesture, so start audio from that click \u2014 call `userStartAudio()` (or `getAudioContext().resume()`) inside `mousePressed()` on the canvas, not in `setup()` and not behind an HTML button the gate never clicks\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 140,
+        "sha256": "ff4110ecac3da98c782494b042dd78d49a7878424029690feef1d7c9091bf38c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.4,
+      "num_ctx": 16384,
+      "preload_s": 0.075,
+      "prompt_tokens": 3649,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.086,
+      "wall_s": 119.453
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1679,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 155,
+        "sha256": "f290f482205d2b8c703d9a209cd6c8b509ab1145176288ba5867c6628cb024cc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.8,
+      "num_ctx": 16384,
+      "preload_s": 0.076,
+      "prompt_tokens": 3886,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.89,
+      "wall_s": 147.226
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1741,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1656,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.",
+  "prompt_tokens": 7535,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1728/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1728",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, audio-responsive visualization of geometric forms that cascade through space using octahedral and hexagonal symmetries. The shapes move along rectilinear axes while simultaneously tracing synchronized helical spirals, creating complex intersecting patterns that shift and pulse in rhythm with sound input. Neon-hued geometric forms appear to flow and accelerate, responding to audio energy by adjusting their speed and size. The visualization fills the entire canvas with an immersive field of motion that combines mathematical precision with organic fluidity, using only basic polygonal geometry to create a sense of volumetric complexity and kinetic energy.",
+  "submitted_by": "profcarroll",
+  "wall_s": 266.679
+}
