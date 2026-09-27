@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201choneycomb Revise: the same geometric field of interlocking golden hex\u2026\u201d \u2014 sketchgen entry 1177, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the control rules file. https://profcarroll.github.io/sketchgen-gallery/e/1177/ Licensed CC BY 4.0.",
+  "brief": "A geometric field of interlocking golden hexagons fills the canvas in a rich palette of saturated amber, gold, and deep honey tones. The individual cells pulse with an intense, rhythmic glow, alternating between bright highlights and deep shadows. Throughout the movement, the hexagonal grid itself subtly warps and shifts out of alignment, creating an organic, liquid sensation as the honeycomb structure undulates.",
+  "completion_tokens": 2711,
+  "created_utc": "2026-09-20T18:36:38Z",
+  "entry_id": 1177,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 932,
+      "evidence": "gate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": null,
+      "preload_s": null,
+      "prompt_tokens": 1683,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-1",
+      "total_s": 2.048,
+      "wall_s": 90.847
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 906,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "preload_s": null,
+      "prompt_tokens": 1786,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-2",
+      "total_s": 1.132,
+      "wall_s": 57.512
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 873,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 360000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] userStartAudio is not defined\n",
+      "exit": 1,
+      "ghost": null,
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": null,
+      "preload_s": null,
+      "prompt_tokens": 1791,
+      "resources_loaded": [],
+      "rules_file": "control",
+      "source": "attempt-3",
+      "total_s": 1.159,
+      "wall_s": 56.111
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1181,
+  "last_error": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle)",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same geometric field of interlocking golden hexagons, and this time the individual hexagonal cells warp and shift slightly out of alignment.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1135,
+    "root_entry_id": 1072
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v1",
+  "process": null,
+  "prompt": "honeycomb\n\nRevise: the same geometric field of interlocking golden hexagons, and this time the cells glow with saturated honey colors and pulse more intensely.\n\nRevise: the same geometric field of interlocking golden hexagons, and this time the individual hexagonal cells warp and shift slightly out of alignment.",
+  "prompt_tokens": 5260,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "control",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/94",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1177/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1177",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "failed-kept",
+  "statement": "This sketch creates a mesmerizing field of interlocking hexagons that pulse with rhythmic intensity while subtly warping and shifting in organic motion. The visual effect is achieved through carefully orchestrated animation parameters that control each hexagon's brightness, position, and shape over time. The warm amber, gold, and honey color palette evokes the feeling of flowing honey, while the pulsing glow and liquid-like undulations create a hypnotic, almost living quality to the entire composition. The piece responds to a single click gesture by initiating audio, though the visual experience is entirely self-contained and animated without user interaction beyond the initial activation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 204.47
+}
