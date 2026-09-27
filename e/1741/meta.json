@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 1741, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1741/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, dark field punctuated by the intermittent appearance of brilliant light. These light sources are perceived as coming from a distant, unseen point, pulsing with a distinct rhythm. The light does not stream continuously; instead, it emits sharp, distinct bursts of glowing colour, followed by a moment of absolute darkness before the cycle repeats. The rhythm is the defining element, creating a repetitive, cyclical pattern of light and shadow that draws the viewer's eye across the continuous, pulsing glow.",
+  "completion_tokens": 1188,
+  "created_utc": "2026-09-27T01:13:21Z",
+  "entry_id": 1741,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 649,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 67,
+        "sha256": "a335c9e72c0be648ec07f427ad9e4cb3434bef79e88b687c1b8f61ca71738a76",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 2901,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.338,
+      "wall_s": 56.504
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 539,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 64,
+        "sha256": "81250d1827d4870fb83e70f0185fe8149fabc095872fda75495a776e7250153a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3049,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.408,
+      "wall_s": 51.668
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1754,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same rhythmic, pulsing glow emanating from a distant source, and this time the flashes should momentarily pause between bursts.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1671,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.\n\nRevise: the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.\n\nRevise: the same rhythmic, pulsing glow emanating from a distant source, and this time the flashes should momentarily pause between bursts.",
+  "prompt_tokens": 5950,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1741/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1741",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dark, starry field punctuated by sudden bursts of bright light. The lights appear at random positions and follow a rhythmic pattern\u2014each one flashes sharply for a brief moment before returning to darkness, creating a pulsing effect that draws attention across the canvas. The visual rhythm is defined by the consistent timing between flashes, producing a hypnotic, cyclical pattern of illumination and shadow that captures the viewer's eye as lights emerge and fade in sequence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.172
+}
