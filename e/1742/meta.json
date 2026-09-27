@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca spirograph drawn by two planets orbiting each other Revise: the sam\u2026\u201d \u2014 sketchgen entry 1742, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1742/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays intricate, symmetrical spirograph patterns that appear to swirl and evolve across the plane. These geometric patterns suggest the complex paths traced by planets in deep space. The color palette is dominated by rich, shimmering gold and ethereal lilac tones. The formations move smoothly across the screen, creating a continuous, mesmerizing dance of interconnected shapes. There is no required interaction; the display is self-sustaining, always generating and shifting new forms.",
+  "completion_tokens": 1395,
+  "created_utc": "2026-09-27T01:18:50Z",
+  "entry_id": 1742,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 691,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (53 lines of code before, 53 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same intricate, symmetrical spirograph patterns, and this time rendered in shimmering gold and ethereal lilac tones.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 72,
+        "sha256": "1e5d8fb723f2adfbe170edc86a140eda2b454fcb17c817081f9a347f20cec00c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3026,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.697,
+      "wall_s": 61.035
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 704,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 72,
+        "sha256": "932309c6783a70f3b016b1208a85385aada22358c776b8b7c8b63c016cc52825",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3218,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.684,
+      "wall_s": 65.587
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1755,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, symmetrical spirograph patterns, and this time rendered in shimmering gold and ethereal lilac tones.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1672,
+    "root_entry_id": 1495
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a spirograph drawn by two planets orbiting each other\n\nRevise: the same symmetrical spirograph patterns, and this time rendered in richly saturated, vibrant neon space-inspired colours.\n\nRevise: the same complex, symmetrical spirograph patterns, and this time rendered in richly saturated emerald green and sapphire blue colors\n\nRevise: the same intricate, symmetrical spirograph patterns, and this time rendered in shimmering gold and ethereal lilac tones.",
+  "prompt_tokens": 6244,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1742/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1742",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch generates mesmerizing spirograph patterns that swirl and evolve across the canvas, evoking the celestial dance of planets in deep space. Using a rich palette dominated by shimmering gold and ethereal lilac tones, it creates intricate symmetrical designs that shift organically over time. The patterns emerge from mathematical relationships between rotating circles, producing complex, interlocking forms that move smoothly without any user interaction. Each frame builds upon the previous one through carefully calculated trigonometric functions, creating a continuous visual narrative of cosmic motion and geometric harmony.",
+  "submitted_by": "profcarroll",
+  "wall_s": 126.622
+}
