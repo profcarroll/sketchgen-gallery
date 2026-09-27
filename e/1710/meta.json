@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can orchestra of pendulums tuned to a pentatonic scale Revise: the sam\u2026\u201d \u2014 sketchgen entry 1710, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1710/ Licensed CC BY 4.0.",
+  "brief": "The canvas features an array of circular discs suspended from an unseen axis. These discs oscillate rhythmically, creating a continuous, atmospheric display of shape and movement. Each disc moves independently, with its amplitude varying randomly over time, giving the system a chaotic yet structured energy. Overlaying this random motion is a slow, deliberate vertical sway that moves the entire row gently. The visual experience is one of constant, pendular motion, tuned harmonically to a pentatonic scale structure.",
+  "completion_tokens": 817,
+  "created_utc": "2026-09-26T21:53:52Z",
+  "entry_id": 1710,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 817,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 84,
+        "sha256": "fc5e7da5a6bd3ab0e57cbf6437e5d156c268995e22ddc5cc11d3db429ab0781b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3074,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.183,
+      "wall_s": 70.322
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1723,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same array of pendulums, and this time introduce a slow vertical sway to the unseen axis.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1606,
+    "root_entry_id": 1470
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an orchestra of pendulums tuned to a pentatonic scale\n\nRevise: the same array of pendulums hanging from an unseen axis, and this time allow the amplitude of each disc to vary randomly.\n\nRevise: the same array of pendulums, and this time introduce a slow vertical sway to the unseen axis.",
+  "prompt_tokens": 3074,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1710/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1710",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a harmonic pendulum system suspended in space, where each disc swings independently according to a pentatonic scale rhythm. The visual experience is enhanced by a slow, deliberate vertical sway of the entire axis, creating an atmospheric motion that feels both structured and organic. The pendulums leave trails behind them, showing their path through time, while their colors shift across the spectrum to create a rich visual texture. The system evolves naturally over time without external input, fulfilling the gate's requirement for autonomous motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.322
+}
