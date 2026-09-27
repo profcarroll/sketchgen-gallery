@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmacaroni and cheese Revise: the same abstract clusters of creamy yell\u2026\u201d \u2014 sketchgen entry 1722, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1722/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract field of rich, creamy yellow-orange pigment. The primary shapes are clusters of interconnected, curved forms that represent macaroni, which exhibit highly varied sizes and interlocking structures. These abstract elements are defined by sharp, clear edges and a clear structural separation from neighboring forms, creating a dense, cohesive mosaic of smooth, curving layers. The composition remains fixed and static, presenting only its defined structural complexity.",
+  "completion_tokens": 3206,
+  "created_utc": "2026-09-26T23:08:13Z",
+  "entry_id": 1722,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1760,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 129)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 11.4486/255, 308340 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 185,
+        "sha256": "1d4c89f983dc49473fa2d3e0157bd8eb7c48618ff1a581ed1708e50cf95fd97d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 36.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4073,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 18.683,
+      "wall_s": 162.128
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1446,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 185,
+        "sha256": "7244a32b79e81f8a05babd798352b58136a75ce25d0ef363c4b4326580142cd0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4197,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.761,
+      "wall_s": 139.862
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1735,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract clusters of rich, creamy yellow-orange pigment, and this time the sharply curved forms should have more defined edges and structural separation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1650,
+    "root_entry_id": 1381
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "macaroni and cheese\n\nRevise: the same abstract clusters of creamy yellow-orange sauce and smooth, curved macaroni shapes, and this time the macaroni pieces incorporate more varying sizes and interlocking structures.\n\nRevise: the same abstract, interlocking clusters of creamy yellow-orange pigment, and this time the curves and overlapping edges of the macaroni pieces are more sharply defined and structurally varied.\n\nRevise: the same abstract clusters of rich, creamy yellow-orange pigment, and this time the sharply curved forms should have more defined edges and structural separation.",
+  "prompt_tokens": 8270,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1722/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1722",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static, abstract composition of macaroni-like forms arranged in a dense, interlocking field. Each form is rendered as a cluster of curved, interconnected shapes with sharp edges and clear structural separation from its neighbors. The palette draws from rich, creamy yellow-orange hues that create depth and cohesion across the canvas. The work explores the tension between organic complexity and geometric clarity through carefully modulated curves and layered forms. The static nature ensures that viewers can study the interplay of structure and form without motion distraction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 301.99
+}
