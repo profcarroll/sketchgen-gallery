@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca typewriter that types by itself and slowly gains confidence Revise:\u2026\u201d \u2014 sketchgen entry 1738, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1738/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a constant flow of text appearing in black characters across an antique, cream-colored surface. The text continually streams across the vintage paper, causing the material to physically warp and buckle. This automatic writing action generates increasingly deep creases that permanently mark the paper. As the stream continues, the accumulating structural stress causes the aged surface to develop visible, fine hairline fractures that spiderweb across the visible material, documenting the passage of time.",
+  "completion_tokens": 1532,
+  "created_utc": "2026-09-27T00:52:16Z",
+  "entry_id": 1738,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1532,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 128,
+        "sha256": "caa4199ddff571a144ed5695ca7f5a811bf0a83d99ed9b9b79739febcff20884",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3463,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.02,
+      "wall_s": 123.832
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1751,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1668,
+    "root_entry_id": 1483
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a typewriter that types by itself and slowly gains confidence\n\nRevise: the same automatic character generation, and this time the paper slightly warps around the typing action.\n\nRevise: the same automatic flow of text appearing on vintage paper, and this time the paper creases visibly and permanently around the type stream.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.",
+  "prompt_tokens": 3463,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1738/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1738",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the passage of time through the physical act of writing on aged paper. As text continuously flows across the canvas, it creates both visible creases and microscopic fractures in the paper's surface. The characters appear and move with a gentle warping effect, while the accumulated stress from the text stream manifests as permanent structural changes \u2014 hairline cracks that spiderweb outward from each character position. The effect suggests how writing imprints not just information but physical memory onto material surfaces, documenting the continuous process of aging and decay through mechanical stress.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.832
+}
