@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 1705, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1705/ Licensed CC BY 4.0.",
+  "brief": "The canvas continuously displays a field of autonomous, circular cells that replicate over time. The cells drift and approach each other, initiating a cyclical division process. Before separating, the narrow point connecting two sister cells visibly constricts, pulsing with an intense internal light as the membrane pinches off the daughter cell. This process repeats, causing the number of distinct, separated cells to grow exponentially across the canvas space.",
+  "completion_tokens": 1248,
+  "created_utc": "2026-09-26T21:11:37Z",
+  "entry_id": 1705,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1248,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 128,
+        "sha256": "ffc450aad242c60b4d08e45b4fe9727c0d03c39251d27f82fcf131e7852f412f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3484,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.62,
+      "wall_s": 108.889
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1718,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time the narrow constriction point must visibly tighten and pulsate with a bright internal light immediately before separation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1591,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.\n\nRevise: the same autonomous cellular replication, and this time the narrow constriction point must visibly tighten and pulsate with a bright internal light immediately before separation.",
+  "prompt_tokens": 3484,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1705/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1705",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an evolving ecosystem of self-replicating cellular structures that grow, move, and divide autonomously. Each cell pulses with internal rhythm before initiating a complex division process, where the narrowing connection point visibly constricts and pulses with intense light just prior to separation. The visualization captures the cyclical nature of cellular replication through continuous motion, growth, and fragmentation, creating an organic field of expanding forms that fill the canvas space over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.889
+}
