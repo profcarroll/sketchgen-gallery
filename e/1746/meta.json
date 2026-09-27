@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 1746, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1746/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, evolving biological mass that simulates the continuous growth of a slime mold structure. Illuminated by realistic three-dimensional lighting, the surface appears highly detailed, revealing sharp, angular folds and ridges. The structure's surface is characterized by intricate, intersecting layers of deep crystalline striations and vein patterns. The mass continuously expands and shifts, giving the impression of slow, organized biological movement.",
+  "completion_tokens": 5274,
+  "created_utc": "2026-09-27T01:49:19Z",
+  "entry_id": 1746,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1665,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 136 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex, evolving biological mass, and this time the sharp folds exhibit visible, intersecting layers of deep crystalline striations and vein patterns.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 169,
+        "sha256": "e5e900a1ab21c5bbd5a5836900941b91fa6490a1eb1d1f45c5d372831081a80b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4003,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.73,
+      "wall_s": 149.162
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1659,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (136 lines of code before, 136 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex, evolving biological mass, and this time the sharp folds exhibit visible, intersecting layers of deep crystalline striations and vein patterns.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 169,
+        "sha256": "e5e900a1ab21c5bbd5a5836900941b91fa6490a1eb1d1f45c5d372831081a80b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.4,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4191,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 30.216,
+      "wall_s": 158.175
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1950,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 169,
+        "sha256": "8f37fad730d9b787c7f9a8441ab3ba827549c1d11182bd07863a0161d2ca8ca7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 51.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4191,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 34.995,
+      "wall_s": 174.646
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1759,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, evolving biological mass, and this time the sharp folds exhibit visible, intersecting layers of deep crystalline striations and vein patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1678,
+    "root_entry_id": 1375
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same complex, evolving biological structure, and this time the defined folds and masses appear sharper and more rigid.\n\nRevise: the same complex, evolving biological structure, and this time the individual masses exhibit fine, crystalline fracturing along their defined folds and ridges.\n\nRevise: the same complex, evolving biological masses, and this time the folds exhibit sharp, angular ridges of visible crystal fracture.\n\nRevise: the same complex, evolving biological mass, and this time the sharp folds exhibit visible, intersecting layers of deep crystalline striations and vein patterns.",
+  "prompt_tokens": 12385,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1746/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1746",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates the growth and movement of a complex biological mass resembling slime mold, rendered in three-dimensional space with realistic lighting. The structure continuously evolves through organic expansion and shifting forms, featuring both soft, folded regions and sharp, crystalline edges. The visual effect emphasizes intricate surface details through intersecting layers of striations and vein patterns that appear to shift and interact dynamically across the mass. The piece explores themes of biological emergence and geometric complexity through procedural animation and layered visual textures.",
+  "submitted_by": "profcarroll",
+  "wall_s": 481.983
+}
