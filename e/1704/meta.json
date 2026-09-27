@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1704, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1704/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a realistic, three-dimensional representation of the solar system. The Sun and all associated planets are accurately scaled and positioned within a dark void, exhibiting dynamic lighting and shadow effects. Glowing, visible orbital paths connect every celestial body. The entire system is stationary until the user clicks the mouse, at which point the planets begin to orbit and rotate dynamically, completing the visual animation.",
+  "completion_tokens": 1414,
+  "created_utc": "2026-09-26T21:06:37Z",
+  "entry_id": 1704,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1414,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 113,
+        "sha256": "995c77ed4b8284d46132d7c33fac8eb059b9f171ef028c17f7306d14fad9a847",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.046,
+      "prompt_tokens": 3347,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.422,
+      "wall_s": 116.63
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1717,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1590,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.\n\nRevise: the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.",
+  "prompt_tokens": 3347,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1704/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1704",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a dynamic, three-dimensional model of the solar system rendered using p5.js's WEBGL mode. It features a central glowing sun surrounded by six orbiting planets, each with unique sizes, colors, speeds, and rotation rates. The visualization includes realistic orbital paths that glow softly against the dark void of space, creating an immersive celestial experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 116.63
+}
