@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 1701, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1701/ Licensed CC BY 4.0.",
+  "brief": "The canvas continuously draws a vertical strip of fabric, appearing to grow upward from the base like an actively knit sweater. The visible stitches organize themselves into highly stylized and complex patterns of intertwining vines and leaves. These motifs form a repeating, organic tapestry that progresses rhythmically and ceaselessly toward the top edge. The primary focus is the upward, self-sustaining movement of the interlocking patterns, creating the illusion of life and growth within the crafted textile.",
+  "completion_tokens": 1280,
+  "created_utc": "2026-09-26T20:50:10Z",
+  "entry_id": 1701,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1280,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "52f2436393e3a270b1eccbb96556f55676fd6fdb5523d0723e26b6b66332eb60",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3271,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.625,
+      "wall_s": 104.033
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1714,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuously growing strip of fabric forming a sweater, and this time the complex interlocking loops should transition to forming repeating, highly stylized leaf and vine motifs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1586,
+    "root_entry_id": 1449
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the visible stitches should consistently form distinct, alternating colored horizontal stripes.\n\nRevise: the same continuous, striped pattern of the intended garment, and this time the visible stitches should form repeating loops and interlocking patterns, moving upward as if hand-knitted.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the complex interlocking loops should transition to forming repeating, highly stylized leaf and vine motifs.",
+  "prompt_tokens": 3271,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1701/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1701",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuously growing vertical strip of fabric that resembles an actively knit sweater. The visual effect is achieved through a combination of animated geometric patterns that move upward across the canvas, creating the illusion of a living textile. Each frame, new stripes are added to the base of the growing fabric while existing ones move upward, maintaining a consistent height. As the fabric grows, stitches are continuously generated at the bottom and gradually animate upward, their motion creating an organic rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 104.033
+}
