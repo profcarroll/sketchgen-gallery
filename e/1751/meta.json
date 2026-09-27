@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 1751, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1751/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, dense, and highly structured web-like lattice. Intersecting lines weave together to form complex, repeating geometric patterns, creating a depth of light and shadow. The entire structure is rendered using a strictly monochromatic palette, utilizing only varying shades of cyan and indigo. The lattice is entirely stationary, presenting a delicate yet interwoven diagram that holds a permanent, unchanging form regardless of viewer input.",
+  "completion_tokens": 1141,
+  "created_utc": "2026-09-27T02:23:07Z",
+  "entry_id": 1751,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1141,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 109,
+        "sha256": "b433beff1f77ba6a29be00bec890707a5e91c79def8f9d4dcbb21b4a3b4d8e5a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3480,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.682,
+      "wall_s": 105.654
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1764,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate and dense lattice structure, and this time the connecting lines must shift exclusively to monochromatic shades of cyan and indigo.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1687,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate, web-like lattice, and this time the intersecting lines should organize into discernible, interlocking hexagonal patterns.\n\nRevise: the same dense, interwoven lattice, and this time the lines must be entirely stationary.\n\nRevise: the same intricate and dense lattice structure, and this time the connecting lines must shift exclusively to monochromatic shades of cyan and indigo.",
+  "prompt_tokens": 3480,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1751/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1751",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a static, intricate lattice structure composed of interwoven hexagonal patterns. Each hexagon connects to its neighbors through a complex web of lines that form repeating geometric motifs. The entire composition uses only monochromatic shades of cyan and indigo, creating a subtle play of light and shadow across the canvas. The pattern appears dense and structured without any animation or movement, presenting a permanent, architectural diagram that fills the screen with its delicate interlacing forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.654
+}
