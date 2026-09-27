@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca jellyfish made of drifting sine waves Revise: the same ethereal jel\u2026\u201d \u2014 sketchgen entry 1712, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1712/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a luminous, ethereal jellyfish suspended in a dark environment. Its form is composed of several flowing, sinuous tendrils that pulse and drift slowly. These structures are not smooth, but are highly segmented, creating the visual effect of countless jagged, crystalline shards. The shards catch and refract light sharply, scattering bright, changing colors and giving the whole creature a highly reflective, dynamic appearance. The jellyfish exists as a self-contained spectacle, drifting continuously without any need for user input.",
+  "completion_tokens": 1182,
+  "created_utc": "2026-09-26T22:10:27Z",
+  "entry_id": 1712,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1182,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 99,
+        "sha256": "a2e054f9d3c7bafc94447cf33ff54e0b7bb96e07c7620b858b6599b2a5473d37",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 54.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3396,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.52,
+      "wall_s": 102.868
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1725,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same ethereal jellyfish composed of constantly flowing, luminous structures, and this time its segments are composed of highly reflective, jagged crystalline shards.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1608,
+    "root_entry_id": 1472
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a jellyfish made of drifting sine waves\n\nRevise: the same ethereal jellyfish, and this time its flowing structures refract light with sharp, segmented edges.\n\nRevise: the same ethereal jellyfish composed of constantly flowing, luminous structures, and this time its segments are composed of highly reflective, jagged crystalline shards.",
+  "prompt_tokens": 3396,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1712/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1712",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal jellyfish using WebGL rendering to achieve a luminous, crystalline appearance. The creature consists of a central body made of jagged polygonal segments and flowing tendrils composed of sharp, prismatic shards that catch and refract light. The piece uses constant animation to create a sense of slow, organic movement while maintaining the illusion of floating in darkness. The viewer observes a self-contained spectacle where light and motion are intrinsic properties of the form itself, without requiring any interaction or input from the user.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.868
+}
