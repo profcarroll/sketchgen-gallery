@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near Revise\u2026\u201d \u2014 sketchgen entry 1737, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1737/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with a vibrant cross-section of a tide pool, featuring richly coloured rocky surfaces and distinct sea anemones. The scene is dynamic; the water constantly exhibits subtle motion. When the anemones are fully open, the surface of the background water becomes highly active, manifesting pronounced ripples that expand outward from the coral life, visually linking the state of the organisms to the movement of the surrounding environment.",
+  "completion_tokens": 1535,
+  "created_utc": "2026-09-27T00:46:15Z",
+  "entry_id": 1737,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1535,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "f00db12ce6794c3da4aa73f71da61573f0d44db4373549ffe35fb7d56214558e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3815,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.374,
+      "wall_s": 135.849
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1750,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant tide pool environment, and this time the moving water surface ripples outwards from the anemones when they are fully open.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1666,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the moving water surface ripples outwards from the anemones when they are fully open.",
+  "prompt_tokens": 3815,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1737/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1737",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vibrant tide pool ecosystem where sea anemones animate with rhythmic opening and closing. The key innovation is the dynamic water surface that reacts to the anemone state: when anemones are fully open (their tentacles extended), ripples emanate outward from their positions, creating a visual connection between the organisms and the surrounding environment. The scene features layered elements including rocky seabed formations, shifting water particles, and interactive anemones that respond to mouse proximity. The ripple effect is implemented with a system of fading circular waves that originate from open anemones, demonstrating how the behavior of one element directly influences the visual dynamics of the entire scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.849
+}
