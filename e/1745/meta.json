@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca quilt stitched from the colors of every hour in a day Revise: the s\u2026\u201d \u2014 sketchgen entry 1745, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1745/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an abstract, geometric quilt surface composed of large, tessellating structural modules. These modules repeat across the entire field, forming interlocking, rhythmic patterns. The color palette is dynamic, abstractly representing the continuous passage of time as tones blend and shift within the geometric structures. The entire composition is not static; the individual modules subtly ripple and reshape, causing the overall pattern and arrangement to continuously transition and flux across the surface.",
+  "completion_tokens": 1423,
+  "created_utc": "2026-09-27T01:36:33Z",
+  "entry_id": 1745,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1423,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "7ee8a000aaab2e07b9261f0a10b5b521034f073e7202fc6994f04af65cfe4873",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3598,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.788,
+      "wall_s": 121.074
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1758,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract quilt surface, and this time the patches must arrange themselves into large, repeating, structural modules.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1677,
+    "root_entry_id": 1503
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a quilt stitched from the colors of every hour in a day\n\nRevise: the same abstract quilt, and this time the patches transition between colors through distinct, geometric shifts.\n\nRevise: the same abstract quilt, and this time the patches must arrange themselves following a clear wave pattern across the entire surface.\n\nRevise: the same abstract quilt surface, and this time the patches must arrange themselves into large, repeating, structural modules.",
+  "prompt_tokens": 3598,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1745/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1745",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract, geometric quilt surface composed of large, tessellating structural modules that interlock across the entire canvas. Each module is a repeating pattern of squares, triangles, hexagons, or diamonds that subtly ripples and reshapes over time. The modules are arranged in a grid that fills the screen, forming rhythmic, continuous patterns that shift through a dynamic color palette representing the passage of time. The modules themselves morph slowly with wave-like motion, creating a fluid transition between shapes and colors while maintaining their structural coherence across the composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 121.074
+}
