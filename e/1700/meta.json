@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a liminal space in 3D as a massive indoor pool of water. Revis\u2026\u201d \u2014 sketchgen entry 1700, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1700/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a colossal, reflective indoor pool of water set within an architectural, liminal environment. The color palette is dominated by deep, cool blues, punctuated by stark contrasts between brilliant light and deep shadow. The water's surface is never still; gentle ripples constantly shift and distort the environment. This movement is responsible for sharply focused, dramatic beams of light to penetrate the water and for complex, vivid shadows that dance and writhe across both the polished pool floor and the surrounding vertical walls, creating a continually evolving, mesmerizing spectacle.",
+  "completion_tokens": 1410,
+  "created_utc": "2026-09-26T20:44:56Z",
+  "entry_id": 1700,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1410,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 142,
+        "sha256": "df1962e89be977c90c0aee172dd8946a34706ccc8ddbd13f0e7f5551cc1a02b0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3707,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.995,
+      "wall_s": 123.472
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1713,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same calm, reflective pool of water, and this time the ripples cause sharply focused beams of light to penetrate the surface.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1583,
+    "root_entry_id": 1441
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a liminal space in 3D as a massive indoor pool of water.\n\nRevise: the object is too dark against the background so change the lightiing or some other way to make it legible\n\nRevise: the same vast pool of water, and this time the rippling water causes deeper, more vivid shadows to play across the floor.\n\nRevise: the same massive pool of water, and this time the ripples cause the shadows to stretch and writhe across the surrounding vertical walls.\n\nRevise: the same calm, reflective pool of water, and this time the ripples cause sharply focused beams of light to penetrate the surface.",
+  "prompt_tokens": 3707,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1700/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1700",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast, reflective pool of water within an architectural liminal space, rendered using WebGL for immersive depth and movement. The scene is dominated by deep blues that evoke both calm and mystery, with stark contrasts between brilliant highlights and deep shadows. The water surface is never still\u2014gentle ripples constantly shift and distort the environment, creating a sense of life and motion. These ripples are not merely visual effects but are part of an evolving light system where sharp beams of light penetrate the water's surface, casting vivid highlights that dance across both the pool floor and surrounding walls. The interplay between these elements creates a mesmerizing spectacle that transforms with each frame, capturing the ethereal quality of light interacting with water in an architectural space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.472
+}
