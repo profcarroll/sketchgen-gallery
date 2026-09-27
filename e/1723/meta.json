@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 1723, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1723/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a vast, dark cosmic expanse, suggesting infinite depth through countless pinpoint stars and the diffused glow of the Milky Way. The scene is characterized by immense scale and subtle movement. The primary visual event is the sudden, brilliant occurrence of supernovae. These explosions erupt with a sharp, bright white core that rapidly illuminates the surrounding void before quickly dissipating and fading back into the deep, cosmic darkness.",
+  "completion_tokens": 910,
+  "created_utc": "2026-09-26T23:12:47Z",
+  "entry_id": 1723,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 910,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 55,
+        "sha256": "8f7b298ec87f568bff5f1fb9659e71e6932b253065a63842aa7b40e61cf612b5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2948,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.275,
+      "wall_s": 72.542
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1736,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1651,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.",
+  "prompt_tokens": 2948,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1723/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1723",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast cosmic expanse filled with countless stars and the diffuse glow of the Milky Way. The scene features a slowly shifting nebula background that creates a sense of depth and motion through time. Throughout the animation, occasional supernovae erupt with brilliant white cores that rapidly expand and fade away, creating dramatic bursts of light against the dark cosmic void. The effect is achieved by continuously generating new explosion events with carefully controlled fading animations, while maintaining the overall starfield pulsation to suggest the vast scale and timeless nature of space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.542
+}
