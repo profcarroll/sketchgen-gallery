@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctea steam curling into the shapes of forgotten words Revise: the same\u2026\u201d \u2014 sketchgen entry 1749, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1749/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays soft, luminous tendrils of steam continuously flowing and interacting. These tendrils gather and coalesce into complex, glowing glyphs that resemble archaic scripts. The glyphs slowly stabilize, holding their form and emitting a faint, internal luminescence as they drift across the screen. Eventually, the formed words dissolve back into the surrounding ethereal steam, creating a perpetual cycle of formation and dissolution visible without any interaction.",
+  "completion_tokens": 2038,
+  "created_utc": "2026-09-27T02:11:37Z",
+  "entry_id": 1749,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2038,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "01c8a317cd12ff3286f32736d5072e1c7838962f4a5333403e2916ccc73067fe",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3795,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.711,
+      "wall_s": 171.2
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1762,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same soft, luminous tendrils of steam, and this time forcing the coalesced forms to stabilize into legible, archaic glyphs that drift slowly before dissolving.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1684,
+    "root_entry_id": 1467
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tea steam curling into the shapes of forgotten words\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the forgotten word forms to linger and fade more slowly.\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the formed words to stabilize and glow with a faint internal light before fading.\n\nRevise: the same soft, luminous tendrils of steam, and this time forcing the coalesced forms to stabilize into legible, archaic glyphs that drift slowly before dissolving.",
+  "prompt_tokens": 3795,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1749/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1749",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal atmosphere of swirling steam that continuously forms and dissolves into archaic glyphs. The visualization uses a particle system where individual particles flow with noise-based motion, gradually coalescing into stable, glowing formations. When enough particles gather and form a coherent structure, they stabilize into simple but recognizable archaic shapes that drift slowly across the screen. These glyph-like formations emit a soft internal luminescence before eventually dissolving back into the surrounding steam. The process creates an endless cycle of emergence and dissolution, evoking the mysterious quality of ancient scripts materializing from mist.",
+  "submitted_by": "profcarroll",
+  "wall_s": 171.2
+}
