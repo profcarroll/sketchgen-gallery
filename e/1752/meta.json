@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crhododendrons Revise: the same dense, lush field of rhododendrons, an\u2026\u201d \u2014 sketchgen entry 1752, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1752/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with a dense, highly saturated tapestry of rhododendron blooms and foliage. The colors\u2014rich magentas, deep purples, and vibrant greens\u2014form undulating, sculptural masses that appear to hover above a perfectly still, glassy surface of water. The water acts as a flawless mirror, doubling the vivid colors and creating perfect reflections of the rigid flower clusters. The surface remains tranquil and undisturbed until the viewer clicks, creating a momentary ripple that breaks the reflection and sends rings of distortion outwards across the still, deep surface.",
+  "completion_tokens": 4652,
+  "created_utc": "2026-09-27T02:34:31Z",
+  "entry_id": 1752,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1699,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 28.3400/255, 544678 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 153,
+        "sha256": "b7f766237d9e4f06a566b03f22740f4f2d2f5d4c7041851659e74dd35a783a48",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 50.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3649,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.673,
+      "wall_s": 145.471
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1469,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 38.5342/255, 545106 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 204,
+        "sha256": "052b8abbe2d70122975e13518d68517565d1f946f25a44833206b934c3222241",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 50.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4123,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.541,
+      "wall_s": 140.75
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1484,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 38.5342/255, 545106 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 173,
+        "sha256": "613ea055ae93fa08ee261a82f9e06a6a189d691a05fea3828940444932785eb3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 48.8,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3902,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 19.094,
+      "wall_s": 131.752
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1765,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1689,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms flowing in slow, rhythmic currents.\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms settling into pockets of still, reflective water.\n\nRevise: the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.",
+  "prompt_tokens": 11674,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1752/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1752",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a tranquil yet dynamic scene of rhododendron blooms and foliage rendered in rich, saturated colors. The composition features hundreds of organic flower clusters that gently sway and pulse, creating an undulating effect across the canvas. A perfectly still water surface mirrors the blooms above it, doubling their vivid presence. Upon clicking anywhere on the canvas, a ripple disturbance propagates outward from the center, breaking the mirror-like reflection and sending waves of distortion across the water's surface. The visual technique uses layered ellipses to simulate bloom structure, with foliage elements extending outward from each cluster. The scene remains motionless until user interaction triggers the ripple effect, emphasizing the stillness of nature before disruption.",
+  "submitted_by": "profcarroll",
+  "wall_s": 417.973
+}
