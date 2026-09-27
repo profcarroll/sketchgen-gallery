@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cflyover: is it a motherboard or is it an aerial view of warehouses an\u2026\u201d \u2014 sketchgen entry 1727, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1727/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, glowing lattice structure composed of glowing lines and nodes. This geometric grid appears infinite, maintaining a precise arrangement where connections are restricted to strictly horizontal and vertical paths. The entire network is constantly dynamic, exhibiting a subtle, perpetual shifting of its geometry. Simultaneously, every connected node pulses slowly with a uniform, deep amber light, establishing a rhythm across the entire visible surface.",
+  "completion_tokens": 2962,
+  "created_utc": "2026-09-26T23:41:40Z",
+  "entry_id": 1727,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1245,
+      "evidence": "gate exit 1: checks failed: revised; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- revised = false\n    revised: 3 lines of code differ from the sketch it revises (90 lines of code before, 90 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same perpetually shifting, glowing lattice structure, and this time all connected nodes must pulse with a synchronized, slow-moving amber light.\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 127,
+        "sha256": "0eadb5b7a53257bccb53f901c809d635cd85ce28842f98c1dea9088c8fc94851",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3643,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.33,
+      "wall_s": 112.422
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 864,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 128,
+        "sha256": "60019e78c263281e385e2f3db3bb280c7dd2791187366ea9eb254f2b9a99c366",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3814,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.892,
+      "wall_s": 89.714
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 853,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 90,
+        "sha256": "f6128e18726f4c43b0336238b0739d844e7986f09bf1ad1242322149bc298cac",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.5,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3257,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 9.892,
+      "wall_s": 75.266
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1740,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same perpetually shifting, glowing lattice structure, and this time all connected nodes must pulse with a synchronized, slow-moving amber light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1655,
+    "root_entry_id": 1395
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "flyover: is it a motherboard or is it an aerial view of warehouses and factories\n\nRevise: the same deeply complex network of glowing lines and interconnected nodes, and this time the paths must exclusively trace a uniform, visible lattice structure.\n\nRevise: the same infinite, glowing geometry representing a massive, uniform lattice structure, and this time the interconnected nodes must only connect along strictly horizontal and vertical lines.\n\nRevise: the same perpetually shifting, glowing lattice structure, and this time all connected nodes must pulse with a synchronized, slow-moving amber light.",
+  "prompt_tokens": 10714,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1727/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1727",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an infinite lattice of glowing nodes and connections that shift and pulse in a subtle, hypnotic rhythm. The geometric grid maintains strict horizontal and vertical alignments, forming a network that appears to breathe with organic motion. Each node pulses with a warm amber glow while the connecting lines shimmer with shifting colors, creating an immersive field of light that evolves continuously without any user interaction. The visual effect suggests a living, breathing structure that exists in an infinite geometric space, where every element responds to time with synchronized, harmonic movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 277.402
+}
