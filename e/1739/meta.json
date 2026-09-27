@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca sand mandala that a gust of wind blows apart grain by grain Revise:\u2026\u201d \u2014 sketchgen entry 1739, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1739/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, symmetrical sand mandala crafted from richly colored, fine grains. The structure begins a controlled, forceful disintegration, originating from a central point. Instead of simply falling, the individual grains are propelled outward with visible force. These detached particles accumulate into expanding, luminous concentric rings that radiate across the canvas. The movement is continuous, transitioning from a dense, organized core to a series of expanding, incomplete arcs, until the mandala is reduced to a radiating, circular pattern of loose sand.",
+  "completion_tokens": 5316,
+  "created_utc": "2026-09-27T01:03:47Z",
+  "entry_id": 1739,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1769,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 177,
+        "sha256": "889b7208eeab13ca5aeee245da18461d9725f500d0082a55507f3a6eb34b2aa8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3922,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.162,
+      "wall_s": 154.717
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1759,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 199,
+        "sha256": "36c8aa7d87a9d8dded2ff737a6bbca4aae41f83b50dffb6ffe51b1c6abf026d2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4172,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.109,
+      "wall_s": 159.78
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1788,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 199,
+        "sha256": "ebeb0d72e9d0d51185369dbc9b03b3367297e7bede426b9c36c9016d2766a0bd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4171,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.462,
+      "wall_s": 164.866
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1752,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate sand mandala structure, and this time the detached grains are pushed outward, accumulating into radiating, incomplete concentric rings.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1669,
+    "root_entry_id": 1484
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sand mandala that a gust of wind blows apart grain by grain\n\nRevise: the same detailed and symmetrical mandala, and this time the structure rapidly unravels from a single point, creating a sharp, asymmetrical fracture.\n\nRevise: the same intricate sand mandala structure, and this time the failing grains accumulate in a single, towering central pillar.\n\nRevise: the same intricate sand mandala structure, and this time the detached grains are pushed outward, accumulating into radiating, incomplete concentric rings.",
+  "prompt_tokens": 12265,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1739/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1739",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes the dissolution of a symmetrical sand mandala through an animated process of controlled disintegration. The work begins with a dense, organized structure composed of thousands of colored grains arranged in intricate patterns. As time progresses, wind force gradually increases until it reaches a critical point where the mandala begins to fracture from its center outward. Detached grains are propelled radially away from the core with visible momentum, creating expanding concentric rings that radiate across the canvas. The visual effect captures the transition from ordered complexity to chaotic expansion, showing how individual particles transform from being part of a cohesive structure into independent entities moving in their own trajectories. The continuous animation demonstrates the physics of particle detachment and movement while maintaining an aesthetic quality through the careful use of color and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 479.363
+}
