@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cretrogamer's paradise Revise: the same shifting, glowing grid pattern\u2026\u201d \u2014 sketchgen entry 1786, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1786/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a luminous, digital landscape dominated by a continuous, glowing grid. This grid serves as the foundational backdrop, patterned with visible hexagonal modules. Clusters of neon pixel light emanate from these modules, moving outward in visible, radial pulses. The entire environment is defined by this constant, vibrant glow of flowing light, creating a dynamic and retro-futuristic visual experience.",
+  "completion_tokens": 3255,
+  "created_utc": "2026-09-28T00:15:55Z",
+  "entry_id": 1786,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1092,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 122,
+        "sha256": "da1c1177174807d9a9395c991284f4ca4090c0254fe30641dbc18e0a72959b9e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3480,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.809,
+      "wall_s": 101.905
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1093,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "8775ec99ceb18bb9418e394e4f692024ce3ee79c661f3b8808a6f6d571270e14",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3476,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.884,
+      "wall_s": 101.58
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1070,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 108,
+        "sha256": "922df0d1bfd310ce4177cde3ab1cd3c1b64bd4ef161dfb45e8044beb2c8677b7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3460,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.894,
+      "wall_s": 95.916
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1799,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous, digital environment defined by a continuous, glowing grid, and this time the neon pixel clusters flow outward from the hexagonal modules in visible, radial pulses.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1725,
+    "root_entry_id": 1390
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "retrogamer's paradise\n\nRevise: the same shifting, glowing grid patterned with neon pixel clusters, and this time the expanding collision bursts form defined hexagonal modules.\n\nRevise: the same luminous digital grid, and this time the neon colors intensify and cycle through a vibrant rainbow spectrum.\n\nRevise: the same luminous, digital environment dominated by a continuous grid that appears patterned with glowing neon pixel clusters, and this time the neon clusters only cycle through shades of electric blue.\n\nRevise: the same luminous, digital environment defined by a continuous, glowing grid, and this time the neon pixel clusters flow outward from the hexagonal modules in visible, radial pulses.",
+  "prompt_tokens": 10416,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1786/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1786",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, retro-futuristic digital landscape dominated by a continuous hexagonal grid that pulses with electric blue light. Each hexagonal module acts as a glowing node that periodically emits radial pulses of neon light, creating an organic flow across the canvas. The entire composition is animated through subtle color cycling and pulsing effects, with modules randomly activating and deactivating to simulate a living, breathing digital environment. The visual effect emphasizes luminous movement and structured geometry working in harmony to create an immersive, glowing experience that feels both technological and ethereal.",
+  "submitted_by": "profcarroll",
+  "wall_s": 299.401
+}
