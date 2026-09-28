@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same radar sweep, and this time changing the\u2026\u201d \u2014 sketchgen entry 1782, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1782/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dynamic, stylized sonar or atmospheric radar visualization. Expanding trails of deep blue and violet lines emanate from the center, creating geometric, defined helical patterns. Instead of a constant sweep, the lines expand outward with distinct, rhythmic pulsations, giving the appearance of a powerful, controlled wave passing through the visualized field. The movement fills the entire visible space and operates autonomously without any user interaction.",
+  "completion_tokens": 956,
+  "created_utc": "2026-09-27T23:43:42Z",
+  "entry_id": 1782,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 956,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 85,
+        "sha256": "cd81001c9dfbac04518ad2ceef6769144404734ba11468da1dd09a6b1d382399",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3167,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.121,
+      "wall_s": 88.144
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1795,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric sonar visualization, and this time making the visible helix patterns appear sharply defined and geometric.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1721,
+    "root_entry_id": 1379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "radar images\n\nRevise: the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines\n\nRevise: the same radar scan, and this time making the expanding trails pulse with distinct, rhythmic pulsations rather than a constant sweep.\n\nRevise: the same sonar radar visualization, and this time having the propagating lines spiral outward in defined, visible helix patterns.\n\nRevise: the same atmospheric sonar visualization, and this time making the visible helix patterns appear sharply defined and geometric.",
+  "prompt_tokens": 3167,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1782/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1782",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a stylized sonar visualization with geometric helical patterns expanding from the center. The visual effect is achieved through a system of particles that spiral outward while oscillating in a precise helix pattern, creating sharp, defined waveforms that fill the canvas. The color scheme transitions from deep blue to violet hues, emphasizing the atmospheric quality of the radar-like display. The rhythmic pulsations and geometric precision give the impression of controlled energy waves propagating through space, with visual connections between points reinforcing the structured helical motion without overwhelming the composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.144
+}
