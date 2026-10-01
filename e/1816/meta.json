@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cflyover: is it a motherboard or is it an aerial view of warehouses an\u2026\u201d \u2014 sketchgen entry 1816, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1816/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an immense, luminous grid composed of interconnected nodes and glowing structural lines. This geometry appears ethereal and endless, suggesting a vast, structured environment. All connected nodes pulse rhythmically with a deep, rich violet light. Crucially, these pulses are asynchronous, meaning that no two nodes pulse at the same time. The entire lattice structure is perpetually dynamic, shifting and breathing with slow, subtle changes in glow and pattern, creating a mesmerizing field of color and light.",
+  "completion_tokens": 2736,
+  "created_utc": "2026-09-28T03:59:58Z",
+  "entry_id": 1816,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 904,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 90,
+        "sha256": "637d85e59b6534d498570098d46c60b836c27f86d876bdf57b2a0fc0b8e3613c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3238,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.386,
+      "wall_s": 78.282
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 929,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 94,
+        "sha256": "818d77d20d5484ab0b521b6b9df9d85c7a0b48fde3a234f2a7fc996ff4c0cee9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3332,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 15.465,
+      "wall_s": 82.246
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 903,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 94,
+        "sha256": "818d77d20d5484ab0b521b6b9df9d85c7a0b48fde3a234f2a7fc996ff4c0cee9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3332,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 15.75,
+      "wall_s": 51.25
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1829,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same immense, ethereal grid of glowing lines and interconnected nodes, and this time each connected node must pulse with a slow, asynchronous, deep violet light.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1788,
+    "root_entry_id": 1395
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "flyover: is it a motherboard or is it an aerial view of warehouses and factories\n\nRevise: the same deeply complex network of glowing lines and interconnected nodes, and this time the paths must exclusively trace a uniform, visible lattice structure.\n\nRevise: the same infinite, glowing geometry representing a massive, uniform lattice structure, and this time the interconnected nodes must only connect along strictly horizontal and vertical lines.\n\nRevise: the same perpetually shifting, glowing lattice structure, and this time all connected nodes must pulse with a synchronized, slow-moving amber light.\n\nRevise: the same vast, glowing lattice structure, and this time every connected node must pulse with a synchronized, rapidly flashing emerald light.\n\nRevise: the same immense, ethereal grid of glowing lines and interconnected nodes, and this time each connected node must pulse with a slow, asynchronous, deep violet light.",
+  "prompt_tokens": 9902,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1816/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1816",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an infinite, luminous grid of interconnected nodes that pulse asynchronously in a mesmerizing rhythm. Each node glows with a deep violet hue, while the connections between them shimmer with dynamic color shifts and varying intensities. The entire structure breathes slowly, with subtle changes in glow and pattern that create an ethereal, vast environment. The asynchronous pulsing ensures no two nodes pulse in unison, creating a complex, organic field of light that appears both structured and alive.",
+  "submitted_by": "profcarroll",
+  "wall_s": 211.778
+}
