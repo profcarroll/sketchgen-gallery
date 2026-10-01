@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cglowing orbs Revise: the same luminous orbs, and this time their inde\u2026\u201d \u2014 sketchgen entry 1808, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1808/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays multiple luminous orbs floating through the space. These orbs are continuously drawn along visible, spiraling currents that appear to emanate from the center of the frame. As the orbs drift, they leave behind faint, glowing trails that emphasize their path across the canvas. The scene is a constant, autonomous display of light and movement, creating a perpetually shifting, ethereal tapestry of glowing color.",
+  "completion_tokens": 1348,
+  "created_utc": "2026-09-28T02:56:20Z",
+  "entry_id": 1808,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1348,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 124,
+        "sha256": "097eafc1e039e0c4c6d010dc312e3f24aa1ee75d6c04443314a8ef8184a9751b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3522,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.815,
+      "wall_s": 114.958
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1821,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1753,
+    "root_entry_id": 1386
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "glowing orbs\n\nRevise: the same luminous orbs, and this time their independent drift is guided by slow, visible galactic currents across the canvas\n\nRevise: the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas\n\nRevise: the same luminous orbs, and this time their independent drift is governed by visible spiraling currents emanating from the center of the canvas\n\nRevise: the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas",
+  "prompt_tokens": 3522,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1808/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1808",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal display of luminous orbs drifting through space, each leaving behind faint glowing trails that trace their path. The orbs are drawn with pulsing effects and glow, moving along invisible spiraling currents that originate from the center of the canvas. The trails are created by storing previous positions of each orb over time, forming delicate ribbons of light that blend into the background. The scene continuously evolves without any user input, creating an autonomous tapestry of color and motion that feels both organic and otherworldly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.958
+}
