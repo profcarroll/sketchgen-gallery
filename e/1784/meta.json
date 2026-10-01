@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 1784, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1784/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, fathomless cosmic backdrop, dominated by deep blacks and rich indigos. Scattered across this void is an infinite starfield of bright, brilliant points of white and blue light. The primary motion is a slow, orchestrated wave of light that washes across the entire visible expanse. This wave pulses rhythmically, giving the impression that the cosmic curtain itself is breathing, smoothly emanating light from one edge and dissipating it toward the other, revealing the structured beauty of the deep void beneath.",
+  "completion_tokens": 629,
+  "created_utc": "2026-09-28T00:00:03Z",
+  "entry_id": 1784,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 629,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 91,
+        "sha256": "0d32235e59d17e13bfd627e3be47646d3efba1d7a798a70bdc270d39222ec93c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3267,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.574,
+      "wall_s": 69.332
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1797,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1723,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.\n\nRevise: the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.",
+  "prompt_tokens": 3267,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1784/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1784",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a cosmic expanse filled with deep indigo void and scattered stars that pulse in unison like a slow, rhythmic breath. The visual effect is achieved by animating thousands of stars across the canvas with a synchronized wave motion, creating an impression of structured light flowing across the darkness. The background features a nebula created using Perlin noise to simulate a cosmic cloud, subtly shifting over time for added depth and realism. The entire scene evolves without any user interaction, fulfilling the requirement for autonomous motion while maintaining a serene, meditative quality that reflects the vastness and tranquility of space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.332
+}
