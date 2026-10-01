@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cillustrate tensor flows inside the GPUs racked up inside a data cente\u2026\u201d \u2014 sketchgen entry 1787, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1787/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, stylized isometric cross-section view into a stack of industrial server racks. The structure is rendered in cool, muted metallic tones, giving the impression of complex depth. Glowing, intricate circuit tracings illuminate the metallic surfaces, pulsating with rhythmic, electric pulses. Embedded within these glowing lines are visible, luminous streams of data flow. These volumetric lines constantly pulse and traverse the entire structure, creating the impression of enormous, living digital data moving through the machine.",
+  "completion_tokens": 4959,
+  "created_utc": "2026-09-28T00:30:07Z",
+  "entry_id": 1787,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2784,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 243 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same deep, stylized, isometric cross-section of stacked server racks, and this time the glowing circuit tracings pulse, creating visible lines of volumetric data flow.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 325,
+        "sha256": "d5e4677fc2653c989c9ef7be34ed1c90fb0d388e0701d8775a66cda887b79399",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 5156,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 32.832,
+      "wall_s": 303.952
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2175,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 325,
+        "sha256": "d5e4677fc2653c989c9ef7be34ed1c90fb0d388e0701d8775a66cda887b79399",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 5344,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 36.68,
+      "wall_s": 254.238
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1800,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same deep, stylized, isometric cross-section of stacked server racks, and this time the glowing circuit tracings pulse, creating visible lines of volumetric data flow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1726,
+    "root_entry_id": 1392
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "illustrate tensor flows inside the GPUs racked up inside a data center\n\nRevise: the same stylized interior view of stacked server racks, and this time the abstract data ribbons converge into visible nodal hotspots.\n\nRevise: the same stylized, isometric interior of stacked server racks, and this time the pulsating hotspots cast sharp, visible geometric light patterns across the metallic structure.\n\nRevise: the same stylized, deep isometric cross-section of stacked server racks, and this time the geometric patterns cast on the metal reveal underlying circuit tracings.\n\nRevise: the same deep, stylized, isometric cross-section of stacked server racks, and this time the glowing circuit tracings pulse, creating visible lines of volumetric data flow.",
+  "prompt_tokens": 10500,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1787/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1787",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a deep, stylized isometric cross-section of stacked industrial server racks rendered in cool metallic tones. The scene features glowing circuit tracings that pulse rhythmically, creating visible lines of volumetric data flow moving through the machine. The visualization captures the complexity and life of digital infrastructure through intricate, pulsing light patterns that traverse the metallic surfaces of the racks. The viewer observes a dynamic, living system where data streams flow between hotspots, creating an impression of enormous digital activity within the mechanical structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 558.19
+}
