@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 1798, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1798/ Licensed CC BY 4.0.",
+  "brief": "The canvas is perpetually filled with an endless, mesmerizing cascade of rectangular blocks. These colorful forms, which possess wildly varying sizes and irregular shapes, fall in a ceaseless, repeating pattern. The material of these falling objects is characterized by a solid, dull metallic sheen, giving them a weighty and reflective appearance. The entire scene is a constant stream of falling color and geometry, offering continuous, kinetic motion that requires no input to observe.",
+  "completion_tokens": 1807,
+  "created_utc": "2026-09-28T01:47:57Z",
+  "entry_id": 1798,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 998,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 87 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "a6f85d9f3c01eb571174e3a47e904f59e8b687cbd6e791c5db598b9c9c0736ef",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3314,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.877,
+      "wall_s": 90.057
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 809,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "c76fd7aec9b3754af4128f0d3781a68406277b708330083718dcd8d98b930a13",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3499,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.022,
+      "wall_s": 82.795
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1811,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1740,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes\n\nRevise: the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.\n\nRevise: the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.",
+  "prompt_tokens": 6813,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1798/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1798",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an endless cascade of rectangular blocks falling across the screen with varying sizes, colors, and motion patterns. Each block has a metallic, dull appearance created through careful manipulation of HSB color values and layered fill effects that simulate a reflective surface. The blocks are generated continuously and move under simulated physics including gravity, friction, and bouncing off screen edges. The visual effect is one of constant kinetic motion with trails left by the semi-transparent background, creating a mesmerizing stream of geometric forms that fill the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 172.852
+}
