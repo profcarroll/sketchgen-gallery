@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same small, luminous\u2026\u201d \u2014 sketchgen entry 1791, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1791/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, dark void where numerous small, luminous particles appear suspended. These particles are locked in celestial orbits, tracing complex, visible paths of light. While the particles maintain a cyclical motion around a central point, their paths are not uniform; they exhibit subtle, periodic perturbations, causing the stable circles to wobble slightly. Following the path of a particle, a glowing trail is left behind, which visibly decays over time, fading gradually into scattered, faint points of light before disappearing completely.",
+  "completion_tokens": 1619,
+  "created_utc": "2026-09-28T00:56:18Z",
+  "entry_id": 1791,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 821,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 82)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 175.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (175.2 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 3800,
+        "played": 38,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 106,
+        "sha256": "e22adbc22f8c4fe617653833e7a7bb3f473262695a9d4cdf62c82d3205b94428",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 175.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3264,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 91.469,
+      "wall_s": 222.086
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 798,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "77b25780b4bca46d12685cf3d2ca3151f4d94200bbd390d5183895ffb02d1589",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3416,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.948,
+      "wall_s": 80.193
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1804,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same small, luminous particles suspended in a vast, dark space, and this time their orbital paths show subtle, periodic perturbations.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1730,
+    "root_entry_id": 1408
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same small, luminous particles appearing suspended, and this time tracing their paths as clearly defined, glowing trails.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails gently decay upon completing their orbit.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails visibly decay into scattered, faint points of light.\n\nRevise: the same small, luminous particles suspended in a vast, dark space, and this time their orbital paths show subtle, periodic perturbations.",
+  "prompt_tokens": 6680,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1791/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1791",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cosmic scene of particles suspended in deep space, each tracing an orbital path around a central gravitational point. The orbits exhibit subtle wobbling due to periodic perturbations, creating visually interesting, non-uniform motion patterns. Each particle leaves behind a glowing trail that gradually fades, forming a luminous history of its journey. The visual effect is achieved by rendering all particles and their trails in batches using WebGL's efficient batch drawing capabilities, ensuring smooth performance even with hundreds of animated elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 302.279
+}
