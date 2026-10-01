@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sewing machine stitching a seam that follows your cursor Revise: th\u2026\u201d \u2014 sketchgen entry 1776, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1776/ Licensed CC BY 4.0.",
+  "brief": "A stylized sewing needle and thread appear on the canvas. As the viewer drags the cursor, the needle follows the path, and individual stitches are left behind, creating an organic-looking seam. These stitches are visibly discrete units of thread, and they vary naturally in length and separation, giving the impression of hand stitching. The color of the thread and the stitching process itself will respond directly to the horizontal and vertical movement of the mouse.",
+  "completion_tokens": 994,
+  "created_utc": "2026-09-27T22:58:18Z",
+  "entry_id": 1776,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 994,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 93,
+        "sha256": "0cea8fb0b9e9b363721c7532eca3bf6d915c700836ae9096216cde678c3be7a0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3144,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.548,
+      "wall_s": 87.038
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1789,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same seam, and this time the individual stitches must vary in length and spacing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1714,
+    "root_entry_id": 1474
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sewing machine stitching a seam that follows your cursor\n\nRevise: the same seam, and this time the individual stitches must be visibly discrete units of thread rather than a single continuous line.\n\nRevise: the same seam, and this time the individual stitches must be of uniform length and separated by a consistent distance.\n\nRevise: the same seam, and this time the individual stitches must vary in length and spacing.",
+  "prompt_tokens": 3144,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1776/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1776",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an organic hand-stitching effect by having a virtual sewing needle follow the cursor's path. Each stitch is rendered as a discrete segment of thread that varies in both length and spacing between consecutive stitches. The variation is based on the speed and direction of mouse movement, creating a natural-looking seam that responds dynamically to how the user drags their cursor across the canvas. The gold-colored thread appears to be sewn onto a grid-patterned fabric surface, with the needle's position marked by a small visual indicator. The result mimics the irregularity and rhythm of actual hand-sewing through subtle variations in stitch geometry rather than randomization alone.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.038
+}
