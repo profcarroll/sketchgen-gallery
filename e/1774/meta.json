@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 1774, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1774/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a view through a windowpane covered in streaming, streaked raindrops. The moisture gathers, forming distinct puddles that distort the view of miniature, upside-down cityscapes beneath them. This scene is continuously dynamic: the puddles shift, and the edges of the contained cityscapes undergo a transformation, transitioning from blurry reflections into sharp, geometric crystalline forms, all while the rain continues its steady flow down the glass.",
+  "completion_tokens": 1925,
+  "created_utc": "2026-09-27T22:42:49Z",
+  "entry_id": 1774,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1925,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 177,
+        "sha256": "615866acb5520bb95b7078f132cf095dbe7e351d1a6c0aadc5e477955f2d8e81",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3863,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.74,
+      "wall_s": 173.275
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1787,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1711,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.\n\nRevise: the same view through the rain-streaked windowpane of tiny, upside-down cityscapes, and this time the raindrops collect into larger, more defined puddles before dropping.\n\nRevise: the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.",
+  "prompt_tokens": 3863,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1774/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1774",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a rain-streaked window pane through which viewers can observe miniature cityscapes reflected in puddles. As raindrops collect and form puddles, the reflections gradually transform from blurry, distorted views into sharp crystalline forms that reveal geometric structures beneath. The visual transformation captures both the continuous flow of rainwater and the dynamic evolution of water droplets into distinct puddle formations, each containing a miniature inverted cityscape that shifts from organic blur to precise geometric clarity as time passes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 173.275
+}
