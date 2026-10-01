@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 1806, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1806/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an intricate, dense lattice structure formed by interwoven lines. These lines are organized specifically to create repeating hexagonal motifs. The entire pattern utilizes monochromatic shades of cyan and indigo. While the lines form a fixed, highly structured web, the motifs are never perfectly still; instead, they display subtle and irregular warping, giving the illusion that the entire latticework is gently undulating and breathing.",
+  "completion_tokens": 1639,
+  "created_utc": "2026-09-28T02:40:03Z",
+  "entry_id": 1806,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1639,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 109,
+        "sha256": "592067aeefe3a54945db99691c1557d206e1ec47c524e16a5e5f237a8ab95545",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3494,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.798,
+      "wall_s": 135.95
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1819,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, dense, and highly structured web-like lattice, and this time the lines forming the hexagonal motifs should display slight, irregular warping.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1751,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate, web-like lattice, and this time the intersecting lines should organize into discernible, interlocking hexagonal patterns.\n\nRevise: the same dense, interwoven lattice, and this time the lines must be entirely stationary.\n\nRevise: the same intricate and dense lattice structure, and this time the connecting lines must shift exclusively to monochromatic shades of cyan and indigo.\n\nRevise: the same intricate, dense, and highly structured web-like lattice, and this time the lines forming the hexagonal motifs should display slight, irregular warping.",
+  "prompt_tokens": 3494,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1806/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1806",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an intricate, animated lattice structure composed of interwoven hexagonal motifs. The design employs a fixed geometric grid of hexagons, but each line within the pattern subtly warps and undulates over time using Perlin noise functions. This creates a gentle, breathing effect that gives the impression of organic movement within the rigid framework. The monochromatic color palette of cyan and indigo hues reinforces the structured nature while adding depth through varying opacity and saturation levels. The animation is self-contained and requires no user interaction to begin, with the entire composition evolving smoothly across the canvas without any static elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.95
+}
