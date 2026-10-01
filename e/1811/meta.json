@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 1811, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1811/ Licensed CC BY 4.0.",
+  "brief": "The viewer is placed within a vast, empty space observing a monumental, oxidized steel pathway. The path sweeps into existence as a massive, curving arc before executing a sudden, sharp perpendicular shift. This striking movement terminates abruptly, leading the pathway down a stark, multi-layered platform composed of sharply delineated tiers. The geometry is severe and structurally imposing, focusing on the dramatic change in elevation and the visual weight of the abrupt shift in plane. The entire composition presents a static, permanent study of engineered movement and monumental architectural transition.",
+  "completion_tokens": 2062,
+  "created_utc": "2026-09-28T03:14:18Z",
+  "entry_id": 1811,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 991,
+      "evidence": "gate exit 1: checks failed: revised; assertions failed: no_motion\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (74 lines of code before, 75 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same massive, sculpted pathway, and this time the initial sweeping arc is made to ascend more dramatically before beginning the sudden shift.\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 4.2221/255, 121411 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "d888e7f2b6f0e410dd880c25454caa098f2fc4091711e06b76b2d297de26422a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.6,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3314,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.653,
+      "wall_s": 86.813
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1071,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 101,
+        "sha256": "0b7524d836b9ae18ce997fcee54495e7f6e4c8c7f7ef7b8fb7cbd8b608943adf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3599,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 17.052,
+      "wall_s": 96.72
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1824,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same massive, sculpted pathway, and this time the initial sweeping arc is made to ascend more dramatically before beginning the sudden shift.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1756,
+    "root_entry_id": 1429
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same monumental pathway, and this time the sweeping arc begins with a much tighter, almost circular curvature.\n\nRevise: the same sweeping, curved pathway, and this time the perpendicular segment widens abruptly, maximizing the visual weight of the sudden geometric shift.\n\nRevise: the same massive, sculpted pathway, and this time the perpendicular segment terminates abruptly, stepping down sharply onto a tiered platform.\n\nRevise: the same massive, sculpted pathway, and this time the initial sweeping arc is made to ascend more dramatically before beginning the sudden shift.",
+  "prompt_tokens": 6913,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1811/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1811",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a monumental steel pathway that begins as a sweeping, upward arc before making a sudden, dramatic perpendicular shift. The composition emphasizes the structural weight and engineered movement of the form through severe geometry and sharp transitions. The pathway curves dramatically into existence, then abruptly shifts direction, terminating in a multi-tiered platform composed of sharply delineated layers. The static, unchanging scene captures the permanence and gravity of this architectural transition, rendering the viewer as an observer within a vast, empty space confronting the imposing presence of the structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 183.533
+}
