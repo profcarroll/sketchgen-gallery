@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 1803, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1803/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes an abstract, high-altitude aerial perspective of a massive, sprawling metropolis illuminated at night. The canvas is dynamic, filled with flowing, luminous streaks of light that represent energy within the urban environment. These streaks intersect to create intricate, repeating geometric lattice structures. Periodically, these lattices stabilize and momentarily lock into perfectly rigid, crystalline forms, giving the visual sense of structured existence. The entire scene is purely abstract and visual, characterized by continuous flow and sudden, momentary architectural stability.",
+  "completion_tokens": 3959,
+  "created_utc": "2026-09-28T02:18:47Z",
+  "entry_id": 1803,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1329,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 133,
+        "sha256": "5d15d3ded0842a038930e67b529da9acd5c353b0e22f172c54d3310d31731790",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3530,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.605,
+      "wall_s": 118.904
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1318,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 152,
+        "sha256": "aa60c231eedee4ab5ceded02e3c1674ef1b3907acd29f38d14a63f76d72a5e38",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3738,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.731,
+      "wall_s": 123.751
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1312,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 152,
+        "sha256": "69ef0a60c6ecf11e12c36eaa78d4a44e31ada32450d37e97d0e275acafa0c114",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3738,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.698,
+      "wall_s": 121.327
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1816,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-altitude view of a sprawling metropolis at night, and this time the geometric lattice intersections will briefly lock into perfect, rigid crystalline forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1747,
+    "root_entry_id": 1460
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the momentary geometric forms created by intersecting streaks will become more complex and linger longer before dissolving.\n\nRevise: the same abstract, high-altitude perspective of a sprawling, densely illuminated cityscape at night, and this time the intersecting geometric forms will form repeating, stable lattice structures rather than dissolving.\n\nRevise: the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the structured geometric lattices will pulse and expand rhythmically, creating a sense of breathing, luminous life.\n\nRevise: the same abstract, high-altitude view of a sprawling metropolis at night, and this time the geometric lattice intersections will briefly lock into perfect, rigid crystalline forms.",
+  "prompt_tokens": 11006,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1803/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1803",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an abstract, high-altitude view of a sprawling metropolis at night, where luminous energy flows through the urban environment as a network of dynamic light trails. These streaks of color intersect and form intricate geometric lattice structures that periodically stabilize into rigid crystalline forms. The visualization captures both the continuous flow of urban life and sudden moments of ordered structure, creating a sense of tension between chaos and architecture. The scene evolves organically without external input, driven purely by the motion of particles and their interactions within a spatial grid system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 363.982
+}
