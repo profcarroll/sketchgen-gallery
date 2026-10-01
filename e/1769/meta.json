@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 1769, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1769/ Licensed CC BY 4.0.",
+  "brief": "The canvas autonomously animates a cycle of cellular replication. Initially, a single, smooth membrane-enclosed shape occupies the space. Over time, this cell begins to contract dramatically, forming a narrow constriction point where the plasma membrane visibly pinches inward. Immediately before separation, this constriction point pulses with a bright, internal light. The process completes when the original cell successfully partitions into two, clearly defined daughter cells, each delineated by a visible membrane boundary. These new cells then repeat the cycle, autonomously replicating until the canvas fills with multiple, dynamically dividing cells.",
+  "completion_tokens": 2520,
+  "created_utc": "2026-09-27T22:02:07Z",
+  "entry_id": 1769,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1259,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (99 lines of code before, 99 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same autonomous cellular replication, and this time the separating membranes must visibly define the boundary between the parent cell and the newly formed daughter cell.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 138,
+        "sha256": "3bbbea04a086c50cdbe72d0402be643efe3cc5c111aec946a105ad95b41cbfc5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3632,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.594,
+      "wall_s": 117.927
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1261,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 138,
+        "sha256": "e4bc59cef123e78ae54feae01054b78c8ce0ca855f89f14c238e6538dc5468e4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3817,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.629,
+      "wall_s": 121.739
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1782,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time the separating membranes must visibly define the boundary between the parent cell and the newly formed daughter cell.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1705,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.\n\nRevise: the same autonomous cellular replication, and this time the narrow constriction point must visibly tighten and pulsate with a bright internal light immediately before separation.\n\nRevise: the same autonomous cellular replication, and this time the separating membranes must visibly define the boundary between the parent cell and the newly formed daughter cell.",
+  "prompt_tokens": 7449,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1769/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1769",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an autonomous cycle of cellular replication where a single cell grows and contracts before splitting into two daughter cells. The visualization captures the biological process through abstract animation: cells expand smoothly until they reach a critical size, then undergo dramatic contraction forming a visible pinching point. At the moment of separation, this constriction pulses with bright light, emphasizing the membrane division. Each new cell inherits the properties of its parent and begins the cycle anew, creating a continuous, self-sustaining pattern of growth, division, and renewal across the canvas. The system is entirely self-contained, requiring no external input once initiated.",
+  "submitted_by": "profcarroll",
+  "wall_s": 239.666
+}
