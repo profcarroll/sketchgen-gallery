@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cDraw what people learn at Parsons School of Design Revise: the same a\u2026\u201d \u2014 sketchgen entry 1760, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1760/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an intricate, foundational tapestry composed of complex geometric structures and structural lines. These grids are woven with brilliant, pulsating neon lines that continuously shift and flicker. Over time, these energetic lines rhythmically resolve into stable, recognizable architectural fragments, which remain suspended as permanent features. The overall movement is characterized by a continuous process of stabilization, as distinct patches of the underlying grid gradually lose their electric pulse, solidifying into permanent, glowing geometric forms. The visualization operates autonomously, requiring no external input to maintain its evolving state.",
+  "completion_tokens": 4528,
+  "created_utc": "2026-09-27T20:59:11Z",
+  "entry_id": 1760,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1487,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 140,
+        "sha256": "86e4d5cd239fb2a527af87dc477554cf3a47eda3267ebaef937e6d0a0a02272b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 88.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3679,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 32.836,
+      "wall_s": 132.749
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1452,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 223.4 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 167,
+        "sha256": "23dd148344b2c6a57f82ab11e4fcb59c53a072926d71dd5c20abab1036d2422e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 223.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3915,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.468,
+      "wall_s": 136.092
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1589,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 161,
+        "sha256": "c88380d0c76bc4890b439cd8d3ed185e5597c3987d9f36d1564cc7077e4747bf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3911,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 17.622,
+      "wall_s": 144.737
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1773,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, foundational tapestry composed of structural lines and complex geometric forms, and this time patches of the underlying grid will stabilize and lose their neon pulse entirely.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1584,
+    "root_entry_id": 1443
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Draw what people learn at Parsons School of Design\n\nRevise: the same architectural tapestry, and this time the grids will subtly flicker with neon lines\n\nRevise: the same architectural tapestry, and this time the pulsing neon lines will occasionally resolve into recognizable architectural fragments\n\nRevise: the same intricate, foundational architectural tapestry, and this time the resolving architectural fragments remain suspended for a longer duration.\n\nRevise: the same intricate, foundational tapestry composed of structural lines and complex geometric forms, and this time patches of the underlying grid will stabilize and lose their neon pulse entirely.",
+  "prompt_tokens": 11505,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1760/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1760",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes an evolving architectural tapestry where geometric structures emerge from chaotic energy. Neon lines pulse and flicker across a grid of points, representing the initial chaos of construction. As the simulation proceeds, certain points stabilize into permanent glowing dots, forming recognizable architectural fragments that appear and fade rhythmically. The visualization captures the essence of emergence \u2014 how complex, ordered forms arise from seemingly random processes, with energy gradually resolving into stable, meaningful structures. The continuous motion reflects an endless cycle of creation and dissolution, where the canvas transforms from an electric grid to a landscape of permanent geometric elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 413.578
+}
