@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1768, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1768/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, detailed three-dimensional model of the solar system. Planets, including the star, are represented as accurately scaled spheres that follow their realistic orbital paths. These orbits are rendered as bright, glowing luminous lines connecting all the celestial bodies. The entire, dynamic structure is contained within a space that responds to mouse interaction; when the user presses the mouse button, the model begins to animate, changing its visible rotation or position.",
+  "completion_tokens": 1438,
+  "created_utc": "2026-09-27T21:54:26Z",
+  "entry_id": 1768,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1438,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 144,
+        "sha256": "ea421625574514d2dc2bd7cdea3583627a27867333128940b64733b755320feb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.0,
+      "prompt_tokens": 3687,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.057,
+      "wall_s": 131.239
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1781,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same three-dimensional model of the solar system, and this time ensure the planets are accurately scaled to realistic proportions.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1704,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.\n\nRevise: the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the planets are accurately scaled to realistic proportions.",
+  "prompt_tokens": 3687,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1768/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1768",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a three-dimensional model of our solar system, rendered with accurate relative scaling and orbital mechanics. The central star emits light while planets orbit around it at speeds proportional to their real-world orbital periods. Each celestial body is represented by a sphere with appropriate size and color, and their orbits are shown as faint luminous trails. The entire scene rotates slowly to provide perspective, and interaction begins when the viewer clicks the canvas \u2014 triggering the animation of all planetary movements. The model uses realistic proportions scaled for visual clarity within the confines of the canvas, offering an immersive yet accessible representation of space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 131.239
+}
