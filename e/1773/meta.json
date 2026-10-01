@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201can orchestra of pendulums tuned to a pentatonic scale Revise: the sam\u2026\u201d \u2014 sketchgen entry 1773, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1773/ Licensed CC BY 4.0.",
+  "brief": "An array of circular discs hangs from an invisible central axis. The discs sway and swing, their individual amplitudes varying in a random pattern, giving the array a sense of controlled instability. Suspended within this array, the entire structure performs a slow, sweeping drift across the canvas. The only elements seen are the shapes of the discs and the subtle trails of their movement, creating a hypnotic, floating spectacle of mechanical motion.",
+  "completion_tokens": 1735,
+  "created_utc": "2026-09-27T22:36:01Z",
+  "entry_id": 1773,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 891,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 71)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (65 lines of code before, 68 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same array of circular discs suspended from an unseen axis, and this time introduce a slow lateral drift to the entire structure.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "f21c1db4d92974a278372b1bf607939415bd27b1807554f4bf0b2654f511d859",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3155,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.274,
+      "wall_s": 80.748
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 844,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "32c9ab649d8900fecafdef8b92239a8954895ef5a9c0add006e49c89fda17aba",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3453,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.641,
+      "wall_s": 82.354
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1786,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same array of circular discs suspended from an unseen axis, and this time introduce a slow lateral drift to the entire structure.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1710,
+    "root_entry_id": 1470
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an orchestra of pendulums tuned to a pentatonic scale\n\nRevise: the same array of pendulums hanging from an unseen axis, and this time allow the amplitude of each disc to vary randomly.\n\nRevise: the same array of pendulums, and this time introduce a slow vertical sway to the unseen axis.\n\nRevise: the same array of circular discs suspended from an unseen axis, and this time introduce a slow lateral drift to the entire structure.",
+  "prompt_tokens": 6608,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1773/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1773",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a hypnotic display of circular discs suspended from an invisible central axis, each swinging with its own rhythmic motion. The entire array slowly drifts across the canvas, creating a sense of controlled instability as the discs sway and swing in varying amplitudes. The visual effect is enhanced by subtle trails that follow each disc's movement, forming a continuous flow of color and motion. The system uses a combination of harmonic oscillation and random phase variations to create natural-looking mechanical motion while maintaining a cohesive overall rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 163.102
+}
