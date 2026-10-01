@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca quilt stitched from the colors of every hour in a day Revise: the s\u2026\u201d \u2014 sketchgen entry 1802, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1802/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, highly structured quilt surface composed of vibrant geometric modules. These modules are arranged into a continuous, sinuous river-like path that meanders across the entire field. The path is defined by a repeating sequence of patches, where the colors transition sharply yet gracefully between neighboring geometric shapes. Though the arrangement is fixed, the entire field appears to subtly shift and breathe, giving the illusion that the colorful river path is slowly flowing across the textile surface.",
+  "completion_tokens": 1650,
+  "created_utc": "2026-09-28T02:08:43Z",
+  "entry_id": 1802,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1650,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 151,
+        "sha256": "1e833c49c9394de8c2767d5bb7e16c81143c61d7ff2e1f29b1d91645fa9ea13e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3762,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.931,
+      "wall_s": 147.403
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1815,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, geometric quilt surface, and this time the modules must arrange themselves following a continuous, meandering river-like path across the field.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1745,
+    "root_entry_id": 1503
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a quilt stitched from the colors of every hour in a day\n\nRevise: the same abstract quilt, and this time the patches transition between colors through distinct, geometric shifts.\n\nRevise: the same abstract quilt, and this time the patches must arrange themselves following a clear wave pattern across the entire surface.\n\nRevise: the same abstract quilt surface, and this time the patches must arrange themselves into large, repeating, structural modules.\n\nRevise: the same abstract, geometric quilt surface, and this time the modules must arrange themselves following a continuous, meandering river-like path across the field.",
+  "prompt_tokens": 3762,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1802/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1802",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract textile surface where geometric modules flow along a meandering river path. The modules\u2014squares, triangles, hexagons, and diamonds\u2014shift through a vibrant color palette while gently pulsing and undulating along the sinuous path. Rather than a static grid, the entire composition follows a continuous, organic curve that gives the illusion of movement across the field. Each module maintains its own rhythm of color transitions and subtle ripple effects, creating a dynamic textile-like surface where the visual flow emerges from both individual behavior and collective motion along the path.",
+  "submitted_by": "profcarroll",
+  "wall_s": 147.403
+}
