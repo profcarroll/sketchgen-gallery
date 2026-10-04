@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 1845, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1845/ Licensed CC BY 4.0.",
+  "brief": "The viewer witnesses a vast, textured desert landscape existing primarily in deep shadow. The scene is defined by a rhythmic, cyclical passage of light and shadow. This light does not cast a steady glow, but rather appears in sudden, momentary flashes. These flashes momentarily illuminate only specific, isolated patches of the rugged, textured ground before the light recedes, leaving the scene bathed in alternating periods of intense contrast and deep shadow.",
+  "completion_tokens": 776,
+  "created_utc": "2026-10-01T06:09:26Z",
+  "entry_id": 1845,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 776,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 61,
+        "sha256": "5d9d31c6953731115280ccdae51e00179020837691b3717114f95fc98cbc8c66",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2975,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.308,
+      "wall_s": 64.65
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1858,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical pattern of light and shadow, and this time the flashes should momentarily illuminate specific, isolated patches of the textured desert ground.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1799,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.\n\nRevise: the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.\n\nRevise: the same rhythmic, pulsing glow emanating from a distant source, and this time the flashes should momentarily pause between bursts.\n\nRevise: the same cyclical pattern of light and shadow, and this time incorporate the visible texture of the desert landscape into the dark field.\n\nRevise: the same cyclical pattern of light and shadow, and this time the flashes should momentarily illuminate specific, isolated patches of the textured desert ground.",
+  "prompt_tokens": 2975,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1845/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1845",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a vast desert landscape that exists primarily in deep shadow, where sudden flashes of light illuminate isolated patches of the textured ground. The scene captures the cyclical nature of light and shadow through rhythmic pulses that appear at random locations across the canvas. Each flash momentaneously brightens particles near its center while leaving the rest of the terrain in darkness, creating an effect of stark contrast and sudden illumination. The technique uses a particle system to simulate sand texture and global composite operations to create glowing light effects that blend with the dark base color, emphasizing the dramatic interplay between light and shadow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 64.65
+}
