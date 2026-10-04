@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csupergraphics from 1984 Revise: the same neon-infused vector lines, a\u2026\u201d \u2014 sketchgen entry 1820, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1820/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, structured field of vibrant neon lines forming a complex, luminous grid. Over time, this structure undergoes periodic, glowing distortions. These distortions manifest as vibrant, wave-like bursts of color that fluidly wash across the vertical axes of the grid, causing the vector lines to momentarily break, intensify, and reconfigure before settling back into the rhythmic, electric structure.",
+  "completion_tokens": 2497,
+  "created_utc": "2026-10-01T03:17:52Z",
+  "entry_id": 1820,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 852,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 147,
+        "sha256": "556416142dbdfb6c34a76c5b0fc235619900337dcc0454ed0799c2b1b365bb76",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3580,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.249,
+      "wall_s": 84.513
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 824,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "0abc4ae0ec58ebfceea20a52ac56f14781b0ef82a27dcb2cd85d9ab3c48a3879",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3233,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.629,
+      "wall_s": 73.403
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 821,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "629a678d6848093bca7048613cfd25d4ddc92e2f3b417a59114f9d038a22e999",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 55.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3228,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 27.269,
+      "wall_s": 71.078
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1833,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same structured field of vivid neon vector lines, and this time the structural breakdowns should manifest as glowing, wave-like distortions that wash across the vertical axes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1762,
+    "root_entry_id": 1439
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "supergraphics from 1984\n\nRevise: the same neon-infused vector lines, and this time the grid lines should intermittently break and rebuild in staggered bursts\n\nRevise: the same structured grid, and this time the connections between adjacent cells should intermittently intensify and dim with varying frequency\n\nRevise: the same structured, neon-infused vector grid, and this time the structural breakdowns should occur only along the vertical axes\n\nRevise: the same structured field composed entirely of vivid neon vector lines, and this time the structural breakdowns should manifest as glowing, wave-like distortions that wash across the vertical axes.\n\nRevise: the same structured field composed entirely of vivid neon vector lines, and this time the structural breakdown should manifest as discrete, glowing fractal patterns that bloom and fade across the vertical axes.\n\nRevise: the same structured field of vivid neon vector lines, and this time the structural breakdowns should manifest as glowing, wave-like distortions that wash across the vertical axes.",
+  "prompt_tokens": 10041,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1820/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1820",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant neon grid field that pulses with rhythmic energy. The canvas displays an organized lattice of magenta and cyan lines that subtly wave and pulse in unison, forming a structured yet fluid visual rhythm. Over time, periodic distortions manifest as wave-like bursts that travel vertically through the grid \u2014 momentarily breaking and reconfiguring the vector lines before settling back into their electric structure. The effect is both hypnotic and dynamic, evoking a sense of continuous, glowing motion across an otherwise ordered field.",
+  "submitted_by": "profcarroll",
+  "wall_s": 228.994
+}
