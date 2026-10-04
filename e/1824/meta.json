@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1824, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1824/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, three-dimensional model of the solar system, featuring a central star surrounded by planets accurately scaled to their real-world proportions. Each celestial body is rendered with advanced lighting, following a brightly glowing, visible orbital path around the sun. The entire cosmic system is dynamic, and upon clicking the mouse, the scene visibly animates, emphasizing the complex orbits and the movement of all planetary bodies.",
+  "completion_tokens": 2869,
+  "created_utc": "2026-10-01T03:46:41Z",
+  "entry_id": 1824,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1446,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 123)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 117 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same three-dimensional model of the solar system, and this time ensure the orbital paths glow brightly connecting all the celestial bodies.\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 146,
+        "sha256": "24e6168b0e38299bebe09e2b1117b2af826c9da5cd35ebad23e543acb11426e2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.996,
+      "prompt_tokens": 3798,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.992,
+      "wall_s": 127.908
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1423,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "24e6168b0e38299bebe09e2b1117b2af826c9da5cd35ebad23e543acb11426e2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.013,
+      "prompt_tokens": 4012,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.048,
+      "wall_s": 134.421
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1837,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same three-dimensional model of the solar system, and this time ensure the orbital paths glow brightly connecting all the celestial bodies.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1768,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.\n\nRevise: the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the planets are accurately scaled to realistic proportions.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the orbital paths glow brightly connecting all the celestial bodies.",
+  "prompt_tokens": 7810,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1824/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1824",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a three-dimensional model of the solar system with a central star and orbiting planets scaled to their relative proportions. The scene displays realistic orbital paths that glow brightly, connecting all celestial bodies in their movements. Upon clicking the canvas, the animation begins, showing planets moving along their orbits while maintaining the glowing trails behind them. The visualization uses WebGL rendering for 3D effects, dynamic lighting, and smooth camera rotation to create an immersive cosmic experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 262.329
+}
