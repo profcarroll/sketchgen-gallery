@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cfireflies spelling out a message in Morse code Revise: the same light\u2026\u201d \u2014 sketchgen entry 1831, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1831/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a luminous formation composed of interconnected white dots that maintain the shape of a full ring. The light displays a dynamic, fluid movement, flowing across the ring in a continuous, synchronized wave pattern. As the wave completes its cycle, the entire luminous pattern sharply contracts, shrinking into a single, rapidly pulsating center point. This beating core then expands outward, gracefully reforming the complete, circular ring, only to repeat the continuous wave of light.",
+  "completion_tokens": 1017,
+  "created_utc": "2026-10-01T04:34:46Z",
+  "entry_id": 1831,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1017,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 82,
+        "sha256": "302ca22ef25009bd6221e6dca6b92aa1ad8a2ae0c84458186884249996153315",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3101,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.208,
+      "wall_s": 81.365
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1844,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, flowing wave of light, and this time the entire formation must contract into a single, beating center point before expanding back into the full ring.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1777,
+    "root_entry_id": 1476
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fireflies spelling out a message in Morse code\n\nRevise: the same light show, and this time the synchronized bursts form a continuous, unbroken pattern of five white dots.\n\nRevise: the same defined, unbroken pattern that shifts and pulses, and this time the formation always rests in a perfectly symmetrical, stationary arc.\n\nRevise: the same luminous pattern formed by interconnected white dots, and this time the pulsing synchronizes into a single, continuous wave of light.\n\nRevise: the same continuous, flowing wave of light, and this time the entire formation must contract into a single, beating center point before expanding back into the full ring.",
+  "prompt_tokens": 3101,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1831/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1831",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a luminous ring of interconnected white dots that pulses with a continuous wave pattern. The formation flows with synchronized motion across the entire ring, then contracts into a single beating center point before expanding back into its full circular form. The visual effect captures the rhythmic contraction and expansion of light, creating an organic pulsing motion that repeats continuously without any user interaction. The implementation uses mathematical sine waves to create smooth, flowing animations while maintaining the integrity of the circular structure throughout the transformation cycles.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.365
+}
