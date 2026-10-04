@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca jack-o-lantern smiling with a candle inside and spooky bats flying\u2026\u201d \u2014 sketchgen entry 1863, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1863/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a smiling jack-o-lantern that serves as the central element. Inside, a visible candle flame emits a steady, intensely pulsating glow. Overhead, numerous spooky bats fly randomly across the background space. The primary activity is the ceaseless, rhythmic pulsation of the candlelight, paired with the erratic, natural movement of the bats traversing the dark sky. The overall design creates an animated, Halloween-themed scene that continually shifts through light and shadow.",
+  "completion_tokens": 1858,
+  "created_utc": "2026-10-01T08:13:41Z",
+  "entry_id": 1863,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1005,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (59 lines of code before, 63 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the candle flame pulsate more intensely.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "61123eded8cf2c031e6e42ae5762494cd7df800751d67dc8647ed85fabb21077",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 1.227,
+      "prompt_tokens": 3283,
+      "resources_loaded": [
+        {
+          "bytes": 30853,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.939,
+      "wall_s": 86.344
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 853,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 93,
+        "sha256": "08139251a504b04d418c69b4693412ab5216f351e8ff0e84976d14b84cc7efa0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3519,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.609,
+      "wall_s": 82.954
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1876,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the candle flame pulsate more intensely.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1818,
+    "root_entry_id": 1818
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a jack-o-lantern smiling with a candle inside and spooky bats flying in the background\n\nRevise: the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the candle flame pulsate more intensely.",
+  "prompt_tokens": 6802,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1863/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1863",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an animated Halloween scene centered around a jack-o'-lantern with an intensely pulsating candle flame. The pumpkin's orange surface is rendered with a smile and eyes, while the flame's light pulses rhythmically to create a flickering effect that intensifies the eerie atmosphere. Spooky bats fly erratically across the dark background, adding movement and life to the scene. The animation runs continuously without user interaction, demonstrating the core motion described in the brief through the candle's pulsating glow and the bats' natural flight patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 169.298
+}
