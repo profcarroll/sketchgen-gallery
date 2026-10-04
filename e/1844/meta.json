@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 1844, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1844/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a perpetual cascade of colorful rectangular blocks. These blocks, composed of translucent colored glass, tumble and fall in a graceful, never-ending spiral pattern. The cascade features wildly varying sizes and irregular, amorphous shapes, creating a mesmerizing, relentless flow. As the blocks descend, they interact with the light, refracting brilliant hues and geometric forms into the surrounding space. The entire scene is a ceaseless, dynamic display of color and movement, perpetually repeating its spiral journey without reaching a still point or a center.",
+  "completion_tokens": 1839,
+  "created_utc": "2026-10-01T06:04:31Z",
+  "entry_id": 1844,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 844,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 3 lines of code differ from the sketch it revises (70 lines of code before, 70 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same colorful rectangular blocks, and this time they are composed of translucent, colored glass.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 88,
+        "sha256": "84721120017949488852ea5ec95742a9745cc218c46c13753594d899f5cf8eae",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3162,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.088,
+      "wall_s": 74.748
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 995,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 88,
+        "sha256": "7482ef35d4453d42eafeb32624a2f4c263013c6385bc5f46d499c736020ce643",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3361,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.781,
+      "wall_s": 86.234
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1857,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colorful rectangular blocks, and this time they are composed of translucent, colored glass.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1798,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes\n\nRevise: the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.\n\nRevise: the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.\n\nRevise: the same colorful rectangular blocks, and this time they are composed of translucent, colored glass.",
+  "prompt_tokens": 6523,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1844/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1844",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an endless cascade of colorful, translucent glass-like blocks that spiral and tumble across the screen. Each block has irregular, organic shapes and varies in size, movement speed, and color hue. The animation features a continuous spiral motion combined with gravity effects, creating a mesmerizing flow of light and color. The blocks appear to refract brilliant hues as they move, simulating the effect of light interacting with glass surfaces. The composition maintains a constant stream of falling elements without any still points or centers, creating an eternal, dynamic display that fills the entire canvas with motion and visual interest.",
+  "submitted_by": "profcarroll",
+  "wall_s": 160.982
+}
