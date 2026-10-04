@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same small, luminous\u2026\u201d \u2014 sketchgen entry 1838, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1838/ Licensed CC BY 4.0.",
+  "brief": "The canvas is dominated by a vast, dark emptiness across which glowing light particles travel. These particles follow complex, looping orbital paths, leaving behind luminous trails. These trails do not remain constant; instead, they gently pulse with a faint, rhythmic brightness as the particles continue their orbits. The entire scene is a dynamic display of celestial mechanics, showing the perpetual and rhythmic movement of light in space.",
+  "completion_tokens": 1618,
+  "created_utc": "2026-10-01T05:27:35Z",
+  "entry_id": 1838,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 835,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (72 lines of code before, 73 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex orbital paths of light, and this time these luminous trails pulse with faint, rhythmic brightness as they orbit.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "a39898683c55b2f0cc188985fabf10f5d93fb498658dfa5fa807526ef734ab4d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3135,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.212,
+      "wall_s": 71.822
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 783,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "3ec67a57b75fab0744a86efeec877e976f6084bc43a18ba3961a66d79f39cccc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 56.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3359,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 31.449,
+      "wall_s": 73.1
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1851,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex orbital paths of light, and this time these luminous trails pulse with faint, rhythmic brightness as they orbit.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1791,
+    "root_entry_id": 1408
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same small, luminous particles appearing suspended, and this time tracing their paths as clearly defined, glowing trails.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails gently decay upon completing their orbit.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails visibly decay into scattered, faint points of light.\n\nRevise: the same small, luminous particles suspended in a vast, dark space, and this time their orbital paths show subtle, periodic perturbations.\n\nRevise: the same complex orbital paths of light, and this time these luminous trails pulse with faint, rhythmic brightness as they orbit.",
+  "prompt_tokens": 6494,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1838/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1838",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing celestial dance where hundreds of glowing particles orbit in complex, looping paths against a deep cosmic background. Each particle leaves behind a luminous trail that pulses rhythmically, creating a sense of perpetual motion and cosmic harmony. The particles follow intricate orbital mechanics, with gentle perturbations that make their paths twist and turn in three-dimensional space. The visual effect is one of endless celestial choreography, where light moves through darkness in an eternal ballet of orbits and trails.",
+  "submitted_by": "profcarroll",
+  "wall_s": 144.922
+}
