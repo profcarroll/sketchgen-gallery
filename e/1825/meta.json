@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 1825, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1825/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of connected, fluid cells. These cells, initially defined by soft, luminous boundaries, continuously replicate in a self-sustaining process. When two adjacent cells reach maturity, the constriction point between them visibly intensifies, glowing with a bright internal light and undergoing a rhythmic pulsation. This constriction visibly tightens, causing the parent cell to contract and pinch off a newly formed, distinct daughter cell. The process repeats autonomously, resulting in exponentially increasing clusters of stable, membrane-defined cells across the viewing area.",
+  "completion_tokens": 1405,
+  "created_utc": "2026-10-01T03:51:51Z",
+  "entry_id": 1825,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1405,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "af73cb061e71c7b1213dd84fbae28614df3c09460f2aeade5eb0166c64631264",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3600,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.58,
+      "wall_s": 118.391
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1838,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same autonomous cellular replication, and this time the completed daughter cells must display visibly rigid and stable boundary membranes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1769,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.\n\nRevise: the same autonomous cellular replication, and this time the narrow constriction point must visibly tighten and pulsate with a bright internal light immediately before separation.\n\nRevise: the same autonomous cellular replication, and this time the separating membranes must visibly define the boundary between the parent cell and the newly formed daughter cell.\n\nRevise: the same autonomous cellular replication, and this time the completed daughter cells must display visibly rigid and stable boundary membranes.",
+  "prompt_tokens": 3600,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1825/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1825",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an autonomous system of cellular replication where individual cells grow and mature through a process of pulsating expansion. When mature, cells enter a contraction phase that visually pinches off new daughter cells, creating a continuous cycle of reproduction. The visual design distinguishes between developing and mature cells: growing cells exhibit soft boundaries with pulsating effects, while mature cells display rigid, stable membranes. The system evolves organically across the canvas, generating complex clusters of interconnected cells through self-sustained replication without external input or control.",
+  "submitted_by": "profcarroll",
+  "wall_s": 118.391
+}
