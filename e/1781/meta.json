@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 1781, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1781/ Licensed CC BY 4.0.",
+  "brief": "The viewer is immersed in a continuous, sweeping cinematic glide through an abandoned college campus built from imposing Brutalist architecture. The canvas showcases extreme natural decay: massive concrete facades are dissolving and covered by thick layers of dark forest loam. Structural elements peek through this blanket, revealing rusted, orange-streaked rebar and vibrant green moss and creeping vines that have thoroughly reclaimed the man-made environment. The view is constantly in motion, transporting the viewer past crumbling walls and overgrown corridors, offering a deep, immersive journey through nature taking over civilization.",
+  "completion_tokens": 5100,
+  "created_utc": "2026-09-27T23:38:33Z",
+  "entry_id": 1781,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2526,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 232)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 101.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 272,
+        "sha256": "d2b7a2d1cdb77fe07fb374001d59b075a62718ac72192ef998751806461886bc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 101.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4631,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 44.05,
+      "wall_s": 255.071
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2574,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 302,
+        "sha256": "860833718e9ccae85827f75f49a610ad0cd0fcb33042900b06642e74af8b326d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 93.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 5043,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 40.891,
+      "wall_s": 278.688
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1794,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cinematic glide through the abandoned Brutalist campus, and this time showing streaks of orange oxidation forming on the exposed rebar.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1720,
+    "root_entry_id": 1376
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture\n\nRevise: the same architectural environment, and this time showing creeping vines and moss growing from the concrete facades.\n\nRevise: the same continuous, cinematic glide through a vast architectural landscape, and this time showing structural elements crumbling and exposed rebar beneath the green growth.\n\nRevise: the same continuous cinematic glide through the abandoned college campus, and this time showing the massive walls completely dissolved and covered by a deep blanket of accumulated forest loam.\n\nRevise: the same cinematic glide through the abandoned Brutalist campus, and this time showing streaks of orange oxidation forming on the exposed rebar.",
+  "prompt_tokens": 9674,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1781/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1781",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch immerses viewers in a cinematic journey through an abandoned Brutalist college campus, where nature has reclaimed the man-made environment. The scene features towering concrete structures gradually dissolving under layers of dark forest loam, with rusted rebar and vibrant green moss peeking through. As the viewer glides through this decaying landscape, they witness the slow, inevitable triumph of organic growth over industrial architecture. The visual effect is achieved through a combination of batched 3D geometry rendering, carefully positioned point clouds for the forest loam coverage, and line-based vine structures that appear to grow organically from the crumbling walls. The continuous camera movement creates a sense of forward motion while maintaining a contemplative, almost reverent tone toward nature's reclamation process.",
+  "submitted_by": "profcarroll",
+  "wall_s": 533.759
+}
