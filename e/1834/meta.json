@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 1834, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1834/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, deep cosmic expanse populated by billions of distant, twinkling stars and the diffuse glow of the Milky Way. At some point, a visible, radiant light wave begins to emerge from a single, distant point source. This wave rapidly and visibly expands, sweeping across the entire visible field of view. The movement conveys a sense of immense, expanding energy originating from the point source and traveling outward through the stellar dust and starfield.",
+  "completion_tokens": 927,
+  "created_utc": "2026-10-01T04:52:50Z",
+  "entry_id": 1834,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 927,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 55,
+        "sha256": "eb4141ef8677bb4a420515573f379bf8b2abb9e98efc3912f928990c14643293",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 88.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 2979,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 45.075,
+      "wall_s": 73.786
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1847,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cosmic expanse, and this time the light wave visibly originates from a single, distant point and radiates outward.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1784,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.\n\nRevise: the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.\n\nRevise: the same cosmic expanse, and this time the light wave visibly originates from a single, distant point and radiates outward.",
+  "prompt_tokens": 2979,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1834/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1834",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a cosmic expanse filled with billions of twinkling stars and the diffuse glow of the Milky Way. At the center of the canvas, a radiant light wave originates from a distant point source and rapidly expands outward in all directions. The wave begins its journey after a brief delay, growing continuously until it sweeps across the entire visible field of view. The animation conveys the immense, expanding energy moving through the starfield, with the wave's leading edge highlighted by increased brightness and width. The background nebula slowly shifts to enhance the sense of cosmic motion, while stars pulse gently in unison to create a cohesive visual rhythm. The scene uses WebGL rendering for efficient particle handling and smooth animation, creating an immersive depiction of cosmic expansion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 73.786
+}
