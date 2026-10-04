@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a liminal space in 3D as a massive indoor pool of water. Revis\u2026\u201d \u2014 sketchgen entry 1764, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1764/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a colossal, indoor pool of highly reflective water. The surface features constant, dynamic ripples that play across the deep water and interact with the surrounding architecture. These ripples cast vibrant, geometrically sharp shadows that stretch and contort across the pool's floor and up the surrounding vertical walls, vividly defining the internal structure of the space. The entire scene is a constantly shifting interplay of light, reflective blue water, and sharp, abstract shadow shapes.",
+  "completion_tokens": 1464,
+  "created_utc": "2026-09-27T21:24:08Z",
+  "entry_id": 1764,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1464,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 140,
+        "sha256": "a177138293f8c83a7438842a1039e9f1acbe76e52c9ec28225ef14737f71a36c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3745,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.077,
+      "wall_s": 136.693
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1777,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colossal, reflective indoor pool of water, and this time the ripples cause the vivid shadows to stretch and become geometrically sharp, defining the structure of the surrounding walls.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1700,
+    "root_entry_id": 1441
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a liminal space in 3D as a massive indoor pool of water.\n\nRevise: the object is too dark against the background so change the lightiing or some other way to make it legible\n\nRevise: the same vast pool of water, and this time the rippling water causes deeper, more vivid shadows to play across the floor.\n\nRevise: the same massive pool of water, and this time the ripples cause the shadows to stretch and writhe across the surrounding vertical walls.\n\nRevise: the same calm, reflective pool of water, and this time the ripples cause sharply focused beams of light to penetrate the surface.\n\nRevise: the same colossal, reflective indoor pool of water, and this time the ripples cause the vivid shadows to stretch and become geometrically sharp, defining the structure of the surrounding walls.",
+  "prompt_tokens": 3745,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1764/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1764",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a colossal indoor pool of highly reflective water with dynamic ripples that cast sharp, geometric shadows across the surrounding walls and floor. The scene is rendered using WebGL for performance, with a water surface created through animated ripple effects that continuously deform. Light sources in the environment cast strong shadows onto the pool's floor and vertical surfaces, creating abstract shadow patterns that define the architectural structure. The visualization emphasizes the interplay between reflective water, dynamic lighting, and sharp geometric shadows to convey the volumetric quality of the space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 136.693
+}
