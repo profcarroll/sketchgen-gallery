@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near Revise\u2026\u201d \u2014 sketchgen entry 1796, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1796/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vivid, cross-section view of a tide pool, dominated by rich natural colors and intricate life. Within this ecosystem, brightly colored anemones are anchored to the substrate. When these anemones are fully open, they trigger a dynamic change in the water: the surface begins to ripple outwards from their center. These newly formed ripples interact with the surrounding background water, which concurrently exhibits subtle, swirling currents that flow continually, drawing attention to the outward movement across the scene.",
+  "completion_tokens": 1699,
+  "created_utc": "2026-09-28T01:26:42Z",
+  "entry_id": 1796,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1699,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 179,
+        "sha256": "0e0b631be3a6823a7a5fab948bcade5e6d1e69c22e100cbcb0bf4852f4867516",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3862,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.372,
+      "wall_s": 153.597
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1809,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vibrant cross-section of a tide pool, and this time the background water exhibits subtle, swirling currents that flow directly outwards from the newly formed ripples.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1737,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the moving water surface ripples outwards from the anemones when they are fully open.\n\nRevise: the same vibrant cross-section of a tide pool, and this time the background water exhibits subtle, swirling currents that flow directly outwards from the newly formed ripples.",
+  "prompt_tokens": 3862,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1796/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1796",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vibrant tide pool ecosystem with animated anemones that trigger ripples when fully open. The water particles flow in subtle swirling currents, influenced by these newly formed ripples that propagate outward from the anemone centers. The interaction creates an organic flow pattern where the background water dynamics respond directly to the ripple effects, producing a continuous, evolving visual field. The scene combines natural color palettes with fluid motion to simulate the complex interactions within a tide pool environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 153.597
+}
