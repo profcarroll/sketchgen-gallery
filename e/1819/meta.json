@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cDraw what people learn at Parsons School of Design Revise: the same a\u2026\u201d \u2014 sketchgen entry 1819, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1819/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals an intricate, foundational tapestry composed of interlocking structural lines and complex geometric forms. These foundational structures initially feature neon lines that pulse and glow. Over time, this pulsation does not persist; instead, the neon lines gradually and systematically stabilize. The flashing energy resolves into permanent, glowing geometric forms, solidifying the ethereal structures into fixed, luminous patterns across the complex web.",
+  "completion_tokens": 4651,
+  "created_utc": "2026-10-01T03:09:44Z",
+  "entry_id": 1819,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1567,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 137)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 138)\npreflight: `point()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(POINTS)` with `vertex()` per point (sketch.js line 155)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 132 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same intricate, foundational tapestry composed of complex geometric structures and structural lines, and this time every pulsating neon line gradually stabilizes into a permanent, glowing geometric form.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 175,
+        "sha256": "53f1cc991f7a118fad33f31566a7fc73fc23792ac0d6c49db21d76499d1ba61a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3916,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.86,
+      "wall_s": 155.371
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1581,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 137)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 138)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (132 lines of code before, 132 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same intricate, foundational tapestry composed of complex geometric structures and structural lines, and this time every pulsating neon line gradually stabilizes into a permanent, glowing geometric form.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 175,
+        "sha256": "53f1cc991f7a118fad33f31566a7fc73fc23792ac0d6c49db21d76499d1ba61a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4283,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 17.907,
+      "wall_s": 154.719
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1503,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 175,
+        "sha256": "b5045a5dd77ae1ca7d4536a59c6594c4841e4626fa3b08af4b634134a874f88f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 44.5,
+      "num_ctx": 16384,
+      "preload_s": 0.051,
+      "prompt_tokens": 4227,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 20.743,
+      "wall_s": 127.871
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1832,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, foundational tapestry composed of complex geometric structures and structural lines, and this time every pulsating neon line gradually stabilizes into a permanent, glowing geometric form.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1760,
+    "root_entry_id": 1443
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Draw what people learn at Parsons School of Design\n\nRevise: the same architectural tapestry, and this time the grids will subtly flicker with neon lines\n\nRevise: the same architectural tapestry, and this time the pulsing neon lines will occasionally resolve into recognizable architectural fragments\n\nRevise: the same intricate, foundational architectural tapestry, and this time the resolving architectural fragments remain suspended for a longer duration.\n\nRevise: the same intricate, foundational tapestry composed of structural lines and complex geometric forms, and this time patches of the underlying grid will stabilize and lose their neon pulse entirely.\n\nRevise: the same intricate, foundational tapestry composed of complex geometric structures and structural lines, and this time every pulsating neon line gradually stabilizes into a permanent, glowing geometric form.",
+  "prompt_tokens": 12426,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1819/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1819",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an evolving geometric tapestry where neon lines pulse and flicker across the canvas before stabilizing into permanent glowing forms. It begins with a grid of animated points that pulse with noise-based motion, creating a sense of energy and instability. As the animation progresses, these lines gradually stabilize, their pulsations diminishing until they become solid, luminous structures. The composition is enriched with architectural fragments that appear and fade, adding layers of complexity to the emerging patterns. The visual effect emphasizes transformation from chaos to order, where the ephemeral neon lines resolve into fixed, glowing geometric forms across the canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 437.961
+}
