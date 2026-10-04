@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca stained-glass window as the light moves through a whole day Revise:\u2026\u201d \u2014 sketchgen entry 1847, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1847/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex network of geometric stained-glass panels, creating a rigid, intersecting structure of vibrant hues. The panels are perpetually illuminated by an intense, internal light source. This light pulses, steadily building in intensity, until the glowing energy violently destabilizes. The pulse rapidly accelerates, shattering into numerous, visible, and erratic fragments of pure color. These colorful shards of light splinter and scatter outward, giving the impression of chaotic, brilliant motion that traces and highlights the internal edges of the stained-glass structure.",
+  "completion_tokens": 3959,
+  "created_utc": "2026-10-01T06:26:57Z",
+  "entry_id": 1847,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1136,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "9ce76c16a0c78b2bdbf6c82cc71bfbb1dad531736f19ffb044823cc03256e065",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3436,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.88,
+      "wall_s": 100.507
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1399,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 129,
+        "sha256": "e92a7a51b96511b2def574724c1d1a6fb66f5debcb3d1dc2576c8d09e62a324c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3543,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.765,
+      "wall_s": 117.582
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1424,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 165,
+        "sha256": "23e07451f07c094ab39b087baf16499bcb04d8786459c0ff25caf11f5d734803",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3812,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 10.85,
+      "wall_s": 127.726
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1860,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex stained-glass structure, and this time the light fragments glow and coalesce into slow, undulating waves that trace the major internal edges.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1801,
+    "root_entry_id": 1496
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a stained-glass window as the light moves through a whole day\n\nRevise: the same stained-glass window, and this time the light beams cast glowing halos around the internal edges of the geometric pieces.\n\nRevise: the same complex structure of geometric stained-glass panels, and this time the sweeping beams of light pulse and contract rhythmically around the internal edges.\n\nRevise: the same complex stained-glass structure, and this time the pulsating light beams refract and shift through the rainbow spectrum as they trace the internal edges.\n\nRevise: the same complex stained-glass structure, and this time the glowing light pulses become rapid and erratic, splintering into visible, colorful fragments.\n\nRevise: the same complex stained-glass structure, and this time the light fragments glow and coalesce into slow, undulating waves that trace the major internal edges.",
+  "prompt_tokens": 10791,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1847/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1847",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving stained-glass structure that begins with a subtle, pulsing light and gradually intensifies until it destabilizes into a chaotic explosion of color fragments. The composition starts with hundreds of geometric panels arranged in a rigid network, each filled with vibrant, saturated hues and outlined with shifting spectral edges. As the internal light pulse builds in intensity, it triggers wave-like effects that trace the structure's geometry before erupting into a shower of erratic, glowing fragments. These colorful shards scatter outward in unpredictable patterns, their motion highlighting the original structure's form while creating an impression of violent, luminous chaos. The piece explores themes of controlled energy transforming into untamed motion through color, form, and the interplay between order and disorder.",
+  "submitted_by": "profcarroll",
+  "wall_s": 345.815
+}
