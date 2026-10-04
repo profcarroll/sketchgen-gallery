@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctea steam curling into the shapes of forgotten words Revise: the same\u2026\u201d \u2014 sketchgen entry 1851, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1851/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays luminous steam tendrils that curl and dissipate across the screen. As the steam cools, the tendrils gather into stable, glowing glyphs that drift slowly. These ancient characters then fracture into glowing particulate matter that drifts downwards. Finally, the bright particles momentarily accumulate in the void, forming transient, geometric crystal structures before gently dissolving back into the ethereal steam. The overall movement is fluid, cyclical, and continuously unfolding.",
+  "completion_tokens": 2664,
+  "created_utc": "2026-10-01T06:57:36Z",
+  "entry_id": 1851,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2664,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 266,
+        "sha256": "c3f2670cfbb6bf42304e3ba24b4ee7b2539a262c9e4d1822245605fc3ec352d5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4670,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.026,
+      "wall_s": 255.332
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1864,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous steam tendrils, and this time causing the dissipating particulate matter to momentarily accumulate and form transient crystalline geometries before drifting away.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1805,
+    "root_entry_id": 1467
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tea steam curling into the shapes of forgotten words\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the forgotten word forms to linger and fade more slowly.\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the formed words to stabilize and glow with a faint internal light before fading.\n\nRevise: the same soft, luminous tendrils of steam, and this time forcing the coalesced forms to stabilize into legible, archaic glyphs that drift slowly before dissolving.\n\nRevise: the same soft, luminous tendrils of steam, and this time causing the dissolving glyphs to fracture into glowing particulate matter before dissipating completely.\n\nRevise: the same luminous steam tendrils, and this time causing the dissipating particulate matter to momentarily accumulate and form transient crystalline geometries before drifting away.",
+  "prompt_tokens": 4670,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1851/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1851",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an ethereal cycle of transformation through fluid, luminous particles that evolve from steam tendrils into stable glyphs and finally fragment into glowing crystals. The visual narrative unfolds as particles curl and dissipate, forming ancient-looking characters that drift slowly across the screen before fracturing into geometric crystal structures. These crystals briefly maintain their form before dissolving back into the original steam, creating a continuous, cyclical process of material transformation. The work employs noise-based movement to simulate organic flow while using particle systems and spatial hashing to manage complex interactions within the constrained computational environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 255.332
+}
