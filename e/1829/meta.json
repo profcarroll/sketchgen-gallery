@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 1829, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1829/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a view through a windowpane covered in thick, streaming raindrops. Within the larger, defined puddles collected on the glass, tiny, upside-down miniature cityscapes are visible. These forms are crystalline and glow subtly, pulsing with a gentle rhythm. The overall scene is highly dynamic: the rain constantly streaks down the glass, and the internal light sources of the cityscapes emit subtle, bright flashes whenever new drops impact the puddles. The entire atmosphere of light and movement flows continuously, independent of any user input.",
+  "completion_tokens": 3850,
+  "created_utc": "2026-10-01T04:23:44Z",
+  "entry_id": 1829,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1962,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 174 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 222,
+        "sha256": "b2a435e440821550911aebcfa308f7558e9518e847fa632a5f300b69849c378d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.6,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 4303,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.005,
+      "wall_s": 180.641
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1888,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 222,
+        "sha256": "b2a435e440821550911aebcfa308f7558e9518e847fa632a5f300b69849c378d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4491,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.345,
+      "wall_s": 182.666
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1842,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1774,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.\n\nRevise: the same view through the rain-streaked windowpane of tiny, upside-down cityscapes, and this time the raindrops collect into larger, more defined puddles before dropping.\n\nRevise: the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.\n\nRevise: the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.",
+  "prompt_tokens": 8794,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1829/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1829",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic rain-covered windowpane scene with interactive puddles. Raindrops streak down the glass at varying speeds and sways, collecting into puddles that form at the bottom of the screen. Each puddle gradually transforms from a regular cityscape view to a glowing crystalline structure over time. When new raindrops impact existing puddles, they trigger subtle internal light flashes that pulse through the crystal forms. The entire scene is self-contained and continuously evolving without any user input, with all visual elements generated algorithmically using p5.js's drawing functions within strict performance constraints for smooth animation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 363.307
+}
