@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca typewriter that types by itself and slowly gains confidence Revise:\u2026\u201d \u2014 sketchgen entry 1843, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1843/ Licensed CC BY 4.0.",
+  "brief": "A generative stream of text appears continuously across the canvas, simulating the look of an aged manuscript printed on vintage paper. As the text flows, the accumulating stress on the surface causes the paper to visually warp and darken. The most noticeable effect is the appearance of delicate, hairline fractures that spiderweb across the surface, tracking the passage of time and the impact of the ongoing writing.",
+  "completion_tokens": 1190,
+  "created_utc": "2026-10-01T05:58:24Z",
+  "entry_id": 1843,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1190,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 258,
+        "sha256": "702d3970a49c487ac3c231e3524ba848e7b32a1fa599dab995ced2fbf955b817",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4613,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.774,
+      "wall_s": 135.203
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1856,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous flow of text appearing on vintage paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1797,
+    "root_entry_id": 1483
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a typewriter that types by itself and slowly gains confidence\n\nRevise: the same automatic character generation, and this time the paper slightly warps around the typing action.\n\nRevise: the same automatic flow of text appearing on vintage paper, and this time the paper creases visibly and permanently around the type stream.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the stream causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.",
+  "prompt_tokens": 4613,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1843/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1843",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the effect of text being written on aged, vintage paper. As characters flow across the canvas, they subtly warp and shift due to the stress of continuous writing, mimicking the aging process of paper. The surface develops delicate hairline fractures that spiderweb outward from the text, tracking the accumulation of stress over time. These fractures appear and fade naturally, enhancing the feeling of an aged manuscript under constant use. The visual texture combines a subtle noise-based paper background with the organic motion of the text to create an immersive experience of decay and writing in motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.203
+}
