@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 1821, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1821/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, winding molecular structure made of colored spheres arranged into a double helix. These spheres are linked to form a dynamic, three-dimensional lattice representing DNA. The structure undergoes a continuous, visualized process where a designated segment of the helix begins to peel apart. As the segment unwinds, the complementary base pairs separate, illustrating the molecular process required to initiate strand separation. The unfolding action is continuous and automatic, emphasizing the detailed, three-dimensional movement of the separated components.",
+  "completion_tokens": 2557,
+  "created_utc": "2026-10-01T03:25:51Z",
+  "entry_id": 1821,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2557,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 277,
+        "sha256": "8f58c841575046e6568f0c0ffa316cefbd39b2a7c89559878e6199b78b7c3f4e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4862,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.601,
+      "wall_s": 255.395
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1834,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same detailed, three-dimensional molecular representation of the DNA double helix, and this time the separated single strands begin to fold upon themselves.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1763,
+    "root_entry_id": 1450
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: the same dynamic, three-dimensional model of the DNA double helix, and this time showing a specific segment unwinding completely to initiate strand separation.\n\nRevise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).\n\nRevise: the same molecular model of the DNA double helix, and this time showing the separated single strands floating away from the main coil in separate trajectories.\n\nRevise: the same detailed, three-dimensional molecular representation of the DNA double helix, and this time the separated single strands begin to fold upon themselves.",
+  "prompt_tokens": 4862,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1821/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1821",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the molecular structure of DNA as a dynamic double helix made of colored spheres representing base pairs. The visualization shows a continuous process where a segment of the helix begins to unwind and separate into two single strands. These separated strands then undergo a folding motion that mimics how they might behave in biological processes. The scene uses 3D rendering with rotating camera angles to show the complex structure from multiple perspectives, with hydrogen bonds illustrated as connecting lines between complementary base pairs. The animation demonstrates both the mechanical separation and the subsequent folding behavior of DNA strands.",
+  "submitted_by": "profcarroll",
+  "wall_s": 255.395
+}
