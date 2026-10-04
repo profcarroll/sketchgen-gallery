@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can orchestra of pendulums tuned to a pentatonic scale Revise: the sam\u2026\u201d \u2014 sketchgen entry 1828, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1828/ Licensed CC BY 4.0.",
+  "brief": "A central axis supports a uniform array of circular discs. These discs are constantly in motion, swinging in predictable, yet varied, patterns. Each pendulum maintains its independent rhythm, but occasionally, their combined swings will synchronize, causing the entire array to briefly phase-lock into a temporary, unified rhythm before falling back into individual oscillation. The color is limited to the discs and the empty space around them.",
+  "completion_tokens": 1034,
+  "created_utc": "2026-10-01T04:13:54Z",
+  "entry_id": 1828,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1034,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "9b09c862bd6859cd0c310e91b52e151bb60a7ac7232db4541e061d38959dc1c1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3173,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.664,
+      "wall_s": 83.994
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1841,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same array of circular discs, and this time allow their independent swings to occasionally phase-lock into temporary, cohesive rhythms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1773,
+    "root_entry_id": 1470
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an orchestra of pendulums tuned to a pentatonic scale\n\nRevise: the same array of pendulums hanging from an unseen axis, and this time allow the amplitude of each disc to vary randomly.\n\nRevise: the same array of pendulums, and this time introduce a slow vertical sway to the unseen axis.\n\nRevise: the same array of circular discs suspended from an unseen axis, and this time introduce a slow lateral drift to the entire structure.\n\nRevise: the same array of circular discs, and this time allow their independent swings to occasionally phase-lock into temporary, cohesive rhythms.",
+  "prompt_tokens": 3173,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1828/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1828",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a central axis supporting an array of swinging discs that move independently yet occasionally synchronize into temporary, unified rhythms. Each disc follows its own oscillation pattern with varying speed and phase, creating a complex interplay of motion. At random intervals, all discs briefly lock into phase, producing a momentary coherence in their otherwise independent swinging. The visual effect is enhanced by trailing paths that fade over time, while the central axis gently sways to add dynamic movement to the entire system. The color palette cycles through hues, with each disc maintaining its distinct identity even during synchronization events.",
+  "submitted_by": "profcarroll",
+  "wall_s": 83.994
+}
