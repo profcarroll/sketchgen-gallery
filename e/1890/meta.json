@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 1890, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1890/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate and densely woven geometric lattice comprised of interlocking hexagonal patterns. The entire structure is rendered in a way that emphasizes dimensional complexity, giving the visual impression that the interwoven lines possess significant, varying depth. The patterns are rigid and stationary, presenting a detailed, multi-layered view of intersecting forms that exist only in structured space.",
+  "completion_tokens": 4174,
+  "created_utc": "2026-10-04T21:29:27Z",
+  "entry_id": 1890,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1470,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 71)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 102)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 122)\n\ngate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 189 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 4.9926/255, 154421 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 107,
+        "sha256": "44460d624e9ab9af22e00ee936abe7119221fbf434cbf7a304909e6a0b29bd6d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 189.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3659,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 82.265,
+      "wall_s": 121.863
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1362,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 4.9927/255, 154423 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 130,
+        "sha256": "fe35f62e0e159c5eb805b570244c0c84a9e9c4b42e1134076fdbfcf17f9bc38a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 44.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4255,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.919,
+      "wall_s": 131.231
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1342,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 125,
+        "sha256": "125db7300166f8839d35503f9fb8163bd73ded567b85bcd78e2b21f7c24d2847",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3937,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 20.637,
+      "wall_s": 116.468
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1903,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, dense lattice of interwoven lines forming interlocking hexagonal patterns, and this time the lines should possess visible, varied depth.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1852,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate, web-like lattice, and this time the intersecting lines should organize into discernible, interlocking hexagonal patterns.\n\nRevise: the same dense, interwoven lattice, and this time the lines must be entirely stationary.\n\nRevise: the same intricate and dense lattice structure, and this time the connecting lines must shift exclusively to monochromatic shades of cyan and indigo.\n\nRevise: the same intricate, dense, and highly structured web-like lattice, and this time the lines forming the hexagonal motifs should display slight, irregular warping.\n\nRevise: the same intricate, dense lattice structure, and this time the hexagonal motifs should become perfectly rigid and cease all subtle, irregular warping.\n\nRevise: the same intricate, dense lattice of interwoven lines forming interlocking hexagonal patterns, and this time the lines should possess visible, varied depth.",
+  "prompt_tokens": 11851,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1890/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1890",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a static yet intricate geometric lattice composed of interlocking hexagonal patterns rendered in three-dimensional space. The visual effect is achieved through careful layering and strategic depth variation of connecting lines between hexagon vertices, creating an illusion of dimensional complexity without any motion. The structure maintains a rigid, structured form with no animation or time-based changes, emphasizing the mathematical relationships inherent in the tessellated pattern. Viewers encounter a detailed, multi-layered composition that suggests infinite spatial depth through careful manipulation of line weights, color saturation, and z-coordinate placement, all while maintaining strict adherence to the visual constraints of a fixed, non-animated display.",
+  "submitted_by": "profcarroll",
+  "wall_s": 369.562
+}
