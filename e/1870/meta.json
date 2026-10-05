@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "responds(click)",
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 1870, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1870/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a detailed, three-dimensional representation of the solar system. Spheres representing the Sun and various planets orbit around a central point, establishing glowing, visible paths that connect all celestial bodies. The model is rendered using realistic lighting effects and scale, accurately depicting the relative sizes of the planets. When the mouse is pressed down, the solar system becomes animated, dramatically displaying the dynamic orbits and interactions of the planets in space.",
+  "completion_tokens": 4192,
+  "created_utc": "2026-10-04T18:45:50Z",
+  "entry_id": 1870,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1443,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 123)\n\ngate exit 1: checks failed: revised; assertions failed: motion(idle)\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 117 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same three-dimensional model of the solar system, and this time featuring visible planets rendered at accurate real-world scales.\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 146,
+        "sha256": "2f8eae40374fa979f105cae5bd555eddaefe84d74459ce15f7e724e190bd66db",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.969,
+      "prompt_tokens": 3980,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.956,
+      "wall_s": 129.174
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1195,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 108)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "abfe13cea63f8cd86ab00da4798f0948227bfa8a4b867fa9166e104a507e5dc2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.999,
+      "prompt_tokens": 4250,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.127,
+      "wall_s": 118.544
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1554,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 133)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 148)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "0c32b95637294964773c3bf15c32ee34a7d6689ce473dfabeab357111d9d0deb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.02,
+      "prompt_tokens": 3845,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 8.179,
+      "wall_s": 132.662
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1883,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same three-dimensional model of the solar system, and this time featuring visible planets rendered at accurate real-world scales.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1824,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.\n\nRevise: the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the planets are accurately scaled to realistic proportions.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the orbital paths glow brightly connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time featuring visible planets rendered at accurate real-world scales.",
+  "prompt_tokens": 12075,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1870/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1870",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a dynamic, three-dimensional model of our solar system rendered in real-time using p5.js's WEBGL mode. It features the Sun at the center, surrounded by orbiting planets scaled according to relative sizes and distances. Each celestial body moves along its own orbital path with distinct speeds and rotation rates, creating an accurate representation of planetary motion. The viewer can observe glowing orbital paths and dynamic trails that connect each planet as it orbits, emphasizing the continuous movement through space. Upon clicking, the system animates, showing the planets in motion against a starry background, allowing exploration of their relationships and trajectories in a visually engaging way.",
+  "submitted_by": "profcarroll",
+  "wall_s": 380.38
+}
