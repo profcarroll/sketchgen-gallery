@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca jack-o-lantern smiling with a candle inside and spooky bats flying\u2026\u201d \u2014 sketchgen entry 1899, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1899/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a smiling jack-o'-lantern that serves as the central focal point, glowing from a visible candle flame within. The background is filled with spooky bats that continually fly past the glow. The primary dynamic feature is the candle flame, which pulsates intensely and rhythmically. The entire scene is a continuous, self-contained visual display, featuring only shapes and light against a dark backdrop.",
+  "completion_tokens": 1075,
+  "created_utc": "2026-10-04T22:26:10Z",
+  "entry_id": 1899,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1075,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 79,
+        "sha256": "b13f65d88b162e1863e50693e1eebfdf4d231222c9bcadb6047570167ed0a8ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3357,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.602,
+      "wall_s": 88.915
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1912,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the bats fly in concentric circles around the central glow.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1863,
+    "root_entry_id": 1818
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a jack-o-lantern smiling with a candle inside and spooky bats flying in the background\n\nRevise: the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the candle flame pulsate more intensely.\n\nRevise: the same jack-o-lantern smiling with a candle inside, with spooky bats flying in the background, and this time make the bats fly in concentric circles around the central glow.",
+  "prompt_tokens": 3357,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1899/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1899",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a Halloween scene centered around a glowing jack-o'-lantern with a flickering candle flame. The pumpkin's cheerful smile and prominent eyes are rendered with simple geometric shapes against a dark background. Spooky bats orbit the pumpkin in concentric circles, creating a dynamic sense of movement and energy. The candle flame pulses rhythmically, intensifying the warm glow that emanates from the center of the composition. The entire scene operates as a continuous animation, with no external input required \u2014 the bats' circular motion, the flame's pulsation, and the overall visual rhythm all emerge organically from the underlying code without any user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 88.915
+}
