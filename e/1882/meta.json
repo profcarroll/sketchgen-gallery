@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca typewriter that types by itself and slowly gains confidence Revise:\u2026\u201d \u2014 sketchgen entry 1882, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1882/ Licensed CC BY 4.0.",
+  "brief": "A simulated vintage sheet of paper fills the canvas. Text appears automatically and continuously, appearing as if typed by an invisible machine. As the stream of characters generates, the printed text causes visible physical distress to the paper surface. The paper warps, and fibers visibly fray and peel away from the freshly printed characters, giving the impression of accumulated, physical stress over the passage of time.",
+  "completion_tokens": 3971,
+  "created_utc": "2026-10-04T20:27:34Z",
+  "entry_id": 1882,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1210,
+      "evidence": "gate exit 1: checks failed: revised; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (108 lines of code before, 110 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the paper fibers to visibly fray and pull away from the printed characters.\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 142,
+        "sha256": "17b96a4ad26f3aeb2e9973a97c5a4818ae0bfb8b546f0df44670f50f3450cce1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3708,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.774,
+      "wall_s": 105.849
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1185,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 144,
+        "sha256": "57c5d0eaf2b636b119048ee23c0abb86779443e1c2d814ca3a73c6076e57bd2b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3933,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.794,
+      "wall_s": 109.397
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1576,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 145,
+        "sha256": "3d15db572f570abf42381d9dd3e52af6fc245da412f92123c657b07292fef25c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3767,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.967,
+      "wall_s": 130.535
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1895,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the paper fibers to visibly fray and pull away from the printed characters.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1843,
+    "root_entry_id": 1483
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a typewriter that types by itself and slowly gains confidence\n\nRevise: the same automatic character generation, and this time the paper slightly warps around the typing action.\n\nRevise: the same automatic flow of text appearing on vintage paper, and this time the paper creases visibly and permanently around the type stream.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the stream causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the paper fibers to visibly fray and pull away from the printed characters.",
+  "prompt_tokens": 11408,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1882/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1882",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the physical stress of a vintage paper sheet under continuous typing. As text appears character by character, each printed letter causes visible warping and fiber fraying around its position. The effect is achieved through particle systems that simulate paper fibers peeling away from freshly typed characters, combined with subtle warping distortion applied to each character. The simulation uses a texture background to represent aged paper, and fracture patterns radiate outward from each new character, mimicking how physical stress accumulates over time on paper surfaces. The result is a continuous visual representation of paper aging under the mechanical pressure of text generation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 345.781
+}
