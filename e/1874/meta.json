@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can orchestra of pendulums tuned to a pentatonic scale Revise: the sam\u2026\u201d \u2014 sketchgen entry 1874, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1874/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an array of suspended circular discs arranged in a precise formation. These discs undergo continuous, complex oscillations, exhibiting random variations in swing amplitude and frequency. The entire structure drifts slowly across the canvas while gently swaying up and down. The individual movements interact dynamically, sometimes colliding with neighbors, which briefly alters their paths. Periodically, the swings synchronize, causing the array to lock into cohesive, temporary rhythmic patterns.",
+  "completion_tokens": 1558,
+  "created_utc": "2026-10-04T19:21:22Z",
+  "entry_id": 1874,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1558,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "da35def3ca29c2cfa5af68364c3e32d388fdd6e120ad20beb6d5bc5494a41b65",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3529,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.639,
+      "wall_s": 122.932
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1887,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same array of circular discs, and this time allow them to periodically collide with their neighbors, resulting in a temporary change of their individual trajectories.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1828,
+    "root_entry_id": 1470
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an orchestra of pendulums tuned to a pentatonic scale\n\nRevise: the same array of pendulums hanging from an unseen axis, and this time allow the amplitude of each disc to vary randomly.\n\nRevise: the same array of pendulums, and this time introduce a slow vertical sway to the unseen axis.\n\nRevise: the same array of circular discs suspended from an unseen axis, and this time introduce a slow lateral drift to the entire structure.\n\nRevise: the same array of circular discs, and this time allow their independent swings to occasionally phase-lock into temporary, cohesive rhythms.\n\nRevise: the same array of circular discs, and this time allow them to periodically collide with their neighbors, resulting in a temporary change of their individual trajectories.",
+  "prompt_tokens": 3529,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1874/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1874",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing display of twelve circular discs suspended in a rhythmic formation, each swinging with its own unique oscillation pattern. The discs move in synchronized yet independent motions, occasionally colliding with their neighbors in a way that briefly alters their trajectories. The entire array drifts slowly across the canvas while gently swaying up and down, creating an organic, flowing motion. Periodically, the pendulums lock into temporary rhythmic patterns, demonstrating synchronization before breaking apart again. The visual effect is enhanced by colored trails that fade over time, creating a sense of continuous movement and interaction between the elements. The collision physics add an element of unpredictability to the otherwise harmonious system.",
+  "submitted_by": "profcarroll",
+  "wall_s": 122.932
+}
