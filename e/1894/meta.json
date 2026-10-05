@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 1894, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1894/ Licensed CC BY 4.0.",
+  "brief": "The viewer stands within a vast, empty interior space containing a colossal, sculpted path of rusted steel. The path begins with a sweeping, dramatic curve that executes a sudden, perpendicular shift. This sharp angle transitions onto a wide, uninterrupted horizontal plane, which is then contained by a sharply rising, monolithic retaining wall. The sculpture\u2019s material is textured with streaks of oxidized rust, giving it a weighty, organic presence against the smooth surfaces of the surrounding architectural space. The form is static, demanding the viewer's movement through its imposing geometry.",
+  "completion_tokens": 1449,
+  "created_utc": "2026-10-04T21:56:41Z",
+  "entry_id": 1894,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1449,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "5a8cce915ed17d5e9006d8b1cf255ad3777b2a2f336836c08c2903d16d4d0159",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3769,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.387,
+      "wall_s": 123.77
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1907,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same massive, sculpted pathway, and this time the final horizontal plane is bordered by a sharply rising, monolithic retaining wall.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 1857,
+    "root_entry_id": 1429
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same monumental pathway, and this time the sweeping arc begins with a much tighter, almost circular curvature.\n\nRevise: the same sweeping, curved pathway, and this time the perpendicular segment widens abruptly, maximizing the visual weight of the sudden geometric shift.\n\nRevise: the same massive, sculpted pathway, and this time the perpendicular segment terminates abruptly, stepping down sharply onto a tiered platform.\n\nRevise: the same massive, sculpted pathway, and this time the initial sweeping arc is made to ascend more dramatically before beginning the sudden shift.\n\nRevise: the same massive, sculpted pathway, and this time the perpendicular shift terminates onto a vast, uninterrupted horizontal plane.\n\nRevise: the same massive, sculpted pathway, and this time the final horizontal plane is bordered by a sharply rising, monolithic retaining wall.",
+  "prompt_tokens": 3769,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1894/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1894",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a monumental steel pathway that commands the viewer's attention through its dramatic form and architectural presence. The sculpture begins with a sweeping curve that transitions into a sharp perpendicular shift, then extends onto a vast horizontal plane bordered by a towering monolithic retaining wall. The rusted steel surfaces are rendered with careful attention to light and shadow, emphasizing the weight and texture of the material against the smooth surrounding space. The composition draws the viewer through the space, inviting exploration of the interplay between curved and angular elements, and highlighting the sculptural quality of the steel as it moves through three-dimensional space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.77
+}
