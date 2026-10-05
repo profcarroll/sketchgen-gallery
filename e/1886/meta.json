@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca quilt stitched from the colors of every hour in a day Revise: the s\u2026\u201d \u2014 sketchgen entry 1886, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1886/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly structured, abstract tapestry composed of numerous geometric modules. These modules feature rich, complementary colors that shift and deepen across the surface, forming a sense of depth within the stitching. The organization is not random, but meticulously aligned into distinct diagonal bands that stretch across the entire field. Viewing the surface reveals a complex rhythm, as the bands intersect and abut one another, creating a powerful sense of diagonal directionality throughout the textile. The final arrangement is fixed, presenting a complex, stationary study in pattern and linear geometry.",
+  "completion_tokens": 2443,
+  "created_utc": "2026-10-04T20:51:31Z",
+  "entry_id": 1886,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1238,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 3 lines of code differ from the sketch it revises (99 lines of code before, 101 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same abstract, structured tapestry, and this time the modules must align themselves primarily along distinct diagonal bands.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "b3c0a0e38088e97cdb7e04a42d38605766e38da914fc573d75db83fef9f3811f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3689,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.376,
+      "wall_s": 107.96
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1205,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 135,
+        "sha256": "1db784c507e8a11f3a754b6c340ae04f56f26ab3996fc40eb32d399c9d8a25a2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3912,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.674,
+      "wall_s": 110.868
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1899,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, structured tapestry, and this time the modules must align themselves primarily along distinct diagonal bands.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1848,
+    "root_entry_id": 1503
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a quilt stitched from the colors of every hour in a day\n\nRevise: the same abstract quilt, and this time the patches transition between colors through distinct, geometric shifts.\n\nRevise: the same abstract quilt, and this time the patches must arrange themselves following a clear wave pattern across the entire surface.\n\nRevise: the same abstract quilt surface, and this time the patches must arrange themselves into large, repeating, structural modules.\n\nRevise: the same abstract, geometric quilt surface, and this time the modules must arrange themselves following a continuous, meandering river-like path across the field.\n\nRevise: the same abstract quilt surface, and this time the modules must arrange themselves in sharp, repeating angles instead of continuous curves.\n\nRevise: the same abstract, structured tapestry, and this time the modules must align themselves primarily along distinct diagonal bands.",
+  "prompt_tokens": 7601,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1886/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1886",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static, abstract tapestry composed of geometric modules arranged in distinct diagonal bands. Each module is a sharp-edged shape\u2014squares, triangles, hexagons, or diamonds\u2014rendered in a rich palette of complementary colors that shift and deepen across the surface. The composition emphasizes linear directionality through careful alignment of modules into rhythmic bands that intersect and abut, creating a sense of structured movement despite the stillness of the image. The stitching lines within each module add depth and texture, enhancing the illusion of a complex, woven pattern while maintaining the clean, geometric precision of the overall design.",
+  "submitted_by": "profcarroll",
+  "wall_s": 218.828
+}
