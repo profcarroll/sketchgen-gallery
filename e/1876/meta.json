@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca lava lamp in zero gravity Revise: the same enclosed, fluid medium f\u2026\u201d \u2014 sketchgen entry 1876, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1876/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a continuous, suspended fluid medium filled with floating colored masses. Amorphous, brightly colored blobs drift alongside smaller, detached crystalline structures. These crystals move independently within the fluid until they begin to attract each other. As they approach, they aggregate and fuse together, forming increasingly larger and more defined geometric clusters with sharp, polyhedral edges. The entire scene is a slow, mesmerizing display of crystalline growth and structural formation.",
+  "completion_tokens": 4754,
+  "created_utc": "2026-10-04T19:39:05Z",
+  "entry_id": 1876,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2095,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 110)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 209)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 154 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same amorphous, brightly colored masses suspended within a fluid medium, and this time the detached crystalline structures aggregate to form larger, geometrically defined polyhedral clusters.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 220,
+        "sha256": "a70a2d1a9f161270fc23227777ff07d2a49c85b7d1caedddcf724c04dda668d0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4642,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.83,
+      "wall_s": 201.679
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2659,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 220,
+        "sha256": "a70a2d1a9f161270fc23227777ff07d2a49c85b7d1caedddcf724c04dda668d0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4967,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 13.685,
+      "wall_s": 263.594
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1889,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same amorphous, brightly colored masses suspended within a fluid medium, and this time the detached crystalline structures aggregate to form larger, geometrically defined polyhedral clusters.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1832,
+    "root_entry_id": 1477
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lava lamp in zero gravity\n\nRevise: the same enclosed, fluid medium filled with amorphous, colored blobs, and this time the masses pulsate rhythmically and transition through sharper, distinct gradients.\n\nRevise: the same colored, amorphous blobs float suspended within an enclosed, fluid medium, and this time the internal surfaces of the masses reveal sharp, geometric fracturing.\n\nRevise: the same amorphous, brightly colored blobs, and this time their internal fractures begin to grow into crystalline structures.\n\nRevise: the same amorphous, brightly colored blobs suspended in a fluid medium, and this time the radiating crystalline structures detach and form independently within the surrounding fluid.\n\nRevise: the same amorphous, brightly colored masses suspended within a fluid medium, and this time the detached crystalline structures aggregate to form larger, geometrically defined polyhedral clusters.",
+  "prompt_tokens": 9609,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1876/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1876",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a mesmerizing underwater world where amorphous, glowing masses drift through a fluid medium. Within this suspended environment, smaller crystalline structures emerge and begin to move independently. As these crystals approach each other, they are drawn into attraction and eventually fuse together, forming increasingly larger geometric clusters with sharp polyhedral edges. The visualization captures the slow, hypnotic process of crystal aggregation and structural growth, creating an ever-evolving landscape of light and form within a dark, ethereal space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 465.273
+}
