@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 1878, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1878/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with highly energized, neon-lit geometric forms that continuously cascade and pulsate across the screen. The shapes\u2014which cycle through octahedral, hexagonal, and tetrahedral structures\u2014interact through complex, synchronized motions, including rigid rectilinear shifts and repeating helical spirals. The geometry moves in a perpetual cycle of destruction and reconstruction: when two forms physically intersect, they fragment instantly into sharp, colored shards, only to immediately reconstitute themselves into perfect, solid tetrahedral shapes. The entire display is a vibrant, self-contained kinetic spectacle.",
+  "completion_tokens": 2487,
+  "created_utc": "2026-10-04T20:00:12Z",
+  "entry_id": 1878,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2487,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 238,
+        "sha256": "11dbe0a9cb109d42a4f95f5830e615f1bf8834f5452db3180bf0b4307f13d55c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4652,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.367,
+      "wall_s": 232.661
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1891,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same pulsating array of highly energized, neon-lit geometric shapes, and this time the fragments must instantly reconstruct into perfect, solid tetrahedral forms.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 1837,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time they should only move when they physically intersect with another form.\n\nRevise: the same pulsating array of highly energized, neon-lit geometric shapes, and this time the forms should fragment into sharp, colored shards the moment they physically intersect.\n\nRevise: the same pulsating array of highly energized, neon-lit geometric shapes, and this time the fragments must instantly reconstruct into perfect, solid tetrahedral forms.",
+  "prompt_tokens": 4652,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1878/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1878",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a mesmerizing display of neon-lit geometric forms in perpetual motion, where octahedra, hexagons, and tetrahedra cascade and pulse across the screen. The shapes move through synchronized rectilinear shifts and helical spirals, creating an intricate dance of form and space. When two forms collide, they instantly fragment into sharp, colored shards that scatter briefly before reconstituting themselves into perfect tetrahedral structures\u2014a cycle of destruction and reconstruction that embodies the kinetic spectacle described in the brief. The visual effect is achieved through careful management of shape transformations, collision detection, and particle systems, all rendered in WebGL for optimal performance while maintaining the vibrant, high-energy aesthetic requested.",
+  "submitted_by": "profcarroll",
+  "wall_s": 232.661
+}
