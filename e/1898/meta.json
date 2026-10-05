@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 1898, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1898/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays several multiple, overlapping rings of concentric circles. These rings maintain a cohesive, flowing color palette while exhibiting continuous, rhythmic movement. They slowly expand outward from the center point, simulating gentle growth. Concurrently, the entire structure pulses subtly, creating a soft, breathing visual rhythm that permeates the composition. No input is required for this dynamic pattern to unfold.",
+  "completion_tokens": 1379,
+  "created_utc": "2026-10-04T22:20:26Z",
+  "entry_id": 1898,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 694,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (51 lines of code before, 51 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same multiple, overlapping rings of concentric circles, and this time they should slowly grow outward while maintaining their gentle pulsation.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 73,
+        "sha256": "d8505d6954bd0c2aaed9af7e5f229baadc051be2cb9c24f9a21cdbec60e700df",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3162,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.642,
+      "wall_s": 62.608
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 685,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 73,
+        "sha256": "c5b75331928540a3c8759f6b8a8a4182b912ed6e457423980e4314de12e1b04f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3348,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.577,
+      "wall_s": 64.739
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1911,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same multiple, overlapping rings of concentric circles, and this time they should slowly grow outward while maintaining their gentle pulsation.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1862,
+    "root_entry_id": 1405
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same multiple rings of concentric circles, and this time they should gently spiral inward from the edges.\n\nRevise: the same multiple rings of concentric circles, and this time they should pulse gently while spiraling inward.\n\nRevise: the same overlapping concentric circles, and this time they should shift through a cohesive metallic and iridescent color palette.\n\nRevise: the same overlapping rings of concentric circles, and this time they should slowly grow outward while shifting through vivid jewel tones.\n\nRevise: the same overlapping rings of concentric circles, and this time they should gently spiral inward from the edges.\n\nRevise: the same multiple, overlapping rings of concentric circles, and this time they should pulsate gently while contracting toward the central point.\n\nRevise: the same multiple, overlapping rings of concentric circles, and this time they should slowly grow outward while maintaining their gentle pulsation.",
+  "prompt_tokens": 6510,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1898/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1898",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing composition of multiple overlapping rings that slowly expand outward from the center while gently pulsating. Each ring consists of several concentric circles that move in harmony, creating a flowing, organic rhythm. The color palette shifts smoothly through hues in the HSB color space, maintaining visual cohesion across all elements. The entire structure exhibits a subtle breathing motion that permeates the composition, giving the impression of gentle growth and natural movement. No external input is required \u2014 the pattern evolves autonomously, creating an ever-changing yet harmonious visual experience that captures the essence of organic expansion and rhythmic pulsation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 127.347
+}
