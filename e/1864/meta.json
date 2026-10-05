@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca tide pool where the anemones close when the mouse comes near Revise\u2026\u201d \u2014 sketchgen entry 1864, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1864/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vivid, cross-section view of a tide pool, filled with vibrant colors and detailed shapes. The water surface is actively moving, displaying a visible propagating current that originates from an unseen source. Suspended sediment is caught in this current, forming distinct, visible trails that consistently flow outwards across the entire depth of the cross-section.",
+  "completion_tokens": 2397,
+  "created_utc": "2026-10-04T17:50:36Z",
+  "entry_id": 1864,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2397,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 202,
+        "sha256": "0dc33c1a673725fda5776d4486ccdffbb11dda403890850462b7e68a89cd8ebf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4199,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.78,
+      "wall_s": 223.031
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1877,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same vivid, cross-section view of a tide pool, and this time suspended sediment trails visibly flow outwards, caught in the propagating current.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1796,
+    "root_entry_id": 1481
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide pool where the anemones close when the mouse comes near\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the background water reflects sunlight more brightly when the anemones are open.\n\nRevise: the same vibrant tide pool environment, and this time the moving water surface ripples outwards from the anemones when they are fully open.\n\nRevise: the same vibrant cross-section of a tide pool, and this time the background water exhibits subtle, swirling currents that flow directly outwards from the newly formed ripples.\n\nRevise: the same vivid, cross-section view of a tide pool, and this time suspended sediment trails visibly flow outwards, caught in the propagating current.",
+  "prompt_tokens": 4199,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1864/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1864",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic tide pool cross-section where vibrant marine life is immersed in a flowing current. The scene features anemones gently swaying with organic motion, rocks forming the seabed, and sand at the base. Suspended particles flow outward from unseen sources, creating visible trails that move with the current's direction. These particles follow a perlin noise-based flow field, which generates a natural-looking propagation pattern across the entire water surface. The visual effect emphasizes both the stillness of the tide pool environment and the continuous motion of the underwater currents.",
+  "submitted_by": "profcarroll",
+  "wall_s": 223.031
+}
