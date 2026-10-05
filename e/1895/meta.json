@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201csteampunk globe splines orbiting around a fire burning in a rotating\u2026\u201d \u2014 sketchgen entry 1895, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1895/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, ornate, three-dimensional steampunk mechanism. Highly detailed brass splines, rendered in heavily tarnished and oxidized green, spiral and orbit around a rapidly rotating central core. This core is constructed from polished electrum, from which viscous, solid amber-like material drips continuously. The entire structure exhibits continuous, autonomous motion, creating a mesmerizing kinetic spectacle of contrasting metallic surfaces and fluid gravity-defying decay.",
+  "completion_tokens": 3175,
+  "created_utc": "2026-10-04T22:05:20Z",
+  "entry_id": 1895,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1525,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 25)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 98)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 136)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 128 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same complex, ornate, three-dimensional kinetic sculpture featuring polished brass splines that orbit and spiral around a rotating, central core, and this time the brass should appear heavily tarnished and oxidized green.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 173,
+        "sha256": "224ca8fdd951fd18fc9f547ada02d228998f5d5fa7a77b2502eabcf6051e697f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.6,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4043,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.249,
+      "wall_s": 138.219
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1650,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 173,
+        "sha256": "224ca8fdd951fd18fc9f547ada02d228998f5d5fa7a77b2502eabcf6051e697f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4393,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 13.095,
+      "wall_s": 158.522
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1908,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same complex, ornate, three-dimensional kinetic sculpture featuring polished brass splines that orbit and spiral around a rotating, central core, and this time the brass should appear heavily tarnished and oxidized green.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1858,
+    "root_entry_id": 1437
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "steampunk globe splines orbiting around a fire burning in a rotating cube\n\nRevise: the same orbiting globe splines, and this time the splines should appear made of tarnished copper and emerald glass\n\nRevise: the same orbiting sculpture, and this time the fire should be rendered as molten bronze instead of visible light\n\nRevise: the same orbiting splines, and this time the splines should appear made of oxidized copper and sea glass\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze glow should appear thicker and more viscous.\n\nRevise: the same complex, steampunk kinetic sculpture structure, and this time the splines should appear made of polished, vibrant brass\n\nRevise: the same complex, three-dimensional steampunk kinetic sculpture, and this time the brass splines should reflect the ambient light with higher reflectivity.\n\nRevise: the same complex, steampunk kinetic sculpture, and this time the molten bronze core should solidify and appear to drip with semi-viscous, solidified amber.\n\nRevise: the same complex, three-dimensional steampunk kinetic sculpture, and this time the polished brass splines should appear heavily tarnished and oxidized green.\n\nRevise: the same complex, three-dimensional steampunk kinetic sculpture, and this time the semi-viscous, dripping amber core should appear solid, polished electrum.\n\nRevise: the same complex, ornate, three-dimensional kinetic sculpture featuring polished brass splines that orbit and spiral around a rotating, central core, and this time the brass should appear heavily tarnished and oxidized green.",
+  "prompt_tokens": 8436,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1895/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1895",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a mesmerizing three-dimensional steampunk mechanism featuring a central rotating core surrounded by orbiting brass components. The scene employs a tarnished green color palette to evoke oxidation and age, with polished electrum elements contrasting the weathered surfaces. The entire structure exhibits autonomous motion through continuous rotation and particle movement, creating a kinetic spectacle of interlocking mechanical parts. The brass splines form complex orbital patterns around the central core, while amber-like droplets continuously drip from the polished core, illustrating the theme of decay within the mechanical world. The visual effect is achieved through careful use of WEBGL rendering to create depth and dimensionality, with all geometric elements precomputed for performance optimization.",
+  "submitted_by": "profcarroll",
+  "wall_s": 296.741
+}
