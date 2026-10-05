@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 1883, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1883/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perpetual, mesmerizing cascade of falling blocks. These colorful rectangles are made of translucent materials, each piece adorned with faint, glowing lines of gold etched across its surface. The blocks fall in an unending, spiraling pattern, constantly connecting and creating a continuous chain reaction that suggests endless, beautiful collapse. The movement is fluid and ceaseless, operating independently without any input required from the viewer.",
+  "completion_tokens": 1144,
+  "created_utc": "2026-10-04T20:31:37Z",
+  "entry_id": 1883,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1144,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 113,
+        "sha256": "18902d582c4adb471d3996b2ae916a496f9f603d7fa1d019583b3340ed82e512",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3505,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.53,
+      "wall_s": 97.365
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1896,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same colorful rectangular blocks, and this time they all feature faint, glowing lines of gold etched into their translucent surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 1844,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes\n\nRevise: the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.\n\nRevise: the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.\n\nRevise: the same colorful rectangular blocks, and this time they are composed of translucent, colored glass.\n\nRevise: the same colorful rectangular blocks, and this time they all feature faint, glowing lines of gold etched into their translucent surfaces.",
+  "prompt_tokens": 3505,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1883/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1883",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an endless cascade of translucent, glowing blocks that spiral downward in a mesmerizing pattern. Each block is rendered with a semi-transparent glass-like material and features faint gold etchings that create subtle visual interest as they move through the frame. The blocks follow a spiraling trajectory influenced by gravity and rotational forces, creating an ever-changing chain reaction of falling geometry. The scene uses WebGL rendering for smooth 3D effects, and the motion is entirely autonomous without any viewer interaction required.",
+  "submitted_by": "profcarroll",
+  "wall_s": 97.365
+}
