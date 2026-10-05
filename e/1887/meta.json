@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 1887, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1887/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an abstract, high-altitude view of a sprawling metropolis blanketed in nighttime illumination. The view is dominated by geometric crystalline structures formed where luminous light streaks intersect. These repeating geometric lattices are rigid and perpetually locked into highly defined, crystal-like patterns across the cityscape. The overall effect is one of cold, structured permanence, capturing the enormous scale and static beauty of the illuminated urban sprawl.",
+  "completion_tokens": 3339,
+  "created_utc": "2026-10-04T21:00:35Z",
+  "entry_id": 1887,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1234,
+      "evidence": "gate exit 1: checks failed: revised; assertions failed: no_motion\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (103 lines of code before, 106 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same abstract, high-altitude view of a sprawling metropolis at night, and this time the rigid crystalline intersections will subtly pulse, causing the geometric lattices to visibly deepen and overlap in perceived depth.\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.2190/255, 13273 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "d2e493b578da9e3418964013690dddeb2509017f4b24b900a6e4ecfde8b2096f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3713,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.654,
+      "wall_s": 108.708
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1146,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2726/255, 2880 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "ad5d4dbf858dc73cd8912581348c880cd90f7b2e60aa4851e406297a4f0e7076",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4003,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.312,
+      "wall_s": 109.022
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 959,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.1619/255, 13497 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 134,
+        "sha256": "7ca0cc9a47ee49b25a354ae51e12f907c5aa2a6a612338048d1526a2f230eeee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3729,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 13.606,
+      "wall_s": 91.019
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1900,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same abstract, high-altitude view of a sprawling metropolis at night, and this time the rigid crystalline intersections will subtly pulse, causing the geometric lattices to visibly deepen and overlap in perceived depth.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1849,
+    "root_entry_id": 1460
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract high-altitude view of a sprawling illuminated cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the momentary geometric forms created by intersecting streaks will become more complex and linger longer before dissolving.\n\nRevise: the same abstract, high-altitude perspective of a sprawling, densely illuminated cityscape at night, and this time the intersecting geometric forms will form repeating, stable lattice structures rather than dissolving.\n\nRevise: the same abstract, high-altitude view of a densely illuminated cityscape at night, and this time the structured geometric lattices will pulse and expand rhythmically, creating a sense of breathing, luminous life.\n\nRevise: the same abstract, high-altitude view of a sprawling metropolis at night, and this time the geometric lattice intersections will briefly lock into perfect, rigid crystalline forms.\n\nRevise: the same abstract, high-altitude aerial perspective of a sprawling metropolis at night, and this time the geometric lattice intersections will remain perpetually locked into rigid crystalline forms.\n\nRevise: the same abstract, high-altitude view of a sprawling metropolis at night, and this time the rigid crystalline intersections will subtly pulse, causing the geometric lattices to visibly deepen and overlap in perceived depth.",
+  "prompt_tokens": 11445,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1887/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1887",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a serene, high-altitude view of an illuminated metropolis composed of geometric crystalline structures. Light streaks form a dynamic network across the canvas, while their intersections stabilize into rigid, repeating patterns\u2014triangles, squares, and pentagons\u2014that create a sense of structured permanence. The visual effect captures both the sprawling scale and the cold, ordered beauty of urban illumination, rendered through an interplay of moving light trails and fixed geometric lattices that emerge from their intersections.",
+  "submitted_by": "profcarroll",
+  "wall_s": 308.749
+}
