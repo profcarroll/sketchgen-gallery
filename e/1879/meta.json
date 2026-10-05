@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca cityscape with a sunrise to sunset animation with some procedural e\u2026\u201d \u2014 sketchgen entry 1879, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1879/ Licensed CC BY 4.0.",
+  "brief": "A vast, sprawling cityscape is illuminated by a cycle of bioluminescence that transitions through day and night cycles. Wet architectural surfaces highly reflect the changing ambient light, creating shimmering, dynamic patterns. The pulsing light source continually causes ripples across these wet surfaces, and these dissipating ripples leave behind faint, phosphorescent residue trails, which glow and shift as the ambient light conditions change.",
+  "completion_tokens": 1605,
+  "created_utc": "2026-10-04T20:06:34Z",
+  "entry_id": 1879,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1605,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 144,
+        "sha256": "86ff570455fbc62a7e4f50651eefba660b77b3e2b03d1e6daf27023f92b2fbd4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 67.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3891,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 43.262,
+      "wall_s": 139.013
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1892,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the dissipating ripples leave faint, phosphorescent residue trails across the wet architectural surfaces.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 1839,
+    "root_entry_id": 1412
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a cityscape with a sunrise to sunset animation with some procedural elements that make the city feel inhabited\n\nRevise: The same atmospheric cycles, and this time add small, organic plant life growing between the rigid angular structures\n\nRevise: the same cyclical changes of day and night, and this time add highly reflective wet surfaces to the structures catching the changing light.\n\nRevise: the same atmospheric cycles and reflections, and this time add bioluminescent plant life that pulses with the twilight.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the pulsing light casts visible, distinct projections onto the wet architectural surfaces.\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: try again with a different color palette and mood\n\nRevise: the same cyclical atmospheric changes and bioluminescence, and this time the light pulses cause small clusters of luminous plankton to drift across the wet architectural surfaces.\n\nRevise: the same vast, reflective cityscape and cyclical bioluminescence, and this time the drifting luminous plankton gather and illuminate specific pools on the wet architectural surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the glowing pools cast stable, geometric reflections onto the wet surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the reflected colors shift and bloom as the ambient atmospheric light changes.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the ambient light patterns slowly etch glowing phosphorescent runes onto the wet architectural surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the light pulses cause visible, dissipating ripples across the wet architectural surfaces.\n\nRevise: the same sprawling, reflective cityscape and cyclical bioluminescence, and this time the dissipating ripples leave faint, phosphorescent residue trails across the wet architectural surfaces.",
+  "prompt_tokens": 3891,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1879/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1879",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a vast, reflective cityscape undergoing a continuous cycle of bioluminescent illumination. The architecture features wet surfaces that shimmer and reflect the dynamic lighting, which transitions smoothly through day and night. Pulsing light sources create ripples across these reflective surfaces, and as these ripples dissipate, they leave behind faint phosphorescent residue trails that continue to glow and shift in response to the ambient light conditions. The entire scene evolves organically without user input, driven by a time-based animation that creates an immersive, ever-changing urban environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 139.013
+}
