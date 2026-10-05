@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cradar images Revise: the same radar sweep, and this time changing the\u2026\u201d \u2014 sketchgen entry 1896, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1896/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an atmospheric sonar scan rendered in deep blue and violet. The scene is defined by cyclical, rhythmic motion as structures propagate outward from the center. Glowing crystalline formations appear along defined helical paths. These structures are not constant lines; instead, they assemble dynamically from discrete, glowing points, creating complex, sharply geometric spirals that continually materialize and expand across the viewing field.",
+  "completion_tokens": 1311,
+  "created_utc": "2026-10-04T22:09:52Z",
+  "entry_id": 1896,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1311,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 133,
+        "sha256": "ace8c686bb81d3635372c8c5c8e079988ac734bb7a53b55a43aeacf9f44e671c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.7,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3725,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.355,
+      "wall_s": 114.561
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1909,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric sonar visualization, and this time having the glowing crystalline structures assemble from discrete points along the helix.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 1859,
+    "root_entry_id": 1379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "radar images\n\nRevise: the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines\n\nRevise: the same radar scan, and this time making the expanding trails pulse with distinct, rhythmic pulsations rather than a constant sweep.\n\nRevise: the same sonar radar visualization, and this time having the propagating lines spiral outward in defined, visible helix patterns.\n\nRevise: the same atmospheric sonar visualization, and this time making the visible helix patterns appear sharply defined and geometric.\n\nRevise: the same atmospheric sonar visualization, and this time having the pulsating lines solidify into glowing crystalline structures.\n\nRevise: the same atmospheric sonar scan, and this time having the propagating lines spiral outward in defined, visible helix patterns\n\nRevise: the same atmospheric sonar visualization, and this time having the glowing crystalline structures assemble from discrete points along the helix.",
+  "prompt_tokens": 3725,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1896/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1896",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an atmospheric sonar visualization with rhythmic, cyclical motion that expands from the center. Instead of constant lines, glowing crystalline formations dynamically assemble from discrete points along helical paths. The visual effect uses a series of evolving helixes that grow outward, each composed of individual glowing particles that connect to form geometric structures. The system creates an immersive field of pulsing, expanding crystal formations that continuously materialize and dissipate, evoking the sensation of sonar waves interacting with crystalline matter in deep space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.561
+}
