@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csupergraphics from 1984 Revise: the same neon-infused vector lines, a\u2026\u201d \u2014 sketchgen entry 1866, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1866/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a highly structured field composed entirely of vibrant, interconnected neon vector lines forming a precise grid. The overall structure is interrupted by periodic, glowing distortions. These distortions appear as fluid, wave-like bands of neon energy that wash across the horizontal axes of the grid, changing intensity and shape as they traverse the field. The effect is one of continuous, rhythmic structural collapse and renewal within a rigid, neon framework.",
+  "completion_tokens": 2460,
+  "created_utc": "2026-10-04T18:04:28Z",
+  "entry_id": 1866,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 803,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 65 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same structured field of vibrant neon lines, and this time the periodic, glowing distortions should fluidly wash across the horizontal axes of the grid.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "74c66912f3972d9a3ca887873e8b3360c8ef938abb1fc8079e97457ae0f48e3c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 53.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3329,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.608,
+      "wall_s": 73.537
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 828,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (65 lines of code before, 65 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same structured field of vibrant neon lines, and this time the periodic, glowing distortions should fluidly wash across the horizontal axes of the grid.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "74c66912f3972d9a3ca887873e8b3360c8ef938abb1fc8079e97457ae0f48e3c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3516,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.522,
+      "wall_s": 77.715
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 829,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "c46e6bc3ddbadc66519fdf1beeec5d2aa5943907bea108303486a36ce0ed55cc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3515,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 13.794,
+      "wall_s": 77.831
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1879,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same structured field of vibrant neon lines, and this time the periodic, glowing distortions should fluidly wash across the horizontal axes of the grid.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1820,
+    "root_entry_id": 1439
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "supergraphics from 1984\n\nRevise: the same neon-infused vector lines, and this time the grid lines should intermittently break and rebuild in staggered bursts\n\nRevise: the same structured grid, and this time the connections between adjacent cells should intermittently intensify and dim with varying frequency\n\nRevise: the same structured, neon-infused vector grid, and this time the structural breakdowns should occur only along the vertical axes\n\nRevise: the same structured field composed entirely of vivid neon vector lines, and this time the structural breakdowns should manifest as glowing, wave-like distortions that wash across the vertical axes.\n\nRevise: the same structured field composed entirely of vivid neon vector lines, and this time the structural breakdown should manifest as discrete, glowing fractal patterns that bloom and fade across the vertical axes.\n\nRevise: the same structured field of vivid neon vector lines, and this time the structural breakdowns should manifest as glowing, wave-like distortions that wash across the vertical axes.\n\nRevise: the same structured field of vibrant neon lines, and this time the periodic, glowing distortions should fluidly wash across the horizontal axes of the grid.",
+  "prompt_tokens": 10360,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1866/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1866",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a vibrant neon grid field where rigid vertical and horizontal lines pulse with rhythmic wave distortions. The structure appears to collapse and renew continuously as glowing bands of energy wash across the horizontal axes, creating an effect of controlled chaos within a precise framework. The visual rhythm emerges from the interplay between the steady grid topology and the fluid, periodic distortions that propagate horizontally, giving the impression of a living, breathing system where order and disruption coexist in perpetual motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 229.083
+}
