@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cglowing orbs Revise: the same luminous orbs, and this time their inde\u2026\u201d \u2014 sketchgen entry 1909, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1909/ Licensed CC BY 4.0.",
+  "brief": "The canvas features numerous luminous orbs of varying sizes and soft colors. These glowing shapes drift continuously across the entire surface, maintaining their independent paths. Guiding this motion are visible, sweeping currents that emerge from the center of the canvas and stream outward, defining the overall flow of the light. The movement is perpetual and non-repeating, giving the impression of cosmic matter slowly expanding across a dark expanse.",
+  "completion_tokens": 1936,
+  "created_utc": "2026-10-05T05:20:04Z",
+  "entry_id": 1909,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 985,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 2 lines of code differ from the sketch it revises (72 lines of code before, 72 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same luminous orbs, and this time the glowing trails they leave behind are composed of crystallized, brightly defined streaks of color.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "725fac75476db73a643fbbadb7bfbb2b05c50ac3435df91916c0f306944b58e3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3461,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.063,
+      "wall_s": 86.511
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 951,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 103,
+        "sha256": "721cf6981496c1aac351040d2cb3b28203eef096984316860a0d388505cb0465",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3647,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.254,
+      "wall_s": 88.192
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1922,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same luminous orbs, and this time the glowing trails they leave behind are composed of crystallized, brightly defined streaks of color.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1891,
+    "root_entry_id": 1386
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "glowing orbs\n\nRevise: the same luminous orbs, and this time their independent drift is guided by slow, visible galactic currents across the canvas\n\nRevise: the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas\n\nRevise: the same luminous orbs, and this time their independent drift is governed by visible spiraling currents emanating from the center of the canvas\n\nRevise: the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas\n\nRevise: the same luminous orbs, and this time their drift is guided by visible, non-repeating currents that stream outward from the center of the canvas.\n\nRevise: the same luminous orbs, and this time they leave faintly visible glowing trails behind them as they drift across the canvas\n\nRevise: the same luminous orbs, and this time the glowing trails they leave behind are composed of crystallized, brightly defined streaks of color.",
+  "prompt_tokens": 7108,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1909/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1909",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cosmic dance of luminous orbs drifting through dark space, guided by invisible currents emanating from the center. Each orb carries its own color and pulse, leaving crystallized trails that define their path through the void. The motion is perpetual yet unpredictable, as if the universe itself is slowly expanding and flowing around a central force. The viewer observes this eternal choreography of light and shadow, where individual particles blend into an ever-shifting constellation of glowing matter.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.703
+}
