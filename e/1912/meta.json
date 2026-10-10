@@ -1,0 +1,98 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lava lamp in zero gravity\u201d \u2014 sketchgen entry 1912, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1912/ Licensed CC BY 4.0.",
+  "brief": "The sketch displays a transparent vessel containing a dense, viscous, colored fluid. Within the fluid, irregularly shaped, molten blobs of color drift and float, suspended in an environment with zero gravity. The blobs gently bob and shift, slowly rising and descending in an organic, continuous, and fluid motion across the canvas. The visualization is a self-contained, ever-changing spectacle of suspended color and liquid dynamics.",
+  "completion_tokens": 612,
+  "created_utc": "2026-10-09T05:13:20Z",
+  "entry_id": 1912,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 612,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2528,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.666,
+      "wall_s": 45.846
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1925,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1912
+  },
+  "loads": [],
+  "note": "handheld planner: Gemma 4 E4B QAT Q4_0 under llama-server on a Retroid Flip 2, driven by sketchgen paid-agent",
+  "off_node": [
+    {
+      "model": "gemma4:e4b-qat-q4_0",
+      "step": "planner"
+    }
+  ],
+  "planner": "gemma4:e4b-qat-q4_0",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lava lamp in zero gravity",
+  "prompt_tokens": 2528,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1912/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1912",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a transparent vessel filled with viscous, colored fluid where molten blobs drift in zero gravity. The technique uses a collection of semi-transparent ellipses that move with gentle, organic motion using sine wave oscillations to simulate buoyancy and floating. Each blob has its own speed, size, and color, creating a continuous, ever-changing spectacle of suspended color. The fluid background provides a realistic container environment while the blobs' slow, undulating movements evoke the sensation of viscosity and weightlessness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 45.846
+}
