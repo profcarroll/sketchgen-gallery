@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctea steam curling into the shapes of forgotten words Revise: the same\u2026\u201d \u2014 sketchgen entry 1908, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1908/ Licensed CC BY 4.0.",
+  "brief": "The canvas begins with soft, luminous steam tendrils that coalesce into faint, ghostly word forms. These words slowly stabilize and glow before transitioning into defined, archaic glyphs that float and rotate in the void. As the glyphs dissipate, they break down into glowing particulate matter. This matter momentarily accumulates, forming complex, transient crystalline geometries. Finally, these geometries connect, forming elaborate, ephemeral dendritic networks that drift away, leaving only a slowly circulating haze.",
+  "completion_tokens": 3211,
+  "created_utc": "2026-10-05T05:13:35Z",
+  "entry_id": 1908,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 3211,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 318,
+        "sha256": "91a2c0ddc527dbeba15fdebdf6dc0583349207c7adcf00cd4f51275b7e7485cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 5300,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.371,
+      "wall_s": 332.493
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1921,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same transient crystalline geometries, and this time forcing them to connect and form temporary, interconnected dendritic networks before dissipating.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 1889,
+    "root_entry_id": 1467
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tea steam curling into the shapes of forgotten words\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the forgotten word forms to linger and fade more slowly.\n\nRevise: the same soft, luminous tendrils of steam, and this time allowing the formed words to stabilize and glow with a faint internal light before fading.\n\nRevise: the same soft, luminous tendrils of steam, and this time forcing the coalesced forms to stabilize into legible, archaic glyphs that drift slowly before dissolving.\n\nRevise: the same soft, luminous tendrils of steam, and this time causing the dissolving glyphs to fracture into glowing particulate matter before dissipating completely.\n\nRevise: the same luminous steam tendrils, and this time causing the dissipating particulate matter to momentarily accumulate and form transient crystalline geometries before drifting away.\n\nRevise: the same stable, glowing glyphs, and this time having them rotate slowly on their vertical axis before dissolving.\n\nRevise: the same transient crystalline geometries, and this time forcing them to connect and form temporary, interconnected dendritic networks before dissipating.",
+  "prompt_tokens": 5300,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1908/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1908",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes a transformation sequence from ethereal steam to crystalline complexity. Particles begin as soft, glowing tendrils that gradually coalesce into ghostly word forms and then solidify into archaic glyphs. These glyphs eventually dissolve into particulate matter, which aggregates into transient crystal structures. The most significant addition is the formation of dendritic networks\u2014complex branching patterns that connect crystals before they dissipate entirely. The WEBGL renderer creates a three-dimensional space where these formations drift and evolve, with particles maintaining their connections through a spatially hashed grid system for efficient interaction detection.",
+  "submitted_by": "profcarroll",
+  "wall_s": 332.493
+}
