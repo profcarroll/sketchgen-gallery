@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cradar images Revise: the same radar sweep, and this time changing the\u2026\u201d \u2014 sketchgen entry 1910, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1910/ Licensed CC BY 4.0.",
+  "brief": "A mesmerizing, deep-sea sonar visualization begins with a rhythmic radar sweep of glowing violet and deep blue lines across the canvas. This continuous scan pulses and expands, forming visible, spiraling helix patterns. The dynamic lines transition through various stages of matter: they solidify into glowing, geometric crystalline formations, which then begin assembling from discrete points along the helix path. The structure gradually evolves, culminating in complex, interlocking three-dimensional lattice geometries that expand outward across the canvas surface.",
+  "completion_tokens": 3570,
+  "created_utc": "2026-10-05T05:30:45Z",
+  "entry_id": 1910,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1778,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 129)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 120.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (120.1 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 1100,
+        "played": 11,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 144,
+        "sha256": "f4aa4ccc77558dafeb5fbd5beab80b77d2156a8dea4d0588c12056b13ac20c30",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 120.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3855,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 96.443,
+      "wall_s": 150.638
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1792,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 192,
+        "sha256": "404a1205c7685d0c0e1fdc4dca466bdd5c2c3a42e23a085815ac63bb3ff33f54",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4558,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.061,
+      "wall_s": 174.86
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1923,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same atmospheric sonar visualization, and this time having the complex crystalline spirals evolve into interlocking, three-dimensional lattice structures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 1896,
+    "root_entry_id": 1379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "radar images\n\nRevise: the same radar sweep, and this time changing the glowing cyan and green lines to deep blue and violet lines\n\nRevise: the same radar scan, and this time making the expanding trails pulse with distinct, rhythmic pulsations rather than a constant sweep.\n\nRevise: the same sonar radar visualization, and this time having the propagating lines spiral outward in defined, visible helix patterns.\n\nRevise: the same atmospheric sonar visualization, and this time making the visible helix patterns appear sharply defined and geometric.\n\nRevise: the same atmospheric sonar visualization, and this time having the pulsating lines solidify into glowing crystalline structures.\n\nRevise: the same atmospheric sonar scan, and this time having the propagating lines spiral outward in defined, visible helix patterns\n\nRevise: the same atmospheric sonar visualization, and this time having the glowing crystalline structures assemble from discrete points along the helix.\n\nRevise: the same atmospheric sonar visualization, and this time having the complex crystalline spirals evolve into interlocking, three-dimensional lattice structures.",
+  "prompt_tokens": 8413,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1910/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1910",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive deep-sea sonar visualization that evolves from simple sweeping lines into complex three-dimensional crystal lattices. The animation begins with rhythmic radar sweeps in violet and deep blue hues, which expand and pulse to form spiraling helix patterns. As these patterns develop, they transition through stages of matter \u2014 from flowing lines to solid geometric formations, then to discrete points that assemble into intricate lattice structures. The visualization uses batched drawing techniques to maintain performance while creating a mesmerizing effect where the viewer witnesses the emergence of increasingly complex, interlocking geometries across the canvas surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 325.498
+}
