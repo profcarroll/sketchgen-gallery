@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca spirograph drawn by two planets orbiting each other Revise: the sam\u2026\u201d \u2014 sketchgen entry 1905, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1905/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, symmetrical pattern of spirograph-like forms. These shapes are composed entirely of interlocking, filled polygons rather than continuous lines, giving the appearance of richly stained stained-glass artistry. The composition is rendered in a vivid, contrasting palette of deep iridescent sapphire blue and glowing emerald green. The complex, interwoven structures create a hypnotic, jewel-toned tapestry that fills the entire visible area.",
+  "completion_tokens": 2730,
+  "created_utc": "2026-10-05T04:45:59Z",
+  "entry_id": 1905,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1079,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.6531/255, 75251 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "3834191434391633a82f5357ac7de0339dc82ab5d5df40d27b6fed5d0850a4c3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3574,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.42,
+      "wall_s": 96.411
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 808,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.0993/255, 166787 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "f109a74c7c34a1bf77c0817d17c5fb6c62143b61e31c1459115c25e6f1f63ff6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3652,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.836,
+      "wall_s": 80.016
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 843,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.7549/255, 128903 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 80,
+        "sha256": "07ec0bfe510216433116ff3a4f0f3afe2fbf3a55c27b5d9df630caf50b208fe6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3379,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.209,
+      "wall_s": 74.029
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1918,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same intricate, filled polygonal areas, and this time rendered in deep iridescent sapphire blue and glowing emerald green.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1884,
+    "root_entry_id": 1495
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a spirograph drawn by two planets orbiting each other\n\nRevise: the same symmetrical spirograph patterns, and this time rendered in richly saturated, vibrant neon space-inspired colours.\n\nRevise: the same complex, symmetrical spirograph patterns, and this time rendered in richly saturated emerald green and sapphire blue colors\n\nRevise: the same intricate, symmetrical spirograph patterns, and this time rendered in shimmering gold and ethereal lilac tones.\n\nRevise: the same intricate, symmetrical spirograph patterns, and this time rendered in deep iridescent sapphire blue and glowing emerald green.\n\nRevise: the same intricate, symmetrical spirograph patterns, and this time rendered with repeating triangular formations interlocking between the spirals.\n\nRevise: the same intricate, symmetrical spirograph patterns, and this time rendered with filled polygonal areas instead of merely continuous lines.\n\nRevise: the same intricate, filled polygonal areas, and this time rendered in deep iridescent sapphire blue and glowing emerald green.",
+  "prompt_tokens": 10605,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1905/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1905",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing, symmetrical composition of interlocking polygonal forms that evoke the rich, jewel-toned patterns of stained glass. Using a dense array of rotating polygons in deep sapphire blue and glowing emerald green, it generates complex, hypnotic structures that fill the entire canvas. The patterns are constructed entirely from filled polygons rather than continuous lines, creating a tapestry-like effect with overlapping, interwoven geometries. The subtle rotation and varying polygon counts produce an ever-shifting yet harmonious visual rhythm that captures the essence of intricate stained-glass artistry through algorithmic generation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 250.456
+}
