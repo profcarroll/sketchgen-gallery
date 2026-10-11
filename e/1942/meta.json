@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cgraffiti app Revise: the same layered, overlapping art, and this time\u2026\u201d \u2014 sketchgen entry 1942, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1942/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an extreme close-up view of layered, overlapping physical materials. Visible upon the surface are intricate brass gears and synchronized cams that operate in constant, relentless motion. This mechanism simulates continuous, precise sanding, gradually revealing underlying patterns. The visual effect is a slow, beautiful abrasion, where the strokes are not drawn, but are revealed by the mechanical action. The patterns emerge as pure lines of absence\u2014ghostly paths where the graphite residue has been gently removed.",
+  "completion_tokens": 2611,
+  "created_utc": "2026-10-11T16:35:17Z",
+  "entry_id": 1942,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1245,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 65)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 140)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 421 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 60,
+        "sha256": "0674a736a33cc204c522c40d09c9ceaa09883e355b365e7afe0dfaed5d37d589",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 421.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 2991,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.828,
+      "wall_s": 93.227
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1366,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 147,
+        "sha256": "09e8ec905e793445ad3531273c7014030aa28f1c0b44c029d46ce7648774beb5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3990,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.138,
+      "wall_s": 127.834
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1955,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a pattern formed by continuous physical sanding, where only the absence of graphite residue is visible, driven by intricate brass gears and synchronized cams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 553,
+    "root_entry_id": 430
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "graffiti app\n\nRevise: the same layered, overlapping art, and this time the strokes should consistently form parallel lines.\n\nRevise: flip: a pattern formed by continuous physical sanding, where only the absence of graphite residue is visible, driven by intricate brass gears and synchronized cams.",
+  "prompt_tokens": 6981,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1942/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1942",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing mechanical abrasion effect through the interplay of rotating gears and cams. The viewer observes an extreme close-up of layered materials where brass mechanisms operate in synchronized motion, gradually revealing hidden patterns through their relentless action. Rather than drawing lines or applying color, the visualization shows pure absence\u2014ghostly paths where graphite residue has been gently removed by the mechanical process. The particle system simulates sanding, with each point representing a microscopic abrasion that reveals underlying patterns over time. The visual rhythm emerges from the precise, mechanical motion of the components, creating an elegant representation of how physical forces can gradually transform surfaces to expose new forms and structures.",
+  "submitted_by": "profcarroll",
+  "wall_s": 221.061
+}
