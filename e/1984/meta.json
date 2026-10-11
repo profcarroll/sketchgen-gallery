@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same jigsaw puzzle, and this time the seams\u2026\u201d \u2014 sketchgen entry 1984, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1984/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a view at the scale of a single grain of sand, depicting a complex interplay between hard crystal formations and viscous, flowing sludge. At the center, structured elements initially resemble broken puzzle pieces, representing discrete, solid structures. These pieces do not simply fall apart; rather, they begin a fluid transformation, their hard seams dissolving into the surrounding sludge. This process is characterized by slow, continuous movement as sharp edges soften and the distinct puzzle shapes gradually lose definition, reforming into amorphous, mineral-rich pools that flow and intermingle with the background material.",
+  "completion_tokens": 3644,
+  "created_utc": "2026-10-11T21:19:59Z",
+  "entry_id": 1984,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1211,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 218,
+        "sha256": "e22efb4c38149f309a044d6d236a2d9c7944d0d325b93d5c4b17a7b40933e2d4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4137,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.832,
+      "wall_s": 126.237
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1215,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 137,
+        "sha256": "4fbd53be3e6bf7dfc32371aa18a4788fb7750cdde0ee6a2e0295dc1a04c918dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3801,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.832,
+      "wall_s": 111.372
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1218,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 137,
+        "sha256": "4fbd53be3e6bf7dfc32371aa18a4788fb7750cdde0ee6a2e0295dc1a04c918dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3801,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.853,
+      "wall_s": 75.882
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1997,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch showing mineral crystallization and flowing sludge, where discrete puzzle pieces melt and reform into continuous, amorphous shapes, viewed at the scale of a single grain of sand",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1155,
+    "root_entry_id": 1103
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "jigsaw puzzle\n\nRevise: the same jigsaw puzzle, and this time the seams where pieces interlock glow faintly when they snap into place.\n\nRevise: flip: a sketch showing mineral crystallization and flowing sludge, where discrete puzzle pieces melt and reform into continuous, amorphous shapes, viewed at the scale of a single grain of sand",
+  "prompt_tokens": 11739,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1984/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1984",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a microscopic world where rigid crystal structures gradually dissolve into viscous sludge. At the center, discrete geometric shapes\u2014representing broken puzzle pieces\u2014slowly lose their sharp edges and defined forms. Each particle begins as a solid form with angular geometry, but over time transforms into soft, amorphous blobs that blend seamlessly with the surrounding mineral-rich background. The process creates an illusion of organic flow, where hard boundaries soften and merge, revealing the underlying transformation from structured to fluid states. The viewer witnesses this metamorphosis through continuous motion and color shifts, capturing the essence of materials transitioning from solid to liquid states at a granular scale.",
+  "submitted_by": "profcarroll",
+  "wall_s": 313.491
+}
