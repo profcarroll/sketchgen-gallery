@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cerecting a skyscraper Revise: the same vertical, three-dimensional ci\u2026\u201d \u2014 sketchgen entry 1949, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1949/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a massive ziggurat structure composed of dark, fragile glass prisms. The entire structure appears to be in a state of continuous, downward collapse, with sections sliding and cascading down in a steady, dramatic motion, viewed from eye-level. The scene is dynamic, keeping a sense of perpetual decay. This steady collapse is further affected by the viewer, as every click registered anywhere on the canvas causes the structure to peel off and shed additional, detached segments of glass, increasing the cascade.",
+  "completion_tokens": 841,
+  "created_utc": "2026-10-11T17:26:31Z",
+  "entry_id": 1949,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 841,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 56,
+        "sha256": "7f66fe9f4f3e732d3676fdbac34fc54c66fb15a3198a4df3465d02010a4a07db",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3027,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.528,
+      "wall_s": 69.471
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 1962,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a constantly collapsing ziggurat of dark, fragile glass prisms that continuously slides downward in a cascade, responding to clicks by peeling off additional segments, seen at eye-level",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 594,
+    "root_entry_id": 363
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "erecting a skyscraper\n\nRevise: the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.\n\nRevise: flip: a constantly collapsing ziggurat of dark, fragile glass prisms that continuously slides downward in a cascade, responding to clicks by peeling off additional segments, seen at eye-level",
+  "prompt_tokens": 3027,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1949/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1949",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuously collapsing ziggurat structure made of dark glass prisms, viewed from eye level. The entire formation appears to be in perpetual decay, with segments sliding and cascading downward in a steady, dramatic motion. Each frame, the structure's geometry shifts subtly through physics-based movement, creating an organic sense of instability and collapse. When clicked, the viewer triggers additional segments to peel off and join the cascade, increasing the intensity of the falling debris. The scene uses WebGL rendering for 3D depth and dynamic lighting effects, with each segment fading as it falls to simulate the passage of time and the progression of decay.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.471
+}
