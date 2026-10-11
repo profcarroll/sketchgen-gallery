@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can intricate tangle of wires and cables with animated signals pulsing\u2026\u201d \u2014 sketchgen entry 1952, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1952/ Licensed CC BY 4.0.",
+  "brief": "A complex tangle of simulated wires and cables dominates the canvas. Initially, luminous data streams flow through the wires in vibrant streaks. However, upon reaching any major junction, the flow fails instantly. Instead of continuing or spiraling, the connected cables undergo a dramatic, structural collapse, shattering into brittle, linear shards. The entire scene is rendered in a monochromatic palette, mimicking the stark, meticulous style of 1960s plotter drawings, with the texture and appearance of charcoal drawing visible at monumental scale.",
+  "completion_tokens": 3863,
+  "created_utc": "2026-10-11T17:46:14Z",
+  "entry_id": 1952,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1270,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.7189/255, 46860 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 181,
+        "sha256": "e5bf72a233b305474417717b8e07fec731f1c42f8cbb4389776ab5cf94c22553",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3955,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.916,
+      "wall_s": 121.365
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1283,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.7189/255, 46860 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 167,
+        "sha256": "a3f1dfb4675af67c9e79fb5594668d3b2e284e18b82ca5d66585a4fe3554853f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3863,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.983,
+      "wall_s": 118.377
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1310,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.7189/255, 46860 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 167,
+        "sha256": "a3f1dfb4675af67c9e79fb5594668d3b2e284e18b82ca5d66585a4fe3554853f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3863,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.933,
+      "wall_s": 82.273
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1965,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch where the luminous energy fails instantly at junctions, causing the cables to shatter into brittle, linear shards instead of forming spirals, made of charcoal, seen at scale, in the 1960s plotter style.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 630,
+    "root_entry_id": 97
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an intricate tangle of wires and cables with animated signals pulsing through\n\nRevise: The same luminous data streams, and this time make the pulsing energy pulses more defined and localized along the thicker cables.\n\nRevise: the same luminous data streams, and this time make the pulsing energy pulses travel slower and appear contained within the thickest cables only\n\nRevise: the same luminous data streams, and this time let the pulses move along all cable thicknesses, following an intermittent, rhythmic pattern.\n\nRevise: the same luminous data streams, and this time make them visibly brighten and momentarily split into secondary streams at all major cable junctions.\n\nRevise: lacks visual interest, contrast, and originality\n\nRevise: the same luminous data streams, and this time make them flow in distinct, propagating waves that travel from the center and dissipate into the outer network.\n\nRevise: the same luminous data streams, and this time the secondary streams visible at junctions form perfectly defined, angular nodes before dissipating.\n\nRevise: the same luminous data streams, and this time make the secondary streams form in interlocking spirals before dissipating.\n\nRevise: flip: a sketch where the luminous energy fails instantly at junctions, causing the cables to shatter into brittle, linear shards instead of forming spirals, made of charcoal, seen at scale, in the 1960s plotter style.",
+  "prompt_tokens": 11681,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1952/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1952",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a monochromatic visualization of a tangled network of data streams that collapse upon reaching junctions. The work evokes the clean, precise aesthetic of 1960s plotter drawings while employing charcoal-like textures and scale. Streams begin as vibrant streaks moving across the canvas, following their own trajectories until they encounter a central node or junction. Upon contact with these points, the streams fail catastrophically, shattering into brittle linear shards that scatter outward. The simulation is static in its execution\u2014no motion occurs unless explicitly triggered by interaction\u2014but the visual impact of failure and disintegration creates a compelling narrative about systems breaking down under pressure. The entire composition is rendered using only basic drawing primitives, maintaining the starkness and mechanical precision of its inspirations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 322.015
+}
