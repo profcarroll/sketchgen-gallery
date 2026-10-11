@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca 3D marble rolls around and down a funnel, implementing collision de\u2026\u201d \u2014 sketchgen entry 1960, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1960/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a highly magnified, detailed cross-section of a biological channel, resembling the complex, branching pathways found within a vascular system. The image is styled after a historical Victorian botanical plate, giving it the appearance of intricate scientific drawing rendered in dried, muted pigments. Viewed at a macro scale, the viewer observes overlapping, curved filaments and defined tubes of pigment. The pathways suggest the continuous, force-guided flow of life processes, creating a delicate pattern of interconnected shapes and subtle, earthy tones. The sketch remains a static study, designed purely for detailed observation.",
+  "completion_tokens": 887,
+  "created_utc": "2026-10-11T18:33:52Z",
+  "entry_id": 1960,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 887,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 89,
+        "sha256": "6d19e71b2a4508b9aa53a4821e79dfb1920d27b03e80e5ac91ce1cfc971a8039",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.485,
+      "prompt_tokens": 3412,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.102,
+      "wall_s": 81.733
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1973,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of continuous, force-guided pathways taken into the branching flow of pollen through a vascular system, rendered as a cross-section, made of dried pigment, seen at macro scale, in a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "inherits_source": true,
+    "parent_entry_id": 717,
+    "root_entry_id": 127
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D marble rolls around and down a funnel, implementing collision detection, so it rolls naturally along sufaces\n\nRevise: the same funnel-shaped container, and this time the marble rolls along a tilted, non-vertical slope at the base.\n\nRevise: improve the camera perspective and collision detection\n\nRevise: the same funnel-shaped channel, and this time the marble rolls along a diagonal slope at the base\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope gradually curves inward toward the exit.\n\nRevise: the same funnel-shaped channel, and this time the diagonal slope widens and flattens into a collecting basin at the exit.\n\nRevise: The same funnel-shaped container, and this time the initial diagonal slope features more dramatic and visible curvature changes.\n\nRevise: the same funnel-shaped channel, and this time the shallow basin widens and deepens significantly at the exit.\n\nRevise: the same complex, funnel-shaped channel, and this time the initial slope features abrupt shifts in curvature and requires a momentary pause.\n\nRevise: the same complex, solid, funnel-shaped channel, and this time the structure incorporates small, alternating intersecting ridges and troughs forcing the marble into constant, minute course corrections.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs force the marble into sudden, visible lateral deviations.\n\nRevise: the same funnel-shaped channel, and this time the alternating intersecting ridges and troughs are replaced by randomly sized, asymmetrical crystalline barriers.\n\nRevise: the same complex, geometrically designed channel, and this time the random crystalline barriers are replaced by continuous, sharply angled metal walls.\n\nRevise: depart: the concept of continuous, force-guided pathways taken into the branching flow of pollen through a vascular system, rendered as a cross-section, made of dried pigment, seen at macro scale, in a Victorian botanical plate.",
+  "prompt_tokens": 3412,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1960/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1960",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a detailed cross-section of a vascular system rendered in the style of a historical Victorian botanical plate. Using muted earth tones and dried pigment aesthetics, it depicts overlapping, curved filaments and defined tubes that suggest the branching pathways of life processes. The work captures the macro-scale complexity of biological channels through carefully crafted organic curves and subtle textural elements. The static composition invites contemplation of the delicate interconnections within natural systems, rendered with the scientific precision and artistic sensitivity characteristic of 19th-century botanical illustration.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.733
+}
