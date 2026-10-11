@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 1927, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1927/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a complex, hyper-detailed intersection: a giant, rusted celestial clockwork mechanism viewed as if through the delicate warp and weft of a woven loom. The color palette is dominated by aged copper, deep rust reds, and dark, oiled metallic browns. The entire structure is defined by slow, intricate movement. Over the course of the sketch, the gears, springs, and linkages begin to subtly align and shift, generating complex, glowing patterns of perfect geometric renewal. This process is patient and cyclical, seeming to eternally repeat the mechanism of universal rhythm across the visible weave.",
+  "completion_tokens": 1427,
+  "created_utc": "2026-10-11T14:58:37Z",
+  "entry_id": 1927,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1427,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 185,
+        "sha256": "7a8125ec96b1ade3c19f9ee64eaa8a82abc072051d39a3975fd4b3a96b00a03e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4091,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.228,
+      "wall_s": 135.58
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1940,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 195,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.",
+  "prompt_tokens": 4091,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1927/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1927",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a vast, rusted celestial clockwork mechanism viewed through the delicate weave of a loom. The composition features intricate gears with varying numbers of teeth, interconnected springs, and geometric linkages that move in complex, cyclical patterns. Using the WEBGL renderer, it creates a three-dimensional perspective where metallic hues dominate\u2014a palette of aged copper, deep rust reds, and dark oiled browns. The movement is patient and eternal, with each element subtly shifting and realigning to form glowing geometric patterns across the canvas. The viewer witnesses a cosmic rhythm repeating endlessly through the lens of this mechanical tapestry, where the precise alignment of components generates an ever-renewing visual symphony of light and metal.",
+  "submitted_by": "profcarroll",
+  "wall_s": 135.58
+}
