@@ -1,0 +1,93 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighthouse\u201d \u2014 sketchgen entry 1913, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1913/ Licensed CC BY 4.0.",
+  "brief": "A stylized, tall lighthouse tower occupies the center, colored in cool whites and deep blues. A powerful, visible beam of light rotates and sweeps rhythmically across the entire canvas. This cyclical beam shifts its angle and illuminates the surrounding ocean background with contrasting washes of color. The structure is self-contained, relying on a smooth, predictable rotational movement of the light source.",
+  "completion_tokens": 645,
+  "created_utc": "2026-10-10T22:01:19Z",
+  "entry_id": 1913,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 645,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2523,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.58,
+      "wall_s": 64.885
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1926,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 1913
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lighthouse",
+  "prompt_tokens": 2523,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1913/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1913",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a stylized lighthouse with a rotating beam sweeping across a dark ocean. The tower is rendered in cool whites and deep blues, with a prominent light source at the top that illuminates the surrounding water. The beam rotates smoothly and continuously, creating dynamic washes of color across the canvas. The visualization uses polar coordinates to create the rotating effect, with the beam represented as a large triangular shape that sweeps across the screen. The ocean background shifts subtly in response to the beam's illumination, creating an atmospheric effect that captures the essence of a lighthouse beacon cutting through the night.",
+  "submitted_by": "profcarroll",
+  "wall_s": 64.885
+}
