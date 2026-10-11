@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 1978, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1978/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, aerial view of a continuously knitting fabric strip. The knitwork covers the entire visible surface, forming dense, interlocking stitches that suggest scale and immense material effort. Periodically, the automated knitting process stalls, causing the structure to fail. These stalls manifest as distinct, abrupt structural disruptions, irregular knots, and sudden tears in the fabric's continuity. The piece operates without direct interaction; the only change observed is the slow, unpredictable deterioration and re-knitting of the massive, growing surface.",
+  "completion_tokens": 1172,
+  "created_utc": "2026-10-11T20:32:17Z",
+  "entry_id": 1978,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1172,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 61,
+        "sha256": "ff29e061cab681dc1326788bbfd213c378b2d244be6599ba29a4ca5b8c5561e5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3113,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.338,
+      "wall_s": 94.588
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1991,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: A continuously knitted fabric that periodically stalls, creating abrupt structural disruptions and non-repeating knots, seen from a satellite.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1038,
+    "root_entry_id": 886
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the visible stitches should consistently form distinct, alternating colored horizontal stripes.\n\nRevise: the same growing strip of patterned fabric, and this time the visible stitches should consistently form a continuous, repeating diamond stitch pattern across the growing surface.\n\nRevise: flip: A continuously knitted fabric that periodically stalls, creating abrupt structural disruptions and non-repeating knots, seen from a satellite.",
+  "prompt_tokens": 3113,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1978/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1978",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an aerial view of a continuously knitting fabric strip, where the pattern evolves over time with both regular stitching and irregular disruptions. The work captures the tension between order and chaos in automated processes\u2014while the fabric grows steadily, periodic \"stalls\" manifest as knots and tears that disrupt its continuity. These interruptions create an unpredictable visual rhythm that suggests the struggle of mechanical systems against their own limitations. The viewer observes a vast, seamless surface gradually deteriorating and reforming, embodying both the effort and fragility inherent in continuous production.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.588
+}
