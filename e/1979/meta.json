@@ -1,0 +1,169 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 1979, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1979/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an intricate, contained architectural installation composed of polished brass pipes and industrial glass tubing, arranged in a complex, structured network suggestive of a 1920s Bauhaus design. The primary visual feature is a vibrant, cyan light that traverses the interconnected piping system. This cyan light pulses rhythmically and smoothly throughout the entire structure, giving the simulated room an energized, glowing quality. The overall environment is static, but the systematic movement of the light source defines the piece.",
+  "completion_tokens": 3619,
+  "created_utc": "2026-10-11T20:42:21Z",
+  "entry_id": 1979,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1118,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 561.1 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 79,
+        "sha256": "4a1d734db569469934a82645a4e37e5ccc7b1b114f69253f4bb176d9474cfbdc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 561.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3316,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 35.819,
+      "wall_s": 92.739
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1132,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 319.3 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 130,
+        "sha256": "0b6570220496833aaf884fb74b204e3e3fabef37321174c41947f44a4a28ab04",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 319.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3697,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 21.205,
+      "wall_s": 104.949
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1369,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 134,
+        "sha256": "9bd046b2b7e066a221b2765e9879436612702c405040ac264201d27c5caeb803",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3733,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 20.195,
+      "wall_s": 113.122
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1992,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Contained, rhythmic, cyan pulsation given to a series of interconnected polished brass pipes, made of industrial glass, seen at the scale of a single room, in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 1056,
+    "root_entry_id": 402
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes are concentrated into steady, vertical beams of cyan light.\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes pulsate rhythmically with cyan light.\n\nRevise: the same two steady vertical beams of bright cyan light, and this time the light widens and shrinks cyclically, illuminating the corn stalks unevenly.\n\nRevise: the same intensely bright cyan light beams, and this time they illuminate the corn stalks in a fixed, glowing semicircle directly beneath the craft.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intense cyan light beams pulsate slowly and uniformly across the semicircle.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intensely cyan light beams pulse rapidly and irregularly across the semicircle.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with smooth, rhythmic waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with slow, uniform waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with rapid, erratic flashes across the semicircular ground pattern.\n\nRevise: carry: Contained, rhythmic, cyan pulsation given to a series of interconnected polished brass pipes, made of industrial glass, seen at the scale of a single room, in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 10746,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1979/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1979",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a static architectural installation composed of polished brass pipes and industrial glass tubing arranged in a structured network reminiscent of 1920s Bauhaus design. The piece features a vibrant cyan light that pulses rhythmically throughout the entire structure, creating an energized, glowing effect. The visualization uses WebGL rendering to efficiently draw a complex network of interconnected pipes while maintaining performance through spatial hashing for neighbor detection and reduced geometric detail for all spherical elements. The viewer observes a serene, systematic glow that moves through the installation without any external interaction, emphasizing the architectural form and its luminous quality.",
+  "submitted_by": "profcarroll",
+  "wall_s": 310.81
+}
