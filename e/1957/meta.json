@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 1957, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1957/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays countless vertically stacked, rectangular rods of vibrant, interacting color. These rods float and organize in a complex field, constantly shifting and re-aligning as they form temporary connections with their neighbors. The entire structure is viewed through the stylized filter of polarized light, causing the colors and orientations of the rods to shimmer and shift dramatically as they form and break bonds. The entire visualization is a ceaseless dance of structural organization.",
+  "completion_tokens": 1350,
+  "created_utc": "2026-10-11T18:15:28Z",
+  "entry_id": 1957,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1350,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "33f8b4882e88951ceb1f2689aea7af307cdb1580f693d36d8836ff0dd297da88",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 47.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3653,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.337,
+      "wall_s": 117.194
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1970,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Dynamic complementary bonding given to liquid crystal phases, visualized as stacked, interacting colored rectangular rods, under polarized light",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 684,
+    "root_entry_id": 387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: carry: Dynamic complementary bonding given to liquid crystal phases, visualized as stacked, interacting colored rectangular rods, under polarized light",
+  "prompt_tokens": 3653,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1957/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1957",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This visualization portrays a dynamic, liquid crystal-like field composed of countless vertically aligned rectangular rods that float and reorganize in three-dimensional space. The rods interact through temporary bonds with their neighbors, forming and breaking connections as they move in response to subtle forces. The entire scene is rendered under the stylized influence of polarized light, which causes the colors of the rods to shimmer and shift dramatically as they form and dissolve bonds. The result is a mesmerizing dance of structural organization where the rods continuously rearrange themselves into ever-changing patterns, evoking the fluid yet ordered behavior of liquid crystal phases.",
+  "submitted_by": "profcarroll",
+  "wall_s": 117.194
+}
