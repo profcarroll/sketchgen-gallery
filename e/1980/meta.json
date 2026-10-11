@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdrone POV fly through an abandoned brutalist campus Revise: the same\u2026\u201d \u2014 sketchgen entry 1980, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1980/ Licensed CC BY 4.0.",
+  "brief": "A continuous first-person glide through a desaturated landscape of massive, monolithic concrete structures that transition into a subterranean lattice of sharp quartz formations. The brutalist geometry features textures of slow decay and grime, giving way to vast, crystalline mineral structures at a city-block scale. The camera moves steadily forward through these cavernous, geometric environments.",
+  "completion_tokens": 850,
+  "created_utc": "2026-10-11T20:51:30Z",
+  "entry_id": 1980,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 850,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 65,
+        "sha256": "8691dbf257924b3b6e7a317687d986cecdc4264949ad0ca43296e0f426579ce5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3170,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.133,
+      "wall_s": 73.627
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1993,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the monolithic geometry and slow decay of the brutalist concrete taken into a subterranean lattice of quartz formations, seen at one city block scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1086,
+    "root_entry_id": 1033
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "drone POV fly through an abandoned brutalist campus\n\nRevise: the same first-person perspective glides steadily through a desaturated landscape of massive, monolithic concrete structures, and this time the concrete surfaces show streaks of green moss and grime\n\nRevise: depart: the monolithic geometry and slow decay of the brutalist concrete taken into a subterranean lattice of quartz formations, seen at one city block scale.",
+  "prompt_tokens": 3170,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1980/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1980",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a cinematic journey through a transition from a harsh, concrete landscape to an ethereal underground crystal cavern. The viewer experiences a steady forward motion through a desaturated environment populated by massive brutalist concrete structures that gradually give way to sharp, luminous quartz formations. The visual shift occurs as the camera moves deeper into the subterranean space, revealing increasingly crystalline mineral structures that dominate the scene at city-block scale. The contrast between the weathered concrete and pristine quartz creates a dramatic architectural narrative, emphasizing the passage from decay to natural formation through a continuous, immersive first-person perspective.",
+  "submitted_by": "profcarroll",
+  "wall_s": 73.627
+}
