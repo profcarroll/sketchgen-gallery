@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 1956, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1956/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a monumental, geometric structure crafted from folded paper, rendered in monochromatic tones. It appears as a vast, angular sculpture composed of intricate, overlapping planes. Over time, the perfect geometry undergoes a visible entropy. The sharp creases and stable folds slowly appear to crumble and warp, transforming the rigid object into a decaying mass. This transformation is a continuous, perpetual process that requires no direct input from the viewer, simply presenting the slow, inevitable passage of decay upon the sculptural form.",
+  "completion_tokens": 1666,
+  "created_utc": "2026-10-11T18:09:47Z",
+  "entry_id": 1956,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 829,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 61)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "5276ab3b3259e14405f570b93d0a331ab62debfbc2ba09cd4c55b90f63166952",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3406,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.627,
+      "wall_s": 76.842
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 837,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 88,
+        "sha256": "f6483b771ce122e70a8b49e567cfc7a45f68cb9b004ab5da502e3b2959fa50cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3546,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.562,
+      "wall_s": 80.013
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1969,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of regulated, endless forward motion taken into the slow, inevitable decay of a massive, single-color folded origami sculpture.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 678,
+    "root_entry_id": 55
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.\n\nRevise: make it playable\n\nRevise: the same retro, stylized representation of a road that scrolls constantly beneath the player's vehicle, and this time include more complex and varied visual obstacles appearing along the edges of the road.\n\nRevise: depart: the idea of regulated, endless forward motion taken into the slow, inevitable decay of a massive, single-color folded origami sculpture.",
+  "prompt_tokens": 6952,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1956/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1956",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a monochromatic, geometric sculpture composed of folded paper planes that gradually decay over time. The structure is built from multiple overlapping layers of planes arranged in a complex, angular form. As the animation progresses, each fold begins to warp and crumble \u2014 its position and orientation subtly shift through sinuous motion, creating an impression of inevitable entropy. The viewer observes a slow transformation from rigid, precise geometry into a disintegrating mass, with no external input required. The decay manifests both in the structural warping and in floating particles that represent the material's dissolution. This visual metaphor explores how even the most carefully constructed forms are subject to time's passage and gradual breakdown.",
+  "submitted_by": "profcarroll",
+  "wall_s": 156.855
+}
