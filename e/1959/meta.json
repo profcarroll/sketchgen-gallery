@@ -1,0 +1,133 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cbuild a spaceship control panel with buttons and switches and when th\u2026\u201d \u2014 sketchgen entry 1959, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1959/ Licensed CC BY 4.0.",
+  "brief": "The visualization presents a metallic surface that appears heavily rusted and aged, serving as a canvas for dynamic data patterns. Across this deep-colored, oxidized substrate, intricate veins of data continuously form and shift, simulating natural crystallization. These patterns are structured and complex, appearing as vibrant, glowing lines that ripple and flow. There is no user interaction needed; the visualization is a self-contained display where the structures constantly evolve and shift, creating the illusion of immense data forming across the decaying steel.",
+  "completion_tokens": 1862,
+  "created_utc": "2026-10-11T18:28:48Z",
+  "entry_id": 1959,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 894,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 761.4 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 182,
+        "sha256": "ef1d730dd77b68c2dcae5dd2c23cac84d83112a33255ec6bf05dd917d4d7d609",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 761.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4006,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.007,
+      "wall_s": 96.785
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 968,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 85,
+        "sha256": "2efd53285694a68cde57dd0c83c876780aee5191c77e8b5034ba152576f96c89",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 62.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3473,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 29.004,
+      "wall_s": 85.468
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1972,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the illusion of rapid, structured data shifting taken into a visualization of natural crystallization patterns forming complex veins across rusted sheet steel",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 703,
+    "root_entry_id": 530
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "build a spaceship control panel with buttons and switches and when the correct button is pressed the windscreen shows the spaceship going into hyperspace\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: the same futuristic spaceship control panel, and this time the inactive switches glow a deep red.\n\nRevise: depart: the illusion of rapid, structured data shifting taken into a visualization of natural crystallization patterns forming complex veins across rusted sheet steel",
+  "prompt_tokens": 7479,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1959/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1959",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This visualization presents a metallic surface aged by time and oxidation, serving as a canvas for dynamic data patterns. The rusted steel background features subtle color variations that shift slowly across the canvas, creating an atmosphere of decay and endurance. Across this substrate, intricate veins of data form and evolve, flowing like crystalline structures through space. These patterns are rendered with glowing lines that ripple and shift, suggesting complex information networks forming organically across the surface. The visualization captures both the passage of time and the continuous emergence of order from chaos, presenting a sense of vast data streams interacting on an ancient foundation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 182.253
+}
