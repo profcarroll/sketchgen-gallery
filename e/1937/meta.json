@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 1937, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1937/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with a vast, industrial space dominated by the decaying structure of a colossal ventilation system. The forms are overwhelmingly geometric, characterized by rusted metal, complex piping, and deep, dramatic shadows that define the architectural volume. The centerpiece is a massive, gracefully swinging pendulum suspended within the mechanical framework. The entire composition maintains a constant, rhythmic movement as the heavy pendulum swings back and forth, casting dynamic patterns of light and shadow across the entire scene.",
+  "completion_tokens": 744,
+  "created_utc": "2026-10-11T16:01:04Z",
+  "entry_id": 1937,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 744,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "bb0647d71aa9c527f4fe3819b1cd8f7aa434756af4ec042c0558fd15389effbd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.7,
+      "num_ctx": 16384,
+      "preload_s": 0.03,
+      "prompt_tokens": 3189,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.534,
+      "wall_s": 68.106
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1950,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart the interplay of light and shadow revealing internal structure taken into a colossal abandoned ventilation system, mechanism: a pendulum",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 503,
+    "root_entry_id": 81
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.\n\nRevise: try to recreate the original prompt more faithfully to the details in the description\n\nRevise: the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.\n\nRevise: depart the interplay of light and shadow revealing internal structure taken into a colossal abandoned ventilation system, mechanism: a pendulum",
+  "prompt_tokens": 3189,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1937/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1937",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a haunting industrial scene of a vast, decaying ventilation system with a massive swinging pendulum at its center. The viewer observes an endless mechanical space where rusted metal structures form a complex geometric framework, illuminated by dynamic light that moves with the pendulum's rhythmic swing. The pendulum's motion creates shifting patterns of light and shadow across the entire scene, revealing the internal structure of the industrial environment through its constant, hypnotic movement. The composition balances architectural detail with organic motion, using WebGL rendering to create a volumetric sense of space while maintaining performance within strict frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 68.106
+}
