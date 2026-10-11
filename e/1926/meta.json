@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 1926, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1926/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts massive, geometrically precise architectural forms meeting a vibrant, luminous liquid surface. Extending from these solid structures is a constellation of intricate, nested bioluminescent crystal formations. A visible pendulum drives the entire system, transferring kinetic energy from the solid structures into the fluid and crystalline forms. The crystals pulse and glow rhythmically as the pendulum swings, creating a mesmerizing, dynamic interplay of pure light and impossible geometry.",
+  "completion_tokens": 1284,
+  "created_utc": "2026-10-11T14:52:16Z",
+  "entry_id": 1926,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1284,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 112,
+        "sha256": "8958931bdad38fab83cd8b2cadcf2ec26ed803d63ad2f863552bbdad51e7e429",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.0,
+      "num_ctx": 16384,
+      "preload_s": 0.03,
+      "prompt_tokens": 3570,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.627,
+      "wall_s": 111.447
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1939,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the transference of kinetic energy from solid forms into a fluid, taken into a constellation of nested, bioluminescent crystal structures, driven by a pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 135,
+    "root_entry_id": 96
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: depart: the transference of kinetic energy from solid forms into a fluid, taken into a constellation of nested, bioluminescent crystal structures, driven by a pendulum.",
+  "prompt_tokens": 3570,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1926/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1926",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes an architectural scene where geometric forms meet a luminous liquid surface, driven by a central pendulum mechanism. The composition features nested bioluminescent crystal formations that pulse and glow in rhythmic response to the pendulum's motion. Through the WEBGL renderer, I've created a sense of depth and volumetric complexity with multiple crystal structures rotating independently while maintaining their geometric integrity. The pendulum's swinging motion transfers kinetic energy through the system, causing crystals to respond with synchronized pulsing effects and subtle positional shifts, creating an mesmerizing interplay between rigid architectural forms and fluid, organic light patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.447
+}
