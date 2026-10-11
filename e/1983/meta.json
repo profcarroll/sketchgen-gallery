@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cjigsaw puzzle Revise: the same interlocking jigsaw pieces, and this t\u2026\u201d \u2014 sketchgen entry 1983, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1983/ Licensed CC BY 4.0.",
+  "brief": "A dark celestial void contains fragmented constellations composed of glowing star clusters and swirling dark matter. These cosmic fragments are moved by an intricate, rhythmic mechanism of rotating gears and oscillating cams that shift the stars' positions and orientations. The scene provides a sense of vast three-dimensional depth, with pieces of the galaxy drifting at various distances through the emptiness.",
+  "completion_tokens": 1082,
+  "created_utc": "2026-10-11T21:10:40Z",
+  "entry_id": 1983,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1082,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 79,
+        "sha256": "63d87603c7d8b415911b6964908a205f72f7ea3741b7ee21dbd6d1f18ccb2222",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 63.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3175,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 34.486,
+      "wall_s": 87.665
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1996,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The visible constellations of a distant galaxy, fragmented and held in a celestial void, made of dark matter, seen at the cosmic scale, driven by gears and cams",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1154,
+    "root_entry_id": 1102
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "jigsaw puzzle\n\nRevise: the same interlocking jigsaw pieces, and this time each segment displays a colorful, visible part of a larger image.\n\nRevise: depart: The visible constellations of a distant galaxy, fragmented and held in a celestial void, made of dark matter, seen at the cosmic scale, driven by gears and cams",
+  "prompt_tokens": 3175,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1983/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1983",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cosmic void filled with fragmented constellations of glowing star clusters and swirling dark matter, animated by an intricate mechanism of rotating gears and oscillating cams. The viewer observes a vast three-dimensional space where thousands of stars drift in their orbits, influenced by the rhythmic motion of mechanical gears that control their positions and orientations. The scene conveys a sense of cosmic scale and depth through layered 3D rendering, with stars clustering into luminous groups that move in synchronized patterns. The dark matter swirls add texture and mystery to the empty void, while the rotating gears provide an underlying rhythm that drives the entire cosmic dance. The visualization captures both the grandeur and the mechanical precision of a distant galaxy's structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.665
+}
