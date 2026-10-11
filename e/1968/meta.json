@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdiagonal stripes animating in smoothly eased slicing patterns in colo\u2026\u201d \u2014 sketchgen entry 1968, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1968/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate and continuously evolving network of fine linear segments. These self-generated lines mimic the delicate, repeating, and highly ordered structure found in natural crystalline mineral growth. The overall composition utilizes a soft palette of intersecting lines and planes, suggesting the layered texture and visible edges of cut paper. The pattern is dynamic, expanding and forming new pathways across the entire surface, giving the perpetual impression of organic, slow, self-assembly.",
+  "completion_tokens": 1277,
+  "created_utc": "2026-10-11T19:25:24Z",
+  "entry_id": 1968,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 614,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 29)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 78,
+        "sha256": "a892c2dba922277e4602de01000a5ad9d988189edcd746a460281d735426c728",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3135,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.641,
+      "wall_s": 58.53
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 663,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 61,
+        "sha256": "54e873e01974e426b6d968c0081a478f9fe4e72f2b2a2de5c0505d7a8ac481ba",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.8,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3318,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.855,
+      "wall_s": 64.188
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1981,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The pattern of self-generated, intersecting linear segments taken into the delicate, repeating structure of crystalline mineral growth, made of cut paper",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 873,
+    "root_entry_id": 12
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures\n\nRevise: try a new color pallete\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the bands warp with sharp, defined corners instead of smoothly transitioning edges\n\nRevise: the same continuous, dynamic abstract composition composed of bold, intersecting bands, and this time the bands are segmented by visible vertical or diagonal stripes.\n\nRevise: the same perpetually shifting abstraction of bold, intersecting geometric bands, and this time the boundaries between the colors are defined by harsh, rigid edges.\n\nRevise: the same perpetually shifting abstract composition of bold, intersecting bands and fine linear stripes, and this time the boundaries between the colored bands are defined by harsh, rigid edges.\n\nRevise: depart: The pattern of self-generated, intersecting linear segments taken into the delicate, repeating structure of crystalline mineral growth, made of cut paper",
+  "prompt_tokens": 6453,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1968/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1968",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving network of delicate, crystalline lines that appear to grow and self-organize across the canvas. Using Perlin noise to guide each line's direction and movement, the system generates a constantly shifting pattern reminiscent of mineral formation or cellular growth. The soft color palette and fine line weights emphasize the organic, almost paper-like texture of the composition. Each line segment follows its own path while subtly responding to neighboring movements through shared noise fields, creating emergent patterns that expand across the entire canvas without any explicit collision detection or spatial hashing. The result is a mesmerizing display of continuous, low-detail growth that captures the essence of natural self-assembly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 122.718
+}
