@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cDraw me a picture of HAL-2000 from the motion picture \u201c2001: A Space\u2026\u201d \u2014 sketchgen entry 1965, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1965/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays intricate, self-generating patterns composed of crystalline and organic forms. These shapes are defined by sharp, geometric structural seams that resemble both coral formations and microscopic fissures. The dominant color palette is deep, subdued blue and off-white, giving the impression of deep-sea or geological depth. The central elements continuously shift and flow, embodying the fluid, algorithmic motion of a dispersed group following a complex, invisible set of rules. The structure changes constantly without any direct interaction, forming a living, evolving field of networked light and shadow.",
+  "completion_tokens": 2558,
+  "created_utc": "2026-10-11T19:07:47Z",
+  "entry_id": 1965,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1190,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 69)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1803.5 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 102,
+        "sha256": "c76aef3624bf87dc85fa948b95335bd21e46319a25d0b209d600af593959a1cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1803.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3698,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 108.294,
+      "wall_s": 111.145
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1368,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 103,
+        "sha256": "972eb7b750b81ecb4913243189882d28d37fb923fde52e10377bc0c638f3c848",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 92.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3847,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 48.904,
+      "wall_s": 124.287
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1978,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The pattern of structural micro-fractures taken into the crystalline formations of deep-sea coral, seen through the mechanism of a flock following three rules.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 858,
+    "root_entry_id": 607
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Draw me a picture of HAL-2000 from the motion picture \u201c2001: A Space Odyssey\u201d\n\nRevise: the same detailed, stylized portrait of HAL-2000, and this time visible structural seams defining the panel joints.\n\nRevise: the same highly detailed, stylized portrait of the mechanical structure of HAL-2000, and this time subtle signs of operational wear and panel degradation.\n\nRevise: the same highly detailed and stylized portrait of a complex, humanoid mechanical structure, and this time visible signs of oxidized corrosion forming along the primary structural seams.\n\nRevise: the same highly detailed portrait of a complex, humanoid mechanical structure, and this time visible signs of deep micro-fractures forming along the primary structural seams.\n\nRevise: depart: The pattern of structural micro-fractures taken into the crystalline formations of deep-sea coral, seen through the mechanism of a flock following three rules.",
+  "prompt_tokens": 7545,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1965/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1965",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, self-generating field of crystalline and organic forms that evolve in real-time. Using a combination of particle systems, noise-based motion, and spatially-aware connections, it produces an intricate network of flowing structures reminiscent of deep-sea coral formations or geological fissures. The visual effect emerges from the interplay between individual particles, their dynamic connections, and subtle fractal elements, all rendered in a muted blue and off-white palette that evokes depth and mystery. The system operates without direct user interaction, continuously shifting through algorithmic motion to create an ever-changing, living field of light and shadow.",
+  "submitted_by": "profcarroll",
+  "wall_s": 235.432
+}
