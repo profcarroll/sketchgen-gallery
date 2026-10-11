@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe periodic table of elements Revise: the same large, organized grid\u2026\u201d \u2014 sketchgen entry 1988, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1988/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an immensely vast, structured network of crystalline geodes, forming an organized grid across the plane. These geological formations appear to expand and shift continuously, simulating the monumental, slow creep of tectonic plates. The crystals are rendered in rich, varied mineral tones, emphasizing the interlocking complexity and inherent structural patterns. There is no user interaction required; the entire diagram moves organically and perpetually, conveying a sense of immense, ongoing geological time and pressure.",
+  "completion_tokens": 1760,
+  "created_utc": "2026-10-11T21:44:38Z",
+  "entry_id": 1988,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 911,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 106 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 61,
+        "sha256": "e6547fedc34004022c13e5d4e204434659abd393f0a379d56cfb75a11bba1956",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 106.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3133,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 52.767,
+      "wall_s": 76.331
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 849,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 100,
+        "sha256": "bff56c38bb84e75e6f37431e1838ce17175ef6a8f1cec4dd600efade8ddaadbf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.4,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3536,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.462,
+      "wall_s": 80.731
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2001,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the principle of structured periodicity taken into a colossal network of crystalline geodes, expanding and shifting like slow-motion tectonic plate drifts.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1193,
+    "root_entry_id": 889
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the periodic table of elements\n\nRevise: the same large, organized grid displays the elements of the periodic table, and this time the entire diagram pulses with a vibrant blue hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous pulsating glow is a warm golden hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow travels in distinct, visible sine waves.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the ambient glow travels across the grid in distinct, visible sine waves.\n\nRevise: depart: the principle of structured periodicity taken into a colossal network of crystalline geodes, expanding and shifting like slow-motion tectonic plate drifts.",
+  "prompt_tokens": 6669,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1988/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1988",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an endless, evolving crystalline network that simulates the slow, organic movement of tectonic plates. Through a combination of subtle positional shifts, rotations, and color variations, each crystal in the grid appears to breathe and shift within its geometric framework. The visualization uses simplified 3D forms to maintain performance while conveying the sense of immense geological time and pressure. The entire composition moves continuously without user interaction, creating an immersive sense of vastness and perpetual transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 157.062
+}
