@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe game of life Revise: the same cellular automaton, and this time i\u2026\u201d \u2014 sketchgen entry 1970, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1970/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, intricate lattice of glowing, interconnected cells. These cells continuously evolve and decay, simulating a dynamically shifting biological process. The network shifts and adapts across the grid, maintaining a constant sense of organic life. This activity is set against a dramatic backdrop: the entire field is slowly immersed in a deep, rhythmic pulse of light, where the background darkens and gradually brightens in sweeping, slow-motion waves of color. The process is self-contained, requiring no interaction to observe the shifting life cycle and the massive ambient light shifts.",
+  "completion_tokens": 2564,
+  "created_utc": "2026-10-11T19:37:40Z",
+  "entry_id": 1970,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1272,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] grid[checkX][checkY] is not iterable (cannot read property undefined)\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 67,
+        "sha256": "dc43d25360322aed28c5c03cda9b8a8603b8d81344828faaf4ba488fa8f7240b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3070,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.627,
+      "wall_s": 96.003
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1292,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 157,
+        "sha256": "9fa98e257a518dbf2930c9a8f1418f19b36ad05e78d7853a24a23d1bc3e041d5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3965,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.206,
+      "wall_s": 124.343
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1983,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The invisible history of motion, visible as sedimentary strata of crystalline residue, deposited across a deep-ocean abyssal plain, driven by gravity.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 877,
+    "root_entry_id": 155
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the game of life\n\nRevise: the same cellular automaton, and this time increasing the grid size by a factor of two\n\nRevise: the same cellular automaton, and this time the background color darkens slightly over time\n\nRevise: the same cellular automaton, and this time some active cells flash brighter when they die\n\nRevise: the same simulation, and this time every newly born cell glows with a soft, residual light for one generation cycle.\n\nRevise: the same simulated biological process, and this time the background darkens in visible, rhythmic pulsing cycles instead of gradually.\n\nRevise: the same dynamically evolving field of interconnected cells, and this time the thin connection lines glow faintly when a cell is born.\n\nRevise: the same dynamically shifting lattice of interconnected, glowing cells, and this time expired cells dissipate into trails of residual light.\n\nRevise: the same constantly shifting lattice of interconnected, glowing cells, and this time the residual light trails that follow decay linger visibly for several full generation cycles.\n\nRevise: the same vast, dynamically evolving lattice of interconnected, glowing cells, and this time the background darkens and brightens in pronounced, slow-motion waves of light.\n\nRevise: the same vast, dynamically evolving lattice composed of interconnected, glowing cells, and this time the connection lines glow intensely when two cells are connected and only dimly fade when disconnected.\n\nRevise: depart: The invisible history of motion, visible as sedimentary strata of crystalline residue, deposited across a deep-ocean abyssal plain, driven by gravity.",
+  "prompt_tokens": 7035,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1970/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1970",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a living network of glowing cells that pulse and flow across the canvas like an organic ecosystem. The cells continuously evolve\u2014moving, connecting to neighbors, and regenerating\u2014while the entire field is slowly immersed in a rhythmic pulse of color. The simulation uses a grid-based spatial hash for efficient neighbor detection, preventing performance issues as thousands of particles interact. The constant background light shift creates a sense of deep time and biological rhythm, while the interconnected cells form a dynamic lattice that adapts and reorganizes itself over time. Viewers witness an abstract but alive system where pattern emerges from simple rules, evoking the beauty of cellular processes and natural growth patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 220.346
+}
