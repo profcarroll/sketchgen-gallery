@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 1973, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1973/ Licensed CC BY 4.0.",
+  "brief": "The visualization shows the sweeping, global patterns of oceanic energy differentials, seen as if from an orbital satellite. Broad, sweeping colored currents flow across the canvas, depicting the massive forces that shape the planet's water systems. These flowing patterns reveal the dynamic interaction between open ocean movement and large-scale atmospheric weather systems. The currents pulse and reshape themselves in slow, powerful cycles, reflecting the continuous influence of global wind patterns.",
+  "completion_tokens": 1511,
+  "created_utc": "2026-10-11T19:56:04Z",
+  "entry_id": 1973,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 837,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (2 error lines, first 2 shown):\n- [pageerror] windowHeight is not defined\n- [pageerror] Cannot access 'bandHeight' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 81,
+        "sha256": "0be15a6dbe780d7e018f11d8251847fba3b767857a92552217e91669a179a847",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3321,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.61,
+      "wall_s": 75.944
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 674,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 81,
+        "sha256": "6d2e83d52dbc0a14ef8b21a294cc74902aad08db7917abbd81b0c82e02dda709",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3493,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.802,
+      "wall_s": 70.926
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1986,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The rhythmic structuring of oceanic currents taken into the massive energy differentials of atmospheric weather systems, seen from a satellite, driven by global wind patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 904,
+    "root_entry_id": 379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.\n\nRevise: depart: The rhythmic structuring of oceanic currents taken into the massive energy differentials of atmospheric weather systems, seen from a satellite, driven by global wind patterns.",
+  "prompt_tokens": 6814,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1973/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1973",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This visualization depicts the grand, sweeping patterns of oceanic energy differentials as seen from orbit. The sketch creates flowing currents across the canvas using layered sine waves that move at different speeds and amplitudes, representing the massive forces shaping Earth's water systems. These currents pulse and reshape themselves slowly, reflecting how global wind patterns continuously influence ocean movement. The technique uses multiple overlapping waveforms with varying frequencies and phases to create a dynamic, organic flow that evolves without user interaction, demonstrating the continuous, cyclical nature of planetary energy systems.",
+  "submitted_by": "profcarroll",
+  "wall_s": 146.87
+}
