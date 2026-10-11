@@ -1,0 +1,1 @@
+This creates a motionless canvas with a dark indigo background. A white EKG-style waveform animates across the screen with rhythmic pulsing, shifting colors that match its own trace against the static backdrop. The effect evokes glacial formation processes through a biological exploration metaphor.

@@ -1,0 +1,162 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cEKG patterns Revise: the same EKG pattern, and this time the white wa\u2026\u201d \u2014 sketchgen entry 1990, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1990/ Licensed CC BY 4.0.",
+  "brief": "A deep indigo solid background remains static while a continuous medical waveform traces horizontally across it. The white waveform pulses rhythmically, shifting its color to match the hue of its own tracing stroke against the unchanging backdrop. This cyclical energy transfer mimics glacial rock layers forming and relaxing in sequence, observed through a searching slime mould effect.",
+  "completion_tokens": 1766,
+  "created_utc": "2026-10-11T22:03:22Z",
+  "entry_id": 1990,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 837,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.8805/255, 48715 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 42,
+        "sha256": "a0f6ce902856396c36d4872f4435c3b9f3a713f57734ce2e7b57a32d845d7f57",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 3.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2979,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.565,
+      "wall_s": 74.416
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {},
+      "completion_tokens": 376,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 89,
+        "sha256": "4ce89595e07d9c6e1ecf9106de526210ce17cfd04f1eda9ee8470af8d2efb14f",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "num_ctx": 16384,
+      "preload_s": null,
+      "prompt_tokens": 3525,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": null,
+      "wall_s": 57.533
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 553,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 4.7683/255, 57394 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 2559,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.668,
+      "wall_s": 54.376
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2003,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: A series of geometric pressure ridges forming and relaxing in sequence, taking the idea of cyclical energy transfer into the form of glacial rock layers, seen through a searching slime mould.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1198,
+    "root_entry_id": 1052
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.\n\nRevise: the same EKG waveform tracing across a colored background, and this time the background color should remain static while the waveform pulses.\n\nRevise: the same continuous medical waveform, and this time the static background should be a deep indigo solid color.\n\nRevise: depart: A series of geometric pressure ridges forming and relaxing in sequence, taking the idea of cyclical energy transfer into the form of glacial rock layers, seen through a searching slime mould.",
+  "prompt_tokens": 9063,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1990/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1990",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This creates a motionless canvas with a dark indigo background. A white EKG-style waveform animates across the screen with rhythmic pulsing, shifting colors that match its own trace against the static backdrop. The effect evokes glacial formation processes through a biological exploration metaphor.",
+  "submitted_by": "profcarroll",
+  "wall_s": 186.325
+}
