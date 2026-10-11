@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201choneycomb Revise: the same geometric field of interlocking golden hex\u2026\u201d \u2014 sketchgen entry 1982, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1982/ Licensed CC BY 4.0.",
+  "brief": "A lattice of segmented, polished onyx rods forms a structured grid across the canvas. Each rod is connected by visible, taut springs that provide constant tension. The rods exhibit continuous, rhythmic motion, slowly bending and straining under the pressure of the springs before snapping back into a precise, stable state. The dark, polished surfaces of the rods react to the movement, creating a heavy, mechanical pulse of activity.",
+  "completion_tokens": 1304,
+  "created_utc": "2026-10-11T21:04:01Z",
+  "entry_id": 1982,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1304,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "eaf5f7d29908336bbbcb84edbc72e4e64a7859d40e735a8ce1e6ca385c067c0a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3088,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.56,
+      "wall_s": 101.433
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1995,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: A lattice of segmented, polished onyx rods, visibly straining against taut springs, slowly bending and snapping back into a precisely measured, stable state, driven by a spring under tension.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1135,
+    "root_entry_id": 1072
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "honeycomb\n\nRevise: the same geometric field of interlocking golden hexagons, and this time the cells glow with saturated honey colors and pulse more intensely.\n\nRevise: flip: A lattice of segmented, polished onyx rods, visibly straining against taut springs, slowly bending and snapping back into a precisely measured, stable state, driven by a spring under tension.",
+  "prompt_tokens": 3088,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1982/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1982",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a mechanical lattice of onyx rods arranged in a grid, each rod composed of multiple connected segments that bend rhythmically under the influence of taut springs. The rods exhibit continuous, subtle motion as they strain against spring tension before snapping back into precise alignment. The dark, polished surfaces of the rods create a heavy, mechanical pulse of activity across the canvas, with each segment subtly varying in color and angle to simulate the stress and recovery cycle of the structured grid. The visual effect captures the essence of tension and release through carefully calculated motion and spring physics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 101.433
+}
