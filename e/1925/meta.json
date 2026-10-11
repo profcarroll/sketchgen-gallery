@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 1925, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1925/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, deep-time geological cross-section, presenting layered stripes of poured concrete. Massive canyon walls rise and recede as the scene depicts the slow, constant cycle of sedimentation. These layers shift and build up within the visible area, showing the inescapable process of material deposition over eons. The concrete surface maintains a uniform palette of earthen tones, moving perpetually as the strata gather and solidify in a breathtaking, unavoidable geological rhythm.",
+  "completion_tokens": 628,
+  "created_utc": "2026-10-11T14:46:14Z",
+  "entry_id": 1925,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 628,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "45ada8cb154baf4ac3c11aa33d64dc9c5ce7bfb02db98692cc6418f04b3a476b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3668,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.327,
+      "wall_s": 72.772
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1938,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the constant, unavoidable cycle of sedimentation building layered stripes along a riverbank, made of poured concrete, seen at the scale of a massive canyon, in the deep past.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 126,
+    "root_entry_id": 55
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: depart: the constant, unavoidable cycle of sedimentation building layered stripes along a riverbank, made of poured concrete, seen at the scale of a massive canyon, in the deep past.",
+  "prompt_tokens": 3668,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1925/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1925",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast geological cross-section revealing the slow, continuous process of sedimentation in a deep-time canyon. The composition shows layered deposits of poured concrete in earth tones\u2014brown, tan, and gray\u2014stacked vertically to represent millions of years of material accumulation. These layers shift gently over time, simulating the constant, inevitable rhythm of deposition, with subtle movements and erosion effects that suggest the dynamic nature of geological processes. The canyon walls frame this view, emphasizing the immense scale of time and the enduring power of natural forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 72.772
+}
