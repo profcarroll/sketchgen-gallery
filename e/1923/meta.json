@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lava lamp in zero gravity Revise: the same transparent vessel conta\u2026\u201d \u2014 sketchgen entry 1923, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1923/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a transparent vessel filled with a highly viscous, dense liquid. Within this fluid, large, amorphous masses drift slowly, resembling suspended chemical processes. These blobs are defined by complex, shifting boundaries and intricate color gradients that streak and transition across their surfaces. The fluid appears thick and heavy, giving the illusion of immense internal pressure and movement. The blobs drift randomly, slowly stretching and reforming against the surrounding colored medium, creating a hypnotic, fluid portrait that constantly mixes and shifts over time.",
+  "completion_tokens": 1465,
+  "created_utc": "2026-10-11T05:16:06Z",
+  "entry_id": 1923,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1465,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 102,
+        "sha256": "56edb7220133ca86579f94fc320e80692e7d55d2742ecc637f30fdd621f9d2a2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3536,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.962,
+      "wall_s": 1245.552
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1936,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same transparent vessel filled with a highly viscous, dense, colored fluid, and this time the internal boundaries of the amorphous blobs display greater striation and complex color gradients.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1918,
+    "root_entry_id": 1912
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lava lamp in zero gravity\n\nRevise: the same transparent vessel containing a dense, viscous, colored fluid, and this time the blobs appear more amorphous and textural, showing greater internal viscosity.\n\nRevise: the same transparent vessel filled with a highly viscous, dense, colored fluid, and this time the internal boundaries of the amorphous blobs display greater striation and complex color gradients.",
+  "prompt_tokens": 3536,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1923/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1923",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a viscous fluid environment where amorphous masses drift slowly, displaying complex internal structures and color transitions. The blobs are not solid but rather fluid entities with shifting boundaries, created through noise-based deformation of polygonal shapes. Each blob features striated patterns that move and change over time, suggesting internal pressure and flow dynamics. The transparent vessel container holds a dark, dense background that enhances the contrast and depth of the floating masses. The movement is deliberately slow and organic, emphasizing the thick, heavy nature of the fluid medium. The color gradients within each blob create a sense of depth and volumetric complexity, while the striations add surface detail that suggests internal flow patterns or chemical processes. This creates an hypnotic, ever-shifting portrait of a dense fluid system where the boundaries between entities are ambiguous and constantly redefining themselves.",
+  "submitted_by": "profcarroll",
+  "wall_s": 1245.552
+}
