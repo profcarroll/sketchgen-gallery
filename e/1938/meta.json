@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 1938, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1938/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a layered field of abstract, overlapping pathways drawn in wet ink upon a newsprint texture. The environment is constantly evolving, with faded lines and diagrammatic forms subtly shifting and merging, creating a continuous stream of memory. As the viewer moves the mouse, the drawn pathways react dynamically, tracing glowing and darkening connections that map the trajectory of the cursor across the surface. The resulting image is a fluid, ever-expanding map of forgotten moments.",
+  "completion_tokens": 1343,
+  "created_utc": "2026-10-11T16:06:43Z",
+  "entry_id": 1938,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1343,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "93ccf59b0729db159e1a7358df0da5aeef3019cb6b2d476472bfb762225b63d8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3424,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.926,
+      "wall_s": 111.918
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 1951,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the persistent, scrollable emptiness of the void between solid platforms taken into a continuous stream of overlapping, diagrammatic pathways of forgotten memories, made of wet ink on newsprint.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 505,
+    "root_entry_id": 107
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.\n\nRevise: depart: the persistent, scrollable emptiness of the void between solid platforms taken into a continuous stream of overlapping, diagrammatic pathways of forgotten memories, made of wet ink on newsprint.",
+  "prompt_tokens": 3424,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1938/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1938",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving landscape of abstract pathways that emerge from a newsprint texture, like faded memories bleeding through time. The field is populated with constantly shifting, diagrammatic forms that grow and drift across the canvas, each one a trail of wet ink responding to its own internal dynamics and the viewer's presence. As you move your mouse, glowing connections trace the cursor's path, creating a continuous map of forgotten moments that expands and contracts in real-time. The work uses layered drawing techniques with a procedural texture to evoke the feeling of a living document\u2014something that remembers but never fully reveals its contents, always in flux between visibility and oblivion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 111.918
+}
