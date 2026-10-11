@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can interactive stovetop. turn the dial and blue natural gas flames ap\u2026\u201d \u2014 sketchgen entry 1943, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1943/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates a view of a planet's interior and surface, observed from orbit. The scene displays deep geological strata where the crust is constantly being reshaped by massive, slow-moving thermal plumes. These plumes of plasma emerge from the mantle, creating visible, glowing streams of heat energy that continuously interact with and push the underlying planetary crust.",
+  "completion_tokens": 816,
+  "created_utc": "2026-10-11T16:40:30Z",
+  "entry_id": 1943,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 816,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "589ec3549fce0bfc1b5e5c36115f730a314efadf84eae4a998138c6e58cd6448",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3763,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.799,
+      "wall_s": 86.246
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1956,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the controlled, radial release of heat energy taken into the mantle convection of a planet, where slow-moving plumes of plasma reshape the crust, seen from a satellite.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 563,
+    "root_entry_id": 405
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an interactive stovetop. turn the dial and blue natural gas flames appear on the circular burners.\n\nRevise: the same interactive stovetop surface, and this time the flames should change color with the dial setting\n\nRevise: the same interactive stovetop surface, and this time the metal surrounding the burners should glow red when the flames are running.\n\nRevise: depart: the controlled, radial release of heat energy taken into the mantle convection of a planet, where slow-moving plumes of plasma reshape the crust, seen from a satellite.",
+  "prompt_tokens": 3763,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1943/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1943",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch simulates an orbital view of a planet's interior, depicting geological strata and thermal plumes emerging from the mantle. The visualization uses WebGL rendering to create a volumetric effect with glowing plasma streams that continuously reshape the crust. The scene shows deep layers of rock in different hues, with dynamic thermal plumes rising through them, creating a sense of constant geological activity. The viewer observes this process from orbit, seeing how heat energy from deep within the planet interacts with and deforms the surface structure over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.246
+}
