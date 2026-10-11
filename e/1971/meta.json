@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201csimulation of slime mold growth on a substrate rendered with a realis\u2026\u201d \u2014 sketchgen entry 1971, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1971/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a monumental, mechanical landscape covering a deserted street grid. Massive, sprawling contraptions made of cast brass dominate the scene, forming a complex network of interlocking gears and pneumatic piping. The structure covers the entire visible city block, creating an overwhelming sense of industrial scale. The brass material is rendered with extreme metallic detail, highlighting the rivets, joints, and polished surfaces. The entire composition is dominated by a continuous process of motion, as the colossal machine constantly shifts, expands, and operates without visible pause.",
+  "completion_tokens": 1281,
+  "created_utc": "2026-10-11T19:43:42Z",
+  "entry_id": 1971,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1281,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "9bd21035b08932536f61b101309d92e2c280b6af840e632ec3c0f44c99eaaa59",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 45.1,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3864,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.778,
+      "wall_s": 119.708
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1984,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: a continuous process of interlocking brass gears and pneumatic piping forming colossal, sprawling contraptions that cover a deserted street grid, made of cast brass, seen at the scale of a city block.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 879,
+    "root_entry_id": 360
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "simulation of slime mold growth on a substrate rendered with a realistic 3D lighting effect revealing the structure's surface qualities\n\nRevise: the same amorphous colorful growth, and this time with visible mycelial filaments reaching into the substrate surface\n\nRevise: the same delicate filamentous growth, and this time with increased density of visible mycelial filaments penetrating the substrate surface\n\nRevise: the same delicate, filamentous structures simulating mold growth, and this time with increased thickness and visibility of the primary connecting filaments\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible evidence of mineral deposition forming crystalline structures around the primary filaments.\n\nRevise: the same intricate simulation of filamentous mold growth, and this time with visible accumulation of sediment within the deepest crevices of the substrate.\n\nRevise: the same intricate simulation of filamentous mold growth and accumulating sediment, and this time with visible mineral deposits crystallizing around the primary filaments.\n\nRevise: depart: a continuous process of interlocking brass gears and pneumatic piping forming colossal, sprawling contraptions that cover a deserted street grid, made of cast brass, seen at the scale of a city block.",
+  "prompt_tokens": 3864,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1971/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1971",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a vast mechanical landscape dominated by colossal interlocking gears and pneumatic piping, rendered in an industrial brass palette. The viewer observes a continuous, rhythmic motion as thousands of gears turn at varying speeds, their teeth meshing in perfect synchronization. Pipes snake through the scene, their surfaces subtly undulating with internal pressure. The entire composition fills the canvas in a single city-block view, creating an overwhelming sense of scale and mechanical complexity. Each gear is individually constructed with detailed teeth, while pipes are rendered as continuous metallic cylinders with highlights that catch the light. The motion is both chaotic and ordered - each component moves independently yet contributes to a larger, coherent industrial ecosystem. The metallic sheen and detailed construction emphasize the craftsmanship and scale of these mechanical systems, evoking the feeling of being inside a sprawling industrial facility where machinery operates ceaselessly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 119.708
+}
