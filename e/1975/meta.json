@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a musical instrument Revise: flip: a sketch of tessellating, a\u2026\u201d \u2014 sketchgen entry 1975, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1975/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a detailed geometric tapestry composed of countless angular, brightly colored polygons. These forms are arranged in a tessellating pattern, resembling segments of stained glass held together by visible, dark binding lines, giving the appearance of woven, rigid materials. The pattern is stable and complex when untouched. When the viewer interacts by clicking or dragging the cursor, localized groups of these geometric forms react instantly, snapping and shifting abruptly into new, rigid configurations, visibly altering the overall mosaic pattern before settling back into a fixed, defined arrangement.",
+  "completion_tokens": 1711,
+  "created_utc": "2026-10-11T20:08:10Z",
+  "entry_id": 1975,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1711,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 126,
+        "sha256": "a897c94a5f6e273ecf235f77ff1238c5751b02eb0685d625f10044982dd84a23",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 50.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3555,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 37.732,
+      "wall_s": 139.311
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 1988,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch of tessellating, angular geometric forms that snap and shift abruptly upon interaction, rigid like stained glass, woven into a medieval tapestry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 966,
+    "root_entry_id": 966
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a musical instrument\n\nRevise: flip: a sketch of tessellating, angular geometric forms that snap and shift abruptly upon interaction, rigid like stained glass, woven into a medieval tapestry.",
+  "prompt_tokens": 3555,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1975/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1975",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a mesmerizing geometric tapestry that resembles stained glass windows woven into a medieval tapestry. Using thousands of angular polyhedra \u2014 tetrahedra, octahedra, dodecahedra, and icosahedra \u2014 the composition forms a complex tessellating pattern across the canvas. The viewer's interaction triggers localized snapping behavior: when they click or drag, nearby geometric forms abruptly shift into new rigid positions, visibly altering the overall mosaic before settling back into place. This creates an illusion of woven, rigid materials that respond dynamically to touch while maintaining their structural integrity in static moments. The dark binding lines between shapes emerge from the connections formed by proximity, creating a sense of unity and tension within the geometric network.",
+  "submitted_by": "profcarroll",
+  "wall_s": 139.311
+}
