@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ctwo flocks that avoid each other Revise: the same two separate, fluid\u2026\u201d \u2014 sketchgen entry 1996, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1996/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays dense, interlocking geometric networks realized through stark, contrasting lines. The overall appearance mimics the structured, bold aesthetic of an Edo woodblock print, where the focus is on the negative space created by the intersections. Initially, the scene features distinct lines that slowly begin to merge and weave together. The patterns expand and contract rhythmically, resolving their complexity by filling the available space with increasingly detailed, interlocking forms. The entire geometric structure evolves continuously, allowing the viewer to observe the slow, deliberate forming and dissolving of the highly defined patterns.",
+  "completion_tokens": 1385,
+  "created_utc": "2026-10-11T23:02:56Z",
+  "entry_id": 1996,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 676,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 29)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] x is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "6b82fb72985ae5ed74bd59bffac3530909487181199d62ae01b758480f4e92d4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3522,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.68,
+      "wall_s": 88.055
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 709,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 66,
+        "sha256": "4617caebdb2e4854746ca6763c66393d6b492e69904345e097158d6542426eb8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3410,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.224,
+      "wall_s": 71.265
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2009,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of residual separation taken into interlocking networks of negative space lines, echoing the bold geometry of an Edo woodblock print.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 1213,
+    "root_entry_id": 699
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "two flocks that avoid each other\n\nRevise: the same two separate, fluid streams of colored particles, and this time one of the flocks pulses in size rhythmically\n\nRevise: the same two distinct, colored streams of particles, and this time the pulsing stream increases its frequency and maximum amplitude.\n\nRevise: the same two separate, fluid streams of colored particles, and this time the pulsating stream momentarily inverts its internal particle vectors during peak expansion.\n\nRevise: the same two separate, contrasting streams of vibrant colored particles, and this time the stream leaves a faintly glowing echo trailing the moment it reverses direction.\n\nRevise: the same two separate, distinct streams of contrasting and vibrant colored particles, and this time the streams briefly exchange particle colors when they are within a shared proximity.\n\nRevise: the same two distinct, continuous streams of vibrant colored particles, and this time they gently separate and curve away from each other as they enter shared proximity.\n\nRevise: the same distinct streams of vibrant colored particles, and this time they momentarily form a tight, radiating knot at their point of closest approach before separating.\n\nRevise: the same distinct streams of vibrant colored particles, and this time they leave a faint, dissipating echo trailing the moment the streams separate.\n\nRevise: the same two separate, continuous streams of vibrant colored particles, and this time they temporarily fuse into a single, brightly colored stream at their point of closest approach.\n\nRevise: the same two distinct streams of contrasting colored particles, and this time they leave a faint, dissipating echo trailing the moment the streams separate.\n\nRevise: depart: the idea of residual separation taken into interlocking networks of negative space lines, echoing the bold geometry of an Edo woodblock print.",
+  "prompt_tokens": 6932,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1996/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1996",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic geometric network that evolves like an Edo woodblock print, where bold lines interlock and merge. The visualization features hundreds of lines that continuously move, rotate, and pulse in rhythm, creating a sense of patterns forming and dissolving. Through careful control of line properties and motion, the system achieves a structured complexity that fills the canvas with an intricate web of intersecting forms. The result is a mesmerizing, ever-changing composition that captures both the precision and organic flow found in traditional Japanese printmaking.",
+  "submitted_by": "profcarroll",
+  "wall_s": 159.32
+}
