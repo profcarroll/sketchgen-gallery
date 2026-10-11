@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighting study: the building interrupts the light Revise: emphasize r\u2026\u201d \u2014 sketchgen entry 1954, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1954/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays glowing, structured patterns mimicking bioluminescence under immense deep-sea pressure. Vivid, electric streams of blue, green, and cyan pulse and weave across a dark, grid-like void, giving the illusion of life contained within a vintage, digitized viewing frame. The organic shapes flow ceaselessly, creating complex, ethereal energy fields. The structures shift and ebb in a continuous, unpredictable cycle, evoking the sense of powerful, alien life witnessed through the glowing glass of a retro arcade machine.",
+  "completion_tokens": 1319,
+  "created_utc": "2026-10-11T17:58:44Z",
+  "entry_id": 1954,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1319,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 101,
+        "sha256": "cd5f86111a5eab4e1c01573ec7d82dc134e363856b9f26ce8b11889f9255fcfa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 81.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3475,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 35.848,
+      "wall_s": 110.115
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1967,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Structured flux given to deep-sea bioluminescent organisms, seen under extreme pressure, in a 1980s arcade cabinet",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 667,
+    "root_entry_id": 358
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lighting study: the building interrupts the light\n\nRevise: emphasize raycasting from the lightsource against the structure and compute the shadows\n\nRevise: the same dynamic shadows, and this time clearly visualize the geometry at the intersection points where the rays hit the rigid planes.\n\nRevise: the same abstract interplay between computational geometry and architectural mass, and this time render increased subsurface scattering effects on the rigid planes that catch the light.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the temporal dissipation of computational rays.\n\nRevise: the same abstract interplay between architectural mass and light, and this time visualize the crystallized points of ray impact where the computation meets the rigid geometry.\n\nRevise: the same abstract, shifting interplay between solid architectural mass and luminous energy, and this time visualizing the diffraction patterns etched onto the rigid planar surfaces.\n\nRevise: carry: Structured flux given to deep-sea bioluminescent organisms, seen under extreme pressure, in a 1980s arcade cabinet",
+  "prompt_tokens": 3475,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1954/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1954",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive deep-sea bioluminescent environment using a particle system with organic motion patterns. The visualization simulates the pressure-sensitive glow of alien organisms through a network of luminous particles that flow and connect in complex, ever-shifting patterns. Using Perlin noise for fluid movement and spatial hashing for efficient neighbor detection, the system generates thousands of glowing points that form dynamic connections, evoking the sensation of life under immense oceanic pressure within a vintage arcade viewing frame. The color palette emphasizes electric blues, greens, and cyans against a dark void, creating an ethereal energy field that pulses and weaves without repetition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 110.115
+}
