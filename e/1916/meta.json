@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 1916, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1916/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts whimsical, intricate paper-cut ships navigating a translucent sheet. These vessels are preserved, not by water, but by time and mineral deposits. The hulls are entirely encased within delicate, crystalline geode structures, creating a juxtaposition of fragile, vibrant paper edges against the muted, earthy tones of the solidified sediment. Mineral veins run through the paper, forming complex scaffolds that solidify the ships in a permanent state. The arrangement emphasizes the passage of deep time, transforming the paper crafts into beautiful, geological artifacts.",
+  "completion_tokens": 7096,
+  "created_utc": "2026-10-10T22:33:13Z",
+  "entry_id": 1916,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 3354,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 356)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 361)\n\ngate exit 1: checks failed: revised; assertions failed: no_motion\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 278 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: the same translucent medium populated by whimsical, paper-cut ships, and this time the solidified mineral sediment forms delicate, crystalline geode structures encasing the vessels.\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.0395/255, 1151928 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 377,
+        "sha256": "98295ad377b00af0cb633c8cf5541710dfbb3bbfe3419889a326ea44731ef4ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 5872,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.285,
+      "wall_s": 403.374
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1857,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.8174/255, 17117 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 377,
+        "sha256": "98295ad377b00af0cb633c8cf5541710dfbb3bbfe3419889a326ea44731ef4ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 6183,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.206,
+      "wall_s": 249.398
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1885,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.8174/255, 17117 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 203,
+        "sha256": "7dd9f1d87caa4e547cee15813eb619064a9a2ba7439e92e55318a96f1dbe920c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4463,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.179,
+      "wall_s": 187.784
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1929,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same translucent medium populated by whimsical, paper-cut ships, and this time the solidified mineral sediment forms delicate, crystalline geode structures encasing the vessels.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 1907,
+    "root_entry_id": 1461
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails\n\nRevise: the same whimsical, paper-cut ships, and this time the ships are weathered with subtle patina and aged wood grain\n\nRevise: the same whimsical ships, and this time they have visible moss and barnacle buildup\n\nRevise: the same whimsical, paper-cut ships, and this time their edges show visible warping and tears from water damage\n\nRevise: the same whimsical, paper-cut ships, and this time small sections of the vibrant paper surface appear dissolved by the water damage\n\nRevise: the same whimsical, paper-cut ships, and this time the dissolved wake trails leave behind streaks of mineral leaching discoloration on the surrounding medium\n\nRevise: the same whimsical, paper-cut ships, and this time the mineral streaks left by the wakes are crystalline salt deposits\n\nRevise: the same translucent sheet that serves as a medium for whimsical, paper-cut ships, and this time the deterioration causes the warped paper edges to detach into small, drifting fragments.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments gather and accumulate into small piles along the translucent sheet.\n\nRevise: the same translucent sheet, and this time the dissolved wake trails leave behind permanent, dense trails of accumulated, crystalline sediment.\n\nRevise: the same whimsical, paper-cut ships, and this time the mineral streaks left by the wakes solidify into brittle, fragile mineral scaffolds.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments gather and accumulate into small piles along the translucent sheet.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments accumulate into dense, mountainous drifts along the translucent sheet's edge.\n\nRevise: the same translucent medium populated by whimsical, paper-cut ships, and this time the accumulated mineral sediment begins to encase and solidify the hulls of the ships.\n\nRevise: the same mineralized tableau, and this time the accumulated detrital piles begin to overpower the ships, burying them completely.\n\nRevise: the same translucent medium populated by whimsical, paper-cut ships, and this time the solidified mineral sediment forms delicate, crystalline geode structures encasing the vessels.",
+  "prompt_tokens": 16518,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1916/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1916",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a contemplative visualization of paper-cut ships preserved in geological time. The scene depicts vessels navigating through a translucent sedimentary landscape where mineral deposits have solidified their fragile forms. Ships emerge from the background with gentle motion and leave trails of sediment particles that accumulate over time. As they drift, these craft gradually decay into crystalline geodes\u2014delicate structures that encase them in mineral scaffolding. The juxtaposition of vibrant paper edges against muted earth tones emphasizes the passage of deep time, transforming ephemeral paper crafts into enduring geological artifacts. The work explores themes of preservation, transformation, and the quiet accumulation of history through simple, repeated processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 840.556
+}
