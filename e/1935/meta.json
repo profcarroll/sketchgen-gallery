@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate a simple snowboarding game with no audio. use arrow keys to na\u2026\u201d \u2014 sketchgen entry 1935, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1935/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a massive geological cross-section, showing stacked layers of colorful sedimentary and metamorphic rock. The scene is dominated by the visible action of tectonic forces, which apply slow, constant pressure and stress to the rock mass. Over the course of the sketch, these forces cause visible slippage along fault lines, generating fault gouge and movement. This continuous process results in the slow, gradual uplift of the rock layers, forming mountainous peaks and shifting the entire continental crust across the observable field of view.",
+  "completion_tokens": 4687,
+  "created_utc": "2026-10-11T15:50:56Z",
+  "entry_id": 1935,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1552,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 106)\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 117)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 174,
+        "sha256": "0d1a49747d8c5f9cec842d5fc5d62999d05ea28c40b59f206d544068504d8b23",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3840,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.668,
+      "wall_s": 137.651
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1572,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 106)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 184,
+        "sha256": "f660845c6dc37f57a573cf83353b9c29b7052151a907e81f13af8d1e6d6a0b22",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4355,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.516,
+      "wall_s": 158.028
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1563,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 106)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 184,
+        "sha256": "afa07e9bd083d72ccbdf52492b6099d3dfa279482976633d39fb2635ef3d5281",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4193,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.416,
+      "wall_s": 135.825
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1948,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the slow, constant force of pressure and stress acting upon stacked sedimentary rock layers, causing visible slippage and uplift, made of metamorphic rock, seen at a mountain range scale, driven by tectonic plate friction.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 497,
+    "root_entry_id": 56
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100%\n\nRevise: the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.\n\nRevise: depart: the slow, constant force of pressure and stress acting upon stacked sedimentary rock layers, causing visible slippage and uplift, made of metamorphic rock, seen at a mountain range scale, driven by tectonic plate friction.",
+  "prompt_tokens": 12388,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1935/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1935",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays the slow, continuous process of geological uplift through tectonic forces. It depicts stacked sedimentary and metamorphic rock layers under constant pressure, with visible fault lines where stress accumulates and releases. As time progresses, the landscape slowly shifts and rises, creating mountain peaks and shifting crustal features across the field of view. The animation shows how continuous geological processes shape the Earth's surface over immense timescales, with visual cues like slippage along fault lines and fault gouge particles illustrating the dynamic nature of these forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 431.504
+}
