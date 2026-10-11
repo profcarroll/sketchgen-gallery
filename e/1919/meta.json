@@ -1,0 +1,169 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201clighthouse Revise: the same cyclical beam of light, and this time the\u2026\u201d \u2014 sketchgen entry 1919, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1919/ Licensed CC BY 4.0.",
+  "brief": "The scene centers on a rhythmic, cyclical beam of light emanating from a distant lighthouse. This powerful beam sweeps across a deep ocean environment, casting dramatic, contrasting washes of color into the surrounding water. The water itself is rendered as a dynamic, speckled canvas, with patches of contrasting color constantly shifting and reacting to the sweeping illumination. The primary visual experience is the continuous, fluid movement of the light beam passing over the animated, reactive colors of the ocean.",
+  "completion_tokens": 3383,
+  "created_utc": "2026-10-11T03:00:27Z",
+  "entry_id": 1919,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1056,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 306.6 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 69,
+        "sha256": "db039d5214c1e3fe106bb1f304bb82cb1a1f1260319e15805d45e598863e0769",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 306.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3175,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.775,
+      "wall_s": 101.586
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1116,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 306.6 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 123,
+        "sha256": "566d80a9799b283e3cf2c003096dfd2e1f465fc6064f80488f9f404b401e504a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 306.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3687,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.832,
+      "wall_s": 103.136
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1211,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 126,
+        "sha256": "a7ca4426451d377e01c151192e8f69b1326238b73f995690d18a83b6348e93d2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3708,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.556,
+      "wall_s": 109.115
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1932,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "the same cyclical beam of light, and this time the illumination upon the surrounding ocean is rendered with scattered, speckled washes of contrasting color.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1913,
+    "root_entry_id": 1913
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lighthouse\n\nRevise: the same cyclical beam of light, and this time the illumination upon the surrounding ocean is rendered with scattered, speckled washes of contrasting color.",
+  "prompt_tokens": 10570,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1919/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1919",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a lighthouse beam sweeping across an ocean environment in real-time. The visualization combines geometric modeling of the lighthouse structure with dynamic particle effects to simulate the ocean's surface. A rotating beam of light moves across the canvas, casting dramatic illumination that affects the surrounding water particles. The ocean is rendered as a collection of thousands of particles that continuously shift and react to the sweeping beam, creating an animated, colorful environment. The scene uses WebGL rendering for efficient 3D particle handling while maintaining the visual complexity described in the brief. The viewer observes a rhythmic, cyclical light beam interacting with a dynamic underwater world of shifting colors and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 313.837
+}
