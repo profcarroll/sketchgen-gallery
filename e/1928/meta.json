@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: the sam\u2026\u201d \u2014 sketchgen entry 1928, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1928/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a cross-section of a massive, support beam, showcasing deep, poured concrete and intricate crystalline strata. The color palette is comprised of muted, earthy grays, deep browns, and subtle crystalline whites. The central focus is a continuous, slow-motion reveal where distinct layers of sediment lift and settle in mesmerizing, counter-gravity patterns. The movement is slow and geological, giving the impression of vast, deep time unfolding within a rigid, monumental structure.",
+  "completion_tokens": 1484,
+  "created_utc": "2026-10-11T15:05:55Z",
+  "entry_id": 1928,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 763,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 67)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 174.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (174.3 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 3900,
+        "played": 39,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 57,
+        "sha256": "749bf7a6355aa5318fa13421a758548a2ff3853a0e98c3702a6318ba28c0f522",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 174.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3075,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 90.806,
+      "wall_s": 67.9
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 721,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 75,
+        "sha256": "48ca46d62ffc51ad36099c1f3a6c4d350766c35a5441f9322f5a18766b677417",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3519,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.526,
+      "wall_s": 73.736
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1941,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a slow, geological reveal of crystalline strata within a massive support beam, where sediment layers lift and settle in perfect counter-gravity patterns, made of poured concrete.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 217,
+    "root_entry_id": 158
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: the same abstract information fields, and this time introduce a slight, slow, clockwise rotation to all the intersecting gradients\n\nRevise: flip: a slow, geological reveal of crystalline strata within a massive support beam, where sediment layers lift and settle in perfect counter-gravity patterns, made of poured concrete.",
+  "prompt_tokens": 6594,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1928/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1928",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a cross-sectional view of a monumental concrete structure, revealing the intricate layers and crystalline formations within. Through slow, geological motion, distinct sedimentary layers rise and fall in mesmerizing counter-gravity patterns, evoking the passage of vast time through the rigid framework of the earth. The muted earth tones and subtle crystalline whites create a sense of deep, patient transformation. The visualization uses batched point rendering to efficiently display thousands of particles while maintaining the slow, meditative pace that characterizes geological processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 141.636
+}
