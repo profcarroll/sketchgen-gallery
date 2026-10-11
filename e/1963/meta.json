@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cagentic ai on retro nokia n900, focus on camera Revise: the same view\u2026\u201d \u2014 sketchgen entry 1963, prompted by milindanand13, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/1963/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex network of suspended, thin metal cables crisscrossing the viewing area. These cables move autonomously, swinging and arcing in synchronized, rhythmic patterns, similar to multiple pendulums attached to a central point. The movement creates points of intersection and overlapping light, visualizing a structured, yet interrupted, flow of energy or data. The structure appears metallic and geometrically rigorous, constantly maintaining its rhythmic, mesmerizing flow without requiring any user interaction.",
+  "completion_tokens": 1530,
+  "created_utc": "2026-10-11T18:51:55Z",
+  "entry_id": 1963,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 766,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 49)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 56)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 40,
+        "sha256": "b5f4c3f3c0fc8c6e81405c7759e0fe086c126277f4e9be9a96b4c3c959e63773",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 1.057,
+      "prompt_tokens": 2943,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.732,
+      "wall_s": 63.701
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 764,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 76,
+        "sha256": "8d5f5707f7bf91fc83a657398bc56e1aaf6e3944b58a884e8c3554a05d973284",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.8,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3453,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.017,
+      "wall_s": 73.363
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 1976,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the visual concept of interrupted data flow taken into a series of suspended, intersecting metal cables, mimicking the rhythmic arc of a pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 813,
+    "root_entry_id": 542
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "agentic ai on retro nokia n900, focus on camera\n\nRevise: the same viewfinder, and this time the simulated background flicker increases in speed and visibility.\n\nRevise: the same simulated retro camera viewfinder, and this time the background flicker is structured into distinct, rapidly shifting horizontal scanlines.\n\nRevise: the same simulated retro camera viewfinder, and this time the rapidly shifting horizontal scanlines exhibit a distinct, repeating wave pattern across the viewing area.\n\nRevise: the same simulated retro camera viewfinder, and this time the repeating wave pattern intermittently skips or jitters with rapid, unpredictable breaks.\n\nRevise: depart: the visual concept of interrupted data flow taken into a series of suspended, intersecting metal cables, mimicking the rhythmic arc of a pendulum.",
+  "prompt_tokens": 6396,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/1963/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/1963",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a dynamic network of suspended metal cables that swing in synchronized, rhythmic patterns, creating an intricate web of intersecting lines. The cables move like pendulums attached to a central point, generating a mesmerizing display of geometric flow and energy. The metallic appearance emerges from the consistent color palette and subtle lighting effects, while the constant motion ensures the entire canvas remains alive with visual activity. The structure maintains its rhythmic pattern without user interaction, demonstrating autonomous movement through synchronized oscillation and careful attention to frame budget constraints.",
+  "submitted_by": "milindanand13",
+  "wall_s": 137.064
+}
