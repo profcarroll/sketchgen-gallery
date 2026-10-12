@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cagentic ai on retro nokia n900, focus on camera Revise: the same view\u2026\u201d \u2014 sketchgen entry 2161, prompted by milindanand13, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2161/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals complex, organic geometries of glowing bioluminescent fungi suspended within a solid, cool-toned concrete matrix. The structures are defined by rhythmic, synchronized oscillations. These glowing patterns do not respond to touch or sound; instead, they exhibit a continuous, perpetual life. The fungi appear to pulse and ripple radially across the surface, giving the impression of deep, subterranean energy currents moving beneath a solid crust.",
+  "completion_tokens": 1854,
+  "created_utc": "2026-10-12T20:33:31Z",
+  "entry_id": 2161,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 922,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] emissive is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 77,
+        "sha256": "86fc73db3aa54a9aa821dd020849704c6d71445f3cfeacd3984ce34d767e5463",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3268,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.678,
+      "wall_s": 77.846
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 932,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 95,
+        "sha256": "8a230c718cdafb96bcfcf781519a46542c62917364ff8bc06ce683c567a561b7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3595,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 18.987,
+      "wall_s": 85.79
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2176,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: synchronized, radial oscillation given to the growth patterns of bioluminescent subterranean fungi, cast in poured concrete",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1963,
+    "root_entry_id": 542
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "agentic ai on retro nokia n900, focus on camera\n\nRevise: the same viewfinder, and this time the simulated background flicker increases in speed and visibility.\n\nRevise: the same simulated retro camera viewfinder, and this time the background flicker is structured into distinct, rapidly shifting horizontal scanlines.\n\nRevise: the same simulated retro camera viewfinder, and this time the rapidly shifting horizontal scanlines exhibit a distinct, repeating wave pattern across the viewing area.\n\nRevise: the same simulated retro camera viewfinder, and this time the repeating wave pattern intermittently skips or jitters with rapid, unpredictable breaks.\n\nRevise: depart: the visual concept of interrupted data flow taken into a series of suspended, intersecting metal cables, mimicking the rhythmic arc of a pendulum.\n\nRevise: carry: synchronized, radial oscillation given to the growth patterns of bioluminescent subterranean fungi, cast in poured concrete",
+  "prompt_tokens": 6863,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2161/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2161",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a subterranean ecosystem of bioluminescent fungi emerging from a cool-toned concrete matrix. Using synchronized oscillation patterns, the fungal forms pulse and ripple in unison across the canvas, creating an impression of deep earth currents flowing beneath a solid crust. The organic geometries shift rhythmically without external input, conveying perpetual life within the static concrete environment. The glowing structures appear to emanate from within, their light pulsing in harmonious waves that fill the entire scene with a continuous, hypnotic energy.",
+  "submitted_by": "milindanand13",
+  "wall_s": 163.636
+}
