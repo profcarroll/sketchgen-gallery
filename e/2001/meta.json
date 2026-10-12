@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog Revise: depart the idea\u2026\u201d \u2014 sketchgen entry 2001, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2001/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a complex, rigid environment built from interlocking geometric planes rendered in the stark style of 1920s Bauhaus architecture. These planes seem to recede into a deep, forced perspective, creating an overlapping, architectural maze. The palette favors muted, industrial tones and highly defined material transitions. When the viewer moves the mouse, the planes react dynamically, causing certain structural elements to shift, rotate, or intensify their light quality, altering the depth of the interlocking space in response to the cursor\u2019s position.",
+  "completion_tokens": 1170,
+  "created_utc": "2026-10-12T00:28:59Z",
+  "entry_id": 2001,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1170,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 129,
+        "sha256": "83666c61dcc7cebf551060fddb9761a4d1246d0afa33e580a06d036f7ae15669",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 46.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4986,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.817,
+      "wall_s": 165.123
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2014,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart the idea of a luminous transition taken into interlocking geometric planes, traversing overlapping materials, seen at a forced perspective, 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1246,
+    "root_entry_id": 1246
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lighthouse beam sweeping over drifting fog\n\nRevise: depart the idea of a luminous transition taken into interlocking geometric planes, traversing overlapping materials, seen at a forced perspective, 1920s Bauhaus exercise.",
+  "prompt_tokens": 4986,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2001/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2001",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a geometric architecture inspired by 1920s Bauhaus design principles, featuring interlocking planes that create a complex, structured maze. The composition uses forced perspective to draw the viewer's eye into deep space, with clean lines and sharp transitions that define the industrial aesthetic of the movement. When the mouse moves across the canvas, certain structural elements dynamically respond by shifting color, rotation, or intensity, creating an interactive experience that alters the perceived depth of the architectural space. The scene is rendered in 3D using p5.js WEBGL mode, with dynamic lighting that follows mouse position to emphasize the shifting spatial relationships between geometric forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 165.123
+}
