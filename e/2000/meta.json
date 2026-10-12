@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201canimate a live ant farm Revise: the same sandy enclosure filled with\u2026\u201d \u2014 sketchgen entry 2000, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2000/ Licensed CC BY 4.0.",
+  "brief": "A microscopic view reveals a dense, interwoven network of translucent glass fiber optic cables and metallic copper wires. The composition features winding filaments that cross and overlap in a complex, dark web. Faint, luminous digital pulses of light travel steadily through the clear glass strands, providing a rhythmic, glowing movement against the dark, textured copper elements.",
+  "completion_tokens": 1136,
+  "created_utc": "2026-10-12T00:21:21Z",
+  "entry_id": 2000,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1136,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "aa0a677e281c2542148f849188ff92ebfb6d383c31fd7d77d192d7a4bb6c4ae5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3441,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.314,
+      "wall_s": 114.055
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2013,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart the concept of an ant colony's tunnel system into a densely interwoven network of fiber optic cables and copper wires, showing faint digital pulses traveling through the glass, made of glass and copper, seen under a microscope",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1240,
+    "root_entry_id": 1073
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a live ant farm\n\nRevise: the same sandy enclosure filled with a complex network of winding tunnels, and this time the tunnels exhibit varied branching into smaller, shallower chambers.\n\nRevise: the same cross-section of a sandy enclosure features a complex network of winding, dark tunnels that branch into various smaller and shallower chambers, and this time the tunnels exhibit a clear, repeating hexagonal honeycomb arrangement.\n\nRevise: the same cross-section view of a sandy enclosure featuring winding tunnels in hexagonal chambers, and this time the tunnels are visibly clogged with excavated sandy debris.\n\nRevise: the same cross-section view of a sandy enclosure with hexagonal tunnels, and this time the small dark ants are visibly dragging larger clumps of excavated sandy debris.\n\nRevise: depart the concept of an ant colony's tunnel system into a densely interwoven network of fiber optic cables and copper wires, showing faint digital pulses traveling through the glass, made of glass and copper, seen under a microscope",
+  "prompt_tokens": 3441,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2000/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2000",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a microscopic view of an intricate network of fiber optic cables and copper wires, resembling the internal structure of a complex electronic system. The composition features translucent glass fibers with subtle lighting that pulse rhythmically through clear strands, creating a sense of digital flow against a dark, textured backdrop of metallic copper elements. The viewer observes a dense web of interwoven filaments that cross and overlap in a complex pattern, with faint luminous pulses traveling steadily along the glass strands. The visual effect captures both the fragility of the glass components and the robustness of the metallic infrastructure, creating an abstract representation of digital connectivity at a microscopic scale.",
+  "submitted_by": "profcarroll",
+  "wall_s": 114.055
+}
