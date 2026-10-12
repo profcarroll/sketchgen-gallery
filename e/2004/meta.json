@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201chot air balloons Revise: flip: a swarm of derelict, weighted dirigibl\u2026\u201d \u2014 sketchgen entry 2004, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2004/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a dense, unstable swarm of colossal, derelict mechanical frames\u2014the skeletons of weighted dirigibles\u2014that are continuously tumbling and falling. The scene is viewed from a street-level perspective, enveloped in a smog-stained, ochre-grey afternoon sky. Movement is relentlessly dynamic and chaotic; the structures fall rapidly downward, suggesting powerful, unseen wind currents and sudden, unpredictable gusts. The palette is industrial and muted, consisting of oxidized sheet metal, rusted tones, and thick atmospheric haze. The entire environment keeps a constant, self-generated movement.",
+  "completion_tokens": 2034,
+  "created_utc": "2026-10-12T00:53:07Z",
+  "entry_id": 2004,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1044,
+      "evidence": "gate exit 1: assertions failed: motion(idle), uses(webgl)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 143,
+        "sha256": "3f01faa757f7d58c27b8d6ad036fa574a9187dc1f752145b388a8629d6eee4d2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4816,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.177,
+      "wall_s": 147.837
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 990,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 98,
+        "sha256": "d3047afbb114c0705a47fbf2a6cce3bf1b7bda9ddb6b385d08ede6360ea9975c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3652,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.456,
+      "wall_s": 94.801
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2017,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a swarm of derelict, weighted dirigible frames tumbling rapidly downward through a smog-stained afternoon sky, driven by chaotic wind currents, made of salvaged sheet metal, seen at street level, driven by sudden gusts.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1260,
+    "root_entry_id": 1260
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: flip: a swarm of derelict, weighted dirigible frames tumbling rapidly downward through a smog-stained afternoon sky, driven by chaotic wind currents, made of salvaged sheet metal, seen at street level, driven by sudden gusts.",
+  "prompt_tokens": 8468,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2004/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2004",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a chaotic swarm of derelict mechanical dirigible frames falling through a smog-stained sky. Using the WEBGL renderer, it creates a three-dimensional scene where hundreds of metallic structures tumble and drift downward with unpredictable rotation and motion. The muted industrial palette of rusted browns and ochres against a darkening sky evokes the feeling of a heavy, oppressive atmosphere. Each frame is rendered as a simplified cube-like structure with rotating axes to simulate the tumbling effect, creating an overwhelming sense of continuous, dynamic movement that fills the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 242.638
+}
