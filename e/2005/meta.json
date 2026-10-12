@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons Revise: depart: A sprawling city of tessellated, fol\u2026\u201d \u2014 sketchgen entry 2005, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2005/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays several brightly colored, buoyant shapes floating in a simulated sky. These balloons drift slowly and gently across the visible space, maintaining a constant, peaceful movement. The shapes are rounded and varied in hue, shifting slightly in color and position as they float. Clicking anywhere on the canvas causes all the balloons to momentarily adjust their pattern and drift rapidly to a new, random location before resuming their slow, continuous drift.",
+  "completion_tokens": 633,
+  "created_utc": "2026-10-12T00:58:11Z",
+  "entry_id": 2005,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 633,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 162,
+        "sha256": "da29152a60697fd891529e45cac35274ae28aada6c8fa5572191b411c3129d37",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 5038,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.077,
+      "wall_s": 123.632
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2018,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: A sprawling city of tessellated, folded origami walls, patterned with deep vertical stripes of red, ochre, teal, and cream, that slowly shift and fold in constant motion, made of folded origami.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1270,
+    "root_entry_id": 1270
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: depart: A sprawling city of tessellated, folded origami walls, patterned with deep vertical stripes of red, ochre, teal, and cream, that slowly shift and fold in constant motion, made of folded origami.",
+  "prompt_tokens": 5038,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2005/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2005",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a peaceful sky filled with gently floating balloons that drift slowly across the canvas. Each balloon has its own size, speed, and color, creating a varied and organic feel. The balloons move with subtle bobbing motions, giving them a buoyant quality. When the user clicks anywhere on the canvas, all balloons momentarily adjust their positions and then resume their gentle drifting pattern. The visual effect is calming and serene, emphasizing the peaceful movement through simple geometric shapes and smooth animations.",
+  "submitted_by": "profcarroll",
+  "wall_s": 123.632
+}
