@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 2141, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2141/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an array of intersecting geometric lines forming a visible grid. The color palette features deep, cool tones that transition and shift across the plane in a smooth, gradient pattern. The structure is defined by repeating, rectangular cells, yet the sizes of these elements are intentionally varied across the entire surface, giving the grid an organic, asymmetrical feel. This complex, structured pattern moves softly and perpetually across the canvas without requiring any direct user input.",
+  "completion_tokens": 1866,
+  "created_utc": "2026-10-12T18:04:08Z",
+  "entry_id": 2141,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 914,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 4 lines of code differ from the sketch it revises (61 lines of code before, 62 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: Saturated, shifting, deep color fields given to slow-moving smoke plumes, made of knitted wool.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 78,
+        "sha256": "a08c0cbbbc012be72b302866038b5ec823aa0de429b020b4ef7c0361b548ce96",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3366,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.667,
+      "wall_s": 80.552
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 952,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 79,
+        "sha256": "b8006ec668609275acf4dcd451c2308fdf3d9356c40a2131c0e1a6456ded2244",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3589,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.382,
+      "wall_s": 88.414
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2156,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Saturated, shifting, deep color fields given to slow-moving smoke plumes, made of knitted wool.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1936,
+    "root_entry_id": 69
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured gradient pattern, and this time introduce subtle variation to the repeating grid element sizes.\n\nRevise: carry: a slow, deep shifting rhythm given to a mosaic stained-glass window, made of ceramic tile.\n\nRevise: carry: Saturated, shifting, deep color fields given to slow-moving smoke plumes, made of knitted wool.",
+  "prompt_tokens": 6955,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2141/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2141",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-shifting grid of organic, asymmetrical rectangles that move gently across the canvas. The color palette uses deep, cool tones that transition smoothly over time, creating a sense of depth and motion. Each cell in the grid has its own size variation and subtle undulation, giving the overall pattern an irregular, natural feel rather than a rigid structure. The movement is slow and continuous, with no user interaction required to maintain the animation, resulting in a calming, immersive visual experience that feels like watching smoke or liquid flow through space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 168.966
+}
