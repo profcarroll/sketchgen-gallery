@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside an operating printing press Revise: the same c\u2026\u201d \u2014 sketchgen entry 2137, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2137/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a surface displaying vibrant, unpredictable material blooms that mimic highly viscous lava. The color palette is rich and unstable, and the material flows and expands with a thick, slow movement. The visual action is initiated by a sequence of falling dominoes, whose impacts trigger the initial bloom. These blooms then propagate across the canvas, expanding outward in uncontrolled, glowing sheets. The material continuously evolves, filling the space with intricate, ever-shifting patterns as the simulated lava cools and spreads over time.",
+  "completion_tokens": 977,
+  "created_utc": "2026-10-12T17:30:46Z",
+  "entry_id": 2137,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 977,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 3400,
+        "played": 34,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "d16e22197741b26f5fb42bccbf20f425a87958d04402445fb690c4503f0789d0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.1,
+      "num_ctx": 16384,
+      "preload_s": 0.056,
+      "prompt_tokens": 3532,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 90.925,
+      "wall_s": 87.846
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2152,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: vibrant, unpredictable material bloom given to slow-moving, highly viscous lava, forming and expanding across surfaces triggered by a row of falling dominoes",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1932,
+    "root_entry_id": 404
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "take the viewer inside an operating printing press\n\nRevise: the same continuous movement of the printed material, and this time the ink streaks momentarily crystallize in geometric patterns upon stopping.\n\nRevise: flip: a sketch featuring volatile, random blotches that bloom across the surface, dissolving into unpredictable organic stains instead of rigid patterns, made of wet ink on newsprint\n\nRevise: carry: vibrant, unpredictable material bloom given to slow-moving, highly viscous lava, forming and expanding across surfaces triggered by a row of falling dominoes",
+  "prompt_tokens": 3532,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2137/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2137",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a viscous lava-like material that emerges and spreads across a surface in response to a chain reaction of falling dominoes. The viewer observes a slow, organic expansion where each impact triggers glowing blooms that grow outward with unpredictable patterns. The simulation uses a 3D environment to create depth and realism, with the dominoes falling in sequence and initiating the lava-like flows. The color palette shifts between warm oranges and reds, mimicking the appearance of cooling lava while maintaining an unstable, ever-shifting pattern of expansion. The blooms propagate slowly and continuously, filling the space with intricate, flowing forms that evolve over time, creating a mesmerizing display of fluid dynamics in a controlled environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.846
+}
