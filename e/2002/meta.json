@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cClick anywhere to drop a pebble that chimes a soft tone and sends a r\u2026\u201d \u2014 sketchgen entry 2002, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2002/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays vast sheets of solid, deep-hued rock, overlaid by delicate, crystalline veins. These veins slowly and perpetually bloom across the surface, expanding in complex, fractal patterns of mineral crystallization, simulating the geological pressure over deep time. Upon clicking anywhere on the canvas, a sudden burst of energy manifests as a point of impact. This impact not only sends a visible ripple outwards, but also accelerates the formation process, causing the nearest mineral veins to flare and expand rapidly before settling back into their slow, steady growth cycle.",
+  "completion_tokens": 2906,
+  "created_utc": "2026-10-12T00:37:28Z",
+  "entry_id": 2002,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1422,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "bcc0ad5d8dfe8ecf8f4c9787053b80407e6693c696ca4a4235d3f5645981d3be",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3280,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.729,
+      "wall_s": 128.337
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1484,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 183,
+        "sha256": "bde957d8662ce969d8e5f2a690e8573220faf027cbd0d483d4e4d6d358e7dd13",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 57.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4037,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 27.668,
+      "wall_s": 138.157
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2015,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the spreading energy of an impact, translated into slowly forming, fractal patterns of crystalline mineral veins crisscrossing solid rock, seen at the scale of a mountain range.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1252,
+    "root_entry_id": 1252
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Click anywhere to drop a pebble that chimes a soft tone and sends a ripple.\n\nRevise: depart: the spreading energy of an impact, translated into slowly forming, fractal patterns of crystalline mineral veins crisscrossing solid rock, seen at the scale of a mountain range.",
+  "prompt_tokens": 7317,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2002/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2002",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a geological visualization of deep-time rock formation with mineral veins that bloom and expand. The canvas displays rich, textured rock surfaces rendered in WEBGL, with delicate crystalline veins slowly growing across the terrain. When clicked, an impact point triggers rapid expansion of nearby veins, simulating sudden pressure or energy release. The system uses noise-based textures for realistic rock appearance and manages thousands of particles efficiently within p5's performance constraints. The viewer witnesses both slow, natural geological processes and dramatic bursts of mineral growth that respond to interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 266.494
+}
