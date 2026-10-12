@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 2003, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2003/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents layered, softly glowing color masses arranged in the structured form of a heraldic crest. Deep, saturated rectangular fields float on top of each other, their edges blurring into adjacent tones. The color scheme evokes the rich, subdued tones of a medieval tapestry. These massive forms appear to breathe, with gradients slowly deepening and bleeding across the surface, creating a constant, ambient luminescence. When the viewer clicks anywhere on the crest, the entire composition reacts by brightening, causing the soft-edged masses to intensify and momentarily pulsate outward.",
+  "completion_tokens": 787,
+  "created_utc": "2026-10-12T00:44:11Z",
+  "entry_id": 2003,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 787,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 55,
+        "sha256": "a26becacd063a30e5504b4bd8456b037b3d6046e1be22e614d46fad56db33464",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 61.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3199,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.912,
+      "wall_s": 89.142
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2016,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Soft-edged, glowing color masses given to a depiction of a royal lineage crest, medieval tapestry",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1253,
+    "root_entry_id": 1253
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist\\x27s signature forms and use of color.\n\nRevise: carry: Soft-edged, glowing color masses given to a depiction of a royal lineage crest, medieval tapestry",
+  "prompt_tokens": 3199,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2003/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2003",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, breathing heraldic crest using soft-edged, glowing color masses that evoke the rich, muted tones of a medieval tapestry. The composition features two layered rectangular fields \u2014 one crimson and one plum \u2014 that gently pulse and shift in hue over time, creating an ambient luminescence. When clicked, the entire composition reacts with a bright pulse that intensifies the glow and causes the shapes to expand momentarily. The effect is achieved through layered rectangles with varying alpha values and subtle breathing animations, all rendered in WEBGL for smooth performance and depth. The technique emphasizes soft transitions and gradual color shifts to create an otherworldly yet historically inspired visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.142
+}
