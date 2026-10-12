@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2132, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2132/ Licensed CC BY 4.0.",
+  "brief": "A central tree stands on a gentle hill, dominating the canvas with its silhouette. The artwork captures the passage of time through profound colour and continuous, cyclical movement. The viewer observes the foliage undergo a spectacular transition, moving from vibrant green to deep reds and fiery oranges before shedding its leaves to the ground. Periodically, the scene is covered by drifting snowfall, which eventually melts, revealing new life as soft buds bloom. The colours and shapes cycle endlessly, resetting the scene until the leaves reappear fully green again.",
+  "completion_tokens": 1725,
+  "created_utc": "2026-10-12T17:01:14Z",
+  "entry_id": 2132,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1725,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 156,
+        "sha256": "8ad2572ba1b7b6ad051b5db0059087ea375f17cb433312fb8a3d9453c5d2b012",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3907,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.079,
+      "wall_s": 149.404
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2147,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1927,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.",
+  "prompt_tokens": 3907,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2132/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2132",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the eternal cycle of geological transformation through the lens of crystalline growth and seasonal change. The viewer observes colossal silicate crystal structures emerging from a gentle hill, their geometric forms shifting through time with subtle color transitions that mirror natural cycles. These structures pulse with an organic rhythm, growing and contracting as they rotate in three-dimensional space. The scene evolves through distinct seasons\u2014spring's tender buds, summer's verdant growth, fall's fiery transformation, and winter's crystalline snowfall\u2014each phase revealing different aspects of the same fundamental process. The work captures the patient, inevitable progression of geological time through continuous, cyclical movement, where rust-colored crystals emerge from sheet steel to form intricate mineral formations that embody both the fragility and permanence of natural processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 149.404
+}
