@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 2157, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2157/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dense, metallic structure at a close viewing distance, emphasizing the deep, textured shades of rust and oxidized sheet steel. Various interconnected components\u2014pumps, pistons, and folded metal plates\u2014form a complex, skeletal arrangement. These shapes are defined by their cyclical movement, as large masses of rusty metal visibly push, retract, and shift under internal, repeating pressure. The entire system operates in a continuous, rhythmic decay, exhibiting patterned structural failure driven by predictable, wave-like motion.",
+  "completion_tokens": 902,
+  "created_utc": "2026-10-12T19:57:01Z",
+  "entry_id": 2157,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 902,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 88,
+        "sha256": "3d48a8d62cb06d9569c62e57ae8c633ec584afb26209d96055349a32682e31c2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 27.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3363,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 16.306,
+      "wall_s": 79.962
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2172,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of repeating, self-correcting structural failure taken into a hydraulic pumping system of sheet steel, made of rust, seen at macro scale, driven by cyclical pressure.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 1956,
+    "root_entry_id": 55
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.\n\nRevise: make it playable\n\nRevise: the same retro, stylized representation of a road that scrolls constantly beneath the player's vehicle, and this time include more complex and varied visual obstacles appearing along the edges of the road.\n\nRevise: depart: the idea of regulated, endless forward motion taken into the slow, inevitable decay of a massive, single-color folded origami sculpture.\n\nRevise: depart: The concept of repeating, self-correcting structural failure taken into a hydraulic pumping system of sheet steel, made of rust, seen at macro scale, driven by cyclical pressure.",
+  "prompt_tokens": 3363,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2157/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2157",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a metallic hydraulic system in a state of continuous, rhythmic decay. Through interconnected geometric forms\u2014plates, pistons, and pumps\u2014visually represented by cylinders, spheres, and planes, the structure demonstrates cyclical motion that mimics internal pressure dynamics. The entire system operates within a deep rust-colored palette, emphasizing oxidation and wear, with each component moving in synchronized yet independent patterns to create an impression of mechanical failure driven by predictable wave-like forces. The viewer observes a macro-scale representation of a deteriorating industrial mechanism where the movement itself embodies the process of structural breakdown under repeated stress.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.962
+}
