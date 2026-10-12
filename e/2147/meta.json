@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 2147, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2147/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a high-magnification view focused exactly on the junction where three hexagonal shapes meet. The image instantly deepens and transforms, zooming past the surface geometry until the viewer is immersed in a microscopic world. The seam is revealed to be a complex network of highly pigmented, crystalline salt deposits. These crystalline structures feature sharp, repeating fractal patterns and vivid colors, simulating the visual environment of a scientific microscope viewing a naturally formed mineral deposition.",
+  "completion_tokens": 2665,
+  "created_utc": "2026-10-12T18:54:45Z",
+  "entry_id": 2147,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 919,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 72)\n\ngate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 152.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 7.1091/255, 184784 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 116,
+        "sha256": "4e71c17630d4a84493cccc32ba6bc1be6091881c9f8872b918ddcdd6a60fada0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 152.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3580,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 77.54,
+      "wall_s": 87.227
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 881,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1302.5 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 108,
+        "sha256": "3c9f5bc2bfd47dc918e40654a787d84e8699f4dbe253618b81c4bf93857bf44f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1302.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3661,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 79.665,
+      "wall_s": 84.587
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 865,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "7eaa19d0258c4369f487259ccb5bd2bbd5749a259886fa50be9094f5813ba26a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3497,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 10.571,
+      "wall_s": 78.972
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2162,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of three surfaces meeting at a seam is taken into a network of interconnected, semi-transparent vascular structures that pulsate gently with the movement of tides.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 1945,
+    "root_entry_id": 13
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: zoom: a whole sketch of the sharp, repeating seam where three hexagons intersect, revealing the structure as microscopic, highly pigmented crystalline salt deposits, under a microscope\n\nRevise: depart: the concept of three surfaces meeting at a seam is taken into a network of interconnected, semi-transparent vascular structures that pulsate gently with the movement of tides.",
+  "prompt_tokens": 10738,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2147/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2147",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch immerses viewers in a microscopic world where three hexagonal shapes meet at a junction. The visual effect is achieved through a dense array of crystalline structures that display fractal patterns and vibrant colors. The viewer's perspective zooms deeper into the scene, revealing increasingly detailed mineral formations. The technique uses WebGL rendering to create a 3D environment with dynamic rotation and smooth zooming effects, while maintaining performance within strict frame budget constraints. The result is a scientifically-inspired visualization of natural crystal formation at an incredibly close scale.",
+  "submitted_by": "profcarroll",
+  "wall_s": 250.786
+}
