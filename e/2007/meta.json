@@ -1,0 +1,169 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 2007, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2007/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays deep-sea hydrothermal mineral formations, depicting crystalline structures and complex lattices. The color palette shifts continually, simulating the mineral deposition process. The central movement is one of constant, relentless erosion and gradual crystal deposition, causing the existing material to fracture and reform in perpetuity. There is no external interaction required; the entire system evolves autonomously, modeling the continuous chemical action of the deep ocean floor.",
+  "completion_tokens": 4572,
+  "created_utc": "2026-10-12T01:22:10Z",
+  "entry_id": 2007,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1560,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 141)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 1000.4 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "30f6281c098d1d1e52c661ef67b545dbab78886248e2bb95a44d64ea13205524",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1000.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3715,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 61.489,
+      "wall_s": 150.935
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1489,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 101)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 952.4 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 156,
+        "sha256": "f38b49d2202706e26c2428d0fa4554694969597d0ad8c953dca96b52741e2c3a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 952.4,
+      "num_ctx": 16384,
+      "preload_s": 0.045,
+      "prompt_tokens": 4258,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 58.755,
+      "wall_s": 147.143
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1523,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 162,
+        "sha256": "64f656617dbcca58fd0b1e03b8099f869c33175509fd536d9704bdf168f067c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4172,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.478,
+      "wall_s": 146.206
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2020,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of systematic crystallization and material fatigue taken into a study of deep-sea hydrothermal vent minerals, showing gradual fracture and mineral deposition driven by constant erosion.",
+    "critique_by": "gemma4:e4b",
+    "generation": 21,
+    "inherits_source": false,
+    "parent_entry_id": 1273,
+    "root_entry_id": 13
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working\n\nRevise: The same intricate, interlocking tessellation of hexagons, and this time giving the hexagon boundaries sharper, more defined edges.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time introducing localized areas where the geometric integrity momentarily fractures.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time with localized areas exhibiting extreme contrast between stable and fracturing segments.\n\nRevise: the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagons, and this time introducing faint, transient stress fractures that radiate visibly from points of extreme structural energy.\n\nRevise: the same intricate tessellation composed of interlocking hexagons, and this time introducing sharp, localized stress fractures visible where the pulsating boundaries reach peak tension.\n\nRevise: the same intricate, continuously interlocking lattice of hexagons forming a complex tessellation, and this time making the stress fractures glow with visible electrical energy.\n\nRevise: the same intricate and continuous lattice formed by interlocking hexagonal tessellations, and this time having the glowing electrical pulses visibly erode the structure from the edges inward.\n\nRevise: the same intricate, continuously interlocking tessellation of hexagons, forming a complex, structured lattice, and this time having the glowing pulses visibly warp the hexagons before the material fractures.\n\nRevise: the same complex lattice of interlocking hexagons, and this time introducing visible, cumulative stress lines that spiderweb across the material between adjacent tessellations.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagonal tessellations, and this time having the glowing electrical pulses cause the surrounding hexagonal material to visibly crystallize before fracturing.\n\nRevise: depart: the idea of systematic crystallization and material fatigue taken into a study of deep-sea hydrothermal vent minerals, showing gradual fracture and mineral deposition driven by constant erosion.",
+  "prompt_tokens": 12145,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2007/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2007",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch models the dynamic geological processes of deep-sea hydrothermal vents through an evolving particle system. The visualization depicts mineral formations as particles that undergo continuous erosion and deposition\u2014particles drift chaotically due to noise-based forces, occasionally aggregating to form crystalline structures. The color palette shifts gradually over time, simulating the chemical changes during mineral precipitation. Connections between nearby particles form a lattice-like structure that constantly evolves as particles move and age, creating an ever-changing pattern reminiscent of natural crystal growth and fracture processes in oceanic environments.",
+  "submitted_by": "profcarroll",
+  "wall_s": 444.284
+}
