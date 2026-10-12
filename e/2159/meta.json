@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201candroids dreaming of electric sheep Revise: the same luminous structu\u2026\u201d \u2014 sketchgen entry 2159, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2159/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a deep, dark environment illuminated by luminous, structured forms that glow in brilliant emerald and cyan. These forms behave like sheets of liquid light, cascading and drifting downward while gently swelling and contracting to form visible, pulsating ripples. Within the flow, complex crystalline data networks are revealed, appearing to pulse with underlying energy streams. While the light continuously drifts and flows on its own, interacting with the canvas causes the visible ripples to intensify, and the glowing crystalline networks momentarily brighten and reorganize their patterns.",
+  "completion_tokens": 5213,
+  "created_utc": "2026-10-12T20:18:27Z",
+  "entry_id": 2159,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1733,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 150,
+        "sha256": "8a1f9c04e5a6e340cd10158c9c40e98e5e906ac61e919ad9f63f31ea4db0d00b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3861,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.341,
+      "wall_s": 147.435
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1733,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 210,
+        "sha256": "113518b51906da1856716134e0054b438d098722c4345f9e20bbdaf37db18187",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4333,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.394,
+      "wall_s": 164.919
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1747,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 211,
+        "sha256": "a0a85453f31ca18d17a6a7ed7796e6c8273f6e1290b8e6de001a27f38be952b5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4338,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.333,
+      "wall_s": 162.028
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2174,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The cyclical, glowing patterns of electrical data streams taken into a massive, subterranean mycelial network, traversing woody roots, made of decomposing lignin, seen at microscopic scale, driven by chemical reactions.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1958,
+    "root_entry_id": 207
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "androids dreaming of electric sheep\n\nRevise: the same luminous structured forms, and this time they cast ephemeral neon shadows on the surrounding dark environment\n\nRevise: the same luminous structured forms, and this time the neon shadows reveal underlying crystalline networks within the space\n\nRevise: the same luminous structured forms, and this time they pulse with a cyclical spectrum of vibrant emerald and cyan hues\n\nRevise: the same luminous, structured forms, and this time they cascade and drift downward like sheets of liquid emerald and cyan light\n\nRevise: the same sheets of liquid light, and this time they swell and contract gently, forming visible, pulsating ripples before drifting downward.\n\nRevise: depart: the suggestion of hidden electrical paths taken into fossilized ammonite shells, revealing crystalline data streams glowing through the spiral chambers, seen at geologic scale.\n\nRevise: depart: The cyclical, glowing patterns of electrical data streams taken into a massive, subterranean mycelial network, traversing woody roots, made of decomposing lignin, seen at microscopic scale, driven by chemical reactions.",
+  "prompt_tokens": 12532,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2159/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2159",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dark, immersive environment filled with luminous, flowing forms that evoke both liquid light and crystalline data networks. Emerald and cyan hues pulse through the scene as particles drift downward with organic motion, gently swelling and contracting to form visible ripples. The composition features cascading streams that trace paths across the canvas, while the background subtly pulses to maintain an undercurrent of energy. When a viewer interacts by clicking, the forms respond with intensified ripples and reorganized patterns, suggesting an interactive system where light and data influence each other. The visual effect is achieved through particle physics, fluid motion, and layered glow effects that create depth and luminosity within a dark space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 474.382
+}
