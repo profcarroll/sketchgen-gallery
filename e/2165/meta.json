@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdiagonal stripes animating in smoothly eased slicing patterns in colo\u2026\u201d \u2014 sketchgen entry 2165, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2165/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a constantly active, glowing abstraction of intersecting linear segments. These organized lattices appear like technical schematics viewed through the lens of retro 1980s digital technology. Thin, bright vectors continuously form and reorganize themselves, creating self-arranging geometric patterns that flicker with internal light. The composition is entirely self-contained, maintaining its perpetual movement and structural complexity without requiring any input from the viewer.",
+  "completion_tokens": 1352,
+  "created_utc": "2026-10-12T21:00:05Z",
+  "entry_id": 2165,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 668,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 46 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: Self-organized linear lattices given to glowing vector schematics, visible on a 1980s arcade cabinet.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "70f7ee099db20c84f7707e555a0f561f6893c5117ba79b3ccb59c68263eb3c0a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3141,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.081,
+      "wall_s": 60.684
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 684,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 64,
+        "sha256": "70f7ee099db20c84f7707e555a0f561f6893c5117ba79b3ccb59c68263eb3c0a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3328,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.517,
+      "wall_s": 65.181
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2180,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Self-organized linear lattices given to glowing vector schematics, visible on a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 1968,
+    "root_entry_id": 12
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "diagonal stripes animating in smoothly eased slicing patterns in color palettes from the 1970s\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the stripes incorporate visible halftone dot textures\n\nRevise: try a new color pallete\n\nRevise: the same continuously shifting abstraction of bold geometry, and this time the bands warp with sharp, defined corners instead of smoothly transitioning edges\n\nRevise: the same continuous, dynamic abstract composition composed of bold, intersecting bands, and this time the bands are segmented by visible vertical or diagonal stripes.\n\nRevise: the same perpetually shifting abstraction of bold, intersecting geometric bands, and this time the boundaries between the colors are defined by harsh, rigid edges.\n\nRevise: the same perpetually shifting abstract composition of bold, intersecting bands and fine linear stripes, and this time the boundaries between the colored bands are defined by harsh, rigid edges.\n\nRevise: depart: The pattern of self-generated, intersecting linear segments taken into the delicate, repeating structure of crystalline mineral growth, made of cut paper\n\nRevise: carry: Self-organized linear lattices given to glowing vector schematics, visible on a 1980s arcade cabinet.",
+  "prompt_tokens": 6469,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2165/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2165",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract visualization of intersecting linear segments that evoke the aesthetic of retro 1980s digital schematics. Using a system of self-organizing line segments, each with its own movement pattern governed by Perlin noise, the composition generates a constantly evolving geometric lattice. The lines flicker with internal light through careful control of color and transparency, creating an ethereal glow that suggests both technical precision and organic flow. The result is a perpetual motion system where patterns continuously form and reorganize themselves, filling the canvas with a mesmerizing display of vector art that feels both futuristic and nostalgic.",
+  "submitted_by": "profcarroll",
+  "wall_s": 125.865
+}
