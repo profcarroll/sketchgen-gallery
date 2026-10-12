@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cerecting a skyscraper Revise: the same vertical, three-dimensional ci\u2026\u201d \u2014 sketchgen entry 2151, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2151/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a dark, fragile ziggurat composed of geometric glass prisms, viewed at eye-level. The structure appears to be in a continuous, gravitational collapse, shedding segments that cascade downward. The colors are deep and muted, emphasizing reflections and the crystalline nature of the material. The overall motion is a constant, systematic slide and decay. Viewer interaction is achieved by clicking, which causes additional, distinct sections of the ziggurat to peel away and accelerate into the ongoing downward cascade.",
+  "completion_tokens": 873,
+  "created_utc": "2026-10-12T19:24:32Z",
+  "entry_id": 2151,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 873,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 87,
+        "sha256": "2765b46725ce67a974b94e876c76796e2c43955dc2a150b7224aef117dd56ea4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3395,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.79,
+      "wall_s": 78.841
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2166,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the gradual, systematic decomposition of enormous, poured concrete mushroom mycelium, shedding delicate, petrified caps and root structures, as viewed at subterranean scale, during a tropical humid era.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1949,
+    "root_entry_id": 363
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "erecting a skyscraper\n\nRevise: the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.\n\nRevise: flip: a constantly collapsing ziggurat of dark, fragile glass prisms that continuously slides downward in a cascade, responding to clicks by peeling off additional segments, seen at eye-level\n\nRevise: depart: the gradual, systematic decomposition of enormous, poured concrete mushroom mycelium, shedding delicate, petrified caps and root structures, as viewed at subterranean scale, during a tropical humid era.",
+  "prompt_tokens": 3395,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2151/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2151",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dark, fragile ziggurat composed of geometric glass prisms in a continuous gravitational collapse. The structure appears to be disintegrating systematically, with segments shedding and cascading downward under the influence of gravity. The muted color palette emphasizes the crystalline nature of the material, while subtle rotations and lateral movements create an organic sense of decay. Viewer interaction through clicking causes additional sections to peel away and accelerate into the ongoing cascade, amplifying the sense of structural instability. The visual effect uses a combination of particle-like segments with dynamic physics simulation to create a convincing sense of volumetric collapse.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.841
+}
