@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cRender a perspective from within New Babylon, the visionary, speculat\u2026\u201d \u2014 sketchgen entry 2029, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2029/ Licensed CC BY 4.0.",
+  "brief": "The scene presents a cavernous, abandoned architectural space, hinting at the former grandeur of a speculative city. Viewers observe vast sheets of oxidized steel and concrete, dominated by the colors of deep rust, oxidized reds, and metallic grays. The geometry is fundamentally broken, appearing less like solid structures and more like particulate decay. Slow, continuous motion simulates the structural degradation, causing sheets and fragments to subtly peel, crumble, and rain down as flakes of rust and stressed metal, transforming monumental forms into ephemeral piles of decay.",
+  "completion_tokens": 1314,
+  "created_utc": "2026-10-12T04:33:55Z",
+  "entry_id": 2029,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1314,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 87,
+        "sha256": "32aa6cef1c1ab089e8a44b6afe3f1019e9e98f0777cc5e35e80adaad3171b7e6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 57.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3351,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.755,
+      "wall_s": 105.912
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2043,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch depicting monumental structural collapse, where the grand geometry of the abandoned city is reduced to flakes and crumbling edges of rust on sheet steel",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1378,
+    "root_entry_id": 1378
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Render a perspective from within New Babylon, the visionary, speculative architectural project developed by Dutch artist and Situationist Constant Nieuwenhuys between 1956 and 1974\n\nRevise: flip: a sketch depicting monumental structural collapse, where the grand geometry of the abandoned city is reduced to flakes and crumbling edges of rust on sheet steel",
+  "prompt_tokens": 3351,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2029/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2029",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays the gradual decay of a grand architectural space through the lens of crumbling steel and concrete. Viewers witness massive structural elements slowly breaking apart into smaller fragments, with each piece exhibiting its own motion and aging process. The rusted reds and metallic grays dominate the palette, evoking the passage of time and neglect. As fragments age, they disintegrate further into smaller pieces that drift downward, simulating a continuous collapse. The scene moves slowly but constantly, with subtle rotations and drifting motions that create an atmosphere of inevitable decay and transformation from monument to ruin.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.912
+}
