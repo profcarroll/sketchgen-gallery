@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 2015, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2015/ Licensed CC BY 4.0.",
+  "brief": "The canvas glows with saturated, bioluminescent colors and sharply layered geometric patterns, evoking the deep-sea complexity of a coral reef seen through an arcade cabinet filter. The visual environment is one of constant, mesmerizing progression, with light and abstract structures flowing across the screen. The viewer observes this self-contained, automatic display of intense color and layered geometry; no direct input is necessary to observe the ongoing, dynamic life of the reef.",
+  "completion_tokens": 999,
+  "created_utc": "2026-10-12T02:24:53Z",
+  "entry_id": 2015,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 999,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 81,
+        "sha256": "c5f0830db17982bfa2def8095ec5ff7b94abd21c48df248464dc3981ee6d7561",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.8,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3325,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 21.255,
+      "wall_s": 89.519
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2029,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The constant, flowing progression of saturated color and layered geometric intensity taken into the structure of a giant, deep-sea bioluminescent coral reef, seen through the lens of a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1292,
+    "root_entry_id": 1255
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same kaleidoscopic tunnel of polychromatic crystalline facets, and this time the forward motion slows to a gentle, breathing pulse.\n\nRevise: the same cylindrical tunnel of polychromatic crystalline facets, and this time the gentle pulse is replaced by a rapid, spiraling vortex drawing the viewer outwards from the central mask.\n\nRevise: depart: The constant, flowing progression of saturated color and layered geometric intensity taken into the structure of a giant, deep-sea bioluminescent coral reef, seen through the lens of a 1980s arcade cabinet.",
+  "prompt_tokens": 3325,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2015/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2015",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, bioluminescent coral reef environment that pulses with hypnotic geometric patterns. Using WebGL rendering, it generates thousands of particles that flow in layered vortex motions, creating the illusion of deep-sea currents and living coral structures. The composition alternates between spheres, boxes, and torus shapes to simulate different types of reef formations, while a carefully chosen palette of saturated colors evokes the intense, otherworldly glow of bioluminescent marine life. The camera slowly orbits the scene, revealing the complex layered architecture of the reef, all without any user input\u2014this is an autonomous visualization that captures both the organic flow and geometric complexity of underwater ecosystems through the lens of retro arcade aesthetics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 89.519
+}
