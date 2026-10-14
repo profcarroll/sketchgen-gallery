@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside an operating printing press Revise: the same c\u2026\u201d \u2014 sketchgen entry 2199, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2199/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous, matte surface gently patterned with slow, vibrant rivers of viscous material, resembling lava. Though the flow is constant, the viewer can trigger new blooms by activating a row of visible, mechanical dominoes. This input causes the lava to spread outward from the trigger points. The material bursts and expands, forming unpredictable, organic stains that merge and swirl across the surface. The patterns are fluid and vibrant, gradually cooling and solidifying into temporary, abstract geological records.",
+  "completion_tokens": 1237,
+  "created_utc": "2026-10-13T02:15:19Z",
+  "entry_id": 2199,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1237,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 112,
+        "sha256": "ea7cb0845cfc8369a0356fdd384b31032c6cef0f01c4d58ff555f31858ae383a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3485,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 33.738,
+      "wall_s": 118.334
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2215,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Intricate, ever-shifting patterns given to slow-growing crystalline formations, seen through the rhythmic, oscillating mechanism of a massive, counterweighted pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2137,
+    "root_entry_id": 404
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "take the viewer inside an operating printing press\n\nRevise: the same continuous movement of the printed material, and this time the ink streaks momentarily crystallize in geometric patterns upon stopping.\n\nRevise: flip: a sketch featuring volatile, random blotches that bloom across the surface, dissolving into unpredictable organic stains instead of rigid patterns, made of wet ink on newsprint\n\nRevise: carry: vibrant, unpredictable material bloom given to slow-moving, highly viscous lava, forming and expanding across surfaces triggered by a row of falling dominoes\n\nRevise: carry: Intricate, ever-shifting patterns given to slow-growing crystalline formations, seen through the rhythmic, oscillating mechanism of a massive, counterweighted pendulum.",
+  "prompt_tokens": 3485,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2199/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2199",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ever-shifting geological landscape where crystalline formations emerge and grow from a rhythmic pendulum mechanism. The viewer witnesses a continuous flow of material that pulses with organic energy, triggered by mechanical dominoes that fall in sequence. As each domino strikes the surface, it sends forth expanding blooms that gradually solidify into temporary crystal structures. These formations are not static \u2014 they breathe and shimmer with subtle color shifts, their surfaces subtly distorted by noise functions that simulate molecular movement. The pendulum's oscillation adds a constant underlying rhythm to the entire composition, causing everything to gently sway in synchronization. The result is an abstract representation of geological processes captured through a mechanical trigger system, where each bloom becomes both an explosion and a crystallization event, leaving behind temporary records of fluid dynamics that slowly fade into solid form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 118.334
+}
