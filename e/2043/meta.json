@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 2043, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2043/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays typographic elements initially arranged in rigid, structured black and white grids, reminiscent of classic exhibition posters. However, this formality is unstable; the characters and lines begin to melt away from their precise grid positions. These elements are in constant, dynamic flux, reforming into fluid, organic shapes driven by visible mechanical mechanisms like gears and cams. The overall composition appears to breathe and reshape itself, transitioning between structured order and chaotic, liquid form without requiring any external input.",
+  "completion_tokens": 1955,
+  "created_utc": "2026-10-12T06:18:19Z",
+  "entry_id": 2043,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1202,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 62,
+        "sha256": "2cc3e01a14e2ec746dfd089554a5b6517275782c9273b17d97736e66d83595da",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3089,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.683,
+      "wall_s": 100.659
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 753,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "d41ecdbac9ff278e294de1824741d057509789f9a73f0264f24be128de3fdec4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3744,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.174,
+      "wall_s": 78.623
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2057,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1448,
+    "root_entry_id": 1448
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster\n\nRevise: revise with increase contrast between elements to practice what the poster preaches\n\nRevise: publish failed: /home/ubuntu/sketchgen/gallery has uncommitted changes; commit or clean it before publishing\n\nRevise: flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.",
+  "prompt_tokens": 6833,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2043/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2043",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the tension between rigid structure and fluid transformation, depicting typographic elements that appear to breathe and reshape themselves. The composition begins as a formal grid of text\u2014reminiscent of classic Swiss design principles\u2014but gradually dissolves into organic motion through subtle sine wave oscillations. Each character element shifts position and rotates independently, creating an impression of mechanical forces at work without explicit machinery. The visual effect captures the essence of systems that exist in a state of constant flux between order and chaos, where the underlying structure remains but its manifestation continuously evolves.",
+  "submitted_by": "profcarroll",
+  "wall_s": 179.282
+}
