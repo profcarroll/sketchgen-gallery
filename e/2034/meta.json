@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctracks in the rink during figure skating Revise: carry \"luminescent,\u2026\u201d \u2014 sketchgen entry 2034, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2034/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an ever-shifting field of luminescent, flowing traces, resembling bio-films suspended in deep water. These glowing, flowing lines drift and intersect organically across the surface, creating a constantly evolving network of light and color. When the viewer drags the cursor anywhere on the canvas, the simulated searching mechanism activates, drawing and propagating vivid, luminous tracks that intensify the pattern, momentarily visualizing the path and persistence of the flowing bioluminescence.",
+  "completion_tokens": 822,
+  "created_utc": "2026-10-12T05:09:10Z",
+  "entry_id": 2034,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 822,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 67,
+        "sha256": "01e6da2214a3ff15357587ab6c4b0349e07301a0cdb20d0c10d04ed6240eb48d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 37.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3188,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.743,
+      "wall_s": 69.879
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2048,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry \"luminescent, flowing traces\" given to deep-sea bacterial biofilms, seen through the searching mechanism of a slime mould.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1399,
+    "root_entry_id": 1399
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tracks in the rink during figure skating\n\nRevise: carry \"luminescent, flowing traces\" given to deep-sea bacterial biofilms, seen through the searching mechanism of a slime mould.",
+  "prompt_tokens": 3188,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2034/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2034",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates a bioluminescent field of flowing traces resembling deep-sea bacterial biofilms. The particles move organically through the dark space, leaving trails that fade over time and interact with each other's movement. When a user drags their cursor across the canvas, the search mechanism activates \u2014 drawing vivid luminous tracks that propagate through the field, momentarily intensifying the pattern and visualizing the path of the bioluminescence. The color palette uses cool blues and teals to evoke the mysterious depths of the ocean, while the flow dynamics create an ever-shifting network of light that responds both to natural motion and user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.879
+}
