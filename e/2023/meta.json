@@ -1,0 +1,291 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cnostalgic photo collage Revise: the same layered composition of vinta\u2026\u201d \u2014 sketchgen entry 2023, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2023/ Licensed CC BY 4.0.",
+  "brief": "A vast 3D landscape of suspended cliff faces that form a mountain range of fragmented memories. These geological strata are composed of layered, sepia-toned vintage photographs and delicate, torn paper scraps with highly visible frayed fibers. The massive formations drift slowly through the void, creating a sense of immense, floating geological time.",
+  "completion_tokens": 3351,
+  "created_utc": "2026-10-12T03:41:45Z",
+  "entry_id": 2023,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": 1740,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 152,
+        "sha256": "699cfc3c98f3fca2de1627a1983cb391c9febb25e12151b85f66583b40010b41",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "num_ctx": 16384,
+      "preload_s": null,
+      "prompt_tokens": 4333,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 151.177
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 778,
+      "evidence": "gate exit 1: assertions failed: motion(idle), loads(image)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- loads(image): no image arrived from outside the sketch\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 1.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 2689,
+      "resources_loaded": [
+        {
+          "bytes": 22236,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 27572,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 35637,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 56408,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 39339,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 33539,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 20251,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 15902,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.857,
+      "wall_s": 64.96
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 833,
+      "evidence": "gate exit 1: assertions failed: motion(idle), loads(image)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- loads(image): 8 images arrived: fastly.picsum.photos (image/jpeg, 26 kB, timing unknown), fastly.picsum.photos (image/jpeg, 39 kB, timing unknown), fastly.picsum.photos (image/jpeg, 35 kB, timing unknown), fastly.picsum.photos (image/jpeg, 46 kB, timing unknown), fastly.picsum.photos (image/jpeg, 30 kB, timing unknown), fastly.picsum.photos (image/jpeg, 22 kB, timing unknown), fastly.picsum.photos (image/jpeg, 26 kB, timing unknown), fastly.picsum.photos (image/jpeg, 40 kB, timing unknown); but the canvas at the end of the idle window is one flat colour, so nothing was drawn with it\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 75,
+        "sha256": "699290bb1ead8a5f7ba692426e34377b57ffbc023a2095e56ce5b8a64f325c5e",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 12.3,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3616,
+      "resources_loaded": [
+        {
+          "bytes": 26255,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 39030,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 34952,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 46161,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 30095,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 22236,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 25677,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 40240,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 9.396,
+      "wall_s": 81.48
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2037,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of fragmented memory taken into layered geological strata, forming suspended cliff faces, seen at the scale of a mountain range.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1345,
+    "root_entry_id": 1335
+  },
+  "loads": [
+    {
+      "bytes": 26255,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 39030,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 34952,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 46161,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 30095,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 22236,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 25677,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 40240,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: the same layered composition of vintage, sepia-toned photographs and torn paper scraps, and this time the images occasionally halt their drift to create a moment of stillness.\n\nRevise: the same layered collage of sepia-toned vintage photographs and jagged, torn paper scraps, and this time the torn edges and frayed fibers should appear more delicate and highly visible.\n\nRevise: depart: the idea of fragmented memory taken into layered geological strata, forming suspended cliff faces, seen at the scale of a mountain range.",
+  "prompt_tokens": 10638,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2023/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2023",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive 3D landscape of floating cliff faces composed of vintage photographs that slowly drift through a dark void. Each cliff face is represented as a textured plane with randomized size and orientation, creating a sense of fragmented memories suspended in space. The entire formation rotates slowly, and individual cliffs drift independently, generating an organic, dreamlike motion that conveys the concept of geological time made tangible through digital artifacts.",
+  "submitted_by": "profcarroll",
+  "wall_s": 297.617
+}
