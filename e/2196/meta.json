@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2196, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2196/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a lone, stately tree set against a rolling hill. Over time, the leaves cycle through distinct seasonal palettes: vibrant green gives way to rich reds, fiery oranges, and brittle browns before falling to coat the ground. Following this decay, a blanket of falling snow settles, temporarily covering the trunk and earth. As the snow melts, tiny buds appear, blooming into colorful flowers, until new, fresh green foliage emerges, beginning the inevitable cycle of renewal again.",
+  "completion_tokens": 1603,
+  "created_utc": "2026-10-13T01:53:31Z",
+  "entry_id": 2196,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1603,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 173,
+        "sha256": "7b420715a9831375f2d7aab36f94a5d2c0ad7643b9cb24485b732989fce79b7d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4195,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.111,
+      "wall_s": 163.119
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2212,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2132,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.\n\nRevise: carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.",
+  "prompt_tokens": 4195,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2196/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2196",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the eternal cycle of nature through a single, majestic tree that embodies the seasons' transformation. The canvas shows rolling hills beneath a sky that gradually shifts from spring's green birth to summer's full bloom, then to autumn's fiery farewell and winter's snowy silence. The tree's leaves change color through each phase\u2014vibrant greens give way to rich oranges and reds before browning, while snow blankets the landscape during winter months. Tiny buds appear in spring, blooming into colorful flowers before new foliage emerges, beginning the cycle anew. The viewer watches this timeless renewal unfold across the canvas, where every element moves in harmony with the passage of time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 163.119
+}
