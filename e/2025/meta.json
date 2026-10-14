@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cwater coming to a boil Revise: this try using WebGL and make the wate\u2026\u201d \u2014 sketchgen entry 2025, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2025/ Licensed CC BY 4.0.",
+  "brief": "A constant cascade of fine, crystalline powder descends into a translucent vessel, settling into distinct, geometric sedimentary layers. The movement of the falling particles and the gradual buildup of the layers follow a rhythmic, oscillating pattern, governed by the simulated recoil of a spring under tension. The tiny crystals shimmer and catch the light as they accumulate, creating a sense of textured, rhythmic growth within the container.",
+  "completion_tokens": 953,
+  "created_utc": "2026-10-12T04:02:22Z",
+  "entry_id": 2025,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 953,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "1ed47e9b961888f97550616ebec111d46b5a12d4d4091871ddc6c137e29ecf2b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3723,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.898,
+      "wall_s": 106.151
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2039,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a cascade of fine, crystalline powder sinking from above, forming geometric sedimentary layers in a container, its descent governed by the precise, measurable recoil of a spring under tension",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1358,
+    "root_entry_id": 1354
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "water coming to a boil\n\nRevise: this try using WebGL and make the water look more realiistic\n\nRevise: flip: a cascade of fine, crystalline powder sinking from above, forming geometric sedimentary layers in a container, its descent governed by the precise, measurable recoil of a spring under tension",
+  "prompt_tokens": 3723,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2025/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2025",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a rhythmic sedimentation process within a translucent container, where fine crystalline particles cascade downward in response to spring-like oscillations. The particles form distinct geometric layers as they settle, with their movement governed by simulated physics that mimics the recoil of a spring under tension. The visual effect captures both the granular nature of the settling process and the ordered buildup of sedimentary strata, creating a sense of textured, cyclical growth within the container.",
+  "submitted_by": "profcarroll",
+  "wall_s": 106.151
+}
