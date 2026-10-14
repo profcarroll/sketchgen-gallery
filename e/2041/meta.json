@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 2041, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2041/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a detailed, nostalgic landscape dominated by paper-cut shapes and intricate clockwork mechanisms. The scene features a sprawling city composed of gears, cogs, and aged wooden structures, all displaying the patina of time. Whimsical ships, crafted in the same paper-cut style, autonomously traverse this complex world. As they drift, they leave behind delicate wake trails that slowly dissipate. The entire canvas is in gentle, continuous motion, giving the viewer the impression of passing through a massive, operating timepiece.",
+  "completion_tokens": 1909,
+  "created_utc": "2026-10-12T06:07:02Z",
+  "entry_id": 2041,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1909,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "9b1ac34b63907695eab8765910a8e3c4986d03b1833caa1f81f5bcb07128180b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3504,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.194,
+      "wall_s": 147.373
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2055,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: gentle autonomous drifting given to a vast, intricate clockwork city landscape, gears and cams",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1419,
+    "root_entry_id": 1419
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails\n\nRevise: the same whimsical, paper-cut ships, and this time the ships are weathered with subtle patina and aged wood grain\n\nRevise: carry: gentle autonomous drifting given to a vast, intricate clockwork city landscape, gears and cams",
+  "prompt_tokens": 3504,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2041/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2041",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a nostalgic, intricate clockwork cityscape where paper-cut style ships drift autonomously through a world of gears and cams. The scene features a detailed urban environment with wooden buildings and clockwork mechanisms that subtly animate, while ships leave behind delicate wake trails that gradually dissipate. The entire composition moves gently as if viewed through a massive timepiece, evoking the whimsical charm of a mechanical wonderland where every element contributes to an organic, flowing motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 147.373
+}
