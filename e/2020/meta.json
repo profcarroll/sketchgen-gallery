@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csupergraphics from 1975 Revise: depart: the idea of discrete, control\u2026\u201d \u2014 sketchgen entry 2020, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2020/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a hyper-detailed, antique-style diagram of a pitcher plant's trapping mechanism. Rendered with the meticulous precision of a Victorian botanical illustration, the central image is a magnified cross-section revealing millions of microscopic, hair-like structures. These hairs coat the interior, appearing both delicate and adhesive. Although the overall visualization shifts and pulsates with a subtle, organic motion, the viewer's primary interaction is purely observational: they are invited to study the controlled, engineered mechanics of the natural trap, as if examining a scientific curiosity under an early microscope.",
+  "completion_tokens": 3225,
+  "created_utc": "2026-10-12T03:06:16Z",
+  "entry_id": 2020,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1080,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 79)\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 82)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), loads(image)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- loads(image): no image arrived from outside the sketch\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "f0fcde768fe24904bcad12fbae6ab9ba02f5bc6960ecffdc1282671cc611279d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3893,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.604,
+      "wall_s": 104.011
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1071,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 79)\n\ngate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 118,
+        "sha256": "db86c5182dfc8c343b4ff7737f438e87370d9786c759de625ed46abb3eacff9a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 27.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3955,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 12.566,
+      "wall_s": 104.431
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1074,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 79)\n\ngate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 118,
+        "sha256": "4aa3cd423f1c89bdcf458a330dedd2f730cb4073107650fac5ac6b7fc0b6004b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3815,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 9.907,
+      "wall_s": 96.347
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2034,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of discrete, controlled structural state changes taken into a cross-section of a pitcher plant's trapping mechanism, seen at the scale of microscopic hairs, in a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1330,
+    "root_entry_id": 1330
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "supergraphics from 1975\n\nRevise: depart: the idea of discrete, controlled structural state changes taken into a cross-section of a pitcher plant's trapping mechanism, seen at the scale of microscopic hairs, in a Victorian botanical plate.",
+  "prompt_tokens": 11663,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2020/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2020",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a hyper-detailed, antique-style botanical illustration of a pitcher plant's trapping mechanism. Using meticulous Victorian-era aesthetic with paper-like textures and brownish botanical hues, it depicts the intricate microscopic hair structures lining the plant's interior. The visualization subtly pulsates with organic motion to simulate the natural mechanics of the trap, while maintaining an observational focus that invites viewers to study the controlled engineering of this natural curiosity. The rendering uses efficient techniques to display thousands of individual hair-like elements without exceeding performance budgets.",
+  "submitted_by": "profcarroll",
+  "wall_s": 304.789
+}
