@@ -1,0 +1,192 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cnostalgic photo collage Revise: depart: The ephemeral overlapping nat\u2026\u201d \u2014 sketchgen entry 2021, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2021/ Licensed CC BY 4.0.",
+  "brief": "A vertical cross-section of geological strata displays layers of overlapping, translucent, sepia-toned photographs. These photographic sediments are interspersed with slow-growing, shimmering crystals and fine, granular mineral particles. The color palette consists of muted ochre, dusty umber, and pale amber. The canvas is in constant, slow motion as new layers of crystals and sediment accumulate continuously over the existing photographic fragments, simulating the slow, continuous buildup of memory over eons.",
+  "completion_tokens": 2328,
+  "created_utc": "2026-10-12T03:18:47Z",
+  "entry_id": 2021,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1178,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 101.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "3d18e6b1440d1e21e087f706591edc197c784d47c6fd79717cae8e57b46ba262",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 101.7,
+      "num_ctx": 16384,
+      "preload_s": 0.827,
+      "prompt_tokens": 3786,
+      "resources_loaded": [
+        {
+          "bytes": 110505,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 67105,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 20584,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 42.422,
+      "wall_s": 106.794
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1150,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 149,
+        "sha256": "79f3413b895a1bdd49763910c55ff223a002941db621daa58ce7cb6e7829c4b9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 79.1,
+      "num_ctx": 16384,
+      "preload_s": 0.926,
+      "prompt_tokens": 3849,
+      "resources_loaded": [
+        {
+          "bytes": 20584,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 31338,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        },
+        {
+          "bytes": 110505,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 33.947,
+      "wall_s": 105.383
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2035,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The ephemeral overlapping nature of passing memories taken into a cross-section of sedimentary strata, showing slow, continuous crystal and sediment buildup over eons of geological time.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1334,
+    "root_entry_id": 1334
+  },
+  "loads": [
+    {
+      "bytes": 20584,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 31338,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    },
+    {
+      "bytes": 110505,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: depart: The ephemeral overlapping nature of passing memories taken into a cross-section of sedimentary strata, showing slow, continuous crystal and sediment buildup over eons of geological time.",
+  "prompt_tokens": 7635,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2021/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2021",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the slow accumulation of geological strata through time, presenting a vertical cross-section where sepia-toned photographs represent layers of sediment. The composition includes translucent photo fragments arranged in overlapping bands that move slowly across the canvas, mimicking the gradual buildup of memory over eons. Interspersed among these sediments are crystals that grow gradually from random points, each with its own shimmering surface effect. Fine mineral particles drift slowly downward through the scene, adding texture and movement to the otherwise still layers. The muted ochre, dusty umber, and pale amber color palette evokes the warmth of ancient geological formations, while the continuous animation suggests an endless process of accumulation and change.",
+  "submitted_by": "profcarroll",
+  "wall_s": 212.177
+}
