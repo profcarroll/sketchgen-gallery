@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca complex gearing mechanism converting speed to power Revise: this tr\u2026\u201d \u2014 sketchgen entry 2026, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2026/ Licensed CC BY 4.0.",
+  "brief": "A cross-section view inside a vintage 1980s arcade cabinet reveals a pulsating network of bioluminescent roots. Glowing veins of cyan, magenta, and electric lime pulse with fluid energy, flowing through intricate, organic branching structures. The background features dark, textured surfaces reminiscent of retro arcade hardware, complete with subtle scanline effects and chromatic aberration. As the energy moves, the roots brighten and dim in a rhythmic, systematic cycle. Dragging the mouse across the canvas causes the light to ripple and flow around the cursor, disrupting the energy's flow through the network.",
+  "completion_tokens": 768,
+  "created_utc": "2026-10-12T04:09:28Z",
+  "entry_id": 2026,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 768,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 143,
+        "sha256": "05aa49a1f83320d8b0d90f0ac02b47f1c541910291be645b180d7010179dda5f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "num_ctx": 16384,
+      "preload_s": 0.024,
+      "prompt_tokens": 3739,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.85,
+      "wall_s": 79.238
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2040,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the systematic translation of fluid energy taken into a cross-section of bioluminescent root networks, glowing within a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1362,
+    "root_entry_id": 1353
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a complex gearing mechanism converting speed to power\n\nRevise: this try to make the gears interconnect\n\nRevise: try again, the gears are not interlocking yet\n\nRevise: make more changes to the code, these are not real revisions\n\nRevise: the same interlocking metallic gears, and this time the gear teeth should be highly detailed and visibly mesh together.\n\nRevise: depart: the systematic translation of fluid energy taken into a cross-section of bioluminescent root networks, glowing within a 1980s arcade cabinet.",
+  "prompt_tokens": 3739,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2026/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2026",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a cross-sectional view of an arcade cabinet's bioluminescent root network system. The viewer observes glowing cyan, magenta, and electric lime veins pulsing with rhythmic energy throughout an organic branching structure. The dark textured background mimics retro arcade hardware with subtle scanline effects and chromatic aberration for period authenticity. As the energy flows through the network, roots brighten and dim in a systematic cycle, responding to mouse interaction that creates ripples disrupting the natural flow. The visual effect is achieved through particle-based rendering with pulsing color values, cursor interaction detection, and layered compositional elements creating depth and retro atmosphere.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.238
+}
