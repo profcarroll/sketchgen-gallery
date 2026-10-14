@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cA slow grid of pale squares, each fading in and out on its own rhythm\u2026\u201d \u2014 sketchgen entry 2009, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2009/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a detailed, interconnected lattice of massive crystalline structures, suggesting a subterranean fault line. Within this matrix, stress fractures are highlighted, traced by a slow and rhythmic pulsation of phosphorescent light. The colors are pale and luminous, and the entire network appears to breathe, with the light flowing and rippling along the defined fracture pathways in a steady, continuous cycle. The patterns shift and ebb naturally without any user input.",
+  "completion_tokens": 995,
+  "created_utc": "2026-10-12T01:35:12Z",
+  "entry_id": 2009,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 995,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 54,
+        "sha256": "f597c272b272dd7a3c091ba9580eb6f707b6ba9a4f5844b469bf6d700c1c7422",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 31.7,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3044,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.992,
+      "wall_s": 95.644
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2022,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: A slow, rhythmic pulsation of phosphorescent light given to massive subterranean geode crystals, traced through the widening network of stress fractures, made of a fault line.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1277,
+    "root_entry_id": 1250
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "A slow grid of pale squares, each fading in and out on its own rhythm.\n\nRevise: the same orderly two-dimensional matrix of identical pale squares, and this time every square breathes along a perfectly synchronized sinusoidal cycle.\n\nRevise: carry: A slow, rhythmic pulsation of phosphorescent light given to massive subterranean geode crystals, traced through the widening network of stress fractures, made of a fault line.",
+  "prompt_tokens": 3044,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2009/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2009",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a subterranean fault line network filled with massive crystalline structures that pulse with phosphorescent light. The composition features thousands of interconnected stress fractures that glow and breathe in rhythmic cycles, creating an organic flow of light through the geological matrix. The crystals appear to grow and contract like living organisms, their surfaces reflecting and amplifying the pulsating energy that courses through the entire system. The overall effect suggests a dynamic, living geological structure where light flows naturally along fault lines, creating a mesmerizing interplay between solid mineral formations and ethereal illumination.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.644
+}
