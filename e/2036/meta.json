@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cthe game of life Revise: depart: the way localized, diffusing energy\u2026\u201d \u2014 sketchgen entry 2036, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2036/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, dynamic field of mineral slurry and biological matter, exhibiting constant, flowing movement. Mottled zones of varying density and vivid, diffuse colors shift and expand across the surface, constantly mimicking the slow, creeping life of a slime mould. The slurry appears to diffuse energy from unknown sources, creating rippling, shifting patterns of light and shadow. By dragging the cursor across the canvas, the viewer can perturb this flow, initiating new plumes of energy or momentarily concentrating the slurry into a visible, energetic burst.",
+  "completion_tokens": 3712,
+  "created_utc": "2026-10-12T05:32:32Z",
+  "entry_id": 2036,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1253,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 139,
+        "sha256": "22909c47e9ad2e879d8997e497bc916344f33d04a0725b9dab85491f99956960",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.977,
+      "prompt_tokens": 3706,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 23.067,
+      "wall_s": 110.06
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1237,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 140,
+        "sha256": "e42fac88f80b3e1bfa9502dd0fec6357794237de6fb589bd7cb42aafb8576a7d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.334,
+      "prompt_tokens": 3878,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.528,
+      "wall_s": 111.918
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1222,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "7f4db215923a13f66905e0388f7982a3992ac32481e862d5d95c12c2b1c3918c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.33,
+      "prompt_tokens": 3818,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.501,
+      "wall_s": 108.374
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2050,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the way localized, diffusing energy creates shifting zones of varying density taken into the forms of flowing mineral slurry, observed through the search of a slime mould.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1402,
+    "root_entry_id": 1402
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the game of life\n\nRevise: depart: the way localized, diffusing energy creates shifting zones of varying density taken into the forms of flowing mineral slurry, observed through the search of a slime mould.",
+  "prompt_tokens": 11402,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2036/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2036",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates a dynamic, flowing field of mineral slurry and biological matter that simulates the slow, creeping movement of slime mould. Using a particle system with a noise-based flow field, it generates organic, ever-shifting patterns across the canvas. The particles are influenced by both a continuous background flow and user interaction through dragging, creating ripples and bursts of energy as the viewer perturbs the system. The visual effect combines subtle color variations, smooth motion, and a glowing ambient light to evoke a sense of deep, mysterious biological processes at work.",
+  "submitted_by": "profcarroll",
+  "wall_s": 330.352
+}
