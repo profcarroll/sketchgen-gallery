@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 2201, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2201/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, diagrammatic cross-section of geological strata, representing deep mineral deposits within a planetary body. The image is rendered with the clean, technical precision of a scientific drawing, featuring multiple colored layers defined by sharp, black lines, evoking the look of a pen plotter drawing from the mid-20th century. The composition is inherently academic and structured, allowing the viewer to observe the stratified arrangement of materials at an immense, planetary scale. The sketch is static and requires no interaction or input to observe its intricate geological detail.",
+  "completion_tokens": 1124,
+  "created_utc": "2026-10-13T02:28:20Z",
+  "entry_id": 2201,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1124,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 252,
+        "sha256": "4001ab0ff8bc682fe65b145bba66488d0c2dfb5bc52d745916f6bc131521b6e9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 4470,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.528,
+      "wall_s": 140.735
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2217,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the carefully composed arrangement of distinct objects taken into a geological cross-section diagram showing strata of mineral deposits, rendered as a pen plotter drawing, seen at a planetary scale, in the 1960s.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2142,
+    "root_entry_id": 81
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.\n\nRevise: try to recreate the original prompt more faithfully to the details in the description\n\nRevise: the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.\n\nRevise: depart the interplay of light and shadow revealing internal structure taken into a colossal abandoned ventilation system, mechanism: a pendulum\n\nRevise: depart: A cross-section of complex metal piping taken into an arrangement of iridescent root systems, rendered as a labeled, colored diagram on a Victorian botanical plate.\n\nRevise: depart: the carefully composed arrangement of distinct objects taken into a geological cross-section diagram showing strata of mineral deposits, rendered as a pen plotter drawing, seen at a planetary scale, in the 1960s.",
+  "prompt_tokens": 4470,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2201/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2201",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a technical geological cross-section diagram depicting stratified mineral deposits within a planetary body. Rendering evocative of mid-20th century scientific illustration, it displays multiple colored layers representing different geological compositions, each with distinct textural patterns\u2014stripes, dots, and waves\u2014to differentiate materials. The clean, precise lines and sharp boundaries between layers recall the aesthetic of pen plotter drawings from that era. At a planetary scale, the composition invites viewers to observe the structured arrangement of materials beneath the surface, rendered in an academic, diagrammatic style emphasizing clarity and scientific accuracy over visual flourish.",
+  "submitted_by": "profcarroll",
+  "wall_s": 140.735
+}
