@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201candroids dreaming of electric sheep Revise: the same luminous structu\u2026\u201d \u2014 sketchgen entry 2212, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2212/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts the overwhelming, deep view of a subterranean magma chamber on an alien world, rendered at a planetary scale. Vast, tectonic rifts dominate the geometry, serving as conduits for immense internal energy. The primary focus is a fluid, luminous glow\u2014a spectral mix of deep crimson, orange, and gold\u2014that travels through the rock. This light does not flow randomly; it systematically follows the deep structural pathways of the magma build-up, appearing as patterned, rhythmic river-like streams of liquid energy. The display is purely dynamic, showcasing continuous geological activity and pressure release without any required input from the viewer.",
+  "completion_tokens": 2936,
+  "created_utc": "2026-10-13T04:00:38Z",
+  "entry_id": 2212,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1589,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: motion(idle), uses(webgl)\n\nResources the sketch asked for and did not get:\n- https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js \u2014 HTTP 502\n  Reaching outside the sketch is allowed. What you reach for has to arrive: use a host that serves CORS headers, or carry the asset in the sketch itself as a data: URI. Until it arrives the canvas may be blank and every check and assertion below will read zero, whatever the rest of the code does.\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- uses(webgl): renderer context is unreadable\n\nConsole (1 error line, first 1 shown):\n- [error] Failed to load resource: the server responded with a status of 502 ()\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 0,
+        "played": 0,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 211,
+        "sha256": "a0a85453f31ca18d17a6a7ed7796e6c8273f6e1290b8e6de001a27f38be952b5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 10.008,
+      "prompt_tokens": 4299,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.332,
+      "wall_s": 150.986
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1347,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 197,
+        "sha256": "56372c9b8651cfaa765f491e037d9cea6ae954d3592405d43dbff549747e3484",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 58.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4319,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 40.587,
+      "wall_s": 133.444
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2228,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Fluid, patterned glow given to the subterranean magma chambers of an alien world, following the pressure build-up of deep tectonic rifts, seen at the planetary scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2159,
+    "root_entry_id": 207
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "androids dreaming of electric sheep\n\nRevise: the same luminous structured forms, and this time they cast ephemeral neon shadows on the surrounding dark environment\n\nRevise: the same luminous structured forms, and this time the neon shadows reveal underlying crystalline networks within the space\n\nRevise: the same luminous structured forms, and this time they pulse with a cyclical spectrum of vibrant emerald and cyan hues\n\nRevise: the same luminous, structured forms, and this time they cascade and drift downward like sheets of liquid emerald and cyan light\n\nRevise: the same sheets of liquid light, and this time they swell and contract gently, forming visible, pulsating ripples before drifting downward.\n\nRevise: depart: the suggestion of hidden electrical paths taken into fossilized ammonite shells, revealing crystalline data streams glowing through the spiral chambers, seen at geologic scale.\n\nRevise: depart: The cyclical, glowing patterns of electrical data streams taken into a massive, subterranean mycelial network, traversing woody roots, made of decomposing lignin, seen at microscopic scale, driven by chemical reactions.\n\nRevise: carry: Fluid, patterned glow given to the subterranean magma chambers of an alien world, following the pressure build-up of deep tectonic rifts, seen at the planetary scale.",
+  "prompt_tokens": 8618,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2212/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2212",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a dynamic, immersive visualization of a subterranean magma chamber on an alien world. Using the WEBGL renderer, it creates a sense of vast geological scale through prominent tectonic rifts that dominate the composition. Luminous streams of energy flow through these rifts, rendered as glowing, flowing lines that pulse and move organically according to noise-based physics. The warm color palette of deep crimson, orange, and gold conveys the intense internal heat and pressure of the magma chamber, while the continuous animation suggests ongoing geological activity and energy release. The viewer observes a mesmerizing display of planetary-scale forces at work, with no external input required \u2013 the scene evolves autonomously through time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 284.43
+}
