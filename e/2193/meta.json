@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 2193, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2193/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, vast subterranean world, composed entirely of iridescent blues and blues. The scene depicts a massive, bioluminescent cave network carved from calcite. Giant crystalline structures jut out from the polished slate surfaces, illuminated by a profound, internal glow. Intertwining through the immense cavern are graceful, deep blue gradients and softly glowing patches, mimicking drifting nebula dust. The overall atmosphere conveys extreme depth and silent, organic scale, with the colors changing and flowing gently across the polished stone, giving the illusion of endless, mysterious water and crystal formations.",
+  "completion_tokens": 2516,
+  "created_utc": "2026-10-13T01:29:35Z",
+  "entry_id": 2193,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1247,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 185.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (185.7 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 3600,
+        "played": 36,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "645000879dc9a9201a2b297e842e649de050c3a597120e657526eb0c8747d87e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 185.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3553,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 91.232,
+      "wall_s": 120.153
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1269,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 130,
+        "sha256": "5ee84a86b5cbb1e5efdb0e417b4defdb5e3821925ae799f5ecc236e990fc1164",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 92.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3964,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 51.039,
+      "wall_s": 116.168
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2209,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Deep blue gradients and crystal formations given to a subterranean bioluminescent cave network, made of calcite, seen at maximum scale, in the deep ocean.",
+    "critique_by": "gemma4:e4b",
+    "generation": 24,
+    "inherits_source": false,
+    "parent_entry_id": 2006,
+    "root_entry_id": 69
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again\n\nRevise: the same pastoral landscape, and this time exaggerate the depth of field to make the foreground grass seem intensely sharp\n\nRevise: this is getting close but there is one giant cloud that ruins it\n\nRevise: the same pastoral landscape, and this time sharpen the detail on the distant mountain range\n\nRevise: the same vast sunlit pastoral landscape and this time introduce subtle patches of varied color and texture to the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape featuring rolling green fields that vary in patches of color and texture, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the visible detail and contrast in the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the visible play of sunlight and shadow across the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the atmospheric haze to make the distant mountains appear even more soft and faded.\n\nRevise: lacks visual cohesion\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the contrast and saturation of the various patches of color within the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time intensify the saturation and contrast of the varied patches of color within the rolling green fields.\n\nRevise: the same vast, sunlit pastoral scene, and this time deepen the contrast between the intense foreground clarity and the atmospheric haze.\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time deepen the blue saturation of the sky and slightly increase the texture variance in the rolling green fields\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time enhance the way dramatic, directional sunlight casts deep shadows across the foreground fields.\n\nRevise: the same sweeping, sun-drenched landscape featuring rolling green fields, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: depart the dramatic gradient of contrasting texture giving way to deep blue atmospheric haze, shown as nebula dust drifting across the crystalline surface of polished slate\n\nRevise: carry: Deep blue gradients and crystal formations given to a subterranean bioluminescent cave network, made of calcite, seen at maximum scale, in the deep ocean.",
+  "prompt_tokens": 7517,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2193/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2193",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive subterranean environment using WebGL rendering to depict a vast bioluminescent cave system. The scene features deep blue gradients that evoke the feeling of endless underwater depths, with crystalline formations that gently pulse and shift in hue to simulate internal light sources. Soft, drifting particles represent nebula dust that flows through the cavern space, creating a sense of movement and depth. The rendering uses efficient batching techniques to maintain performance while achieving the atmospheric quality described in the brief. The viewer is invited to experience the mysterious scale and organic grandeur of this imagined underground world.",
+  "submitted_by": "profcarroll",
+  "wall_s": 236.321
+}
