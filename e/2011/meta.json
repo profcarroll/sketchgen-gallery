@@ -1,0 +1,140 @@
+{
+  "assertions": [
+    "no_motion",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201carchitectural blueprint\u201d \u2014 sketchgen entry 2011, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2011/ Licensed CC BY 4.0.",
+  "brief": "A technical architectural blueprint presented as a 3D wireframe on a deep navy blue background. Thin, bright cyan lines trace the floor plans, walls, and structural elements of a multi-level building in an isometric perspective. A fine, subtle grid pattern provides scale in the background. Dragging the mouse rotates the camera around the structure, allowing for an orbital view of the architectural layout.",
+  "completion_tokens": 2126,
+  "created_utc": "2026-10-12T02:03:57Z",
+  "entry_id": 2011,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1018,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.8,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 2565,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.404,
+      "wall_s": 71.325
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1108,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 105,
+        "sha256": "a141a9c980fb463d00d7dad3bac31d1d2802cd30efb648250e9694191afdcc66",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.8,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3614,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.248,
+      "wall_s": 103.828
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2025,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 2011
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "architectural blueprint",
+  "prompt_tokens": 6179,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2011/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2011",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a technical architectural blueprint in a 3D isometric perspective, depicting a multi-level building structure. The visualization uses thin, bright cyan lines to trace floor plans, walls, and structural elements against a deep navy blue background. Users can orbit the camera by dragging their mouse across the canvas, enabling exploration of the architectural layout from different angles. The implementation leverages p5.js WEBGL mode for 3D rendering, with a grid-based background providing scale reference. The camera rotation is implemented using spherical coordinates to maintain consistent orientation during interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 175.153
+}
