@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdrone POV fly through an abandoned brutalist campus Revise: flip: A t\u2026\u201d \u2014 sketchgen entry 2028, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2028/ Licensed CC BY 4.0.",
+  "brief": "The view is a deep, cinematic cross-section through the earth, depicting a miniature mountain range of warm, layered rock strata. These formations are saturated in fluid, earthy colors that contrast sharply with the cool, pulsing bioluminescence emanating from the cavern walls and underlying rock pockets. The entire scene drifts slowly and continuously, giving the impression of moving through deep, interconnected subterranean realms. There is no necessary user input, as the motion is organic, a sustained, meditative passage through geological time.",
+  "completion_tokens": 1027,
+  "created_utc": "2026-10-12T04:25:37Z",
+  "entry_id": 2028,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1027,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "9c9d3f2f3599323d499537cb70ce6f45d85fae74d3d4438f0407e333ab90c951",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3381,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 18.293,
+      "wall_s": 86.418
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2042,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: A tranquil cross-section view of warm, fluid rock strata showing delicate folding patterns, viewed as a miniature mountain range, designed to drift slowly through interconnected, bioluminescent caverns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1371,
+    "root_entry_id": 1371
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "drone POV fly through an abandoned brutalist campus\n\nRevise: flip: A tranquil cross-section view of warm, fluid rock strata showing delicate folding patterns, viewed as a miniature mountain range, designed to drift slowly through interconnected, bioluminescent caverns.",
+  "prompt_tokens": 3381,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2028/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2028",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a tranquil, cinematic cross-section through a subterranean realm, capturing the essence of geological time within a miniature mountain range. The composition features warm, layered rock strata rendered in earthy tones that contrast beautifully with cool, pulsing bioluminescent highlights. Through carefully orchestrated camera movement and subtle lighting effects, viewers experience a meditative journey through interconnected caverns where the boundaries between solid rock and glowing mineral pockets blur. The organic motion creates an impression of drifting through deep, ancient geological formations, evoking both the stillness and the dynamic forces that shape our planet's hidden depths.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.418
+}
