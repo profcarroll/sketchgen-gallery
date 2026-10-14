@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 2203, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2203/ Licensed CC BY 4.0.",
+  "brief": "The canvas unveils a deep-sea landscape composed entirely of crisp, folded origami structures. These intricate, angular geometries assemble into vast, crystalline formations resembling hydrothermal vents. The color palette is dominated by cool blues, slate grays, and iridescent silvers, giving the appearance of immense pressure and depth. Subtle, pulsing bands of light traverse the folds, simulating hidden, biological circuits within the rigid paper matrix. The entire microscopic ecosystem floats and drifts slowly, revealing the breathtaking complexity of the folded, structured network.",
+  "completion_tokens": 3135,
+  "created_utc": "2026-10-13T02:49:20Z",
+  "entry_id": 2203,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1043,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 77)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 155 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 167,
+        "sha256": "91fc2fe77fbff80643ed7d8bc5287348405b0c78da51fdea15367b2e00571ce4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 155.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4181,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 73.555,
+      "wall_s": 125.095
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1018,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 75)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: the run passed its 90 s wall ceiling over the first 30 frames of the 120-frame idle window (3535.9 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 109,
+        "sha256": "8799bbad5c7d4cf2fd2ce6e564688790ce03ebcabbc7a29fe12d3b20c8835fb8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3535.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3748,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 136.437,
+      "wall_s": 96.397
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1074,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 101,
+        "sha256": "1975b48e32f5eee4f7af5c8bebe8be10abbea4c0a867246fc9f2d3d596df379f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 22.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3712,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 11.813,
+      "wall_s": 97.403
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2219,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the notion of pulsating, living circuits running through decaying structures taken into a complex network of folded origami mimicking hydrothermal vents, made of crisp paper, seen at microscopic scale, in a deep-sea setting.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2149,
+    "root_entry_id": 374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.\n\nRevise: the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.\n\nRevise: depart: the idea of continuous, highly structured flow through a deep medium taken into a vast network of tectonic fault lines, mechanism: a slime mould searching.\n\nRevise: depart: the interconnected pathways of bioluminescent life are taken into the corroded framework of a colossal, abandoned factory, made of rust on sheet steel.\n\nRevise: depart: the notion of pulsating, living circuits running through decaying structures taken into a complex network of folded origami mimicking hydrothermal vents, made of crisp paper, seen at microscopic scale, in a deep-sea setting.",
+  "prompt_tokens": 11641,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2203/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2203",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders an immersive deep-sea landscape composed of folded origami structures that evoke the complexity of hydrothermal vents. Using WebGL rendering, it creates a field of angular, crystalline formations that drift slowly through an abyssal environment. The cool blue-gray palette with iridescent silver accents captures the pressure and depth of the ocean floor. Subtle pulsing light effects simulate biological circuits within the rigid paper matrix, creating an ethereal glow that animates the folded geometries. The implementation stays within strict performance budgets by pre-computing geometry and batching all drawing operations to maintain smooth animation even at high particle counts. Viewers witness a mesmerizing dance of light and shadow across an alien landscape of folded mathematics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 318.895
+}
