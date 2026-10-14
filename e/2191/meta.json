@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons Revise: flip: a swarm of derelict, weighted dirigibl\u2026\u201d \u2014 sketchgen entry 2191, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2191/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a bright, expansive sky populated by a variety of hot air balloons floating gently against clear blue and soft white clouds. These buoyant, balloon-shaped structures drift and shift in slow, perpetual motion, colored in vibrant and varied hues. The overall scene conveys a sense of peaceful, elevated suspension. While the balloons drift constantly on their own, the viewer can interact by clicking anywhere on the canvas; this input causes the balloons in the immediate vicinity to rapidly shift and bloom into a cluster of brighter colors before settling back into their gentle, slow drift.",
+  "completion_tokens": 1206,
+  "created_utc": "2026-10-13T01:13:16Z",
+  "entry_id": 2191,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1206,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "b59cf39618f4f7070ff2b3631759009bc4010337ba65c862fdcdd9af151dd22f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3536,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.931,
+      "wall_s": 116.431
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2207,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the overwhelming gravity of decaying skeletal structures taken into a vast, overgrown underwater garden of brittle coral and falling kelp, made of cut paper.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2004,
+    "root_entry_id": 1260
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: flip: a swarm of derelict, weighted dirigible frames tumbling rapidly downward through a smog-stained afternoon sky, driven by chaotic wind currents, made of salvaged sheet metal, seen at street level, driven by sudden gusts.\n\nRevise: depart: the overwhelming gravity of decaying skeletal structures taken into a vast, overgrown underwater garden of brittle coral and falling kelp, made of cut paper.",
+  "prompt_tokens": 3536,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2191/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2191",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene sky scene populated by colorful hot air balloons drifting gently against a clear blue background and soft white clouds. The balloons float at different speeds and sway subtly as they move, creating a peaceful, dreamlike atmosphere. When viewers click anywhere on the canvas, balloons near the click location rapidly bloom into brighter, more vibrant colors before returning to their normal gentle drift. The effect is subtle yet visually engaging, emphasizing the interaction between the viewer and the floating world above. The implementation uses efficient drawing techniques that respect performance constraints while achieving the desired visual effect of calm suspension in an expansive sky.",
+  "submitted_by": "profcarroll",
+  "wall_s": 116.431
+}
