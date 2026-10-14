@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cClick anywhere to drop a pebble that chimes a soft tone and sends a r\u2026\u201d \u2014 sketchgen entry 2189, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2189/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the intricate cross-section of a fictional exotic orchid, presented as a highly detailed, labeled Victorian botanical illustration. The underlying structure features delicate, sepia-toned petal forms and labeled cross-sections. Woven throughout this biological matrix are vibrant, crystalline mineral veins. These veins perpetually grow and spread, exhibiting complex, branching fractal geometry that appears to pulse with soft, internal light. The forms are presented against a dark, aged background, emphasizing the contrast between the fragile organic plant life and the geometrically perfect, constantly evolving mineral deposits.",
+  "completion_tokens": 2765,
+  "created_utc": "2026-10-13T00:54:23Z",
+  "entry_id": 2189,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1511,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 142 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the intricate, fractal pattern of expansion, taken into the cross-section of an exotic, fictional orchid, rendered as a detailed, labeled Victorian botanical plate.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 191,
+        "sha256": "ffea85e06f6b000343ac57b60e3f38b41533d5e5a4081aa3c058703b309f3e5e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 56.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4045,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.84,
+      "wall_s": 152.891
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1254,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 191,
+        "sha256": "ffea85e06f6b000343ac57b60e3f38b41533d5e5a4081aa3c058703b309f3e5e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 42.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4233,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 24.208,
+      "wall_s": 123.497
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2205,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the intricate, fractal pattern of expansion, taken into the cross-section of an exotic, fictional orchid, rendered as a detailed, labeled Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 2002,
+    "root_entry_id": 1252
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Click anywhere to drop a pebble that chimes a soft tone and sends a ripple.\n\nRevise: depart: the spreading energy of an impact, translated into slowly forming, fractal patterns of crystalline mineral veins crisscrossing solid rock, seen at the scale of a mountain range.\n\nRevise: depart: the intricate, fractal pattern of expansion, taken into the cross-section of an exotic, fictional orchid, rendered as a detailed, labeled Victorian botanical plate.",
+  "prompt_tokens": 8278,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2189/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2189",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a detailed Victorian botanical illustration of an exotic orchid cross-section, with a dark, aged background that emphasizes the contrast between delicate organic forms and geometric mineral veins. The composition features sepia-toned petal structures that appear to be cut through and revealed in intricate detail, while vibrant crystalline veins grow and branch throughout the cross-section like living mineral networks. The veins perpetually expand with fractal complexity, pulsing with soft internal light as they spread through the botanical matrix. The piece uses procedural generation and real-time animation to create an evolving, organic yet geometric representation that suggests both the fragility of plant life and the constant, dynamic growth of mineral deposits within the cross-section.",
+  "submitted_by": "profcarroll",
+  "wall_s": 276.388
+}
