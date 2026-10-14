@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 2216, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2216/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an evolving lattice of sharp, angular lines and viscous, flowing material. Structures emerge from unseen centers, pulsating and expanding like biological growth or celestial machinery. The visual elements\u2014lines, sediment, and gear-like components\u2014constantly reshape themselves, transitioning between dense, sharply defined lattices and soft, spreading, organic textures. This continuous, internal process of material buildup and mechanical action unfolds without external interference, maintaining a state of rhythmic, dynamic flow.",
+  "completion_tokens": 3917,
+  "created_utc": "2026-10-13T04:39:11Z",
+  "entry_id": 2216,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 987,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 88)\n\ngate exit 1: checks failed: console_clean; assertions failed: motion(idle), uses(webgl)\n\nResources the sketch asked for and did not get:\n- https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js \u2014 HTTP 502\n  Reaching outside the sketch is allowed. What you reach for has to arrive: use a host that serves CORS headers, or carry the asset in the sketch itself as a data: URI. Until it arrives the canvas may be blank and every check and assertion below will read zero, whatever the rest of the code does.\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- uses(webgl): renderer context is unreadable\n\nConsole (1 error line, first 1 shown):\n- [error] Failed to load resource: the server responded with a status of 502 ()\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 0,
+        "played": 0,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 99,
+        "sha256": "97398f83a762f2abf44d4e3ffc7f30827bbb8db34dd6411b5518687d61c04480",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 10.009,
+      "prompt_tokens": 3480,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.783,
+      "wall_s": 87.131
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1331,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 86)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 207.6 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 111,
+        "sha256": "0a27c3e7c2a702340dcd4b9755014b032b462847e9ff4c35d4a97171a13feee7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 207.6,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3826,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 17.306,
+      "wall_s": 118.547
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1599,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "e97db0188397fc44ccd51911fe5558bdd3563b62966ba2ccc369a99b1bb6cff3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.8,
+      "num_ctx": 16384,
+      "preload_s": 0.052,
+      "prompt_tokens": 4015,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 20.325,
+      "wall_s": 140.539
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2232,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the self-contained, continuous process of gradual material buildup taken into a massive, complex automaton that mimics the mechanics of celestial gears, driven solely by a pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 2164,
+    "root_entry_id": 525
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: try again without circles\n\nRevise: the same dynamic, angular geometric lines that radiate outward from a central point, and this time the overall pattern should adopt continuous, interlocking spiral formations.\n\nRevise: the same angular, dynamic geometric lines radiating outward from a central core, and this time the overall pattern should periodically contract inward before resuming its continuous spiral expansion.\n\nRevise: the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.\n\nRevise: the same constantly evolving, dense lattice of sharp, angular geometric lines flowing across the canvas, and this time the expansion should occur only in visible, slow, harmonic wave patterns.\n\nRevise: the same constantly evolving, dense lattice formed by sharp, angular geometric lines, and this time the expansion should occur through rhythmic, discrete pulses radiating outward from multiple unseen centers\n\nRevise: depart: the systematic, rhythmic expansion of nodal points taken into the form of dendritic biological branching, structured as an architectural diagram, made of pigmented plaster, seen at macro scale, in a Bauhaus exhibit.\n\nRevise: flip: A colossal, viscous geyser of warm, earthy sediment slowly bubbling and spreading across the surface, forming chaotic, soft-focus patterns, made of poured concrete.\n\nRevise: depart: the self-contained, continuous process of gradual material buildup taken into a massive, complex automaton that mimics the mechanics of celestial gears, driven solely by a pendulum.",
+  "prompt_tokens": 11321,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2216/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2216",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the tension between rigid mechanical structures and organic fluidity through a dynamic lattice system. Particles flow in and out of alignment with each other, creating both sharp angular connections and soft, spreading textures. The visual system evolves from dense clusters to more open formations, echoing biological growth patterns or celestial mechanics. The interplay between individual particle movement and collective behavior generates an ever-shifting architecture where mechanical precision gives way to flowing materiality. The central forces pulse outward, creating rhythmic expansion and contraction that drives the entire system's evolution without external influence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 346.217
+}
