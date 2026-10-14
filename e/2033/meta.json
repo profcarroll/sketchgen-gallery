@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: carry:\u2026\u201d \u2014 sketchgen entry 2033, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2033/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays layered, irregular geometric panels resembling corrugated cardboard, acting as a physical substrate for intense, saturated energy. Within these panels, plumes of neon-colored energy continuously pulsate and flow, simulating highly charged digital interference meeting deep-sea chemical reactions. The shapes themselves exhibit a subtle, rhythmic breathing motion. The viewer can influence this energy field by dragging the cursor across the surface, causing the glowing plumes to glitch, flare, and intensify along the path of the input.",
+  "completion_tokens": 1312,
+  "created_utc": "2026-10-12T05:03:21Z",
+  "entry_id": 2033,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1312,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "c685632e28e49b97b580ba17728c20ccf6272e28adb76806fe7728366125a4e6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 46.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3644,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.584,
+      "wall_s": 112.692
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2047,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1397,
+    "root_entry_id": 1397
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard",
+  "prompt_tokens": 3644,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2033/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2033",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a deep-sea hydrothermal vent environment using layered corrugated panels that breathe rhythmically in three-dimensional space. The panels, rendered as cardboard-like geometric forms with subtle texture, serve as a physical substrate for intense, saturated energy plumes that continuously pulse and flow. Neon-colored energy fields emerge from within the panels, simulating chemical reactions meeting digital interference. Viewers can interact by dragging their cursor across the screen, causing the glowing plumes to glitch, flare, and intensify along the path of input, creating a dynamic visual representation of how physical materials respond to energetic forces. The scene uses WEBGL rendering to create depth and dimensionality while maintaining performance within the frame budget constraints.",
+  "submitted_by": "profcarroll",
+  "wall_s": 112.692
+}
