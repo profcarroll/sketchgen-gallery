@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccurious photos framed in floating octagons against a background of li\u2026\u201d \u2014 sketchgen entry 2024, prompted by profcarroll, written by gemma4:26b under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2024/ Licensed CC BY 4.0.",
+  "brief": "A vast industrial expanse featuring floors made of rusted sheet steel. Sprawling, interconnected skeletal frameworks and networks of abandoned piping stretch across the landscape, coated in a thick, dark oxidized patina. Liquid drips slowly from the pipes, creating a rhythmic sense of decay. The scene is rendered in three dimensions, providing depth and scale to the desolate, metallic environment.",
+  "completion_tokens": 1628,
+  "created_utc": "2026-10-12T03:53:30Z",
+  "entry_id": 2024,
+  "executor": "gemma4:26b",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1628,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 149,
+        "sha256": "04891decf90db5ee215eb3ddc0d1de36229f6e7ba9897c95a36cdc982a595eca",
+        "shown": true
+      },
+      "model": "gemma4:26b",
+      "ms_per_frame": 43.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4142,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.989,
+      "wall_s": 156.605
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2038,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the captured instant of a fleeting moment, materialized as sprawling, interconnected skeletal frameworks and abandoned piping, slowly dripping with oxidized patina across a vast, industrial floor, made of rust on sheet steel.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1346,
+    "root_entry_id": 1337
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "curious photos framed in floating octagons against a background of liminal space\n\nRevise: the same floating octagonal frames, and this time dispersing them further into the vast, empty void.\n\nRevise: the same floating octagonal frames, and this time greatly separated across the immense void.\n\nRevise: depart: the captured instant of a fleeting moment, materialized as sprawling, interconnected skeletal frameworks and abandoned piping, slowly dripping with oxidized patina across a vast, industrial floor, made of rust on sheet steel.",
+  "prompt_tokens": 4142,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2024/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2024",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I have created a desolate, 3D industrial landscape that captures a sense of heavy, rusted decay. The scene is constructed using a sprawling floor of textured sheet steel and a network of skeletal pipes that drift through a dark, atmospheric void. To evoke the passage of time and the feeling of abandonment, I implemented a system of rhythmic, oily droplets that fall from the overhead structures, catching the dim, directional light. The composition uses low-detail geometric primitives and batched rendering to maintain a high sense of scale and depth without exceeding the performance budget.",
+  "submitted_by": "profcarroll",
+  "wall_s": 156.605
+}
