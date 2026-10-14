@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca lighthouse beam sweeping over drifting fog Revise: the same nocturn\u2026\u201d \u2014 sketchgen entry 2195, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2195/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, glowing network of fine lines, resembling a meticulously plotted mechanical drawing. These glowing structures, which emit a faint phosphorescent green and blue, fractalize across the entire plane. The pattern emanates from countless points, suggesting the branching growth of deep-sea bacteria. The movement is slow and relentless; new filaments constantly bloom and spread across the composition, causing the existing lines to appear overgrown and dynamic, charting the silent, microscopic pressure of life at immense depth.",
+  "completion_tokens": 1776,
+  "created_utc": "2026-10-13T01:45:41Z",
+  "entry_id": 2195,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 876,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 44)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] x1 is not defined\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "baf5ce75e8c3c5ed7de6c75ea19dabf56e9aaed811cae957482f510f8230be83",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3609,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.601,
+      "wall_s": 99.137
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 900,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 102,
+        "sha256": "f4f3e97ed6eb4d6389c8ef078c5c35ca5a6ad9d914a07dd1e9bace3ad2a40fd1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 78.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3606,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 34.333,
+      "wall_s": 86.237
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2211,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of slow, relentless subterranean pressure, translated into the intricate fractal growth pattern of phosphorescent deep-sea bacteria, seen at a microscopic scale, in a 1960s pen plotter drawing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2008,
+    "root_entry_id": 1249
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lighthouse beam sweeping over drifting fog\n\nRevise: the same nocturnal seascape, and this time the dark obsidian ocean water has more defined, larger swells catching reflections.\n\nRevise: depart: the boundary between luminosity and obscuration taken into a subterranean fault line, shown through a rapidly spreading fissure, made of calcified resin, seen at a deep geological scale, driven by tectonic pressure.\n\nRevise: depart: the concept of slow, relentless subterranean pressure, translated into the intricate fractal growth pattern of phosphorescent deep-sea bacteria, seen at a microscopic scale, in a 1960s pen plotter drawing.",
+  "prompt_tokens": 7215,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2195/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2195",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a dynamic, glowing network of fine lines that evoke the intricate branching patterns of deep-sea microorganisms. Using a particle system with thousands of points that slowly evolve and connect, it creates an ever-changing fractal structure across the canvas. The phosphorescent green and blue hues emerge from a carefully tuned color palette, while subtle movements simulate the slow, relentless growth of microscopic life. The composition appears overgrown and alive, constantly generating new filaments that spread and interconnect, forming a mesmerizing visualization of unseen biological pressure at immense depth.",
+  "submitted_by": "profcarroll",
+  "wall_s": 185.374
+}
