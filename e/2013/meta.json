@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    "responds(click)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmandelbrot fractal\u201d \u2014 sketchgen entry 2013, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2013/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a Mandelbrot fractal composed of intricate, swirling geometric patterns and fine, dark filaments. Deep colors and bright, glowing gradients highlight the complex mathematical boundaries against a dark background. A viewer can drag the mouse to pan through the infinite landscape, shifting the view across the fractal's surface. Clicking the mouse zooms into the patterns, revealing increasingly microscopic and detailed structures within the endless complexity.",
+  "completion_tokens": 733,
+  "created_utc": "2026-10-12T02:13:30Z",
+  "entry_id": 2013,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 733,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": null,
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 2567,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 18.759,
+      "wall_s": 55.09
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 2027,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": null,
+    "critique_by": null,
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": null,
+    "root_entry_id": 2013
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "mandelbrot fractal",
+  "prompt_tokens": 2567,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2013/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2013",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders the Mandelbrot fractal, a mathematical set that produces infinitely complex and beautiful patterns. The visualization uses color to represent iteration counts \u2014 areas that take more steps to escape are rendered with brighter hues, creating swirling filaments and intricate boundaries. Users can navigate the fractal by dragging to pan around different regions or clicking to zoom into increasingly detailed structures. The implementation efficiently calculates each pixel's Mandelbrot value using iterative complex number arithmetic, mapping the results to a color space that emphasizes the fine structural details of this timeless mathematical object.",
+  "submitted_by": "profcarroll",
+  "wall_s": 55.09
+}
