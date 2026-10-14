@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cDepict a scene from the motion picture \"2001: A Space Odyssey\" Revise\u2026\u201d \u2014 sketchgen entry 2019, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2019/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a richly colored, woven textile that resembles an embroidered tapestry. The pattern incorporates the systematic, geometric circuitry originally belonging to the HAL 9000 console. The fabric uses deep, complex colors and distinct, repeating medieval motifs. Embedded within the threads are glowing lines that define the technological structure. Across this delicate surface, a faint, luminous glint is designed to slowly drift, following a diagonal path that emphasizes the interplay between the hard lines of technology and the soft, fibrous texture of ancient craftsmanship.",
+  "completion_tokens": 1089,
+  "created_utc": "2026-10-12T02:57:10Z",
+  "entry_id": 2019,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1089,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "b392f1c11db5ecd5a9cc7ebcec022d7bc5a4a99f6cef18b722b86ac6dda9f613",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3770,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.1,
+      "wall_s": 100.005
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2033,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the systematic glowing circuitry of the console taken into an embroidered wall hanging, mimicking the geometric patterns of a medieval tapestry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1322,
+    "root_entry_id": 1312
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Depict a scene from the motion picture \"2001: A Space Odyssey\"\n\nRevise: the same HAL 9000 console from the film, and this time the faint reflected glint drifts across the glass in a slow, diagonal streak.\n\nRevise: depart: the systematic glowing circuitry of the console taken into an embroidered wall hanging, mimicking the geometric patterns of a medieval tapestry.",
+  "prompt_tokens": 3770,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2019/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2019",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive textile pattern that blends the cold geometry of technological circuitry with the warm, organic textures of medieval craftsmanship. The composition features hundreds of hand-drawn threads in rich, deep colors that form a complex woven structure reminiscent of ancient tapestries. Embedded within this fabric are glowing lines that trace the underlying technological framework, creating an interplay between hard and soft elements. A luminous glint drifts diagonally across the canvas, emphasizing the contrast between the rigid mechanical patterns and the flowing, fibrous texture of the textile. The piece captures the tension between human artistry and artificial intelligence, presenting a visual dialogue between past and future technologies through color, form, and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 100.005
+}
