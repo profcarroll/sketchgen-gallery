@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 2210, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2210/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the slow, emergent growth of complex, branching crystalline structures. These patterns, reminiscent of decay or fractured machinery, are suspended within the cool, granular matrix of simulated wet concrete. The scene reveals the visible process of both decay and growth, showcasing intricate geometry derived from massive structural failure. Coloration shifts gently, moving through pale greys and mineral blues to reveal the ever-evolving lattice work. The canvas presents a continuous, quiet spectacle of geological time, where the patterns slowly accrue complexity and structure without needing any direct input from the viewer.",
+  "completion_tokens": 1949,
+  "created_utc": "2026-10-13T03:45:50Z",
+  "entry_id": 2210,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 923,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 74)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\n\ngate exit 1: checks failed: console_clean; assertions failed: motion(idle), uses(webgl)\n\nResources the sketch asked for and did not get:\n- https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js \u2014 HTTP 502\n  Reaching outside the sketch is allowed. What you reach for has to arrive: use a host that serves CORS headers, or carry the asset in the sketch itself as a data: URI. Until it arrives the canvas may be blank and every check and assertion below will read zero, whatever the rest of the code does.\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- motion(idle): no canvas snapshots to compare\n- uses(webgl): renderer context is unreadable\n\nConsole (1 error line, first 1 shown):\n- [error] Failed to load resource: the server responded with a status of 502 ()\n\nRuntime state the gate read:\n- frame_advancing unknown: frameCount was not readable\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 0,
+        "played": 0,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 90,
+        "sha256": "b47d6b49cca303548f1ef516662ceb057b6fb666eb1ea0fdbcb0f253ee84513d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 10.006,
+      "prompt_tokens": 3446,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 28.444,
+      "wall_s": 82.933
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1026,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "cab43497ca032784bf1456363f2ece55a5cb5540425721889b0f6f94b9f68e85",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3773,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.421,
+      "wall_s": 97.459
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2226,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the visible branching pattern of decay and growth, derived from hydraulic structural failure, taken into the crystalline formations revealed within wet, poured concrete.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2157,
+    "root_entry_id": 55
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: the same retro driving simulation, and this time include periodic visual obstacles appearing along the edges of the road.\n\nRevise: make it playable\n\nRevise: the same retro, stylized representation of a road that scrolls constantly beneath the player's vehicle, and this time include more complex and varied visual obstacles appearing along the edges of the road.\n\nRevise: depart: the idea of regulated, endless forward motion taken into the slow, inevitable decay of a massive, single-color folded origami sculpture.\n\nRevise: depart: The concept of repeating, self-correcting structural failure taken into a hydraulic pumping system of sheet steel, made of rust, seen at macro scale, driven by cyclical pressure.\n\nRevise: depart: the visible branching pattern of decay and growth, derived from hydraulic structural failure, taken into the crystalline formations revealed within wet, poured concrete.",
+  "prompt_tokens": 7219,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2210/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2210",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts the slow, emergent growth of crystalline structures within a simulated wet concrete matrix. The viewer observes branching geometric forms that gradually develop and connect over time, resembling both natural crystal formation and mechanical decay. The structures grow organically from their initial positions, with their coloration shifting through pale greys to mineral blues as they mature. The concrete background consists of thousands of granular particles that create a textural foundation for the evolving lattice work. The scene unfolds silently in real-time, presenting a continuous spectacle of geological time where complexity accrues gradually without any direct viewer input. The visual effect uses efficient rendering techniques to maintain performance while creating an immersive experience of slow growth and structural development.",
+  "submitted_by": "profcarroll",
+  "wall_s": 180.392
+}
