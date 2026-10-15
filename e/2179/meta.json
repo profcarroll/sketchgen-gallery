@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe periodic table of elements Revise: the same large, organized grid\u2026\u201d \u2014 sketchgen entry 2179, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2179/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, interconnected network of colored nodes and lines, simulating the complex structure of evolving RNA sequences. These structures are constantly shifting and reforming, visualized as segments that glow brightly before collapsing and reorganizing, like a cascade of falling dominoes. The overall system undergoes a persistent, dynamic transformation, creating a hypnotic rhythm of change. While the core evolution continues autonomously, clicking anywhere on the canvas introduces energy into the system, triggering a visible ripple that speeds up the sequence changes and illuminates the newly mapped structural pathways.",
+  "completion_tokens": 2633,
+  "created_utc": "2026-10-12T23:15:59Z",
+  "entry_id": 2179,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1320,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 55)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 121)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 203.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "3c9b0a83cb1636330015f19ff927cafa97f4ea1698734f66788baee8d3d0cdc4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 203.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3410,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.392,
+      "wall_s": 111.918
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1313,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 135,
+        "sha256": "1dc9148ec85d802dcf40dcd98cf788a92a7a58ab8ef82096e07240fba47534df",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4048,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.249,
+      "wall_s": 125.286
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2195,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the underlying principle of periodic organization taken into a vast simulation of evolving RNA sequences, mapping complex structural changes like falling dominoes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 1988,
+    "root_entry_id": 889
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the periodic table of elements\n\nRevise: the same large, organized grid displays the elements of the periodic table, and this time the entire diagram pulses with a vibrant blue hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous pulsating glow is a warm golden hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow travels in distinct, visible sine waves.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the continuous ambient glow pulses with a vivid emerald green hue.\n\nRevise: the same structured grid representing the elements of the periodic table, and this time the ambient glow travels across the grid in distinct, visible sine waves.\n\nRevise: depart: the principle of structured periodicity taken into a colossal network of crystalline geodes, expanding and shifting like slow-motion tectonic plate drifts.\n\nRevise: depart: the underlying principle of periodic organization taken into a vast simulation of evolving RNA sequences, mapping complex structural changes like falling dominoes.",
+  "prompt_tokens": 7458,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2179/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2179",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes an evolving RNA network as a dynamic system of glowing nodes and connections. The scene features thousands of particles that continuously shift and reform, creating a hypnotic pattern of growth, collapse, and reorganization. The visualization employs a spatial hashing technique to efficiently manage particle interactions, preventing performance issues from all-pairs calculations. When users click anywhere on the canvas, a ripple effect is triggered that accelerates the system's evolution and illuminates new structural pathways, demonstrating how localized energy input can dramatically influence the entire network's behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 237.204
+}
