@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201carchitectural blueprint Revise: depart: The internal branching struct\u2026\u201d \u2014 sketchgen entry 2222, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2222/ Licensed CC BY 4.0.",
+  "brief": "A dark canvas features a jagged crack that slowly fractures and spreads across the frame. Through the widening fissure, a dense, glowing cyan wireframe of a massive, branching root system is revealed in 3D space. The subterranean veins pulse and drift with a slow, organic movement. Dragging the mouse rotates the view, allowing the user to look through the crack into the depths of the glowing, interconnected structure.",
+  "completion_tokens": 1496,
+  "created_utc": "2026-10-14T17:27:54Z",
+  "entry_id": 2222,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1496,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "ce8c8fd19c38543daa228b06e6df0e1106737f76508b4edfd62980f162667a4b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3659,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.777,
+      "wall_s": 125.304
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2238,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The internal branching structure of a massive root system, rendered as a complex 3D cyan wireframe tracing subterranean veins, seen through the mechanism of a crack spreading.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 2011,
+    "root_entry_id": 2011
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "architectural blueprint\n\nRevise: depart: The internal branching structure of a massive root system, rendered as a complex 3D cyan wireframe tracing subterranean veins, seen through the mechanism of a crack spreading.",
+  "prompt_tokens": 3659,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2222/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2222",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dark, mysterious scene where a jagged crack slowly spreads across the screen, revealing a glowing cyan wireframe of an intricate underground root system. The crack mechanism creates a sense of growing tension and discovery as it progresses outward from the center of the frame. The branching root structure pulses with organic movement, creating an ethereal visual effect that appears to shift and flow through the darkness. The viewer can interact by dragging their mouse to rotate the camera view, allowing them to peer deeper into the glowing, interconnected network beneath the surface. The scene combines elements of geological fracture with biological growth, suggesting a dynamic natural process unfolding in three-dimensional space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 125.304
+}
