@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdraw an alpine landscape. clicking causes an avalanche. Revise: the s\u2026\u201d \u2014 sketchgen entry 2174, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2174/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a deeply atmospheric, cold alpine winter landscape dominated by snow-draped peaks and complex foreground rock formations. The scene is rendered with muted, crystalline blue light, emphasizing geological detail and depth. Upon clicking anywhere on the canvas, a visible wave of avalanche debris displaces the undisturbed fresh snow. This debris settles, leaving exposed channels in the foreground rock formations. Subsequently, fine mineral dust visibly drifts and settles into these cleared channels, bridging the separated rock segments and creating small pockets of meltwater that refract the jewel-toned light.",
+  "completion_tokens": 5602,
+  "created_utc": "2026-10-12T22:11:54Z",
+  "entry_id": 2174,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1630,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 92)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 98)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 109)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 121)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 131)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.2865/255, 63613 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 157,
+        "sha256": "e957e8b939474f02988da5eba96524ac682ecc5758edd5d2b3cff43e3095cda0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.9,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 4088,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.805,
+      "wall_s": 150.585
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1901,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 122)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 132)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 142)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.4688/255, 36970 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 178,
+        "sha256": "37f474313f7367e5f50c1ea3557c990aa4c58fda1900e1f1e66f1c0c126a93cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 58.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4579,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 26.454,
+      "wall_s": 185.656
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2071,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 134)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 144)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 154)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.4704/255, 37055 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 214,
+        "sha256": "46165f6845a295e72edf6318d87e06f19cba18905e3efd82a7ceb74f0cea1a3f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 59.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4729,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 26.463,
+      "wall_s": 210.733
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2189,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the interplay of deep, subtle bioluminescence and mineral slurry is taken into a massive, calcium carbonate coral reef skeleton, eroded by slow-moving, highly acidic deep-sea currents, mechanism: erosion",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "inherits_source": false,
+    "parent_entry_id": 1981,
+    "root_entry_id": 425
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "draw an alpine landscape. clicking causes an avalanche.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will scatter specific rock formations across the foreground.\n\nRevise: the same atmospheric winter scene featuring snow-draped alpine peaks and muted, cold color palettes, and this time the rock formations scattered by the debris will be partially covered in undisturbed fresh snow.\n\nRevise: the same atmospheric winter landscape, and this time the avalanche debris will leave visible snow drifts wedged between the foreground rock formations.\n\nRevise: the same atmospheric winter landscape, and this time the deposited snow drifts will follow the natural, etched channels and crevices of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the fresh snow deposited within the foreground channels will reflect deep, crystalline blue light.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly displace the fresh snow in the foreground channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the cleared snow will reveal distinct, visible streaks of underlying rock color along the impact path.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited debris will visibly streak colorful, crystalline mineral dust onto the exposed rock channels.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the deposited mineral dust will visibly settle and bridge the separated channels of the foreground rock formations.\n\nRevise: the same deeply atmospheric, cold alpine winter landscape, and this time the settled mineral dust will collect small pockets of meltwater that visibly refract the light through the foreground crevices.\n\nRevise: carry: Crystalline, jewel-toned light refraction given to the complex, failing internal mechanisms of a massive bio-mechanical clockwork creature, set in a subterranean chamber of slow-moving mineral slurry, carry.\n\nRevise: depart: the interplay of deep, subtle bioluminescence and mineral slurry is taken into a massive, calcium carbonate coral reef skeleton, eroded by slow-moving, highly acidic deep-sea currents, mechanism: erosion",
+  "prompt_tokens": 13396,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2174/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2174",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a serene yet dynamic alpine winter landscape where geological features and atmospheric elements interact in a single moment of change. The viewer observes snow-draped peaks and intricate rock formations rendered with muted crystalline blue tones that evoke cold, mineral clarity. When clicked, the canvas responds with an avalanche effect: a wave of debris displaces the snow and reveals channels within the foreground rocks. Fine dust particles then drift into these cleared areas, creating small pockets of meltwater that refract the jewel-toned light. The work balances stillness with subtle motion\u2014snow falls gently while dust slowly settles into the newly exposed terrain, suggesting the quiet passage of time and the persistent forces shaping this frozen world.",
+  "submitted_by": "profcarroll",
+  "wall_s": 546.974
+}
