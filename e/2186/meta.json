@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 2186, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2186/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed mechanical object, rendered entirely in polished brass and styled as a 1920s Bauhaus-inspired pocket watch. The composition centers on the contrast between a delicate, superficial outer covering and the complex, organized mechanisms underneath. These internal structures\u2014featuring visible gears, levers, and pipes\u2014are shown in continuous, choreographed motion, giving the impression of a precisely functioning, clockwork exercise.",
+  "completion_tokens": 4208,
+  "created_utc": "2026-10-13T00:28:04Z",
+  "entry_id": 2186,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1378,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 104)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 126)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "e9ee613f741a40496b882b53a75e5d53bf1a51e29a1484b7a04fed4ec7999a75",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3657,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.517,
+      "wall_s": 131.403
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1402,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 108)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 130)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 169,
+        "sha256": "a2ca6db3dd828cc0c8110168f88d38251d64b3b9612488878ff3fcdac1d2805d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4086,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.225,
+      "wall_s": 129.696
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1428,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 119)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 141)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 175)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 173,
+        "sha256": "abd85b2426337aec84a92dee279bd307dec9b1da3f82d29628ed1d69519db664",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 23.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4112,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 14.234,
+      "wall_s": 133.16
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2202,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of a delicate, superficial covering masking an organized internal structure, taken into a stylized clockwork device, a 1920s Bauhaus exercise, made of polished brass, seen at the scale of a pocket watch.",
+    "critique_by": "gemma4:e4b",
+    "generation": 16,
+    "inherits_source": false,
+    "parent_entry_id": 1999,
+    "root_entry_id": 35
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same overlapping color fields, and this time the diffusion should subtly shift the saturation of the outer layer.\n\nRevise: the same overlapping, softly defined fields of rich color, and this time the intensity of the chromatic shift should pulse rhythmically across the composition.\n\nRevise: the same overlapping planes of rich, softly defined color, and this time the subtle chroma shift should briefly intensify the central vertical dividing lines.\n\nRevise: the same overlapping planes of deep, rich color, and this time the subtle chroma shift should intensify the defining boundaries of the outermost vertical layers.\n\nRevise: the same overlapping planes of deep, rich color, and this time the chroma shift should intensify sequentially from the center to the outer edges.\n\nRevise: the same overlapping planes of deep, saturated color, and this time the gradual chromatic shift should flow in smooth, horizontal waves across the composition.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping, softly defined planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: the same overlapping, softly defined planes of deep, rich, and saturated color, and this time the horizontal wave formations should exhibit a uniform and consistent amplitude.\n\nRevise: the same overlapping planes of deep, rich, and highly saturated color, and this time the horizontal wave formations should exhibit a randomized and irregular amplitude rhythm.\n\nRevise: flip: a composition where the soft, layered colored planes slowly flake away, revealing sharp, defined crystalline geometries beneath, made of salt residue, seen at microscopic scale, through erosion.\n\nRevise: depart: the idea of a delicate, superficial covering masking an organized internal structure, taken into a stylized clockwork device, a 1920s Bauhaus exercise, made of polished brass, seen at the scale of a pocket watch.",
+  "prompt_tokens": 11855,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2186/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2186",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a meticulously detailed mechanical pocket watch inspired by 1920s Bauhaus aesthetics. The composition explores the contrast between an elegant outer brass casing and the intricate internal mechanisms that drive its function. Through continuous animation, visible gears rotate with precise timing, levers move in choreographed patterns, and pipes pulse with subtle motion\u2014each element contributing to a unified impression of perfectly synchronized clockwork. The viewer observes a self-contained world where mechanical elegance meets functional complexity, rendered entirely within the geometric constraints of a WebGL canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 394.259
+}
