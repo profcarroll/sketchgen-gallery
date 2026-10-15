@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cuse math to render the pattern of a polished granite countertop Revis\u2026\u201d \u2014 sketchgen entry 2223, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2223/ Licensed CC BY 4.0.",
+  "brief": "A surface of glazed ceramic tiles forms a mosaic, each reflecting light with a subtle sheen. An intricate, interwoven network of capillary-like lines branches across the tiles, colored in deep crimsons and soft organic hues. These lines pulse with a slow, rhythmic motion, mimicking the circulation within a living creature. When the mouse is dragged across the tiles, the capillary network reacts by brightening and thickening the lines along the path of the cursor, as if life is being drawn through the ceramic veins.",
+  "completion_tokens": 1052,
+  "created_utc": "2026-10-14T17:33:51Z",
+  "entry_id": 2223,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1052,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "d72229b8b37591b3ede086d186db2f5e7cfc9373b39317b4b196ae6f80536f48",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3375,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.686,
+      "wall_s": 91.682
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2239,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: interwoven linear structures given to the capillary network of a living creature, rendered as ceramic tile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 2012,
+    "root_entry_id": 2012
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "use math to render the pattern of  a polished granite countertop\n\nRevise: carry: interwoven linear structures given to the capillary network of a living creature, rendered as ceramic tile.",
+  "prompt_tokens": 3375,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2223/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2223",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a ceramic tile mosaic with an intricate network of capillary-like veins that pulse rhythmically. The tiles have a subtle sheen and reflect light in organic ways, while the crimson-toned veins pulse slowly like a living circulatory system. When the mouse is dragged across the canvas, it triggers a localized brightening and thickening of the veins along the cursor path, as if life is being drawn through the ceramic veins. The effect uses noise-based paths for natural-looking branching, combined with dynamic stroke weights that respond to both time and mouse proximity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.682
+}
