@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 2181, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2181/ Licensed CC BY 4.0.",
+  "brief": "A continuous, scrolling sequence of intensely fluorescent neon lines moves across a black background, tracing the erratic and irregular spikes of a volatile heartbeat. The lines exhibit an unpredictable, pulsing motion, expanding and contracting with a granular texture reminiscent of beeswax. These glowing veins grow and branch across the canvas in a slow, searching manner, mimicking the organic, volatile rhythm of a slime mould forming mineral veins.",
+  "completion_tokens": 850,
+  "created_utc": "2026-10-12T23:41:01Z",
+  "entry_id": 2181,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 850,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 74,
+        "sha256": "10d60fbf8788038242acf07c49c0e8660220a474e0c15cfb172940845f20c9f6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3148,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.517,
+      "wall_s": 86.853
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2197,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the volatile rhythm of a heartbeat taken into the slow growth of mineral veins, forming through the searching mechanisms of a slime mould.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1994,
+    "root_entry_id": 1069
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.\n\nRevise: carry: unpredictable pulsing motion given to the granular expansion and contraction of beeswax, made of beeswax\n\nRevise: depart: the volatile rhythm of a heartbeat taken into the slow growth of mineral veins, forming through the searching mechanisms of a slime mould.",
+  "prompt_tokens": 3148,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2181/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2181",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing visualization of mineral vein formation, inspired by the slow, searching growth patterns of slime mould. Neon pink lines emerge from the center and spread outward in unpredictable directions, branching and recombining as they travel across the black canvas. Each line pulses with a granular, beeswax-like texture that mimics the organic rhythm of geological processes. The system generates thousands of these veins over time, each following simple rules of growth and branching while maintaining a cohesive, flowing pattern that evokes both the volatile heartbeat and the patient, crystalline formation of mineral deposits.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.853
+}
