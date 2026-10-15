@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 2242, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2242/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates a deep, polished obsidian surface contained within a retro-styled arcade cabinet. At a micro scale, the scene displays the ceaseless dissolution of crystalline molecular bonds. Sharp, geometric structures slowly decay, dissolving into mesmerizing, fluid waves of deep indigo and electric teal. These waves constantly pulse and swirl, creating the illusion of immense, controlled energy flowing beneath the surface. The entire composition is in constant, slow motion, observing a perpetual state of failing energy. Clicking anywhere on the screen momentarily intensifies the energy field, causing localized bursts of light and increasing the wave turbulence before settling back into its slow, mesmerizing decay.",
+  "completion_tokens": 1215,
+  "created_utc": "2026-10-14T20:36:26Z",
+  "entry_id": 2242,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1215,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 86,
+        "sha256": "6dff6890713c8c7ebecf59f392770e590ca24b5ae75afe582b02d0914c7e4bda",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 32.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3364,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.381,
+      "wall_s": 98.317
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2259,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the dissolution of crystalline molecular bonds into fluid waves, depicted as a macro-view of a failing superconductor, made of polished obsidian, seen at a micro scale, in a 1980s arcade cabinet",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2043,
+    "root_entry_id": 1448
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster\n\nRevise: revise with increase contrast between elements to practice what the poster preaches\n\nRevise: publish failed: /home/ubuntu/sketchgen/gallery has uncommitted changes; commit or clean it before publishing\n\nRevise: flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.\n\nRevise: depart: the dissolution of crystalline molecular bonds into fluid waves, depicted as a macro-view of a failing superconductor, made of polished obsidian, seen at a micro scale, in a 1980s arcade cabinet",
+  "prompt_tokens": 3364,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2242/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2242",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of a deep obsidian surface within a retro arcade cabinet, depicting the micro-scale decay of crystalline structures into fluid energy waves. The composition features a dark, polished cabinet frame that contains swirling waves of indigo and teal energy, constantly pulsing and flowing in slow motion. Thousands of tiny particles float throughout the space, each following gentle sine-wave trajectories that create an organic, living field of energy. The scene responds to clicks with localized bursts of light that intensify the wave turbulence before settling back into its contemplative decay. The technique uses WEBGL rendering to create a volumetric particle field and smooth spherical waveforms that pulse in harmony, evoking the perpetual state of failing energy described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 98.317
+}
