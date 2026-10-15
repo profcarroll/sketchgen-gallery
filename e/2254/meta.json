@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cerecting a skyscraper Revise: the same vertical, three-dimensional ci\u2026\u201d \u2014 sketchgen entry 2254, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2254/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a massive, dark, and fragile architectural structure built from glass prisms, viewed at eye-level. This ziggurat is perpetually unstable, appearing to continuously cascade and slide downward in a steady, geometric collapse. The colors are dark, reflecting the fragility of the glass. Although the structure has constant, natural motion, the system is reactive: clicking anywhere on the canvas causes the megalith to peel off and shed additional segments, accelerating the downward cascade.",
+  "completion_tokens": 3866,
+  "created_utc": "2026-10-14T21:58:38Z",
+  "entry_id": 2254,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1174,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 65)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 113,
+        "sha256": "0d686bf139315ee2ba82c8e639d132fd8d4efeb57380db302fe3faba24b7f29a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3680,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.531,
+      "wall_s": 105.749
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1350,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 117,
+        "sha256": "08617bc1b1ea6d09e272020ab8f21aaccd6980bdb1b6ab653e3d0d4596089dfd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3856,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.677,
+      "wall_s": 122.591
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1342,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 140,
+        "sha256": "f72a28ab93e7c1c2292e3196c956e74561c152a2706d3b6c85dee1d43bf3a4c3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4038,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.788,
+      "wall_s": 126.137
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2271,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The accumulation of environmental residue taken into the slow, crystalline bloom of bioluminescent lichen, made of cut paper, seen at microscopic scale, in a geothermally active era.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2205,
+    "root_entry_id": 363
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "erecting a skyscraper\n\nRevise: the same vertical, three-dimensional cityscape, and this time every new segment must maintain the width and height of the segment directly beneath it.\n\nRevise: flip: a constantly collapsing ziggurat of dark, fragile glass prisms that continuously slides downward in a cascade, responding to clicks by peeling off additional segments, seen at eye-level\n\nRevise: depart: the gradual, systematic decomposition of enormous, poured concrete mushroom mycelium, shedding delicate, petrified caps and root structures, as viewed at subterranean scale, during a tropical humid era.\n\nRevise: flip: A colossal, stable megalith that grows upward in impossible, stacked geometry, defying gravity and accumulating material segments in defiance of collapse, made of chalk on slate.\n\nRevise: depart: The accumulation of environmental residue taken into the slow, crystalline bloom of bioluminescent lichen, made of cut paper, seen at microscopic scale, in a geothermally active era.",
+  "prompt_tokens": 11574,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2254/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2254",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an architectural marvel constructed from glass prisms that exists in a perpetual state of instability. The structure appears to cascade and slide downward in a continuous geometric collapse, rendered in dark tones that emphasize the fragility of the glass. The viewer experiences both natural motion and a responsive element: clicking anywhere on the canvas triggers a cascade effect where segments peel off and accelerate their descent. The piece combines physics-based animation with interactive feedback to create an immersive visualization of an architectural structure that is both beautiful and inherently unstable, where each click becomes a catalyst for the ongoing collapse.",
+  "submitted_by": "profcarroll",
+  "wall_s": 354.477
+}
