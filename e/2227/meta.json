@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201chot air balloons Revise: the same colorful hot air balloons, and this\u2026\u201d \u2014 sketchgen entry 2227, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2227/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a modular, interlocking series of wall panels inspired by 1920s Bauhaus design. The structure is defined by precise, repeating orthogonal geometry, rendered in the texture of painted plaster. Across this rigid framework, dynamic, saturated liquid flows perpetually intersect the hard lines. The composition is an abstract, architectural study where structured lines clash with smooth, brilliant color. The entire piece continuously shifts and moves, showing the constant interaction between fixed architectural forms and uncontrolled, luminous liquid movement.",
+  "completion_tokens": 2615,
+  "created_utc": "2026-10-14T18:07:30Z",
+  "entry_id": 2227,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1350,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 63)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 64)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 70)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 71)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 101)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 106)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 122)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 147.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 120,
+        "sha256": "b970405f688df51f2129b45956dc3067c306af999e3cd17e4a1c0c1a66a444e3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 147.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3655,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 77.03,
+      "wall_s": 118.269
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1265,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 130,
+        "sha256": "45632b15797118b5d1ab5d619dc6a891f94d7d31bb108b625eea6ac95d1c79cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4393,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.103,
+      "wall_s": 135.169
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2243,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The principle of rigid, repeating orthogonal geometry intersecting dynamic, colored, liquid flow, transformed into a series of interlocking wall panels, made of painted plaster, seen at architectural scale, in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 2016,
+    "root_entry_id": 1259
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: the same colorful hot air balloons, and this time depicting them with a soft, radiant glow around their edges.\n\nRevise: the same vividly colored hot air balloons, and this time with the soft glow radiating in distinct, segmented pillars of light.\n\nRevise: carry: structured luminous segments given to microscopic crystalline formations of hydrothermal vents, seen under a microscope\n\nRevise: depart: The principle of rigid, repeating orthogonal geometry intersecting dynamic, colored, liquid flow, transformed into a series of interlocking wall panels, made of painted plaster, seen at architectural scale, in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 8048,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2227/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2227",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an abstract architectural study inspired by 1920s Bauhaus design, where rigid, orthogonal wall panels intersect with fluid, liquid movements. The composition explores the tension between structured geometric forms and dynamic, luminous color flows. Through careful optimization to meet strict performance constraints, it renders a continuous interplay of fixed lines and flowing particles, capturing the essence of architectural tension through visual rhythm and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 253.438
+}
