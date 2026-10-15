@@ -1,0 +1,133 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 2244, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2244/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a macro-scale view of structured patterns that emerge across the surface, drawing inspiration from the intricate, highly detailed illuminations found in medieval manuscripts. However, the visual language suggests a material entirely composed of layered, corrugated cardboard. The pattern continuously forms and dissolves, illustrating the process of coherence developing from chaotic, drifting sources. The viewer observes this gradual, structural metamorphosis, characterized by the texture and shifting colors of fibrous, layered material, without requiring any interaction.",
+  "completion_tokens": 3756,
+  "created_utc": "2026-10-14T20:52:24Z",
+  "entry_id": 2244,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1976,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 216.3 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 197,
+        "sha256": "57e921ee4803c907c1c9975501ca0bf200b1e41b1bc86607bbcf8fb3ab44a73e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 216.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4281,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.429,
+      "wall_s": 192.036
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1780,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 211,
+        "sha256": "6f448960beb1001f97eb3e1a8b6662d128a2b52ae94eda751880429af0af064d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 40.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4539,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 17.603,
+      "wall_s": 183.202
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2261,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of energized structural decay taken into the glowing, visible electrical failures of a complex arcade game circuit board, seen at the copper scale, in a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 23,
+    "inherits_source": false,
+    "parent_entry_id": 2194,
+    "root_entry_id": 13
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time introducing higher contrast and sharper color shifts across the pattern.\n\nRevise: make it interactive with mouse clicks\n\nRevise: the same intricate, interlocking tessellation of hexagons, and this time having the color shifts be influenced by the neighboring hexagons' rotational velocity.\n\nRevise: get sound working\n\nRevise: The same intricate, interlocking tessellation of hexagons, and this time giving the hexagon boundaries sharper, more defined edges.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time introducing localized areas where the geometric integrity momentarily fractures.\n\nRevise: the same intricate, tessellating lattice composed of interlocking hexagons, and this time with localized areas exhibiting extreme contrast between stable and fracturing segments.\n\nRevise: the same intricate, continuous tessellation composed of interlocking hexagons forming a complex lattice, and this time introducing defined, glowing boundaries that pulse just before structural collapse.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagons, and this time introducing faint, transient stress fractures that radiate visibly from points of extreme structural energy.\n\nRevise: the same intricate tessellation composed of interlocking hexagons, and this time introducing sharp, localized stress fractures visible where the pulsating boundaries reach peak tension.\n\nRevise: the same intricate, continuously interlocking lattice of hexagons forming a complex tessellation, and this time making the stress fractures glow with visible electrical energy.\n\nRevise: the same intricate and continuous lattice formed by interlocking hexagonal tessellations, and this time having the glowing electrical pulses visibly erode the structure from the edges inward.\n\nRevise: the same intricate, continuously interlocking tessellation of hexagons, forming a complex, structured lattice, and this time having the glowing pulses visibly warp the hexagons before the material fractures.\n\nRevise: the same complex lattice of interlocking hexagons, and this time introducing visible, cumulative stress lines that spiderweb across the material between adjacent tessellations.\n\nRevise: the same intricate, continuous lattice composed of interlocking hexagonal tessellations, and this time having the glowing electrical pulses cause the surrounding hexagonal material to visibly crystallize before fracturing.\n\nRevise: depart: the idea of systematic crystallization and material fatigue taken into a study of deep-sea hydrothermal vent minerals, showing gradual fracture and mineral deposition driven by constant erosion.\n\nRevise: depart: the idea of forming coherent, structural patterns from chaotic, drifting sources taken into the evolution of calligraphy and illuminated manuscripts, appearing corrugated cardboard, seen at the macro scale, in the medieval era.\n\nRevise: depart: the idea of energized structural decay taken into the glowing, visible electrical failures of a complex arcade game circuit board, seen at the copper scale, in a 1980s arcade cabinet.",
+  "prompt_tokens": 8820,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2244/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2244",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving macro-scale pattern that evokes the intricate, layered textures of medieval manuscript illuminations, rendered through a material language of corrugated cardboard. The composition shows structured patterns forming and dissolving across the canvas, with each element drifting and pulsing in subtle synchronization. The visual process mimics the gradual emergence of coherence from chaos, using a spatial grid system to efficiently connect nearby elements while maintaining the organic flow of fibrous, layered materials. The interplay between forming and dissolving structures creates a sense of continuous metamorphosis, where patterns gradually coalesce into coherent forms before breaking apart again.",
+  "submitted_by": "profcarroll",
+  "wall_s": 375.238
+}
