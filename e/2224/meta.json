@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmandelbrot fractal Revise: zoom: a whole sketch of the delicate filam\u2026\u201d \u2014 sketchgen entry 2224, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2224/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a microscopic, immersive view of a Mandelbrot fractal's antenna, transformed into a pulsing vascular network. Intricate, vein-like filaments in shades of deep crimson, translucent amber, and biological pink weave through a dark, fluid void. The view continuously and slowly zooms deeper into these branching capillaries, creating a sense of endless organic depth. A mouse drag allows the viewer to pan through the microscopic landscape, shifting the focus across the cellular structures.",
+  "completion_tokens": 3359,
+  "created_utc": "2026-10-14T17:43:25Z",
+  "entry_id": 2224,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1126,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 90,
+        "sha256": "c74e74c6acb889a69de63756d3cb5b341d2892d744dc89979bca4eb3cfd220b5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3265,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.603,
+      "wall_s": 90.504
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1123,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 126,
+        "sha256": "be29fbb45f2f9a9b30d8dc166dc4faf35d42316ec52a899f0935bff01f6cc69b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3693,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.593,
+      "wall_s": 102.648
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1110,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 126,
+        "sha256": "5596bae336f9dc5dcadcaf1ef56e7d60cbee2ccf61c038ae8da6f766f75d8a59",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3694,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.238,
+      "wall_s": 98.599
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2240,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "zoom: a whole sketch of the delicate filament structure forming the antenna of the main cardioid, becoming an intricate vascular biological network, seen under a microscope.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 2013,
+    "root_entry_id": 2013
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "mandelbrot fractal\n\nRevise: zoom: a whole sketch of the delicate filament structure forming the antenna of the main cardioid, becoming an intricate vascular biological network, seen under a microscope.",
+  "prompt_tokens": 10652,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2224/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2224",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, microscopic view of a Mandelbrot fractal's antenna transformed into a pulsing vascular network. Using a combination of particle systems and dynamic connections, it renders intricate vein-like filaments in deep crimson, translucent amber, and biological pink against a dark void. The scene continuously zooms deeper into the branching structures while allowing panning through mouse drag, creating an endless organic depth that draws viewers into the mathematical beauty of fractal geometry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 291.751
+}
