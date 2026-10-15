@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201carchitectural blueprint Revise: carry: Cyclical geometry given to the\u2026\u201d \u2014 sketchgen entry 2225, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2225/ Licensed CC BY 4.0.",
+  "brief": "A cross-section of stratified sediment layers rendered in earthy tones of tan, ochre, and deep slate. Within these geological bands, intricate cyclical geometries resembling nautilus shells and spiral fossils emerge and pulse with a slow, rhythmic expansion. An undulating, wave-like motion flows across the canvas, simulating the ebb and flow of approaching tides, which causes the seashell patterns to drift and reshape themselves within the sedimentary strata.",
+  "completion_tokens": 2189,
+  "created_utc": "2026-10-14T17:51:54Z",
+  "entry_id": 2225,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1088,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 12)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 56)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 101,
+        "sha256": "20b13a65a10128504904539cb66193d44e8f514a9a63751d00dd7b10db05b237",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3674,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.692,
+      "wall_s": 100.499
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1101,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 117,
+        "sha256": "699889e6013bb73131c706a9299392e776b8c044da3239fedcaade6eab0302d9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3867,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 11.08,
+      "wall_s": 107.285
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2241,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Cyclical geometry given to the cross-section of stratified sediment layers, visualizing how the rhythmic force of approaching tides shapes fossilized seashell patterns.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 2014,
+    "root_entry_id": 2014
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "architectural blueprint\n\nRevise: carry: Cyclical geometry given to the cross-section of stratified sediment layers, visualizing how the rhythmic force of approaching tides shapes fossilized seashell patterns.",
+  "prompt_tokens": 7541,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2225/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2225",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a geological cross-section depicting layered sedimentary rock formations in earthy tones of tan, ochre, and deep slate. Within these strata, intricate spiral patterns reminiscent of nautilus shells and fossil forms emerge and pulse rhythmically. A continuous wave-like motion simulates the ebb and flow of tides, causing the seashell patterns to drift and reshape themselves across the sedimentary layers. The visualization uses a single mesh for each sediment layer to maintain performance while creating an immersive geological scene that evolves slowly over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 207.784
+}
