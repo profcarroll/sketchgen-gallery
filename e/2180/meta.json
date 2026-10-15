@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "no_motion",
+    "size(800,600)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cEKG patterns Revise: the same EKG pattern, and this time the white wa\u2026\u201d \u2014 sketchgen entry 2180, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2180/ Licensed CC BY 4.0.",
+  "brief": "A deep indigo canvas displays a continuous white medical waveform that pulses rhythmically in the color of its own trace while crossing static glacial ridges. The shape shifts between a smooth EKG line and complex, layered rock formations resembling copper wire lace, all evolving within a fixed, darkened field without user interaction or external loading.",
+  "completion_tokens": 1938,
+  "created_utc": "2026-10-12T23:28:03Z",
+  "entry_id": 2180,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "size(800,600)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1126,
+      "evidence": "gate exit 1: assertions failed: no_motion, size(800,600)\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.9038/255, 56284 of 1152000 pixels changed\n- size(800,600): p5 width x height 1280x900, canvas backing store 1280x900, expected 800x600\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 45,
+        "sha256": "3638f211756ca621ee2b8b6a533ed2280216442636604fc3afe0f7561bda9483",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 1.5,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3087,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.863,
+      "wall_s": 90.134
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "size(800,600)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 812,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 79,
+        "sha256": "2124cecd92affcdf27a96ca7d1285e6a44c5eada80d7cd97cecd8ba22da966cf",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 3.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3766,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.473,
+      "wall_s": 83.922
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2196,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Rhythmic, repeating structural shifts given to oxidized copper wire forming intricate lace patterns, made of cut paper",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1990,
+    "root_entry_id": 1052
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.\n\nRevise: the same EKG waveform tracing across a colored background, and this time the background color should remain static while the waveform pulses.\n\nRevise: the same continuous medical waveform, and this time the static background should be a deep indigo solid color.\n\nRevise: depart: A series of geometric pressure ridges forming and relaxing in sequence, taking the idea of cyclical energy transfer into the form of glacial rock layers, seen through a searching slime mould.\n\nRevise: carry: Rhythmic, repeating structural shifts given to oxidized copper wire forming intricate lace patterns, made of cut paper",
+  "prompt_tokens": 6853,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2180/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2180",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "The sketch creates a deep indigo field with layered EKG waveforms in varying copper tones\u2014from warm gold through bronze to icy blue. Each ridge of glacial formations casts a distinct colored trace across the canvas, their hues shifting naturally as they intersect and layer. The visual suggests both medical monitoring equipment and geological strata, frozen in a moment of continuous observation. The copper wire lace effect emerges from the intersection of multiple sine-wave layers, each rendered with a slightly different hue to create depth and the impression of intricate metalwork against the dark field.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.056
+}
