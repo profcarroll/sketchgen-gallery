@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cmandelbrot fractal Revise: depart: the concept of self-generating ite\u2026\u201d \u2014 sketchgen entry 2221, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2221/ Licensed CC BY 4.0.",
+  "brief": "Vibrant stained glass patterns form a complex, organic lattice resembling deep-sea coral. The shapes follow the iterative boundaries of a fractal, creating interlocking cells of translucent, saturated jewel tones. The coral structures pulse and grow slowly, shifting their branching patterns in a continuous, fluid dance. Dragging the mouse allows the viewer to navigate through the fractal depths, zooming into the bioluminescent, crystalline structures to reveal new layers of complexity.",
+  "completion_tokens": 866,
+  "created_utc": "2026-10-14T17:21:09Z",
+  "entry_id": 2221,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 866,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 87,
+        "sha256": "c2a23c9952681eefb0c44d45d9c158ee623568636855a0d0c6cc983e30375900",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3346,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.831,
+      "wall_s": 76.275
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2237,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of self-generating iterative boundary taken into the random pattern of deep-sea coral, rendered as brightly colored stained glass",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 2010,
+    "root_entry_id": 2010
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "mandelbrot fractal\n\nRevise: depart: the concept of self-generating iterative boundary taken into the random pattern of deep-sea coral, rendered as brightly colored stained glass",
+  "prompt_tokens": 3346,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2221/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2221",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, organic coral-like structure using fractal principles and stained glass aesthetics. The visualization features hundreds of glowing, translucent polygons that pulse and shift in fluid patterns reminiscent of deep-sea coral formations. Each structure grows and evolves through time with a gentle, rhythmic animation, while the viewer can navigate deeper into the fractal landscape by dragging their mouse to pan and zoom. The jewel-toned colors shift and flow, creating an ethereal, bioluminescent effect that captures both the mathematical precision of fractals and the organic beauty of underwater ecosystems.",
+  "submitted_by": "profcarroll",
+  "wall_s": 76.275
+}
