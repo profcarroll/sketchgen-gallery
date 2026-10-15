@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cClick anywhere to drop a pebble that chimes a soft tone and sends a r\u2026\u201d \u2014 sketchgen entry 2219, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2219/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents deep, stratified mineral cross-sections revealing intricate, crystalline geometries. The surface is composed of layered, fossilized deposits, featuring veins and delicate fractal patterns that suggest growth over vast time scales. A gentle click anywhere on the canvas initiates a singular event: an impact causes a radiating plume of energy. This impact blossoms outward, causing new mineral veins to rapidly form and crystallize across the rock, making the expanding pattern visible through soft, complex changes in color and luminescence, before slowly settling into a new state of layered structure.",
+  "completion_tokens": 2560,
+  "created_utc": "2026-10-14T16:39:59Z",
+  "entry_id": 2219,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1266,
+      "evidence": "gate exit 1: checks failed: revised; assertions failed: no_motion\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 108 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: Perpetual, crystalline geometry of expansion given to stratified beeswax deposits, rendered as layered archaeological sediment, made of beeswax.\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0304/255, 286 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 146,
+        "sha256": "82a9e6d0b7b8f95f09244f6d380dbf383a624297a1debcccb0633d585c59217e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 43.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3801,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.367,
+      "wall_s": 117.145
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1294,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "82a9e6d0b7b8f95f09244f6d380dbf383a624297a1debcccb0633d585c59217e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4043,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.389,
+      "wall_s": 124.181
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2235,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Perpetual, crystalline geometry of expansion given to stratified beeswax deposits, rendered as layered archaeological sediment, made of beeswax.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2189,
+    "root_entry_id": 1252
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Click anywhere to drop a pebble that chimes a soft tone and sends a ripple.\n\nRevise: depart: the spreading energy of an impact, translated into slowly forming, fractal patterns of crystalline mineral veins crisscrossing solid rock, seen at the scale of a mountain range.\n\nRevise: depart: the intricate, fractal pattern of expansion, taken into the cross-section of an exotic, fictional orchid, rendered as a detailed, labeled Victorian botanical plate.\n\nRevise: carry: Perpetual, crystalline geometry of expansion given to stratified beeswax deposits, rendered as layered archaeological sediment, made of beeswax.",
+  "prompt_tokens": 7844,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2219/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2219",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a geological cross-section rendered in layered, stratified mineral formations that respond dynamically to user interaction. The viewer encounters a deep, textural landscape of fossilized deposits with intricate crystalline patterns emerging from the stone's surface. When clicked anywhere on the canvas, a single impact event initiates an expanding energy plume that triggers rapid formation of new mineral veins across the rock face. These veins grow outward in delicate, branching patterns with subtle color shifts and luminescent qualities, creating a visual metaphor for geological time and transformative processes. The piece balances stillness with controlled motion, presenting an eternal moment of crystallization within a static landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 241.326
+}
