@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cjigsaw puzzle Revise: the same jigsaw puzzle, and this time the seams\u2026\u201d \u2014 sketchgen entry 2175, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2175/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the memory of architecture in a state of slow decay. Warm, golden shapes\u2014walls and arches\u2014are constructed of solidified beeswax, appearing dense and luminous. Over time, these defined forms soften, losing their edges, and collapse into a viscous, honey-colored resin pool. The movement is overwhelmingly slow and gravitational, showing the viscous material flowing and pooling across the surface. The colors shift from pale amber to deep gold as the material settles into a continuous, amorphous puddle. The viewer observes the entropy of the structure, watching discrete memories yield to liquid form.",
+  "completion_tokens": 3559,
+  "created_utc": "2026-10-12T22:42:22Z",
+  "entry_id": 2175,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1166,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "4fbd53be3e6bf7dfc32371aa18a4788fb7750cdde0ee6a2e0295dc1a04c918dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3783,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.212,
+      "wall_s": 108.362
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1201,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 124,
+        "sha256": "a315edb1f80b4031823a3a9a62eb6cd392d5e45976a9fbf54fc60fceb58eb2ca",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.7,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3775,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.246,
+      "wall_s": 108.863
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1192,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 124,
+        "sha256": "a315edb1f80b4031823a3a9a62eb6cd392d5e45976a9fbf54fc60fceb58eb2ca",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3775,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.479,
+      "wall_s": 74.29
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2191,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the memory of architecture\u2014walls and arches built from beeswax\u2014slowly melts and collapses into a viscous, honey-colored resin pool, made of beeswax, seen at the scale of a decaying tomb, in the late Bronze Age.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1984,
+    "root_entry_id": 1103
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "jigsaw puzzle\n\nRevise: the same jigsaw puzzle, and this time the seams where pieces interlock glow faintly when they snap into place.\n\nRevise: flip: a sketch showing mineral crystallization and flowing sludge, where discrete puzzle pieces melt and reform into continuous, amorphous shapes, viewed at the scale of a single grain of sand\n\nRevise: depart: the memory of architecture\u2014walls and arches built from beeswax\u2014slowly melts and collapses into a viscous, honey-colored resin pool, made of beeswax, seen at the scale of a decaying tomb, in the late Bronze Age.",
+  "prompt_tokens": 11333,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2175/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2175",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes the slow decay of architectural memory through the transformation of solid beeswax forms into a viscous honey pool. Initially, warm golden rectangles represent defined structures that gradually shrink and lose their edges, becoming fluid amorphous blobs. The simulation captures the entropic process where discrete architectural elements dissolve into continuous liquid form, with colors shifting from pale amber to deep gold as they settle. The viewer observes an ever-flowing landscape of memory yielding to time's gravitational pull, rendered through thousands of particles that morph seamlessly from solid geometry to liquid pools.",
+  "submitted_by": "profcarroll",
+  "wall_s": 291.515
+}
