@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2245, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2245/ Licensed CC BY 4.0.",
+  "brief": "The sketch displays a solitary tree situated on a prominent hill, illustrating the continuous cycle of life. Leaves transition dramatically through seasonal colors, beginning as vibrant green, deepening to rich reds and oranges, and fading into brown before eventually detaching and scattering to the ground. The cycle progresses through a period of snowy winter, where flakes accumulate and cover the landscape and the bare branches. This snow melts, revealing fresh buds and blooming flowers, which culminate in the tree regaining its full, verdant green canopy, thereby restarting the perpetual cycle of renewal.",
+  "completion_tokens": 3091,
+  "created_utc": "2026-10-14T21:01:42Z",
+  "entry_id": 2245,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1549,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 119 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 152,
+        "sha256": "4011cf77d02e476b217a300a0eaef80e4139f8606369c8aae876dd519f1bfe69",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4115,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.133,
+      "wall_s": 146.696
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1542,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 152,
+        "sha256": "4011cf77d02e476b217a300a0eaef80e4139f8606369c8aae876dd519f1bfe69",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4303,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.379,
+      "wall_s": 153.697
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2262,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2196,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.\n\nRevise: carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.\n\nRevise: depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.",
+  "prompt_tokens": 8418,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2245/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2245",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the eternal cycle of life through a solitary tree on a rolling hill. The visualization shows leaves transitioning through seasonal colors\u2014spring green, summer verdant, fall red-orange, and winter brown\u2014while snow accumulates and melts to reveal new growth. The tree's canopy gently sways with time, illustrating the passage of seasons, while snowflakes drift naturally down to cover the landscape. Fresh buds and blooming flowers appear in spring, symbolizing renewal and rebirth. The continuous animation demonstrates nature's perpetual cycle of death and regeneration through a single central tree and its environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 300.393
+}
