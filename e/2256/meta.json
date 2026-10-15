@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201climinal dreamscape architectures Revise: the same impossible architec\u2026\u201d \u2014 sketchgen entry 2256, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2256/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays colossal, impossible architectural forms, now rendered as hyper-faceted crystalline shards. These structures are perpetually subject to immense shearing forces, causing the planar surfaces to warp, curl, and fold dramatically. Cool, fractured light reflects off the jagged, iridescent edges, mapping structural tension through visible stress fractures that propagate across the crystalline faces. While these geometries slowly and constantly readjust in a state of suspended collapse, clicking anywhere on the canvas triggers a sharp, visible energetic ripple that momentarily intensifies the warping and shifts the entire composition.",
+  "completion_tokens": 4363,
+  "created_utc": "2026-10-14T22:16:17Z",
+  "entry_id": 2256,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1700,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "2d30a0d274db25cf1e4d847d9d7845edb11c9a088540201b8fee79f08b5c1018",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4217,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.395,
+      "wall_s": 162.913
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1337,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 86)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 174,
+        "sha256": "2ba8b0d2fa71a2a7f96ec31a0c840445926bfc355fc356eee066124ac7030502",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4284,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.06,
+      "wall_s": 133.96
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1326,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 86)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(click)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 152,
+        "sha256": "2c4e7604a8cf541a40d89ea5efcd3ff16d9c3cbe13ef57851d1b370eab3b30e2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4165,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.691,
+      "wall_s": 129.99
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2273,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the accumulated idea of structural stress taken into the interlocking, microscopic warp and weft of ancient, heavily embroidered silk tapestries, made of woven silk, seen at the thread level, in a 1960s pen plotter drawing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "inherits_source": true,
+    "parent_entry_id": 2208,
+    "root_entry_id": 114
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "liminal dreamscape architectures\n\nRevise: the same impossible architectures, and this time fractured geometric planes reflecting muted teal light\n\nRevise: the same impossible architecture, and this time segments dissolving into particulate mist\n\nRevise: the same impossible architectures, and this time greater planar asymmetry causing visible structural stresses\n\nRevise: the same impossible architectures, and this time fractal self-similar geometries appearing across the fractured planes\n\nRevise: the same impossible architecture, and this time extreme shearing forces warping the planar surfaces into crystalline shards\n\nRevise: the same impossible architecture, and this time surfaces experiencing gravitational pull towards a central, undefined point\n\nRevise: the same impossible architectures, and this time the crystalline shards momentarily arrest their collapse, holding their structural integrity against the surrounding particulate mist\n\nRevise: the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.\n\nRevise: the same impossible, crystalline architectures, and this time extreme shearing forces warping the shards into gravity-defying, hyperbolic curves.\n\nRevise: carry: dynamic structural shedding given to the luminous, arterial network beneath pale skin, depicted on a medieval tapestry\n\nRevise: depart: the idea of latent structural tension taken into the interlocking, gear-driven clockwork mechanism of a subterranean automaton, small enough to hold in one hand.\n\nRevise: depart: the continuous cycle of structural stress and spontaneous reformation taken into the intricate, slow-motion growth patterns of crystalline deposits forming within a massive, bioluminescent deep-sea fan coral.\n\nRevise: depart: the accumulated idea of structural stress taken into the interlocking, microscopic warp and weft of ancient, heavily embroidered silk tapestries, made of woven silk, seen at the thread level, in a 1960s pen plotter drawing.",
+  "prompt_tokens": 12666,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2256/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2256",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch transforms the concept of structural stress into a woven tapestry of silk threads, rendered in the style of a 1960s pen plotter drawing. Instead of crystalline shards under shearing forces, we see delicate threads interlacing in an eternal dance of tension and release. The warp and weft threads move subtly, creating visual stress fractures where they intersect, while the entire composition gently oscillates between states of ordered weave and chaotic disruption. Clicking anywhere triggers a ripple effect that momentarily intensifies this weaving, shifting all threads into a momentary state of heightened tension before returning to their gentle, continuous motion. The work captures the microscopic beauty of structural integrity through the elegant simplicity of interlocking thread patterns.",
+  "submitted_by": "profcarroll",
+  "wall_s": 426.863
+}
