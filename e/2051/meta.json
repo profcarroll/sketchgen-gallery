@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ciron filings arranging themselves around your cursor like a magnet Re\u2026\u201d \u2014 sketchgen entry 2051, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2051/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a field of small, dark particles simulating iron filings resting on a surface. The composition is perpetually shifting, with the particles gently settling and reorganizing on their own, creating a constant, quiet movement. When the cursor moves across the screen, it acts as an invisible magnet, actively drawing the surrounding filings toward its path. The resulting drag leaves temporary, intricate trails of clustered metal dust that slowly disperse over time, maintaining a dynamic and ephemeral appearance.",
+  "completion_tokens": 844,
+  "created_utc": "2026-10-12T07:07:40Z",
+  "entry_id": 2051,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 844,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 67,
+        "sha256": "b09d9592178760b88dd8e6a571532c91ce82dc72adb5f75bc61841790942937a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 24.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3232,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.6,
+      "wall_s": 73.849
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2065,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the gradual spread of scented oils across a sheet of wet rice paper, taken into the form of patterns dyed onto knitted wool.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1501,
+    "root_entry_id": 1501
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "iron filings arranging themselves around your cursor like a magnet\n\nRevise: depart: the gradual spread of scented oils across a sheet of wet rice paper, taken into the form of patterns dyed onto knitted wool.",
+  "prompt_tokens": 3232,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2051/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2051",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic simulation of iron filings responding to magnetic forces. Particles settle gently on screen with subtle noise-based motion, forming a field of metallic dust that slowly reorganizes itself. When the cursor moves across the canvas, it acts as an invisible magnet drawing nearby particles toward its path, creating intricate trails of clustered metal dust. These trails gradually disperse over time, maintaining an ephemeral quality where the composition is perpetually shifting and evolving. The visual effect captures the delicate balance between natural settling and external influence, rendering a quiet yet dynamic field of simulated metallic particles.",
+  "submitted_by": "profcarroll",
+  "wall_s": 73.849
+}
