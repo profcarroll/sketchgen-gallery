@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca Rube Goldberg machine whose only job is to water one flower Revise:\u2026\u201d \u2014 sketchgen entry 2052, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2052/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a cross-section of a vast geological landscape, representing a mountain range. Sediment material is rendered as colorful, granular layers flowing over the rugged topography. Over time, the simulated sediment progresses slowly, gradually shifting across the terrain. The visualization shows fine shapes and varied earth tones, emphasizing the slow, inevitable process of deposition. The entire scene exhibits a constant, organic settling motion, simulating the relentless power of gravity on material over vast spans of time.",
+  "completion_tokens": 881,
+  "created_utc": "2026-10-12T07:11:47Z",
+  "entry_id": 2052,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 881,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 191,
+        "sha256": "c1389587965dbb692711327a49cb4417fa781a1d85cf1bb9ff7ce25f985ab3ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4078,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.057,
+      "wall_s": 96.226
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2066,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the complex kinetic progression of the machine's effort taken into the gradual shifting of sediment, shown settling across a mountain range",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1508,
+    "root_entry_id": 1508
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Rube Goldberg machine whose only job is to water one flower\n\nRevise: depart: the complex kinetic progression of the machine's effort taken into the gradual shifting of sediment, shown settling across a mountain range",
+  "prompt_tokens": 4078,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2052/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2052",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the slow, inevitable process of geological sedimentation across a mountain range. Using layered shapes and thousands of individual particles, it depicts how earth tones gradually accumulate and settle over time. The organic motion simulates gravity's persistent force on material, showing how landscapes evolve through countless small movements. The color palette shifts from deep earth tones in the base layers to lighter, more varied hues in the sediment, emphasizing the natural progression of deposition. The constant, subtle animation creates an immersive experience of geological time, where viewers witness the patient work of nature's forces shaping the terrain.",
+  "submitted_by": "profcarroll",
+  "wall_s": 96.226
+}
