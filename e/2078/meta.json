@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca jellyfish made of drifting sine waves Revise: the same ethereal jel\u2026\u201d \u2014 sketchgen entry 2078, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2078/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a highly magnified view, suggesting the internal architecture of a cave. The primary focus is a network of intricate, bioluminescent mineral veins and fracture patterns. These veins exhibit complex, overgrown crystalline formations that pulse with light, casting prismatic refractions into the surrounding dark rock structure. The structures are vividly detailed, showing jagged, overlapping shards and mineral buildup. The scene is dominated by deep subterranean blues, vibrant emerald glows, and sharp highlights where the internal light refracts against the cavern material.",
+  "completion_tokens": 3785,
+  "created_utc": "2026-10-12T10:34:34Z",
+  "entry_id": 2078,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1114,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 96)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 574.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 136,
+        "sha256": "c90d2a96e3a9e9998957fca5beba4ff74a8417fee9573e33b0e963845d2efd68",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 574.9,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3749,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 36.582,
+      "wall_s": 102.835
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1488,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 184.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (184.2 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 3800,
+        "played": 38,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "e8a0fb91557d9017a50d1efedcd512ac80d60fa8ceb640549dad8434acd1d224",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 184.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3790,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 90.972,
+      "wall_s": 128.569
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1183,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "8bb455e049aa97eb4784acdf34fe5ed7c284a1e6b252ee77ed460a25d3fedd5b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 72.9,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4189,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 38.851,
+      "wall_s": 117.194
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2093,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The internal fracture patterns and prismatic light refraction, taking the form of complex, overgrown bioluminescent mineral veins inside a subterranean cave structure, seen under a microscope.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1712,
+    "root_entry_id": 1472
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a jellyfish made of drifting sine waves\n\nRevise: the same ethereal jellyfish, and this time its flowing structures refract light with sharp, segmented edges.\n\nRevise: the same ethereal jellyfish composed of constantly flowing, luminous structures, and this time its segments are composed of highly reflective, jagged crystalline shards.\n\nRevise: depart: The internal fracture patterns and prismatic light refraction, taking the form of complex, overgrown bioluminescent mineral veins inside a subterranean cave structure, seen under a microscope.",
+  "prompt_tokens": 11728,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2078/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2078",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing underground cavern scene filled with bioluminescent mineral veins and floating particles. The viewer is immersed in a dark blue subterranean environment where emerald-green crystalline formations pulse with internal light, casting prismatic refractions against the rocky walls. The composition uses geometric vein structures that twist and intersect in three-dimensional space, while thousands of tiny glowing particles float slowly through the darkness, creating an atmosphere of otherworldly mineral growth and inner light. The scene is both scientifically inspired and dreamlike, evoking the feeling of exploring deep geological formations where light emanates from within the rock itself.",
+  "submitted_by": "profcarroll",
+  "wall_s": 348.598
+}
