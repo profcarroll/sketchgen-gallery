@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca fishbowl seen from the fish's point of view Revise: the same submer\u2026\u201d \u2014 sketchgen entry 2071, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2071/ Licensed CC BY 4.0.",
+  "brief": "The canvas is dominated by a dense field of sharp, cut-paper fragments. These scraps, varied in size and sharply folded, fill the entire composition. The scene is defined by extremely rapid, chaotic motion as thousands of pieces collide and scatter. Fragments constantly collide with one another and with the visible underlying blank surface, creating a violent and dynamic flurry. The movement is continuous, filling the frame with perpetual debris.",
+  "completion_tokens": 1072,
+  "created_utc": "2026-10-12T09:35:58Z",
+  "entry_id": 2071,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1072,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 80,
+        "sha256": "a226202d6f6ab48f2c53cddce25e4e9f769c898db798aa5c42304b2880c430ec",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.5,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3470,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.409,
+      "wall_s": 92.575
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2086,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a chaotic flurry of sharply folded and torn paper fragments rapidly colliding and scattering across a blank surface, made of cut paper",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1675,
+    "root_entry_id": 1500
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a fishbowl seen from the fish's point of view\n\nRevise: the same submerged view, and this time increasing the density and size of the suspended, semi-transparent shapes.\n\nRevise: the same immersive view into a submerged aquatic environment, and this time introducing visible, slow currents that guide the semi-transparent shapes in a gradual circular pattern.\n\nRevise: flip: a chaotic flurry of sharply folded and torn paper fragments rapidly colliding and scattering across a blank surface, made of cut paper",
+  "prompt_tokens": 3470,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2071/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2071",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a chaotic flurry of cut-paper fragments that fill the canvas with rapid, violent motion. The composition features thousands of sharp-edged polygons\u2014each representing a torn piece of paper\u2014that collide and scatter continuously across the blank surface. Through continuous boundary bouncing, random velocity changes, and periodic reinitialization, the fragments form a dynamic debris field that never settles into stillness. Each fragment is rendered as an irregular polygon with randomized rotation, size, and movement, creating an overwhelming sense of perpetual motion and collision. The semi-transparent background allows for visual trail effects that emphasize the continuous nature of the chaos, while the constant addition and removal of fragments maintains the energy of the system over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 92.575
+}
