@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca crowd of umbrellas opening one by one as the rain starts Revise: th\u2026\u201d \u2014 sketchgen entry 2064, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2064/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply atmospheric scene of a foggy forest. Through this muted background drift ribbons of raw silk, embodying the saturated, buoyant colors of opening umbrellas. These ribbons weave slowly and continuously, creating patterns of light and deep color that appear to drift through the mist. The colors are vivid and rich, yet softly diffused by the foggy environment, giving the impression of movement that is both delicate and profound. The entire composition relies solely on continuous, natural, and gentle motion.",
+  "completion_tokens": 936,
+  "created_utc": "2026-10-12T08:39:42Z",
+  "entry_id": 2064,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 936,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 137,
+        "sha256": "aeda3a79980fbfe422730268159e8faabfac310354c38383783535238061e6f2",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3751,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.548,
+      "wall_s": 91.826
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2078,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The saturated, buoyant colors of opening umbrellas taken into slow-drifting silk ribbons weaving through a deep, foggy forest, rendered in raw silk.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1628,
+    "root_entry_id": 1497
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a crowd of umbrellas opening one by one as the rain starts\n\nRevise: the same moody street scene of opened umbrellas swaying in the rain, and this time the puddles on the ground reflect the colored domes of the umbrellas.\n\nRevise: depart: The saturated, buoyant colors of opening umbrellas taken into slow-drifting silk ribbons weaving through a deep, foggy forest, rendered in raw silk.",
+  "prompt_tokens": 3751,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2064/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2064",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an atmospheric foggy forest scene where vibrant silk ribbons drift gently through the mist. The ribbons, rendered as flowing, semi-transparent shapes, move with subtle sway and depth, creating patterns of light and color that appear to float through the fog. The effect is achieved through a combination of particle-like movement, layered transparency, and soft geometric forms that respond to time-based motion. The muted color palette and fog-like blending create an ethereal quality, evoking the delicate, profound motion described in the brief without relying on complex physics or high-detail rendering.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.826
+}
