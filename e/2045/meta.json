@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "responds(drag)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca subway map that rearranges itself when you click a station Revise:\u2026\u201d \u2014 sketchgen entry 2045, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2045/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly detailed, magnified cross-section of a molecular junction. Three distinct crystalline lattice structures converge at a central point, creating an intricate junction point. The view emphasizes the interlocking nature of the atomic bonds, visualizing specific stress points within the material. The entire composition is rendered with complex geometry and varied, mineral-like colors, giving the impression of viewing a material surface through advanced scientific instrumentation. The viewer can move the viewpoint over the structure by dragging the mouse, causing the camera perspective to shift and reveal different facets of the atomic geometry.",
+  "completion_tokens": 3171,
+  "created_utc": "2026-10-12T06:32:53Z",
+  "entry_id": 2045,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 930,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 94)\n\ngate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "49b4bc601a3caa1c24ca7d491fce546a34edfc99eaaacb5d5e4cbe432f99f5eb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.518,
+      "prompt_tokens": 3817,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.096,
+      "wall_s": 93.169
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1127,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 124,
+        "sha256": "cf6adb2f161d4ca7946c95383692bfdef361bd3d7d61b9124cfabe2571cff94e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.518,
+      "prompt_tokens": 3567,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.058,
+      "wall_s": 97.367
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1114,
+      "evidence": "gate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 133,
+        "sha256": "be4159faf8b8f8f4c9201ae78791f46b9b98211e6b0eb4fb408e8c2ab6352031",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.512,
+      "prompt_tokens": 3731,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.065,
+      "wall_s": 100.409
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2059,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "zoom: a whole sketch of the molecular junction point where three distinct lines meet, revealing the atomic stress points and interlocking crystal lattice structure, seen under a microscope.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1465,
+    "root_entry_id": 1465
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a subway map that rearranges itself when you click a station\n\nRevise: zoom: a whole sketch of the molecular junction point where three distinct lines meet, revealing the atomic stress points and interlocking crystal lattice structure, seen under a microscope.",
+  "prompt_tokens": 11115,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2045/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2045",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a detailed molecular junction visualization where three distinct crystalline lattices intersect at a central point. The composition emphasizes the interlocking atomic bonds and stress points within the material structure. Using WebGL rendering, it displays a complex geometric network of particles and connections that respond to mouse drag interactions, allowing viewers to explore different facets of the atomic geometry from various perspectives. The mineral-like color scheme and highly detailed atomic structure create an impression of viewing advanced scientific instrumentation at work.",
+  "submitted_by": "profcarroll",
+  "wall_s": 290.945
+}
