@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 2054, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2054/ Licensed CC BY 4.0.",
+  "brief": "The composition consists of massive, overlapping geometric panels rendered in the style of a 1960s pen plotter drawing. Deeply saturated, glowing color planes fill the panels, creating layered rectangles that seem to bleed into one another. These structured masses appear to slowly shift and drift apart, suggesting a monumental, mechanical disintegration of color.",
+  "completion_tokens": 1335,
+  "created_utc": "2026-10-12T07:28:24Z",
+  "entry_id": 2054,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1335,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 100,
+        "sha256": "9562eb39ec87793d59dc73e8e12543d51b441d09ea0b4fe2260a63545d95f757",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3731,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.308,
+      "wall_s": 116.066
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2068,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: One idea from this sketch\u2014the layering of deeply saturated, glowing color planes\u2014taken into massive, overlapping geometric architectural panels that slowly shift and float apart, rendered by a 1960s pen plotter drawing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1524,
+    "root_entry_id": 1367
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same large, layered rectangular color fields that float and bleed into one another, and this time deepen the resonant tones by increasing the saturation of the overlapping color masses.\n\nRevise: depart: One idea from this sketch\u2014the layering of deeply saturated, glowing color planes\u2014taken into massive, overlapping geometric architectural panels that slowly shift and float apart, rendered by a 1960s pen plotter drawing.",
+  "prompt_tokens": 3731,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2054/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2054",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a monumental architectural composition of overlapping geometric panels that slowly drift and shift apart, rendered in the style of 1960s pen plotter drawings. The work features deeply saturated, glowing color planes that appear to bleed into one another, creating a sense of mechanical disintegration. Through subtle breathing motions, gentle rotations, and layered transparency effects, the panels float and morph in space, suggesting both stability and decay. The composition captures the essence of mid-century modern design while evoking the tension between order and chaos through its slow, methodical movements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 116.066
+}
