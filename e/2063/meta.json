@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ctree rings recording a century of droughts and floods Revise: the sam\u2026\u201d \u2014 sketchgen entry 2063, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2063/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with overlapping, delicate concentric rings, recreating the scale patterns of a butterfly wing viewed under magnification. These rings are rendered in rich, vibrant colors. The boundaries between adjacent bands are sharply defined and highly irregular. The core feature of the visualization is the color shift, which occurs suddenly and asymmetrically, creating a complex, geometric, and highly detailed landscape of contrasting bands and patterns.",
+  "completion_tokens": 2185,
+  "created_utc": "2026-10-12T08:34:16Z",
+  "entry_id": 2063,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 713,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.1542/255, 64934 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 83,
+        "sha256": "1f243f60bedc84dcd85cf9cb303c8edebddac1d223df811969e5d99fb920f52a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3260,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.82,
+      "wall_s": 65.665
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 748,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.1542/255, 64934 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 80,
+        "sha256": "a960e8ac066f7d534fb982c8d1411f2964941d1820708cb3c29040f801dd2c77",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.9,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3295,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.85,
+      "wall_s": 68.448
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 724,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.1542/255, 64934 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 80,
+        "sha256": "a960e8ac066f7d534fb982c8d1411f2964941d1820708cb3c29040f801dd2c77",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.7,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3295,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.78,
+      "wall_s": 40.108
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2077,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: sudden, asymmetrical color shifts given to the delicate scale patterns of a butterfly wing, under a microscope",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1617,
+    "root_entry_id": 1482
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tree rings recording a century of droughts and floods\n\nRevise: the same concentric rings filling the canvas, and this time the transitions between drought and flood bands become visibly abrupt and asymmetrical.\n\nRevise: carry: sudden, asymmetrical color shifts given to the delicate scale patterns of a butterfly wing, under a microscope",
+  "prompt_tokens": 9850,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2063/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2063",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an intricate, still visualization of butterfly wing patterns through overlapping concentric rings. Each ring is rendered with vibrant, saturated colors that shift suddenly and asymmetrically across the canvas, mimicking the way light interacts with microscopic structures on butterfly wings. The rings are drawn with sharp, irregular boundaries that create a complex geometric landscape of contrasting bands. The color transitions occur in discrete steps over time, producing a mesmerizing effect where the patterns appear to subtly evolve while maintaining their overall stillness\u2014a visual representation of magnified natural phenomena frozen in time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.221
+}
