@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca flock of paper airplanes following the cursor like starlings Revise\u2026\u201d \u2014 sketchgen entry 2077, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2077/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, dark space populated by a constantly shifting swarm of glowing bacterial cultures. These luminous, angular shapes are observed to drift and explore the area, following the slow, meandering search patterns of a slime mould. The collective movement is highly decentralized and erratic, allowing large, visible gaps to form between individual glowing planes. The movement is ceaseless and organic, creating an ethereal, biological dance that suggests slow exploration through the deep.",
+  "completion_tokens": 1398,
+  "created_utc": "2026-10-12T10:22:30Z",
+  "entry_id": 2077,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1398,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 171,
+        "sha256": "bbc74830b55704e65f7853f6fa10bb1658e1ffac197de0b50fa102d05a0a647e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3797,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.099,
+      "wall_s": 124.343
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2092,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the erratic, ephemeral path of individual planes taken into a swarm of glowing bacterial cultures, guided by the slow, exploratory search pattern of a slime mould.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 1708,
+    "root_entry_id": 1468
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a flock of paper airplanes following the cursor like starlings\n\nRevise: the same swarm of small, angular shapes representing paper airplanes, and this time decrease the flock's cohesion to allow for wider, more visible gaps between individual planes.\n\nRevise: the same swarm of small, angular shapes resembling paper airplanes, and this time give each individual plane a more randomized and erratic trajectory, making the collective movement less directional.\n\nRevise: depart: the erratic, ephemeral path of individual planes taken into a swarm of glowing bacterial cultures, guided by the slow, exploratory search pattern of a slime mould.",
+  "prompt_tokens": 3797,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2077/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2077",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of a deep space environment populated by a swarm of glowing bacterial cultures that move in the organic, exploratory patterns characteristic of slime mould. The cultures are represented as angular, luminous shapes that drift through the darkness with a decentralized motion system. Each culture follows flocking behaviors\u2014separation, alignment, and cohesion\u2014while also incorporating noise-based erratic movements to simulate the slow, meandering search patterns of biological systems. The result is an ethereal dance across the canvas where large gaps naturally form between groups, creating an impression of vastness and organic flow. The dark background emphasizes the glowing forms, while the continuous motion suggests a living ecosystem in constant exploration of its environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.343
+}
