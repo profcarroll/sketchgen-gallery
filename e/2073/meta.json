@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 2073, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2073/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a microscopic view of crystallization. Small, intensely colored particles, representing water molecules, drift slowly across the space. These particles are constantly drawn to each other, seeking stable configurations. They connect and solidify into intricate, ordered lattice structures. The formation is a gradual, mesmerizing process where stable patterns emerge. The visual focus is on the principle of triple confluence: the specific points where three distinct groups of colors meet simultaneously to establish the geometric bonds that build the crystal lattice. The entire structure evolves constantly, growing and shifting over time in a continuous, spontaneous dance of molecular attraction.",
+  "completion_tokens": 5159,
+  "created_utc": "2026-10-12T09:54:36Z",
+  "entry_id": 2073,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1347,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 69)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 109)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 125)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 129,
+        "sha256": "63abf8e2cc5609631aac384c3577fa8f857f588c75d0bdee893ca28c67e34748",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.7,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3628,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.466,
+      "wall_s": 115.154
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1903,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 185)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 160,
+        "sha256": "4e198fa2ec7b3f6fe0c380bd4846c9e1712115a9319a818a045df5fd49ef7caa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4136,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.482,
+      "wall_s": 167.969
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1909,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 186)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 220,
+        "sha256": "828603458b66fe9a84ea430b7a0a6b33dda1260a788a60cfd1a52cac3cf7dc10",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4575,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.92,
+      "wall_s": 182.254
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2088,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the principle of triple confluence, visualized as the spontaneous, slow formation of crystalline lattices, made of water molecules, seen at a single grain of sand",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1681,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.\n\nRevise: the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.\n\nRevise: depart: the principle of triple confluence, visualized as the spontaneous, slow formation of crystalline lattices, made of water molecules, seen at a single grain of sand",
+  "prompt_tokens": 12339,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2073/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2073",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the crystallization process at a microscopic scale, where water molecule particles drift slowly and form stable lattice structures. The visualization emphasizes the \"triple confluence\" principle\u2014points where three distinct color groups meet to create geometric bonds that build crystal lattices. Particles attract each other within a certain distance, forming connections that gradually organize into ordered patterns. The constantly evolving structure shows how molecular attractions lead to spontaneous geometric organization. Color variations represent different molecular states or types, and their interactions illustrate the dynamic process of solidification through continuous attraction and stabilization.",
+  "submitted_by": "profcarroll",
+  "wall_s": 465.377
+}
