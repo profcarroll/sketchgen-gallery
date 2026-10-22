@@ -1,0 +1,137 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdandelion seeds that plant a new flower wherever they land Revise: fl\u2026\u201d \u2014 sketchgen entry 2047, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2047/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a deep void filled with thousands of minuscule metallic particles, suspended in a state of graceful, Brownian motion. These particles drift randomly until the viewer clicks anywhere on the screen. Upon clicking, the scattered particles suddenly accelerate and rapidly organize themselves, snapping into rigid, complex, and massive geometric structures. These formations appear to be rendered in highly polished, brutalist polished steel, giving the viewer the illusion of observing colossal architecture under extreme magnification.",
+  "completion_tokens": 2272,
+  "created_utc": "2026-10-12T06:47:08Z",
+  "entry_id": 2047,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1141,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 411.8 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 172,
+        "sha256": "b507ca4a2e9513f12aed4608b2d79319d34bafad884397be3774d352360d2354",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 411.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3889,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 26.143,
+      "wall_s": 108.194
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1131,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "df5025913d2612c7b97d482b248fd7affe14100dcbb82e2ea7d8d1f2f410f3e7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 47.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3773,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 22.025,
+      "wall_s": 103.967
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2061,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a line of tiny metallic particles, suspended in a void, that drift until a click causes them to rapidly assemble into complex, geometric, brutalist structures made of polished steel, seen under extreme magnification.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1490,
+    "root_entry_id": 1490
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dandelion seeds that plant a new flower wherever they land\n\nRevise: flip: a line of tiny metallic particles, suspended in a void, that drift until a click causes them to rapidly assemble into complex, geometric, brutalist structures made of polished steel, seen under extreme magnification.",
+  "prompt_tokens": 7662,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2047/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2047",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cosmic void populated by thousands of tiny metallic particles that drift in graceful Brownian motion. When clicked, the particles suddenly organize into rigid geometric structures, revealing an architectural form under extreme magnification. The visualization uses WebGL for efficient rendering of particle systems and employs lighting techniques to simulate polished steel surfaces. The transition from chaotic dispersion to ordered formation captures the essence of sudden structural emergence, creating a compelling illusion of observing colossal architecture at microscopic scale.",
+  "submitted_by": "profcarroll",
+  "wall_s": 212.161
+}
