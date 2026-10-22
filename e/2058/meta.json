@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cseismic activity Revise: the same interconnected, fluid waves that pu\u2026\u201d \u2014 sketchgen entry 2058, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2058/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows deep, oscillating plumes of gas and smoke rising from an unseen subsurface source. These translucent wisps drift across a field characterized by varying gradients of deep indigo and sapphire blue. The smoke appears connected, forming fluid, slow-moving waves that ebb and pulse across the plane. The entire system is governed by invisible underground pressure, causing the smoke plumes to glow with a faint, phosphorescent white light as they expand and overlap. There is no user input required; the subsurface activity maintains the constant, deep, rhythmic movement of the expanding gas.",
+  "completion_tokens": 779,
+  "created_utc": "2026-10-12T07:58:48Z",
+  "entry_id": 2058,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 779,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "b271bfd02cc080b2567006b7c6fc494f8569e73312466a3b9598ff4fe743a1c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3222,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.102,
+      "wall_s": 68.562
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2072,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the deep, oscillating pressure of gas expanding underground, forming visible, slow-moving wisps of phosphorescent smoke, knitted wool.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1543,
+    "root_entry_id": 1382
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "seismic activity\n\nRevise: the same interconnected, fluid waves that pulse across the surface, and this time the field must maintain a clearer gradient into deep blues.\n\nRevise: depart: the deep, oscillating pressure of gas expanding underground, forming visible, slow-moving wisps of phosphorescent smoke, knitted wool.",
+  "prompt_tokens": 3222,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2058/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2058",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts deep, oscillating plumes of gas and smoke rising from an unseen subsurface source, rendered as a field of glowing particles that pulse and drift across a gradient background. The visual effect is achieved through a particle system in WEBGL mode, where each particle has its own vertical oscillation, horizontal drift, and pulsing size to simulate the slow movement of expanding gas. The color palette shifts from deep indigo to sapphire blue with phosphorescent white highlights that give the impression of glowing smoke, while the constant motion creates a rhythmic, hypnotic quality as the plumes ebb and flow across the canvas without any user input required.",
+  "submitted_by": "profcarroll",
+  "wall_s": 68.562
+}
