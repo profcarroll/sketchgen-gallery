@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca kite on a string you fly with the mouse through gusty wind Revise:\u2026\u201d \u2014 sketchgen entry 2049, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2049/ Licensed CC BY 4.0.",
+  "brief": "A brightly defined kite structure is tethered by a thin, luminous line, serving as the guiding axis through a fluid medium. The scene depicts liquid mercury at a microscopic scale, appearing as complex, swirling currents and rivulets across the canvas. The background mercury constantly flows and shifts, creating an atmosphere of dynamic movement. When the viewer drags the mouse, the kite responds to the input, being pulled and guided by the cursor, allowing it to dance and interact with the natural, continuous flow of the mercury surrounding it.",
+  "completion_tokens": 1335,
+  "created_utc": "2026-10-12T06:57:37Z",
+  "entry_id": 2049,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1335,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "5619b5a4f7dbc54c1e84e7312d8d02961b3e6c4ebd6168916eb7860a1fb6f873",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3355,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.658,
+      "wall_s": 108.644
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2063,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the guiding principle of an invisible string and hand-control taken into the directional flow of liquid mercury, seen at the scale of a single grain of sand.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": true,
+    "parent_entry_id": 1493,
+    "root_entry_id": 1493
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a kite on a string you fly with the mouse through gusty wind\n\nRevise: depart: the guiding principle of an invisible string and hand-control taken into the directional flow of liquid mercury, seen at the scale of a single grain of sand.",
+  "prompt_tokens": 3355,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2049/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2049",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a microscopic world of liquid mercury flowing in an endless, swirling current. A bright kite structure floats within this fluid medium, tethered by a thin, luminous line that traces its path through the liquid. The kite's movement is guided by the viewer's mouse when clicked, allowing it to dance and interact with the continuous flow of the surrounding mercury. The scene captures the delicate interplay between controlled motion and natural fluid dynamics, where the kite becomes a point of connection between human intention and the organic flow of the environment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 108.644
+}
