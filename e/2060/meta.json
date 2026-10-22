@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca street musician's open case slowly filling with coins as people pas\u2026\u201d \u2014 sketchgen entry 2060, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2060/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a surface of damp newsprint, overlaid with sepia-toned watercolor ink. The colors are muted and earthy, creating shades of brown and ochre. Shapes and masses of pigment continuously spread across the fibers of the paper, forming chaotic, uneven pools and washes. This material buildup moves organically, as if liquid ink is slowly seeping and reacting with the damp surface, creating delicate, blurred edges and dense, accumulating patches that shift and deepen over time.",
+  "completion_tokens": 978,
+  "created_utc": "2026-10-12T08:12:44Z",
+  "entry_id": 2060,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 978,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "344d8a02a1f88ff8cb9bbde5c8c560c52a0c8a61b976ab2256c85b5e8282e413",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3438,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.428,
+      "wall_s": 86.58
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2074,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Chaotic material buildup given to sepia-toned watercolor inks spreading across damp newsprint.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1599,
+    "root_entry_id": 1463
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a street musician's open case slowly filling with coins as people pass\n\nRevise: the same wooden open case, and this time the coins should accumulate into a more densely packed, uneven pile at the bottom.\n\nRevise: carry: Chaotic material buildup given to sepia-toned watercolor inks spreading across damp newsprint.",
+  "prompt_tokens": 3438,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2060/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2060",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the organic spread of sepia-toned watercolor ink on damp newsprint. Using a particle system with thousands of individually animated elements, it creates a chaotic yet fluid motion that mimics how ink seeps and spreads across porous paper. The muted earth tones\u2014ranging from deep browns to warm ochres\u2014emerge and blend organically as particles move, cohere slightly, and gradually fade into the background texture. Each particle behaves according to simple physics rules, moving with subtle randomness while slowly spreading and blending, creating an ever-shifting field of pigment that captures both the delicate delicacy and the accumulative nature of watercolor on damp paper.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.58
+}
