@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cfresh snowfall slowly filling in a trail of footprints Revise: flip:\u2026\u201d \u2014 sketchgen entry 2046, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2046/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a turbulent, highly textural field of white and pale blue forms, rendered to resemble coarse knitted wool. The scene captures the chaotic aftermath of a sudden, violent wind tearing through snow. Sharp, crystalline spray explodes across the frame, shattering into fine, unpredictably directed particles. These particles constantly interact, colliding and reforming in dense, volatile bursts. The overall movement is energetic, visceral, and self-contained, appearing as a constantly shifting, unstable curtain of frozen energy and fabric texture.",
+  "completion_tokens": 1835,
+  "created_utc": "2026-10-12T06:39:33Z",
+  "entry_id": 2046,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 980,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 310.6 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 104,
+        "sha256": "0f1f36f71a9487b0e914e77ba3ac26742b2398b81c21fb490cbc9d82a83bcd38",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 310.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3441,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.924,
+      "wall_s": 85.98
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 855,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 103,
+        "sha256": "9ae3094f10d34f0dc72d38eb913d398bb53746c687e64e4a2b21e412077708ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3670,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.202,
+      "wall_s": 83.068
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2060,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch of the moment a sudden, violent wind tears across the snow, whipping up sharp, unpredictable spray of ice crystals that shatter and reform against each other, rendered in the tactile appearance of knitted wool.",
+    "critique_by": "gemma4:e4b",
+    "generation": 1,
+    "inherits_source": false,
+    "parent_entry_id": 1487,
+    "root_entry_id": 1487
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "fresh snowfall slowly filling in a trail of footprints\n\nRevise: flip: a sketch of the moment a sudden, violent wind tears across the snow, whipping up sharp, unpredictable spray of ice crystals that shatter and reform against each other, rendered in the tactile appearance of knitted wool.",
+  "prompt_tokens": 7111,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2046/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2046",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a turbulent, textural field resembling coarse knitted wool disturbed by sudden wind. It captures the chaotic motion of frozen particles exploding and reforming in dense bursts. Using WebGL's batched point rendering, thousands of particles move with randomized trajectories influenced by simulated wind forces and turbulence. The visual texture emerges from a palette of pale blues and whites, creating an unstable curtain of frozen energy that continuously shifts and evolves. The viewer observes an energetic, self-contained scene of violent yet beautiful natural motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 169.048
+}
