@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2286, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2286/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a sprawling, monumental celestial mechanism composed of colossal, interlocking gears and rusted steel components. These structures are viewed through the delicate, open framework of an antique loom. Massive gears engage and disengage in slow, inexorable synchronization, creating complex, repeating geometric patterns. The movement is ceaseless and cyclical, demonstrating the slow, inevitable renewal inherent in the colossal machine. The palette focuses on the oxidized tones of rust, aged copper, and deep steel grey. There is no user input required; the art exists purely as an observable, rhythmic process.",
+  "completion_tokens": 2686,
+  "created_utc": "2026-10-16T00:56:40Z",
+  "entry_id": 2286,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1347,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `frameCount` hides p5's `frameCount`; rename it (sketch.js line 3)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 28)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 43)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 121)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 153,
+        "sha256": "a8b3d34ee53e8a1c9ca528d68f12071c3ae6596fc80f576d38452fa82d455c8e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4097,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.627,
+      "wall_s": 143.322
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1339,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 153,
+        "sha256": "22c96a74742887a62c846d0ae4388edf41fd1b327c385afe567cf6db3ca714aa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4186,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.219,
+      "wall_s": 126.384
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2304,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of perpetual seasonal renewal taken into the complex mechanical structure of a gigantic observatory telescope array, era: a 1960s pen plotter drawing",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2245,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.\n\nRevise: carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.\n\nRevise: depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.\n\nRevise: depart: the concept of perpetual seasonal renewal taken into the complex mechanical structure of a gigantic observatory telescope array, era: a 1960s pen plotter drawing",
+  "prompt_tokens": 8283,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2286/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2286",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a vast celestial mechanism composed of colossal interlocking gears suspended within an antique loom's open framework. The gears, rendered in oxidized hues of rust and steel, engage in slow, rhythmic synchronization that creates complex geometric patterns across the canvas. Through the delicate mesh of the loom, viewers witness the ceaseless, cyclical motion of these monumental components \u2014 a visual metaphor for inevitable renewal. The scene unfolds without user input, demonstrating the inherent rhythm of the cosmic machine through carefully choreographed gear rotations and geometric connections that pulse with mechanical grace.",
+  "submitted_by": "profcarroll",
+  "wall_s": 269.706
+}
