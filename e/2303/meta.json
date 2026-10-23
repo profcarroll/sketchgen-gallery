@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ciron filings arranging themselves around your cursor like a magnet Re\u2026\u201d \u2014 sketchgen entry 2303, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2303/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, damp surface covered in fine, metallic filings that are constantly shifting and subtly settling. A gentle, continuous motion causes the dust to creep and reform into hazy, undefined clouds. When a viewer interacts by dragging the cursor across the canvas, the filings appear to react instantly, congregating and aligning themselves as if pulled by a magnetic force. As the cursor moves, it draws dense, swirling trails, creating visible, temporary patterns of clustered metal suspended over the surface.",
+  "completion_tokens": 870,
+  "created_utc": "2026-10-22T04:34:19Z",
+  "entry_id": 2303,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 870,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 86,
+        "sha256": "cbefb7d34fd6f35060dd15d7186ac35f2ed09f8a9b3b42896feb9f05305d1874",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3369,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.331,
+      "wall_s": 77.73
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2321,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Cluster-dispersing trails given to bacterial spores expanding across wet newsprint, seen at microscopic scale, driven by enzyme release.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2051,
+    "root_entry_id": 1501
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "iron filings arranging themselves around your cursor like a magnet\n\nRevise: depart: the gradual spread of scented oils across a sheet of wet rice paper, taken into the form of patterns dyed onto knitted wool.\n\nRevise: carry: Cluster-dispersing trails given to bacterial spores expanding across wet newsprint, seen at microscopic scale, driven by enzyme release.",
+  "prompt_tokens": 3369,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2303/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2303",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the microscopic behavior of bacterial spores spreading across wet newsprint, driven by enzyme release. The canvas displays a vast, damp surface covered in fine metallic particles that continuously shift and reform into hazy, undefined patterns. A gentle, noise-based motion causes the particles to creep and settle, while user interaction with the cursor creates immediate magnetic reactions \u2014 particles cluster and align as if pulled by invisible forces. As the cursor moves, it draws dense, swirling trails of clustered metal that temporarily reshape the surface, creating visible patterns that reflect the dynamic interplay between random motion and directed influence. The visual effect captures both the subtle organic flow of biological processes and the immediate responsiveness to external input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 77.73
+}
