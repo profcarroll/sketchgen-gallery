@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca crowd of umbrellas opening one by one as the rain starts Revise: th\u2026\u201d \u2014 sketchgen entry 2311, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2311/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts a close-up view of intricate, glowing circuits on a simulated display panel, recalling the style of a 1980s arcade cabinet. Sharp, rhythmic geometric flashes of neon and primary colors pulse dynamically along the etched pathways. The color fills and shifts continuously, creating the impression of stored, energized light pulsing through the circuits. The primary movement is the constant, repeating pulsing and flashing of color, which cycles without any need for interaction.",
+  "completion_tokens": 1036,
+  "created_utc": "2026-10-22T05:29:38Z",
+  "entry_id": 2311,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1036,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 88,
+        "sha256": "ee0d053506527b7dfd126a2bcf262a4e3fc39334d1689db8d23afe36b2edd1e3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3454,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.15,
+      "wall_s": 90.405
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2329,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: sharp, rhythmic geometric flashes of color pulsing through intricate circuits, made of glowing plastic, seen at the scale of a display panel, in a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2064,
+    "root_entry_id": 1497
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a crowd of umbrellas opening one by one as the rain starts\n\nRevise: the same moody street scene of opened umbrellas swaying in the rain, and this time the puddles on the ground reflect the colored domes of the umbrellas.\n\nRevise: depart: The saturated, buoyant colors of opening umbrellas taken into slow-drifting silk ribbons weaving through a deep, foggy forest, rendered in raw silk.\n\nRevise: flip: sharp, rhythmic geometric flashes of color pulsing through intricate circuits, made of glowing plastic, seen at the scale of a display panel, in a 1980s arcade cabinet.",
+  "prompt_tokens": 3454,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2311/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2311",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a nostalgic 1980s arcade cabinet display panel with intricate glowing circuits. The work features rhythmic geometric flashes of neon colors pulsing through circuit paths that move gently across the screen. Using only basic p5.js drawing functions, it simulates the look of glowing plastic etched pathways on a dark background, with sharp color pulses and subtle movement that evoke the energetic feel of retro arcade electronics. The visual effect is achieved through carefully modulated stroke weights, pulsing alpha values, and strategic flash effects that create the impression of stored energy flowing through the circuits.",
+  "submitted_by": "profcarroll",
+  "wall_s": 90.405
+}
