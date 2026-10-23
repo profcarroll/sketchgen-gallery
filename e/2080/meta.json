@@ -1,0 +1,181 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "responds(drag)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmacaroni and cheese Revise: the same abstract clusters of creamy yell\u2026\u201d \u2014 sketchgen entry 2080, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2080/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, multi-layered clusters of forms that evoke the deep-sea mineral vents. These structures are composed of numerous interlocking, curved bands that create a sense of geological cross-section and immense depth. The geometry is rich, featuring varying degrees of overlap and structural separation, suggesting a slow, subterranean growth process. The viewer can interact with the formation using a drag action, causing the intricate network to respond by subtly stretching, shifting, or rearranging the overlapping bands, thereby revealing new geometric patterns within the mineral matrix.",
+  "completion_tokens": 5051,
+  "created_utc": "2026-10-12T10:54:47Z",
+  "entry_id": 2080,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1583,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 113)\n\ngate exit 1: assertions failed: responds(drag)\n\nAssertions that failed:\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 159,
+        "sha256": "7a88bb6f3762507e6a332a634f6149b1fe0e1700f836b1a52679bd243a936d59",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4010,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.8,
+      "wall_s": 142.101
+    },
+    {
+      "assertions": {},
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1728,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 132)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 315.7 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "previous",
+        "lines": 164,
+        "sha256": "729bf78143cc6f043836c1affdface7912d3abc05623050fff7018c4a29b7ade",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 315.7,
+      "num_ctx": 16384,
+      "preload_s": 0.052,
+      "prompt_tokens": 4165,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 13.14,
+      "wall_s": 156.777
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1740,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 132)\n\ngate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 187.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.0295/255, 120187 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 191,
+        "sha256": "18c3018a29825d9ddf91e1dde087ab04b9323951f818febf724aa4a261b0b7b8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 187.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4403,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 75.535,
+      "wall_s": 163.137
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2095,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Layered geometry given to cross-sectioned segments of deep-sea vent mineral formations, made of rubber bands.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1722,
+    "root_entry_id": 1381
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "macaroni and cheese\n\nRevise: the same abstract clusters of creamy yellow-orange sauce and smooth, curved macaroni shapes, and this time the macaroni pieces incorporate more varying sizes and interlocking structures.\n\nRevise: the same abstract, interlocking clusters of creamy yellow-orange pigment, and this time the curves and overlapping edges of the macaroni pieces are more sharply defined and structurally varied.\n\nRevise: the same abstract clusters of rich, creamy yellow-orange pigment, and this time the sharply curved forms should have more defined edges and structural separation.\n\nRevise: carry: Layered geometry given to cross-sectioned segments of deep-sea vent mineral formations, made of rubber bands.",
+  "prompt_tokens": 12578,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2080/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2080",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a deep-sea mineral formation composed of layered, interconnected geometric forms that evoke the complexity and depth of hydrothermal vents. The work consists of numerous interlocking clusters\u2014each containing curved bands and structural elements\u2014that appear to grow from the ocean floor. Using WebGL rendering, it creates a three-dimensional space where viewers can orbit around the scene, discovering the intricate cross-sections of each cluster. The visual design draws upon geological patterns, with organic shapes punctuated by sharp edges and subtle highlights that suggest mineral deposits. When the viewer drags across the canvas, the clusters subtly rearrange their positions, revealing new geometric relationships within the network of overlapping forms. This interaction allows for a dynamic exploration of the formation's internal structure, inviting contemplation on the slow, subterranean processes that create such natural wonders.",
+  "submitted_by": "profcarroll",
+  "wall_s": 462.015
+}
