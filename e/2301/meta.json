@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca kite on a string you fly with the mouse through gusty wind Revise:\u2026\u201d \u2014 sketchgen entry 2301, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2301/ Licensed CC BY 4.0.",
+  "brief": "The canvas shows a deep, shifting aquatic environment, colored in luminous blues, greens, and violets, giving the impression of a sonar scan through ancient water. The scene is defined by currents and subtle fault lines that undulate constantly. When the viewer drags the cursor across the canvas, a visible, glowing tether extends from the mouse, attaching to a stylized, floating kite shape. The kite's movement is guided by the hand, resisting the visible pull of the invisible line. The tension of this connection dynamically alters the surrounding currents, showing the viewer the relationship between the guiding force and the chaotic, flowing background.",
+  "completion_tokens": 1781,
+  "created_utc": "2026-10-22T04:20:03Z",
+  "entry_id": 2301,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1781,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 187,
+        "sha256": "cd8e4e826c0bc439ca4e643117be63a825e492eea9d0f6599e90e1a860111091",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3903,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.631,
+      "wall_s": 156.271
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2319,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the luminous tension of an unseen tether taken into the fault lines of a submerged, petrified forest, seen from a deep-sea sonar ping.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2049,
+    "root_entry_id": 1493
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a kite on a string you fly with the mouse through gusty wind\n\nRevise: depart: the guiding principle of an invisible string and hand-control taken into the directional flow of liquid mercury, seen at the scale of a single grain of sand.\n\nRevise: depart: the luminous tension of an unseen tether taken into the fault lines of a submerged, petrified forest, seen from a deep-sea sonar ping.",
+  "prompt_tokens": 3903,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2301/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2301",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive underwater environment that evokes the feeling of a sonar scan through an ancient, petrified forest. The scene features thousands of luminous particles moving in fluid currents, punctuated by subtle fault lines that undulate across the canvas. When a viewer drags their cursor, a glowing tether extends from the mouse position, attaching to a stylized kite shape. The kite's movement resists the pull of this invisible line, causing dynamic tension that alters the surrounding currents. The color palette shifts between deep blues, greens, and violets to emphasize the aquatic depth, while the fault lines create a sense of geological history beneath the surface. The interaction reveals how a guiding force can influence chaotic, flowing systems, showing the relationship between controlled movement and natural fluid dynamics in this submerged landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 156.271
+}
