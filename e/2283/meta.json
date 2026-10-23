@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 2283, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2283/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a gargantuan, unsettling mechanical heart. The structure is an elaborate fusion of colossal clockwork mechanisms and decaying biological organs, built from oxidized brass and obsidian-like, semi-viscous tissue. Dominant colors include deep metallic grays, oily blacks, and muted, decaying reds. The overall movement is one of perpetual dissolution; interlocking gears and pistons are constantly seen to melt and reform, mimicking the exploratory, random patterns of a slime mold. The composition maintains a slow, rhythmic decay, but any lateral dragging of the mouse acts as a disruptive force, causing localized sections of the mechanism to violently ripple, accelerate the decay, and shatter before resuming their languid, organic dissolution.",
+  "completion_tokens": 1708,
+  "created_utc": "2026-10-16T00:24:37Z",
+  "entry_id": 2283,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1708,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 134,
+        "sha256": "a528f178e66238479bf1e6a5c6d949616cb2459fb906259ff979d0d84fa1bbf0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 40.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3790,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 21.244,
+      "wall_s": 154.986
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2301,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of failing structured symmetry taken into the design of colossal, interlocking clockwork mechanisms, modeled as decaying biological organs, slime mould searching.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2242,
+    "root_entry_id": 1448
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster\n\nRevise: revise with increase contrast between elements to practice what the poster preaches\n\nRevise: publish failed: /home/ubuntu/sketchgen/gallery has uncommitted changes; commit or clean it before publishing\n\nRevise: flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.\n\nRevise: depart: the dissolution of crystalline molecular bonds into fluid waves, depicted as a macro-view of a failing superconductor, made of polished obsidian, seen at a micro scale, in a 1980s arcade cabinet\n\nRevise: depart: the idea of failing structured symmetry taken into the design of colossal, interlocking clockwork mechanisms, modeled as decaying biological organs, slime mould searching.",
+  "prompt_tokens": 3790,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2283/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2283",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a mechanical heart composed of interlocking clockwork mechanisms and decaying biological tissue. The composition features rotating gears with detailed teeth and organic blob-like structures that slowly dissolve and reform over time. The viewer observes a perpetual process of decay and regeneration, where metallic brass components gradually melt into viscous red tissue, mimicking the exploratory movements of slime mold. A subtle mouse drag disrupts this rhythm by causing localized sections to accelerate their decay, creating violent ripples across the mechanical organ before it resumes its languid dissolution. The piece explores themes of decay, transformation, and the fusion of inorganic and organic systems through a slow, hypnotic visual process that maintains a sense of both order and chaos.",
+  "submitted_by": "profcarroll",
+  "wall_s": 154.986
+}
