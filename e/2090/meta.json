@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 2090, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2090/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, subterranean landscape modeled by crystalline and biological structures. The environment constantly shifts and evolves, revealing complex, overgrown passages that glow with transient, internal light. These forms, which mimic the texture and slow movement of slime mould, appear to crawl and shift across the simulated space. The viewer observes this continuous, organic exploration of depth and structure, experiencing the passage of time within this otherworldly, luminous subterranean map, which remains fluid regardless of any interaction.",
+  "completion_tokens": 939,
+  "created_utc": "2026-10-12T12:00:54Z",
+  "entry_id": 2090,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 939,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 61,
+        "sha256": "5d9d31c6953731115280ccdae51e00179020837691b3717114f95fc98cbc8c66",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3187,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.028,
+      "wall_s": 78.748
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2105,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The idea of transiently illuminated, complex surfaces taken into a subterranean map of crystal formations, revealing structures overgrown and searching, made of slime mould",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1799,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.\n\nRevise: the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.\n\nRevise: the same rhythmic, pulsing glow emanating from a distant source, and this time the flashes should momentarily pause between bursts.\n\nRevise: the same cyclical pattern of light and shadow, and this time incorporate the visible texture of the desert landscape into the dark field.\n\nRevise: depart: The idea of transiently illuminated, complex surfaces taken into a subterranean map of crystal formations, revealing structures overgrown and searching, made of slime mould",
+  "prompt_tokens": 3187,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2090/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2090",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving subterranean landscape where crystalline and biological structures merge into organic forms that appear to crawl and shift through space. The environment features thousands of glowing particles that move in slow, undulating patterns, mimicking the behavior of slime mould while maintaining the geometric qualities of crystal formations. Through constant animation and shifting light effects, viewers experience an ever-changing map of interconnected passages that pulse with internal illumination, creating a sense of continuous exploration and growth within an alien underground realm. The WEBGL renderer allows for complex 3D interactions and depth perception that enhances the feeling of being immersed in this luminous, organic space.",
+  "submitted_by": "profcarroll",
+  "wall_s": 78.748
+}
