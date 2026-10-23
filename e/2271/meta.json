@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201carchitectural blueprint Revise: depart: The internal branching struct\u2026\u201d \u2014 sketchgen entry 2271, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2271/ Licensed CC BY 4.0.",
+  "brief": "A complex 3D wireframe of a massive, branching root system in glowing cyan drifts through a dark subterranean space. The cyan veins pulse with a slow, organic rhythm. A jagged, dark crack spreads across the canvas, fracturing the view of the root structure. Clicking the canvas triggers the crack to splinter aggressively and the wires to vibrate.",
+  "completion_tokens": 1554,
+  "created_utc": "2026-10-15T22:25:08Z",
+  "entry_id": 2271,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1554,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 194,
+        "sha256": "b7386d490715e6c2e0468a2dcad279f111f2d7750406f6f8f161ab342a0fc78d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4018,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 11.814,
+      "wall_s": 152.067
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2288,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: A fragile crystalline lattice structure constantly assembling and dissolving in a void of deep blue, forming and breaking like a sequence of vibrating rubber bands, material: rubber bands",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2222,
+    "root_entry_id": 2011
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "architectural blueprint\n\nRevise: depart: The internal branching structure of a massive root system, rendered as a complex 3D cyan wireframe tracing subterranean veins, seen through the mechanism of a crack spreading.\n\nRevise: depart: A fragile crystalline lattice structure constantly assembling and dissolving in a void of deep blue, forming and breaking like a sequence of vibrating rubber bands, material: rubber bands",
+  "prompt_tokens": 4018,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2271/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2271",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast underground root system glowing with cyan light, suspended in darkness. The branching network pulses organically as if breathing, while a jagged crack spreads across the canvas, fracturing the view. When clicked, the crack splinters aggressively and the entire wireframe structure vibrates with energy. The work uses p5.js's WEBGL mode to create a sense of depth and scale in an environment that feels both alien and familiar \u2013 like the interior of a massive cavern or the root system of some enormous subterranean organism. The visual rhythm of growth and fracture creates tension between organic life and geological disruption.",
+  "submitted_by": "profcarroll",
+  "wall_s": 152.067
+}
