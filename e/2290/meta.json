@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cmodel a still life in 3D, no sound, no motion, no interaction. There\u2026\u201d \u2014 sketchgen entry 2290, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2290/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a large, highly detailed diagram representing the geological strata of the Earth. Horizontal bands of color illustrate various mineral deposits, rendered with the precise, technical linework characteristic of a vintage pen plotter drawing. The entire composition is presented as a scientific diagram, evoking the aesthetic of mid-century earth science. The viewer observes the distinct layering and varying geological colors across the diagram, which remains entirely fixed and static throughout the viewing experience.",
+  "completion_tokens": 2810,
+  "created_utc": "2026-10-16T01:31:34Z",
+  "entry_id": 2290,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1404,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 99)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 108)\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 119)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 121 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the gradual record of deep geologic time taken into a spectacular, constantly shifting waterfall made of stained glass and neon light, viewed through a pane of glass inside a 1980s arcade cabinet.\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 151,
+        "sha256": "7b789a88b881409a1750c915e82cac4626295bee73eed9babfa1d01556bedde7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3914,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.542,
+      "wall_s": 123.573
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1406,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 151,
+        "sha256": "7b789a88b881409a1750c915e82cac4626295bee73eed9babfa1d01556bedde7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 4145,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.518,
+      "wall_s": 131.542
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2308,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the gradual record of deep geologic time taken into a spectacular, constantly shifting waterfall made of stained glass and neon light, viewed through a pane of glass inside a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2250,
+    "root_entry_id": 81
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "model a still life in 3D, no sound, no motion, no interaction. There is a small dark room with a brown table. On the table is a clear jug of water, a silver set of candle sticks. Only one candle is lit. There is a platter of fruit next to the candles. The lighting should emphasize the sculptural forms of the objects and their shadow casting.\n\nRevise: try to recreate the original prompt more faithfully to the details in the description\n\nRevise: the same atmospheric still life on the brown table, and this time arrange the colored fruit on the platter in a more tightly clustered and geometrically balanced manner.\n\nRevise: depart the interplay of light and shadow revealing internal structure taken into a colossal abandoned ventilation system, mechanism: a pendulum\n\nRevise: depart: A cross-section of complex metal piping taken into an arrangement of iridescent root systems, rendered as a labeled, colored diagram on a Victorian botanical plate.\n\nRevise: depart: the carefully composed arrangement of distinct objects taken into a geological cross-section diagram showing strata of mineral deposits, rendered as a pen plotter drawing, seen at a planetary scale, in the 1960s.\n\nRevise: depart: the horizontal stratification of mineral layers taken into the form of a forgotten handwritten diary, made of wet ink on newsprint, seen at a personal scale in the 1920s.\n\nRevise: depart: the gradual record of deep geologic time taken into a spectacular, constantly shifting waterfall made of stained glass and neon light, viewed through a pane of glass inside a 1980s arcade cabinet.",
+  "prompt_tokens": 8059,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2290/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2290",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static geological cross-section diagram rendered in the aesthetic of mid-century scientific illustration. The composition features horizontal strata layers in various mineral tones\u2014browns, grays, reds, blues, and yellows\u2014evoking the appearance of a vintage pen plotter drawing. Each layer contains subtle textural patterns like stripes, dots, or waves to simulate geological formations and mineral variations. The piece captures the scientific precision and visual clarity typical of 1960s earth science publications, rendered on aged paper with handwritten annotations that add authenticity to the historical presentation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 255.115
+}
