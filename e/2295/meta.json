@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201climinal dreamscape architectures Revise: the same impossible architec\u2026\u201d \u2014 sketchgen entry 2295, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2295/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents monumental, impossible architectures where geometric planes warp and fracture under visible structural stress. These collapsing forms dissipate into clouds of particulate mist, giving way to intricate, self-similar crystalline shards. Color shifts across a spectrum of muted teal and luminescence, mapping the dynamic forces of decay and reformation. The structures are constantly under flux, exhibiting slow, gravity-defying hyperbolic curves and propagating stress fractures. The entire scene operates autonomously, detailing the continuous cycle of structural stress and spontaneous crystalline growth, observed without direct intervention.",
+  "completion_tokens": 6284,
+  "created_utc": "2026-10-16T02:21:29Z",
+  "entry_id": 2295,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2220,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 28)\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 29)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 174,
+        "sha256": "2ba8b0d2fa71a2a7f96ec31a0c840445926bfc355fc356eee066124ac7030502",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4221,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.902,
+      "wall_s": 194.499
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2038,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'length')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 251,
+        "sha256": "b0e96c1aad6627f286eede3623223b23a7200a4645125125dcd91b60fea86f0a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 4807,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.744,
+      "wall_s": 206.396
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2026,
+      "evidence": "gate exit 1: checks failed: console_clean; assertions failed: uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'length')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 226,
+        "sha256": "7b9b4b63ad5cc2f99f75cf4285aa6839c3dfeca3c3e8250882f58389baf717d5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4658,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.779,
+      "wall_s": 195.814
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2313,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of cumulative structural stress taken into the branching root systems of massive old-growth trees, seen at the macroscopic level, in a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "inherits_source": true,
+    "parent_entry_id": 2256,
+    "root_entry_id": 114
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "liminal dreamscape architectures\n\nRevise: the same impossible architectures, and this time fractured geometric planes reflecting muted teal light\n\nRevise: the same impossible architecture, and this time segments dissolving into particulate mist\n\nRevise: the same impossible architectures, and this time greater planar asymmetry causing visible structural stresses\n\nRevise: the same impossible architectures, and this time fractal self-similar geometries appearing across the fractured planes\n\nRevise: the same impossible architecture, and this time extreme shearing forces warping the planar surfaces into crystalline shards\n\nRevise: the same impossible architecture, and this time surfaces experiencing gravitational pull towards a central, undefined point\n\nRevise: the same impossible architectures, and this time the crystalline shards momentarily arrest their collapse, holding their structural integrity against the surrounding particulate mist\n\nRevise: the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.\n\nRevise: the same impossible, crystalline architectures, and this time extreme shearing forces warping the shards into gravity-defying, hyperbolic curves.\n\nRevise: carry: dynamic structural shedding given to the luminous, arterial network beneath pale skin, depicted on a medieval tapestry\n\nRevise: depart: the idea of latent structural tension taken into the interlocking, gear-driven clockwork mechanism of a subterranean automaton, small enough to hold in one hand.\n\nRevise: depart: the continuous cycle of structural stress and spontaneous reformation taken into the intricate, slow-motion growth patterns of crystalline deposits forming within a massive, bioluminescent deep-sea fan coral.\n\nRevise: depart: the accumulated idea of structural stress taken into the interlocking, microscopic warp and weft of ancient, heavily embroidered silk tapestries, made of woven silk, seen at the thread level, in a 1960s pen plotter drawing.\n\nRevise: depart: the idea of cumulative structural stress taken into the branching root systems of massive old-growth trees, seen at the macroscopic level, in a Victorian botanical plate.",
+  "prompt_tokens": 13686,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2295/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2295",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a forest of ancient, self-sustaining tree forms that embody the cyclical processes of structural stress and crystalline growth described in the brief. The trees are composed of trunk segments, root systems, and branching structures that respond dynamically to simulated forces, creating an organic architecture where geometric elements warp under visible stress. The work captures the moment when structural integrity begins to fracture\u2014branches break off, roots twist and extend, and the entire form dissolves into particulate mist. This process is not destruction but transformation: particles emerge from stress points, forming new crystalline structures that grow in harmony with the decayed framework. The muted teal and luminescent color palette shifts subtly across these transformations, mapping the dynamic forces of both destruction and reformation. Each tree exists in a constant state of flux, exhibiting gravity-defying hyperbolic curves as it ages and undergoes stress-induced morphological changes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 596.709
+}
