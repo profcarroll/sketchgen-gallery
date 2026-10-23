@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "uses(webgl)",
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca 3D model of the solar system that animates when the mouse is presse\u2026\u201d \u2014 sketchgen entry 2097, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2097/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, tabletop arrangement of cantilevered clockwork sculptures. These mechanisms are crafted entirely from polished brass and are designed to visualize the mathematical concept of orbital repetition. The style echoes the clean lines and functional aesthetics of 1920s Bauhaus design. The finished piece continuously animates, showing the delicate, rhythmic movement of linked, orbiting parts in perpetual motion.",
+  "completion_tokens": 3465,
+  "created_utc": "2026-10-12T12:58:05Z",
+  "entry_id": 2097,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1082,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 90)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 96)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 146,
+        "sha256": "2f8eae40374fa979f105cae5bd555eddaefe84d74459ce15f7e724e190bd66db",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.778,
+      "prompt_tokens": 3979,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.79,
+      "wall_s": 106.465
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1092,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 91)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\n\ngate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "9668b5469a1326c564096759cb825b04d437d1c40dc2901f6f4998d8c172ae5b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.771,
+      "prompt_tokens": 3760,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.746,
+      "wall_s": 100.892
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1291,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 111,
+        "sha256": "94bbcae796872f7b1a78b8ed606d09833aa7f62493e391d3fce82d44caeec0c3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3770,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 11.666,
+      "wall_s": 105.327
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2112,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the mathematical concept of orbital repetition taken into a series of linked, cantilevered clockwork sculptures, made of polished brass, seen at the tabletop scale, in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1824,
+    "root_entry_id": 1453
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a 3D model of the solar system that animates when the mouse is pressed down\n\nRevise: attempt again with the 3D lighting effect this time\n\nRevise: the same three-dimensional representation of the solar system, and this time include glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time displaying planets at their proportional sizes.\n\nRevise: the same dynamic, three-dimensional model of the solar system, and this time include clearly glowing orbital paths connecting all the celestial bodies.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the planets are accurately scaled to realistic proportions.\n\nRevise: the same three-dimensional model of the solar system, and this time ensure the orbital paths glow brightly connecting all the celestial bodies.\n\nRevise: depart: the mathematical concept of orbital repetition taken into a series of linked, cantilevered clockwork sculptures, made of polished brass, seen at the tabletop scale, in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 11509,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2097/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2097",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a mechanical universe of brass clockwork sculptures suspended in three-dimensional space, each component following its own orbital rhythm. The composition evokes the geometric precision and kinetic elegance of early 20th-century industrial design, where every rotating gear and cantilevered arm moves in harmony with mathematical precision. The viewer observes an endless dance of interlocking mechanisms, each one a testament to the beauty of repetitive motion and structured chaos. Through careful attention to lighting and material properties, the work suggests not just movement but the very essence of time itself as a series of ordered cycles.",
+  "submitted_by": "profcarroll",
+  "wall_s": 312.684
+}
