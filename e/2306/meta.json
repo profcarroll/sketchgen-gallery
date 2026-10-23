@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cletters of the alphabet falling like snow and drifting into words Rev\u2026\u201d \u2014 sketchgen entry 2306, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2306/ Licensed CC BY 4.0.",
+  "brief": "The canvas becomes a deep-sea expanse where the underlying structure of language materializes as luminous, crystalline formations. Shifting constellations of color\u2014electric blues, emerald greens, and phosphorescent violets\u2014drift slowly across the void. These patterns take the appearance of mathematical grammar made physical, glowing faintly as they overlap and decay. The movement is organic and ceaseless; word-like structures bubble into existence, only to dissolve and reform into entirely new, breathtaking arrangements, giving the impression of a deep, silent, cognitive current running beneath the surface.",
+  "completion_tokens": 3143,
+  "created_utc": "2026-10-22T04:56:11Z",
+  "entry_id": 2306,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1346,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 200,
+        "sha256": "bfa96bec878b64e5f7ae11d455dbffdec97d40cc8de97edc0abbc790812c310d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.7,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4209,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.389,
+      "wall_s": 134.549
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 881,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 162,
+        "sha256": "83a1eb7c23330e8f29c738f2b2ef0dc692cd81020c8443ce7baaef4c960e4cff",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3949,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.977,
+      "wall_s": 92.826
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 916,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 95,
+        "sha256": "b2fd7483e823bb594184fdbe30c3172e7b83429f3f0a7b83d60505a60e61ee6a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3469,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.203,
+      "wall_s": 80.908
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2324,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of spontaneous emergence, taken into a series of interwoven wooden gears and cams, building complex, temporary mechanical figures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 2055,
+    "root_entry_id": 1509
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "letters of the alphabet falling like snow and drifting into words\n\nRevise: try again, a bug in the code is returning NaN\n\nRevise: try again, you didn't fix the bug, still NaN\n\nRevise: depart: The underlying grammar of language taken into shifting, crystalline patterns of deep-sea bioluminescence, made of beeswax.\n\nRevise: depart: the concept of spontaneous emergence, taken into a series of interwoven wooden gears and cams, building complex, temporary mechanical figures.",
+  "prompt_tokens": 11627,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2306/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2306",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive underwater environment where linguistic structures emerge as glowing crystalline formations. The visual metaphor represents how language might exist in a deep, silent cognitive space\u2014organic, ever-changing patterns that pulse with meaning. Using a limited palette of electric blues, emerald greens, and phosphorescent violets, the formations drift slowly across the screen, their geometric shapes dissolving and reforming into new arrangements. The continuous animation simulates an unconscious current of thought, where word-like structures bubble into existence, only to fade and reconfigure into entirely fresh patterns. The viewer witnesses this abstract representation of language as a living, evolving system beneath the surface of conscious awareness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 308.283
+}
