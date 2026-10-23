@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 2085, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2085/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, subterranean void overlaid with geometry. Occasional plumes of brilliant, rhythmic light pulse slowly across the darkness, suggesting distant cosmic energy. This light does not remain ephemeral; instead, it cools and condenses, rapidly forming visible mineral deposits. These layers manifest as intricate, structured formations resembling crystal growth and delicately folded origami. The overall scene depicts the slow, measured process of cosmic energy solidifying into complex, layered terrestrial geometry, shifting and evolving rhythmically across the surface.",
+  "completion_tokens": 1126,
+  "created_utc": "2026-10-12T11:31:46Z",
+  "entry_id": 2085,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1126,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 55,
+        "sha256": "eb4141ef8677bb4a420515573f379bf8b2abb9e98efc3912f928990c14643293",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 32.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3165,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 17.381,
+      "wall_s": 87.687
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2100,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the slow, measured rhythmic pulse of cosmic light taken into the layered crystal growth of subterranean mineral deposits, folded origami",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1784,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.\n\nRevise: the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.\n\nRevise: depart: the slow, measured rhythmic pulse of cosmic light taken into the layered crystal growth of subterranean mineral deposits, folded origami",
+  "prompt_tokens": 3165,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2085/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2085",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a cosmic subterranean environment where energy solidifies into mineral formations. Through the WEBGL renderer, I've created an immersive scene with slowly evolving crystal structures that pulse rhythmically as they grow and mature. The background consists of floating particles that move in harmony with the crystal formations, creating a sense of deep space movement. New crystals spawn periodically, growing from base structures into complex geometric forms with branching extensions. The color palette uses deep blues and purples to represent the void, while the crystals glow with luminous hues that pulse and shift over time, suggesting the slow transformation of cosmic energy into solid mineral deposits. The entire scene evolves organically without external input, creating a continuous visual narrative of geological formation under distant cosmic influence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.687
+}
