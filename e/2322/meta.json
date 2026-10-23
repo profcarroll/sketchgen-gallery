@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca flock of paper airplanes following the cursor like starlings Revise\u2026\u201d \u2014 sketchgen entry 2322, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2322/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts the surface of a pond, rendered using delicate, fragmented cut paper. The primary visual element is a network of evolving ripples that flow across the surface. These ripples exhibit a slow, organic, and meandering movement, giving the entire scene a continuous, liquid quality. The flow happens naturally, without requiring any interaction or input from the viewer, constantly reshaping the pattern of the paper fragments.",
+  "completion_tokens": 727,
+  "created_utc": "2026-10-22T06:42:31Z",
+  "entry_id": 2322,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 727,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 174,
+        "sha256": "f04725425949861d73b5ead0606e5ee44ccffd6fdc2a50b4758a05c046d3b887",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3858,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.953,
+      "wall_s": 81.657
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2340,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Organic, meandering flow given to the ripples across a pond surface, made of cut paper.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2077,
+    "root_entry_id": 1468
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a flock of paper airplanes following the cursor like starlings\n\nRevise: the same swarm of small, angular shapes representing paper airplanes, and this time decrease the flock's cohesion to allow for wider, more visible gaps between individual planes.\n\nRevise: the same swarm of small, angular shapes resembling paper airplanes, and this time give each individual plane a more randomized and erratic trajectory, making the collective movement less directional.\n\nRevise: depart: the erratic, ephemeral path of individual planes taken into a swarm of glowing bacterial cultures, guided by the slow, exploratory search pattern of a slime mould.\n\nRevise: carry: Organic, meandering flow given to the ripples across a pond surface, made of cut paper.",
+  "prompt_tokens": 3858,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2322/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2322",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an organic, flowing pond surface using a network of evolving ripples that move naturally across the canvas. Each ripple is rendered as a soft, irregular polygon to simulate the appearance of cut paper fragments floating on water. The ripples have meandering paths driven by Perlin noise, creating a continuous, liquid quality without any viewer interaction. The composition evolves slowly over time, with each fragment growing and fading out as it moves, producing an ever-shifting pattern that mimics the gentle undulations of a pond's surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.657
+}
