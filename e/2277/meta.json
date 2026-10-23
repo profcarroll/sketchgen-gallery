@@ -1,0 +1,181 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201csupergraphics from 1975 Revise: depart: the idea of discrete, control\u2026\u201d \u2014 sketchgen entry 2277, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2277/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a detailed, technical blueprint presented on aged corrugated cardboard. This blueprint depicts a massive, complex Victorian-era internal machine cross-section, filled with intricate, labeled mechanical components like gears and pistons. Initially, the scene is static, appearing as a faded, annotated drawing. When the user clicks the canvas, a segment of the machine activates, causing the detailed internal micro-mechanics to initiate a controlled, cyclical motion, revealing new levels of engineering detail beneath the initial layer of the drawing.",
+  "completion_tokens": 6115,
+  "created_utc": "2026-10-15T23:36:49Z",
+  "entry_id": 2277,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2062,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 250.1 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 253,
+        "sha256": "dde5de0cb444043979ebe9469bd979b43c7affa0bed9092ed8c64a42f6d0dfe7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 250.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4627,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 14.533,
+      "wall_s": 210.287
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2026,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0692/255, 3393 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 253,
+        "sha256": "dc5e6e4320e488af9ed44fec8eb16edb68c3a2a8be0365ba74835f48c9eb94cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 41.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4700,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 29.425,
+      "wall_s": 198.73
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2027,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0591/255, 2855 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 246,
+        "sha256": "75ac9602cb73080dbf7de25712d19b94b2efc51eb248cbac22d6bda48b0ecde0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 32.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4636,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 23.702,
+      "wall_s": 190.526
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2295,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The slow, systematic revelation of deep, layered planetary strata, formed by folded origami panels, appearing through a cross-section of multicolored crystal cleavage planes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2229,
+    "root_entry_id": 1330
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "supergraphics from 1975\n\nRevise: depart: the idea of discrete, controlled structural state changes taken into a cross-section of a pitcher plant's trapping mechanism, seen at the scale of microscopic hairs, in a Victorian botanical plate.\n\nRevise: depart: The idea of controlled, precise, repetitive micro-mechanics taken into a cross-section of a massive, Victorian-era internal industrial machine, rendered as an annotated blueprint on corrugated cardboard.\n\nRevise: depart: The slow, systematic revelation of deep, layered planetary strata, formed by folded origami panels, appearing through a cross-section of multicolored crystal cleavage planes.",
+  "prompt_tokens": 13963,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2277/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2277",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a Victorian-era mechanical blueprint rendered on aged corrugated cardboard. The scene begins as a static, faded drawing filled with intricate labeled components like gears and pistons. Upon clicking the canvas, a subtle yet controlled motion initiates within the machine's internal micro-mechanics, revealing new levels of engineering detail beneath the initial layer. The viewer observes a complex interplay of rotating gears and structured elements that activate in a synchronized, cyclical pattern. The visual design uses a sepia-toned color palette to evoke an antique aesthetic while maintaining clarity of mechanical components. The activation effect is not abrupt but smooth, allowing viewers to appreciate both the static blueprint and the emergent motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 599.543
+}
