@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca grid of hexagons that rotate and interconnect in mesmerizing patter\u2026\u201d \u2014 sketchgen entry 2282, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2282/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, mesmerizing network of brittle, interwoven cartilage structures, evoking the subsurface root systems of a massive coral reef. These delicate, organic forms are held under visible and constant strain by taut, polished steel springs. The primary action is the subtle, continuous movement of tension: the cartilage constantly vibrates, strains, and shifts against the unwavering, linear resistance of the springs. The visual palette emphasizes bone whites, cool greys, and the deep, earthy tones of the subterranean environment, focusing entirely on the interplay between organic fragility and mechanical stability.",
+  "completion_tokens": 2296,
+  "created_utc": "2026-10-16T00:17:28Z",
+  "entry_id": 2282,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1152,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 76)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 90)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 129.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "158b47d4e340483f756489a4b14ebe7f3d506c345a501bb42830898635a3a740",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 129.1,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3644,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 66.431,
+      "wall_s": 115.58
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1144,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 113,
+        "sha256": "392e84ebed9ba296357e4c1bfd19cc76a999de42e55e5c80d19b0344b06679b0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 15.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3895,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.799,
+      "wall_s": 106.896
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2300,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the root structures of a massive subterranean coral reef, taken into a form of brittle, interwoven cartilage, pulled taut by the steady, visible tension of elastic steel springs.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2240,
+    "root_entry_id": 1418
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a grid of hexagons that rotate and interconnect in mesmerizing patterns with softening visual effects, 1980s color palette, and a subtle soundtrack\n\nRevise: the same interlocking grid, and this time introducing asymmetrical clusters of varying sizes\n\nRevise: the same interlocking tessellation of hexagons, and this time introducing visible shifts in color saturation\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing areas of random geometric fracture\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing variable directional flow to the rotating shapes\n\nRevise: the same interlocking hexagonal tessellations, and this time introducing varying levels of perceived transparency between adjacent hexagons\n\nRevise: carry: Synaptic flow of color given to the branching pattern of subsurface root structures, simulating sap movement across a medieval tapestry.\n\nRevise: depart: The abstract concept of complex, interwoven subsurface networks taken into a vast, geometric lattice structure resembling a celestial observatory dome, made of polished brass, seen from a distance.\n\nRevise: depart: the root structures of a massive subterranean coral reef, taken into a form of brittle, interwoven cartilage, pulled taut by the steady, visible tension of elastic steel springs.",
+  "prompt_tokens": 7539,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2282/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2282",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the intricate interplay between organic fragility and mechanical stability through a network of delicate cartilage structures suspended in a subterranean environment. The cartilage forms continuously vibrate and shift, responding to constant tension from taut steel springs that maintain structural integrity. Using batched drawing techniques for performance, the work creates an immersive experience where viewers observe the subtle dance between natural flow and rigid resistance. The color palette emphasizes bone whites, cool greys, and deep earth tones to evoke the alien beauty of underwater root systems, where organic forms struggle against unyielding forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 222.476
+}
