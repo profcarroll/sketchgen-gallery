@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cretrogamer's paradise Revise: the same shifting, glowing grid pattern\u2026\u201d \u2014 sketchgen entry 2092, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2092/ Licensed CC BY 4.0.",
+  "brief": "The canvas transports the viewer to a mysterious, deep-sea abyssal environment. Slow-moving, ethereal organisms, constructed of bioluminescent cartilage, drift and undulate through the enveloping darkness. These creatures are interwoven with the rhythmic propagation of luminous energy. Within their forms, pulses of light appear and flow, shifting and brightening in deep shades of blue and green, creating the illusion of organic life in the crushing depths. The entire scene moves continuously and self-contained, depicting the slow, breathtaking dance of bioluminescence.",
+  "completion_tokens": 4865,
+  "created_utc": "2026-10-12T12:20:55Z",
+  "entry_id": 2092,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1690,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "b46cf1d15f52f9610fb2ff20803f0b237155484261b05ee9c829b34fa8894915",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3876,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.556,
+      "wall_s": 144.036
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1600,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 187,
+        "sha256": "48acf7d3c1ca6791cff109bc7be92b4238bd6729e3a367e12a1b3218561fe2fe",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4268,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.589,
+      "wall_s": 148.926
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1575,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 170,
+        "sha256": "0dd3342ed7d5ae2307f31b864887dc2c7b6997a1f75e541113079122588431b6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4170,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.593,
+      "wall_s": 143.143
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2107,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the rhythmic propagation of luminous energy taken into the slow, visible movement of phosphorescent deep-sea organisms, made of bioluminescent cartilage",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1815,
+    "root_entry_id": 1390
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "retrogamer's paradise\n\nRevise: the same shifting, glowing grid patterned with neon pixel clusters, and this time the expanding collision bursts form defined hexagonal modules.\n\nRevise: the same luminous digital grid, and this time the neon colors intensify and cycle through a vibrant rainbow spectrum.\n\nRevise: the same luminous, digital environment dominated by a continuous grid that appears patterned with glowing neon pixel clusters, and this time the neon clusters only cycle through shades of electric blue.\n\nRevise: the same luminous, digital environment defined by a continuous, glowing grid, and this time the neon pixel clusters flow outward from the hexagonal modules in visible, radial pulses.\n\nRevise: the same luminous, digital landscape dominated by a continuous, glowing grid, and this time the radial pulses appear to travel along the connections between adjacent hexagonal modules in rhythmic waves.\n\nRevise: depart: the rhythmic propagation of luminous energy taken into the slow, visible movement of phosphorescent deep-sea organisms, made of bioluminescent cartilage",
+  "prompt_tokens": 12314,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2092/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2092",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive deep-sea environment where bioluminescent organisms drift slowly through darkness. The scene features ethereal creatures with pulsing bodies and flowing tentacles, rendered in deep blues and greens that shift in intensity. Tiny particles float throughout the space, creating a sense of depth and movement. The organisms move autonomously using a spatial hash grid for efficient collision detection and connection drawing, simulating the gentle undulations of life in the abyss. The entire composition is self-contained, evolving without user input to evoke the quiet majesty of underwater existence.",
+  "submitted_by": "profcarroll",
+  "wall_s": 436.105
+}
