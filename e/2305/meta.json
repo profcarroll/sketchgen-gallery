@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the works of Mark Rothko and then make a composition inspired b\u2026\u201d \u2014 sketchgen entry 2305, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2305/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a colossal cross-section of Earth's history, depicting deeply saturated layers of mineral deposits and striated rock strata. Massive bands of color\u2014ranging from oxidized reds and ochres to deep, cool greens\u2014overlap and bleed into one another, suggesting immense geologic time. The composition appears to flow and change autonomously, as if the canyon wall is constantly undergoing slow, relentless erosion. The viewer observes the slow shifting of these massive, beautiful geological planes, watching the visible processes of uplift and decay play out across the simulated scale of an immense natural canyon.",
+  "completion_tokens": 1045,
+  "created_utc": "2026-10-22T04:47:14Z",
+  "entry_id": 2305,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1045,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 114,
+        "sha256": "4a7df03e6ba0eab8da0dab8e4fc70ba4da28377d72b56db3517b4cc884eac3ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3868,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.219,
+      "wall_s": 102.291
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2323,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of deeply saturated, overlapping color fields taken into layers of mineral deposits and eroded rock strata, seen at the scale of a massive canyon wall.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2054,
+    "root_entry_id": 1367
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the works of Mark Rothko and then make a composition inspired by the artist's signature forms and use of color.\n\nRevise: the same large, layered rectangular color fields that float and bleed into one another, and this time deepen the resonant tones by increasing the saturation of the overlapping color masses.\n\nRevise: depart: One idea from this sketch\u2014the layering of deeply saturated, glowing color planes\u2014taken into massive, overlapping geometric architectural panels that slowly shift and float apart, rendered by a 1960s pen plotter drawing.\n\nRevise: depart: the idea of deeply saturated, overlapping color fields taken into layers of mineral deposits and eroded rock strata, seen at the scale of a massive canyon wall.",
+  "prompt_tokens": 3868,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2305/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2305",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast geological cross-section of Earth's history, rendered as flowing layers of mineral deposits and eroded rock strata. Through the slow, autonomous motion of these layers\u2014simulating uplift and decay\u2014viewers witness an abstracted yet vivid representation of immense geologic time. The composition uses deeply saturated colors and subtle animations to evoke the feeling of a canyon wall in constant, slow transformation. The viewer observes a continuous, mesmerizing interplay of color, form, and motion that suggests both the violence and patience inherent in natural processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.291
+}
