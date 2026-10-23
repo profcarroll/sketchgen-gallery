@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstudy the \"Torqued Ellipses` by Richard Serra and then build a 3D mod\u2026\u201d \u2014 sketchgen entry 2112, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2112/ Licensed CC BY 4.0.",
+  "brief": "The viewer is immersed within a vast, simulated space where monumental architecture meets digital decay. Dominating the scene is a sprawling network of illuminated bronze piping, engineered to replicate the look of a complex, pixelated circuit board. These glowing pathways trace massive curves, mimicking the sweeping forms of sculpture, yet are segmented into distinct technological nodes. Subtle currents of light flow through the network, making the entire structure seem alive. As the cursor moves across the viewing plane, specific sections of the piping react, intensifying their glow and momentarily highlighting the underlying circuit patterns, inviting a deeper observation of the mechanical complexity.",
+  "completion_tokens": 1103,
+  "created_utc": "2026-10-12T14:44:50Z",
+  "entry_id": 2112,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1103,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "5a8cce915ed17d5e9006d8b1cf255ad3777b2a2f336836c08c2903d16d4d0159",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3817,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 12.068,
+      "wall_s": 103.822
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2127,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of sudden, forceful redirection taken into a sprawling network of illuminated bronze pipes, designed to look like a complex, pixelated circuit board visible through a 1980s arcade cabinet screen.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 1857,
+    "root_entry_id": 1429
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "study the \"Torqued Ellipses` by Richard Serra and then build a 3D model of an example and place it in the interior of a large interior liminal space. Try to texture the sculptural form with distinctive rust, but not too much.\n\nRevise: the same monumental pathway, and this time the geometry incorporates a sudden, acute shift in curvature, momentarily interrupting the endless flow.\n\nRevise: the same monumental pathway, and this time the abrupt shift in curvature becomes sharply perpendicular, maximizing the interruption.\n\nRevise: the same monumental pathway, and this time the sweeping arc begins with a much tighter, almost circular curvature.\n\nRevise: the same sweeping, curved pathway, and this time the perpendicular segment widens abruptly, maximizing the visual weight of the sudden geometric shift.\n\nRevise: the same massive, sculpted pathway, and this time the perpendicular segment terminates abruptly, stepping down sharply onto a tiered platform.\n\nRevise: the same massive, sculpted pathway, and this time the initial sweeping arc is made to ascend more dramatically before beginning the sudden shift.\n\nRevise: the same massive, sculpted pathway, and this time the perpendicular shift terminates onto a vast, uninterrupted horizontal plane.\n\nRevise: depart: the idea of sudden, forceful redirection taken into a sprawling network of illuminated bronze pipes, designed to look like a complex, pixelated circuit board visible through a 1980s arcade cabinet screen.",
+  "prompt_tokens": 3817,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2112/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2112",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive digital environment where viewers are surrounded by a vast network of glowing bronze pipes that resemble a complex, pixelated circuit board. The structure appears to be alive with subtle light currents flowing through its interconnected pathways, evoking both the grandeur of monumental architecture and the intricate beauty of digital systems. As users move their cursor across the screen, specific sections of the piping react by intensifying their glow, revealing the underlying mechanical complexity and inviting deeper observation of the system's architecture. The piece combines organic flow with technological precision, creating a sense of wonder at the intersection between natural forms and engineered complexity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 103.822
+}
