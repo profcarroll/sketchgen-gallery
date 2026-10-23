@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201chot air balloons Revise: the same colorful hot air balloons, and this\u2026\u201d \u2014 sketchgen entry 2275, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2275/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a massive, repeating lattice of interlocking wall panels, rendered in the texture of painted plaster. This rigid, repeating geometry establishes a sharp, orthogonal architectural structure. Layered across this fixed framework is a dynamic, vividly colored fluid flow. This liquid material constantly shifts and interacts with the sharp edges of the panels. The scene maintains a continuous, subtle shimmering motion. However, the structure is stable until the viewer clicks, causing the colored flow to ripple outward from the point of impact, dramatically reshaping the way the liquid segments intersect the fixed geometry.",
+  "completion_tokens": 1530,
+  "created_utc": "2026-10-15T23:12:25Z",
+  "entry_id": 2275,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1530,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 122,
+        "sha256": "3a0a8c2ced30d332c5d783128dafc761006e4cf55cf3017aa1632df8de1ec7a7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3830,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.231,
+      "wall_s": 143.753
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2293,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Structural constraint meeting spontaneous flow given to crystallized root formations, seen under a microscope",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2227,
+    "root_entry_id": 1259
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: the same colorful hot air balloons, and this time depicting them with a soft, radiant glow around their edges.\n\nRevise: the same vividly colored hot air balloons, and this time with the soft glow radiating in distinct, segmented pillars of light.\n\nRevise: carry: structured luminous segments given to microscopic crystalline formations of hydrothermal vents, seen under a microscope\n\nRevise: depart: The principle of rigid, repeating orthogonal geometry intersecting dynamic, colored, liquid flow, transformed into a series of interlocking wall panels, made of painted plaster, seen at architectural scale, in a 1920s Bauhaus exercise.\n\nRevise: carry: Structural constraint meeting spontaneous flow given to crystallized root formations, seen under a microscope",
+  "prompt_tokens": 3830,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2275/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2275",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a microscopic view of a crystalline structure under constant fluid flow. The architecture is a rigid lattice of interlocking panels rendered in warm plaster tones, establishing a clear geometric framework. Within this fixed structure, a dynamic fluid\u2014composed of hundreds of animated particles\u2014flows continuously and interacts with the sharp edges of the panels. The scene captures both order and chaos: the stable framework provides a constant backdrop while the fluid material constantly shifts, creating connections between particles and the rigid geometry. When the viewer clicks, a ripple emanates from the point of impact, dramatically reshaping how the liquid segments intersect with the fixed architecture. The visual effect uses particle physics with Perlin noise for natural movement, and the click interaction creates a visible wave that distorts the fluid flow pattern, simulating the disruption of a crystalline structure by external force.",
+  "submitted_by": "profcarroll",
+  "wall_s": 143.753
+}
