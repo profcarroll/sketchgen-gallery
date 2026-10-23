@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cuse math to render the pattern of a polished granite countertop Revis\u2026\u201d \u2014 sketchgen entry 2272, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2272/ Licensed CC BY 4.0.",
+  "brief": "A macro view of dark, mineral-rich textures split by glowing, interwoven veins of molten ore. These veins pulse and drift in slow, rhythmic waves, mimicking the heavy movement of subterranean fluids under tectonic pressure. The palette consists of deep basalt blacks, oxidized coppers, and radiant golds. Dragging the mouse across the canvas disturbs the flow, causing the mineral veins to swirl and redirect their rhythmic paths.",
+  "completion_tokens": 1160,
+  "created_utc": "2026-10-15T22:33:23Z",
+  "entry_id": 2272,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1160,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "44b0efdfb9cf7f86180b744a5b44710c6e32f97c411d11fad71b13d9a7a8b41c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 56.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3607,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.568,
+      "wall_s": 115.568
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2289,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Interwoven, rhythmic diffusion given to a massive, subterranean ore deposit, seen at a macro scale, driven by tectonic fluid dynamics",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2223,
+    "root_entry_id": 2012
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "use math to render the pattern of  a polished granite countertop\n\nRevise: carry: interwoven linear structures given to the capillary network of a living creature, rendered as ceramic tile.\n\nRevise: carry: Interwoven, rhythmic diffusion given to a massive, subterranean ore deposit, seen at a macro scale, driven by tectonic fluid dynamics",
+  "prompt_tokens": 3607,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2272/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2272",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a macro-scale view of an underground mineral deposit, rendered in three dimensions to emphasize depth and texture. The dark basaltic tiles form a rugged foundation, while glowing veins of oxidized copper and radiant gold pulse rhythmically through the rock, mimicking the flow of subterranean fluids under tectonic pressure. The viewer can interact with the scene by dragging their mouse, which disturbs the veins' paths, causing them to swirl and redirect. The use of 3D rendering allows for a rich interplay of light and shadow across the mineral surfaces, enhancing the sense of depth and geological complexity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 115.568
+}
