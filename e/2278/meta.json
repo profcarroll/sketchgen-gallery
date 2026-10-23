@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cnostalgic photo collage Revise: depart: The ephemeral overlapping nat\u2026\u201d \u2014 sketchgen entry 2278, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2278/ Licensed CC BY 4.0.",
+  "brief": "A dark, reflective obsidian floor is fractured by deep, jagged cracks. Massive, angular shards of black volcanic glass tilt and slide across the surface, driven by the constant, rhythmic pressure of unseen tides. High-contrast lighting catches the sharp edges and polished planes of the shifting rock. Clicking the canvas triggers sudden, violent ruptures that splinter the floor further, sending heavy chunks tumbling and rotating through the dark environment.",
+  "completion_tokens": 1685,
+  "created_utc": "2026-10-15T23:45:31Z",
+  "entry_id": 2278,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1685,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 145,
+        "sha256": "11a69e541ce8a509d7d7587ba1aff5f72f89a6728af233205a44f2478ce50072",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.9,
+      "num_ctx": 16384,
+      "preload_s": 0.03,
+      "prompt_tokens": 3682,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.726,
+      "wall_s": 150.798
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2296,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a whole sketch of colossal fractures ripping through the obsidian floor, violently displacing massive, angular chunks of rock driven by sudden tidal pressures.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2230,
+    "root_entry_id": 1334
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "nostalgic photo collage\n\nRevise: depart: The ephemeral overlapping nature of passing memories taken into a cross-section of sedimentary strata, showing slow, continuous crystal and sediment buildup over eons of geological time.\n\nRevise: depart: the slow, continuous accumulation of historical time taken into a deep-sea bathymetric map carved into obsidian, sealed within beeswax\n\nRevise: flip: a whole sketch of colossal fractures ripping through the obsidian floor, violently displacing massive, angular chunks of rock driven by sudden tidal pressures.",
+  "prompt_tokens": 3682,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2278/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2278",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dark obsidian floor fractured by deep, jagged cracks that pulse with rhythmic tidal pressure. Massive angular shards of volcanic glass tilt and slide across the surface, driven by unseen forces. The scene responds to user clicks with violent ruptures that send chunks tumbling through the dark environment. The effect uses WebGL rendering to create a sense of depth and volume, with dynamic lighting that highlights the sharp edges and polished planes of the shifting rock. Each shard has its own movement pattern and rotation, creating a convincing simulation of geological forces at work.",
+  "submitted_by": "profcarroll",
+  "wall_s": 150.798
+}
