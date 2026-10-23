@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 2319, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2319/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast cross-section of geological rock, rendered in deep, earthy colors that shift and twist. Massive layers of metamorphic rock are seen in constant, forceful motion, undergoing the dramatic processes of crumpling and folding. These geological folds ripple across the screen, forming intricate, mountainous structures that rise and subside over time. The motion is relentless and powerful, visualizing the immense stress of tectonic plate collision, giving the impression of incredible, slow-motion geological violence.",
+  "completion_tokens": 3305,
+  "created_utc": "2026-10-22T06:25:59Z",
+  "entry_id": 2319,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1717,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 113)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 172)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 223.3 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 221,
+        "sha256": "49ab6c7c8319b40794c78ffcffe7db80838c1fe0d3f842ce8c5124f69c5182e9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 223.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4449,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.264,
+      "wall_s": 173.604
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1588,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 178,
+        "sha256": "c20a70cc0bb491d8ec468929c328f54d5f4ba3cf955d20ba1c1b8775eef6ad16",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4431,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.334,
+      "wall_s": 161.652
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2337,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a catastrophic tectonic plate collision, resulting in the rapid crumpling and folding of metamorphic rock, seen at a mountain range scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 2073,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.\n\nRevise: the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.\n\nRevise: depart: the principle of triple confluence, visualized as the spontaneous, slow formation of crystalline lattices, made of water molecules, seen at a single grain of sand\n\nRevise: flip: a catastrophic tectonic plate collision, resulting in the rapid crumpling and folding of metamorphic rock, seen at a mountain range scale.",
+  "prompt_tokens": 8880,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2319/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2319",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the slow, powerful motion of geological folding and crumpling within a vast cross-section of metamorphic rock. Using a particle system with spatial grid optimization, it renders thousands of earth-toned particles that move in response to simulated tectonic forces. The particles flow and fold in rhythmic waves across the screen, creating mountainous structures that rise and subside over time. Connections between nearby particles form an intricate web that emphasizes the interlocking nature of geological stress, while particle trails leave visible paths through the rock layers. The constant motion suggests the immense pressure and slow violence of tectonic plate collisions, presenting a dynamic visualization of Earth's deep geological processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 335.256
+}
