@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cRender a perspective from within New Babylon, the visionary, speculat\u2026\u201d \u2014 sketchgen entry 2280, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2280/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a deep, underwater vista dominated by the massive skeletal remains of a clockwork network. Structures, rendered in oxidized bronze and porous cardboard, drift within a murky, mineralized space. Time appears to be the primary medium, as delicate flecks and sheets of rust continuously detach from the central machinery, spiraling downwards and dissolving into the background. The geometric arrangement of gears and housing units provides a rigid, decaying counterpoint to the gentle, constant downfall of memory. The entire scene perpetually shifts, emphasizing the slow, inevitable passage of time and the eventual dissolution of complex structures.",
+  "completion_tokens": 2628,
+  "created_utc": "2026-10-16T00:02:01Z",
+  "entry_id": 2280,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1330,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 103)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 101 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: the persistent slow shedding of memory given to an abandoned, submerged network of bronze clockwork, made of corrugated cardboard\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 130,
+        "sha256": "510f8b9ff86da3183c9c8d15d117298cffbaaa5ee86aab799ed82cc0e739acda",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 84.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3866,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 42.279,
+      "wall_s": 134.083
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1298,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 130,
+        "sha256": "510f8b9ff86da3183c9c8d15d117298cffbaaa5ee86aab799ed82cc0e739acda",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.9,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4128,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.197,
+      "wall_s": 122.02
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2298,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: the persistent slow shedding of memory given to an abandoned, submerged network of bronze clockwork, made of corrugated cardboard",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2233,
+    "root_entry_id": 1378
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Render a perspective from within New Babylon, the visionary, speculative architectural project developed by Dutch artist and Situationist Constant Nieuwenhuys between 1956 and 1974\n\nRevise: flip: a sketch depicting monumental structural collapse, where the grand geometry of the abandoned city is reduced to flakes and crumbling edges of rust on sheet steel\n\nRevise: depart: The principle of structural collapse and oxidized decay, taken into the massive, mineralized skeleton of a submerged leviathan, showing the constant erosion of calcium carbonate\n\nRevise: carry: the persistent slow shedding of memory given to an abandoned, submerged network of bronze clockwork, made of corrugated cardboard",
+  "prompt_tokens": 7994,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2280/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2280",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an underwater vista of a decaying clockwork network, where massive skeletal structures made of oxidized bronze and porous cardboard drift in a murky, mineralized space. The scene captures the slow, inevitable passage of time through the constant shedding of rust flecks that spiral downward and dissolve into the background. The geometric arrangements of gears and housing units provide a rigid, decaying counterpoint to the gentle downfall of memory, rendered as particles that slowly detach from central machinery and drift through the scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 256.103
+}
