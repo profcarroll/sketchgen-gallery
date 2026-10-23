@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca Rube Goldberg machine whose only job is to water one flower Revise:\u2026\u201d \u2014 sketchgen entry 2304, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2304/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a dramatic, cross-sectional view of geological strata forming a massive mountain range. The scene is dynamic, simulating a catastrophic seismic event. Suddenly, the underlying rock layers buckle and lift rapidly, causing the entire mountain structure to violently fracture. Earth and rock eject from the ruptures, cascading downward into chaotic, unstable plumes that scatter and collide with immense force. The movement is driven entirely by the simulated tectonic energy, creating a continuous, visually spectacular outpouring of ejected material and structural collapse.",
+  "completion_tokens": 2900,
+  "created_utc": "2026-10-22T04:42:47Z",
+  "entry_id": 2304,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1391,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 133)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 622.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "4ded93f38b362a52f4c307e81e01dd6cd12e89d99e5405e40b219d36202db6fd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 622.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3430,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 39.046,
+      "wall_s": 113.057
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1509,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 151,
+        "sha256": "d0b64c64b291892ff0556944d4c5bed669f00d7f3bef4ad76561f85bcd5eff95",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4069,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.968,
+      "wall_s": 140.287
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2322,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a cross-section of a mountain range undergoing sudden, catastrophic seismic upheaval, with ejected material violently cascading and forming chaotic, unstable plumes, driven by rapid tectonic force.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 2052,
+    "root_entry_id": 1508
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Rube Goldberg machine whose only job is to water one flower\n\nRevise: depart: the complex kinetic progression of the machine's effort taken into the gradual shifting of sediment, shown settling across a mountain range\n\nRevise: flip: a cross-section of a mountain range undergoing sudden, catastrophic seismic upheaval, with ejected material violently cascading and forming chaotic, unstable plumes, driven by rapid tectonic force.",
+  "prompt_tokens": 7499,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2304/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2304",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a catastrophic seismic event in a dramatic geological landscape. The scene begins with layered rock formations that gradually buckle and lift as tectonic forces build, culminating in a violent fracture that sends debris cascading down in chaotic plumes. The visualization uses a 3D webgl environment to simulate the dynamic movement of earth and rock, with particles represented as points for performance efficiency. As the seismic energy releases, shockwaves radiate outward while ejected material scatters downward in an unstable, forceful motion that captures the raw power of geological upheaval. The effect builds from subtle layer movements to a spectacular display of structural collapse and material ejection.",
+  "submitted_by": "profcarroll",
+  "wall_s": 253.344
+}
