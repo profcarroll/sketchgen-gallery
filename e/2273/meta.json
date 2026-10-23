@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201carchitectural blueprint Revise: carry: Cyclical geometry given to the\u2026\u201d \u2014 sketchgen entry 2273, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2273/ Licensed CC BY 4.0.",
+  "brief": "A three-dimensional view into stratified layers of translucent beeswax and calcified sediment. Within these layers, complex, interlocking clockwork gears shaped like fossilized seashell spirals rotate in a rhythmic, tidal motion. The color palette features warm ambers, ochres, and pale whites. Dragging the mouse across the canvas alters the rotational speed and depth of the gears, causing the geometric patterns to compress and expand like undulating waves.",
+  "completion_tokens": 1226,
+  "created_utc": "2026-10-15T22:59:03Z",
+  "entry_id": 2273,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1226,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 117,
+        "sha256": "9a00a67a00ad9f4bf92c62a5382aadb2ce103d5c322d729dc1ddfa984150a575",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 29.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3655,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.966,
+      "wall_s": 120.634
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2291,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The idea of cyclical geometry taken into a depiction of complex, interlocking, repetitive clockwork automata, rendered in beeswax.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2225,
+    "root_entry_id": 2014
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "architectural blueprint\n\nRevise: carry: Cyclical geometry given to the cross-section of stratified sediment layers, visualizing how the rhythmic force of approaching tides shapes fossilized seashell patterns.\n\nRevise: depart: The idea of cyclical geometry taken into a depiction of complex, interlocking, repetitive clockwork automata, rendered in beeswax.",
+  "prompt_tokens": 3655,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2273/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2273",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an underwater geological cross-section where layers of sedimentary rock interlace with intricate clockwork mechanisms shaped like fossilized seashells. The scene unfolds in a three-dimensional space rendered using WebGL, with translucent amber-hued layers representing time-accumulated deposits. Within this stratified environment, geometric gears\u2014each one resembling a coiled spiral shell\u2014rotate rhythmically in synchronized motion, mimicking the ebb and flow of tides. Viewers can interact by dragging their mouse to alter both the rotational speed and apparent depth of these mechanical elements, causing the patterns to compress or expand like waves rippling through sediment. The warm amber and ochre palette evokes the coloration of beeswax and ancient mineral deposits, creating an atmosphere that merges geology with mechanical artistry.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.634
+}
