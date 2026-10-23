@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 2095, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2095/ Licensed CC BY 4.0.",
+  "brief": "The canvas features an array of flat, patterned pieces crafted to resemble corrugated cardboard. These pieces are etched with complementary interlocking gear patterns, suggesting a blueprint for assembly. The viewer\u2019s input initiates the process: a click causes the pieces to begin moving and linking together. The gears spin and the patterns guide the structural connections, demonstrating how complementary information dictates form. Over time, the individual components build upon each other, assembling themselves into a complex, three-dimensional sculpture that emerges from the plane.",
+  "completion_tokens": 1869,
+  "created_utc": "2026-10-12T12:42:03Z",
+  "entry_id": 2095,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1869,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 286,
+        "sha256": "0364fadd7b6b2b4e694f87ef5585f6e277a0a19a2266d7bd516626e9bf634af0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.0,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 5123,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.592,
+      "wall_s": 205.312
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2110,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the structured emergence of complementary information taken into a series of interlocking gears and patterned papercraft, designed to assemble into complex sculptures, made of corrugated cardboard",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 1821,
+    "root_entry_id": 1450
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: the same dynamic, three-dimensional model of the DNA double helix, and this time showing a specific segment unwinding completely to initiate strand separation.\n\nRevise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).\n\nRevise: the same molecular model of the DNA double helix, and this time showing the separated single strands floating away from the main coil in separate trajectories.\n\nRevise: the same detailed, three-dimensional molecular representation of the DNA double helix, and this time the separated single strands begin to fold upon themselves.\n\nRevise: depart: the structured emergence of complementary information taken into a series of interlocking gears and patterned papercraft, designed to assemble into complex sculptures, made of corrugated cardboard",
+  "prompt_tokens": 5123,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2095/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2095",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a digital interpretation of corrugated cardboard assembling into a three-dimensional structure through complementary interlocking patterns. Viewers observe flat, patterned pieces that gradually move and connect, guided by an invisible gear system. The animation begins with individual cardboard elements floating in space, each carrying a distinctive corrugated texture. As the simulation progresses, these pieces begin to attract toward each other, eventually forming connections that create a complex sculptural form. The viewer's interaction\u2014simulated through a click\u2014initiates this process and triggers the emergence of a mechanical assembly from an array of flat components. The work explores how form arises from information architecture, where the interlocking patterns and gear mechanisms guide the structural relationships between elements, resulting in a self-assembling structure that emerges from planar components.",
+  "submitted_by": "profcarroll",
+  "wall_s": 205.312
+}
