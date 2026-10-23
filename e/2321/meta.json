@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 2321, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2321/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a self-generating tapestry of interlocking structures that resemble both natural mineral formations and ancient, complex clockwork mechanisms. Intricate, repeating geometric patterns pulsate with light, growing and unfolding as if driven by an invisible mechanical force. These structures appear to follow inherent rules, causing clusters of delicate forms to connect and expand continuously upward. The overall scene is a dynamic interplay between organic growth and precise, tireless machinery.",
+  "completion_tokens": 2445,
+  "created_utc": "2026-10-22T06:37:27Z",
+  "entry_id": 2321,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2445,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 132,
+        "sha256": "7c3a6e55e9e7365056380e92a6fe8872db9f1d7331df7b1223acf934bc973fa7",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 36.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3669,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.606,
+      "wall_s": 200.754
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2339,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Pulsing, interlocking mineral growth given to ancient, complex clockwork, mechanism: a flock following three rules",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2076,
+    "root_entry_id": 1449
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the visible stitches should consistently form distinct, alternating colored horizontal stripes.\n\nRevise: the same continuous, striped pattern of the intended garment, and this time the visible stitches should form repeating loops and interlocking patterns, moving upward as if hand-knitted.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the complex interlocking loops should transition to forming repeating, highly stylized leaf and vine motifs.\n\nRevise: carry: Interlocking, self-generating structure given to submerged limestone cave formations, driven by tides\n\nRevise: carry: Pulsing, interlocking mineral growth given to ancient, complex clockwork, mechanism: a flock following three rules",
+  "prompt_tokens": 3669,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2321/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2321",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes a dynamic interplay between organic growth and mechanical precision, depicting a self-generating tapestry of mineral formations that also follow flocking behaviors. The scene features crystalline structures that pulse and expand in rhythmic waves, mimicking both natural geological processes and intricate clockwork mechanisms. Floating particles move according to flocking rules\u2014separation, alignment, and cohesion\u2014creating emergent patterns that weave through the static crystal forms. The viewer observes an evolving landscape where rigid geometric rules generate fluid, organic motion, suggesting a hidden mechanical force driving continuous expansion and connection between elements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 200.754
+}
