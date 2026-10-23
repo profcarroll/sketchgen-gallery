@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crhododendrons Revise: the same dense, lush field of rhododendrons, an\u2026\u201d \u2014 sketchgen entry 2091, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2091/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a vibrant, geometric field, reminiscent of stained glass panels and early 20th-century Bauhaus design. Solid shapes are defined by intense, saturated blocks of color, which appear to be constantly fracturing and reforming. These segments are caught in a dynamic process of refraction, where solid forms dissolve into swirling, liquid patterns of pure light. The resulting effect is a dazzling, structured study, presenting a perpetually shifting complexity of angular color and movement across the plane.",
+  "completion_tokens": 2835,
+  "created_utc": "2026-10-12T12:10:02Z",
+  "entry_id": 2091,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 941,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 210,
+        "sha256": "9ae7a86d4f8c84eeb1d0ef4434523408fe230a2e18de221b3160bf4254110cd5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4377,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.524,
+      "wall_s": 109.841
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1050,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 105,
+        "sha256": "7d4ec53ff75afe5df7afb50df8848637c7be438ec3b61a292ea69276119187a4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3487,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.772,
+      "wall_s": 90.171
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 844,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 120,
+        "sha256": "8882d6703d2be94b6535c4c957df29a5ff0820c6cb1be8f59ff6fffc5d92a75e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3634,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.636,
+      "wall_s": 78.796
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2106,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The principle of organic refraction, where solid forms fragment into swirling color, applied to a tessellated stained glass panel, creating dynamic patterns of geometric light, as a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1807,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms flowing in slow, rhythmic currents.\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms settling into pockets of still, reflective water.\n\nRevise: the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.\n\nRevise: the same tapestry of rhododendron blooms and foliage, and this time the ripple causes the water surface to gather into visible, marbled currents, distorting the reflection in swirling shapes.\n\nRevise: depart: The principle of organic refraction, where solid forms fragment into swirling color, applied to a tessellated stained glass panel, creating dynamic patterns of geometric light, as a 1920s Bauhaus exercise.",
+  "prompt_tokens": 11498,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2091/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2091",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a vibrant, ever-shifting geometric field reminiscent of stained glass and Bauhaus design. Through hundreds of dynamically evolving polygons\u2014each with rotating, pulsing forms\u2014the canvas presents a perpetual motion of color and structure. The visual effect emerges from simple rules: particles move with subtle velocity, bounce off screen edges, and their shapes morph through sinusoidal pulses and rotational changes. The result is an abstract, kaleidoscopic display where solid geometric forms dissolve into fluid patterns of pure light, capturing the essence of refraction as described in the brief.",
+  "submitted_by": "profcarroll",
+  "wall_s": 278.808
+}
