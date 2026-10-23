@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 2096, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2096/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a single, glowing neon line suspended against a deep black void. This luminous line constantly traces the complex, yet surprisingly uniform, contours of an electrocardiogram reading. The pattern exhibits a strong, cyclical rhythm, with spikes and dips appearing in distinct, predictable groupings. The entire reading scrolls steadily from the left side of the canvas to the right, simulating the continuous, unwavering flow of measured energy. No interaction is required; the pattern unfolds autonomously, creating a mesmerizing sense of controlled, steady energy transmission.",
+  "completion_tokens": 1764,
+  "created_utc": "2026-10-12T12:48:36Z",
+  "entry_id": 2096,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 883,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot read properties of undefined (reading 'y')\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "99cf9f197d8b017d42b59d6b8258445eea1a19a49ab88b4946c2696bf1673e45",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3511,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.647,
+      "wall_s": 82.221
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 881,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 102,
+        "sha256": "ce1b398b36fc165f815d14d518976ecbfbe800bfe1efabcf1ae68e0ecf44bf7d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.5,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3575,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.633,
+      "wall_s": 81.69
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2111,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the abstract tracing of momentary energy fluctuations taken into a complex, suspended network of spun glass structures, appearing embedded in yellow beeswax",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1823,
+    "root_entry_id": 1452
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring a noticeable, steady rhythmic pulse in its intensity.\n\nRevise: the same glowing neon line tracing the chaotic contours of an electrocardiogram reading, and this time featuring noticeably cyclical and uniform spikes.\n\nRevise: the same complex contours of an electrocardiogram reading, and this time featuring wildly irregular, unpredictable spikes and dips.\n\nRevise: the same glowing neon line tracing the unpredictable contours of an electrocardiogram reading, and this time featuring distinct, repeating groupings of spikes and dips.\n\nRevise: depart: the abstract tracing of momentary energy fluctuations taken into a complex, suspended network of spun glass structures, appearing embedded in yellow beeswax",
+  "prompt_tokens": 7086,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2096/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2096",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes an electrocardiogram pattern as a glowing neon line that scrolls continuously across a dark void. The waveform is generated algorithmically with a repeating rhythm of peaks and dips, creating a mesmerizing effect of steady energy transmission. The line features multiple layers of glow and subtle variations in opacity to create depth and visual complexity. As the pattern scrolls from left to right, it maintains its cyclical structure while appearing to pulse with controlled, rhythmic energy. The visualization captures the essence of biological data rendered as an abstract, hypnotic display.",
+  "submitted_by": "profcarroll",
+  "wall_s": 163.911
+}
