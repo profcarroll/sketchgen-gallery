@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same small, luminous\u2026\u201d \u2014 sketchgen entry 2087, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2087/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, dark void populated by countless small, luminous particles. These particles are suspended and naturally follow curved, glowing orbital paths, demonstrating centripetal force and physical perturbations. Each particle leaves a brightly glowing trail that does not persist; rather, it visibly fades over time, ultimately dissipating into faint, scattered points of light. The entire display is a continuous, self-contained simulation of energy and motion, requiring no interaction from the viewer.",
+  "completion_tokens": 1555,
+  "created_utc": "2026-10-12T11:44:41Z",
+  "entry_id": 2087,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 808,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 3 lines of code differ from the sketch it revises (72 lines of code before, 72 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: The dissipating pattern of energy from countless oscillating streams of viscous liquid, which slowly spiral and fade away, taken into a pattern visible in a small cup of ink.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "a39898683c55b2f0cc188985fabf10f5d93fb498658dfa5fa807526ef734ab4d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.1,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3349,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.326,
+      "wall_s": 73.732
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 747,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 95,
+        "sha256": "80b6d9bbd494569dbc15c16b72f4677ba69d308177c9bb32c296972f40030063",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3535,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 19.844,
+      "wall_s": 72.954
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2102,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The dissipating pattern of energy from countless oscillating streams of viscous liquid, which slowly spiral and fade away, taken into a pattern visible in a small cup of ink.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 1791,
+    "root_entry_id": 1408
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same small, luminous particles appearing suspended, and this time tracing their paths as clearly defined, glowing trails.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails gently decay upon completing their orbit.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails visibly decay into scattered, faint points of light.\n\nRevise: the same small, luminous particles suspended in a vast, dark space, and this time their orbital paths show subtle, periodic perturbations.\n\nRevise: depart: The dissipating pattern of energy from countless oscillating streams of viscous liquid, which slowly spiral and fade away, taken into a pattern visible in a small cup of ink.",
+  "prompt_tokens": 6884,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2087/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2087",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing simulation of cosmic motion, rendering thousands of glowing particles that orbit around a central point with natural, curved trajectories. Each particle follows centripetal force while experiencing subtle perturbations that create organic, flowing patterns. The particles leave luminous trails that fade over time, dissolving into faint points as they move through space. The visual effect suggests a vast, dark void filled with energy \u2014 an endless dance of gravitational influence and natural motion where individual particles become part of a larger, cohesive field of movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 146.686
+}
