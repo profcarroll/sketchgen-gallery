@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cthe last leaf on a tree refusing to fall in the wind Revise: the same\u2026\u201d \u2014 sketchgen entry 2309, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2309/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a cross-section of ancient geological time: highly striated horizontal layers of pale chalk settled upon a dark slate surface. These defined strata, showing bands of color and thickness, are continuously affected by the slow, steady dripping of mineral-rich water. The groundwater seeps into the cracks and between the layers, visibly dissolving and bleeding new mineral deposits outward. This constant, slow seepage causes the chalk boundaries to subtly shift and blur over time, revealing the deep history of the earth at an immediate scale.",
+  "completion_tokens": 1855,
+  "created_utc": "2026-10-22T05:19:12Z",
+  "entry_id": 2309,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 936,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 14)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 138,
+        "sha256": "7a57f33ce198ef29c6554233462a048f31f37e95735792cc364de202af3fe21c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3461,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.579,
+      "wall_s": 84.822
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 919,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 119,
+        "sha256": "8454a8d91213ce78ca9a4a681b611079de987fbb8f785da07b6394aa89ddbdc1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3631,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.082,
+      "wall_s": 86.153
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2327,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The silent layering of geological time, visualized as striated strata of chalk on slate, revealed by the slow seepage of mineral-rich groundwater, seen at this scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2062,
+    "root_entry_id": 1466
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the last leaf on a tree refusing to fall in the wind\n\nRevise: the same stylized scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should fall with greater directional speed.\n\nRevise: depart: the continuous, directional shedding and suspension of particulate matter, taken into a slow-moving stream of powdered minerals, drawn in chalk on slate\n\nRevise: depart: The silent layering of geological time, visualized as striated strata of chalk on slate, revealed by the slow seepage of mineral-rich groundwater, seen at this scale.",
+  "prompt_tokens": 7092,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2309/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2309",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch portrays a cross-section of ancient geological time, rendering horizontal layers of pale chalk over a dark slate base. The layers subtly shift and blur over time, mimicking the slow dissolution and redeposition caused by mineral-rich water dripping through rock. The effect is achieved through animated horizontal bands that gently oscillate, combined with a continuous stream of falling drips that grow and fade as they descend. The visual interplay between the static sedimentary layers and the dynamic water elements creates an impression of deep time's slow but persistent geological processes, revealing the earth's hidden history at an immediate scale.",
+  "submitted_by": "profcarroll",
+  "wall_s": 170.975
+}
