@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca subway map that rearranges itself when you click a station Revise:\u2026\u201d \u2014 sketchgen entry 2299, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2299/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, stylized subway map featuring colored lines representing rail tracks and prominent, marked circular stations. The layout appears static until the viewer interacts with it. When the cursor clicks on any of the visible station nodes, the entire network shifts and rearranges itself. The lines visibly stretch, shrink, and reconnect, causing the entire structure to reform into a new, altered pattern of pathways and points of connection.",
+  "completion_tokens": 4534,
+  "created_utc": "2026-10-22T04:05:23Z",
+  "entry_id": 2299,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1626,
+      "evidence": "gate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 133,
+        "sha256": "be4159faf8b8f8f4c9201ae78791f46b9b98211e6b0eb4fb408e8c2ab6352031",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.522,
+      "prompt_tokens": 3643,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.621,
+      "wall_s": 151.368
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1443,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 91)\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 130)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 193,
+        "sha256": "2027408abe55dfe76add61909881cdf7a9a25e905a5ff2b0b0d642355fde8be8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.499,
+      "prompt_tokens": 4146,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.543,
+      "wall_s": 140.204
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1465,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 91)\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 130)\n\ngate exit 1: assertions failed: responds(click)\n\nAssertions that failed:\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 163,
+        "sha256": "1276ffe4415bf888e3503d01bea0bf3771074bebfbd44fa2c86a92d293a52a80",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.5,
+      "prompt_tokens": 4068,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.547,
+      "wall_s": 138.355
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2317,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: a root system network of interwoven, colored organic pathways, patterned like a tapestry woven on a loom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 2045,
+    "root_entry_id": 1465
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a subway map that rearranges itself when you click a station\n\nRevise: zoom: a whole sketch of the molecular junction point where three distinct lines meet, revealing the atomic stress points and interlocking crystal lattice structure, seen under a microscope.\n\nRevise: depart: a root system network of interwoven, colored organic pathways, patterned like a tapestry woven on a loom.",
+  "prompt_tokens": 11857,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2299/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2299",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an interactive 3D subway map where stations and rail lines form a dynamic network. When a viewer clicks on any station node, the entire system undergoes a transformation\u2014stations shift position, lines stretch or compress to connect new paths, and the whole structure reforms into a new configuration. The visual design uses distinct colors for each line and labeled circular nodes to represent stations, creating an abstract yet recognizable transit map. The interaction is immediate and visually satisfying, showing how a single point of influence can ripple through a complex system, altering its topology without losing the essential connectivity between nodes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 429.927
+}
