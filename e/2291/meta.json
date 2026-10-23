@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cillustrate tensor flows inside the GPUs racked up inside a data cente\u2026\u201d \u2014 sketchgen entry 2291, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2291/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees the monumental remnants of an abandoned underground railway network, rendered in the scale of poured concrete. Intricate decay lines define the geometry of the space, giving the impression of forgotten infrastructure. Overlaid upon these static structures is a vibrant, pulsing bioluminescent flow. This glowing energy manifests as liquid, pulsating veins of sap, constantly shifting and traveling through the cracks and structural decay. The resulting visual tapestry is a dramatic interplay between rigid, monochrome decay and fluid, glowing life, making the energy itself the central, dynamic focus of the scene.",
+  "completion_tokens": 4928,
+  "created_utc": "2026-10-16T01:45:06Z",
+  "entry_id": 2291,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1717,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 107)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 158)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 119.5 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 138,
+        "sha256": "d01616dca9920be2b53d9fe28c42509a20a7770f953e5d60c0512d91eeca47b4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 119.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3881,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 55.794,
+      "wall_s": 144.018
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1586,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 92)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 104 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 179,
+        "sha256": "ca0adbf69c26c31d7fbbdab63e3e9182d793a1a45f67240835703a6226f43f5c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 104.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4478,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 47.48,
+      "wall_s": 153.504
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1625,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 171,
+        "sha256": "5a7105dd3838483b81d96bd027887b4c0474554e2f40bae0b55d5ab1ae94d613",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 83.5,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4324,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 38.51,
+      "wall_s": 149.569
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2309,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: A massive, intricately stable assembly of perfectly aligned clockwork mechanisms and repeating tessellations, constructed entirely of corrugated cardboard.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2251,
+    "root_entry_id": 531
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "illustrate tensor flows inside the GPUs racked up inside a data center\n\nRevise: try again and show humans how AI models think in tensor flows\n\nRevise: depart: The interconnected relationships of subterranean bio-luminescent root networks, appearing to pulse and shift information through glowing sap veins, small enough to hold in one hand\n\nRevise: carry: Interconnected bioluminescent flow given to the decay lines of an abandoned subterranean train system, seen at the scale of poured concrete.\n\nRevise: depart: Intricate energy transfers modeled by interlocking brass clockwork mechanisms, shown as cross-sectioned specimens of a Victorian botanical plate.\n\nRevise: flip: A massive, fragmented subterranean archive of carved stone and bronze statuary, undergoing random, asymmetrical collapse and revealing forgotten geometric patterns, observed at the scale of a continental fault line, eroded by time.\n\nRevise: flip: A massive, intricately stable assembly of perfectly aligned clockwork mechanisms and repeating tessellations, constructed entirely of corrugated cardboard.",
+  "prompt_tokens": 12683,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2291/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2291",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents an underground railway network in a state of quiet decay, rendered with a monochromatic palette of concrete and rust. The viewer sees remnants of infrastructure\u2014cracked walls, fragmented supports, and structural fissures\u2014that evoke the scale and weight of forgotten systems. Overlaid on this static architecture flows a vibrant bioluminescent energy: glowing veins that pulse and meander through the decay, creating an impression of life forcing its way through rigid constraints. The interplay between the cold, geometric forms and the fluid, pulsing glow creates a dramatic contrast, making the luminous flow the central focus and dynamic element of the scene.",
+  "submitted_by": "profcarroll",
+  "wall_s": 447.091
+}
