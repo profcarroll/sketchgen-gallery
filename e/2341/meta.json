@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 2341, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2341/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a glowing, stylized view of miniature, inverted worlds suspended within flowing liquid circuitry. These worlds, featuring saturated, bioluminescent color palettes, pulse with a continuous, gentle rhythm against a dark, retro-futuristic background. The liquid seems to course through a grid of circuit board patterns, evoking the look of an antique 1980s arcade display. The overall movement is hypnotic and self-contained, showcasing the perpetual, glowing transfer of these fragile, synthetic ecosystems through the electronic pathways.",
+  "completion_tokens": 3652,
+  "created_utc": "2026-10-24T02:11:18Z",
+  "entry_id": 2341,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1231,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "d54e24cbfc0fcbaf2a9650500b5aace09e91fdf90f6006ad182e15e48099a859",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4095,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.354,
+      "wall_s": 118.669
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1208,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 120,
+        "sha256": "2e636f5fcb6d1aa1335abcb663316b61f0599e70228437d8085c6aea6c41ff96",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3800,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.469,
+      "wall_s": 107.745
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1213,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 120,
+        "sha256": "2e636f5fcb6d1aa1335abcb663316b61f0599e70228437d8085c6aea6c41ff96",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 13.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3800,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.402,
+      "wall_s": 73.569
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2360,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: glowing miniature worlds given to flowing liquid circuits, rendered on a 1980s arcade cabinet.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2101,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.\n\nRevise: the same view through the rain-streaked windowpane of tiny, upside-down cityscapes, and this time the raindrops collect into larger, more defined puddles before dropping.\n\nRevise: the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.\n\nRevise: the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.\n\nRevise: depart: the repeating geometry of glowing, miniature inverted worlds taken into a cross-section of petrified earth, revealed by the slow, widening crack of tectonic plate separation.\n\nRevise: carry: glowing miniature worlds given to flowing liquid circuits, rendered on a 1980s arcade cabinet.",
+  "prompt_tokens": 11695,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2341/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2341",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a hypnotic, retro-futuristic visualization of miniature inverted worlds suspended within flowing liquid circuitry. Using a dark background with saturated bioluminescent colors, it depicts synthetic ecosystems pulsing gently against an antique arcade-style grid of circuit patterns. The composition features a static grid of circuit elements that subtly flow with animated liquid currents, while eight glowing worlds float independently, each with its own rhythm of pulsation and rotation. The effect evokes the look of vintage electronic displays, where fragile, luminous life forms exist within a continuous flow of data and energy.",
+  "submitted_by": "profcarroll",
+  "wall_s": 299.983
+}
