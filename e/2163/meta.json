@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cDraw me a picture of HAL-2000 from the motion picture \u201c2001: A Space\u2026\u201d \u2014 sketchgen entry 2163, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2163/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deeply complex, fractal pattern formed by intersecting lines and evolving geometric networks. The structure appears to combine the crystalline symmetry of deep-sea coral with the rich, warm tones of fossilized mahogany. These interconnected lines are overlaid with subtle, deep-toned micro-fractures and veins of oxidized copper. The entire system is perpetually active, featuring patterns of movement that flow and reform continuously, mimicking the synchronized dance of a flock or the rhythmic swing of a pendulum, as the network connections evolve through defined, unchanging rules.",
+  "completion_tokens": 2845,
+  "created_utc": "2026-10-12T20:49:16Z",
+  "entry_id": 2163,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1422,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 23)\npreflight: your variable `key` hides p5's `key`; rename it (sketch.js line 32)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 115.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 128,
+        "sha256": "21d163d5569eec4a6001e6a567126f2db9f865051ea28355e55a176a86c3a1e3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 115.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3883,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 62.216,
+      "wall_s": 128.364
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1423,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 126,
+        "sha256": "28bbb00d084bc99d7a381c3a3f7b4d206a8e760adebe2db75065b6c12f223b8c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 72.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4061,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 39.863,
+      "wall_s": 131.691
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2178,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The principle of continuously evolving, rule-based network connections taken into fossilized mahogany, moving with the regularity of a pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 1965,
+    "root_entry_id": 607
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Draw me a picture of HAL-2000 from the motion picture \u201c2001: A Space Odyssey\u201d\n\nRevise: the same detailed, stylized portrait of HAL-2000, and this time visible structural seams defining the panel joints.\n\nRevise: the same highly detailed, stylized portrait of the mechanical structure of HAL-2000, and this time subtle signs of operational wear and panel degradation.\n\nRevise: the same highly detailed and stylized portrait of a complex, humanoid mechanical structure, and this time visible signs of oxidized corrosion forming along the primary structural seams.\n\nRevise: the same highly detailed portrait of a complex, humanoid mechanical structure, and this time visible signs of deep micro-fractures forming along the primary structural seams.\n\nRevise: depart: The pattern of structural micro-fractures taken into the crystalline formations of deep-sea coral, seen through the mechanism of a flock following three rules.\n\nRevise: depart: The principle of continuously evolving, rule-based network connections taken into fossilized mahogany, moving with the regularity of a pendulum.",
+  "prompt_tokens": 7944,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2163/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2163",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving fractal network that resembles the intricate structure of deep-sea coral, rendered in warm, fossilized tones reminiscent of mahogany and oxidized copper. The visualization consists of hundreds of particles moving through 3D space according to noise-based physics, forming a dynamic web of connections that continuously reorganize. These connections are drawn as subtle lines between nearby particles, creating an ever-shifting geometric pattern. Additional floating points add depth and complexity, suggesting micro-fractures and veins within the structure. The entire system pulses with rhythmic motion, giving the impression of a living, breathing network that evolves through defined, unchanging rules.",
+  "submitted_by": "profcarroll",
+  "wall_s": 260.055
+}
