@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crastaman vibration Revise: the same concentric rings pulsing rhythmic\u2026\u201d \u2014 sketchgen entry 2261, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2261/ Licensed CC BY 4.0.",
+  "brief": "A dark, textured stone surface hosts a luminous, branching network of iridescent bismuth crystals. These metallic, geometric structures glow with shifting rainbow hues as they slowly form. The animation follows a rhythmic, cascading sequence that travels through the branching patterns, mimicking the kinetic chain reaction of falling dominoes.",
+  "completion_tokens": 2868,
+  "created_utc": "2026-10-15T21:02:33Z",
+  "entry_id": 2261,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1410,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 84)\npreflight: your variable `scale` hides p5's `scale()` function; rename it (sketch.js line 93)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] scale is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 83,
+        "sha256": "dbb6c8272c51777bc0e8e4700aeaf117c0370866f3f50d74ed2544670c25aea3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3321,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.513,
+      "wall_s": 114.152
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1458,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 157,
+        "sha256": "d657dd4a7090290c134f9b57483f77f203892e29d78e2f169476b985dec3bb03",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 72.0,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4146,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 41.018,
+      "wall_s": 141.37
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2278,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The luminous, branching network structure taken into a form of slowly cooling bismuth metal, casting itself over a textured stone surface, observed by the mechanism of a row of falling dominoes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2178,
+    "root_entry_id": 1092
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rastaman vibration\n\nRevise: the same concentric rings pulsing rhythmically, and this time expanding the color palette to include bright gold and vibrant green.\n\nRevise: the same concentric rings pulsing rhythmically, and this time shifting the center pulse to move in a figure-eight pattern.\n\nRevise: carry: Fluid, cyclical pulsing given to subterranean magma flow, seen from a satellite.\n\nRevise: carry: Rhythmic, contained energy pulsing given to a network of luminous freshwater roots, wet ink on newsprint\n\nRevise: depart: The luminous, branching network structure taken into a form of slowly cooling bismuth metal, casting itself over a textured stone surface, observed by the mechanism of a row of falling dominoes.",
+  "prompt_tokens": 7467,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2261/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2261",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of a dark stone surface hosting a luminous network of bismuth crystals. The scene features a procedurally generated stone texture with organic noise patterns that ground the composition. Hundreds of geometric crystal structures slowly form and pulse with iridescent rainbow hues, creating a mesmerizing effect that mimics the kinetic chain reaction of falling dominoes. The crystals are connected by subtle lines that propagate through the branching network, suggesting growth and transformation over time. The entire scene exists in a three-dimensional space with dynamic lighting and movement, where each crystal's formation and glow are individually animated to create an organic, living quality to the composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 255.522
+}
