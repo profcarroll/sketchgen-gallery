@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ccreate a simple snowboarding game with no audio. use arrow keys to na\u2026\u201d \u2014 sketchgen entry 2140, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2140/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, deep cross-section of horizontally stacked rock layers, rendered in shades of stone, earth, and crystalline metamorphic hues. Over time, the structure visibly and slowly shifts under the relentless force of plate friction. The rock formations continually interact, showing subtle fracturing, gradual uplift, and visible slippage where segments of the strata pass past one another, constructing the massive, mountainous shapes of a forming range.",
+  "completion_tokens": 3403,
+  "created_utc": "2026-10-12T17:57:36Z",
+  "entry_id": 2140,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1138,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 184,
+        "sha256": "afa07e9bd083d72ccbdf52492b6099d3dfa279482976633d39fb2635ef3d5281",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4090,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.908,
+      "wall_s": 113.956
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1123,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `point` hides p5's `point()` function; rename it (sketch.js line 71)\npreflight: your variable `color` hides p5's `color()` function; rename it (sketch.js line 102)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'color' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (0) with the end of it (0); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 116,
+        "sha256": "a64fb1667224d31cc09afbf8cdce816ad94f428377a69a57ab56e48061959b5f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3710,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.652,
+      "wall_s": 100.567
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1142,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 127,
+        "sha256": "ce7510ab30f0a91321b0226da9b569d8c73dd727b5ba286516e41f263dfc804e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 33.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3920,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 16.989,
+      "wall_s": 107.408
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2155,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: slow, constant, building pressure given to a series of interconnected industrial piston assemblies, formed of rust on sheet steel",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1935,
+    "root_entry_id": 56
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple snowboarding game with no audio. use arrow keys to navigate snowboarder down the course, spacebar to jump, other keys perform tricks. hitting the sidewall of the course causes damage. game over after damage hit 100%\n\nRevise: the same snowboarding course through which a snowboarder navigates, and this time the snowboarder recoils visibly when hitting the sidewall.\n\nRevise: depart: the slow, constant force of pressure and stress acting upon stacked sedimentary rock layers, causing visible slippage and uplift, made of metamorphic rock, seen at a mountain range scale, driven by tectonic plate friction.\n\nRevise: carry: slow, constant, building pressure given to a series of interconnected industrial piston assemblies, formed of rust on sheet steel",
+  "prompt_tokens": 11720,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2140/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2140",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a dynamic cross-section of geological strata undergoing tectonic forces. Through subtle wave motions, simulated slippage, and occasional fracturing, the layered rock formations evolve over time to suggest the slow, powerful processes that build mountain ranges. The use of WEBGL rendering allows for a more immersive 3D perspective while maintaining the performance constraints necessary for smooth animation. Viewer interaction is minimal, as the geological drama unfolds autonomously through procedural animation techniques that create an ever-changing landscape of stone and sediment.",
+  "submitted_by": "profcarroll",
+  "wall_s": 321.931
+}
