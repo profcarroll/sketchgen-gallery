@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 2265, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2265/ Licensed CC BY 4.0.",
+  "brief": "The screen displays a mesmerizing, continuously evolving kaleidoscope pattern, defined by highly intricate, flowing curved splines and razor-sharp crystalline lattice structures. Initially, the patterns exhibit dynamic tension, where the contrasting geometries push against each other. As this tension builds, the visible force lines become increasingly chaotic, culminating in a system-wide energetic discharge. This discharge visibly shatters the confining lattice structure, leaving behind momentary, bright bursts of light that fade back into the cycle of reforming, explosive geometry.",
+  "completion_tokens": 3273,
+  "created_utc": "2026-10-15T21:35:59Z",
+  "entry_id": 2265,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1456,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 58)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 160,
+        "sha256": "9ab7101cd6962197f85e3c31d505d5ac1d9522560264ed119ca3737becd9a177",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3869,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.62,
+      "wall_s": 144.447
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1817,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 172,
+        "sha256": "d28f0112ccca0257484d4a647f1d9189b68d59fdc189eea771e2ce5ad42c3434",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4173,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.05,
+      "wall_s": 166.627
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2282,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the visualization of accumulating vibrational tension taken into a depiction of immiscible liquids merging, seen at ultra-macro scale, driven by directional sonic frequencies.",
+    "critique_by": "gemma4:e4b",
+    "generation": 27,
+    "inherits_source": false,
+    "parent_entry_id": 2184,
+    "root_entry_id": 18
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same intricate, flowing patterns that mimic the rich complexity of a kaleidoscope, and this time the colors will gradient from cool emeralds to warm amethysts\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the movement will emphasize diagonal sweeps and a cyclical expansion outward from the center\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the pattern will incorporate interwoven lines that intersect the primary hexagonal boundary\n\nRevise: the same intricate, flowing kaleidoscope pattern, and this time the interwoven lines will define sharp, contrasting geometric segments throughout the entire interior space\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the contrast between the curved flow and the sharp geometric segments will become highly contrasting and defined.\n\nRevise: the same intricate kaleidoscopic pattern, and this time the geometric segments will begin to form crystalline, interlocking lattices where they meet the flowing curves.\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the crystalline lattices will appear to pulse with a rhythmic, contained energy.\n\nRevise: the same intricate, continuously evolving pattern derived from a kaleidoscope, and this time the sharp geometric segments will expand to form defined, interlocking tessellations across the entire interior.\n\nRevise: remove the node splines and replace with globular splines\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the sharp crystalline lattices will appear to actively fracture and disrupt the smooth flow of the globular splines.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the smooth flow of the globular splines becomes unstable, reacting visibly to the sharp intersections of the lattices.\n\nRevise: the same intricate, flowing kaleidoscopic pattern, and this time the crystalline lattices will aggressively splinter into razor-sharp shards that dissect the smooth globular splines.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the sharp crystalline shards will glow with a contained, pulsing luminescence across the entire interior.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the sharp crystalline shards will begin to pull the smooth globular splines taut, creating visible tension lines along the intersections.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the tension lines will visibly accumulate and amplify the opposing forces at every intersection.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the accumulated tension lines will cause the opposing forces to visibly warp the structure of the globular splines.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the accumulated tension lines visibly solidify into interconnected, fractal networks across the entire interior.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the crystalline lattices will visibly exert outward force, causing the globular splines to momentarily distort and stretch.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the accumulated tension lines will cause visible, localized fracturing across the entire internal surface.\n\nRevise: the same intricate, continuously evolving kaleidoscope pattern, and this time the crystalline shards will coalesce to form defined, interlocking fractal networks across the entire interior.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the interconnected fractal networks will reach a critical mass, causing the entire internal space to visibly warp.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the accumulated tension lines will manifest as visibly radiating force fields across the entire interior.\n\nRevise: the same intricate, flowing kaleidoscopic patterns, and this time the accumulated tension lines cause visible, localized fracturing across the entire internal surface.\n\nRevise: the same intricate, continuously evolving kaleidoscopic pattern, and this time the localized fracturing effect escalates into a system-wide energetic discharge that visibly shatters the confining lattice structure.\n\nRevise: flip: a sketch of perfectly balanced equilibrium and absolute stillness, featuring microscopic, slow-growing cellular structures and calcified mineral deposits, made of corrugated cardboard, seen at ultra-macro scale, by a deep-time geologic process.\n\nRevise: flip: a chaotic burst of woven wool fibers and silica micro-spicules, seen at ultra-macro scale, driven by superheated subterranean steam, made of knitted wool.\n\nRevise: depart: the visualization of accumulating vibrational tension taken into a depiction of immiscible liquids merging, seen at ultra-macro scale, driven by directional sonic frequencies.",
+  "prompt_tokens": 8042,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2265/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2265",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing kaleidoscope effect through the interplay of flowing curved splines and rigid crystalline lattice structures. The splines move dynamically with noise-based physics, leaving trails that form intricate patterns across the canvas. Meanwhile, a lattice of points maintains tension that builds chaotically until it culminates in energetic discharges \u2014 bright bursts that shatter the confining structure. The visual tension between smooth fluid motion and sharp geometric constraints creates an ever-evolving, explosive display where order dissolves into chaos and reforms repeatedly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 311.074
+}
