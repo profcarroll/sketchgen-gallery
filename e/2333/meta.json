@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crhododendrons Revise: the same dense, lush field of rhododendrons, an\u2026\u201d \u2014 sketchgen entry 2333, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2333/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a tessellated, stained-glass pattern evoking the rigid geometry and vibrant aesthetic of 1920s Bauhaus design. Solid forms are continuously observed fragmenting into swirling, organic colors, visualizing the principle of organic refraction. These patterns form intricate, dynamic light fields that pulse across the panel. When the viewer moves the mouse cursor across the surface, the established patterns react immediately, causing the geometric light to distort and intensify the flowing shapes.",
+  "completion_tokens": 4353,
+  "created_utc": "2026-10-24T01:06:25Z",
+  "entry_id": 2333,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1772,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 87,
+        "sha256": "872af884985ac0cf5930f9097380e63959c2ebef75838253a18c1a1335f471c5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3406,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.695,
+      "wall_s": 133.6
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1087,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 104)\n\ngate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 185,
+        "sha256": "458bb6d5ab4b38d996cf6e6627cf5fc30216b68f6206f9915eb766eef722217a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.0,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 4331,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.364,
+      "wall_s": 115.829
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1494,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 127,
+        "sha256": "48c07a6628c9629c608c912897d6664ddef518ad8e21c56c1025ae37d766c278",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3790,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 11.484,
+      "wall_s": 124.837
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2352,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: dynamic geometric patterns taken into the crystalline structure of deep-sea bioluminescence, seen at biological scale, in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2091,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms flowing in slow, rhythmic currents.\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms settling into pockets of still, reflective water.\n\nRevise: the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.\n\nRevise: the same tapestry of rhododendron blooms and foliage, and this time the ripple causes the water surface to gather into visible, marbled currents, distorting the reflection in swirling shapes.\n\nRevise: depart: The principle of organic refraction, where solid forms fragment into swirling color, applied to a tessellated stained glass panel, creating dynamic patterns of geometric light, as a 1920s Bauhaus exercise.\n\nRevise: depart: dynamic geometric patterns taken into the crystalline structure of deep-sea bioluminescence, seen at biological scale, in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 11527,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2333/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2333",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an evolving tessellation of geometric forms inspired by 1920s Bauhaus design principles. The composition features a grid of polygonal tiles that continuously pulse and shift in size, rotation, and color, creating a dynamic field of light and shadow. Each tile is composed of multiple layers: a primary geometric shape with an inner pattern that subtly changes over time. The entire structure pulses rhythmically, with tiles gently moving across the canvas while maintaining their geometric integrity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 374.266
+}
