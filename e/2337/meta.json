@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 2337, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2337/ Licensed CC BY 4.0.",
+  "brief": "The canvas features a complex, architectural abstract pattern of layered, branching neon lines that resemble petrified internal coral. These glowing lines map measured energy fluctuations, creating a visually dense, geometric network that evokes the disciplined structure of 1920s Bauhaus design. The entire composition is defined by cyclical motion; the glowing lines subtly pulse and flow, creating the impression that energy is perpetually moving through the suspended, structural web. There are no required user inputs, allowing the geometric pattern to evolve continuously.",
+  "completion_tokens": 2353,
+  "created_utc": "2026-10-24T01:40:28Z",
+  "entry_id": 2337,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 792,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 720.7 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 102,
+        "sha256": "b399a5f3a8dc0dbc47d16bec1a283a6ea40c0d00a86d22024646bddd9a74efa1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 720.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3430,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.508,
+      "wall_s": 73.422
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 804,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 151.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 81,
+        "sha256": "0ff656e68b4fdf5fd58b046099b112e8f79578d3c5b3cceb4fdd8428986eec29",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 151.4,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3412,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 65.484,
+      "wall_s": 72.253
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 757,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 84,
+        "sha256": "eef3bbd84c2544350ccfb99027916aff207489e9bbdb9a02d5468395602fc08a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 62.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3439,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 28.798,
+      "wall_s": 68.603
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2356,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the abstract tracing of measured energy fluctuations taken into the layered, branching patterns of petrified internal coral, as a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2096,
+    "root_entry_id": 1452
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring a noticeable, steady rhythmic pulse in its intensity.\n\nRevise: the same glowing neon line tracing the chaotic contours of an electrocardiogram reading, and this time featuring noticeably cyclical and uniform spikes.\n\nRevise: the same complex contours of an electrocardiogram reading, and this time featuring wildly irregular, unpredictable spikes and dips.\n\nRevise: the same glowing neon line tracing the unpredictable contours of an electrocardiogram reading, and this time featuring distinct, repeating groupings of spikes and dips.\n\nRevise: depart: the abstract tracing of momentary energy fluctuations taken into a complex, suspended network of spun glass structures, appearing embedded in yellow beeswax\n\nRevise: depart: the abstract tracing of measured energy fluctuations taken into the layered, branching patterns of petrified internal coral, as a 1920s Bauhaus exercise.",
+  "prompt_tokens": 10281,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2337/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2337",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an abstract, architectural pattern of layered neon lines that evoke the structure of 1920s Bauhaus design. The composition features a complex branching network of glowing lines that pulse and flow with cyclical motion, resembling petrified internal coral or energy fluctuations. Through continuous geometric animation in 3D space, the piece visualizes an abstract field of movement and structure, where the entire pattern evolves autonomously without user input. The design balances mathematical precision with organic flow, creating a sense of perpetual energy moving through a suspended, structural web.",
+  "submitted_by": "profcarroll",
+  "wall_s": 214.278
+}
