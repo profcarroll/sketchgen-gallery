@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cShip of fools, sail away from me Revise: the same whimsical paper-cut\u2026\u201d \u2014 sketchgen entry 2128, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2128/ Licensed CC BY 4.0.",
+  "brief": "The sketch depicts a close-up view of abandoned, complex brass clockwork machinery constructed from corrugated cardboard. Time appears to be slowing down the mechanisms as delicate gears, linkages, and components undergo calcification. Crystals of sediment and mineral deposits slowly form, gradually encapsulating and cementing the intricate workings. The resulting scene is a tableau of decay and petrification, where the metallic and fibrous components are becoming solid, crystalline relics.",
+  "completion_tokens": 5059,
+  "created_utc": "2026-10-12T16:36:45Z",
+  "entry_id": 2128,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1680,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 173,
+        "sha256": "38cedaa950ae517640db9fe3aafe73050f78699dac85a5176817d33539ea819a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4177,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.988,
+      "wall_s": 154.591
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1678,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 187,
+        "sha256": "4f939d91de2a2618af6fd48298f286cddded1048e940027d9bd94624966df392",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4249,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.015,
+      "wall_s": 155.434
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1701,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 187,
+        "sha256": "4f939d91de2a2618af6fd48298f286cddded1048e940027d9bd94624966df392",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4249,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 7.012,
+      "wall_s": 112.869
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2143,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The slow, continuous calcification of delicate, mechanical components\u2014tiny gears and linkages\u2014as they become encapsulated in crystalline sediment, seen through the lens of abandoned, corroded brass clockwork machinery, made of corrugated cardboard.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 1921,
+    "root_entry_id": 1461
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "Ship of fools, sail away from me\n\nRevise: the same whimsical paper-cut ships, and this time the ships leave behind small, dissolving wake trails\n\nRevise: the same whimsical, paper-cut ships, and this time the ships are weathered with subtle patina and aged wood grain\n\nRevise: the same whimsical ships, and this time they have visible moss and barnacle buildup\n\nRevise: the same whimsical, paper-cut ships, and this time their edges show visible warping and tears from water damage\n\nRevise: the same whimsical, paper-cut ships, and this time small sections of the vibrant paper surface appear dissolved by the water damage\n\nRevise: the same whimsical, paper-cut ships, and this time the dissolved wake trails leave behind streaks of mineral leaching discoloration on the surrounding medium\n\nRevise: the same whimsical, paper-cut ships, and this time the mineral streaks left by the wakes are crystalline salt deposits\n\nRevise: the same translucent sheet that serves as a medium for whimsical, paper-cut ships, and this time the deterioration causes the warped paper edges to detach into small, drifting fragments.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments gather and accumulate into small piles along the translucent sheet.\n\nRevise: the same translucent sheet, and this time the dissolved wake trails leave behind permanent, dense trails of accumulated, crystalline sediment.\n\nRevise: the same whimsical, paper-cut ships, and this time the mineral streaks left by the wakes solidify into brittle, fragile mineral scaffolds.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments gather and accumulate into small piles along the translucent sheet.\n\nRevise: the same whimsical, paper-cut ships, and this time the detached, water-damaged fragments accumulate into dense, mountainous drifts along the translucent sheet's edge.\n\nRevise: the same translucent medium populated by whimsical, paper-cut ships, and this time the accumulated mineral sediment begins to encase and solidify the hulls of the ships.\n\nRevise: the same mineralized tableau, and this time the accumulated detrital piles begin to overpower the ships, burying them completely.\n\nRevise: the same translucent medium populated by whimsical, paper-cut ships, and this time the solidified mineral sediment forms delicate, crystalline geode structures encasing the vessels.\n\nRevise: the same whimsical, intricate paper-cut ships, and this time their hulls are beginning to solidify and encase themselves in delicate crystalline mineral scaffolds.\n\nRevise: depart: The slow, continuous calcification of delicate, mechanical components\u2014tiny gears and linkages\u2014as they become encapsulated in crystalline sediment, seen through the lens of abandoned, corroded brass clockwork machinery, made of corrugated cardboard.",
+  "prompt_tokens": 12675,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2128/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2128",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the passage of time through a visual metaphor of mechanical decay and petrification. It depicts a close-up view of brass clockwork machinery constructed from corrugated cardboard, where time appears to slow as delicate mechanisms undergo calcification. The scene captures the gradual encapsulation of intricate workings in crystalline formations, creating a tableau of decay and transformation. The viewer observes gears rotating slowly, linkages fading away, and mineral deposits slowly forming around them \u2014 all rendered with a translucent sediment background that suggests deep geological time. The piece conveys the quiet, persistent march of time through subtle changes in motion, color, and form, transforming mechanical complexity into fragile, crystalline relics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 422.894
+}
