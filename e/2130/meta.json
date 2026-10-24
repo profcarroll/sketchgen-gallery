@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ccreate a simple retro driving game without sound. arrow keys drive. s\u2026\u201d \u2014 sketchgen entry 2130, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2130/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a cross-section of a massive canyon revealing the slow, persistent history of a riverbank. The scene is composed entirely of dense, layered concrete material, rendered in muted, earthy tones. The viewer observes distinct, horizontal stripes representing accumulated sediment, showcasing the effects of deep time and continuous geological processes. Nothing on the canvas changes when the viewer interacts with it; instead, the entire composition exhibits a slow, inevitable evolution, subtly building up new layers and redefining the visible strata as if viewed through a geological time-lapse.",
+  "completion_tokens": 777,
+  "created_utc": "2026-10-12T16:46:59Z",
+  "entry_id": 2130,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 777,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 63,
+        "sha256": "4d3f56e25b2cf0d0d7965662bb143b56b5baedafc479818ceeeacb7e92d77964",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.9,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3192,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.441,
+      "wall_s": 70.575
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2145,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the continuous process of layered material accumulation taken into the visible cross-section of a colossal, beating biological heart, made of bronze, seen at the scale of a city, driven by gears and cams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 1925,
+    "root_entry_id": 55
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "create a simple retro driving game without sound. arrow keys drive. space bar is brake. acceleration is automatic.\n\nRevise: the same retro driving scene, and this time make the road appear to curve at the end.\n\nRevise: the same retro representation of a road rushing beneath a vehicle, and this time include simple side roads leading off the main path.\n\nRevise: depart: the constant, unavoidable cycle of sedimentation building layered stripes along a riverbank, made of poured concrete, seen at the scale of a massive canyon, in the deep past.\n\nRevise: depart: the continuous process of layered material accumulation taken into the visible cross-section of a colossal, beating biological heart, made of bronze, seen at the scale of a city, driven by gears and cams.",
+  "prompt_tokens": 3192,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2130/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2130",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch presents a monumental bronze heart structure rendered in a volumetric cross-section, evoking the slow, continuous processes of geological formation. The composition builds upon the concept of deep time through layered material accumulation, but transforms it into an organic, pulsing biological form. The heart's walls are composed of horizontal strata that subtly shift and pulse with time, suggesting the rhythmic beating of a city-sized organ. Through constant, imperceptible motion, the layers build up and redefine themselves, creating a sense of perpetual evolution and growth within a single moment. The muted bronze tones and volumetric rendering create an atmosphere of ancient durability and organic vitality simultaneously.",
+  "submitted_by": "profcarroll",
+  "wall_s": 70.575
+}
