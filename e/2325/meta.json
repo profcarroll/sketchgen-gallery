@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can ant colony digging tunnels toward wherever you last clicked Revise\u2026\u201d \u2014 sketchgen entry 2325, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2325/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a magnified, deep cross-section of interwoven, complex natural pathways, structured like solidified, dripping beeswax. These intricate networks are filled with crystalline veins and sediment deposits, ranging in color from amber gold to muted earth tones. The patterns are highly detailed and appear to follow the logic of ancient folklore and subterranean journeys. The shapes are organic yet geometric, forming interwoven matrices that stabilize in place, creating the illusion of a solid, fossilized tapestry viewed at a lunar scale.",
+  "completion_tokens": 2932,
+  "created_utc": "2026-10-24T00:10:06Z",
+  "entry_id": 2325,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 967,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2434/255, 16026 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 196,
+        "sha256": "6441fab6b8937c5d00173607cee4ee49b267b43b98f486707d8d8307bc98cda8",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4217,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.055,
+      "wall_s": 119.518
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 993,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2434/255, 16026 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 121,
+        "sha256": "da75a45607ab4ac412f9cb1353ef2327ac47a0037b132fd246e43545a7a428b6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3569,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.889,
+      "wall_s": 87.342
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 972,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2434/255, 16026 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 121,
+        "sha256": "da75a45607ab4ac412f9cb1353ef2327ac47a0037b132fd246e43545a7a428b6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3569,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.814,
+      "wall_s": 55.864
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2344,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The continuous flow of stories taken into the cross-section of solidified, dripping beeswax, seen at a lunar scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2083,
+    "root_entry_id": 1478
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an ant colony digging tunnels toward wherever you last clicked\n\nRevise: the same intersecting geometric paths, and this time the tunnels widen and fill with running underground streams.\n\nRevise: the same complex networks of intersecting geometric paths, and this time the flowing underground streams leave behind visible mineral deposits and sediment at every junction.\n\nRevise: the same network of intersecting geometric paths, and this time the mineral deposits have crystallized, forming crystalline veins that jut out from the junctions.\n\nRevise: depart: The notion of reinforcing, intersecting pathways taken into a depiction of complex, interwoven narratives and symbolic figures of folklore, medieval tapestry\n\nRevise: depart: The continuous flow of stories taken into the cross-section of solidified, dripping beeswax, seen at a lunar scale.",
+  "prompt_tokens": 11355,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2325/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2325",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a still, intricate cross-section of fossilized geological formations resembling solidified beeswax. The composition features interwoven organic pathways\u2014represented as flowing threads\u2014that grow and branch within a deep amber-toned landscape. These structures are punctuated by crystalline veins and sediment deposits that create a sense of ancient subterranean journeys. The piece captures the illusion of a stabilized, layered tapestry viewed at an intimate scale, where detail emerges from the complexity of form and color without any animated motion to disrupt its contemplative stillness.",
+  "submitted_by": "profcarroll",
+  "wall_s": 262.724
+}
