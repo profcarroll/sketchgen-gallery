@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201clighthouse Revise: the same cyclical beam of light, and this time the\u2026\u201d \u2014 sketchgen entry 2126, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2126/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a vast, deep-sea environment dominated by crystal formations and shimmering mineral lattices. A powerful, cyclical beam of light sweeps across the scene, striking the crystalline structures. This directional force causes the lattices to react, fracturing and blooming in slow, rhythmic pulses of color. The surrounding deep water catches the light, rendering the illumination in scattered, speckled washes of contrasting hues, giving the impression of geological activity occurring at a grand, monumental scale.",
+  "completion_tokens": 2583,
+  "created_utc": "2026-10-12T16:19:12Z",
+  "entry_id": 2126,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1289,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 501.3 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 136,
+        "sha256": "4d3d672d0471c634fc7ccbaccde9f5ce7d2d9467759f09177e191791795f8f39",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 501.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3751,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 45.515,
+      "wall_s": 114.728
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1294,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 142,
+        "sha256": "f93053bfa056839bae70dd4e712341053acf7dd2ea6e43beb82d7c78b4496ddb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3917,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 20.287,
+      "wall_s": 117.807
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2141,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the interaction of a powerful, rhythmic directional force taken into the crystalline structures of deep-sea vent minerals, shown as the lattices slowly fracture and bloom, made of fracturing crystal, seen at geological scale",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1919,
+    "root_entry_id": 1913
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lighthouse\n\nRevise: the same cyclical beam of light, and this time the illumination upon the surrounding ocean is rendered with scattered, speckled washes of contrasting color.\n\nRevise: depart: the interaction of a powerful, rhythmic directional force taken into the crystalline structures of deep-sea vent minerals, shown as the lattices slowly fracture and bloom, made of fracturing crystal, seen at geological scale",
+  "prompt_tokens": 7668,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2126/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2126",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast deep-sea environment populated by crystal formations and shimmering mineral lattices. A sweeping beam of light cycles across the scene, illuminating and activating the crystalline structures in rhythmic pulses. The visualization emphasizes the grand scale of geological activity through a combination of glowing crystals and scattered particles that respond to the directional force of the light beam. The technique uses WebGL rendering for efficient 3D drawing with batched point clouds and simplified crystal geometry to maintain performance while conveying the immersive, monumental quality of the underwater landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 232.535
+}
