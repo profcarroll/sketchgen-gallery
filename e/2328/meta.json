@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cillustrate tensor flows inside the GPUs racked up inside a data cente\u2026\u201d \u2014 sketchgen entry 2328, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2328/ Licensed CC BY 4.0.",
+  "brief": "The scene presents a deep, focused cross-section within an amber-toned, solid resin, viewed as if under a microscope. Two distinct, luminous energy filaments\u2014one vibrant blue and one emerald green\u2014approach and converge at a geometrically complex junction. The filaments are depicted as pulsating veins that interact at the point of intersection, creating visible lines of intense, rhythmic light and energy flow that permeate the surrounding mineral medium.",
+  "completion_tokens": 2677,
+  "created_utc": "2026-10-24T00:30:02Z",
+  "entry_id": 2328,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1310,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 52)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 118)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 207.8 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "c1a126c6da7695ff26387a780bd6b7bd6e239a18ca403bc83be457499569b28a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 207.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3579,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.987,
+      "wall_s": 109.877
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1367,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "2327b8675cc70cd9b2b17920f35792c3466c2f7dbff9f925d91d78c7f4df8a68",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.3,
+      "num_ctx": 16384,
+      "preload_s": 0.045,
+      "prompt_tokens": 4046,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.829,
+      "wall_s": 123.891
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2347,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "zoom: a microscopic junction where two distinct blue and green energy filaments converge within the solid, amber-toned resin, forming a geometrically complex point of intense, rhythmic pulsation, viewed under a microscope",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2086,
+    "root_entry_id": 1392
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "illustrate tensor flows inside the GPUs racked up inside a data center\n\nRevise: the same stylized interior view of stacked server racks, and this time the abstract data ribbons converge into visible nodal hotspots.\n\nRevise: the same stylized, isometric interior of stacked server racks, and this time the pulsating hotspots cast sharp, visible geometric light patterns across the metallic structure.\n\nRevise: the same stylized, deep isometric cross-section of stacked server racks, and this time the geometric patterns cast on the metal reveal underlying circuit tracings.\n\nRevise: the same deep, stylized, isometric cross-section of stacked server racks, and this time the glowing circuit tracings pulse, creating visible lines of volumetric data flow.\n\nRevise: carry: luminous, pulsing veins given to the cross-section of a colossal terrestrial root system, made of mineral resin, seen at the depth of the ocean floor\n\nRevise: zoom: a microscopic junction where two distinct blue and green energy filaments converge within the solid, amber-toned resin, forming a geometrically complex point of intense, rhythmic pulsation, viewed under a microscope",
+  "prompt_tokens": 7625,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2328/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2328",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a microscopic cross-section of amber-toned resin where two luminous energy filaments\u2014blue and green\u2014flow toward a geometrically complex junction. The filaments pulse rhythmically as they approach each other, their paths rendered as glowing veins that interact at the point of convergence. At the intersection, intense light radiates outward in rhythmic energy flow lines, creating a mesmerizing visual representation of dynamic interaction within the solid medium. The scene uses WebGL rendering to achieve depth and volumetric effects while maintaining performance within strict frame budget constraints, presenting an immersive view into the mineral's inner energy dynamics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 233.768
+}
