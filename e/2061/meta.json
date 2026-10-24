@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmoss slowly reclaiming a grid of abandoned pixels Revise: the same ge\u2026\u201d \u2014 sketchgen entry 2061, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2061/ Licensed CC BY 4.0.",
+  "brief": "The composition centers on a dark, abandoned grid of pixels, which is suddenly invaded by a delicate, organic growth. As the life spreads across the digital surface, a swift crystallization event takes hold. This process violently halts the movement, and the encroaching organic material immediately shatters. The pixels are instantly frozen and solidified into sharp, geometric formations, giving the entire surface the structured appearance of polished ceramic tiles.",
+  "completion_tokens": 3501,
+  "created_utc": "2026-10-12T08:22:05Z",
+  "entry_id": 2061,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1132,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.5315/255, 8852 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 133,
+        "sha256": "0ef3926099c090ed75bc1256e6cea682bb5dca1185944f211518d740c7487f3a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3601,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.422,
+      "wall_s": 100.292
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1182,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.5315/255, 8852 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 141,
+        "sha256": "feef2477a8ec9bc4d608d2bd86e5b97b25df6b7432c96230025a64b477bbd2e4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3718,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.937,
+      "wall_s": 104.54
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1187,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.3915/255, 2257 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 147,
+        "sha256": "df87cfaa2bd3a57c68c454ec9bf11d441f84fb7eade6f1cf85152413072c3df5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 18.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3753,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 8.973,
+      "wall_s": 106.843
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2075,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sudden crystallization process, where the spread of crystalline life violently halts motion and instantly freezes the surrounding pixels into sharp, unmoving geometric formations, made of ceramic tile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": false,
+    "parent_entry_id": 1600,
+    "root_entry_id": 1464
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "moss slowly reclaiming a grid of abandoned pixels\n\nRevise: the same gentle, continuous spread of organic life across the digital grid, and this time causing the abandoned pixels to shatter into bright, iridescent splinters.\n\nRevise: flip: a sudden crystallization process, where the spread of crystalline life violently halts motion and instantly freezes the surrounding pixels into sharp, unmoving geometric formations, made of ceramic tile.",
+  "prompt_tokens": 11072,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2061/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2061",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the tension between organic growth and rigid structure through a digital landscape that transitions from a dark, static grid to an explosive organic spread, only to be abruptly frozen into geometric crystalline formations. The composition begins with a uniform black canvas populated by a sparse array of growing circles that slowly consume space. As these forms reach their limits, they trigger a violent transformation where the organic material shatters and solidifies into sharp, tile-like structures. The viewer witnesses this process as a sudden shift from fluid motion to crystalline stillness\u2014a moment where chaos becomes order, and life becomes architecture.",
+  "submitted_by": "profcarroll",
+  "wall_s": 311.675
+}
