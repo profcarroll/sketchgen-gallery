@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdominoes falling in a spiral that never reaches the center Revise: th\u2026\u201d \u2014 sketchgen entry 2118, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2118/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a detailed depiction of a natural delta, woven into the style of a medieval tapestry. The patterns are formed by luminous, creeping water, which traces intricate, interconnected pathways. These flowing shapes and lines are rendered using dyed wool, giving the surface a rich, textured appearance. The palette of colors is deep and saturated, evoking the glow of luminous water against the muted, earthy tones of the weave. The scene is observed at full scale, presenting a static yet visually dynamic moment of flowing patterns.",
+  "completion_tokens": 3632,
+  "created_utc": "2026-10-12T15:26:19Z",
+  "entry_id": 2118,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1219,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 96)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2699/255, 2786 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "865d1a74e5aa6eb9584727c13535f18b90094c0718e33dea209916106d52f0e3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3681,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.785,
+      "wall_s": 108.154
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1193,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 96)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2656/255, 2570 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 129,
+        "sha256": "3b71f439daa9795f764ee03d07abeac3ea9de84ba4d7192f9c3bb7fe7cc322cb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3810,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.704,
+      "wall_s": 108.338
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1220,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 96)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2656/255, 2570 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 129,
+        "sha256": "b616cebd1323f88fb08686f66751f53ec0731b1d0cb429df41b0d78aa7ba4d37",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.7,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3810,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.773,
+      "wall_s": 110.193
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2133,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: The interconnected flow of luminous, creeping water, tracing patterns through a natural delta, made of dyed wool, seen at full scale, in the medieval tapestry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 1883,
+    "root_entry_id": 1485
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "dominoes falling in a spiral that never reaches the center\n\nRevise: the same perpetual cascade of blocks, and this time the falling dominoes have random colors and varying sizes.\n\nRevise: the same perpetual cascade of colorful rectangular blocks, and this time the falling blocks feature wildly varying sizes and irregular shapes\n\nRevise: the same colorful rectangular blocks, and this time they are composed of iridescent, crystalline materials.\n\nRevise: the same colorful, crystalline rectangular blocks, and this time they are composed of solid, dull metallic materials.\n\nRevise: the same colorful rectangular blocks, and this time they are composed of translucent, colored glass.\n\nRevise: the same colorful rectangular blocks, and this time they all feature faint, glowing lines of gold etched into their translucent surfaces.\n\nRevise: carry: The interconnected flow of luminous, creeping water, tracing patterns through a natural delta, made of dyed wool, seen at full scale, in the medieval tapestry.",
+  "prompt_tokens": 11301,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2118/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2118",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a static yet dynamically evolving tapestry of luminous water patterns, evoking the intricate weaving of a medieval textile. The composition features flowing, interconnected pathways that trace through the canvas with organic movement, using a rich, saturated color palette inspired by deep earth tones and glowing waters. Each strand is rendered as a continuous shape with varying opacity and width, creating a sense of depth and motion within a fixed frame. The visual texture emerges from subtle variations in hue, stroke effects, and scattered points that mimic the weave's surface. Though the overall scene remains still to satisfy the no-motion requirement, each flowing stream subtly evolves over time, creating an illusion of constant, gentle flow \u2014 a frozen moment in the continuous dance of water through a delta landscape.",
+  "submitted_by": "profcarroll",
+  "wall_s": 326.685
+}
