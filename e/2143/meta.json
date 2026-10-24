@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdesign a simple platformer game Revise: try again but this time make\u2026\u201d \u2014 sketchgen entry 2143, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2143/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays overlapping, layered structures that appear like deep-sea sediment and knitted fiber. Mineralized fossil patterns emerge from a continuous background of rich, muted blues and earth tones, suggesting slow geological time. These intricate, crystalline pathways are formed by the unseen currents of forgotten memory. The patterns shift and crystallize slowly across the surface, with faint, organic geometries suggesting life preserved within solid, repeating lattices. The viewer observes the gradual, almost imperceptible crystallization of the pathways as new layers accrue over old ones, mapping historical records into physical structure.",
+  "completion_tokens": 3066,
+  "created_utc": "2026-10-12T18:24:25Z",
+  "entry_id": 2143,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1534,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 548.9 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 152,
+        "sha256": "a1c6d2004d462cf73c089bf6c244b02dffd2b172d095c78cfc370087d7d0fc71",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 548.9,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3894,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 35.374,
+      "wall_s": 135.203
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1532,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 168,
+        "sha256": "a7bc1ffc85c387a927be2d629a3631813284de39caded3025ff4b7a65843fc25",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 45.8,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 4142,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 31.524,
+      "wall_s": 141.986
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2158,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of interconnected, ephemeral pathways of forgotten memory taken into the crystalline structures of deep-sea sediment, where the patterns of current and life eventually form mineralized fossil records, knitted wool",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 1938,
+    "root_entry_id": 107
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a simple platformer game\n\nRevise: try again but this time make the game playable with the mouse and or keyboard\n\nRevise: the same scrolling environment featuring solid, blocky platforms, and this time incorporate varied block shapes, making the landscape less repetitive.\n\nRevise: depart: the persistent, scrollable emptiness of the void between solid platforms taken into a continuous stream of overlapping, diagrammatic pathways of forgotten memories, made of wet ink on newsprint.\n\nRevise: depart: the idea of interconnected, ephemeral pathways of forgotten memory taken into the crystalline structures of deep-sea sediment, where the patterns of current and life eventually form mineralized fossil records, knitted wool",
+  "prompt_tokens": 8036,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2143/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2143",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an immersive visualization of deep-sea sedimentary layers and fossilized crystalline patterns emerging from a muted blue and earth-toned background. Using WebGL rendering, it draws slowly evolving structures that appear to form through geological time \u2014 organic geometries suggest preserved life within solid lattices. The patterns shift imperceptibly across the canvas as new layers accrue over time, mapping historical records into physical structure. The visual effect combines fluid organic growth with crystalline mineral formations, evoking the patient, cyclical processes of sedimentation and fossilization in oceanic depths.",
+  "submitted_by": "profcarroll",
+  "wall_s": 277.189
+}
