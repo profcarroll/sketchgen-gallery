@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: carry:\u2026\u201d \u2014 sketchgen entry 2235, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2235/ Licensed CC BY 4.0.",
+  "brief": "The visualization displays complex, interlocking planar geometry that evokes the structure of massive fossilized shells. These structures are initially rendered as delicate, textured chalk markings on a dark slate background, lending a sense of deep geological history. Time causes these static lines to be invaded by bursts of highly saturated, pulsing digital energy, which bleed across the chalk outlines like data corruption or chemical reactions. The entire scene pulses with a slow, decaying, electric rhythm, mimicking the visual noise of an old broadcast transmission. The viewer can click anywhere on the canvas to trigger a sudden, disruptive glitch, causing the structured lines to rapidly scatter into bright, fragmented points.",
+  "completion_tokens": 1446,
+  "created_utc": "2026-10-14T19:32:56Z",
+  "entry_id": 2235,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1446,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 147,
+        "sha256": "2b26a912c06423247c4f9328965f7e5a7e9ac86ed319324c4fe680e5d014763d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.6,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3874,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 8.408,
+      "wall_s": 129.461
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2252,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the structural idea of layered, intersecting planar geometry taken into the cross-section of massive fossilized ocean shells, rendered as chalk on slate",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 2033,
+    "root_entry_id": 1397
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard\n\nRevise: depart: the structural idea of layered, intersecting planar geometry taken into the cross-section of massive fossilized ocean shells, rendered as chalk on slate",
+  "prompt_tokens": 3874,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2235/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2235",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This visualization renders the cross-sections of massive fossilized ocean shells as delicate chalk markings on a dark slate background, evoking deep geological history. The scene pulses with a slow, decaying electric rhythm that simulates visual noise from an old broadcast transmission. When clicked, the structured lines rapidly scatter into bright, fragmented points, creating a glitch effect that disrupts the ordered fossil geometry. The sketch uses WEBGL to create layered planar structures that breathe and pulse, with energy bursts bleeding across the chalk outlines like data corruption or chemical reactions. The visual metaphor captures both the fragility of ancient geological formations and the sudden disruption of digital systems.",
+  "submitted_by": "profcarroll",
+  "wall_s": 129.461
+}
