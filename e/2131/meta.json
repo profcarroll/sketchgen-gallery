@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca study in pyramidal sculptural forms as architecture where land meet\u2026\u201d \u2014 sketchgen entry 2131, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2131/ Licensed CC BY 4.0.",
+  "brief": "The canvas portrays a complex, interwoven network of submerged roots, highly structured with patterns resembling ceramic tile. This organic structure acts as a conduit for rhythmic mechanical energy, causing the entire mass to pulse with continuous, internal light. The bioluminescence illuminates the deep, aquatic environment, giving the appearance of a glowing, pulsing resonance taking place beneath the water's surface. The scene is purely observational, presenting a constant cycle of rhythmic light and shadow.",
+  "completion_tokens": 1939,
+  "created_utc": "2026-10-12T16:54:50Z",
+  "entry_id": 2131,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 970,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 68)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 80)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 105.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 157,
+        "sha256": "8f50e7f470db2f7aa483cf2cb5365e9e3683b085a153fe5d1fe3dc1c7fb27378",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 105.1,
+      "num_ctx": 16384,
+      "preload_s": 0.031,
+      "prompt_tokens": 3811,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 48.01,
+      "wall_s": 95.293
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 969,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "afef0b1f6fe5e6773415256b37f0ec3764c91ed8acf7a6177d04fe20e5642fc5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 56.6,
+      "num_ctx": 16384,
+      "preload_s": 0.031,
+      "prompt_tokens": 3705,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 26.642,
+      "wall_s": 90.861
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2146,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the transfer of rhythmic mechanical resonance taken into a dense, interwoven network of submerged roots, pulsing with bioluminescence, made of ceramic tile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 1926,
+    "root_entry_id": 96
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a study in pyramidal sculptural forms as architecture where land meet sea\n\nRevise: the same geometrically precise, pyramidal architectural structures, and this time the water surface ripple intensity increases proportionally with structure proximity\n\nRevise: depart: the transference of kinetic energy from solid forms into a fluid, taken into a constellation of nested, bioluminescent crystal structures, driven by a pendulum.\n\nRevise: depart: the transfer of rhythmic mechanical resonance taken into a dense, interwoven network of submerged roots, pulsing with bioluminescence, made of ceramic tile.",
+  "prompt_tokens": 7516,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2131/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2131",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a submerged root network that pulses with rhythmic bioluminescence, creating an organic yet structured pattern reminiscent of ceramic tiling. The scene is rendered using WebGL for depth and dimensionality, with roots drawn as interconnected segments that pulse in synchronization with a central rhythm. Bioluminescent particles float throughout the space, their glow intensifying and dimming in time with the root structure. The effect is one of continuous, internal light\u2014like an underwater resonance that pulses with life, filled with subtle movement and patterned interweaving.",
+  "submitted_by": "profcarroll",
+  "wall_s": 186.154
+}
