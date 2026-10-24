@@ -1,0 +1,135 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 2168, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2168/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays the deep interior of the earth, visualizing the interaction between vast, layered currents of global energy and slow-growing subterranean mineral veins. The energy flows are depicted as massive, striated sheets of colored matter that interact violently with stationary crystalline formations. Where the energy differential is greatest, the veins glow brightly, rapidly crystallizing and pushing against the surrounding rock. The movement is perpetual and geological in scale, showing slow but relentless structural changes and sharp, vibrant gradients as new mineral structures continually form and accumulate.",
+  "completion_tokens": 2339,
+  "created_utc": "2026-10-12T21:22:00Z",
+  "entry_id": 2168,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1216,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `cone()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 85)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 91)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 100)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 106)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 226.7 ms per frame over the first 84 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 84 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 64,
+        "sha256": "1fea45de42fed77883e2ab27902d7d7d8c3e4a207a1225964bd36ff4b046cd8e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 226.7,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3227,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 30.313,
+      "wall_s": 94.818
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1123,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 115,
+        "sha256": "70a874bcbf9f37bdbd884006292b9be429ffbbfc4584e57c596d438406df3b0b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 80.5,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4064,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 37.134,
+      "wall_s": 110.263
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2183,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The powerful, layered flow of global energy differentials taken into the deep crystallization of subterranean mineral veins, seen at the scale of a mountain range.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 1973,
+    "root_entry_id": 379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.\n\nRevise: depart: The rhythmic structuring of oceanic currents taken into the massive energy differentials of atmospheric weather systems, seen from a satellite, driven by global wind patterns.\n\nRevise: depart: The powerful, layered flow of global energy differentials taken into the deep crystallization of subterranean mineral veins, seen at the scale of a mountain range.",
+  "prompt_tokens": 7291,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2168/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2168",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the deep interior of the Earth as a dynamic, geological theater where vast energy currents flow through solid rock while mineral veins grow and interact. The energy flows are depicted as large, striated sheets that move with slow, rhythmic undulations, representing global-scale movements of hot material. Crystalline formations appear as point-like growths that slowly expand, glowing more brightly where they experience rapid structural changes. These interactions create a sense of perpetual geological transformation, showing how energy differentials drive the formation of new mineral structures in an endless cycle of creation and movement. The visualization emphasizes both the slow, persistent nature of geological processes and the sharp, vibrant gradients that emerge from these interactions.",
+  "submitted_by": "profcarroll",
+  "wall_s": 205.081
+}
