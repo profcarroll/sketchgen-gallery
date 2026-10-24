@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca demonstration of centripetal force Revise: the same small, luminous\u2026\u201d \u2014 sketchgen entry 2329, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2329/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, deep black space punctuated by streams of small, intensely luminous particles. These particles are perpetually suspended, following defined orbital paths around a central, unseen point. The trails left by the particles are glowing, vibrant filaments of light. Periodically, these clean, predictable arcs subtly shift, exhibiting slight, rhythmic wobbles or stretches. The entire scene is a hypnotic demonstration of celestial mechanics, providing a sense of grand, ordered cosmic dance.",
+  "completion_tokens": 1542,
+  "created_utc": "2026-10-24T00:36:49Z",
+  "entry_id": 2329,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 739,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (63 lines of code before, 63 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: Highly energetic radial patterning given to the delicate, visible mechanics of an antique clockwork regulator, made of spring-steel, seen under magnification.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 84,
+        "sha256": "cc802d6b2395da6bdeb5c2e6cb699b82685166e9df62f2399bd25ae9a8f58b3e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3266,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.896,
+      "wall_s": 65.946
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 803,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 84,
+        "sha256": "b2d91ce05b518ca50dcbc76f31494e538c402903dbf986125d2765dfc61cfb4c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 87.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3451,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 42.563,
+      "wall_s": 72.712
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2348,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Highly energetic radial patterning given to the delicate, visible mechanics of an antique clockwork regulator, made of spring-steel, seen under magnification.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2087,
+    "root_entry_id": 1408
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a demonstration of centripetal force\n\nRevise: the same small, luminous particles appearing suspended, and this time tracing their paths as clearly defined, glowing trails.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails gently decay upon completing their orbit.\n\nRevise: the same small, luminous particles appearing suspended, and this time their luminous trails visibly decay into scattered, faint points of light.\n\nRevise: the same small, luminous particles suspended in a vast, dark space, and this time their orbital paths show subtle, periodic perturbations.\n\nRevise: depart: The dissipating pattern of energy from countless oscillating streams of viscous liquid, which slowly spiral and fade away, taken into a pattern visible in a small cup of ink.\n\nRevise: carry: Highly energetic radial patterning given to the delicate, visible mechanics of an antique clockwork regulator, made of spring-steel, seen under magnification.",
+  "prompt_tokens": 6717,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2329/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2329",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of a cosmic dance, rendering a field of luminous particles that orbit around an invisible central point. The particles follow precise orbital mechanics while subtly wobbling in their paths, creating hypnotic, rhythmic patterns across the screen. Each particle leaves a glowing trail behind it, forming intricate networks of light that pulse and flow with the underlying rhythm. The deep black background emphasizes the vibrant filaments of light, evoking the ordered elegance of celestial mechanics on a grand scale. The visual effect is achieved through careful simulation of orbital physics combined with subtle perturbations that create the illusion of a complex, living system governed by invisible forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 138.658
+}
