@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 2343, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2343/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly kinetic and pulsating array of neon-lit geometric forms. These energized shapes, utilizing complex octahedral and hexagonal structures, cascade and intersect across the frame in vibrant, saturated colors. The overall environment pulses with internal light, giving the appearance of volumetric gas. Movement is governed by strict physical rules: shapes follow rigid, repeating helical spirals or snapping rectilinear paths. The drama escalates whenever forms make physical contact; instead of simply passing, they fragment into sharp, brilliantly colored shards at the point of intersection, ensuring the visual field is always in flux.",
+  "completion_tokens": 1063,
+  "created_utc": "2026-10-24T02:25:42Z",
+  "entry_id": 2343,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1063,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 71,
+        "sha256": "55bcd4c6f581d66ed1851f39b27bbdfd63b6638e834a3ccb249b6fce61f4c13c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3317,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.361,
+      "wall_s": 87.946
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2362,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a jerky, interlocking sequence of sharp, brightly colored geometric panels that rapidly snap into place, made of cut paper",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 2104,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time they should only move when they physically intersect with another form.\n\nRevise: the same pulsating array of highly energized, neon-lit geometric shapes, and this time the forms should fragment into sharp, colored shards the moment they physically intersect.\n\nRevise: carry: Pulsating electric neon glow given to slow-moving volumetric gas clouds, seen at the scale of a single grain of sand\n\nRevise: flip: a jerky, interlocking sequence of sharp, brightly colored geometric panels that rapidly snap into place, made of cut paper",
+  "prompt_tokens": 3317,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2343/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2343",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic display of interlocking geometric panels that snap into place with sharp, jerky movements. Using WebGL rendering, it generates a series of hexagonal panels that move in helical spirals while rotating in 3D space. The panels exhibit snapping behavior where they rapidly shift to target positions before locking into place, creating a cut-paper aesthetic with bright neon colors. The visual effect simulates the rapid assembly of sharp, colorful geometric forms that fragment and reassemble in an endless cycle of motion and structure.",
+  "submitted_by": "profcarroll",
+  "wall_s": 87.946
+}
