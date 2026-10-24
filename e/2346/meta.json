@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cintricate field of vibrant colored lines forms a delicate lattice of\u2026\u201d \u2014 sketchgen entry 2346, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2346/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a central, invisible point of origin from which a dense array of interwoven paper folds emerges. These delicate origami structures, rendered in crisp, paper-like shades, are depicted in a continuous state of separation. The folds detach individually from the central source, drifting outward and downward in a rapidly flowing shower, resembling falling pollen. The artwork is entirely self-contained, presenting a mesmerizing and organic descent that draws the viewer's eye into the constant, gentle flux of paper material.",
+  "completion_tokens": 992,
+  "created_utc": "2026-10-24T03:14:22Z",
+  "entry_id": 2346,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 992,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "9f10167b3020a47c0d8255859fedec85a93b8cddaf391f12457dc5526b02796a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3440,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.884,
+      "wall_s": 86.683
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2365,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a delicate array of interwoven paper folds that are rapidly and organically detaching from a central, invisible current, falling like dry pollen, made of folded origami.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 2109,
+    "root_entry_id": 1372
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "intricate field of vibrant colored lines forms a delicate lattice of light and shadow\n\nRevise: the same intricate, web-like lattice, and this time the intersecting lines should organize into discernible, interlocking hexagonal patterns.\n\nRevise: the same dense, interwoven lattice, and this time the lines must be entirely stationary.\n\nRevise: the same intricate and dense lattice structure, and this time the connecting lines must shift exclusively to monochromatic shades of cyan and indigo.\n\nRevise: the same intricate, dense, and highly structured web-like lattice, and this time the lines forming the hexagonal motifs should display slight, irregular warping.\n\nRevise: the same intricate, dense lattice structure, and this time the hexagonal motifs should become perfectly rigid and cease all subtle, irregular warping.\n\nRevise: depart: the idea of perfectly interconnected, supportive webbing taken into the solidified, organic flow of sap, made of beeswax.\n\nRevise: flip: a delicate array of interwoven paper folds that are rapidly and organically detaching from a central, invisible current, falling like dry pollen, made of folded origami.",
+  "prompt_tokens": 3440,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2346/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2346",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a continuous shower of delicate paper folds emerging from a central point, each particle representing an individual origami structure in motion. Using a particle system with physics simulation, the folds drift outward and downward in organic trajectories that resemble falling pollen. The visual effect combines subtle color variations within a warm amber-to-ochre palette, creating a mesmerizing flow of material that draws the viewer's eye into its constant, gentle flux. The animation runs autonomously without external input, maintaining a steady rhythm of emergence and decay that embodies the concept of material separation in an ever-changing composition.",
+  "submitted_by": "profcarroll",
+  "wall_s": 86.683
+}
