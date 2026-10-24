@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate a live ant farm Revise: the same sandy enclosure filled with\u2026\u201d \u2014 sketchgen entry 2267, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2267/ Licensed CC BY 4.0.",
+  "brief": "A vast, cinematic vista of towering geothermal vent formations that resemble massive, craggy mountain ranges. These immense structures are composed of heavily textured mineral deposits in deep earth tones of ochre, charcoal, and rust. A slow, rhythmic pulsation breathes through the landscape, causing the mountain peaks and vent walls to subtly expand and contract. Faint, glowing heat emanates from deep within the stony fissures, casting a dim light across the desolate, geological terrain.",
+  "completion_tokens": 2859,
+  "created_utc": "2026-10-15T21:54:00Z",
+  "entry_id": 2267,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 919,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 21)\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 70)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 89)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 358.3 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "65aa9fa162c9fc5319f070aa864bf7fcd89026640d2feba4dacde960b4fced4a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 358.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3598,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 23.707,
+      "wall_s": 101.615
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 966,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `height` hides p5's `height`; rename it (sketch.js line 23)\npreflight: `cylinder()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 74)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 93)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 135.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "38e25a242c8a0daed4ca8579974d6a951af1999f715a2d48219db829a23bd8c4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 135.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3667,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 77.749,
+      "wall_s": 90.165
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 974,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 101,
+        "sha256": "7ab512dd822e4776050e20840b6f51432cf7ca911cd9379b0dd65e6a2cb948bd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 62.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3744,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 36.532,
+      "wall_s": 92.86
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2284,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: slow, rhythmic structural pulsation given to massive geothermal vent formations, made of mineral deposits, seen at a mountain range scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2187,
+    "root_entry_id": 1073
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:26b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a live ant farm\n\nRevise: the same sandy enclosure filled with a complex network of winding tunnels, and this time the tunnels exhibit varied branching into smaller, shallower chambers.\n\nRevise: the same cross-section of a sandy enclosure features a complex network of winding, dark tunnels that branch into various smaller and shallower chambers, and this time the tunnels exhibit a clear, repeating hexagonal honeycomb arrangement.\n\nRevise: the same cross-section view of a sandy enclosure featuring winding tunnels in hexagonal chambers, and this time the tunnels are visibly clogged with excavated sandy debris.\n\nRevise: the same cross-section view of a sandy enclosure with hexagonal tunnels, and this time the small dark ants are visibly dragging larger clumps of excavated sandy debris.\n\nRevise: depart the concept of an ant colony's tunnel system into a densely interwoven network of fiber optic cables and copper wires, showing faint digital pulses traveling through the glass, made of glass and copper, seen under a microscope\n\nRevise: depart the pattern of interwoven, pulsating structural filaments taken into an immense, interlocking subterranean root system, made of rust on sheet steel.\n\nRevise: carry: slow, rhythmic structural pulsation given to massive geothermal vent formations, made of mineral deposits, seen at a mountain range scale.",
+  "prompt_tokens": 11009,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2267/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2267",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a desolate, cinematic landscape of towering geothermal vents that resemble rugged mountain ranges. Using WebGL rendering and optimized geometry, it creates a vast terrain of mineral formations in deep earth tones of ochre, charcoal, and rust. The vents pulse rhythmically with a subtle expansion and contraction effect, simulating the slow breathing of geological forces. Faint glowing heat emanates from within the stony fissures, casting a dim light across the barren landscape. The visualization balances visual complexity with performance constraints, creating an immersive vista that captures both the grandeur and the quiet power of these immense natural structures.",
+  "submitted_by": "profcarroll",
+  "wall_s": 284.64
+}
