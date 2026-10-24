@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca typewriter that types by itself and slowly gains confidence Revise:\u2026\u201d \u2014 sketchgen entry 2117, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2117/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a microscopic, highly detailed view of a crystalline mineral surface. The shapes are complex, geometric, and layered, depicting the fossilized structure of deep-sea manganese nodules. The movement is slow and organic, generating faint, ephemeral etchings that gradually materialize and shift, revealing the sedimentary history trapped within the crystal lattice. Color is dominated by muted, natural oceanic tones\u2014shades of slate, deep blue, and earthy gray\u2014which highlight the intricate boundaries and fracture lines of the mineral layers. The sketch changes continuously, requiring no viewer interaction to observe the unfolding passage of deep time.",
+  "completion_tokens": 1273,
+  "created_utc": "2026-10-12T15:17:17Z",
+  "entry_id": 2117,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1273,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 184,
+        "sha256": "05f4312625c3a1c8f8d620cb3fd12822921c3e81dea5f5988875581213131fcf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 46.2,
+      "num_ctx": 16384,
+      "preload_s": 0.051,
+      "prompt_tokens": 4144,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 25.571,
+      "wall_s": 124.578
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2132,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: residual energy transfer given to the crystalline structure of deep-sea manganese nodules, forming faint etchings that reveal the history of sedimentation, seen at the scale of a single grain of sand.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 1882,
+    "root_entry_id": 1483
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a typewriter that types by itself and slowly gains confidence\n\nRevise: the same automatic character generation, and this time the paper slightly warps around the typing action.\n\nRevise: the same automatic flow of text appearing on vintage paper, and this time the paper creases visibly and permanently around the type stream.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the stream causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: carry: residual energy transfer given to the crystalline structure of deep-sea manganese nodules, forming faint etchings that reveal the history of sedimentation, seen at the scale of a single grain of sand.",
+  "prompt_tokens": 4144,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2117/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2117",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a microscopic view of a deep-sea manganese nodule's crystalline structure, rendered in an organic, time-lapse manner. The visualization features a textured crystal lattice background with muted oceanic tones\u2014slate grays, deep blues, and earthy tones\u2014that create the foundation of the mineral's fossilized surface. Overlaid on this base are faint, slowly evolving etchings that appear to form through sedimentary processes, each one tracing a unique path across the surface. These etchings shift gradually, revealing hidden layers and fracture patterns that tell the story of the nodule's formation over geological time. The movement is subtle yet continuous, creating an immersive experience that captures the patient, natural processes shaping these underwater mineral formations. The organic motion and layered visual elements evoke the slow passage of deep time within a single grain of sand.",
+  "submitted_by": "profcarroll",
+  "wall_s": 124.578
+}
