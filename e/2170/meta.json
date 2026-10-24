@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a rhythm sequencer Revise: zoom: a whole sketch of the brief,\u2026\u201d \u2014 sketchgen entry 2170, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2170/ Licensed CC BY 4.0.",
+  "brief": "A dense, point-source glow expands into highly structured, geometrically decaying patterns that fill the canvas. These crystalline forms are rendered in the intense, segmented colours of a 1920s stained-glass panel, appearing etched onto a damp, ceramic tile. The shapes pulse and repeat in complex, rhythmic cycles, creating a vibrant, pulsing field of light. The movement and decay are constantly active, but clicking anywhere on the screen modulates the rhythm, causing the tempo to sharply accelerate or decelerate the entire cycle.",
+  "completion_tokens": 1092,
+  "created_utc": "2026-10-12T21:32:45Z",
+  "entry_id": 2170,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1092,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "cdb59e60002c8c7255e00cac0780b8c173da8c2e6c83e57a0ae975dd9dd4d2dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.3,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3509,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.272,
+      "wall_s": 94.839
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2185,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of repeating, cyclical energy taken into the form of crystallized microbial blooms, appearing etched onto damp ceramic tile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 2,
+    "inherits_source": true,
+    "parent_entry_id": 1977,
+    "root_entry_id": 968
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a rhythm sequencer\n\nRevise: zoom: a whole sketch of the brief, high-speed geometric decay of light emanating from a single point, <what it becomes at full size>, <a 1920s Bauhaus stained-glass panel>.\n\nRevise: depart: The concept of repeating, cyclical energy taken into the form of crystallized microbial blooms, appearing etched onto damp ceramic tile.",
+  "prompt_tokens": 3509,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2170/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2170",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing field of light that emerges from a central point and expands outward in structured, geometric patterns reminiscent of stained-glass windows. The particles begin as a dense core and radiate outward with increasing complexity, forming crystalline structures that pulse and evolve. Each particle follows a spiraling path with its own rhythm, creating a sense of organic growth while maintaining mathematical precision. The color palette shifts through segmented hues like a 1920s stained-glass panel, with particles pulsing in synchronization to create a rhythmic field of light. A click modulates the entire system's tempo, causing it to either accelerate or decelerate its cyclical motion, transforming the visual experience while maintaining the underlying geometric harmony.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.839
+}
