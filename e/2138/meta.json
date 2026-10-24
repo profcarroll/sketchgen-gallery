@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 2138, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2138/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a pressurized, glowing gas mass confined within an invisible container. When tension builds, the mass fractures explosively, transforming into thousands of razor-sharp, glass-like particles. These fragments burst outward in a massive, chaotic blizzard, replicating and accelerating as they radiate from the center. The movement is unpredictable, appearing like a self-sustaining, crystalline cascade that rapidly fills the screen before dissipating back into a glowing vacuum.",
+  "completion_tokens": 2590,
+  "created_utc": "2026-10-12T17:39:38Z",
+  "entry_id": 2138,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1241,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 101)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 106)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 112)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 114.6 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 185,
+        "sha256": "5bfdb4ac1cf79251485188ac3e31e645e1ca83717a6ef5891beffd62cf5b2254",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 114.6,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4180,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 61.449,
+      "wall_s": 123.296
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1349,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "ac06e4d982e16b162ce90991d014b4db946291b77d1f177e3b5f0007bea4006a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4062,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.012,
+      "wall_s": 125.326
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2153,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch of pressurized gas fracturing into a blizzard of unpredictable, razor-sharp glass fragments that burst outward in a chaotic, self-replicating cascade, mechanism: a spring under tension",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "inherits_source": false,
+    "parent_entry_id": 1933,
+    "root_entry_id": 47
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the visible process of flowers maturing from bloom through to forming seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the physical peeling or shedding of petals as the blooms transition into seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the fully developed seeds accumulating and slowly dispersing from the central pods.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the luminous seed particles visibly spiraling into the central pods before they accumulate.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the pods visibly hardening and restructuring from the collected luminous particles into defined, mature seed casings.\n\nRevise: carry: slow, contained structural reorganization given to massive obsidian crystallization, observed through a row of falling dominoes\n\nRevise: flip: a sketch of pressurized gas fracturing into a blizzard of unpredictable, razor-sharp glass fragments that burst outward in a chaotic, self-replicating cascade, mechanism: a spring under tension",
+  "prompt_tokens": 8242,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2138/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2138",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the explosive fracturing of a pressurized gas mass into thousands of glass-like particles. The scene begins with a glowing, cohesive gas sphere that slowly builds internal tension. When the pressure reaches critical mass, the gas violently explodes into fragments that scatter outward in unpredictable patterns. These fragments\u2014represented as sharp points in 3D space\u2014multiply and accelerate as they radiate from the center, creating a crystalline cascade that rapidly fills the screen before dissipating back into the void. The visual effect emphasizes both the controlled buildup of energy and the chaotic release, with particles fading out over time to simulate their dissipation into a vacuum.",
+  "submitted_by": "profcarroll",
+  "wall_s": 248.622
+}
