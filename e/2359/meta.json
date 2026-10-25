@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca typewriter that types by itself and slowly gains confidence Revise:\u2026\u201d \u2014 sketchgen entry 2359, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2359/ Licensed CC BY 4.0.",
+  "brief": "The viewer sees a realistic, aged texture of vintage paper covering the canvas. A continuous, spontaneous stream of text characters appears and flows perpetually across the surface, generating an endless, shifting river of words. As the text accumulates, the physical stress is rendered visibly: the paper warps, creases, and the natural fibers begin to fray, pulling away from the printed characters. This decay process unfolds perpetually, mapping the passage of time and the material exhaustion of the surface.",
+  "completion_tokens": 3130,
+  "created_utc": "2026-10-24T05:46:00Z",
+  "entry_id": 2359,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1078,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "915830f3a666bdddee0527239f5013389bd188d9156429887666e4a1f1e01b8b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3843,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.039,
+      "wall_s": 102.833
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1033,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 113,
+        "sha256": "5ea8a7b49a2d1fd24d291da6944a215ae496305b3ef3221879c5a0cbef8c4755",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 3.9,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3716,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.033,
+      "wall_s": 94.054
+    },
+    {
+      "assertions": {
+        "loads(image)": false,
+        "motion(idle)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1019,
+      "evidence": "gate exit 1: assertions failed: loads(image)\n\nAssertions that failed:\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 113,
+        "sha256": "5ea8a7b49a2d1fd24d291da6944a215ae496305b3ef3221879c5a0cbef8c4755",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.0,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3716,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.037,
+      "wall_s": 60.18
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2378,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: a cross-section of a petrified leaf, showing thin layers of accumulated fungal hyphae and mineral runoff that etch faint, branching maps of cellular breakdown, seen at the scale of a single grain of sand",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2117,
+    "root_entry_id": 1483
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a typewriter that types by itself and slowly gains confidence\n\nRevise: the same automatic character generation, and this time the paper slightly warps around the typing action.\n\nRevise: the same automatic flow of text appearing on vintage paper, and this time the paper creases visibly and permanently around the type stream.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the stream causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: the same continuous flow of text appearing on vintage paper, and this time the accumulating stress causes the aged surface to develop visible hairline fractures.\n\nRevise: the same continuous, generative stream of text that warps the paper, and this time the accumulating stress causes the paper fibers to visibly fray and pull away from the printed characters.\n\nRevise: carry: residual energy transfer given to the crystalline structure of deep-sea manganese nodules, forming faint etchings that reveal the history of sedimentation, seen at the scale of a single grain of sand.\n\nRevise: depart: a cross-section of a petrified leaf, showing thin layers of accumulated fungal hyphae and mineral runoff that etch faint, branching maps of cellular breakdown, seen at the scale of a single grain of sand",
+  "prompt_tokens": 11275,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2359/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2359",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the passage of time on a vintage paper surface by rendering a continuous stream of text characters that flow across the canvas. As the characters accumulate, they subtly distort the paper's appearance through warping and creasing effects, while small fibers fray away from the printed words, suggesting physical exhaustion. The visual decay is rendered in real-time, creating an endless, evolving narrative on an aging surface where the medium itself becomes part of the story.",
+  "submitted_by": "profcarroll",
+  "wall_s": 257.067
+}
