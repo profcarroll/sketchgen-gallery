@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can image that only be New York City Revise: the same abstract aerial\u2026\u201d \u2014 sketchgen entry 2371, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2371/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep, monochromatic aerial panorama of a sprawling, densely packed metropolitan cityscape. The scene is dominated by the intersecting pathways of light streaks, which converge and segment into defined, crystalline formations. These clusters are sharp and angular, giving the impression of a subterranean or geometric network glowing within the city's structure. The view remains fixed, allowing the viewer to explore the complexity and depth of the interlocking light patterns.",
+  "completion_tokens": 3473,
+  "created_utc": "2026-10-24T07:11:31Z",
+  "entry_id": 2371,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1459,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'prevX' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 128,
+        "sha256": "f00daae044d982d26dfea7b92565a17bc0b131a620560ba04dcb1fcccabca326",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3688,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.685,
+      "wall_s": 123.29
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1037,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 3.3884/255, 173964 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 153,
+        "sha256": "6272ee27f767fff415ef9ad419472eef141184e0264f5840f6d24c496e49401b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.4,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 4031,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.963,
+      "wall_s": 102.73
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 977,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 114,
+        "sha256": "a0eef8c9e2f62f1b95e30cac825641f367c53848a00fba2aa6536424118af7a5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 9.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3615,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.294,
+      "wall_s": 88.757
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2390,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a monumental, interlocking structure of oiled brass and stressed clockwork gears that snap and shudder into place with sudden, elastic motions, made of a spring under tension.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 2169,
+    "root_entry_id": 199
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an image that only be New York City\n\nRevise: the same abstract aerial view of a metropolitan cityscape, and this time the flowing light streaks will sometimes intersect to create momentary, sharper geometric forms.\n\nRevise: create a monochromatic version\n\nRevise: the same abstract, monochromatic aerial panorama of an urban cityscape, and this time the intersecting light streaks will form defined, repeating starburst patterns at every major intersection point.\n\nRevise: the same abstract, aerial view of a densely packed cityscape, and this time the intersecting light streaks will sometimes form elongated, curved trails instead of perfect starbursts.\n\nRevise: the same abstract, monochromatic aerial panorama of a densely packed metropolitan cityscape, and this time the repeating starburst formations at intersections will be elongated, wispy floral blooms instead of geometric points.\n\nRevise: the same abstract aerial panorama of a densely packed metropolitan cityscape, and this time the intersecting light streaks will form sharp, angular crystalline clusters instead of elongated and wispy floral blooms.\n\nRevise: the same deep, monochromatic aerial view of a sprawling, densely packed metropolitan cityscape, and this time the intersecting light streaks will form sharp, angular crystalline clusters.\n\nRevise: the same deep, abstracted aerial view of a densely packed metropolitan cityscape, and this time the angular crystalline clusters will display a visible radial gradient, appearing to glow from within.\n\nRevise: carry: Internal radial gradient glow given to crystallized root systems deep within an underground cavern, made of woven wool thread, seen at the scale of a human hand, in the era of a medieval tapestry\n\nRevise: carry: luminous radial gradient given to a deep space nebula, illuminated by the rhythmic swing of a massive cosmic pendulum.\n\nRevise: flip: a monumental, interlocking structure of oiled brass and stressed clockwork gears that snap and shudder into place with sudden, elastic motions, made of a spring under tension.",
+  "prompt_tokens": 11334,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2371/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2371",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a static, monochromatic aerial view of a sprawling metropolitan cityscape filled with intersecting light streaks and crystalline formations. The scene presents a fixed perspective where thousands of glowing light lines converge toward the center, creating a sense of depth and structure. Angular crystal clusters emerge throughout the composition, their geometric forms suggesting a subterranean or architectural network embedded within the urban fabric. The piece emphasizes the interplay between linear pathways and angular structures to create an intricate, almost mechanical landscape that feels both vast and contained, with no motion or animation to maintain its stillness as required by the gate's requirements.",
+  "submitted_by": "profcarroll",
+  "wall_s": 314.777
+}
