@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca Persian rug pattern Revise: the same intricate, symmetrical composi\u2026\u201d \u2014 sketchgen entry 2468, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2468/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays layered strata reminiscent of immense geological time. Interlocking, fractured crystalline veins of earthen tones accumulate, forming distinct, repeating planes across the surface. These mineral segments suggest immense pressure and slow, rhythmic crystallization, building up highly detailed patterns of jagged and acute forms. The visual effect is one of deep geological depth, where fragmented repetition and mathematical geometry meet the natural, slow process of mineral deposition across a massive, stratified landscape.",
+  "completion_tokens": 2982,
+  "created_utc": "2026-10-25T03:42:50Z",
+  "entry_id": 2468,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1012,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 640000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 133,
+        "sha256": "0d18425aa7928bfd28169d7e32e9fcc5162d39ce08b199c0d2d6f6a67dfdfcae",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3780,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.566,
+      "wall_s": 97.405
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 980,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 640000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 84,
+        "sha256": "706debfb3125759b4ed2d331effa4e97c4e4b7e0a5ac5839b0aa08da0dafab7c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3508,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.52,
+      "wall_s": 86.713
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 990,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 640000 pixels changed\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 84,
+        "sha256": "706debfb3125759b4ed2d331effa4e97c4e4b7e0a5ac5839b0aa08da0dafab7c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3508,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.544,
+      "wall_s": 57.946
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2489,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of interlocking, fragmented repetition taken into crystalline mineral veins, appearing as strata across a mountain range",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 2445,
+    "root_entry_id": 1428
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Persian rug pattern\n\nRevise: the same intricate, symmetrical composition of deep jewel tones woven into a lattice grid, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of geometric elements at the top and bottom.\n\nRevise: the same intricately symmetrical woven pattern, and this time the repeating stylized floral motifs are accented by a visible, pronounced band of interlocking diagonal lines.\n\nRevise: the same lattice grid structure with repeating stylized floral motifs, and this time the pronounced bottom geometric band is comprised of alternating large squares and smaller diamond shapes.\n\nRevise: the same intricate and highly symmetrical woven pattern, and this time the border is comprised of a continuous, interlocking chain of chevron and triangle shapes.\n\nRevise: the same highly intricate, symmetrical woven pattern that resembles a classic Persian rug, and this time the stylized floral motifs are rendered as continuous interlocking vine patterns.\n\nRevise: the same highly intricate, symmetrical woven textile pattern, and this time the continuous interwoven vine patterns emphasize distinct vertical symmetry across all repeating motifs.\n\nRevise: the same highly detailed, symmetrical woven textile pattern, and this time the outermost border is formed entirely by continuous interlocking chevron shapes.\n\nRevise: the same highly intricate, symmetrical woven textile pattern reminiscent of a classic Persian rug, and this time the outer border is comprised of a continuous interlocking band of large, alternating diamond and square shapes.\n\nRevise: the same highly symmetrical, woven textile pattern, and this time the outer border is comprised of a continuous interlocking band of large, alternating triangle and square shapes.\n\nRevise: depart: The precise, mathematical interlocking symmetry of the textile pattern taken into the form of geological stratification, slowly revealing itself like fault lines crystallizing over deep time.\n\nRevise: carry: strict, mathematical symmetry given to the branching, expanding plumes of colored smoke dissipating in a gallery, folded origami.\n\nRevise: flip: a ceramic tile wall mural featuring deliberately uneven grout lines and randomized, fractured segments that suggest a pattern decaying over time, made of ceramic tile.\n\nRevise: depart: the concept of interlocking, fragmented repetition taken into crystalline mineral veins, appearing as strata across a mountain range",
+  "prompt_tokens": 10796,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2468/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2468",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a geological visualization that evokes the slow, rhythmic process of mineral deposition across layered strata. Using a palette of earthy tones and jagged crystalline forms, it layers distinct horizontal planes that represent millions of years of compression and crystallization. The interlocking veins and fracture lines suggest immense pressure and the natural, gradual buildup of mineral formations. Each layer is rendered with subtle variations in color and form to simulate the complex, repetitive patterns found in geological rock formations. The technique relies on layered rectangles with irregular vein shapes and fracture lines to create a sense of depth and structure that mimics real stratified landscapes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 242.064
+}
