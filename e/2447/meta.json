@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cconcentric circles in fluorescent colors pulse with elastic easing Re\u2026\u201d \u2014 sketchgen entry 2447, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2447/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly geometric, rhythmic curtain wall composed of modular, intricately detailed panels. The structure utilizes a vibrant, limited palette of brightly colored tones, giving the impression of ornate, colored wrought iron. This architectural form is defined by continuous, intersecting lines and rigid, repeated modules, evoking the aesthetic of early 20th-century industrial design. The entire composition pulses with a slow, cyclical rhythm, making it appear as if the structure itself is breathing or expanding in time.",
+  "completion_tokens": 2741,
+  "created_utc": "2026-10-24T18:06:57Z",
+  "entry_id": 2447,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 929,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 82)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 235.3 ms per frame over the first 30 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 30 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 73,
+        "sha256": "3e4f141bed6653e95fe8ce5d33ce13e0893c1c9ad6d6b8799a0716081947289e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 235.3,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3233,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.687,
+      "wall_s": 77.626
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 905,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 144.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 91,
+        "sha256": "c193f897f7bbbb951f9f7e5f6dbab50564e984c6fde0a9c0fa8bfe09e8725f3e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 144.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3571,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 61.781,
+      "wall_s": 83.147
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 907,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 98,
+        "sha256": "b55239fe8e587a4fc963019134574459f4858ddca70a358da088dc8e9ecf3ccf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 100.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3550,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 43.114,
+      "wall_s": 78.339
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2468,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the continuous, cyclical rhythm of expansion taken into a modular fa\u00e7ade of brightly colored wrought iron panels, forming a rhythmic, pulsing curtain wall, seen at scale in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 2349,
+    "root_entry_id": 1405
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "concentric circles in fluorescent colors pulse with elastic easing\n\nRevise: the same multiple rings of concentric circles, and this time they should gently spiral inward from the edges.\n\nRevise: the same multiple rings of concentric circles, and this time they should pulse gently while spiraling inward.\n\nRevise: the same overlapping concentric circles, and this time they should shift through a cohesive metallic and iridescent color palette.\n\nRevise: the same overlapping rings of concentric circles, and this time they should slowly grow outward while shifting through vivid jewel tones.\n\nRevise: the same overlapping rings of concentric circles, and this time they should gently spiral inward from the edges.\n\nRevise: the same multiple, overlapping rings of concentric circles, and this time they should pulsate gently while contracting toward the central point.\n\nRevise: the same multiple, overlapping rings of concentric circles, and this time they should slowly grow outward while maintaining their gentle pulsation.\n\nRevise: depart: the self-sustaining cyclical nature of the rings translated into the complex, rigid growth pattern of branching coral formations, rust on sheet steel.\n\nRevise: depart: the continuous, self-sustaining rhythm of radial expansion taken into the branching, intersecting stress lines of a subterranean limestone aquifer, made of poured concrete.\n\nRevise: depart: the continuous, cyclical rhythm of expansion taken into a modular fa\u00e7ade of brightly colored wrought iron panels, forming a rhythmic, pulsing curtain wall, seen at scale in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 10354,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2447/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2447",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a rhythmic, breathing curtain wall using modular geometric panels that pulse and rotate in synchronized patterns. Each panel is composed of intersecting circles and connecting lines forming an ornate wrought iron pattern. The entire composition breathes with a slow, cyclical rhythm as the panels subtly expand and contract, creating a sense of architectural movement. The vibrant, limited color palette of warm hues gives the structure an industrial yet elegant appearance reminiscent of early 20th-century design aesthetics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 239.112
+}
