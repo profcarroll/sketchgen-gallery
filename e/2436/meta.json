@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 2436, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2436/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, three-dimensional geometric structures forming a perfectly interlocking mineral lattice. These repeating, crystalline units fit together with absolute complementary precision, defining highly organized and repeating patterns. The colors evoke the richness of polished minerals viewed under magnification, with light interacting to create shifting internal hues and defined planes. The composition is highly structured and diagrammatic, presenting a self-contained visual realization of molecular pattern recognition. The arrangement is deliberately static, presenting a perfect, silent view of crystalline self-assembly.",
+  "completion_tokens": 3165,
+  "created_utc": "2026-10-24T16:41:10Z",
+  "entry_id": 2436,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1015,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 57)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 64)\npreflight: `torus()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 70)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 82)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.1603/255, 122409 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 99,
+        "sha256": "f92772b36597e5942e530e1d53384ee8810f980944f82b0637a577b09903062e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 61.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3529,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.469,
+      "wall_s": 89.739
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1058,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 91)\npreflight: `torus()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2334/255, 12207 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 104,
+        "sha256": "e7a98bffad5ede058fb40b732a4eade1e277b787589837b2139700abe3bdc81d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3885,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 12.439,
+      "wall_s": 101.116
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1092,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 91)\npreflight: `torus()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 97)\n\ngate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2334/255, 12207 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 118,
+        "sha256": "66b8d8196e3c428ab01fe5ab157a6d60638bd838c8b113d9d357b35eb48887ec",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3877,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 12.399,
+      "wall_s": 103.241
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2457,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of complementary information taken into a crystalline mineral lattice, forming perfectly interlocking, repeating structures, visible through the magnification of a polarized microscope",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2336,
+    "root_entry_id": 1450
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: the same dynamic, three-dimensional model of the DNA double helix, and this time showing a specific segment unwinding completely to initiate strand separation.\n\nRevise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).\n\nRevise: the same molecular model of the DNA double helix, and this time showing the separated single strands floating away from the main coil in separate trajectories.\n\nRevise: the same detailed, three-dimensional molecular representation of the DNA double helix, and this time the separated single strands begin to fold upon themselves.\n\nRevise: depart: the structured emergence of complementary information taken into a series of interlocking gears and patterned papercraft, designed to assemble into complex sculptures, made of corrugated cardboard\n\nRevise: depart: The self-organization of complementary patterns into complex structures taken into interacting holographic light waves, where interference patterns define physical forms, small enough to hold in one hand.\n\nRevise: depart: the concept of complementary information taken into a crystalline mineral lattice, forming perfectly interlocking, repeating structures, visible through the magnification of a polarized microscope",
+  "prompt_tokens": 11291,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2436/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2436",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static visualization of a crystalline lattice structure composed of interlocking geometric forms. The composition features a dense arrangement of mineral-like crystals that appear to fit together with perfect precision, forming a self-similar pattern across scales. Each crystal is constructed from multiple overlapping geometric primitives\u2014spheres, boxes, and tori\u2014arranged in a way that suggests molecular assembly. The color palette evokes polished minerals under magnification, with hues shifting between deep ambers, rich greens, and warm oranges. Connections between crystals are rendered as faint lines that emphasize the structural coherence of the lattice. The entire scene remains motionless, capturing an idealized moment of crystalline self-assembly.",
+  "submitted_by": "profcarroll",
+  "wall_s": 294.096
+}
