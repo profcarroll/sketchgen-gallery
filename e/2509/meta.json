@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)",
+    "responds(audio)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate your interpretation of the song \"A Love Supreme\" by John Colt\u2026\u201d \u2014 sketchgen entry 2509, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2509/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with a constantly evolving, dense lattice of sharp, angular geometric lines. This intricate network appears to pulse and expand rhythmically, creating bursts of energy that radiate outward from multiple unseen centers. The lines interlock and contract in visible, harmonic wave patterns, building a complex, dynamic field of connectivity. The overall movement is perpetual, mimicking a structured, living energy flow that continues regardless of any direct interaction with the piece.",
+  "completion_tokens": 2931,
+  "created_utc": "2026-10-25T20:39:57Z",
+  "entry_id": 2509,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1040,
+      "evidence": "gate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.3561/255 (threshold 1.0), 14441 of 1152000 pixels changed = 1.25% (threshold 2%); mean canvas brightness 1.393 under 440 Hz vs 1.399 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: running\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 58,
+        "sha256": "bde7c67752a6f2e28252de7c957c1cf52f7d301e731206c90fdf2162bc76cd5a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.9,
+      "num_ctx": 16384,
+      "preload_s": 0.127,
+      "prompt_tokens": 3109,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 20.622,
+      "wall_s": 79.506
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 939,
+      "evidence": "gate exit 1: assertions failed: responds(audio)\n\nAssertions that failed:\n- responds(audio): vs the silent reference run: mean abs pixel diff 0.3039/255 (threshold 1.0), 12873 of 1152000 pixels changed = 1.12% (threshold 2%); mean canvas brightness 1.530 under 440 Hz vs 1.540 under silence\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 103,
+        "sha256": "59cda1a2bf71ca94d6ea973e446bb739bd61d8d307bae756018a77c310cc90e4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3676,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 24.757,
+      "wall_s": 88.504
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": false,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 952,
+      "evidence": "gate exit 1: checks failed: audio_context_running\n\nFixed checks that failed:\n- audio_context_running = false\n    AudioContext state after the click probe: suspended\n    fix: the gate pokes the canvas with one real click at its centre and gives the sketch no other gesture; a browser keeps an AudioContext suspended until a gesture, so start audio from that click \u2014 call `userStartAudio()` (or `getAudioContext().resume()`) inside `mousePressed()` on the canvas, not in `setup()` and not behind an HTML button the gate never clicks\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n- AudioContext state after the click probe: suspended\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 92,
+        "sha256": "96c84bd7b9e6d202532ff24ba935a3aa85ac5e4956778111cb398d34dca2253f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.0,
+      "num_ctx": 16384,
+      "preload_s": 0.077,
+      "prompt_tokens": 3609,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 33.664,
+      "wall_s": 85.697
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2530,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The complex, radiating webbing of connections taken into a subterranean network of fungal mycelia, made of falling dominoes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 13,
+    "inherits_source": false,
+    "parent_entry_id": 2401,
+    "root_entry_id": 525
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate your interpretation of the song \"A Love Supreme\" by John Coltrane\n\nRevise: try again without circles\n\nRevise: the same dynamic, angular geometric lines that radiate outward from a central point, and this time the overall pattern should adopt continuous, interlocking spiral formations.\n\nRevise: the same angular, dynamic geometric lines radiating outward from a central core, and this time the overall pattern should periodically contract inward before resuming its continuous spiral expansion.\n\nRevise: the same continuous, dynamic field of angular geometric lines, and this time the lines should only cross at specific, visible nodal points.\n\nRevise: the same constantly evolving, dense lattice of sharp, angular geometric lines flowing across the canvas, and this time the expansion should occur only in visible, slow, harmonic wave patterns.\n\nRevise: the same constantly evolving, dense lattice formed by sharp, angular geometric lines, and this time the expansion should occur through rhythmic, discrete pulses radiating outward from multiple unseen centers\n\nRevise: depart: the systematic, rhythmic expansion of nodal points taken into the form of dendritic biological branching, structured as an architectural diagram, made of pigmented plaster, seen at macro scale, in a Bauhaus exhibit.\n\nRevise: flip: A colossal, viscous geyser of warm, earthy sediment slowly bubbling and spreading across the surface, forming chaotic, soft-focus patterns, made of poured concrete.\n\nRevise: depart: the self-contained, continuous process of gradual material buildup taken into a massive, complex automaton that mimics the mechanics of celestial gears, driven solely by a pendulum.\n\nRevise: carry: dynamic oscillation given to tectonic plate collision forces, rendered as shifting light currents, seen deep underground, driven by a spring under tension.\n\nRevise: flip: a visualization of slow-motion, crystalline detection, where filaments representing a slime mould searching settle into rigid, complex geometric networks, made of bio-luminescent quartz, seen through a microscope.\n\nRevise: depart: the gradual, complex formation of interconnected paths taken into an abstract, kinetic clockwork mechanism, made of smoked bronze, seen at room scale, in the Art Deco era.\n\nRevise: depart: The complex, radiating webbing of connections taken into a subterranean network of fungal mycelia, made of falling dominoes.",
+  "prompt_tokens": 10394,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2509/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2509",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, pulsing lattice of angular geometric lines that fill the canvas with an intricate, living energy field. The system uses a dense grid of line segments that rhythmically expand and contract in harmonic patterns, creating bursts of visual energy that radiate outward from multiple centers. The lines interlock and flow together in wave-like motions, building a complex, perpetual pattern of connectivity that mimics structured, flowing energy. The effect is both mechanical and organic, with sharp angular geometry giving way to smooth, pulsing expansions that create a sense of continuous motion and vitality across the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 253.707
+}
