@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 2429, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2429/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep, dark expanse representing a global tectonic shift. Across this surface, enormous, geometric segments of land slowly drift and collide, mimicking the folds of origami. The areas of interaction are marked by bioluminescent energy\u2014waves of soft, cyclical light that pulse across the plate boundaries. These waves move with a profound, slow rhythm, visually representing the steady seismic force and making the underlying, folded structures appear to glow and shift with internal, measured light.",
+  "completion_tokens": 1235,
+  "created_utc": "2026-10-24T15:33:56Z",
+  "entry_id": 2429,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1235,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 101,
+        "sha256": "b84c0923b66ec0abe5dfa6b1a28b70b9ed851840547a6cf8ee5fbc2b4fa00d5a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3508,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.965,
+      "wall_s": 102.961
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2450,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the measured, cyclical wave of bioluminescent energy taken into the slow, seismic shift of continental tectonic plates, folded origami.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 2327,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.\n\nRevise: the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.\n\nRevise: depart: the slow, measured rhythmic pulse of cosmic light taken into the layered crystal growth of subterranean mineral deposits, folded origami\n\nRevise: depart: the measured process of cosmic energy solidifying into complex, geometric structures taken into the form of bioluminescent, crystalline deep-sea organisms, making the next sketch flow with rhythmic, organic life.\n\nRevise: depart: the measured, cyclical wave of bioluminescent energy taken into the slow, seismic shift of continental tectonic plates, folded origami.",
+  "prompt_tokens": 3508,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2429/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2429",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the slow, rhythmic dance of tectonic plates as they drift and collide beneath a dark cosmic surface. Instead of traditional particles or billboards, it presents geometric plate structures that fold and shift in three-dimensional space, mimicking the origami-like creasing of Earth's crust. The bioluminescent energy isn't a separate effect but emerges from the interaction between plates at their boundaries\u2014when two plates meet, their surfaces pulse with a soft, cyclical glow. These glowing waves represent the steady, measured forces of seismic activity that reshape our planet over geological time, making the invisible mechanics of plate tectonics visible through an elegant blend of form and motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 102.961
+}
