@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca night train crossing the desert, seen only by its lit windows Revis\u2026\u201d \u2014 sketchgen entry 2433, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2433/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a monumental, receding cathedral library built of interlocking lacquered cedar shelves. Viewed from a low angle, the scale is overwhelming, establishing deep architectural geometry. Thousands of book spines and shelves fill the space, illuminated by a soft, ambient light that highlights the detailed, repeating structure. The primary focus is the slow, persistent process of decay; script fades, dust accumulates, and the massive structures appear to subtly shift and overlap, giving the impression of forgotten or decaying memory visualized in wood and geometry. The scene moves independently, offering a continuous, silent panorama of slow collapse.",
+  "completion_tokens": 3969,
+  "created_utc": "2026-10-24T16:11:59Z",
+  "entry_id": 2433,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1209,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 66)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 74)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 99)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 260.3 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "aead5f46e7d6f5862b3de125c6a76f9e97054f0b6cd10ea8df40d7624f1cec5e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 260.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3766,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 15.617,
+      "wall_s": 108.596
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1503,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 173.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 114,
+        "sha256": "fad639a06bd3120190990f3ed9d316ecfb10cf9627a32d0a9d92d9afa24fa64c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 173.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4020,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 76.866,
+      "wall_s": 135.443
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1257,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 142,
+        "sha256": "e70028f617ea5976e30a2de2e32a42d800fb20892b93b716e36187ec9139848e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 44.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4145,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 23.871,
+      "wall_s": 120.657
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2454,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the slow, accumulating decay of recorded memory, taken into the interlocking geometry of colossal Edo library shelves, made of lacquered cedar, seen at the scale of a massive cathedral.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2332,
+    "root_entry_id": 1489
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a night train crossing the desert, seen only by its lit windows\n\nRevise: the same rhythmic bursts of light emanating from the train's windows, and this time the lights should momentarily pause between bursts.\n\nRevise: the same rhythmic pulsing light, and this time the flash should briefly illuminate the textured desert terrain as the train passes.\n\nRevise: the same rhythmic, pulsing glow emanating from a distant source, and this time the flashes should momentarily pause between bursts.\n\nRevise: the same cyclical pattern of light and shadow, and this time incorporate the visible texture of the desert landscape into the dark field.\n\nRevise: depart: The idea of transiently illuminated, complex surfaces taken into a subterranean map of crystal formations, revealing structures overgrown and searching, made of slime mould\n\nRevise: depart: the slow, infinite growth of complex structures taken into the rusted, interlocking pipes of a derelict industrial boiler room, overgrown and mapping, made of knitted wool\n\nRevise: depart: the slow, accumulating decay of recorded memory, taken into the interlocking geometry of colossal Edo library shelves, made of lacquered cedar, seen at the scale of a massive cathedral.",
+  "prompt_tokens": 11931,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2433/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2433",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a vast, decaying cathedral library rendered in three-dimensional space using p5.js's WEBGL mode. The scene features thousands of interlocking cedar shelves arranged in deep perspective, creating an overwhelming sense of architectural scale and depth. Through subtle animations\u2014slow camera movement, gentle shelf oscillations, and drifting dust particles\u2014the viewer experiences a continuous process of decay and accumulation. The warm, lacquered wood tones shift slightly over time, while particles settle gradually, accumulating on surfaces to suggest the passage of time. The entire composition moves independently, offering an immersive, silent panorama that visualizes the slow collapse of forgotten memory through geometric structure and material detail.",
+  "submitted_by": "profcarroll",
+  "wall_s": 364.696
+}
