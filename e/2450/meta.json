@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cpunctuated equilibrium Revise: try again, no circles, and render the\u2026\u201d \u2014 sketchgen entry 2450, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2450/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, meticulous lattice structure resembling bleached, calcified bone. Rigid, organic geometric forms grow outward from a central point, forming repeating, perfect patterns that cover the entire surface. The palette is highly structured, dominated by tones of rusty red and pale ivory. The composition is fundamentally stationary, offering a static, geometric meditation on time. Movement is only implied by the faint, slow expansion of new, delicate structures at the edges, suggesting endless, silent proliferation.",
+  "completion_tokens": 1838,
+  "created_utc": "2026-10-24T18:28:50Z",
+  "entry_id": 2450,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1008,
+      "evidence": "gate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 163.2 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.6324/255, 43381 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 140,
+        "sha256": "c74631fb3c9922c84a60d4445105af9411ce01ff657e482aca0d7bdde261433e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 163.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3739,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 81.466,
+      "wall_s": 95.401
+    },
+    {
+      "assertions": {
+        "no_motion": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 830,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 111,
+        "sha256": "d7445dfa2fee606803e2b7242c8deb1d876b3e1d17049f396374b4d986d67b3f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 29.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3640,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.754,
+      "wall_s": 79.593
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2471,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a vast, meticulously organized lattice of rigid, calcified bone structures growing outward in slow, perfect geometric repetition, completely stationary, made of rust on sheet steel, seen at the scale of a dismantled engine room.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 2352,
+    "root_entry_id": 1451
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "punctuated equilibrium\n\nRevise: try again, no circles, and render the concept of punctuation juxtaposed against the return to equilibrium\n\nRevise: the same geometric arrangement, and this time use more angular and sharper edges during the collapse.\n\nRevise: the same dynamic geometric mechanism, and this time the fragments should assemble in a distinct helical spiral pattern during re-equilibration.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form an outwardly branching, non-repeating fractal structure.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should assemble into a distinct helical spiral pattern.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form an outwardly branching, non-repeating fractal structure.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form repeating, highly structured lattice patterns.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form large, interlocking hexagonal arrays that fill the space.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form an outwardly branching, non-repeating fractal structure.\n\nRevise: the same continuous cycle of angular geometric forms, and this time the re-assembled components should form repeating, highly structured lattice patterns.\n\nRevise: depart: the rhythm of decay and renewal taken into the slow, cumulative sedimentation of bleached seashell fragments, made of beeswax, seen at the scale of a tidal pool.\n\nRevise: flip: a chaotic eruption of brightly colored spores forming sharp, radial shockwaves emanating from subterranean fungal networks, made of mineral dust, seen at the scale of a forest floor, driven by a slime mould searching.\n\nRevise: flip: a vast, meticulously organized lattice of rigid, calcified bone structures growing outward in slow, perfect geometric repetition, completely stationary, made of rust on sheet steel, seen at the scale of a dismantled engine room.",
+  "prompt_tokens": 7379,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2450/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2450",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static, meditative lattice structure that evokes the appearance of bleached, calcified bone. Using the WEBGL renderer, it creates an intricate network of rigid, organic geometric forms that grow outward from a central point, forming repeating patterns across the entire canvas. The composition maintains perfect stillness while suggesting endless proliferation through its structured repetition and careful attention to form. The color palette draws heavily from rusty reds and pale ivories, creating a muted, timeless quality that emphasizes the static nature of the work. Each structure is built from simple geometric segments that define their form without any movement or animation, allowing viewers to contemplate the quiet complexity of the patterned arrangement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 174.994
+}
