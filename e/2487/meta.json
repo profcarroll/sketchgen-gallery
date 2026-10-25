@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 2487, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2487/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vertical strip of freshly knitted fabric that grows upwards from the bottom edge. The visible stitches are defined by alternating colors that consistently form a precise, geometric pattern across the entire surface. The movement is the slow, steady action of the knitting needles, which deposit new rows of patterned material as the fabric expands upwards. The colors are limited to the defined pattern palette, and the growth is constant and unperturbed by any external input or user interaction.",
+  "completion_tokens": 636,
+  "created_utc": "2026-10-25T17:27:44Z",
+  "entry_id": 2487,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 636,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 169,
+        "sha256": "d2a2ebb7742e8bf7cf7d592c6e52b0a45537749facfd5eb88d16c7f608f3b9a0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3970,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.655,
+      "wall_s": 79.148
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2508,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The slow, unpredictable blooming and staining of bioluminescent fungal networks across damp, porous river stone, mechanism: a slime mould searching",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 2373,
+    "root_entry_id": 886
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the visible stitches should consistently form distinct, alternating colored horizontal stripes.\n\nRevise: the same growing strip of patterned fabric, and this time the visible stitches should consistently form a continuous, repeating diamond stitch pattern across the growing surface.\n\nRevise: flip: A continuously knitted fabric that periodically stalls, creating abrupt structural disruptions and non-repeating knots, seen from a satellite.\n\nRevise: depart: A miniature cross-section of sedimentary rock where continuous, invisible tectonic pressure causes the layers to fault and crumble, visible at a scale small enough to hold in one hand.\n\nRevise: depart: The gradual accumulation of unnoticed, redundant marginalia and crossed-out textual failure on old newspaper, made of wet ink on newsprint.\n\nRevise: depart: The slow, unpredictable blooming and staining of bioluminescent fungal networks across damp, porous river stone, mechanism: a slime mould searching",
+  "prompt_tokens": 3970,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2487/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2487",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch simulates the steady growth of a knitted fabric by continuously adding new rows of patterned stitches from the bottom up. The visual effect captures the methodical, repetitive motion of knitting needles working through yarn, creating a vertical strip that expands over time. Each stitch follows a precise geometric pattern using a limited color palette, maintaining consistent spacing and structure as new rows are added. The animation runs autonomously without any external input, presenting a calming representation of continuous creation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 79.148
+}
