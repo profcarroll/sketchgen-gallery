@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca sweater being knit Revise: the same process of knitting, and this t\u2026\u201d \u2014 sketchgen entry 2423, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2423/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuously growing, intricate structure composed of interlocking, vein-like patterns. These formations resemble crystalline mineral deposits or highly stylized fungal networks, creating a dense tapestry of repeating, geometric loops. The entire piece undergoes a slow, rhythmic pulsation, causing new nodes and segments to generate in a self-organizing manner. The visible patterns move upward and outwards, creating the appearance of deep, complex life slowly being sculpted into permanence.",
+  "completion_tokens": 4854,
+  "created_utc": "2026-10-24T14:56:28Z",
+  "entry_id": 2423,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2453,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 205 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: carry: rhythmic geometric pulsation given to the growth of petrified rainforest fungi, following the rules of a flocking mechanism\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 291,
+        "sha256": "215c81516533392ba9462248b1fdf3461475bc40116c9896c3b08ede39ffdacf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.3,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4972,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.198,
+      "wall_s": 248.628
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2401,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 291,
+        "sha256": "215c81516533392ba9462248b1fdf3461475bc40116c9896c3b08ede39ffdacf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 25.4,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 5160,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 14.072,
+      "wall_s": 251.144
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2444,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: rhythmic geometric pulsation given to the growth of petrified rainforest fungi, following the rules of a flocking mechanism",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2321,
+    "root_entry_id": 1449
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a sweater being knit\n\nRevise: the same process of knitting, and this time the visible stitches should form a continuous, repeating geometric pattern across the growing fabric.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the visible stitches should consistently form distinct, alternating colored horizontal stripes.\n\nRevise: the same continuous, striped pattern of the intended garment, and this time the visible stitches should form repeating loops and interlocking patterns, moving upward as if hand-knitted.\n\nRevise: the same continuously growing strip of fabric forming a sweater, and this time the complex interlocking loops should transition to forming repeating, highly stylized leaf and vine motifs.\n\nRevise: carry: Interlocking, self-generating structure given to submerged limestone cave formations, driven by tides\n\nRevise: carry: Pulsing, interlocking mineral growth given to ancient, complex clockwork, mechanism: a flock following three rules\n\nRevise: carry: rhythmic geometric pulsation given to the growth of petrified rainforest fungi, following the rules of a flocking mechanism",
+  "prompt_tokens": 10132,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2423/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2423",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an evolving, organic network of crystalline formations that pulse and grow in rhythmic synchronization. The visuals evoke the slow, self-organizing emergence of fungal or mineral structures\u2014like a petrified rainforest slowly taking shape. Through a combination of geometric branching and particle flocking mechanics, it creates intricate, looping patterns that radiate from central cores outward. The entire composition pulses with a subtle rhythm, giving the impression of life slowly being sculpted into permanence. The viewer witnesses an endless, mesmerizing dance of form and motion, where each structure grows, evolves, and eventually dissolves in an eternal cycle.",
+  "submitted_by": "profcarroll",
+  "wall_s": 499.772
+}
