@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca campfire whose sparks drift up and become constellations Revise: de\u2026\u201d \u2014 sketchgen entry 2410, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2410/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vibrant, glowing campfire at the center, casting warm orange and yellow light onto the ground. Bright, ephemeral sparks launch from the fire, rising upward in a continuous, randomized drift. As the sparks ascend and dissipate, their trajectory slows and cools, transforming into faint, glowing stellar particles. These particles then drift further apart and connect to form recognizable, glowing constellations that bloom across the dark night sky backdrop, creating the visual effect of cosmic mapping over the heat of the fire.",
+  "completion_tokens": 4476,
+  "created_utc": "2026-10-24T13:06:57Z",
+  "entry_id": 2410,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2235,
+      "evidence": "gate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 124.3 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    the ghost window stopped early and wrote no ghost.png: frame_budget: the run passed its 90 s wall ceiling over the 120-frame idle window (124.3 ms per frame), budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 2000,
+        "played": 20,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "50ae2bbb21bf4d5b48b6b047638a5cc35b7cd17d703ac88ccefcf32a651bd7be",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 124.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3660,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 90.937,
+      "wall_s": 177.055
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2241,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 228,
+        "sha256": "8ae8fef5b73a6c484b076ef38b6155dfc72732dbac778d05c54fda49a425b892",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4916,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.128,
+      "wall_s": 222.535
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2431,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: the quality of structured randomness given to massive, geothermal crystal formations in the ocean trench, knitted wool",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2307,
+    "root_entry_id": 1531
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a campfire whose sparks drift up and become constellations\n\nRevise: depart: the interconnected mapping of vapor structures shown as tiny, folding origami elements rising from a misty forest floor.\n\nRevise: flip: a constant, downward cascade of folded origami pieces, appearing like scattered, weightless autumn confetti caught in a deep vertical draft, made of folded origami\n\nRevise: carry: the quality of structured randomness given to massive, geothermal crystal formations in the ocean trench, knitted wool",
+  "prompt_tokens": 8576,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2410/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2410",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a dynamic campfire scene where glowing sparks rise from a warm orange flame and gradually transform into cool blue-white stellar particles. As the sparks ascend and dissipate, they drift apart and form recognizable constellations in the night sky above. The visual effect creates a cosmic mapping over the heat of the fire, with particles transitioning through color and behavior as they age. The scene is rendered using batched drawing techniques to maintain performance within the frame budget, with particles forming trails and connecting lines that bloom into constellation patterns across the dark canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 399.59
+}
