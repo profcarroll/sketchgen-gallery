@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201climinal dreamscape architectures Revise: the same impossible architec\u2026\u201d \u2014 sketchgen entry 2507, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2507/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents an extreme magnification of geological time, visualizing the minute processes of crystal formation within a contained hourglass. Millions of silicate grains slowly drift and collect, governed entirely by simulated gravity. As the grains settle, they facilitate the growth of crystalline structures, mapping the structural tension and slow accumulation of mineral deposits. The resulting geometry is a delicate interplay of chaotic randomness and perfect crystalline order, observed entirely in a steady, deep-focus point of continuous, irreversible material change.",
+  "completion_tokens": 3958,
+  "created_utc": "2026-10-25T20:24:04Z",
+  "entry_id": 2507,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2134,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 212,
+        "sha256": "765becbd2cb02665f5ebfcfaa2bee7a314783e3324db824cf3e7bd8fae01ab78",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.3,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4430,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.368,
+      "wall_s": 191.901
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 890,
+      "evidence": "gate exit 1: assertions failed: motion(idle), uses(webgl)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 238,
+        "sha256": "988ed7761178ba6d5a04f305b8b0f8008d3764920ebc0ab9e10681158a0707ee",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4681,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.261,
+      "wall_s": 109.628
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 934,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 107,
+        "sha256": "fe493613f5d081f418980ef0f36d01147d6e33278bb7681c1a7b1365dfb4f585",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 16.5,
+      "num_ctx": 16384,
+      "preload_s": 0.056,
+      "prompt_tokens": 3527,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 10.357,
+      "wall_s": 81.826
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2528,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a massive, immobile, geometric excavation of perfectly interlocking honeycomb cells, revealing the crystalline interior structure, made of beeswax, seen at the microscopic level, in a Miocene geological strata.",
+    "critique_by": "gemma4:e4b",
+    "generation": 16,
+    "inherits_source": false,
+    "parent_entry_id": 2399,
+    "root_entry_id": 114
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "liminal dreamscape architectures\n\nRevise: the same impossible architectures, and this time fractured geometric planes reflecting muted teal light\n\nRevise: the same impossible architecture, and this time segments dissolving into particulate mist\n\nRevise: the same impossible architectures, and this time greater planar asymmetry causing visible structural stresses\n\nRevise: the same impossible architectures, and this time fractal self-similar geometries appearing across the fractured planes\n\nRevise: the same impossible architecture, and this time extreme shearing forces warping the planar surfaces into crystalline shards\n\nRevise: the same impossible architecture, and this time surfaces experiencing gravitational pull towards a central, undefined point\n\nRevise: the same impossible architectures, and this time the crystalline shards momentarily arrest their collapse, holding their structural integrity against the surrounding particulate mist\n\nRevise: the same impossible architectures, and this time stress fractures propagate across the crystalline shards, visibly mapping their structural tension.\n\nRevise: the same impossible, crystalline architectures, and this time extreme shearing forces warping the shards into gravity-defying, hyperbolic curves.\n\nRevise: carry: dynamic structural shedding given to the luminous, arterial network beneath pale skin, depicted on a medieval tapestry\n\nRevise: depart: the idea of latent structural tension taken into the interlocking, gear-driven clockwork mechanism of a subterranean automaton, small enough to hold in one hand.\n\nRevise: depart: the continuous cycle of structural stress and spontaneous reformation taken into the intricate, slow-motion growth patterns of crystalline deposits forming within a massive, bioluminescent deep-sea fan coral.\n\nRevise: depart: the accumulated idea of structural stress taken into the interlocking, microscopic warp and weft of ancient, heavily embroidered silk tapestries, made of woven silk, seen at the thread level, in a 1960s pen plotter drawing.\n\nRevise: depart: the idea of cumulative structural stress taken into the branching root systems of massive old-growth trees, seen at the macroscopic level, in a Victorian botanical plate.\n\nRevise: depart: the accumulated idea of structural stress and crystalline growth taken into the formations of mineral crystals within a fine hourglass of sand, seen at the scale of individual silicate grains, governed by gravity.\n\nRevise: flip: a massive, immobile, geometric excavation of perfectly interlocking honeycomb cells, revealing the crystalline interior structure, made of beeswax, seen at the microscopic level, in a Miocene geological strata.",
+  "prompt_tokens": 12638,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2507/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2507",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes the slow, patient process of crystal formation within a contained hourglass. Using thousands of particles that settle under simulated gravity, it captures how mineral grains drift and accumulate over time. As they settle, they form delicate crystalline structures that emerge from chaos\u2014showing how order can arise from random motion. The viewer watches an endless cycle where new particles are constantly introduced while old ones fade away, creating a sense of continuous geological change. The interplay between individual particle movement and collective crystal growth illustrates the tension between disorder and structure in natural processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 383.355
+}
