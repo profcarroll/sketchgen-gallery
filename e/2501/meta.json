@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2501, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2501/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a solitary tree set against a changing hillside. Time progresses in cycles, altering the tree\u2019s leaves through a spectrum of color\u2014vibrant green yielding to autumnal reds, oranges, and browns, before finally scattering and falling to blanket the ground. Following the leaf fall, the scene is covered by descending white snowfall. As the snow melts, small green buds appear, bursting into full blossoms. Eventually, the cycle completes, and the canopy is once more bright green, only to begin the magnificent decline again.",
+  "completion_tokens": 1756,
+  "created_utc": "2026-10-25T19:38:22Z",
+  "entry_id": 2501,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1756,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 182,
+        "sha256": "06ee46fc0132aea70ad024ad7e7749048bd43f685b6fd5e19e82614f7bb0c61b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4056,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.675,
+      "wall_s": 150.935
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2522,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of repeating, rhythmic cycles taken into a massive, hydrothermal vent system deep beneath the ocean floor, seen shifting and reshaping with the power of the tides.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 2392,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.\n\nRevise: carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.\n\nRevise: depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.\n\nRevise: depart: the concept of perpetual seasonal renewal taken into the complex mechanical structure of a gigantic observatory telescope array, era: a 1960s pen plotter drawing\n\nRevise: depart: the concept of slow, inevitable renewal taken into the spiraling growth rings of a colossal, petrified organism, made of petrified wood, seen at a mountain range.\n\nRevise: depart: The concept of repeating, rhythmic cycles taken into a massive, hydrothermal vent system deep beneath the ocean floor, seen shifting and reshaping with the power of the tides.",
+  "prompt_tokens": 4056,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2501/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2501",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the cyclical transformation of a solitary tree through the seasons, from vibrant spring growth to summer's lush canopy, through autumn's brilliant color shift, and into winter's snowy dormancy. The visualization captures both the visual evolution of the tree's foliage and the environmental changes that drive this natural cycle. As time progresses, the leaves transition from bright greens to warm oranges and reds before falling to the ground. Snow then blankets the scene, melting away to reveal small green buds that burst into full blossoms, completing the cycle. The technique uses a single tree structure with dynamically changing leaf properties and particle systems for snowfall, all synchronized to an internal time-based season progression.",
+  "submitted_by": "profcarroll",
+  "wall_s": 150.935
+}
