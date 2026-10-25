@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201can ant colony digging tunnels toward wherever you last clicked Revise\u2026\u201d \u2014 sketchgen entry 2427, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2427/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, luminous geometric pathways forming a dense network of interwoven lines. At every intersection point, the pathways give way to sharply defined, vibrant crystalline veins of varying colors, suggesting mineral deposits. The veins subtly pulse and grow over time, giving the impression of slow geological crystallization. When the user clicks anywhere on the canvas, a new, branching vein instantly grows outward from the cursor's location, momentarily strengthening the connection and causing the surrounding crystals to flash brightly before settling back into their slow, continuous growth pattern.",
+  "completion_tokens": 1495,
+  "created_utc": "2026-10-24T15:21:40Z",
+  "entry_id": 2427,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1495,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 121,
+        "sha256": "da75a45607ab4ac412f9cb1353ef2327ac47a0037b132fd246e43545a7a428b6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3516,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.603,
+      "wall_s": 120.959
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2448,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The notion of deeply layered, fossilized time taken into a series of delicate, rain-washed porcelain masks, eroded by flowing water.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 2325,
+    "root_entry_id": 1478
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an ant colony digging tunnels toward wherever you last clicked\n\nRevise: the same intersecting geometric paths, and this time the tunnels widen and fill with running underground streams.\n\nRevise: the same complex networks of intersecting geometric paths, and this time the flowing underground streams leave behind visible mineral deposits and sediment at every junction.\n\nRevise: the same network of intersecting geometric paths, and this time the mineral deposits have crystallized, forming crystalline veins that jut out from the junctions.\n\nRevise: depart: The notion of reinforcing, intersecting pathways taken into a depiction of complex, interwoven narratives and symbolic figures of folklore, medieval tapestry\n\nRevise: depart: The continuous flow of stories taken into the cross-section of solidified, dripping beeswax, seen at a lunar scale.\n\nRevise: depart: The notion of deeply layered, fossilized time taken into a series of delicate, rain-washed porcelain masks, eroded by flowing water.",
+  "prompt_tokens": 3516,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2427/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2427",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a geological visualization of crystallizing mineral formations. Through flowing geometric threads that weave across the canvas, it depicts the slow, patient process of underground crystal growth. The system begins with a network of luminous pathways that gradually extend and branch, forming an intricate underground web. At every intersection point, vibrant crystalline formations emerge\u2014these crystals pulse and grow over time, suggesting mineral deposits slowly taking shape. When clicked, users trigger new branching veins that instantly radiate from their cursor position, causing nearby crystals to flash brightly before returning to their natural growth rhythm. The work captures the patient, almost meditative process of geological formation through a blend of organic flowing lines and sharp, structured crystalline forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 120.959
+}
