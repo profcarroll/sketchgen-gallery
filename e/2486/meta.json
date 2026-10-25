@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdesign a rhythm sequencer Revise: zoom: a whole sketch of the brief,\u2026\u201d \u2014 sketchgen entry 2486, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2486/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an expanding field of glowing, geometric nodes arranged in an interlocking grid. Continuous pulses of light propagate outward from a central point, mapping out evolving, structured patterns of rhythm. As these waves move, adjacent nodes pulse with varying intensities and hues of color. The viewer interacts with the pattern by clicking anywhere on the canvas, which immediately alters the sequence by either initiating a new, unpredictable rhythm or amplifying the intensity of the existing patterns. The combined movement and color field shifts constantly, forming complex, emergent visual soundscapes.",
+  "completion_tokens": 1799,
+  "created_utc": "2026-10-25T17:22:35Z",
+  "entry_id": 2486,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 893,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 37)\n\ngate exit 1: checks failed: console_clean\n\nFixed checks that failed:\n- console_clean = false\n\nConsole (1 error line, first 1 shown):\n- [pageerror] dist is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 93,
+        "sha256": "220bccf71591a41a25618894856a4dda3b52629da8f1c3f65beb92f3d2d45e85",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3430,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.781,
+      "wall_s": 81.263
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 906,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 97,
+        "sha256": "a628209b5c54c8d36708116293ce15df781d4f8153b647e6bd939597fe872a5d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3528,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.421,
+      "wall_s": 82.989
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2507,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The profound rhythm of decay and stratification taken into a crystalline field of bioluminescent deep-sea fauna, observed through thick, refractive glass.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 2372,
+    "root_entry_id": 968
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a rhythm sequencer\n\nRevise: zoom: a whole sketch of the brief, high-speed geometric decay of light emanating from a single point, <what it becomes at full size>, <a 1920s Bauhaus stained-glass panel>.\n\nRevise: depart: The concept of repeating, cyclical energy taken into the form of crystallized microbial blooms, appearing etched onto damp ceramic tile.\n\nRevise: carry: Structured cyclical energy given to massive, layered geological strata, cast entirely in poured concrete.\n\nRevise: depart: The profound rhythm of decay and stratification taken into a crystalline field of bioluminescent deep-sea fauna, observed through thick, refractive glass.",
+  "prompt_tokens": 6958,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2486/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2486",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, evolving field of glowing geometric nodes arranged in a grid pattern. Each node pulses with its own rhythm while responding to waves that emanate from a central point and propagate outward. The visual system generates complex emergent patterns through the interaction of multiple wavefronts, where adjacent nodes resonate with varying intensities and hues based on their proximity to active pulses. When viewers click anywhere on the canvas, they trigger new pulses that disrupt and amplify the existing rhythm, creating an interactive experience where each gesture introduces unpredictable variations in the synchronized field dynamics. The continuous animation produces a mesmerizing, organic flow of color and form that shifts and evolves over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 164.252
+}
