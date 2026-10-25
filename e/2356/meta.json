@@ -1,0 +1,205 @@
+{
+  "assertions": [
+    "no_motion",
+    "loads(image)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cmake a drone fly through animation exploring an abandoned college cam\u2026\u201d \u2014 sketchgen entry 2356, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2356/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a highly detailed, antique botanical inventory, meticulously arranged on aged parchment. Rendered with the delicate precision of a Victorian scientific plate, the composition showcases exotic rainforest flora gathered from around the globe. The color palette is restricted to rich, faded inks and the creamy tones of vellum, lending a scholarly, preserved air. The viewer is presented with a systematic stratification of life, enabling close examination of leaf venation and petal structure. The visual effect is one of deep, cataloged natural knowledge, remaining static to allow for careful, immersive study.",
+  "completion_tokens": 3585,
+  "created_utc": "2026-10-24T05:21:53Z",
+  "entry_id": 2356,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "loads(image)": false,
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1598,
+      "evidence": "gate exit 1: assertions failed: no_motion, loads(image)\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.2075/255, 31992 of 1152000 pixels changed\n- loads(image): the only image is a data: URI, which is not the web; the page made no request for an image outside itself\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 122,
+        "sha256": "a79d7b28edb0ee5fd4396ba9c6cd9f4a4f7ab4d21669686a7b5b8cc589d05f79",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3898,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.925,
+      "wall_s": 138.953
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1010,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0175/255, 8177 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 164,
+        "sha256": "aee65005542cc2a3e6044dfbf72d047bcf57a00bb77cf8c5e67f42bd2c4329a1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.7,
+      "num_ctx": 16384,
+      "preload_s": 1.027,
+      "prompt_tokens": 4318,
+      "resources_loaded": [
+        {
+          "bytes": 37044,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.896,
+      "wall_s": 108.945
+    },
+    {
+      "assertions": {
+        "loads(image)": true,
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 977,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 102,
+        "sha256": "183a71d438156f9a770ea074a7e81eeb05d540f4b3ed683ead8250538c60ac0a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.426,
+      "prompt_tokens": 3691,
+      "resources_loaded": [
+        {
+          "bytes": 37044,
+          "host": "fastly.picsum.photos",
+          "type": "image/jpeg"
+        }
+      ],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.185,
+      "wall_s": 88.733
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2375,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry systematic stratification given to an inventory of exotic rainforest flora, illustrated on antique vellum, seen at the scale of a Victorian botanical plate",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2079,
+    "root_entry_id": 1376
+  },
+  "loads": [
+    {
+      "bytes": 37044,
+      "host": "fastly.picsum.photos",
+      "type": "image/jpeg"
+    }
+  ],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "make a drone fly through animation exploring an abandoned college campus built with Brutalist architecture\n\nRevise: the same architectural environment, and this time showing creeping vines and moss growing from the concrete facades.\n\nRevise: the same continuous, cinematic glide through a vast architectural landscape, and this time showing structural elements crumbling and exposed rebar beneath the green growth.\n\nRevise: the same continuous cinematic glide through the abandoned college campus, and this time showing the massive walls completely dissolved and covered by a deep blanket of accumulated forest loam.\n\nRevise: depart: the layered transition from highly structured material to organic residue taken into a geological cross-section showing repeating strata of poured industrial concrete, oxidized steel slag, and sediment, seen through the lens of a 1920s Bauhaus exercise\n\nRevise: carry systematic stratification given to an inventory of exotic rainforest flora, illustrated on antique vellum, seen at the scale of a Victorian botanical plate",
+  "prompt_tokens": 11907,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2356/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2356",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a static, meticulously rendered botanical inventory on aged parchment, evoking the scholarly precision of Victorian scientific illustration. The composition features stratified layers mimicking antique manuscript textures, with subtle variations in color and pattern to suggest age and authenticity. A central botanical specimen, loaded from an external source, dominates the scene while maintaining the archival mood. The work remains completely still, inviting contemplative observation and emphasizing the preserved nature of natural knowledge as captured in historical collections.",
+  "submitted_by": "profcarroll",
+  "wall_s": 336.631
+}
