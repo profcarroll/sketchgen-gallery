@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cshower thoughts Revise: the same bioluminescent shapes, and this time\u2026\u201d \u2014 sketchgen entry 2366, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2366/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a vast, slowly drifting nebula of bioluminescent gas. Deep-sea blues and vivid purples dominate the palette, creating the illusion of massive, ethereal gas clouds. Within the cosmic sprawl, intricate, glowing filaments and amorphous shapes drift and coalesce. These luminous forms are defined by rhythmic energy pulses: visible ripples of pulsing light propagate outward from the core of the clusters, suggesting powerful, cyclical life deep within the stellar nursery. The overall composition maintains a meditative sense of immense, slow-motion cosmic life.",
+  "completion_tokens": 2487,
+  "created_utc": "2026-10-24T06:33:18Z",
+  "entry_id": 2366,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1178,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 100)\n\ngate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 89 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the branching, rhythmic energy pulse taken into a sequence of glass-etched marble dominoes, driven by the cascading force of falling dominoes.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "787aea33def1656e2f31a0817a3810600b0b2d8850d7df59509d484de520839b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 47.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3734,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 22.322,
+      "wall_s": 105.495
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1309,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 118,
+        "sha256": "787aea33def1656e2f31a0817a3810600b0b2d8850d7df59509d484de520839b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 53.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3991,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 24.696,
+      "wall_s": 120.444
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2385,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the branching, rhythmic energy pulse taken into a sequence of glass-etched marble dominoes, driven by the cascading force of falling dominoes.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 2139,
+    "root_entry_id": 188
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "shower thoughts\n\nRevise: the same bioluminescent shapes, and this time some forms have trailing, glowing smoke tails\n\nRevise: improve the animation framerate\n\nRevise: the same bioluminescent forms, and this time they will react to subtle changes in the background darkness\n\nRevise: the same bioluminescent shapes, and this time the glowing smoke tails will change thickness and intensity as they drift\n\nRevise: the same bioluminescent shapes, and this time some forms will briefly change color from blue to purple\n\nRevise: the same bioluminescent shapes, and this time they will generate visible, rhythmic pulses that ripple outward through their tails.\n\nRevise: the same bioluminescent forms, and this time the glowing smoke tails will temporarily gather together into visible, shifting clusters.\n\nRevise: depart: the rhythmic, glowing pulsations of the forming bioluminescent clusters taken into the mineral-filled micro-fissures of abandoned ceramic tile grout, viewed as an archaeological excavation.\n\nRevise: depart: the rhythmic, pulsing bioluminescence of deep-sea creatures taken into the formation of massive celestial gas clouds, seen in a spiral nebula.\n\nRevise: depart: the branching, rhythmic energy pulse taken into a sequence of glass-etched marble dominoes, driven by the cascading force of falling dominoes.",
+  "prompt_tokens": 7725,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2366/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2366",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, meditative nebula of bioluminescent gas using a combination of organic particle motion and spatially-aware connections. The scene features deep blues and vivid purples that evoke the vastness of space, with glowing particles that drift slowly and rhythmically through three-dimensional space. Each particle pulses with its own internal rhythm, creating ripples that propagate along trailing paths, suggesting the cyclical life forces within stellar nurseries. The connections between nearby particles form a web-like structure that reinforces the sense of cosmic interconnectivity. By using spatial hashing instead of all-pairs distance calculations, the sketch maintains performance while creating an organic, flowing network that evolves over time without becoming chaotic or visually overwhelming.",
+  "submitted_by": "profcarroll",
+  "wall_s": 225.939
+}
