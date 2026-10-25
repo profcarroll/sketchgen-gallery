@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cEKG patterns Revise: the same glowing line oscillating across a black\u2026\u201d \u2014 sketchgen entry 2462, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2462/ Licensed CC BY 4.0.",
+  "brief": "A glowing neon line dominates the black canvas, appearing as if it is tracing the rhythm of a heart. The line perpetually moves from left to right, mimicking the pattern of an electrocardiogram. Its bright, vibrant spikes and dips scroll continuously across the screen, creating a meditative and mesmerizing flow of life's measured rhythm. The visualization maintains a steady, unbroken cycle, providing a hypnotic, fluid pattern that never pauses or changes based on user interaction.",
+  "completion_tokens": 1126,
+  "created_utc": "2026-10-25T02:56:12Z",
+  "entry_id": 2462,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 569,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 39 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the systemic rhythm of deep-sea geological pressure taken into the corrosion map of an abandoned railway bridge, wet ink on newsprint\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 58,
+        "sha256": "876f32752e25fb2a18098f37e791d852281727db5e42be4d9736a5c772fdd760",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3072,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.667,
+      "wall_s": 53.412
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 557,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 58,
+        "sha256": "876f32752e25fb2a18098f37e791d852281727db5e42be4d9736a5c772fdd760",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3259,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.652,
+      "wall_s": 55.916
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2483,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the systemic rhythm of deep-sea geological pressure taken into the corrosion map of an abandoned railway bridge, wet ink on newsprint",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2437,
+    "root_entry_id": 1452
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same glowing line oscillating across a black background, tracing the rhythmic spikes and dips of a heartbeat, and this time moving steadily from left to right, creating a continuous scrolling effect.\n\nRevise: the same glowing neon line, and this time with a brighter, intensely fluorescent glow effect.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring noticeably irregular and erratic spikes and dips.\n\nRevise: the same glowing neon line tracing an EKG pattern, and this time featuring a noticeable, steady rhythmic pulse in its intensity.\n\nRevise: the same glowing neon line tracing the chaotic contours of an electrocardiogram reading, and this time featuring noticeably cyclical and uniform spikes.\n\nRevise: the same complex contours of an electrocardiogram reading, and this time featuring wildly irregular, unpredictable spikes and dips.\n\nRevise: the same glowing neon line tracing the unpredictable contours of an electrocardiogram reading, and this time featuring distinct, repeating groupings of spikes and dips.\n\nRevise: depart: the abstract tracing of momentary energy fluctuations taken into a complex, suspended network of spun glass structures, appearing embedded in yellow beeswax\n\nRevise: depart: the abstract tracing of measured energy fluctuations taken into the layered, branching patterns of petrified internal coral, as a 1920s Bauhaus exercise.\n\nRevise: depart: the abstract tracing of momentary energy fluctuations taken into the slow, particulate erosion of a deep-sea hydrothermal vent field, viewed through live thermal imaging.\n\nRevise: depart: the systemic rhythm of deep-sea geological pressure taken into the corrosion map of an abandoned railway bridge, wet ink on newsprint",
+  "prompt_tokens": 6331,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2462/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2462",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the rhythmic pulse of life through a continuous, glowing neon line that scrolls across a dark canvas like an electrocardiogram. The line's undulating path mimics the steady, measured rhythm of a heartbeat, with vibrant color that shifts gently over time to create a mesmerizing effect. The visualization is entirely self-contained and animated, creating a hypnotic pattern that never pauses or changes based on user interaction, offering a meditative representation of life's fundamental rhythm.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.328
+}
