@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 2370, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2370/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals a subterranean cross-section, illustrating immense, layered streams of raw energy that penetrate deep underground. These energetic flows, visualized through shifting bands of intense gradients and color, encounter pockets of mineral density. Over time, the soft, liquid movements begin to crystallize, transitioning from fluid color fields into sharply defined, geometric vein structures. The overall scene is one of dynamic geological transformation, where powerful natural forces solidify raw energy into solid crystalline patterns.",
+  "completion_tokens": 2246,
+  "created_utc": "2026-10-24T07:02:05Z",
+  "entry_id": 2370,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1034,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 56)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 78)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 84)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 103)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] [object Arguments]is not a valid color representation.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "22b412f898c8890a304f9cde9b2122b03dbc153556d6b2ea6e0f7fb467561509",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3616,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.658,
+      "wall_s": 93.629
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1212,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 109,
+        "sha256": "11644ca99cd1dd76053df2d146e29020acc31cc5de4fe06ea0cb1d274af3dc3a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3922,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.54,
+      "wall_s": 112.627
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2389,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a massive, perfectly rigid clockwork mechanism, showing interwoven brass gears and cam systems operating in precise, repeating, non-fluid cycles, made of brass, seen at machine scale, driven by gear systems.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 2168,
+    "root_entry_id": 379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.\n\nRevise: depart: The rhythmic structuring of oceanic currents taken into the massive energy differentials of atmospheric weather systems, seen from a satellite, driven by global wind patterns.\n\nRevise: depart: The powerful, layered flow of global energy differentials taken into the deep crystallization of subterranean mineral veins, seen at the scale of a mountain range.\n\nRevise: flip: a massive, perfectly rigid clockwork mechanism, showing interwoven brass gears and cam systems operating in precise, repeating, non-fluid cycles, made of brass, seen at machine scale, driven by gear systems.",
+  "prompt_tokens": 7538,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2370/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2370",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the geological transformation of raw energy into crystalline structures beneath the earth's surface. The composition features layered bands of energetic gradients that flow and pulse with color, representing the dynamic underground forces. Within this energy field, thousands of geometric crystals gradually form and grow, transitioning from fluid movement to sharp, defined structures. The visualization captures the tension between chaos and order, showing how raw natural energy solidifies into ordered crystalline patterns through time and pressure. The interplay of flowing gradients and rigid geometric forms creates a sense of geological evolution and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 206.256
+}
