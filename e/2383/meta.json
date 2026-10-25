@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201chot air balloons Revise: the same colorful hot air balloons, and this\u2026\u201d \u2014 sketchgen entry 2383, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2383/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a meticulous, diagrammatic cross-section of life\u2019s infrastructure. Fine, precise linework evokes the delicate geometry of crystallized roots and mineral structures, contrasted by the deep, continuous sweeps of bioluminescent current. This rendering, styled after mid-century pen plotter art, maps the boundary where rigid structure meets perpetual biological flow. The interplay of lines forms an intricate network, creating a sense of massive, underlying life within a meticulously defined architectural space.",
+  "completion_tokens": 3373,
+  "created_utc": "2026-10-24T09:25:07Z",
+  "entry_id": 2383,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1499,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 64)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 65)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 71)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 72)\n\ngate exit 1: checks failed: revised; assertions failed: no_motion\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 113 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the dynamic intersection of continuous flow and fixed boundaries taken into the circulatory system of a massive bioluminescent coral reef, rendered as a 1960s pen plotter drawing.\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 6.1026/255, 198417 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 148,
+        "sha256": "54c13d18ef6b585b7f7a7b89c5403f1eb679b7e430aecbc4b320fe09a3c67dd3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.6,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3991,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 9.337,
+      "wall_s": 147.502
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1154,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0301/255, 6307 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 148,
+        "sha256": "54c13d18ef6b585b7f7a7b89c5403f1eb679b7e430aecbc4b320fe09a3c67dd3",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4467,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.744,
+      "wall_s": 121.451
+    },
+    {
+      "assertions": {
+        "no_motion": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 720,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 68)\n\ngate exit 1: checks failed: console_clean, frame_advancing\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 116,
+        "sha256": "8ec443bde26d6250c170753b038d94e584afc0c344c50ac5fada971d6beb3aa1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3747,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.611,
+      "wall_s": 75.018
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2404,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the dynamic intersection of continuous flow and fixed boundaries taken into the circulatory system of a massive bioluminescent coral reef, rendered as a 1960s pen plotter drawing.",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": false,
+    "parent_entry_id": 2275,
+    "root_entry_id": 1259
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "hot air balloons\n\nRevise: the same colorful hot air balloons, and this time depicting them with a soft, radiant glow around their edges.\n\nRevise: the same vividly colored hot air balloons, and this time with the soft glow radiating in distinct, segmented pillars of light.\n\nRevise: carry: structured luminous segments given to microscopic crystalline formations of hydrothermal vents, seen under a microscope\n\nRevise: depart: The principle of rigid, repeating orthogonal geometry intersecting dynamic, colored, liquid flow, transformed into a series of interlocking wall panels, made of painted plaster, seen at architectural scale, in a 1920s Bauhaus exercise.\n\nRevise: carry: Structural constraint meeting spontaneous flow given to crystallized root formations, seen under a microscope\n\nRevise: depart: the dynamic intersection of continuous flow and fixed boundaries taken into the circulatory system of a massive bioluminescent coral reef, rendered as a 1960s pen plotter drawing.",
+  "prompt_tokens": 12205,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2383/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2383",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders a meticulous cross-section of life's infrastructure using the aesthetic of mid-century pen plotter art. It depicts a structured architectural space\u2014represented by geometric wall panels\u2014with flowing bioluminescent currents that interweave through the rigid framework. The composition balances precise crystalline forms with organic, continuous flows, evoking the underlying biological systems that exist within defined structures. Through careful line work and color placement, it suggests both the fragility of life's networks and the enduring nature of architectural boundaries.",
+  "submitted_by": "profcarroll",
+  "wall_s": 343.971
+}
