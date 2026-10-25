@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "no_motion",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 2505, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2505/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a dizzying, complex map of intersecting linear pathways, appearing as a dense, crystalline mineral lattice. The structure evokes the hidden circulatory system of a massive subterranean organism. The view begins with the sweeping, generalized patterns visible from a colossal distance, before magnifying and focusing intensely into a deeply concentrated network of paths. The geometric lines are highly detailed, suggesting geological and biological complexity, rendered in cool, muted tones that define the crystalline structure and the vast, unseen network below.",
+  "completion_tokens": 1838,
+  "created_utc": "2026-10-25T20:03:55Z",
+  "entry_id": 2505,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 621,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 1.4399/255, 27726 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 54,
+        "sha256": "06782cdebaeb6fb312b2049d730ad34ec6e494148f3d97e9504bd9c770763e1e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3072,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.887,
+      "wall_s": 55.588
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 609,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 5.9621/255, 117062 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 66,
+        "sha256": "ad3da175b4f43672d11d0bab30f2c71e2eb1226587bcbf1d052772ab7f004630",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.0,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3249,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 8.397,
+      "wall_s": 56.553
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 608,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 13.0208/255, 255649 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 61,
+        "sha256": "c2d6e67c3ed39c7d266be8f2419b9d92701e04270ad7a816f6be8f504deaaf78",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 30.3,
+      "num_ctx": 16384,
+      "preload_s": 0.05,
+      "prompt_tokens": 3212,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 15.135,
+      "wall_s": 56.683
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2526,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "zoom: a highly concentrated patch of intersecting linear pathways, appearing as a dense, crystalline mineral lattice, seen from a satellite reveals the networked circulatory system of a colossal subterranean organism.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 2397,
+    "root_entry_id": 374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.\n\nRevise: the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.\n\nRevise: depart: the idea of continuous, highly structured flow through a deep medium taken into a vast network of tectonic fault lines, mechanism: a slime mould searching.\n\nRevise: depart: the interconnected pathways of bioluminescent life are taken into the corroded framework of a colossal, abandoned factory, made of rust on sheet steel.\n\nRevise: depart: the notion of pulsating, living circuits running through decaying structures taken into a complex network of folded origami mimicking hydrothermal vents, made of crisp paper, seen at microscopic scale, in a deep-sea setting.\n\nRevise: carry: geometric tessellations of light given to colossal radio receivers, seen at industrial scale, in a 1920s Bauhaus exercise\n\nRevise: carry: pure, shifting geometric light given to the complex mineral growth patterns of enormous stalactite caverns, made of beeswax, seen at geological scale, in a subterranean setting.\n\nRevise: flip: A hyper-minimalist study of intersecting parallel lines and negative space, detailing a simple, unornamented structural element, made of graphite on vellum, seen at drafting scale, in a 1960s pen plotter drawing.\n\nRevise: zoom: a highly concentrated patch of intersecting linear pathways, appearing as a dense, crystalline mineral lattice, seen from a satellite reveals the networked circulatory system of a colossal subterranean organism.",
+  "prompt_tokens": 9533,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2505/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2505",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a crystalline mineral lattice structure that evokes the hidden circulatory system of a vast subterranean organism. Through careful use of 3D geometry and dynamic lighting, it creates an intricate network of intersecting lines that appear to pulse and shift in space. The cool, muted color palette emphasizes the geological nature of the form while maintaining an organic quality. The structure begins with generalized patterns visible from a distance before focusing into a dense, interconnected web that suggests both mineral formation and biological complexity. The viewer's perspective slowly rotates, revealing the full scope of this underground network as it appears to breathe with subtle motion.",
+  "submitted_by": "profcarroll",
+  "wall_s": 168.824
+}
