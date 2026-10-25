@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca single hexagon that masks a hypnotic forward motion kaleidoscope Re\u2026\u201d \u2014 sketchgen entry 2416, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2416/ Licensed CC BY 4.0.",
+  "brief": "The canvas reveals an infinitely repeating, perfectly symmetrical circular pattern, resembling a complex kaleidoscope. Hundreds of glowing geometric shapes interlock and overlap, creating a vibrant sense of contained depth. The entire visual field is bathed in the rich, glowing gradient of a sunset, cyclically transitioning through fiery reds, glowing oranges, and deep magentas. The intricate pattern is in perpetual, mesmerizing motion, while the intensity and specific hues of the glow shift whenever the mouse is clicked, allowing the viewer to guide the flow of the light.",
+  "completion_tokens": 1415,
+  "created_utc": "2026-10-24T13:53:09Z",
+  "entry_id": 2416,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1415,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 134,
+        "sha256": "f4d0d84ea4bc14b70f73584f775e4121057022d5af73df9e7fd7224ec57922c6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 38.2,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3926,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 19.316,
+      "wall_s": 126.468
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2437,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch that has violent, crystalline growth, mapping strata of sharp, quartz formations spreading across wet vellum, eternally fracturing, made of that material, seen at that scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2313,
+    "root_entry_id": 1365
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a single hexagon that masks a hypnotic forward motion kaleidoscope\n\nRevise: the same symmetrical, circular kaleidoscope pattern, and this time transitioning the colors toward hot, glowing sunset hues.\n\nRevise: the same symmetrical, circular kaleidoscope pattern, and this time transitioning the colors toward vibrant, glowing sunset hues.\n\nRevise: carry: perpetual radial glow given to the microscopic structure of a sliced soap bubble, small enough to hold in one hand.\n\nRevise: flip: a dense, topographical map of accumulated sedimentary layers, featuring petrified forest impressions and horizontal striations of deep ochre and slate gray, seen in overlapping wet ink on newsprint.\n\nRevise: flip: a sketch that has violent, crystalline growth, mapping strata of sharp, quartz formations spreading across wet vellum, eternally fracturing, made of that material, seen at that scale.",
+  "prompt_tokens": 3926,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2416/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2416",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch creates an endlessly evolving fractal landscape of crystalline formations emerging from a wet vellum texture. The composition features sharp, geometric crystals that grow and fracture in perpetual motion, revealing layers of magenta, orange, and red hues that shift with time. Each crystal is composed of multiple polygonal faces that dynamically change orientation, creating an effect of internal light refraction. The piece captures the essence of geological formation processes through abstract, flowing structures that seem to push outward from a central point, like the growth patterns of mineral deposits or ice formations. The viewer experiences a mesmerizing interplay between controlled geometric forms and organic movement, all rendered in a rich sunset color palette that pulses with subtle shifts in tone and intensity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 126.468
+}
