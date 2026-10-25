@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 2365, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2365/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a serene, bright white space, into which pure black liquid ink slowly permeates. The movement is entirely internal and non-interactive. From the outer edges, the ink gradually begins to pull inward, gathering mass until it converges upon a central focal point. As the ink accumulates, its boundaries do not remain liquid; instead, they spontaneously solidify and resolve into a complex, hyper-ordered geometric pattern. This progression happens in highly controlled, sequential steps, mimicking the precise, cascading failure of a domino line, creating a structure that sustains itself purely through geometric order.",
+  "completion_tokens": 2662,
+  "created_utc": "2026-10-24T06:24:55Z",
+  "entry_id": 2365,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 899,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 157,
+        "sha256": "a29d109cc73df00ad3a858e6c96644f3e7938238cdc1afa1d5b30c0be6b635a6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 4.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3876,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.562,
+      "wall_s": 91.13
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 880,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "07b6b344a176807241cb6a12f407ec7e1a3908f4828b717cbb798a6a88305b2c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3508,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.427,
+      "wall_s": 79.16
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 883,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "b03594baba50661eed1c9ce351b1eb1c6dbbce205cb93f27d73b6b5a360acaf4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3506,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.439,
+      "wall_s": 78.021
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2384,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch of perfect black ink slowly aggregating inward toward a central point, forming a self-sustaining, hyper-ordered geometric pattern, mechanism: a row of falling dominoes",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "inherits_source": false,
+    "parent_entry_id": 2138,
+    "root_entry_id": 47
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the visible process of flowers maturing from bloom through to forming seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the physical peeling or shedding of petals as the blooms transition into seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the fully developed seeds accumulating and slowly dispersing from the central pods.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the luminous seed particles visibly spiraling into the central pods before they accumulate.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the pods visibly hardening and restructuring from the collected luminous particles into defined, mature seed casings.\n\nRevise: carry: slow, contained structural reorganization given to massive obsidian crystallization, observed through a row of falling dominoes\n\nRevise: flip: a sketch of pressurized gas fracturing into a blizzard of unpredictable, razor-sharp glass fragments that burst outward in a chaotic, self-replicating cascade, mechanism: a spring under tension\n\nRevise: flip: a sketch of perfect black ink slowly aggregating inward toward a central point, forming a self-sustaining, hyper-ordered geometric pattern, mechanism: a row of falling dominoes",
+  "prompt_tokens": 10890,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2365/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2365",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the slow, mesmerizing process of ink permeating a white space, gradually pulling inward from the edges toward a central point. As the liquid ink accumulates, it transforms into an ordered geometric pattern, like dominoes falling in sequence. The viewer observes the controlled progression of particles moving inward, forming increasingly complex shapes that maintain their structural integrity through pure geometric order. The work explores themes of transformation and emergence, where chaos gives way to mathematical precision as the system evolves over time.",
+  "submitted_by": "profcarroll",
+  "wall_s": 248.311
+}
