@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201canimate a cell division simulation Revise: try again and try to depic\u2026\u201d \u2014 sketchgen entry 2438, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2438/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a highly stylized, topographical map viewed from a satellite perspective. A network of interconnecting geothermal vents is traced by flowing lines of glowing mineral residue, forming junctions and pathways across the terrain. The composition uses deep, dark colors contrasted by electric blues, vibrant oranges, and glowing greens that pulse subtly. The entire system continuously animates, emphasizing the constant energy flow and geological connections within the map.",
+  "completion_tokens": 2530,
+  "created_utc": "2026-10-24T16:53:11Z",
+  "entry_id": 2438,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 839,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 116,
+        "sha256": "6a24537667d69b8c74208a5a7553d9354702fef32b7a2481c5565b3b57a8137b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3620,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.295,
+      "wall_s": 80.542
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 853,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 94,
+        "sha256": "3bd54de15462df7795816dd507da517331aeadb8520eb5616741c5fcedc8ebaf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3426,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 5.35,
+      "wall_s": 76.457
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 838,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (43) with the end of it (61); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 94,
+        "sha256": "3bd54de15462df7795816dd507da517331aeadb8520eb5616741c5fcedc8ebaf",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3426,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 5.364,
+      "wall_s": 47.067
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2459,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of segmented, overlapping junctions taken into a map of interconnected geothermal vents, rendered in glowing mineral residue, seen from a satellite.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2339,
+    "root_entry_id": 1455
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "animate a cell division simulation\n\nRevise: try again and try to depict biological process of cell division\n\nRevise: making progress, but we need to see one cell become two and then two cells become four and so on\n\nRevise: the same autonomous cellular replication, and this time each cell must show a distinct separation phase before the final split\n\nRevise: the same autonomous cellular replication, and this time the initial cell must visibly contract and pinch off its daughter cells.\n\nRevise: the same autonomous cellular replication, and this time the narrow constriction point must visibly tighten and pulsate with a bright internal light immediately before separation.\n\nRevise: the same autonomous cellular replication, and this time the separating membranes must visibly define the boundary between the parent cell and the newly formed daughter cell.\n\nRevise: the same autonomous cellular replication, and this time the completed daughter cells must display visibly rigid and stable boundary membranes.\n\nRevise: depart: the idea of self-generating, seamless boundaries taken into a line of overlapping geometric tiles, modeled as an architectural construction process, made of woodblock ink, seen at the cross-section of a massive wall, in the Edo period.\n\nRevise: depart: the idea of distinct, overlapping, non-seamless boundaries taken into the cross-section of a rainforest leaf, modeled as an antique botanical plate, in a Victorian style\n\nRevise: depart: the idea of segmented, overlapping junctions taken into a map of interconnected geothermal vents, rendered in glowing mineral residue, seen from a satellite.",
+  "prompt_tokens": 10472,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2438/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2438",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, topographical map visualization of geothermal vents connected by glowing mineral pathways. The composition uses a dark color palette with electric blues, oranges, and greens to represent the geological energy flow. Through subtle pulsing effects and continuous animation, it depicts the constant movement and connections within the earth's surface. The system maintains a balance between complexity and performance, using efficient rendering techniques to ensure smooth animation while maintaining visual richness across the entire canvas.",
+  "submitted_by": "profcarroll",
+  "wall_s": 204.066
+}
