@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 2500, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2500/ Licensed CC BY 4.0.",
+  "brief": "The canvas is dominated by high-contrast geometric patterns\u2014rigid black and white grids suggesting perfect typographic order. Periodically, these structures begin to destabilize. Gears and interlocking cams visibly turn, driving a process where the crisp lines melt and smear, reforming into unpredictable, fluid, and organic shapes. The composition is continuously in a state of dynamic transition, cycling between strict, mathematical symmetry and chaotic, flowing biological form.",
+  "completion_tokens": 1935,
+  "created_utc": "2026-10-25T19:30:54Z",
+  "entry_id": 2500,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 914,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 36)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "bf71ed3f861c235ab944287a03869032c5e8402ff249dd7505b432d048605eb4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3635,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.505,
+      "wall_s": 85.089
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1021,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 100,
+        "sha256": "cf26e6f3a727ebed5ae25fc86e8aa0b4cc9f6004727f6614726f1a9e97fe6d29",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 69.3,
+      "num_ctx": 16384,
+      "preload_s": 0.049,
+      "prompt_tokens": 3741,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 31.437,
+      "wall_s": 92.409
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2521,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of crystalline structural decay taken into a cross-section of fossilized petrified wood grain, revealed by white chalk lines on dark slate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2390,
+    "root_entry_id": 1448
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster\n\nRevise: revise with increase contrast between elements to practice what the poster preaches\n\nRevise: publish failed: /home/ubuntu/sketchgen/gallery has uncommitted changes; commit or clean it before publishing\n\nRevise: flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.\n\nRevise: depart: the dissolution of crystalline molecular bonds into fluid waves, depicted as a macro-view of a failing superconductor, made of polished obsidian, seen at a micro scale, in a 1980s arcade cabinet\n\nRevise: depart: the idea of failing structured symmetry taken into the design of colossal, interlocking clockwork mechanisms, modeled as decaying biological organs, slime mould searching.\n\nRevise: depart: the concept of controlled structural collapse taken into the slow accumulation of mineral sediment, depicted as fractured, overlapping ceramic tiles on a perpetually damp floor.\n\nRevise: depart: the idea of crystalline structural decay taken into a cross-section of fossilized petrified wood grain, revealed by white chalk lines on dark slate.",
+  "prompt_tokens": 7376,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2500/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2500",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch explores the tension between mathematical precision and organic chaos through a dynamic visual transformation. It begins with a rigid black-and-white grid that suggests typographic order, but over time, the lines begin to destabilize and morph into flowing, unpredictable shapes. The grid elements waver with noise-based motion while occasional chaotic forms emerge and evolve, creating a continuous dialogue between structured symmetry and fluid unpredictability. The WEBGL renderer allows for a more immersive, three-dimensional perspective on this transformation, emphasizing how the viewer's perception shifts from ordered geometry to emergent complexity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 177.498
+}
