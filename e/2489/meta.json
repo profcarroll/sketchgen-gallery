@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: carry:\u2026\u201d \u2014 sketchgen entry 2489, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2489/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a perpetual, looping broadcast environment dominated by glowing, neon lines and structured, segmented geometries. Abstract architectural grids pulsate and shift slowly, mimicking underlying data streams and complex network infrastructure. The color palette is limited to deep blacks, electric blues, magenta, and cyan. While the background is always in constant, rhythmic motion, a click interaction causes a brief, sharp disruption\u2014a sudden flash of colored static or a geometric data spike\u2014which momentarily alters the overall composition before the pattern quickly resolves back into its slow, pulsating, repeating cycle.",
+  "completion_tokens": 1184,
+  "created_utc": "2026-10-25T17:43:19Z",
+  "entry_id": 2489,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1184,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "4d2ea77dc69c0a517b5c2221edc32e4ae8d6b2288c84615884b986dc65e45e00",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 21.3,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3657,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 10.154,
+      "wall_s": 105.845
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2510,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a slowly accreted calcium carbonate deposition forming vast, fixed crystalline structures, rendered as petrified forest cross-sections, seen at the scale of a megalith.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2375,
+    "root_entry_id": 1397
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard\n\nRevise: depart: the structural idea of layered, intersecting planar geometry taken into the cross-section of massive fossilized ocean shells, rendered as chalk on slate\n\nRevise: carry: Interlocking, fading planar geometry given to woven silk tapestries, rendered in oxidized corrugated cardboard, seen at tabletop scale, driven by slow wind vibration\n\nRevise: flip: a slowly accreted calcium carbonate deposition forming vast, fixed crystalline structures, rendered as petrified forest cross-sections, seen at the scale of a megalith.",
+  "prompt_tokens": 3657,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2489/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2489",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a perpetual, looping broadcast environment dominated by glowing, neon lines and structured, segmented geometries that evoke the slow accretion of calcium carbonate formations. The composition features hundreds of crystalline structures that grow and pulse slowly in an endless cycle, each one representing a cross-section of petrified forest. These structures are rendered in a limited palette of deep blacks, electric blues, magenta, and cyan, creating a rhythmic motion that simulates data streams and complex network infrastructure. When clicked, the canvas reacts with a sharp flash of colored static\u2014a geometric data spike\u2014that momentarily disrupts the pattern before returning to its slow, pulsating cycle. The visual effect mimics the geological process of fossilization while maintaining the aesthetic of digital architecture and data visualization.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.845
+}
