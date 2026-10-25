@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ca tide chart that breathes: horizontal bands rising and falling on a\u2026\u201d \u2014 sketchgen entry 2484, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2484/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a highly detailed, stationary cross-section of a massive, rigid machine. Interwoven brass gears, cam systems, and levers occupy the space, depicting a complex mechanical structure at a colossal scale. The mechanism is perpetually active, operating in precise, repeating, non-fluid cycles. The entire assembly generates a mesmerizing, predictable motion rhythm, driven by internal systems that keep the brass components turning and interlocking.",
+  "completion_tokens": 4533,
+  "created_utc": "2026-10-25T17:09:29Z",
+  "entry_id": 2484,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1522,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 115,
+        "sha256": "06f2643ed44c6710b1c6ebdbab8105d26dd8f3f3cb4ef70b34059fb323feebcc",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.9,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3746,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.07,
+      "wall_s": 133.935
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1498,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 159,
+        "sha256": "9b5dd6bffe739c7a3a0a22fad9bad598667ef86f2aca64c0462d930accb2f9dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4069,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.104,
+      "wall_s": 141.9
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1513,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 159,
+        "sha256": "9b5dd6bffe739c7a3a0a22fad9bad598667ef86f2aca64c0462d930accb2f9dd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.0,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4069,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.108,
+      "wall_s": 102.487
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2505,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The repetitive, patterned energy flux found in subterranean veins taken into the massive, interwoven hyphal network of a colossal mushroom, patterned like a loom.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "inherits_source": false,
+    "parent_entry_id": 2370,
+    "root_entry_id": 379
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a tide chart that breathes: horizontal bands rising and falling on a slow sine, one darker band marking high water\n\nRevise: the same fluid visualization, and this time make the bands oscillate with a more defined, asymmetrical compression and expansion at the trough\n\nRevise: the same fluid visualization, and this time emphasize the contrast between the high water and low water zones.\n\nRevise: the same cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper gradients when expanding and compressing.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands oscillate with increased visible turbulence and sharper color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the bands should compress and expand at varied speeds, creating swirling patterns of turbulence within the sharp color gradients.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible turbulence should resolve into distinct, unidirectional plumes of water.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the visible plumes should coalesce into solid, structured channels of flow.\n\nRevise: the same stylized cross-section of a tidal zone, and this time the main structured channels exhibit smaller, repeating micro-eddies along their sharp boundaries.\n\nRevise: depart: The rhythmic structuring of oceanic currents taken into the massive energy differentials of atmospheric weather systems, seen from a satellite, driven by global wind patterns.\n\nRevise: depart: The powerful, layered flow of global energy differentials taken into the deep crystallization of subterranean mineral veins, seen at the scale of a mountain range.\n\nRevise: flip: a massive, perfectly rigid clockwork mechanism, showing interwoven brass gears and cam systems operating in precise, repeating, non-fluid cycles, made of brass, seen at machine scale, driven by gear systems.\n\nRevise: depart: The repetitive, patterned energy flux found in subterranean veins taken into the massive, interwoven hyphal network of a colossal mushroom, patterned like a loom.",
+  "prompt_tokens": 11884,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2484/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2484",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a complex mechanical system composed of interlocking brass gears, cam mechanisms, and levers. The viewer observes a continuous, rhythmic motion that simulates the operation of a large industrial machine. Through careful attention to timing and mechanical relationships, each component moves in harmony with others, creating a mesmerizing display of precision engineering. The detailed rendering emphasizes the metallic textures and intricate geometries that characterize such mechanisms, while the perpetual motion suggests an unbroken cycle of operation. The composition fills the canvas with a dense arrangement of moving parts, conveying both the scale and complexity of the machinery through careful visual balance and timing.",
+  "submitted_by": "profcarroll",
+  "wall_s": 378.322
+}
