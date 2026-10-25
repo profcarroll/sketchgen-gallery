@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cEKG patterns Revise: the same EKG pattern, and this time the white wa\u2026\u201d \u2014 sketchgen entry 2377, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2377/ Licensed CC BY 4.0.",
+  "brief": "A continuous medical waveform traces across a static deep indigo background, pulsing rhythmically in a color matching its own trace. The background remains completely still while the wave moves. Clicking the canvas alters the pulse frequency and the specific color of the waveform. No external images or sound inputs are used.",
+  "completion_tokens": 2534,
+  "created_utc": "2026-10-24T08:23:34Z",
+  "entry_id": 2377,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(click)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1533,
+      "evidence": "gate exit 1: assertions failed: motion(idle), responds(click)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(click): click at canvas centre, 30 frames after: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 42,
+        "sha256": "581d1dee54d485d2b13042a719d2e54439856328fbe446034e8b0c1eb484a297",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 23.6,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 3132,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.557,
+      "wall_s": 114.203
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1001,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 146,
+        "sha256": "06dbb89c88a96fcee5057cc441718be28b497fb4d6204698838b00c0a0d84fae",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4228,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.033,
+      "wall_s": 102.238
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2397,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a randomized scatter of overlapping, fragmented geometric tessellations forming temporary, non-repeating clusters, made of cut paper, seen at the scale of shattered glass.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2263,
+    "root_entry_id": 1052
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.\n\nRevise: the same EKG waveform tracing across a colored background, and this time the background color should remain static while the waveform pulses.\n\nRevise: the same continuous medical waveform, and this time the static background should be a deep indigo solid color.\n\nRevise: depart: A series of geometric pressure ridges forming and relaxing in sequence, taking the idea of cyclical energy transfer into the form of glacial rock layers, seen through a searching slime mould.\n\nRevise: carry: Rhythmic, repeating structural shifts given to oxidized copper wire forming intricate lace patterns, made of cut paper\n\nRevise: flip: sharp, crystalline mineral formations fracturing and reconstituting with abrupt geometric edges, seen at the scale of a city block, driven by subterranean pressure.\n\nRevise: flip: a randomized scatter of overlapping, fragmented geometric tessellations forming temporary, non-repeating clusters, made of cut paper, seen at the scale of shattered glass.",
+  "prompt_tokens": 7360,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2377/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2377",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "I'm creating a continuous EKG-like waveform that pulses rhythmically across a static deep indigo background. The waveform traces a complex pattern with distinctive spikes and harmonics, while pulsing circles drift along its path. Each click changes both the color temperature of the entire visualization and the rhythmic speed of the pulse, creating an immediate and visible transformation of the waveform's behavior and aesthetics.",
+  "submitted_by": "profcarroll",
+  "wall_s": 216.441
+}
