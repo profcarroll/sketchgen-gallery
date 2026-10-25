@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca Rube Goldberg machine whose only job is to water one flower Revise:\u2026\u201d \u2014 sketchgen entry 2407, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2407/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a deep geological cross-section rendered in the style of an antique botanical plate. Viewers observe multiple, stacked horizontal strata, colored in muted, sepia-toned greens and ochres. Within these layers, faint, delicate skeletal structures of long-dead plants are subtly revealed. The primary visual process is the slow accumulation of sediment: new material gently drifts downwards, causing the fossilized strata to incrementally shift and resettle. There are no interactive elements; the motion is the slow, inevitable passage of time and geological force.",
+  "completion_tokens": 1044,
+  "created_utc": "2026-10-24T12:43:59Z",
+  "entry_id": 2407,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1044,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "267d5f1772d4913ac4474c96fa1dffab4582475a755fc782590e4c1b45704f11",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4027,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.113,
+      "wall_s": 105.825
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2428,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a massive cross-section of deeply layered, fossilized plant material undergoing slow, measured, sedimentation, where faint biological structures accumulate and subtly reshape the layers, seen through the lens of a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2304,
+    "root_entry_id": 1508
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a Rube Goldberg machine whose only job is to water one flower\n\nRevise: depart: the complex kinetic progression of the machine's effort taken into the gradual shifting of sediment, shown settling across a mountain range\n\nRevise: flip: a cross-section of a mountain range undergoing sudden, catastrophic seismic upheaval, with ejected material violently cascading and forming chaotic, unstable plumes, driven by rapid tectonic force.\n\nRevise: flip: a massive cross-section of deeply layered, fossilized plant material undergoing slow, measured, sedimentation, where faint biological structures accumulate and subtly reshape the layers, seen through the lens of a Victorian botanical plate.",
+  "prompt_tokens": 4027,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2407/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2407",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene geological cross-section rendered in the style of an antique botanical illustration. Through subtle animation, it depicts the slow, patient accumulation of sediment over millions of years, where fossilized plant structures gradually shift and resettle within their stratified layers. The muted sepia tones evoke the aged quality of historical scientific prints, while delicate skeletal forms emerge from the geological record\u2014leaves, stems, and flowers that have been preserved in stone. The motion is imperceptible yet constant, mimicking the inexorable passage of time as geological forces slowly reshape the landscape. Viewers observe a quiet transformation where the boundaries between past and present blur, revealing nature's patient artistry through the lens of Victorian scientific observation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 105.825
+}
