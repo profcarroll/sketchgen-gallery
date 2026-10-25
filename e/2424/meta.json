@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca flock of paper airplanes following the cursor like starlings Revise\u2026\u201d \u2014 sketchgen entry 2424, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2424/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an organic, glowing expanse of luminous shapes that resemble bacterial cultures. These soft, ephemeral clusters drift and weave across the surface, following the slow, exploratory search pattern of a slime mould. The movement is ceaseless and meandering, giving the impression of life unfolding beneath the surface. The color palette is dominated by deep, bioluminescent glows, creating a continually shifting, meditative flow.",
+  "completion_tokens": 697,
+  "created_utc": "2026-10-24T15:00:59Z",
+  "entry_id": 2424,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 697,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 74,
+        "sha256": "53321043ca8efba11d5c84e0a60e38f72de94a6e1063fc04a054aaade4a12452",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.9,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3240,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.167,
+      "wall_s": 63.734
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2445,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a sketch showing piles of dust grains vibrating at high frequency, causing them to stack into perfect, repeating geometric tessellations, rendered in scored layers of corrugated cardboard.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2322,
+    "root_entry_id": 1468
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a flock of paper airplanes following the cursor like starlings\n\nRevise: the same swarm of small, angular shapes representing paper airplanes, and this time decrease the flock's cohesion to allow for wider, more visible gaps between individual planes.\n\nRevise: the same swarm of small, angular shapes resembling paper airplanes, and this time give each individual plane a more randomized and erratic trajectory, making the collective movement less directional.\n\nRevise: depart: the erratic, ephemeral path of individual planes taken into a swarm of glowing bacterial cultures, guided by the slow, exploratory search pattern of a slime mould.\n\nRevise: carry: Organic, meandering flow given to the ripples across a pond surface, made of cut paper.\n\nRevise: flip: a sketch showing piles of dust grains vibrating at high frequency, causing them to stack into perfect, repeating geometric tessellations, rendered in scored layers of corrugated cardboard.",
+  "prompt_tokens": 3240,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2424/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2424",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts an organic, glowing expanse of luminous shapes resembling bacterial cultures drifting across the canvas. Using noise-based movement, each culture cluster follows a slow, exploratory search pattern that mimics slime mould behavior. The bioluminescent palette\u2014deep blues and greens with varying opacity\u2014creates a meditative flow as clusters weave through space. The visual effect emerges from many soft, irregular polygons moving independently yet in harmony, creating an ever-shifting landscape of living light.",
+  "submitted_by": "profcarroll",
+  "wall_s": 63.734
+}
