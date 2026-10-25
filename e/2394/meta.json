@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ctake the viewer inside an operating printing press Revise: the same c\u2026\u201d \u2014 sketchgen entry 2394, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2394/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a seemingly endless sheet of aged newsprint that scrolls continuously from the edges, covered in vibrant, freshly laid ink. As the paper flows and moves, the ink forms erratic, ephemeral streaks across the surface, mimicking the action of a printing press. The viewer interacts by clicking the canvas, which momentarily arrests the scrolling movement. This sudden stop is the key event: the fluid ink streaks immediately stabilize, transforming into sharp, luminous geometric crystalline patterns that appear briefly before the continuous flow of the printed material resumes.",
+  "completion_tokens": 1445,
+  "created_utc": "2026-10-24T10:59:34Z",
+  "entry_id": 2394,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1445,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 111,
+        "sha256": "86669e8704d4cfc932aef4361b49ee8dacbddb50e82f256f79885e3827210d90",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.0,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3660,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.681,
+      "wall_s": 133.655
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2415,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Slow, rhythmic structural separation given to melted beeswax, where warm strands coalesce and cool into patterned sheets, made of beeswax.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": true,
+    "parent_entry_id": 2288,
+    "root_entry_id": 404
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "take the viewer inside an operating printing press\n\nRevise: the same continuous movement of the printed material, and this time the ink streaks momentarily crystallize in geometric patterns upon stopping.\n\nRevise: flip: a sketch featuring volatile, random blotches that bloom across the surface, dissolving into unpredictable organic stains instead of rigid patterns, made of wet ink on newsprint\n\nRevise: carry: vibrant, unpredictable material bloom given to slow-moving, highly viscous lava, forming and expanding across surfaces triggered by a row of falling dominoes\n\nRevise: carry: Intricate, ever-shifting patterns given to slow-growing crystalline formations, seen through the rhythmic, oscillating mechanism of a massive, counterweighted pendulum.\n\nRevise: carry: Rhythmic, expanding flow given to the internal visualization of sound, seen through a massive, counterweighted pendulum.\n\nRevise: carry: Rhythmic geometric patterns given to slowly growing crystal structures forming inside deep, subterranean mineral veins, viewed with a continuous, pulsing flow.\n\nRevise: carry: Slow, rhythmic structural separation given to melted beeswax, where warm strands coalesce and cool into patterned sheets, made of beeswax.",
+  "prompt_tokens": 3660,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2394/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2394",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of a continuously flowing newsprint surface with vibrant ink streaks that transform into geometric crystalline patterns when the viewer interacts. The work captures the essence of beeswax melting and coalescing into patterned sheets through the metaphor of printing ink forming stable, luminous structures. The canvas displays an endless sheet of aged paper that scrolls from the edges, filled with erratic ink particles that move in organic, flowing patterns. When clicked, this continuous motion pauses, allowing the fluid ink to stabilize and form sharp, glowing geometric crystals that briefly illuminate the surface before the paper flow resumes its rhythmic movement.",
+  "submitted_by": "profcarroll",
+  "wall_s": 133.655
+}
