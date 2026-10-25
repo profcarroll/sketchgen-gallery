@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crecreate the famous Window 95 desktop background Revise: the same str\u2026\u201d \u2014 sketchgen entry 2391, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2391/ Licensed CC BY 4.0.",
+  "brief": "The composition depicts a macro-view of fungal hyphae, utilizing vibrant, luminous blue gradients and complex, flowing crystalline structures. These organic forms appear to drift across a fibrous substrate, simulating the look of watercolor or deep blue ink spreading across absorbent newsprint. The patterns are complex and web-like, exhibiting a deep, aqueous bioluminescence that contrasts against the beige and gray texture of the underlying paper. The overall effect is one of profound, gentle, perpetual movement within the miniature ecosystem.",
+  "completion_tokens": 2009,
+  "created_utc": "2026-10-24T10:38:16Z",
+  "entry_id": 2391,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1025,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 86)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 135.9 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "e0175880a162a433f4bdda6febc5cb6159147c2e47d6fabf94e8b36ee8edf65f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 135.9,
+      "num_ctx": 16384,
+      "preload_s": 0.052,
+      "prompt_tokens": 3820,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 65.457,
+      "wall_s": 110.838
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 984,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 98,
+        "sha256": "ad1b992fad60261af8e437f5e26d5c6d12760c44eb8c1a83b60a806f6229b699",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 20.3,
+      "num_ctx": 16384,
+      "preload_s": 0.029,
+      "prompt_tokens": 3674,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.672,
+      "wall_s": 90.202
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2412,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The perpetual, luminous blue gradients and flowing crystalline patterns are taken into the magnified structure of bioluminescent fungal hyphae, seen through the surface of wet ink on newsprint.",
+    "critique_by": "gemma4:e4b",
+    "generation": 27,
+    "inherits_source": false,
+    "parent_entry_id": 2284,
+    "root_entry_id": 69
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "recreate the famous Window 95 desktop background\n\nRevise: the same structured digital texture, and this time incorporate a slight radial gradient emanating from the center of the composition\n\nRevise: the windows 96 background is a green grassy field with a hill that goes up to meet the blue sky and the fluffy clouds, try again\n\nRevise: the same pastoral landscape, and this time exaggerate the depth of field to make the foreground grass seem intensely sharp\n\nRevise: this is getting close but there is one giant cloud that ruins it\n\nRevise: the same pastoral landscape, and this time sharpen the detail on the distant mountain range\n\nRevise: the same vast sunlit pastoral landscape and this time introduce subtle patches of varied color and texture to the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape featuring rolling green fields that vary in patches of color and texture, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the visible detail and contrast in the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the visible play of sunlight and shadow across the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time enhance the atmospheric haze to make the distant mountains appear even more soft and faded.\n\nRevise: lacks visual cohesion\n\nRevise: the same vast, sunlit pastoral landscape, and this time increase the contrast and saturation of the various patches of color within the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields.\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time intensify the saturation and contrast of the varied patches of color within the rolling green fields.\n\nRevise: the same vast, sunlit pastoral scene, and this time deepen the contrast between the intense foreground clarity and the atmospheric haze.\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sunlit pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time deepen the blue saturation of the sky and slightly increase the texture variance in the rolling green fields\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time enhance the way dramatic, directional sunlight casts deep shadows across the foreground fields.\n\nRevise: the same sweeping, sun-drenched landscape featuring rolling green fields, and this time exaggerate the atmospheric haze covering the distant mountain range.\n\nRevise: the same vast, sun-drenched pastoral landscape, and this time exaggerate the contrast and length of the shadows cast across the rolling green fields\n\nRevise: depart the dramatic gradient of contrasting texture giving way to deep blue atmospheric haze, shown as nebula dust drifting across the crystalline surface of polished slate\n\nRevise: carry: Deep blue gradients and crystal formations given to a subterranean bioluminescent cave network, made of calcite, seen at maximum scale, in the deep ocean.\n\nRevise: depart: the gradient transitions and crystalline formations are taken into a colossal, slowly unraveling tapestry, designed as luminous knitted wool, seen at a massive scale, in the age of fiber art.\n\nRevise: depart: The luminous, slow unraveling of crystalline blue gradients taken into a complex network of clockwork machinery, viewed as a single brass gear, small enough to hold in one hand.\n\nRevise: depart: The perpetual, luminous blue gradients and flowing crystalline patterns are taken into the magnified structure of bioluminescent fungal hyphae, seen through the surface of wet ink on newsprint.",
+  "prompt_tokens": 7494,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2391/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2391",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a microscopic ecosystem of fungal hyphae drifting through a fibrous substrate, rendered in vibrant blue gradients that evoke watercolor or deep ink spreading across absorbent paper. The composition captures the delicate, perpetual motion of these organic forms through a network of glowing points and flowing lines, creating an impression of gentle, continuous movement within a miniature world. The bioluminescent quality emerges from additive blending techniques and animated particle systems that simulate the ethereal glow of fungal structures against a textured paper background, suggesting the subtle interplay between living organisms and their environment in a watery, nutrient-rich habitat.",
+  "submitted_by": "profcarroll",
+  "wall_s": 201.04
+}
