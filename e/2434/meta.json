@@ -1,0 +1,191 @@
+{
+  "assertions": [
+    "responds(click)",
+    "uses(webgl)",
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201crhododendrons Revise: the same dense, lush field of rhododendrons, an\u2026\u201d \u2014 sketchgen entry 2434, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2434/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a rich, vibrant tapestry of rhododendron blooms and lush green foliage set above a pool of glassy water. The reflected colors of the blossoms create a foundational pattern, only to be disturbed by a gentle ripple. When the viewer interacts with the surface, the water quickly gathers into intricate, marbled currents. These swirling movements distort the perfect reflections, fragmenting the reflected shapes and turning them into dynamic, colorful abstract patterns across the still plane.",
+  "completion_tokens": 4035,
+  "created_utc": "2026-10-24T16:23:11Z",
+  "entry_id": 2434,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1474,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 19.1455/255, 434185 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 160,
+        "sha256": "903875cd91865fb779694b9cab213b4c35e25c48d2a16c49e1ec602ccd7558f1",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 63.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3955,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 27.355,
+      "wall_s": 132.577
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1171,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 6.3886/255, 140154 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 167,
+        "sha256": "4cb89393b2bb1932c8b2ac123d77fdfd49982f4d584bdfbd031fd2e751defb60",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4100,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 24.941,
+      "wall_s": 115.438
+    },
+    {
+      "assertions": {
+        "no_motion": false,
+        "responds(click)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1390,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 6.3588/255, 140154 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 123,
+        "sha256": "67f3eb4121c92e3970e7f9301f6f2f5b146a7717495c1f424a804a0e1fda9529",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.8,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3785,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 26.085,
+      "wall_s": 119.19
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2455,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Intricately segmented, pulsating color fields given to giant formations of smoke, rendered as an Edo woodblock print",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2333,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms flowing in slow, rhythmic currents.\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms settling into pockets of still, reflective water.\n\nRevise: the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.\n\nRevise: the same tapestry of rhododendron blooms and foliage, and this time the ripple causes the water surface to gather into visible, marbled currents, distorting the reflection in swirling shapes.\n\nRevise: depart: The principle of organic refraction, where solid forms fragment into swirling color, applied to a tessellated stained glass panel, creating dynamic patterns of geometric light, as a 1920s Bauhaus exercise.\n\nRevise: depart: dynamic geometric patterns taken into the crystalline structure of deep-sea bioluminescence, seen at biological scale, in a 1920s Bauhaus exercise.\n\nRevise: carry: Intricately segmented, pulsating color fields given to giant formations of smoke, rendered as an Edo woodblock print",
+  "prompt_tokens": 11840,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2434/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2434",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a serene landscape of rhododendron blooms reflected in still water, with the added interactivity of ripples that disturb the perfect reflections. The scene is rendered using WebGL for a three-dimensional effect, where vibrant red and pink blooms appear to float above a deep blue-green pool. The water surface features a subtle pre-generated reflection pattern that captures the essence of the blooms' colors. When clicked, the water responds with gentle ripples that dynamically distort this reflection, creating a mesmerizing interplay between stillness and motion. The design emphasizes the contrast between the static beauty of the blooms and the dynamic, ever-changing nature of the water's surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 367.205
+}
