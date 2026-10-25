@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 2461, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2461/ Licensed CC BY 4.0.",
+  "brief": "The scene depicts overlapping, semi-transparent waves moving across the surface of a shallow pool of water. These waves are visualized as plumes of iridescent, colored smoke, appearing to carry complex mathematical interference patterns. As the viewer observes, the colored smoke crests and troughs expand and dissipate, forming liquid, glowing ripples. If the viewer manipulates the surface, the ripples distort, causing the smoke to briefly stretch and expand into new, vibrant color structures.",
+  "completion_tokens": 1207,
+  "created_utc": "2026-10-25T02:50:35Z",
+  "entry_id": 2461,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1207,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 118,
+        "sha256": "66b8d8196e3c428ab01fe5ab157a6d60638bd838c8b113d9d357b35eb48887ec",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 60.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3631,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 29.257,
+      "wall_s": 107.64
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2482,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of complementary structural information taken into visualizations of intersecting acoustic waves, appearing as liquid, iridescent ripples of colored smoke, seen through the lens of a shallow pool of water.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 2436,
+    "root_entry_id": 1450
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: the same dynamic, three-dimensional model of the DNA double helix, and this time showing a specific segment unwinding completely to initiate strand separation.\n\nRevise: the same dynamic, three-dimensional molecular model of the DNA double helix, and this time labeling the corresponding base sphere with its letter (A, T, C, or G).\n\nRevise: the same molecular model of the DNA double helix, and this time showing the separated single strands floating away from the main coil in separate trajectories.\n\nRevise: the same detailed, three-dimensional molecular representation of the DNA double helix, and this time the separated single strands begin to fold upon themselves.\n\nRevise: depart: the structured emergence of complementary information taken into a series of interlocking gears and patterned papercraft, designed to assemble into complex sculptures, made of corrugated cardboard\n\nRevise: depart: The self-organization of complementary patterns into complex structures taken into interacting holographic light waves, where interference patterns define physical forms, small enough to hold in one hand.\n\nRevise: depart: the concept of complementary information taken into a crystalline mineral lattice, forming perfectly interlocking, repeating structures, visible through the magnification of a polarized microscope\n\nRevise: depart: the concept of complementary structural information taken into visualizations of intersecting acoustic waves, appearing as liquid, iridescent ripples of colored smoke, seen through the lens of a shallow pool of water.",
+  "prompt_tokens": 3631,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2461/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2461",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the interaction between mathematical wave interference and fluid dynamics through a dynamic system of iridescent smoke particles floating on a shallow water surface. The scene features expanding ripples that emanate from random points, creating complex interference patterns as they overlap. When viewers interact by dragging their mouse across the canvas, these waves are distorted, causing the colored smoke particles to stretch and form new vibrant color structures. The visualization emphasizes the organic yet mathematically precise nature of wave behavior through subtle particle motion and fluid-like movement, with each element responding dynamically to both time-based patterns and user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 107.64
+}
