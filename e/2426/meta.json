@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 2013 Revise: the sam\u2026\u201d \u2014 sketchgen entry 2426, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2426/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a continuous field of luminous, interconnected three-dimensional structures. These glowing planes, lines, and nodes slowly drift and rotate through space, creating a vibrant, ethereal geometry. The primary motion is the gentle, ceaseless movement of the planes. The system is dynamic and reactive: whenever two separate planes approach each other and pass within a specific, critical distance, the connecting lines that span between them react instantly by pulsing bright white and gold, emphasizing the moment of near-collision before the flow continues.",
+  "completion_tokens": 3372,
+  "created_utc": "2026-10-24T15:15:59Z",
+  "entry_id": 2426,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1681,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 83)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 90)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 114)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 126)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 111.8 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 92,
+        "sha256": "1759c5eee7346dcad214dd19b5b73b39791c8914a5832fe09c160eb01a92e768",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 111.8,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3640,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 51.055,
+      "wall_s": 136.679
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1691,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 134,
+        "sha256": "dea4070e9ce20c903df7613ce2b23804ff82ed8e32811afefc47d3bcbd2b92eb",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 35.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4539,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 18.48,
+      "wall_s": 167.031
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2447,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The slow, expanding pattern of overlapping, interconnected planar fractures taken into the massive, deep geological network of continental plate tectonics, revealed by deepening rifts, seen at a continental scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2324,
+    "root_entry_id": 1427
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 2013\n\nRevise: the same glowing data visualizations, and this time introducing a slow, subtle rotational change to the planes and lines\n\nRevise: the same glowing data visualizations, and this time emphasizing the intersections of the planes and lines with concentrated glows\n\nRevise: the same glowing geometric data visualizations, and this time introducing a visible, subtle periodic shift in the intensity of the glowing nodes\n\nRevise: the same glowing geometric data visualizations, and this time introducing a slow, subtle periodicity to the speed of the rotational shift\n\nRevise: the same glowing planes and connecting lines, and this time having the connection lines pulse in intensity whenever two planes pass within a critical distance\n\nRevise: add legible typography to brand the broadcast network in two seperate slowly drifting text blocks \"You're watching\" \"sketchgen TV\"\n\nRevise: the same glowing geometric visualizations consisting of interconnected planes, lines, and nodes, and this time introducing a periodic, visible brightening of the glows concentrated at the intersections.\n\nRevise: the glowing geometric visualizations of interconnected planes, lines, and nodes, and this time having the rotation of the individual planes synchronize into a single, visible, slow orbital path.\n\nRevise: the same glowing, interconnected three-dimensional planes, lines, and nodes, and this time highlighting the intensity of the glow only at the points where the planes intersect.\n\nRevise: the same glowing geometric structures composed of interconnected planes, lines, and nodes, and this time having the connecting lines pulse in intensity whenever two planes pass within a critical distance.\n\nRevise: the same continuous, vibrant field of interconnected three-dimensional geometric structures, and this time introducing a slow, subtle periodic flicker to the intensity of the glowing nodes.\n\nRevise: depart: the principle of intersecting planes and connecting nodes taken into the natural fractures of petrified wood, revealed by a deepening, spreading crack.\n\nRevise: depart: the idea of deepening, spreading planar fractures taken into the slow, overlapping growth patterns of liquid crystal veins, made of graphite ink, seen at a micro scale, in a 1960s pen plotter drawing.\n\nRevise: depart: The slow, expanding pattern of overlapping, interconnected planar fractures taken into the massive, deep geological network of continental plate tectonics, revealed by deepening rifts, seen at a continental scale.",
+  "prompt_tokens": 8179,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2426/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2426",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an ethereal field of interconnected 3D structures that drift and rotate through space. Each structure consists of multiple glowing planes that pulse with organic motion, connected by a network of lines that subtly shift in intensity. The system reacts dynamically to approaching structures: when two separate planes come within a critical distance, the connecting lines instantly pulse bright white and gold, creating visual moments of interaction that emphasize the flow of the geometry. The result is a continuously evolving, luminous landscape where motion and connection create an immersive sense of depth and spatial relationships.",
+  "submitted_by": "profcarroll",
+  "wall_s": 303.71
+}
