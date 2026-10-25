@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cflyover: is it a motherboard or is it an aerial view of warehouses an\u2026\u201d \u2014 sketchgen entry 2446, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2446/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts an immensely complex, branching network that resembles the fibrous support structure of ancient coral viewed through a microscope. Intricate, glowing lines define the pathways, connecting countless nodes in a supportive, chaotic web. The color palette consists of deep, earthy tones, interspersed with luminous highlights of soft pinks and spectral blues, giving the impression of microscopic life. The entire pattern is stationary and hyper-detailed, presenting a vast, natural biological blueprint without any user input required to change the structure.",
+  "completion_tokens": 3308,
+  "created_utc": "2026-10-24T17:57:12Z",
+  "entry_id": 2446,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1214,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 2.8059/255, 321939 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 85,
+        "sha256": "b6ab01378ab0414a03b78fc6205480d7f12e6c0064b9a37dff8fea84148eb1be",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 57.3,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3336,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.977,
+      "wall_s": 98.752
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1052,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.8145/255, 106404 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 131,
+        "sha256": "8f97a37dab5e0ca8661e56031d8b8b178bc3a401c7556b1d7fed32336c276501",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 34.6,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3832,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 16.039,
+      "wall_s": 99.008
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1042,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.4695/255, 61485 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 115,
+        "sha256": "55559a5775b964dac4570cc13581a61da64487fe0cf2a4f34f28ce9390c9dfdd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 51.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3650,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 22.049,
+      "wall_s": 92.445
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2467,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of a boundless, interconnected network of pathways taken into the fibrous, supportive structure of ancient coral, seen under a microscope.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 2348,
+    "root_entry_id": 1395
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "flyover: is it a motherboard or is it an aerial view of warehouses and factories\n\nRevise: the same deeply complex network of glowing lines and interconnected nodes, and this time the paths must exclusively trace a uniform, visible lattice structure.\n\nRevise: the same infinite, glowing geometry representing a massive, uniform lattice structure, and this time the interconnected nodes must only connect along strictly horizontal and vertical lines.\n\nRevise: the same perpetually shifting, glowing lattice structure, and this time all connected nodes must pulse with a synchronized, slow-moving amber light.\n\nRevise: the same vast, glowing lattice structure, and this time every connected node must pulse with a synchronized, rapidly flashing emerald light.\n\nRevise: the same immense, ethereal grid of glowing lines and interconnected nodes, and this time each connected node must pulse with a slow, asynchronous, deep violet light.\n\nRevise: the same immense, luminous grid composed of interconnected nodes and glowing structural lines, and this time every connected node must pulse by radiating outward rings of deep violet light.\n\nRevise: depart: the idea of synchronous network connection taken into a slow-moving, vast cascade of crystalline soap bubbles, made of rubber bands.\n\nRevise: flip: a monumental, static entanglement of crystalline structures suspended in space, forming a brittle web of interlocking rings, rendered in woven thread, seen as a monumental celestial blueprint.\n\nRevise: depart: the concept of a boundless, interconnected network of pathways taken into the fibrous, supportive structure of ancient coral, seen under a microscope.",
+  "prompt_tokens": 10818,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2446/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2446",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a microscopic coral-like network structure using a grid-based spatial hashing algorithm to efficiently connect nodes. The intricate web of glowing lines in earthy tones punctuated by soft pinks and blues creates an illusion of cellular architecture under a microscope. Each frame draws thousands of connections between nearby nodes, forming a constantly shifting yet static pattern that resembles natural biological support structures. The viewer observes a hyper-detailed, stationary blueprint of organic complexity without any animation or user interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 290.205
+}
