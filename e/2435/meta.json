@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cretrogamer's paradise Revise: the same shifting, glowing grid pattern\u2026\u201d \u2014 sketchgen entry 2435, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2435/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a deep-sea environment dominated by bioluminescent forms. Slow, organic shapes drift and undulate across the void, mimicking phosphorescent cartilage. These glowing, undulating structures change color and intensify in luminosity, creating the appearance of a living, deep-sea current. The scene is constantly moving and breathing, maintaining a perpetual, mesmerizing glow without requiring any user input.",
+  "completion_tokens": 3255,
+  "created_utc": "2026-10-24T16:31:32Z",
+  "entry_id": 2435,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1097,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 206,
+        "sha256": "da5377ac71f58866ea0222e6d783852536af0fba2871862e235ff36532bcce3a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4210,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.432,
+      "wall_s": 115.699
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1076,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "9826c1352e04d7213b014948a129043f0f9d71e0a2ed26808257d308693dca52",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3654,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 3.415,
+      "wall_s": 96.289
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1082,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "9826c1352e04d7213b014948a129043f0f9d71e0a2ed26808257d308693dca52",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3654,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.391,
+      "wall_s": 64.17
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2456,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the residual energetic pattern of the glowing grid taken into the staining and fraying of ancient linen cloth, woven thread.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2334,
+    "root_entry_id": 1390
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "retrogamer's paradise\n\nRevise: the same shifting, glowing grid patterned with neon pixel clusters, and this time the expanding collision bursts form defined hexagonal modules.\n\nRevise: the same luminous digital grid, and this time the neon colors intensify and cycle through a vibrant rainbow spectrum.\n\nRevise: the same luminous, digital environment dominated by a continuous grid that appears patterned with glowing neon pixel clusters, and this time the neon clusters only cycle through shades of electric blue.\n\nRevise: the same luminous, digital environment defined by a continuous, glowing grid, and this time the neon pixel clusters flow outward from the hexagonal modules in visible, radial pulses.\n\nRevise: the same luminous, digital landscape dominated by a continuous, glowing grid, and this time the radial pulses appear to travel along the connections between adjacent hexagonal modules in rhythmic waves.\n\nRevise: depart: the rhythmic propagation of luminous energy taken into the slow, visible movement of phosphorescent deep-sea organisms, made of bioluminescent cartilage\n\nRevise: depart: the rhythmic propagation of luminous energy taken into mineral veins of fractured, stressed quartz crystal, driven by a spring under tension.\n\nRevise: depart: the residual energetic pattern of the glowing grid taken into the staining and fraying of ancient linen cloth, woven thread.",
+  "prompt_tokens": 11518,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2435/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2435",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive deep-sea environment where bioluminescent forms drift and undulate through darkness. Using organic, flowing shapes that pulse with internal light, the scene simulates the ethereal glow of phosphorescent sea creatures. The composition features a mixture of large, slow-moving organisms and countless tiny luminous particles that create a constant sense of motion and breathing life in the void. The entire canvas is alive with subtle changes in color and brightness, producing a mesmerizing, hypnotic effect without any user interaction required.",
+  "submitted_by": "profcarroll",
+  "wall_s": 276.158
+}
