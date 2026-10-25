@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca loom weaving a pattern it hasn't decided on yet Revise: the same co\u2026\u201d \u2014 sketchgen entry 2421, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2421/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a thin, highly reflective membrane that slowly gathers tension. As this tension builds, the surface responds spontaneously by folding and wrinkling, forming elaborate geometric lattices. The resulting patterns mimic the complex joints of ceramic tiles, displaying a spectrum of vibrant, iridescent colors. The motion is powerful yet glacial, showing the systematic accumulation of folds across the entire frame. The viewer observes the transformation from a smooth, taut surface into a rigid, highly patterned field of repeating, deep folds.",
+  "completion_tokens": 1577,
+  "created_utc": "2026-10-24T14:38:58Z",
+  "entry_id": 2421,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1577,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 159,
+        "sha256": "42822e90d8c78a1c513f2ac1a58495132384a68d7a3007a94b73590b79f0a582",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 7.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4107,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.788,
+      "wall_s": 143.791
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2442,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: visualize the slow, powerful accumulation of tension in a soap film, causing it to fold and wrinkle into complex geometric patterns, made of ceramic tile.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2319,
+    "root_entry_id": 1462
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a loom weaving a pattern it hasn't decided on yet\n\nRevise: the same continuous interweaving of brightly colored threads, and this time the threads only intersect when forming equilateral triangles.\n\nRevise: the same dynamic weave of brightly colored threads, and this time the threads only intersect at points where three distinct colors meet.\n\nRevise: depart: the principle of triple confluence, visualized as the spontaneous, slow formation of crystalline lattices, made of water molecules, seen at a single grain of sand\n\nRevise: flip: a catastrophic tectonic plate collision, resulting in the rapid crumpling and folding of metamorphic rock, seen at a mountain range scale.\n\nRevise: depart: visualize the slow, powerful accumulation of tension in a soap film, causing it to fold and wrinkle into complex geometric patterns, made of ceramic tile.",
+  "prompt_tokens": 4107,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2421/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2421",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the slow, powerful accumulation of tension in a soap film membrane, causing it to fold and wrinkle into complex geometric patterns reminiscent of ceramic tile joints. The simulation uses a grid-based spatial hash to efficiently connect nearby particles, creating intricate lattices that evolve over time. As tension builds through oscillating forces, the surface transforms from smooth and taut to rigid with deep, repeating folds. The iridescent color palette shifts between cool blues and teals, enhancing the sense of dynamic tension and structural complexity as the membrane's surface responds to its own internal forces.",
+  "submitted_by": "profcarroll",
+  "wall_s": 143.791
+}
