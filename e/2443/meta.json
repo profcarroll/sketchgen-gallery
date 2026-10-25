@@ -1,0 +1,141 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cA slow tide of overlapping translucent circles rising from the bottom\u2026\u201d \u2014 sketchgen entry 2443, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2443/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents the appearance of a richly woven tapestry, resembling dyed wool. Across this textile, vast, shimmering celestial constellations drift in slow, rhythmic patterns. These constellations are rendered with iridescent colors, giving the impression of light captured and embroidered into the fabric. The entire scene maintains a sense of deep, continuous entropic decay, where the stars appear to subtly shift and change their patterns over time, giving the illusion of celestial drift over centuries.",
+  "completion_tokens": 2067,
+  "created_utc": "2026-10-24T17:34:46Z",
+  "entry_id": 2443,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 877,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 69)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 153.1 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 102,
+        "sha256": "8e150be8dd01a4fb168dd7f5ac4ac7a88b38ebebed5693523612e6e03c2284e4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 153.1,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3516,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 62.408,
+      "wall_s": 79.773
+    },
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1190,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 95,
+        "sha256": "81274edbf98adb001331d594082228976198db2e309fb0d9253f46d3867f10df",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 19.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3528,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.321,
+      "wall_s": 99.51
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2464,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Slow, rhythmic entropy given to iridescent dyed wool, appearing as vast, shifting celestial constellations embroidered into a medieval tapestry.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2345,
+    "root_entry_id": 1416
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "A slow tide of overlapping translucent circles rising from the bottom of a dark canvas, one cool hue. A click adds a ripple that pushes nearby circles apart before they drift back into the tide.\n\nRevise: the same slow, continuous stream of overlapping translucent circles, and this time the cool hue varies randomly among shades of blue\n\nRevise: the same continuous flow of translucent circles, and this time the circles overlap with small, visible pointillist stars\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles reflect varying shades of luminescence\n\nRevise: the same continuous stream of overlapping translucent circles, and this time the circles shift subtly in hue depending on their position in the stream\n\nRevise: the same slow, continuous tide of translucent, overlapping circles, and this time the pointillist stars pulse gently with varying shades of bright luminescence.\n\nRevise: the same ethereal fluid cosmic environment, and this time the translucent circles occasionally dissolve into fine particulate light.\n\nRevise: the same ethereal cosmic environment, and this time the overlapping translucent circles vary their opacity and luminosity as they flow across the canvas.\n\nRevise: the same ethereal, continuous cosmic environment filled with overlapping, translucent circles, and this time the circles occasionally exhibit small, visible trails of trailing luminescence.\n\nRevise: the same ethereal, continuous flow of overlapping translucent circles, and this time the glowing trails briefly dissipate into visible, sparkling particles.\n\nRevise: the same ethereal, continuous cosmic environment filled with overlapping, translucent circles, and this time the visible pointillist stars gently pulsate with rainbow hues.\n\nRevise: the same ethereal, continuous flow of translucent, overlapping circles, resembling a slow cosmic tide, and this time the pointillist stars leave faint, shimmering trails of prismatic light.\n\nRevise: depart: The rhythm of slow, endless cosmological drift taken into a sprawling, silent network of overgrown, brass subterranean machinery, viewed through the patina of deep time.\n\nRevise: depart: the slow entropic drift of complex systems taken into vast networks of slowly dissolving crystalline geometry, made of iridescent silicate glass, seen at atomic scale.\n\nRevise: carry: Slow, rhythmic entropy given to iridescent dyed wool, appearing as vast, shifting celestial constellations embroidered into a medieval tapestry.",
+  "prompt_tokens": 7044,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2443/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2443",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive celestial tapestry where thousands of iridescent stars drift slowly across a deep, dark canvas. The scene simulates the passage of time through subtle color shifts and drifting patterns, evoking the feeling of ancient constellations slowly rearranging themselves over centuries. By using a spatial grid to optimize connections between stars, it efficiently renders hundreds of glowing threads that form ever-shifting constellation patterns. The result is a mesmerizing, ever-changing cosmic carpet where individual stars shimmer with organic light, and their connections pulse with an ethereal, luminous quality that captures the essence of deep space's quiet dynamism.",
+  "submitted_by": "profcarroll",
+  "wall_s": 179.283
+}
