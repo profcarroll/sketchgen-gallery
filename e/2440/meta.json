@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 2440, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2440/ Licensed CC BY 4.0.",
+  "brief": "A nostalgic view through a retro arcade cabinet, dominated by glowing glass and neon-accented circuits. Miniature, inverted worlds are shown suspended within these intricate, flowing liquid pathways. The liquid circuits, rendered in rich, copper tones, transport these glowing biomes, which pulse with a gentle, internal light. The miniature worlds cycle through the cabinet's display, giving the impression of deep, digital time travel within a highly stylized 1980s aesthetic.",
+  "completion_tokens": 2137,
+  "created_utc": "2026-10-24T17:11:02Z",
+  "entry_id": 2440,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1211,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 56)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 58)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 67)\n\ngate exit 1: checks failed: frame_budget, revised\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 124.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n- revised = false\n    revised: 1 line of code differs from the sketch it revises (88 lines of code before, 88 after); comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: The concept of contained, inverted worlds transformed into monumental layers of sedimentary rock, revealing deep subterranean geological strata, rendered as an Edo woodblock print.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 120,
+        "sha256": "2e636f5fcb6d1aa1335abcb663316b61f0599e70228437d8085c6aea6c41ff96",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 124.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3748,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 56.355,
+      "wall_s": 110.865
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 926,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 120,
+        "sha256": "63cab6950572612ea75d25982fb567122d07d3b38dec3327cd6e7f96e8ebb2fd",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 36.2,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4172,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 21.106,
+      "wall_s": 99.7
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2461,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of contained, inverted worlds transformed into monumental layers of sedimentary rock, revealing deep subterranean geological strata, rendered as an Edo woodblock print.",
+    "critique_by": "gemma4:e4b",
+    "generation": 7,
+    "inherits_source": false,
+    "parent_entry_id": 2341,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.\n\nRevise: the same view through the rain-streaked windowpane of tiny, upside-down cityscapes, and this time the raindrops collect into larger, more defined puddles before dropping.\n\nRevise: the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.\n\nRevise: the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.\n\nRevise: depart: the repeating geometry of glowing, miniature inverted worlds taken into a cross-section of petrified earth, revealed by the slow, widening crack of tectonic plate separation.\n\nRevise: carry: glowing miniature worlds given to flowing liquid circuits, rendered on a 1980s arcade cabinet.\n\nRevise: depart: The concept of contained, inverted worlds transformed into monumental layers of sedimentary rock, revealing deep subterranean geological strata, rendered as an Edo woodblock print.",
+  "prompt_tokens": 7920,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2440/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2440",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch transforms the nostalgic arcade cabinet concept into a geological interpretation of deep subterranean strata. Rather than glowing biomes suspended in liquid circuits, viewers witness monumental sedimentary layers revealing ancient geological history. The composition uses flowing copper-toned paths that meander through the canvas, creating an impression of time and depth. The technique employs layered rectangles for the rock formations and flowing lines for the liquid pathways, all rendered in 3D space to emphasize the geological perspective. The viewer experiences a journey through layers of earth, with subtle movements suggesting the slow passage of time and the continuous flow of geological processes.",
+  "submitted_by": "profcarroll",
+  "wall_s": 210.565
+}
