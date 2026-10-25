@@ -1,0 +1,165 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "size(800,600)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cEKG patterns Revise: the same EKG pattern, and this time the white wa\u2026\u201d \u2014 sketchgen entry 2490, prompted by profcarroll, written by laguna-xs-2.1:latest under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2490/ Licensed CC BY 4.0.",
+  "brief": "A deep indigo static background hosts a rhythmic white medical waveform that pulses in color synchronized with the trace rhythm. Behind this tracing layer, oxidized copper wire structures form intricate lace patterns that shift structurally with each cycle of metabolic energy. The composition simulates the scale of a city block, where semi-translucent overlapping mineral crystal lattices drift slowly within networks searching for energy transfer points, creating a dynamic interplay between rigid geometry and flowing biological signals without requiring user interaction.",
+  "completion_tokens": 4962,
+  "created_utc": "2026-10-25T18:00:31Z",
+  "entry_id": 2490,
+  "executor": "laguna-xs-2.1:latest",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {},
+      "completion_tokens": 2041,
+      "evidence": "executor: malformed response: no fenced js block",
+      "exit": null,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 75,
+        "sha256": "5d07df12f7b052ba18a705705b3e23c5b5bbad772d99f67021a735804bb97baf",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": null,
+      "num_ctx": 16384,
+      "preload_s": null,
+      "prompt_tokens": 3526,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": null,
+      "wall_s": 151.701
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "size(800,600)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1445,
+      "evidence": "gate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 480000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] box() is only supported in WEBGL mode. If you'd like to use 3D graphics and WebGL, see  https://p5js.org/examples/form-3d-primitives.html for more information.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": null,
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 2619,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.561,
+      "wall_s": 97.667
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "size(800,600)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1476,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 134,
+        "sha256": "654023032a8dec74caa352f86649d885744dbf554986c589590f114a8dd8b359",
+        "shown": true
+      },
+      "model": "laguna-xs-2.1:latest",
+      "ms_per_frame": 2.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 4178,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 3.237,
+      "wall_s": 116.036
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2511,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the cyclical tracing of metabolic energy taken into networks of semi-translucent, overlapping mineral crystal lattices, made of oxidized copper wire, seen at the scale of a city block, driven by a searching slime mould mechanism.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": false,
+    "parent_entry_id": 2377,
+    "root_entry_id": 1052
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "qwen3.5:9b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "EKG patterns\n\nRevise: the same EKG pattern, and this time the white waveform should pulse in the color of the trace against the background.\n\nRevise: the same EKG waveform tracing across a colored background, and this time the background color should remain static while the waveform pulses.\n\nRevise: the same continuous medical waveform, and this time the static background should be a deep indigo solid color.\n\nRevise: depart: A series of geometric pressure ridges forming and relaxing in sequence, taking the idea of cyclical energy transfer into the form of glacial rock layers, seen through a searching slime mould.\n\nRevise: carry: Rhythmic, repeating structural shifts given to oxidized copper wire forming intricate lace patterns, made of cut paper\n\nRevise: flip: sharp, crystalline mineral formations fracturing and reconstituting with abrupt geometric edges, seen at the scale of a city block, driven by subterranean pressure.\n\nRevise: flip: a randomized scatter of overlapping, fragmented geometric tessellations forming temporary, non-repeating clusters, made of cut paper, seen at the scale of shattered glass.\n\nRevise: depart: the cyclical tracing of metabolic energy taken into networks of semi-translucent, overlapping mineral crystal lattices, made of oxidized copper wire, seen at the scale of a city block, driven by a searching slime mould mechanism.",
+  "prompt_tokens": 10323,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2490/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2490",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "The sketch visualizes a city-block scale metabolic landscape through layered rhythmic animations. A deep indigo field serves as the backdrop for pulsing white medical waveforms whose colors shift along a cyan-purple spectrum synchronized with the underlying rhythm. Oxidized copper wire lattice structures form geometric lace patterns that contract and expand with metabolic cycles. Hundreds of semi-transparent mineral crystal particles drift through this space with organic waltzing motion, occasionally forming brief connections when they align within proximity ranges. The entire composition breathes in unison through a shared temporal parameter, creating an interconnected biological-metabolic ecosystem.",
+  "submitted_by": "profcarroll",
+  "wall_s": 365.404
+}
