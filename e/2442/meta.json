@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 2442, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2442/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a mesmerizing study of botanical specimens in slow motion. Translucent, delicate forms emerge and fold in a continually unfolding sequence, interacting subtly through viscous fluid dynamics. The visual style mimics faded watercolors painted onto aged, pressed paper, giving the scene the intimate quality of a Victorian scientific plate. There is no interaction required; the viewer simply witnesses the ethereal, fluid beauty of these fragile forms drifting across the frame.",
+  "completion_tokens": 1064,
+  "created_utc": "2026-10-24T17:26:44Z",
+  "entry_id": 2442,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1064,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 107,
+        "sha256": "8cdb78ff026ff82e8193c21b2feef1e948d303783780db4d7eedbe8a14e3c149",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3610,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 5.006,
+      "wall_s": 95.293
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2463,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a slow-motion unfolding of translucent, delicate specimens that interact through subtle, viscous fluid dynamics, rendered as a study of faded watercolors on pressed paper, seen through the lens of a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 2343,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time they should only move when they physically intersect with another form.\n\nRevise: the same pulsating array of highly energized, neon-lit geometric shapes, and this time the forms should fragment into sharp, colored shards the moment they physically intersect.\n\nRevise: carry: Pulsating electric neon glow given to slow-moving volumetric gas clouds, seen at the scale of a single grain of sand\n\nRevise: flip: a jerky, interlocking sequence of sharp, brightly colored geometric panels that rapidly snap into place, made of cut paper\n\nRevise: flip: a slow-motion unfolding of translucent, delicate specimens that interact through subtle, viscous fluid dynamics, rendered as a study of faded watercolors on pressed paper, seen through the lens of a Victorian botanical plate.",
+  "prompt_tokens": 3610,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2442/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2442",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a serene, slow-motion visualization of botanical specimens emerging and folding in a dreamlike sequence. Rendered in the WEBGL context, it mimics the delicate, translucent quality of faded watercolors on aged paper \u2014 a reference to Victorian scientific illustrations. The specimens gently drift through space with organic motion, subtly unfolding and refolding, evoking the quiet beauty and fragility of natural forms. The muted color palette and soft transitions create an intimate, contemplative viewing experience that invites the observer into a meditative state of witnessing nature's ephemeral elegance.",
+  "submitted_by": "profcarroll",
+  "wall_s": 95.293
+}
