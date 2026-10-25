@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cthe last leaf on a tree refusing to fall in the wind Revise: the same\u2026\u201d \u2014 sketchgen entry 2412, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2412/ Licensed CC BY 4.0.",
+  "brief": "The viewer observes a highly detailed, stylized composition rendered in the aesthetic of a Victorian botanical plate. At the center, a fossilized bouquet of rare rainforest blooms is presented, crystallized by the vast forces of geological time. The canvas is dominated by muted mineral tones and intricate line work, focusing on the preserved structures of the flora. The visualization emphasizes the slow, persistent layering of accumulated history. The presentation is designed to be a study of permanence, allowing the viewer to contemplate the crystallized, ancient life depicted in the detailed mineral strata.",
+  "completion_tokens": 3788,
+  "created_utc": "2026-10-24T13:21:19Z",
+  "entry_id": 2412,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1259,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.3156/255, 17912 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "4b52fe3478eccd86727ceb04c186ca98f8a7836bf0acac22b80dd1bed3823d2d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3437,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.692,
+      "wall_s": 102.051
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1266,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.3156/255, 17912 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "1d26c6c47e5395511a02d7ed31de74aa0ce214904d2b5a4163c26db114296121",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3867,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 2.72,
+      "wall_s": 112.269
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1263,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.3156/255, 17912 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 139,
+        "sha256": "1d26c6c47e5395511a02d7ed31de74aa0ce214904d2b5a4163c26db114296121",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.8,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3867,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 2.739,
+      "wall_s": 81.059
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2433,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: The slow, persistent layering of accumulated history given to a fossilized bouquet of rare rainforest blooms, crystallized and preserved, Victorian botanical plate",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": false,
+    "parent_entry_id": 2309,
+    "root_entry_id": 1466
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "the last leaf on a tree refusing to fall in the wind\n\nRevise: the same stylized scene featuring the detailed branches and muted autumnal colours of a tree, and this time the surrounding floating leaves should fall with greater directional speed.\n\nRevise: depart: the continuous, directional shedding and suspension of particulate matter, taken into a slow-moving stream of powdered minerals, drawn in chalk on slate\n\nRevise: depart: The silent layering of geological time, visualized as striated strata of chalk on slate, revealed by the slow seepage of mineral-rich groundwater, seen at this scale.\n\nRevise: carry: The slow, persistent layering of accumulated history given to a fossilized bouquet of rare rainforest blooms, crystallized and preserved, Victorian botanical plate",
+  "prompt_tokens": 11171,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2412/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2412",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a still, contemplative visualization of geological time frozen in mineral form. It depicts a central fossilized bouquet of rare rainforest blooms, crystallized through vast geological processes, rendered in muted Victorian botanical aesthetics. The composition features layered strata with intricate line work that mimics the textures found in historical botanical engravings, emphasizing permanence and the slow accumulation of history. The viewer is invited to observe the delicate preservation of ancient life within a mineral landscape, where each element contributes to a sense of time suspended and eternal.",
+  "submitted_by": "profcarroll",
+  "wall_s": 295.379
+}
