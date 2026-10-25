@@ -1,0 +1,178 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 2488, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2488/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a vast, orbital view of deep-sea oceanic crust. Across the dark, rugged landscape, an immense, intricate network of glowing, mineralized veins is visible. These pathways are highly interconnected, forming vast, ethereal currents of light. Slowly, rhythmic cyan waves pulse and travel along these veins, making the subterranean structure appear vibrant and alive. The entire system pulses and glows with an inherent, steady energy, requiring no user interaction to observe its dynamic light show.",
+  "completion_tokens": 3366,
+  "created_utc": "2026-10-25T17:37:38Z",
+  "entry_id": 2488,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1027,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 64)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 308.7 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 95,
+        "sha256": "52b26a5495b4839349278e139f433f39ec2e82f8b7458be3b0a4444685d98a12",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 308.7,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 3444,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 18.562,
+      "wall_s": 90.356
+    },
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1142,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 104,
+        "sha256": "acbcf99a9c193bdbf1dfee7ea8ac9e1bd94063c31840d0ce0271186ebb974766",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 45.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3707,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 22.283,
+      "wall_s": 103.455
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1197,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 123,
+        "sha256": "f0a54713058a48d739679eaa88e722a34bf177064e2112c5413b8b39b215ea8e",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 44.9,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3770,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 22.048,
+      "wall_s": 110.43
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2509,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of hidden, pulsing, interconnected energetic pathways taken into the form of vast, mineralized veins within deep-sea oceanic crust, seen from a satellite.",
+    "critique_by": "gemma4:e4b",
+    "generation": 14,
+    "inherits_source": false,
+    "parent_entry_id": 2374,
+    "root_entry_id": 402
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes are concentrated into steady, vertical beams of cyan light.\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes pulsate rhythmically with cyan light.\n\nRevise: the same two steady vertical beams of bright cyan light, and this time the light widens and shrinks cyclically, illuminating the corn stalks unevenly.\n\nRevise: the same intensely bright cyan light beams, and this time they illuminate the corn stalks in a fixed, glowing semicircle directly beneath the craft.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intense cyan light beams pulsate slowly and uniformly across the semicircle.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intensely cyan light beams pulse rapidly and irregularly across the semicircle.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with smooth, rhythmic waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with slow, uniform waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with rapid, erratic flashes across the semicircular ground pattern.\n\nRevise: carry: Contained, rhythmic, cyan pulsation given to a series of interconnected polished brass pipes, made of industrial glass, seen at the scale of a single room, in a 1920s Bauhaus exercise.\n\nRevise: flip: a chaotic network of bioluminescent fungal hyphae, pulsing randomly and unevenly, covering a forest floor at the scale of one city block.\n\nRevise: carry: Random, pulsing interconnection given to submerged oceanic fiber optic cables, seen from a satellite.\n\nRevise: depart: the idea of hidden, pulsing, interconnected energetic pathways taken into the form of vast, mineralized veins within deep-sea oceanic crust, seen from a satellite.",
+  "prompt_tokens": 10921,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2488/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2488",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, orbital view of deep-sea oceanic crust where thousands of glowing mineralized veins pulse with rhythmic cyan light. The system uses a spatial hashing grid to efficiently connect nearby points, forming an intricate network that responds dynamically to the viewer's perspective through slow, continuous rotation. Each vein pulses independently at its own rhythm, creating a subtle but mesmerizing glow that animates the entire subterranean structure without requiring any user interaction. The result is a vast, ethereal current of light that fills the dark oceanic landscape with a steady, living energy.",
+  "submitted_by": "profcarroll",
+  "wall_s": 304.241
+}
