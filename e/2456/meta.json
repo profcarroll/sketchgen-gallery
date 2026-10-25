@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca starscape with twinkling effects, the blur of the Milky Way, and th\u2026\u201d \u2014 sketchgen entry 2456, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2456/ Licensed CC BY 4.0.",
+  "brief": "The canvas presents a miniaturized, intricate mechanical diagram crafted entirely from polished brass. Hundreds of tiny, interlocking gears and levers fill the space, illustrating a complex, geometric mechanism seen at dollhouse scale. The overall aesthetic recalls the functional, measured design principles of 1920s Bauhaus art. The piece is designed to operate slowly and rhythmically, showcasing the coordinated, deliberate movement of its components as they turn and connect, illustrating the measured stress of geometric folding in a continuous cycle.",
+  "completion_tokens": 965,
+  "created_utc": "2026-10-25T02:13:52Z",
+  "entry_id": 2456,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 965,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 125,
+        "sha256": "1549d25ebeb26881425c99f2d342979db97d1d0903e4d2563799fc58c923f60a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 12.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3770,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.987,
+      "wall_s": 94.209
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2477,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the measured, slow stress of geometry folding taken into a complex, interlocking clockwork mechanism of intersecting levers and gears, made of polished brass, seen at a dollhouse scale, in a 1920s Bauhaus exercise.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 2429,
+    "root_entry_id": 1387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a starscape with twinkling effects, the blur of the Milky Way, and the occasional supernova\n\nRevise: the same deep cosmic vista, and this time the supernovas flash with a brilliant white core and fade quickly.\n\nRevise: the same deep cosmic expanse, and this time the individual stars rhythmically pulse in unison instead of independently twinkling.\n\nRevise: the same vast, dark cosmic expanse, and this time occasional supernovas explode with brilliant white cores and rapidly dissipate.\n\nRevise: the same vast, dark cosmic expanse, and this time the starfield pulses with a coordinated, slow wave of light across the entire visible frame.\n\nRevise: depart: the slow, measured rhythmic pulse of cosmic light taken into the layered crystal growth of subterranean mineral deposits, folded origami\n\nRevise: depart: the measured process of cosmic energy solidifying into complex, geometric structures taken into the form of bioluminescent, crystalline deep-sea organisms, making the next sketch flow with rhythmic, organic life.\n\nRevise: depart: the measured, cyclical wave of bioluminescent energy taken into the slow, seismic shift of continental tectonic plates, folded origami.\n\nRevise: depart: the measured, slow stress of geometry folding taken into a complex, interlocking clockwork mechanism of intersecting levers and gears, made of polished brass, seen at a dollhouse scale, in a 1920s Bauhaus exercise.",
+  "prompt_tokens": 3770,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2456/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2456",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents a miniature mechanical universe composed of interlocking gears and levers, rendered in a style evocative of early 20th-century industrial design. The composition features dozens of brass-toned components that rotate slowly and rhythmically, creating an intricate dance of motion that suggests the precise, deliberate mechanisms of a clockwork device. The Bauhaus aesthetic emerges through clean geometric forms, sharp contrasts, and the mathematical precision of their interactions. Rather than depicting individual mechanical parts in isolation, the work conveys the collective behavior of a complex system, where each rotating gear influences the movement of its neighbors through subtle, continuous motion. The overall effect is one of measured stress and geometric folding \u2014 a visual metaphor for the harmonious tension inherent in mechanical precision.",
+  "submitted_by": "profcarroll",
+  "wall_s": 94.209
+}
