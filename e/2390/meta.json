@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a typography composition expressing the swiss school of formal\u2026\u201d \u2014 sketchgen entry 2390, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2390/ Licensed CC BY 4.0.",
+  "brief": "The composition initially displays a rigid, meticulously structured typographic grid of bold black and white text, mimicking a formal exhibition poster. This rigid structure is never static; the perfect lines are continually destabilized, beginning to warp and melt. Over time, the typed elements break down, giving way to flowing, organic shapes that appear to be driven by immense, churning clockwork mechanisms and invisible gears. The resulting chaos is contained within the canvas, but interacting with the screen introduces a force that redirects and intensifies the breakdown process.",
+  "completion_tokens": 1093,
+  "created_utc": "2026-10-24T10:28:54Z",
+  "entry_id": 2390,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1093,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 197,
+        "sha256": "bf752df3c9590f9941419a9f5caafc911ff7ae2f6d9a3db7649ea930b746ce22",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 1.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4218,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.34,
+      "wall_s": 125.146
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2411,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of controlled structural collapse taken into the slow accumulation of mineral sediment, depicted as fractured, overlapping ceramic tiles on a perpetually damp floor.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2283,
+    "root_entry_id": 1448
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a typography composition expressing the swiss school of formal style, it should look like an exhibition poster\n\nRevise: revise with increase contrast between elements to practice what the poster preaches\n\nRevise: publish failed: /home/ubuntu/sketchgen/gallery has uncommitted changes; commit or clean it before publishing\n\nRevise: flip: a chaotic composition where perfect black and white typographic grids melt and reform into fluid, organic shapes, driven by the mechanism of gears and cams.\n\nRevise: depart: the dissolution of crystalline molecular bonds into fluid waves, depicted as a macro-view of a failing superconductor, made of polished obsidian, seen at a micro scale, in a 1980s arcade cabinet\n\nRevise: depart: the idea of failing structured symmetry taken into the design of colossal, interlocking clockwork mechanisms, modeled as decaying biological organs, slime mould searching.\n\nRevise: depart: the concept of controlled structural collapse taken into the slow accumulation of mineral sediment, depicted as fractured, overlapping ceramic tiles on a perpetually damp floor.",
+  "prompt_tokens": 4218,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2390/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2390",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the slow erosion of a rigid ceramic floor structure into flowing sediment. Initially appearing as a grid of cleanly fractured tiles, the composition gradually dissolves and reorganizes into organic, overlapping fragments that accumulate like mineral deposits. The viewer witnesses the breakdown of a formal architectural element through time and interaction\u2014each tile responds to contact with the cursor by breaking apart further, accelerating its dissolution into a flowing mass of sedimentary shapes. The piece explores how static structures gradually yield to natural forces, creating an ever-shifting landscape of fractured geometry that maintains visual coherence even as it degrades.",
+  "submitted_by": "profcarroll",
+  "wall_s": 125.146
+}
