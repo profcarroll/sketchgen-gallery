@@ -1,0 +1,183 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201can abstracted vegetable garden, show the growth of the vegetables slo\u2026\u201d \u2014 sketchgen entry 2480, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2480/ Licensed CC BY 4.0.",
+  "brief": "The canvas begins empty, then dark, highly saturated black ink begins to spread across the surface. This ink does not move randomly; rather, it is drawn toward an invisible central nexus. As it collects, the fluid ink rapidly reorganizes itself, shedding its liquid form to construct an increasingly intricate and complex geometric pattern. The process of aggregation and crystallization unfolds over time, resulting in a self-sustaining structure of perfect, rigid, and hyper-ordered mathematical forms.",
+  "completion_tokens": 4304,
+  "created_utc": "2026-10-25T16:31:04Z",
+  "entry_id": 2480,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1356,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 110,
+        "sha256": "b03594baba50661eed1c9ce351b1eb1c6dbbce205cb93f27d73b6b5a360acaf4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3419,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 4.441,
+      "wall_s": 113.253
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1494,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 167,
+        "sha256": "812dc509091254fa2104ad211abc4d5cd8da50e2759fa3872c9a23a730a08a69",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3936,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.47,
+      "wall_s": 138.457
+    },
+    {
+      "assertions": {
+        "motion(idle)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1454,
+      "evidence": "gate exit 1: assertions failed: motion(idle)\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 180,
+        "sha256": "59efa93321d870484c5deed330fc582a947ee99a1b6391d932ef7e80c3747dc0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 5.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 4101,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 4.412,
+      "wall_s": 138.99
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2501,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a dense, highly saturated cloud of mineral dust that slowly builds inward, then violently ruptures into an unpredictable, outward-spreading blizzard of randomized, non-geometric particles, driven by sudden pneumatic pressure.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "inherits_source": false,
+    "parent_entry_id": 2365,
+    "root_entry_id": 47
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "an abstracted vegetable garden, show the growth of the vegetables slowly over time\n\nRevise: revise: vegetables should not roll across the screen, they should grow in place and bear fruit\n\nRevise: better, now make a version with a blue sky and revise the animation so the leaves do not bounce, but rather grow in place. movement of the leave should suggest wind once the plant is mature.\n\nRevise: the same abstracted garden, and this time make the fruit appear in distinct, identifiable stages of development\n\nRevise: the same abstracted, vibrant garden, and this time show the visual process of pollination connecting the various flowering plants.\n\nRevise: the same abstracted garden landscape, and this time show the luminous particles collecting and accumulating visibly in the center of each bloom.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the visible process of flowers maturing from bloom through to forming seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the physical peeling or shedding of petals as the blooms transition into seeds.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the structural changes of the blooming flowers as they mature toward seed formation.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the fully developed seeds accumulating and slowly dispersing from the central pods.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the luminous seed particles visibly spiraling into the central pods before they accumulate.\n\nRevise: the same abstracted, vibrant garden landscape, and this time show the pods visibly hardening and restructuring from the collected luminous particles into defined, mature seed casings.\n\nRevise: carry: slow, contained structural reorganization given to massive obsidian crystallization, observed through a row of falling dominoes\n\nRevise: flip: a sketch of pressurized gas fracturing into a blizzard of unpredictable, razor-sharp glass fragments that burst outward in a chaotic, self-replicating cascade, mechanism: a spring under tension\n\nRevise: flip: a sketch of perfect black ink slowly aggregating inward toward a central point, forming a self-sustaining, hyper-ordered geometric pattern, mechanism: a row of falling dominoes\n\nRevise: flip: a dense, highly saturated cloud of mineral dust that slowly builds inward, then violently ruptures into an unpredictable, outward-spreading blizzard of randomized, non-geometric particles, driven by sudden pneumatic pressure.",
+  "prompt_tokens": 11456,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2480/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2480",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts the transformation of fluid ink into a rigid geometric structure through the interplay of attraction and aggregation. Starting from a circular formation of particles, they are drawn toward the center with increasing force, creating a dynamic flow pattern. As the process continues, new particles are introduced to simulate crystallization, forming increasingly complex polygonal patterns that eventually stabilize into ordered mathematical forms. The visual progression captures both the chaos of initial movement and the emergence of perfect geometric regularity, representing how fluid systems can organize themselves into stable, structured arrangements through collective behavior.",
+  "submitted_by": "profcarroll",
+  "wall_s": 390.7
+}
