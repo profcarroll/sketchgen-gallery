@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca subway map that rearranges itself when you click a station Revise:\u2026\u201d \u2014 sketchgen entry 2403, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2403/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, densely woven network of colored pathways and interlocking lattices, resembling either a biological root system or a crystalline molecular junction. The paths are complex, detailed, and span the entire area. The viewer interacts by clicking anywhere on the network. Upon clicking, the stable pattern immediately becomes dynamic: connected segments shift, expanding or folding into new configurations. This rearrangement reveals the structure's underlying points of stress, causing pathways to reform and reconnect in a visually complex, systematic cascade of movement.",
+  "completion_tokens": 1329,
+  "created_utc": "2026-10-24T12:12:30Z",
+  "entry_id": 2403,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1329,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 163,
+        "sha256": "1276ffe4415bf888e3503d01bea0bf3771074bebfbd44fa2c86a92d293a52a80",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.505,
+      "prompt_tokens": 3996,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.643,
+      "wall_s": 136.421
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2424,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of networked pathways taken into a colossal system of synaptic dendrites, reorganizing when a point is stimulated, made of beeswax.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2299,
+    "root_entry_id": 1465
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a subway map that rearranges itself when you click a station\n\nRevise: zoom: a whole sketch of the molecular junction point where three distinct lines meet, revealing the atomic stress points and interlocking crystal lattice structure, seen under a microscope.\n\nRevise: depart: a root system network of interwoven, colored organic pathways, patterned like a tapestry woven on a loom.\n\nRevise: depart: the idea of networked pathways taken into a colossal system of synaptic dendrites, reorganizing when a point is stimulated, made of beeswax.",
+  "prompt_tokens": 3996,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2403/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2403",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a dense, interconnected network of nodes and connections that resembles a crystalline molecular structure or biological root system. The work begins in a static, serene configuration where colored nodes are linked by translucent lines forming an intricate lattice. When the viewer clicks anywhere on the canvas, the system responds with a dynamic reconfiguration: the clicked node and its neighbors shift subtly, causing adjacent connections to stretch and reform. This creates a cascade of movement that reveals the underlying stress points within the structure. The visualization emphasizes both the stability of the overall network and the localized disruption that occurs when a point is stimulated, creating a compelling interplay between order and transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 136.421
+}
