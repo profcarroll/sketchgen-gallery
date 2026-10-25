@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca kite on a string you fly with the mouse through gusty wind Revise:\u2026\u201d \u2014 sketchgen entry 2405, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2405/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays intricate, cross-sectioned diagrams of root structures, presented in the detailed, muted palette of an antique botanical plate. These fibrous networks subtly pulse and glow, suggesting latent life beneath the surface. As the viewer moves the cursor across the canvas, the root systems react by illuminating their points of greatest tension, causing crystalline stress lines to flare outward and map the unseen energy pathways within the observable, cataloged forms.",
+  "completion_tokens": 2403,
+  "created_utc": "2026-10-24T12:30:32Z",
+  "entry_id": 2405,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1214,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `width` hides p5's `width`; rename it (sketch.js line 60)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 89)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag), uses(webgl)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- uses(webgl): renderer context is 2D\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 221,
+        "sha256": "80552b4548131bd6b8197c10778ba99e21b6ebc1d0eb4747b018745a45239e09",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.028,
+      "prompt_tokens": 4274,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.508,
+      "wall_s": 121.444
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1189,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 154,
+        "sha256": "066a5db02393ef36420e5b769966bd4888f058d4fbb0019e4de3e8cb84531457",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.8,
+      "num_ctx": 16384,
+      "preload_s": 0.046,
+      "prompt_tokens": 4058,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 7.152,
+      "wall_s": 112.621
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2426,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the principles of visible, invisible tension taken into a catalog of crystalline, fibrous root systems, observed as a Victorian botanical plate.",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": false,
+    "parent_entry_id": 2301,
+    "root_entry_id": 1493
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a kite on a string you fly with the mouse through gusty wind\n\nRevise: depart: the guiding principle of an invisible string and hand-control taken into the directional flow of liquid mercury, seen at the scale of a single grain of sand.\n\nRevise: depart: the luminous tension of an unseen tether taken into the fault lines of a submerged, petrified forest, seen from a deep-sea sonar ping.\n\nRevise: depart: the principles of visible, invisible tension taken into a catalog of crystalline, fibrous root systems, observed as a Victorian botanical plate.",
+  "prompt_tokens": 8332,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2405/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2405",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch renders an intricate botanical illustration of underground root systems in a muted antique palette. The fibrous networks pulse gently with organic rhythm, suggesting life beneath the surface. When viewers move their cursor across the canvas, tension points illuminate and send out crystalline stress lines that map energy pathways through the visible root structures. The work combines procedural generation with interactive responsiveness to create an immersive visualization of subterranean vitality.",
+  "submitted_by": "profcarroll",
+  "wall_s": 234.065
+}
