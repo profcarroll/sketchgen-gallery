@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)",
+    "responds(drag)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201crhododendrons Revise: the same dense, lush field of rhododendrons, an\u2026\u201d \u2014 sketchgen entry 2459, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2459/ Licensed CC BY 4.0.",
+  "brief": "The viewer is presented with the complex, exposed mechanical core of a giant automated loom, rendered in brass and polished metal. Intricate gears and cams drive a continuous, mesmerizing operation. The loom's function is not solid thread, but rather a visible, ongoing process of structured fragmentation. Solid, clear forms dissolve into hyper-detailed geometric color fields that pulsate across the tapestry. The entire machine is alive with constant motion, but if the viewer interacts by clicking or dragging, the point of contact momentarily destabilizes the field, causing a visible, energetic cascade that accelerates the dissolution and reforming of the color patterns.",
+  "completion_tokens": 1914,
+  "created_utc": "2026-10-25T02:34:32Z",
+  "entry_id": 2459,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true,
+        "responds(drag)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1914,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 46,
+        "ms": 6840,
+        "played": 46,
+        "script": "click,drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 141,
+        "sha256": "68c905a67efbdcd4008fae66d256f57913b6ac9d64a6dec492bee781f5221856",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 29.3,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3956,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 21.484,
+      "wall_s": 169.701
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 46,
+    "script": "click,drag"
+  },
+  "job_id": 2480,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the principle of structured fragmentation, where clear forms dissolve into geometric color fields, applied to the exposed, clockwork heart of a giant automated loom, driven by gears and cams.",
+    "critique_by": "gemma4:e4b",
+    "generation": 8,
+    "inherits_source": true,
+    "parent_entry_id": 2434,
+    "root_entry_id": 1384
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rhododendrons\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms flowing in slow, rhythmic currents.\n\nRevise: the same dense, lush field of rhododendrons, and this time with the individual blooms settling into pockets of still, reflective water.\n\nRevise: the same dense, lush field of rhododendrons, and this time the individual blooms settle into rigid, sculptural clusters floating above the still, glassy water.\n\nRevise: the same tapestry of rhododendron blooms and foliage, and this time the ripple causes the water surface to gather into visible, marbled currents, distorting the reflection in swirling shapes.\n\nRevise: depart: The principle of organic refraction, where solid forms fragment into swirling color, applied to a tessellated stained glass panel, creating dynamic patterns of geometric light, as a 1920s Bauhaus exercise.\n\nRevise: depart: dynamic geometric patterns taken into the crystalline structure of deep-sea bioluminescence, seen at biological scale, in a 1920s Bauhaus exercise.\n\nRevise: carry: Intricately segmented, pulsating color fields given to giant formations of smoke, rendered as an Edo woodblock print\n\nRevise: depart: the principle of structured fragmentation, where clear forms dissolve into geometric color fields, applied to the exposed, clockwork heart of a giant automated loom, driven by gears and cams.",
+  "prompt_tokens": 3956,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2459/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2459",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch presents the mechanical heart of a giant automated loom, rendered in brass and polished metal. It depicts intricate gears and cams in constant motion, driving threads across a tapestry that transforms before our eyes. Clear geometric forms\u2014gears with teeth, cam shapes\u2014rotate and interlock to form a complex mechanical rhythm. But as viewers interact by clicking, they destabilize the field: a ripple effect spreads from their point of contact, causing the solid forms to dissolve into hyper-detailed geometric color fields that pulse and reform. The viewer's touch accelerates this dissolution, revealing an underlying process where structure gives way to chaotic beauty\u2014a mesmerizing dance between order and fragmentation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 169.701
+}
