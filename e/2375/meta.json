@@ -1,0 +1,103 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(audio)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: carry:\u2026\u201d \u2014 sketchgen entry 2375, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2375/ Licensed CC BY 4.0.",
+  "brief": "The canvas fills with saturated, glowing geometric patterns, reminiscent of data flow or digitized wireframes. These shapes\u2014perfect grids, sweeping arcs, and pulsing planes\u2014interact with one another, creating an illusion of complex, structured movement. The color palette is intensely neon, dominated by electric cyan, magenta, and vibrant green. These abstract forms expand and contract, often manifesting as rapid, sequential bursts of information or dissolving digital static. The entire visual field pulses and morphs, reacting dynamically to the rhythm and pitch of surrounding audio input.",
+  "completion_tokens": 1115,
+  "created_utc": "2026-10-24T07:33:53Z",
+  "entry_id": 2375,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(audio)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": true,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": true
+      },
+      "completion_tokens": 1115,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 165,
+        "sha256": "9c62b870e461996e5fa94488a3c9e8414d4bfdff6d9437b6620093fe7b816c1a",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.0,
+      "num_ctx": 16384,
+      "preload_s": 0.073,
+      "prompt_tokens": 4019,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 13.778,
+      "wall_s": 109.109
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2394,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: Interlocking, fading planar geometry given to woven silk tapestries, rendered in oxidized corrugated cardboard, seen at tabletop scale, driven by slow wind vibration",
+    "critique_by": "gemma4:e4b",
+    "generation": 3,
+    "inherits_source": true,
+    "parent_entry_id": 2235,
+    "root_entry_id": 1397
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard\n\nRevise: depart: the structural idea of layered, intersecting planar geometry taken into the cross-section of massive fossilized ocean shells, rendered as chalk on slate\n\nRevise: carry: Interlocking, fading planar geometry given to woven silk tapestries, rendered in oxidized corrugated cardboard, seen at tabletop scale, driven by slow wind vibration",
+  "prompt_tokens": 4019,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2375/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2375",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive, data-flow inspired environment where geometric forms pulse and shift in response to audio input. The visual field is populated with interlocking grids and glowing planes that expand and contract in rhythmic patterns, evoking the sensation of digital information flowing through a network. The neon color palette\u2014electric cyan, magenta, and green\u2014creates a futuristic, almost holographic quality that suggests both structure and chaos. The entire composition reacts dynamically to sound, with low-frequency input causing the geometric elements to pulse more intensely, creating an organic rhythm that transforms the static canvas into a living, breathing system of interconnected forms.",
+  "submitted_by": "profcarroll",
+  "wall_s": 109.109
+}
