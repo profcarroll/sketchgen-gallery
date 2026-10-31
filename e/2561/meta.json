@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca lone tree on a hill. we watch its leaves turn from green to red to\u2026\u201d \u2014 sketchgen entry 2561, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2561/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a complex, industrial landscape dominated by colossal crystal structures. These formations are rendered in deep, earthy tones of rust and oxidized steel, constantly expanding and shifting. The crystalline geometry undergoes an inevitable renewal, where patterns form and unravel in complex, repeating sequences. The structures appear to grow outward from underlying metallic grids, suggesting continuous, patterned growth over time. There are no direct user inputs required; the entire visualization is driven by the slow, cyclical mechanisms of geological and material change.",
+  "completion_tokens": 2003,
+  "created_utc": "2026-10-26T04:41:07Z",
+  "entry_id": 2561,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1016,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: your variable `line` hides p5's `line()` function; rename it (sketch.js line 50)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 54)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 79)\npreflight: `box()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 88)\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 95)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] line is not a function\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 180,
+        "sha256": "9aa052fbbec0a06b75749d0ac235d0ee699099ac5b422a1b2b3c265635698191",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4278,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.616,
+      "wall_s": 124.583
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 987,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 104,
+        "sha256": "7a46fd68dd9727246180321c82e8d1df34e16f8085f25dbd5b1d85836ce5f235",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 28.0,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3972,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 16.675,
+      "wall_s": 97.967
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2583,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the concept of inevitable life cycle taken into a colossal, self-repairing lattice of bioluminescent optical fibers, steadily degraded and reformed by constant microscopic erosion.",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 2501,
+    "root_entry_id": 193
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a lone tree on a hill. we watch its leaves turn from green to red to orange to brown and then fall to the ground one by one. Then snow falls covering the ground and coating the bare tree. It melts and soon buds form on the tree. Flowers soon appear, and eventually the leaves are green again. The cycle repeats.\n\nRevise: redraw with the tree trunk connecting to the ground\n\nRevise: carry: Patient, inevitable renewal given to a giant, rusted celestial clockwork mechanism, whose gears slowly align and reappear in complex, repeating patterns, seen through the mechanism of a loom.\n\nRevise: carry: Patient, inevitable geometric renewal given to the growth of colossal silicate crystal structures, made of rust on sheet steel.\n\nRevise: carry: The rhythm of inevitable cyclical renewal given to a gigantic, complex map of forgotten trade routes, stitched and unraveling through knitted wool.\n\nRevise: depart: The concept of eternal return taken into interlocking, self-repairing stone arches that perpetually rebuild themselves, depicted as a massive patterned tapestry, seen in architectural detail.\n\nRevise: depart: the concept of perpetual seasonal renewal taken into the complex mechanical structure of a gigantic observatory telescope array, era: a 1960s pen plotter drawing\n\nRevise: depart: the concept of slow, inevitable renewal taken into the spiraling growth rings of a colossal, petrified organism, made of petrified wood, seen at a mountain range.\n\nRevise: depart: The concept of repeating, rhythmic cycles taken into a massive, hydrothermal vent system deep beneath the ocean floor, seen shifting and reshaping with the power of the tides.\n\nRevise: depart: the concept of inevitable life cycle taken into a colossal, self-repairing lattice of bioluminescent optical fibers, steadily degraded and reformed by constant microscopic erosion.",
+  "prompt_tokens": 8250,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2561/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2561",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a vast, evolving industrial landscape where colossal crystal formations emerge from metallic grids, growing and shifting in endless cycles of geological transformation. The viewer observes a dark, mineral-rich environment dominated by rust-colored crystalline structures that pulse with slow, rhythmic growth patterns. Using WebGL rendering, the composition features thousands of individual crystal elements each following their own temporal path while maintaining overall coherence through shared geometric principles and color palettes. The scene unfolds without external input, driven purely by mathematical progression and organic expansion, creating an impression of continuous material change over geological time scales.",
+  "submitted_by": "profcarroll",
+  "wall_s": 222.55
+}
