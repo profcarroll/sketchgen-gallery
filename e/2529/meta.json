@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cskatepark music video Revise: the same neon, kinetic shapes that casc\u2026\u201d \u2014 sketchgen entry 2529, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2529/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a pulsating array of highly energized, neon-lit geometric forms. These kinetic shapes cascade and intersect across the viewing area, appearing as structured volumes. The movements are constant and self-contained, showing the geometry evolving and interlocking in a cyclical fashion. The entire composition remains cyclical and highly active, creating a continuous, rhythmic dance of intersecting light and structure.",
+  "completion_tokens": 1687,
+  "created_utc": "2026-10-26T00:28:37Z",
+  "entry_id": 2529,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1027,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 108,
+        "sha256": "272b483a187b380a2c9440c4f69342022512b420d9a24801d07a2d80386c5b8b",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.6,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3518,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.881,
+      "wall_s": 88.949
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 660,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 110,
+        "sha256": "4883a5e973abe19f3975ca3bc1a26fd4fa968df8ae89aaaea618e5b7b3012822",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 17.2,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3584,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 10.956,
+      "wall_s": 67.616
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2551,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the hidden, continuous exchange of heat and minerals between deep ocean trenches and surface water, depicted as complex, slow-moving, shifting currents, seen from a satellite.",
+    "critique_by": "gemma4:e4b",
+    "generation": 10,
+    "inherits_source": false,
+    "parent_entry_id": 2465,
+    "root_entry_id": 1398
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "skatepark music video\n\nRevise: the same neon, kinetic shapes that cascade and intersect across the frame, and this time the geometry should only shift through octahedral and hexagonal forms.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move in synchronized, repeating helical spirals.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time the cascading shapes should move only along rigid rectilinear axes.\n\nRevise: the same highly energized, neon-lit geometric forms, and this time they should only move when they physically intersect with another form.\n\nRevise: the same pulsating array of highly energized, neon-lit geometric shapes, and this time the forms should fragment into sharp, colored shards the moment they physically intersect.\n\nRevise: carry: Pulsating electric neon glow given to slow-moving volumetric gas clouds, seen at the scale of a single grain of sand\n\nRevise: flip: a jerky, interlocking sequence of sharp, brightly colored geometric panels that rapidly snap into place, made of cut paper\n\nRevise: flip: a slow-motion unfolding of translucent, delicate specimens that interact through subtle, viscous fluid dynamics, rendered as a study of faded watercolors on pressed paper, seen through the lens of a Victorian botanical plate.\n\nRevise: flip: a chaotic assembly of interlocking, razor-sharp mechanical gears and brass conduits assembling and disassembling with the speed of a clockwork automaton, all sketched in white chalk on black slate, made of chalk on slate.\n\nRevise: depart: the hidden, continuous exchange of heat and minerals between deep ocean trenches and surface water, depicted as complex, slow-moving, shifting currents, seen from a satellite.",
+  "prompt_tokens": 7102,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2529/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2529",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic, pulsating field of neon-lit geometric forms that cascade and intersect in three-dimensional space. The particles\u2014comprising boxes, spheres, and cones\u2014move in synchronized yet individual patterns, creating an evolving tapestry of light and structure. Each shape glows with vibrant hues from the HSB color space, while their constant rotation and cyclical motion generate a rhythmic dance across the canvas. The composition remains perpetually active, with no external input required, as each frame builds upon the last to create an endless cycle of intersecting light and form.",
+  "submitted_by": "profcarroll",
+  "wall_s": 156.565
+}
