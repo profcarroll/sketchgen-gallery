@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cshower thoughts Revise: the same bioluminescent shapes, and this time\u2026\u201d \u2014 sketchgen entry 2542, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2542/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays an intricate, luminous network of glowing, pulsating clusters contained within the tight, branching fissures of aged ceramic grout. These biomorphic forms pulse with a rhythmic blue luminescence, generating faint, shifting smoke tails that slowly drift and gather. The energy within the veins is constantly alive, giving the appearance of a glowing subterranean infrastructure. The movement is entirely self-generated, creating a sense of deep, ethereal life within the rigid architecture of the tile floor.",
+  "completion_tokens": 2645,
+  "created_utc": "2026-10-26T01:56:01Z",
+  "entry_id": 2542,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": false,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1337,
+      "evidence": "gate exit 1: checks failed: revised\n\nFixed checks that failed:\n- revised = false\n    revised: sketch.js is the sketch it revises, unchanged: not one line of code differs from the 101 it was given; comments, blank lines and whitespace are not counted, and a revision changes at least 5\n    fix: this job revises a published sketch, and returning that sketch \u2014 as it was, or with a number or two moved \u2014 is the published sketch again, not a revision; make the change the `Revise:` line asks for in the code that draws and moves things, and keep the rest\n    the line to act on: Revise: depart: the rhythmic, contained network of spectral energy taken into a structure of interlocking, aged corrugated cardboard panels, creating glowing vein pathways.\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 135,
+        "sha256": "f0e52ba4b109f7c980d81585b5913d824a99eee2f0f533fa41daaab126f253a5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 53.2,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3828,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 24.322,
+      "wall_s": 116.416
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1308,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 135,
+        "sha256": "f0e52ba4b109f7c980d81585b5913d824a99eee2f0f533fa41daaab126f253a5",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 26.8,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 4016,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 13.878,
+      "wall_s": 119.086
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2564,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the rhythmic, contained network of spectral energy taken into a structure of interlocking, aged corrugated cardboard panels, creating glowing vein pathways.",
+    "critique_by": "gemma4:e4b",
+    "generation": 12,
+    "inherits_source": false,
+    "parent_entry_id": 2481,
+    "root_entry_id": 188
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "shower thoughts\n\nRevise: the same bioluminescent shapes, and this time some forms have trailing, glowing smoke tails\n\nRevise: improve the animation framerate\n\nRevise: the same bioluminescent forms, and this time they will react to subtle changes in the background darkness\n\nRevise: the same bioluminescent shapes, and this time the glowing smoke tails will change thickness and intensity as they drift\n\nRevise: the same bioluminescent shapes, and this time some forms will briefly change color from blue to purple\n\nRevise: the same bioluminescent shapes, and this time they will generate visible, rhythmic pulses that ripple outward through their tails.\n\nRevise: the same bioluminescent forms, and this time the glowing smoke tails will temporarily gather together into visible, shifting clusters.\n\nRevise: depart: the rhythmic, glowing pulsations of the forming bioluminescent clusters taken into the mineral-filled micro-fissures of abandoned ceramic tile grout, viewed as an archaeological excavation.\n\nRevise: depart: the rhythmic, pulsing bioluminescence of deep-sea creatures taken into the formation of massive celestial gas clouds, seen in a spiral nebula.\n\nRevise: depart: the branching, rhythmic energy pulse taken into a sequence of glass-etched marble dominoes, driven by the cascading force of falling dominoes.\n\nRevise: depart: the pattern of rhythmic, pulsing energy networks taken into the dry, grout-filled channels of a ceramic tile floor, making it look like glowing subterranean veins.\n\nRevise: depart: the rhythmic, contained network of spectral energy taken into a structure of interlocking, aged corrugated cardboard panels, creating glowing vein pathways.",
+  "prompt_tokens": 7844,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2542/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2542",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch depicts a subterranean network of glowing, pulsating clusters that animate within the tight fissures of ceramic grout. The forms pulse rhythmically with deep blue luminescence, generating soft, shifting smoke-like trails that drift slowly and gather. The energy flows through an intricate web of connections between nearby forms, mimicking the structure of an underground infrastructure. The movement is entirely self-generated, creating a sense of ethereal life within the rigid architecture of the tile floor. The visual effect emerges from spatially hashed particle interactions, with each form maintaining its own organic motion while connecting to others in a dynamic network.",
+  "submitted_by": "profcarroll",
+  "wall_s": 235.502
+}
