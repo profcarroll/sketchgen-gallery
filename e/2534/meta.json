@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201clighthouse Revise: the same cyclical beam of light, and this time the\u2026\u201d \u2014 sketchgen entry 2534, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2534/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a towering, structural lighthouse against a vast, atmospheric sea and sky. A powerful, cyclical beam of light rotates rhythmically, slicing across the water and illuminating the dense fog surrounding the structure. The ocean surface below reflects the intense light source in scattered, mesmerizing washes of color. The composition is a continuous display of light and color, with the entire scene maintaining its constant, rhythmic movement regardless of viewer interaction.",
+  "completion_tokens": 634,
+  "created_utc": "2026-10-26T00:58:26Z",
+  "entry_id": 2534,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 634,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 107,
+        "sha256": "62fdababe25be41a2c8eecbbbf181eda422740fda00dad034ba8582b773ba946",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 11.9,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3591,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.972,
+      "wall_s": 69.032
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2556,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: The rhythmic directional force given to voluminous smoke plumes, made of knitted wool, seen at ambient scale",
+    "critique_by": "gemma4:e4b",
+    "generation": 6,
+    "inherits_source": true,
+    "parent_entry_id": 2472,
+    "root_entry_id": 1913
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "lighthouse\n\nRevise: the same cyclical beam of light, and this time the illumination upon the surrounding ocean is rendered with scattered, speckled washes of contrasting color.\n\nRevise: depart: the interaction of a powerful, rhythmic directional force taken into the crystalline structures of deep-sea vent minerals, shown as the lattices slowly fracture and bloom, made of fracturing crystal, seen at geological scale\n\nRevise: depart: the rhythmic, fracturing patterns of deep-sea light taken into the abandoned, colossal mechanisms of a celestial loom, weaving vast cosmic tapestries, made of polished brass, seen at astronomical scale, driven by a loom.\n\nRevise: depart: the patterned shattering of deep-sea light taken into the growth of subterranean crystal caverns, shown as bioluminescent mineral lattices slowly blooming: made of bioluminescent mineral, seen at subterranean scale.\n\nRevise: depart: the patterned, rhythmic stress decay of interwoven structures taken into the skeletal networks of ancient, petrified bones, made of folded origami, seen at the biological scale.\n\nRevise: carry: The rhythmic directional force given to voluminous smoke plumes, made of knitted wool, seen at ambient scale",
+  "prompt_tokens": 3591,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2534/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2534",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a lighthouse scene with voluminous smoke plumes that rise and sway rhythmically, inspired by the visual metaphor of knitted wool. The composition captures the atmospheric tension between the solid structure of the lighthouse and the fluid, organic movement of the smoke. Using WebGL rendering, it creates an immersive environment where each plume is constructed from layered spheres with varying opacities to simulate the texture of knitted fibers. The animation emphasizes continuous motion through subtle swaying and upward drift, evoking a sense of ambient scale and natural rhythm that persists without viewer interaction.",
+  "submitted_by": "profcarroll",
+  "wall_s": 69.032
+}
