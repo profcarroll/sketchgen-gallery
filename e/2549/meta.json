@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(drag)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201ca broadcast graphics package for a TV network in 1993 Revise: carry:\u2026\u201d \u2014 sketchgen entry 2549, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2549/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays complex, intersecting planar webs, crystalline structures, and saturated pulses of deep-sea energy. The color palette shifts between muted, oxidized tones of chalk and corrugated board, punctuated by vibrant, glowing bioluminescence. The primary movement is slow and cyclical, mimicking geological time and tidal currents. The geometry appears to shift and reform in continuous waves, suggesting a hidden digital energy field. Dragging the mouse causes the faint planar geometry to momentarily waver and connect, amplifying the pulsing energy networks as if adjusting a signal frequency.",
+  "completion_tokens": 3705,
+  "created_utc": "2026-10-26T02:47:48Z",
+  "entry_id": 2549,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": false,
+        "responds(drag)": false,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": false,
+        "frame_advancing": false,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1700,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 87)\npreflight: your variable `dist` hides p5's `dist()` function; rename it (sketch.js line 111)\n\ngate exit 1: checks failed: console_clean, frame_advancing; assertions failed: motion(idle), responds(drag)\n\nFixed checks that failed:\n- console_clean = false\n- frame_advancing = false\n    frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n\nAssertions that failed:\n- motion(idle): idle 0->120 frames: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n- responds(drag): drag across 20%->80% of the canvas width: mean abs diff 0.0000/255, 0 of 1152000 pixels changed\n\nConsole (1 error line, first 1 shown):\n- [pageerror] Cannot access 'dist' before initialization\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (1) with the end of it (1); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 103,
+        "sha256": "10b7cac736ae32de2ef878064af747a70d8d6627f4e73b4956f71c6ec1b47afa",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3728,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.76,
+      "wall_s": 139.772
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(drag)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 2005,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 30,
+        "ms": 2920,
+        "played": 30,
+        "script": "drag",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 151,
+        "sha256": "8844031437031828a86f0161f8e0e6ba950785e7346cce10fce14783100de8b0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 31.7,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 4551,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 15.738,
+      "wall_s": 188.306
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 30,
+    "script": "drag"
+  },
+  "job_id": 2571,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of pulsing, connecting network structures taken into patterns of bioluminescent plankton viewed from deep ocean trenches, made of liquid, seen at the scale of a tidal current.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2489,
+    "root_entry_id": 1397
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a broadcast graphics package for a TV network in 1993\n\nRevise: carry: Saturated, pulsing digital energy given to the chemical reactions within a deep-sea hydrothermal vent, corrugated cardboard\n\nRevise: depart: the structural idea of layered, intersecting planar geometry taken into the cross-section of massive fossilized ocean shells, rendered as chalk on slate\n\nRevise: carry: Interlocking, fading planar geometry given to woven silk tapestries, rendered in oxidized corrugated cardboard, seen at tabletop scale, driven by slow wind vibration\n\nRevise: flip: a slowly accreted calcium carbonate deposition forming vast, fixed crystalline structures, rendered as petrified forest cross-sections, seen at the scale of a megalith.\n\nRevise: depart: the idea of pulsing, connecting network structures taken into patterns of bioluminescent plankton viewed from deep ocean trenches, made of liquid, seen at the scale of a tidal current.",
+  "prompt_tokens": 8279,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2549/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2549",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of deep-sea energy fields through a dynamic web of crystalline structures that shift and reform over time. The scene features a muted palette of oxidized tones\u2014chalky grays and corrugated browns\u2014interrupted by vibrant bioluminescent pulses that emanate from the geometric formations. Structures move slowly through space in cyclical patterns, mimicking geological processes, while their connections form an ever-shifting network of energy pathways. The viewer's interaction with the canvas introduces localized disturbances that amplify these energy networks, creating a sense of adjusting a hidden signal frequency. The visual effect combines the elegance of crystalline geometry with the organic flow of tidal currents and digital energy fields, resulting in a meditation on time, transformation, and hidden forces beneath the surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 328.078
+}
