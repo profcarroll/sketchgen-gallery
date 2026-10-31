@@ -1,0 +1,175 @@
+{
+  "assertions": [
+    "no_motion"
+  ],
+  "attempts": 3,
+  "attribution": "\u201cdeep inside a cauldron of bacteria and microbes, but no circles allow\u2026\u201d \u2014 sketchgen entry 2565, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2565/ Licensed CC BY 4.0.",
+  "brief": "The canvas depicts a magnified view of a highly concentrated patch of intersecting pathways. It appears as a dense, complex mineral lattice, visualized with fine, linear structures. The arrangement suggests a massive, networked circulatory system, evoking the hidden biological machinery of a colossal subterranean organism. The geometry is purely structural, detailing repeating crystalline intersections and the pathways connecting them.",
+  "completion_tokens": 2442,
+  "created_utc": "2026-10-26T05:13:06Z",
+  "entry_id": 2565,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {},
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": false,
+        "is_looping": null,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 810,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 75)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 790 ms per frame over the first 42 frames of the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n    frame_budget: the run stopped at 42 of the 120 idle frames and did not finish the probes or the assertions\n",
+      "exit": 1,
+      "ghost": null,
+      "given": {
+        "kind": "parent",
+        "lines": 61,
+        "sha256": "d06922b1f9e4d7c3e980443bd62778f3f011a324c93cc49b9d791799a6b77ea6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 790.0,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3095,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 49.884,
+      "wall_s": 82.315
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 773,
+      "evidence": "gate exit 1: checks failed: frame_budget; assertions failed: no_motion\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 111.4 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0013/255, 663 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 85,
+        "sha256": "fd6e0305cc59c953b91ae2adc9bd6852d6e9a593a2d9470decde650ff2abe64f",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 111.4,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3415,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 54.162,
+      "wall_s": 70.605
+    },
+    {
+      "assertions": {
+        "no_motion": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 859,
+      "evidence": "gate exit 1: assertions failed: no_motion\n\nAssertions that failed:\n- no_motion: idle 0->120 frames: mean abs diff 0.0003/255, 175 of 1152000 pixels changed\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 81,
+        "sha256": "e34f52bc00d58fdecc751b94def93ee4fa189455f34a6adb11e65b3420034598",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 39.2,
+      "num_ctx": 16384,
+      "preload_s": 0.048,
+      "prompt_tokens": 3412,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 19.009,
+      "wall_s": 77.11
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2587,
+  "last_error": "rejected by operator",
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "flip: a vast, interlocking network of paths, completely suspended at the moment of formation, depicted as solid, iridescent bismuth, seen at the planetary scale, emerging from a celestial impact.",
+    "critique_by": "gemma4:e4b",
+    "generation": 11,
+    "inherits_source": false,
+    "parent_entry_id": 2505,
+    "root_entry_id": 374
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "deep inside a cauldron of bacteria and microbes, but no circles allowed\n\nRevise: the same dense, churning biological environment, and this time the filamentous microbes form highly defined, crystalline chains.\n\nRevise: the same viscous, dynamic mass, and this time the color palette shifts to cool mauves, grays, and iridescent silver.\n\nRevise: the same deep, viscous environment teeming with life, and this time the filamentous microbes form clear, repeating lattice geometries.\n\nRevise: depart: the idea of continuous, highly structured flow through a deep medium taken into a vast network of tectonic fault lines, mechanism: a slime mould searching.\n\nRevise: depart: the interconnected pathways of bioluminescent life are taken into the corroded framework of a colossal, abandoned factory, made of rust on sheet steel.\n\nRevise: depart: the notion of pulsating, living circuits running through decaying structures taken into a complex network of folded origami mimicking hydrothermal vents, made of crisp paper, seen at microscopic scale, in a deep-sea setting.\n\nRevise: carry: geometric tessellations of light given to colossal radio receivers, seen at industrial scale, in a 1920s Bauhaus exercise\n\nRevise: carry: pure, shifting geometric light given to the complex mineral growth patterns of enormous stalactite caverns, made of beeswax, seen at geological scale, in a subterranean setting.\n\nRevise: flip: A hyper-minimalist study of intersecting parallel lines and negative space, detailing a simple, unornamented structural element, made of graphite on vellum, seen at drafting scale, in a 1960s pen plotter drawing.\n\nRevise: zoom: a highly concentrated patch of intersecting linear pathways, appearing as a dense, crystalline mineral lattice, seen from a satellite reveals the networked circulatory system of a colossal subterranean organism.\n\nRevise: flip: a vast, interlocking network of paths, completely suspended at the moment of formation, depicted as solid, iridescent bismuth, seen at the planetary scale, emerging from a celestial impact.",
+  "prompt_tokens": 9922,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2565/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2565",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "rejected",
+  "statement": "This sketch visualizes a magnified view of an intricate mineral lattice structure that resembles a complex circulatory system within a subterranean organism. The composition features a dense network of intersecting crystalline pathways rendered in cool cyan hues against a dark background. Through carefully batched geometric elements and controlled animation, it creates the impression of a living, interconnected biological framework at an microscopic scale. The viewer observes repeating structural patterns that suggest both organic growth and mathematical precision, evoking the hidden machinery of an enormous underground entity.",
+  "submitted_by": "profcarroll",
+  "wall_s": 230.03
+}
