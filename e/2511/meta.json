@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "responds(click)",
+    "no_motion"
+  ],
+  "attempts": 1,
+  "attribution": "\u201ca subway map that rearranges itself when you click a station Revise:\u2026\u201d \u2014 sketchgen entry 2511, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2511/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a sprawling, detailed topographical map rendered in the style of an Edo woodblock print. The fantastical continent is filled with deep, expressive colors, featuring intricate river networks, dramatic mountain ranges, and delicate, stressed fault lines. When the viewer clicks anywhere on the map, the tension radiates outwards from that exact point. This simulated stress causes the entire landscape to react dynamically: fault lines glow, mountains rise, and tectonic plates shift, instantaneously reforming the continent's underlying geography.",
+  "completion_tokens": 1810,
+  "created_utc": "2026-10-25T20:52:56Z",
+  "entry_id": 2511,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "no_motion": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": null,
+        "frame_budget": true,
+        "is_looping": false,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1810,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 155,
+        "sha256": "c692b345d4a7fa1907149e9eac201ed6e3cd61459e22c1489527ca8d103f2bd6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 0.1,
+      "num_ctx": 16384,
+      "preload_s": 0.517,
+      "prompt_tokens": 3856,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 2.689,
+      "wall_s": 151.463
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2532,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The concept of stress-induced network reorganization, rendered as a sprawling Edo woodblock print depicting a fantasy continent whose mountain ranges and fault lines dynamically reform when any single point is clicked.",
+    "critique_by": "gemma4:e4b",
+    "generation": 4,
+    "inherits_source": true,
+    "parent_entry_id": 2403,
+    "root_entry_id": 1465
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "a subway map that rearranges itself when you click a station\n\nRevise: zoom: a whole sketch of the molecular junction point where three distinct lines meet, revealing the atomic stress points and interlocking crystal lattice structure, seen under a microscope.\n\nRevise: depart: a root system network of interwoven, colored organic pathways, patterned like a tapestry woven on a loom.\n\nRevise: depart: the idea of networked pathways taken into a colossal system of synaptic dendrites, reorganizing when a point is stimulated, made of beeswax.\n\nRevise: depart: The concept of stress-induced network reorganization, rendered as a sprawling Edo woodblock print depicting a fantasy continent whose mountain ranges and fault lines dynamically reform when any single point is clicked.",
+  "prompt_tokens": 3856,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2511/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2511",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a dynamic topographical map inspired by Edo woodblock prints, depicting a fantastical continent with mountain ranges, rivers, and fault lines. When clicked, the landscape responds with simulated tectonic stress that causes mountains to rise, fault lines to glow, and the entire geography to reform. The work combines procedural generation with interactive physics to create an evolving geological landscape that transforms in response to user input.",
+  "submitted_by": "profcarroll",
+  "wall_s": 151.463
+}
