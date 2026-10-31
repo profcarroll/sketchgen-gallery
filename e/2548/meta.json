@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    "motion(idle)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cUFO landing in a corn field Revise: the same glowing disc-shaped UFO,\u2026\u201d \u2014 sketchgen entry 2548, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2548/ Licensed CC BY 4.0.",
+  "brief": "A glowing, disc-shaped object hovers above a field, casting an intense, focused semicircular pattern of light onto the ground. This ground pattern is composed of abstract, radiating lines that are cyclically illuminated by bright cyan light. The light does not remain static; instead, it moves across the semicircular pattern in smooth, wave-like pulses. The waves propagate rhythmically and uniformly, causing the intensity of the cyan illumination to swell and fade as they sweep outward from the object beneath.",
+  "completion_tokens": 942,
+  "created_utc": "2026-10-26T02:38:11Z",
+  "entry_id": 2548,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 942,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 127,
+        "sha256": "997ff008938f8733c8987fa992fa111d1b3f9041fc33334f3071b39eeee2eec6",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 2.1,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3715,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 3.096,
+      "wall_s": 91.367
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2570,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: The vast, glowing, interconnected mineralized pathways taken into colossal root structures of petrified wood, seen at the scale of a tidal beach, driven by the mechanism of tides.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "inherits_source": true,
+    "parent_entry_id": 2488,
+    "root_entry_id": 402
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "UFO landing in a corn field\n\nRevise: the same glowing disc-shaped UFO, and this time the UFO's exhaust plumes glow cyan\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes are concentrated into steady, vertical beams of cyan light.\n\nRevise: the same glowing, disc-shaped UFO, and this time the exhaust plumes pulsate rhythmically with cyan light.\n\nRevise: the same two steady vertical beams of bright cyan light, and this time the light widens and shrinks cyclically, illuminating the corn stalks unevenly.\n\nRevise: the same intensely bright cyan light beams, and this time they illuminate the corn stalks in a fixed, glowing semicircle directly beneath the craft.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intense cyan light beams pulsate slowly and uniformly across the semicircle.\n\nRevise: the same glowing, disc-shaped UFO, and this time the intensely cyan light beams pulse rapidly and irregularly across the semicircle.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with smooth, rhythmic waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with slow, uniform waves across the semicircular ground pattern.\n\nRevise: the same glowing, disc-shaped object, and this time the cyan light pulses with rapid, erratic flashes across the semicircular ground pattern.\n\nRevise: carry: Contained, rhythmic, cyan pulsation given to a series of interconnected polished brass pipes, made of industrial glass, seen at the scale of a single room, in a 1920s Bauhaus exercise.\n\nRevise: flip: a chaotic network of bioluminescent fungal hyphae, pulsing randomly and unevenly, covering a forest floor at the scale of one city block.\n\nRevise: carry: Random, pulsing interconnection given to submerged oceanic fiber optic cables, seen from a satellite.\n\nRevise: depart: the idea of hidden, pulsing, interconnected energetic pathways taken into the form of vast, mineralized veins within deep-sea oceanic crust, seen from a satellite.\n\nRevise: depart: The vast, glowing, interconnected mineralized pathways taken into colossal root structures of petrified wood, seen at the scale of a tidal beach, driven by the mechanism of tides.",
+  "prompt_tokens": 3715,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2548/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2548",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch depicts a glowing disc object hovering above a dark field, casting a focused semicircular pattern of light. The light pattern consists of abstract radiating lines that pulse with rhythmic waves, creating an effect where the cyan illumination swells and fades as it sweeps outward from the central object. The visualization uses smooth sine wave animations to create the cyclic pulsing effect, with the glow ball having a soft outer glow that intensifies and dims in time with the light pattern. The entire scene is rendered using p5.js's 2D drawing functions with careful attention to maintaining performance within the specified frame budget while creating an immersive visual experience.",
+  "submitted_by": "profcarroll",
+  "wall_s": 91.367
+}
