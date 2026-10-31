@@ -1,0 +1,187 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 3,
+  "attribution": "\u201ctree rings recording a century of droughts and floods Revise: the sam\u2026\u201d \u2014 sketchgen entry 2513, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2513/ Licensed CC BY 4.0.",
+  "brief": "The canvas is filled with concentric, stacked strata that expand across the viewing area, resembling geological or organic rings. These layers shift continually, featuring complex, asymmetrical patterns that mimic the delicate structure of biological material or the formation of deep-sea sediment. The colors are volatile, exhibiting abrupt and irregular shifts between bands, while the overall structure appears to organize itself according to invisible rules, suggesting a perpetual, evolving process that dominates the visual plane.",
+  "completion_tokens": 2508,
+  "created_utc": "2026-10-25T22:34:21Z",
+  "entry_id": 2513,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 826,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 91,
+        "sha256": "bdc59180621562048e46ee30b07a1f548a2d7c884b7ba98be796a84ce2a5dd91",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.4,
+      "num_ctx": 16384,
+      "preload_s": 0.027,
+      "prompt_tokens": 3513,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 7.156,
+      "wall_s": 78.369
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 843,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 79,
+        "sha256": "bb0800bca6840cc95a8f95658f8fef81d2e2813c7a6cf1ac1c44d1a139254ef9",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 6.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 4.973,
+      "wall_s": 74.857
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": false
+      },
+      "attempt": 3,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 839,
+      "evidence": "gate exit 1: assertions failed: uses(webgl)\n\nAssertions that failed:\n- uses(webgl): renderer context is 2D\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 79,
+        "sha256": "f74e066ff88360220d256740170a463e74e47b8a20f919ad75685f755d0f8f07",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.9,
+      "num_ctx": 16384,
+      "preload_s": 0.025,
+      "prompt_tokens": 3398,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-3",
+      "total_s": 6.305,
+      "wall_s": 73.057
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2535,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: A sense of perpetually shifting, layered geometry taken into the plume structures of deep-sea hydrothermal vents, seen at a molecular scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": false,
+    "parent_entry_id": 2413,
+    "root_entry_id": 1482
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "tree rings recording a century of droughts and floods\n\nRevise: the same concentric rings filling the canvas, and this time the transitions between drought and flood bands become visibly abrupt and asymmetrical.\n\nRevise: carry: sudden, asymmetrical color shifts given to the delicate scale patterns of a butterfly wing, under a microscope\n\nRevise: carry: layered, shifting geometry given to the strata of deep-sea volcanic sediment, forming patterns that follow the rules of flock migration.\n\nRevise: depart: the concept of perpetually shifting, layered asymmetry taken into the mechanical blueprints of an unusable celestial clock, made of drafting vellum, seen at a human scale, in the style of a 1960s pen plotter drawing.\n\nRevise: depart: A sense of perpetually shifting, layered geometry taken into the plume structures of deep-sea hydrothermal vents, seen at a molecular scale.",
+  "prompt_tokens": 10309,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2",
+      "attempt-3"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2513/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2513",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch renders a continuously evolving geological visualization composed of multiple nested, asymmetrical rings that shift and morph over time. The layered structures appear to form organically, with each ring exhibiting its own rhythm of distortion and color change, creating an impression of sedimentary or biological growth patterns. Colors transition abruptly and irregularly across the layers, emphasizing the dynamic, rule-governed chaos of the visual process. The composition fills the entire canvas in a way that suggests an endless, self-organizing system\u2014each frame revealing new configurations while maintaining the overall sense of geological time and natural transformation.",
+  "submitted_by": "profcarroll",
+  "wall_s": 226.283
+}
