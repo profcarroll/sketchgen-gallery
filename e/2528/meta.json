@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201crain on a window where each drop holds a tiny upside-down city Revise\u2026\u201d \u2014 sketchgen entry 2528, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2528/ Licensed CC BY 4.0.",
+  "brief": "The canvas simulates the glow of a vintage 1980s arcade machine screen. This retro display showcases miniature, glowing, inverted worlds that are not static but are constantly carried along visible liquid circuits. Flowing streams of vibrant liquid act as conduits, guiding these pocket dimensions through the circuit board. Each enclosed world pulses with rhythmic light and subtly shifts its internal geometry, giving the impression of life contained within a technological, aquatic network. The overall movement is continuous and autonomous, creating a mesmerizing, neon-lit spectacle that requires no viewer input to observe.",
+  "completion_tokens": 1902,
+  "created_utc": "2026-10-26T00:22:24Z",
+  "entry_id": 2528,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 944,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 80)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 117.5 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 119,
+        "sha256": "448b468e146f96657235800158b972a7e21925ddb1524aa69ae4e20da48a4bc4",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 117.5,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3677,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 62.563,
+      "wall_s": 87.962
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 958,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 105,
+        "sha256": "8691b2e050eb2212b7f53cc1eb88754871e38330e05e78dfe4272372e4986ad0",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 14.1,
+      "num_ctx": 16384,
+      "preload_s": 0.047,
+      "prompt_tokens": 3648,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 9.3,
+      "wall_s": 85.859
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2550,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: ephemeral crystalline geometry given to monumental celestial mechanisms, seen at the scale of a single grain of sand",
+    "critique_by": "gemma4:e4b",
+    "generation": 9,
+    "inherits_source": false,
+    "parent_entry_id": 2464,
+    "root_entry_id": 1471
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "rain on a window where each drop holds a tiny upside-down city\n\nRevise: the same atmospheric movement of falling raindrops streaking across the surface of a window, and this time the cityscape visible within them subtly pulses with a gentle, slow rhythm.\n\nRevise: the same view through the rain-streaked windowpane of tiny, upside-down cityscapes, and this time the raindrops collect into larger, more defined puddles before dropping.\n\nRevise: the same view through a rain-streaked windowpane, and this time the inverted cityscapes visible within the puddles gain sharp, crystalline edges.\n\nRevise: the same view through a windowpane covered in streaming, streaked raindrops, and this time the crystalline forms within the puddles emit subtle flashes of internal light upon impact.\n\nRevise: depart: the repeating geometry of glowing, miniature inverted worlds taken into a cross-section of petrified earth, revealed by the slow, widening crack of tectonic plate separation.\n\nRevise: carry: glowing miniature worlds given to flowing liquid circuits, rendered on a 1980s arcade cabinet.\n\nRevise: depart: The concept of contained, inverted worlds transformed into monumental layers of sedimentary rock, revealing deep subterranean geological strata, rendered as an Edo woodblock print.\n\nRevise: depart: the slow folding of cyclical, hidden worlds taken into translucent biological membranes, revealing inner structures that crack and separate like porcelain bone.\n\nRevise: carry: ephemeral crystalline geometry given to monumental celestial mechanisms, seen at the scale of a single grain of sand",
+  "prompt_tokens": 7325,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2528/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2528",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates a mesmerizing, neon-lit spectacle reminiscent of a vintage 1980s arcade machine screen. It simulates the glow of retro technology with flowing liquid circuits that carry miniature, glowing worlds through a circuit board network. The scene features thousands of particles that pulse rhythmically like living entities within an aquatic technological ecosystem. Liquid streams flow continuously through the canvas, guiding these pocket dimensions in a constant state of motion and transformation. The visual effect achieves a hypnotic quality through continuous animation, ambient glow effects, and the interplay between static geometric elements and dynamic flowing patterns, creating an autonomous spectacle that captures the essence of digital life contained within technological networks.",
+  "submitted_by": "profcarroll",
+  "wall_s": 173.821
+}
