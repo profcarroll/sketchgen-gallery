@@ -1,0 +1,144 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "uses(webgl)"
+  ],
+  "attempts": 2,
+  "attribution": "\u201cstrands of DNA double helix winding and unwinding, folding and unfold\u2026\u201d \u2014 sketchgen entry 2567, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2567/ Licensed CC BY 4.0.",
+  "brief": "The canvas displays a microscopic view of polished quartz, visualizing how light interacts with its internal crystalline structure. Colored diffraction gratings are visible, forming an intricate lattice of repeating rods. Light enters this system, causing the visible colors to fracture into multiple distinct beams. These beams continuously undergo a dynamic process of apparent re-bonding, creating complex, ephemeral interference patterns that shift and bloom across the surface of the quartz structure.",
+  "completion_tokens": 2458,
+  "created_utc": "2026-10-26T05:29:51Z",
+  "entry_id": 2567,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": false,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1211,
+      "evidence": "Names this sketch shadows (checked before the gate ran):\npreflight: `sphere()` is called inside a loop inside `draw()`, so this sketch builds one lit mesh per item per frame; draw the items as one `beginShape(POINTS)` or build the mesh once in `setup()` with `buildGeometry()` (sketch.js line 110)\npreflight: this is an all-pairs loop inside `draw()`: every item is compared with every other one, so the work grows with the square of the count; use a spatial hash, or compare squared distances over a capped neighbour list (sketch.js line 117)\npreflight: `line()` inside a loop inside `draw()` is immediate mode in WEBGL \u2014 every call builds and uploads its own vertex buffer; batch them into one `beginShape(LINES)` with `vertex()` per point (sketch.js line 133)\n\ngate exit 1: checks failed: frame_budget\n\nFixed checks that failed:\n- frame_budget = false\n    frame_budget: 143.7 ms per frame over the 120-frame idle window, budget 100 ms \u2014 batch points and lines into one shape, no sphere() per particle, no all-pairs loop\n\nRuntime state the gate read:\n- frame_advancing compares frameCount at frame 84 of the 120-frame idle window (86) with the end of it (122); at load it was 0\n",
+      "exit": 1,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 131,
+        "sha256": "617342a1e474838048b2e3cc48dd76a4466aa651a80541516cbae861db427b06",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 143.7,
+      "num_ctx": 16384,
+      "preload_s": 0.031,
+      "prompt_tokens": 3793,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 72.73,
+      "wall_s": 128.744
+    },
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "uses(webgl)": true
+      },
+      "attempt": 2,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 1247,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 40,
+        "ms": 4000,
+        "played": 40,
+        "script": "wander",
+        "source": "default"
+      },
+      "given": {
+        "kind": "previous",
+        "lines": 138,
+        "sha256": "33b36b8177cbf78a209bd7dca490860de7640235abf6f802762f4c241932a81d",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 8.8,
+      "num_ctx": 16384,
+      "preload_s": 0.031,
+      "prompt_tokens": 3991,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-2",
+      "total_s": 6.472,
+      "wall_s": 116.82
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 40,
+    "script": "wander"
+  },
+  "job_id": 2589,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "depart: the idea of complementary molecular bonding taken into a system of colored diffraction gratings, showing light fracturing and re-bonding, made of polished quartz, seen at the single grain of sand scale.",
+    "critique_by": "gemma4:e4b",
+    "generation": 15,
+    "inherits_source": false,
+    "parent_entry_id": 2508,
+    "root_entry_id": 387
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "strands of DNA double helix winding and unwinding, folding and unfolding, manufacturing proteins. use spheres instead of circles. Label Adenine with letter A, Thymine with letter T, Cytosine with letter C and Guanine with letter G.\n\nRevise: try again and focusing more on modeling the double helix structure\n\nRevise: make a longer strand in a double helix with accurate connection across the molecules\n\nRevise: the same molecular representation of the DNA double helix, and this time showing a segment unzipping to replicate its strands.\n\nRevise: the same dynamic molecular model of a double helix, and this time showing the temporary hydrogen bonds forming between complementary bases.\n\nRevise: add more detail\n\nRevise: the same molecular model of the DNA double helix, and this time showing the temporary bonds between complementary bases forming as explicit hydrogen-bonded structures.\n\nRevise: the same dynamically winding molecular structure, and this time explicitly showing the specific hydrogen bonds forming between the labeled base spheres.\n\nRevise: carry: Dynamic complementary bonding given to liquid crystal phases, visualized as stacked, interacting colored rectangular rods, under polarized light\n\nRevise: flip: a crystalline lattice of interconnected rubber bands forming a fixed, geometric structure, viewed under cold, absolute silence and zero kinetic energy\n\nRevise: carry: Taut, systematic repeating patterns given to the scales of a mythological sea beast, rendered as an Edo woodblock print.\n\nRevise: depart: the idea of temporary, information-carrying connections taken into a complex, interlocking mechanical structure of multi-faceted polyhedra, made of folded origami, seen at macro scale, in the near future.\n\nRevise: depart: the idea of information transfer via temporary, structured connections taken into an intricate mechanical system of overlapping folding gears and segmented printed cartography, made of cut paper, seen at map scale, in the late Victorian era.\n\nRevise: flip: a sketch with the opposite habit, of an intricate, slow-growing fungal mycelium structure spreading through geological strata, made of compressed earth, seen at the millimeter scale.\n\nRevise: depart: The idea of invisible, spreading, connecting paths taken into a high-voltage electric city grid, made of glowing copper wires, seen at one city block\n\nRevise: depart: the idea of complementary molecular bonding taken into a system of colored diffraction gratings, showing light fracturing and re-bonding, made of polished quartz, seen at the single grain of sand scale.",
+  "prompt_tokens": 7784,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1",
+      "attempt-2"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2567/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2567",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch visualizes the microscopic world of polished quartz, capturing how light interacts with its crystalline structure. The scene features a lattice of diffraction gratings\u2014thin, rod-like structures that split light into colorful beams. These gratings are arranged in a three-dimensional space, creating an intricate network where light particles bounce around and create dynamic interference patterns. As the viewer's perspective rotates slowly through the space, these interactions produce shifting, blooming color patterns that evoke the ethereal beauty of crystalline light manipulation. The technique uses batched rendering to maintain performance while achieving the visual complexity of a highly detailed, animated crystal surface.",
+  "submitted_by": "profcarroll",
+  "wall_s": 245.564
+}
