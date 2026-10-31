@@ -1,0 +1,101 @@
+{
+  "assertions": [
+    "motion(idle)",
+    "responds(click)"
+  ],
+  "attempts": 1,
+  "attribution": "\u201cdesign a rhythm sequencer Revise: zoom: a whole sketch of the brief,\u2026\u201d \u2014 sketchgen entry 2546, prompted by profcarroll, written by qwen3-coder:30b-a3b-q4_K_M under the treatment rules file. https://profcarroll.github.io/sketchgen-gallery/e/2546/ Licensed CC BY 4.0.",
+  "brief": "The viewer witnesses massive, intricately tessellated mosaics crafted from rich Venetian glass. The canvas is dominated by cyclical, jewel-toned patterns that seem to expand and contract with a profound, rhythmic energy, governed by an unseen pendulum. These patterns are structured but appear to slowly decay and rebuild over time. While the primary animation occurs constantly, the viewer can interact with the rhythm. A click introduces a sudden pulse into the system, momentarily accelerating the energy flow and distorting the smooth, cyclical decay into sharp, momentary bursts of intensified light and color.",
+  "completion_tokens": 906,
+  "created_utc": "2026-10-26T02:25:13Z",
+  "entry_id": 2546,
+  "executor": "qwen3-coder:30b-a3b-q4_K_M",
+  "executor_prompt_version": "executor-v3",
+  "gate": [
+    {
+      "assertions": {
+        "motion(idle)": true,
+        "responds(click)": true
+      },
+      "attempt": 1,
+      "checks": {
+        "audio_context_running": null,
+        "console_clean": true,
+        "frame_advancing": true,
+        "frame_budget": true,
+        "is_looping": true,
+        "revised": true,
+        "sound_lib_ok": null
+      },
+      "completion_tokens": 906,
+      "evidence": null,
+      "exit": 0,
+      "ghost": {
+        "events": 16,
+        "ms": 3320,
+        "played": 16,
+        "script": "click",
+        "source": "default"
+      },
+      "given": {
+        "kind": "parent",
+        "lines": 97,
+        "sha256": "09a3557144b4ffff2f62cc5cae688c418f162c9e69b0b3277f1fb07e1cc7fe9c",
+        "shown": true
+      },
+      "model": "qwen3-coder:30b-a3b-q4_K_M",
+      "ms_per_frame": 10.2,
+      "num_ctx": 16384,
+      "preload_s": 0.026,
+      "prompt_tokens": 3441,
+      "resources_loaded": [],
+      "rules_file": "treatment",
+      "source": "attempt-1",
+      "total_s": 6.77,
+      "wall_s": 81.123
+    }
+  ],
+  "ghost": {
+    "by": "default",
+    "events": 16,
+    "script": "click"
+  },
+  "job_id": 2568,
+  "last_error": null,
+  "licence": "CC BY 4.0",
+  "lineage": {
+    "children": [],
+    "critique": "carry: The quality of synchronized, expanding rhythmic pulses given to massive Venetian glass mosaics, animated and governed by the swing of a pendulum.",
+    "critique_by": "gemma4:e4b",
+    "generation": 5,
+    "inherits_source": true,
+    "parent_entry_id": 2486,
+    "root_entry_id": 968
+  },
+  "loads": [],
+  "note": null,
+  "off_node": [],
+  "planner": "gemma4:e4b",
+  "planner_prompt_version": "planner-v2",
+  "process": null,
+  "prompt": "design a rhythm sequencer\n\nRevise: zoom: a whole sketch of the brief, high-speed geometric decay of light emanating from a single point, <what it becomes at full size>, <a 1920s Bauhaus stained-glass panel>.\n\nRevise: depart: The concept of repeating, cyclical energy taken into the form of crystallized microbial blooms, appearing etched onto damp ceramic tile.\n\nRevise: carry: Structured cyclical energy given to massive, layered geological strata, cast entirely in poured concrete.\n\nRevise: depart: The profound rhythm of decay and stratification taken into a crystalline field of bioluminescent deep-sea fauna, observed through thick, refractive glass.\n\nRevise: carry: The quality of synchronized, expanding rhythmic pulses given to massive Venetian glass mosaics, animated and governed by the swing of a pendulum.",
+  "prompt_tokens": 3441,
+  "publish_commit": null,
+  "published_utc": null,
+  "rules_file": "treatment",
+  "seed": 1,
+  "shape": "VM.Standard.A1.Flex 16/96",
+  "source": {
+    "attempts": [
+      "attempt-1"
+    ],
+    "entry": "https://profcarroll.github.io/sketchgen-gallery/e/2546/",
+    "index_html": "sketch/index.html",
+    "repository": "https://github.com/profcarroll/sketchgen-gallery/tree/main/e/2546",
+    "sketch_js": "sketch/sketch.js"
+  },
+  "state": "published",
+  "statement": "This sketch creates an immersive visualization of Venetian glass mosaics through a rhythmic, pulsing field of glowing particles. The system is governed by an unseen pendulum's swing that generates cyclical patterns which expand and contract across the canvas. Each particle responds to both its own natural rhythm and to external pulses introduced by viewer interaction. When clicked, the canvas introduces sharp bursts of energy that momentarily distort the smooth, organic decay of the patterns, creating a dynamic interplay between order and chaos. The color palette shifts through jewel-toned hues while maintaining an underlying harmony that reflects the intricate beauty of glass craftsmanship.",
+  "submitted_by": "profcarroll",
+  "wall_s": 81.123
+}
